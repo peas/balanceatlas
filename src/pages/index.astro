@@ -64,17 +64,22 @@ const carouselPhotos: { src: string; alt: string }[] = [
   { src: `${sp}/70.webp`, alt: 'São Paulo 2024' },
 ];
 
-// Short videos (≤20s) from past retreats
+// Short videos (≤20s) from past retreats — interleaved across events
+const vsp = `${MEDIA_URL}/videos/retreats/saopaulo-2024`;
+const vth = `${MEDIA_URL}/videos/retreats/thailand-2026`;
+const vgr = `${MEDIA_URL}/videos/retreats/greece-2025`;
 const shortVideos: { src: string; poster?: string }[] = [
-  { src: `${MEDIA_URL}/videos/retreats/thailand-2026/10.mp4`, poster: `${th}/42.webp` },  // 7s
-  { src: `${MEDIA_URL}/videos/retreats/thailand-2026/05.mp4`, poster: `${th}/38.webp` },  // 8s
-  { src: `${MEDIA_URL}/videos/retreats/thailand-2026/07.mp4`, poster: `${th}/53.webp` },  // 11s
-  { src: `${MEDIA_URL}/videos/retreats/thailand-2026/09.mp4`, poster: `${th}/29.webp` },  // 13s
-  { src: `${MEDIA_URL}/videos/retreats/thailand-2026/04.mp4`, poster: `${th}/55.webp` },  // 14s
-  { src: `${MEDIA_URL}/videos/retreats/thailand-2026/01.mp4`, poster: `${th}/37.webp` },  // 16s
-  { src: `${MEDIA_URL}/videos/retreats/greece-2025/07.mp4`, poster: `${gr}/20.webp` },    // 17s
-  { src: `${MEDIA_URL}/videos/retreats/greece-2025/04.mp4`, poster: `${gr}/04.webp` },    // 19s
-  { src: `${MEDIA_URL}/videos/retreats/greece-2025/01.mp4`, poster: `${gr}/01.webp` },    // 21s
+  { src: `${vsp}/04.mp4`, poster: `${sp}/105.webp` },   // 8s  — SP one-arm by pool
+  { src: `${vth}/10.mp4`, poster: `${th}/42.webp` },     // 7s  — Thailand
+  { src: `${vgr}/07.mp4`, poster: `${gr}/20.webp` },     // 17s — Greece
+  { src: `${vsp}/01.mp4`, poster: `${sp}/102.webp` },    // 13s — SP poolside handstand
+  { src: `${vth}/05.mp4`, poster: `${th}/38.webp` },     // 8s  — Thailand
+  { src: `${vsp}/03.mp4`, poster: `${sp}/103.webp` },    // 21s — SP trio
+  { src: `${vgr}/04.mp4`, poster: `${gr}/04.webp` },     // 19s — Greece
+  { src: `${vth}/07.mp4`, poster: `${th}/53.webp` },     // 11s — Thailand
+  { src: `${vsp}/05.mp4`, poster: `${sp}/106.webp` },    // 27s — SP straddle
+  { src: `${vth}/04.mp4`, poster: `${th}/55.webp` },     // 14s — Thailand
+  { src: `${vgr}/01.mp4`, poster: `${gr}/10.webp` },     // 21s — Greece
 ];
 ---
 
@@ -137,21 +142,21 @@ const shortVideos: { src: string; poster?: string }[] = [
         </div>
       </div>
 
-      <!-- Photo collage — asymmetric, overlapping -->
+      <!-- Photo bento — small asymmetric grid -->
       <div
-        class="hidden lg:block relative w-[380px] h-[420px]"
+        class="hidden lg:grid grid-cols-2 grid-rows-2 gap-2.5 w-[380px] h-[420px]"
         data-animate
         data-animate-delay="250"
         style="opacity: 0; transform: translateY(24px);"
       >
-        <div class="absolute top-0 right-0 w-64 h-72 rounded-2xl overflow-hidden shadow-2xl shadow-navy/15 rotate-3 hover:rotate-0 transition-transform duration-500">
-          <img src={`${MEDIA_URL}/images/retreats/thailand-2026/47.webp`} alt="Thailand retreat" class="w-full h-full object-cover" />
+        <div class="col-span-2 rounded-2xl overflow-hidden shadow-xl shadow-navy/10">
+          <img src={`${sp}/103.webp`} alt="Handstands by the pool — São Paulo" class="w-full h-full object-cover" />
         </div>
-        <div class="absolute bottom-0 left-0 w-56 h-64 rounded-2xl overflow-hidden shadow-xl shadow-navy/10 -rotate-2 hover:rotate-0 transition-transform duration-500">
-          <img src={`${MEDIA_URL}/images/retreats/greece-2025/01.webp`} alt="Greece retreat" class="w-full h-full object-cover" />
+        <div class="rounded-2xl overflow-hidden shadow-lg shadow-navy/10">
+          <img src={`${th}/47.webp`} alt="Training session — Thailand" class="w-full h-full object-cover" />
         </div>
-        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 rounded-xl overflow-hidden shadow-lg shadow-coral/20 rotate-6 hover:rotate-0 transition-transform duration-500 ring-4 ring-sand">
-          <img src={`${MEDIA_URL}/images/retreats/saopaulo-2024/35.webp`} alt="São Paulo workshop" class="w-full h-full object-cover" />
+        <div class="rounded-2xl overflow-hidden shadow-lg shadow-navy/10">
+          <img src={`${sp}/106.webp`} alt="Straddle handstand — São Paulo" class="w-full h-full object-cover" />
         </div>
       </div>
     </div>

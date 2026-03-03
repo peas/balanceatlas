@@ -11,7 +11,14 @@ level: [beginner, intermediate, advanced]
 type: "intensive"
 heroImage: "/images/retreats/saopaulo-2024/35.webp"
 gallery:
-  # Action — handstands, spotting, training
+  # Action — handstands, spotting, training (new curated photos first)
+  - "/images/retreats/saopaulo-2024/103.webp"
+  - "/images/retreats/saopaulo-2024/102.webp"
+  - "/images/retreats/saopaulo-2024/106.webp"
+  - "/images/retreats/saopaulo-2024/105.webp"
+  - "/images/retreats/saopaulo-2024/104.webp"
+  - "/images/retreats/saopaulo-2024/107.webp"
+  - "/images/retreats/saopaulo-2024/101.webp"
   - "/images/retreats/saopaulo-2024/95.webp"
   - "/images/retreats/saopaulo-2024/100.webp"
   - "/images/retreats/saopaulo-2024/55.webp"
@@ -113,6 +120,12 @@ gallery:
   - "/images/retreats/saopaulo-2024/97.webp"
   - "/images/retreats/saopaulo-2024/98.webp"
   - "/images/retreats/saopaulo-2024/99.webp"
+videos:
+  - "/videos/retreats/saopaulo-2024/04.mp4"
+  - "/videos/retreats/saopaulo-2024/01.mp4"
+  - "/videos/retreats/saopaulo-2024/03.mp4"
+  - "/videos/retreats/saopaulo-2024/05.mp4"
+  - "/videos/retreats/saopaulo-2024/02.mp4"
 description: "Handstand intensive for all levels with Andre Juda in São Paulo."
 ---
 

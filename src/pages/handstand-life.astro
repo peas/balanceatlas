@@ -7,21 +7,22 @@ const gr = `${MEDIA_URL}/images/retreats/greece-2025`;
 const sp = `${MEDIA_URL}/images/retreats/saopaulo-2024`;
 const vth = `${MEDIA_URL}/videos/retreats/thailand-2026`;
 const vgr = `${MEDIA_URL}/videos/retreats/greece-2025`;
+const vsp = `${MEDIA_URL}/videos/retreats/saopaulo-2024`;
 
 // Curated mix of ~45 items: photos + short videos interleaved from all past retreats
 // Balance: action shots, social moments, training, scenery — across all three events
 const media: { type: 'photo' | 'video'; src: string; alt: string; span?: string }[] = [
   // Row 1 — strong opening
   { type: 'photo', src: `${th}/38.webp`, alt: 'Thailand 2026', span: 'large' },
-  { type: 'video', src: `${vth}/05.mp4`, alt: 'Thailand 2026', span: 'tall' },
-  { type: 'photo', src: `${sp}/35.webp`, alt: 'São Paulo 2024' },
-  { type: 'photo', src: `${gr}/01.webp`, alt: 'Greece 2025' },
+  { type: 'video', src: `${vsp}/04.mp4`, alt: 'São Paulo 2024', span: 'tall' },
+  { type: 'photo', src: `${sp}/106.webp`, alt: 'São Paulo 2024' },
+  { type: 'photo', src: `${sp}/103.webp`, alt: 'São Paulo 2024' },
 
   // Row 2
   { type: 'photo', src: `${sp}/95.webp`, alt: 'São Paulo 2024', span: 'wide' },
   { type: 'photo', src: `${th}/28.webp`, alt: 'Thailand 2026' },
   { type: 'video', src: `${vgr}/04.mp4`, alt: 'Greece 2025' },
-  { type: 'photo', src: `${sp}/45.webp`, alt: 'São Paulo 2024', span: 'tall' },
+  { type: 'photo', src: `${sp}/102.webp`, alt: 'São Paulo 2024', span: 'tall' },
 
   // Row 3
   { type: 'photo', src: `${gr}/10.webp`, alt: 'Greece 2025', span: 'wide' },
@@ -38,8 +39,8 @@ const media: { type: 'photo' | 'video'; src: string; alt: string; span?: string 
   // Row 5
   { type: 'photo', src: `${sp}/60.webp`, alt: 'São Paulo 2024' },
   { type: 'photo', src: `${th}/53.webp`, alt: 'Thailand 2026', span: 'wide' },
-  { type: 'video', src: `${vgr}/07.mp4`, alt: 'Greece 2025' },
-  { type: 'photo', src: `${sp}/40.webp`, alt: 'São Paulo 2024' },
+  { type: 'video', src: `${vsp}/01.mp4`, alt: 'São Paulo 2024' },
+  { type: 'photo', src: `${gr}/10.webp`, alt: 'Greece 2025' },
 
   // Row 6
   { type: 'photo', src: `${gr}/15.webp`, alt: 'Greece 2025', span: 'tall' },
