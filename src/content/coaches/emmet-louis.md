@@ -4,7 +4,7 @@ photo: "/images/coaches/emmet-louis.webp"
 location:
   city: "Dublin"
   country: "Ireland"
-instagram: "emaborisov"
+instagram: "emmetlouis"
 website: "https://handstandfactory.com"
 featured: true
 ---

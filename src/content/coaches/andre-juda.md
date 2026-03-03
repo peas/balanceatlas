@@ -4,10 +4,10 @@ photo: "/images/coaches/andre-juda.webp"
 location:
   city: "São Paulo"
   country: "Brazil"
-instagram: "judatrainer"
+instagram: "andrejuda"
 featured: false
 ---
 
 Handstand coach based in São Paulo, Brazil.
 
-Source: [instagram.com/judatrainer](https://instagram.com/judatrainer)
+Source: [instagram.com/andrejuda](https://instagram.com/andrejuda)
