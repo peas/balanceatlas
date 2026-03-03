@@ -1,0 +1,19 @@
+name: Report a Correction
+description: Something wrong or outdated? Let us know
+title: "[Fix] "
+labels: ["fix"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Which page or listing?
+      placeholder: "e.g. /retreats/2026-thailand-yuval-ayalon or Coach: Miguel Santana"
+    validations:
+      required: true
+
+  - type: textarea
+    id: issue
+    attributes:
+      label: What needs to be fixed?
+    validations:
+      required: true

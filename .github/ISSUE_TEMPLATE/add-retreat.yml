@@ -1,0 +1,91 @@
+name: Add a Retreat or Workshop
+description: Suggest a handstand retreat, intensive, or workshop to be listed
+title: "[Retreat] "
+labels: ["retreat"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing! Please fill in as much as you can — we'll take care of the rest.
+
+  - type: input
+    id: event-name
+    attributes:
+      label: Event name
+      placeholder: "e.g. Handstand Intensive Thailand 2026"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Type
+      options:
+        - Retreat
+        - Intensive
+        - Workshop
+        - Seminar
+        - Tour
+    validations:
+      required: true
+
+  - type: input
+    id: coaches
+    attributes:
+      label: Coach(es)
+      placeholder: "e.g. Yuval Ayalon, Miguel Santana"
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      placeholder: "e.g. Koh Phangan, Thailand — Orion Healing Center"
+    validations:
+      required: true
+
+  - type: input
+    id: dates
+    attributes:
+      label: Dates
+      placeholder: "e.g. Jan 10–20, 2026"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: level
+    attributes:
+      label: Level
+      multiple: true
+      options:
+        - Beginner
+        - Intermediate
+        - Advanced
+        - All levels
+
+  - type: input
+    id: registration-url
+    attributes:
+      label: Registration / info link
+      placeholder: "https://..."
+    validations:
+      required: true
+
+  - type: input
+    id: venue-url
+    attributes:
+      label: Venue website (optional)
+      placeholder: "https://..."
+
+  - type: textarea
+    id: photos
+    attributes:
+      label: Photos or album link (optional)
+      description: "Google Photos album, Dropbox link, or any public URL with event photos."
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else?
+      description: "Extra context, description from the event page, etc."

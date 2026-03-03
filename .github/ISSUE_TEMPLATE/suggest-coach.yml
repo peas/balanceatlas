@@ -1,0 +1,49 @@
+name: Suggest a Coach
+description: Suggest a hand balancing coach to be listed
+title: "[Coach] "
+labels: ["coach"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the suggestion! We source all descriptions from the coach's own website or social media — please include links so we can quote them accurately.
+
+  - type: input
+    id: name
+    attributes:
+      label: Coach name
+      placeholder: "e.g. Yuval Ayalon"
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: Location (city, country)
+      placeholder: "e.g. Tel Aviv, Israel"
+    validations:
+      required: true
+
+  - type: input
+    id: instagram
+    attributes:
+      label: Instagram handle
+      placeholder: "e.g. @yuvalayalon"
+
+  - type: input
+    id: website
+    attributes:
+      label: Website or bio page
+      placeholder: "https://..."
+
+  - type: input
+    id: youtube
+    attributes:
+      label: YouTube channel (optional)
+      placeholder: "https://..."
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else?
+      description: "How you know them, what makes them stand out, links to their about page, etc."

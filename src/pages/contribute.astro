@@ -66,7 +66,12 @@ const faqs = [
       style="opacity: 0; transform: translateY(24px);"
     >
       <!-- Add a Retreat -->
-      <div class="bg-white rounded-2xl p-8 shadow-sm border border-navy/5">
+      <a
+        href="https://github.com/peas/balanceatlas/issues/new?template=add-retreat.yml"
+        target="_blank"
+        rel="noopener"
+        class="block bg-white rounded-2xl p-8 shadow-sm border border-navy/5 hover:border-coral/20 hover:shadow-md transition-all"
+      >
         <div class="flex items-start gap-4">
           <div class="w-12 h-12 bg-coral/10 rounded-xl flex items-center justify-center shrink-0">
             <svg class="w-6 h-6 text-coral" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -78,12 +83,23 @@ const faqs = [
             <p class="mt-2 text-navy/50">
               Know about an upcoming handstand retreat, intensive, or workshop? Let us know the dates, location, coaches, and a link to register.
             </p>
+            <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-coral">
+              Open issue on GitHub
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </span>
           </div>
         </div>
-      </div>
+      </a>
 
       <!-- Add a Coach -->
-      <div class="bg-white rounded-2xl p-8 shadow-sm border border-navy/5">
+      <a
+        href="https://github.com/peas/balanceatlas/issues/new?template=suggest-coach.yml"
+        target="_blank"
+        rel="noopener"
+        class="block bg-white rounded-2xl p-8 shadow-sm border border-navy/5 hover:border-teal/20 hover:shadow-md transition-all"
+      >
         <div class="flex items-start gap-4">
           <div class="w-12 h-12 bg-teal/10 rounded-xl flex items-center justify-center shrink-0">
             <svg class="w-6 h-6 text-teal-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -95,9 +111,15 @@ const faqs = [
             <p class="mt-2 text-navy/50">
               Know a great hand balancing coach who should be listed? Share their name, location, social links, and a short description of their style.
             </p>
+            <span class="mt-3 inline-flex items-center gap-1.5 text-sm font-medium text-teal-dark">
+              Open issue on GitHub
+              <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </span>
           </div>
         </div>
-      </div>
+      </a>
 
       <!-- How it works -->
       <div class="bg-navy/[0.03] rounded-2xl p-8">
@@ -105,7 +127,7 @@ const faqs = [
         <ol class="mt-4 space-y-3 text-navy/60">
           <li class="flex gap-3">
             <span class="shrink-0 w-7 h-7 bg-coral/10 text-coral font-bold text-sm rounded-full flex items-center justify-center">1</span>
-            <span>Open a GitHub Issue with the details (templates coming soon).</span>
+            <span>Open a GitHub Issue — pick a template and fill in the details.</span>
           </li>
           <li class="flex gap-3">
             <span class="shrink-0 w-7 h-7 bg-coral/10 text-coral font-bold text-sm rounded-full flex items-center justify-center">2</span>
@@ -117,7 +139,7 @@ const faqs = [
           </li>
         </ol>
         <a
-          href="https://github.com/balanceatlas"
+          href="https://github.com/peas/balanceatlas"
           target="_blank"
           rel="noopener"
           class="mt-6 inline-flex items-center gap-2 text-sm font-medium text-coral hover:text-coral-dark transition-colors"

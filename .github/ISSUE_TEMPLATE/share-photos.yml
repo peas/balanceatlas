@@ -1,0 +1,31 @@
+name: Share Photos or Videos
+description: Share media from an event you attended
+title: "[Photos] "
+labels: ["photos"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have photos or videos from a handstand retreat or workshop? We'd love to feature them!
+
+  - type: input
+    id: event
+    attributes:
+      label: Which event?
+      placeholder: "e.g. Handstand Intensive Thailand 2026"
+    validations:
+      required: true
+
+  - type: textarea
+    id: media-link
+    attributes:
+      label: Album or media link
+      description: "Google Photos album, Dropbox, or any public link."
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Any photos to exclude?
+      description: "Let us know if there are specific photos you'd prefer we don't use."
