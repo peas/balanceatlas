@@ -1,0 +1,81 @@
+---
+interface Props {
+  name: string;
+  image?: string;
+  location?: string;
+  instagram?: string;
+  href: string;
+  badge?: string;
+  index?: number;
+}
+
+const { name, image, location, instagram, href, badge, index = 0 } = Astro.props;
+const isExternal = href.startsWith('http');
+---
+
+<a
+  href={href}
+  target={isExternal ? '_blank' : undefined}
+  rel={isExternal ? 'noopener' : undefined}
+  class="group flex items-center gap-4 bg-white rounded-xl px-4 py-3.5 shadow-sm border border-navy/5
+         hover:shadow-md hover:border-coral/20 hover:-translate-y-0.5 transition-all duration-300"
+  data-animate
+  data-animate-delay={String(Math.min(index * 50, 400))}
+  style="opacity: 0; transform: translateY(24px);"
+>
+  {image ? (
+    <img
+      src={image}
+      alt={name}
+      class="w-[80px] h-[80px] rounded-xl object-cover shrink-0"
+      loading="lazy"
+    />
+  ) : (
+    <div class="w-[80px] h-[80px] bg-gradient-to-br from-coral/15 to-teal/15 rounded-xl flex items-center justify-center shrink-0">
+      <svg class="w-8 h-8 text-navy/20" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+      </svg>
+    </div>
+  )}
+
+  <div class="min-w-0 flex-1">
+    <div class="flex items-center gap-2">
+      <p class="font-heading font-semibold text-sm text-navy group-hover:text-coral transition-colors truncate">
+        {name}
+      </p>
+      {badge && (
+        <span class="shrink-0 text-[10px] font-bold uppercase tracking-wider bg-teal/15 text-teal-dark px-2 py-0.5 rounded-full">
+          {badge}
+        </span>
+      )}
+    </div>
+    {location && (
+      <p class="mt-0.5 text-xs text-navy/40 flex items-center gap-1 truncate">
+        <svg class="w-3 h-3 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+        </svg>
+        {location}
+      </p>
+    )}
+    {instagram && (
+      <p class="mt-0.5 text-xs text-navy/35 truncate">@{instagram}</p>
+    )}
+  </div>
+
+  <svg class="w-4 h-4 text-navy/15 group-hover:text-coral shrink-0 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+    {isExternal ? (
+      <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+    ) : (
+      <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+    )}
+  </svg>
+</a>
+
+<style>
+  [data-animate].is-visible {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+</style>

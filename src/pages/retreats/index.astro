@@ -1,0 +1,97 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import RetreatCard from '../../components/RetreatCard.astro';
+import SectionHeading from '../../components/SectionHeading.astro';
+import { getCollection } from 'astro:content';
+import { MEDIA_URL } from '../../config';
+
+const allRetreats = await getCollection('retreats');
+const upcoming = allRetreats
+  .filter((r) => r.data.status === 'upcoming')
+  .sort((a, b) => a.data.dateStart.getTime() - b.data.dateStart.getTime());
+const past = allRetreats
+  .filter((r) => r.data.status === 'past')
+  .sort((a, b) => b.data.dateStart.getTime() - a.data.dateStart.getTime());
+---
+
+<BaseLayout title="Retreats" description="Discover handstand retreats, intensives, and workshops worldwide.">
+  <div class="max-w-7xl mx-auto px-6 py-16">
+    <div class="mb-12">
+      <h1
+        class="font-heading text-4xl md:text-5xl font-bold text-navy"
+        data-animate
+        style="opacity: 0; transform: translateY(24px);"
+      >
+        Retreats & Intensives
+      </h1>
+      <p
+        class="mt-4 text-lg text-navy/50 max-w-2xl"
+        data-animate
+        data-animate-delay="100"
+        style="opacity: 0; transform: translateY(24px);"
+      >
+        Immersive handstand experiences around the world — from week-long intensives to weekend workshops.
+      </p>
+    </div>
+
+    {upcoming.length > 0 && (
+      <section class="mb-16">
+        <SectionHeading title="Upcoming" />
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {upcoming.map((retreat, i) => (
+            <RetreatCard
+              title={retreat.data.title}
+              slug={retreat.id}
+              status={retreat.data.status}
+              coaches={retreat.data.coaches}
+              city={retreat.data.location.city}
+              country={retreat.data.location.country}
+              venue={retreat.data.location.venue}
+              dateStart={retreat.data.dateStart}
+              dateEnd={retreat.data.dateEnd}
+              level={retreat.data.level}
+              type={retreat.data.type}
+              heroImage={retreat.data.heroImage ? `${MEDIA_URL}${retreat.data.heroImage}` : undefined}
+              description={retreat.data.description}
+              index={i}
+            />
+          ))}
+        </div>
+      </section>
+    )}
+
+    {past.length > 0 && (
+      <section>
+        <SectionHeading title="Past Events" subtitle="Relive the memories — galleries coming soon." />
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {past.map((retreat, i) => (
+            <RetreatCard
+              title={retreat.data.title}
+              slug={retreat.id}
+              status={retreat.data.status}
+              coaches={retreat.data.coaches}
+              city={retreat.data.location.city}
+              country={retreat.data.location.country}
+              venue={retreat.data.location.venue}
+              dateStart={retreat.data.dateStart}
+              dateEnd={retreat.data.dateEnd}
+              level={retreat.data.level}
+              type={retreat.data.type}
+              heroImage={retreat.data.heroImage ? `${MEDIA_URL}${retreat.data.heroImage}` : undefined}
+              description={retreat.data.description}
+              index={i}
+            />
+          ))}
+        </div>
+      </section>
+    )}
+  </div>
+</BaseLayout>
+
+<style>
+  [data-animate].is-visible {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+</style>

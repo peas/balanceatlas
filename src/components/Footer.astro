@@ -1,0 +1,47 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="bg-navy text-white/60 mt-auto">
+  <div class="max-w-7xl mx-auto px-6 py-12">
+    <div class="flex flex-col md:flex-row justify-between items-start gap-8">
+      <div>
+        <span class="font-heading font-bold text-xl text-white">Balance Atlas</span>
+        <p class="mt-2 text-sm max-w-xs">
+          Community, workshops, retreats and info for hand balancers.
+        </p>
+      </div>
+
+      <div class="flex gap-12">
+        <div>
+          <h4 class="font-heading font-semibold text-white text-sm mb-3">Explore</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/retreats" class="hover:text-teal transition-colors">Retreats</a></li>
+            <li><a href="/handstand-life" class="hover:text-teal transition-colors">Handstand Life</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-heading font-semibold text-white text-sm mb-3">Community</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/community" class="hover:text-teal transition-colors">Community</a></li>
+            <li><a href="/contribute" class="hover:text-teal transition-colors">Contribute</a></li>
+            <li>
+              <a
+                href="https://github.com/balanceatlas"
+                target="_blank"
+                rel="noopener"
+                class="hover:text-teal transition-colors"
+              >
+                GitHub
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-10 pt-6 border-t border-white/10 text-xs text-center">
+      &copy; {year} Balance Atlas. Made with 🤸 by the community.
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,74 @@
+---
+interface Props {
+  name: string;
+  slug: string;
+  photo?: string;
+  city: string;
+  country: string;
+  instagram?: string;
+  featured?: boolean;
+  index?: number;
+}
+
+const { name, slug, photo, city, country, instagram, featured = false, index = 0 } = Astro.props;
+---
+
+<a
+  href={`/coaches/${slug}`}
+  class="group block rounded-2xl overflow-hidden bg-white shadow-sm hover:shadow-xl
+         transition-all duration-500 hover:-translate-y-1"
+  data-animate
+  data-animate-delay={String(index * 80)}
+  style="opacity: 0; transform: translateY(24px);"
+>
+  <!-- Photo -->
+  <div class="relative aspect-square overflow-hidden">
+    {photo ? (
+      <img
+        src={photo}
+        alt={name}
+        class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+        loading="lazy"
+      />
+    ) : (
+      <div class="w-full h-full bg-gradient-to-br from-teal/20 to-coral/20 flex items-center justify-center">
+        <span class="text-5xl opacity-30">🤸</span>
+      </div>
+    )}
+
+    {featured && (
+      <div class="absolute top-3 left-3 bg-teal text-navy-dark text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full">
+        Featured
+      </div>
+    )}
+
+    <div class="absolute bottom-0 inset-x-0 h-20 bg-gradient-to-t from-black/50 to-transparent" />
+  </div>
+
+  <!-- Info -->
+  <div class="p-4">
+    <h3 class="font-heading font-bold text-base text-navy group-hover:text-coral transition-colors">
+      {name}
+    </h3>
+    <p class="mt-1 text-sm text-navy/50 flex items-center gap-1">
+      <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+      </svg>
+      {city}, {country}
+    </p>
+    {instagram && (
+      <p class="mt-1.5 text-xs text-navy/40">
+        @{instagram}
+      </p>
+    )}
+  </div>
+</a>
+
+<style>
+  [data-animate].is-visible {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+</style>

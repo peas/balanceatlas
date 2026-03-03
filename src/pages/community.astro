@@ -1,0 +1,249 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CommunityCard from '../components/CommunityCard.astro';
+import { getCollection } from 'astro:content';
+import { MEDIA_URL } from '../config';
+
+const allCoaches = await getCollection('coaches');
+const sortedCoaches = allCoaches.sort((a, b) => {
+  if (a.data.featured !== b.data.featured) return a.data.featured ? -1 : 1;
+  return a.data.name.localeCompare(b.data.name);
+});
+
+// Instagram-only accounts (not in the coaches collection)
+const learningAccounts = [
+  { handle: 'gabosaturno', name: 'Gabo Saturno', image: `${MEDIA_URL}/images/community/gabo-saturno.webp` },
+  { handle: 'handstanddiary', name: 'Handstand Diary', image: `${MEDIA_URL}/images/community/handstand-diary.webp` },
+  { handle: 'gmbfitness', name: 'GMB Fitness', image: `${MEDIA_URL}/images/community/gmb-fitness.webp` },
+  { handle: 'sondre_berg', name: 'Berg Movement', image: `${MEDIA_URL}/images/community/berg-movement.webp` },
+  { handle: 'mission.e1', name: 'Mission E1', image: `${MEDIA_URL}/images/community/mission-e1.webp` },
+];
+
+const artistAccounts = [
+  { handle: 'stefaniemillinger', name: 'Stefanie Millinger' },
+  { handle: 'sofie.dossi', name: 'Sofie Dossi' },
+  { handle: 'garethrpowell', name: 'Gareth R. Powell' },
+  { handle: 'jannis_blt', name: 'Jannis BLT' },
+  { handle: 'joshnatall', name: 'Josh Natall' },
+];
+
+const communityAccounts = [
+  { handle: 'handstand_extravaganza', name: 'Handstand Extravaganza' },
+  { handle: 'handstandfactory', name: 'Handstand Factory' },
+];
+
+const resources = [
+  { name: 'Handstand Factory', url: 'https://handstandfactory.com', description: 'Online handstand programs and courses by Mikael Kristiansen and Emmet Louis.' },
+  { name: 'Balance Notion', url: 'https://balancenotion.com', description: 'Handstand courses and retreats by Nicolas Montes de Oca and Marie-Eve Dicaire.' },
+  { name: 'Handstand Diary', url: 'https://handstanddiary.com', description: 'Tutorials, coaching, and community by Sonja Marina Smith-Novak — featuring hand balancers from around the world.' },
+  { name: 'Saturno Movement', url: 'https://saturnomovement.com', description: 'Online academy by Gabo Saturno — calisthenics, hand balancing, yoga, and breathwork programs.' },
+  { name: 'GMB Fitness', url: 'https://gmb.io', description: 'Movement and fitness education — bodyweight training programs for physical autonomy.' },
+  { name: 'Berg Movement', url: 'https://bergmovement.com', description: 'Training app by Sondre Berg — calisthenics, handstand, and movement programs.' },
+  { name: 'Kyle Weiger', url: 'https://kyleweiger.com', description: 'Handstand programs and training resources.' },
+  { name: 'Ulrik on Hands', url: 'https://ulrikonhands.com', description: 'Workshops, online coaching, and the "People On Hands" program.' },
+  { name: 'Yuri Marmerstein', url: 'https://yuri-mar.com', description: 'Author of "Balancing the Equation." Tutorials and programs.' },
+  { name: 'Mission E1', url: 'https://mission-e1.com', description: 'London-based fitness and movement space — calisthenics, yoga, and handstand training.' },
+];
+
+// All video moments from past retreats
+const th = `${MEDIA_URL}/videos/retreats/thailand-2026`;
+const gr = `${MEDIA_URL}/videos/retreats/greece-2025`;
+const videoMoments = [
+  { src: `${th}/01.mp4`, label: 'Thailand 2026' },
+  { src: `${gr}/04.mp4`, label: 'Greece 2025' },
+  { src: `${th}/04.mp4`, label: 'Thailand 2026' },
+  { src: `${gr}/07.mp4`, label: 'Greece 2025' },
+  { src: `${th}/05.mp4`, label: 'Thailand 2026' },
+  { src: `${th}/07.mp4`, label: 'Thailand 2026' },
+  { src: `${gr}/01.mp4`, label: 'Greece 2025' },
+  { src: `${th}/10.mp4`, label: 'Thailand 2026' },
+  { src: `${th}/09.mp4`, label: 'Thailand 2026' },
+  { src: `${th}/03.mp4`, label: 'Thailand 2026' },
+  { src: `${gr}/05.mp4`, label: 'Greece 2025' },
+  { src: `${th}/02.mp4`, label: 'Thailand 2026' },
+  { src: `${gr}/06.mp4`, label: 'Greece 2025' },
+  { src: `${th}/08.mp4`, label: 'Thailand 2026' },
+  { src: `${th}/11.mp4`, label: 'Thailand 2026' },
+  { src: `${th}/06.mp4`, label: 'Thailand 2026' },
+  { src: `${gr}/02.mp4`, label: 'Greece 2025' },
+  { src: `${gr}/03.mp4`, label: 'Greece 2025' },
+];
+---
+
+<BaseLayout title="Community" description="Coaches, artists, resources, and videos from the global handstand community.">
+  <div class="max-w-5xl mx-auto px-6 py-16">
+    <h1
+      class="font-heading text-4xl md:text-5xl font-bold text-navy"
+      data-animate
+      style="opacity: 0; transform: translateY(24px);"
+    >
+      Community
+    </h1>
+    <p
+      class="mt-4 text-lg text-navy/50 max-w-2xl"
+      data-animate
+      data-animate-delay="100"
+      style="opacity: 0; transform: translateY(24px);"
+    >
+      Coaches, artists, learning resources, and videos from the handstand world.
+    </p>
+
+    <!-- Coaches (from content collection) -->
+    <div class="mt-14" data-animate style="opacity: 0; transform: translateY(24px);">
+      <h2 class="font-heading text-2xl font-bold text-navy mb-6">Coaches</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        {sortedCoaches.map((coach, i) => (
+          <CommunityCard
+            name={coach.data.name}
+            image={coach.data.photo ? `${MEDIA_URL}${coach.data.photo}` : undefined}
+            location={`${coach.data.location.city}, ${coach.data.location.country}`}
+            instagram={coach.data.instagram}
+            href={`/coaches/${coach.id}`}
+            badge={coach.data.featured ? 'Featured' : undefined}
+            index={i}
+          />
+        ))}
+      </div>
+    </div>
+
+    <!-- Learning & Training -->
+    <div class="mt-12" data-animate style="opacity: 0; transform: translateY(24px);">
+      <h2 class="font-heading text-2xl font-bold text-navy mb-6">Learning & Training</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        {learningAccounts.map((account, i) => (
+          <CommunityCard
+            name={account.name}
+            image={account.image}
+            instagram={account.handle}
+            href={`https://instagram.com/${account.handle}`}
+            index={i}
+          />
+        ))}
+      </div>
+    </div>
+
+    <!-- Artists -->
+    <div class="mt-12" data-animate style="opacity: 0; transform: translateY(24px);">
+      <h2 class="font-heading text-2xl font-bold text-navy mb-6">Artists & Performers</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        {artistAccounts.map((account, i) => (
+          <CommunityCard
+            name={account.name}
+            instagram={account.handle}
+            href={`https://instagram.com/${account.handle}`}
+            index={i}
+          />
+        ))}
+      </div>
+    </div>
+
+    <!-- Community Spaces -->
+    <div class="mt-12" data-animate style="opacity: 0; transform: translateY(24px);">
+      <h2 class="font-heading text-2xl font-bold text-navy mb-6">Community & Events</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        {communityAccounts.map((account, i) => (
+          <CommunityCard
+            name={account.name}
+            instagram={account.handle}
+            href={`https://instagram.com/${account.handle}`}
+            index={i}
+          />
+        ))}
+      </div>
+    </div>
+
+    <!-- Video Moments -->
+    <div
+      class="mt-16"
+      data-animate
+      style="opacity: 0; transform: translateY(24px);"
+    >
+      <h2 class="font-heading text-2xl font-bold text-navy mb-2">
+        Video Moments
+      </h2>
+      <p class="text-sm text-navy/50 mb-6">
+        Clips from retreats and workshops around the world.
+      </p>
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+        {videoMoments.map((video) => (
+          <div class="relative rounded-xl overflow-hidden bg-navy/5 aspect-[9/16]">
+            <video
+              src={video.src}
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              class="w-full h-full object-cover"
+            />
+            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/50 to-transparent p-3">
+              <p class="text-xs text-white/80 font-medium">{video.label}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <!-- Resources -->
+    <div
+      class="mt-16"
+      data-animate
+      style="opacity: 0; transform: translateY(24px);"
+    >
+      <h2 class="font-heading text-2xl font-bold text-navy mb-6">
+        Training Resources
+      </h2>
+      <div class="space-y-4">
+        {resources.map((resource) => (
+          <a
+            href={resource.url}
+            target="_blank"
+            rel="noopener"
+            class="group block bg-white rounded-xl px-6 py-4 shadow-sm border border-navy/5
+                   hover:shadow-md hover:border-coral/20 transition-all"
+          >
+            <div class="flex items-center justify-between gap-4">
+              <div>
+                <p class="font-heading font-semibold text-navy group-hover:text-coral transition-colors">
+                  {resource.name}
+                </p>
+                <p class="mt-1 text-sm text-navy/50">{resource.description}</p>
+              </div>
+              <svg class="w-5 h-5 text-navy/20 group-hover:text-coral shrink-0 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+
+    <!-- Suggest -->
+    <div
+      class="mt-16 p-8 bg-navy/[0.03] rounded-2xl text-center"
+      data-animate
+      style="opacity: 0; transform: translateY(24px);"
+    >
+      <p class="text-navy/60">
+        Know an account or resource we should list?
+      </p>
+      <a
+        href="/contribute"
+        class="mt-3 inline-flex items-center gap-2 text-coral hover:text-coral-dark font-medium transition-colors"
+      >
+        Suggest it
+        <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  [data-animate].is-visible {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+</style>
