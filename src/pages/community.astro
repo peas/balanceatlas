@@ -4,38 +4,45 @@ import CommunityCard from '../components/CommunityCard.astro';
 import { getCollection } from 'astro:content';
 import { MEDIA_URL } from '../config';
 
+// Build unified people list from coaches + community accounts
 const allCoaches = await getCollection('coaches');
-const sortedCoaches = allCoaches.sort((a, b) => {
-  if (a.data.featured !== b.data.featured) return a.data.featured ? -1 : 1;
-  return a.data.name.localeCompare(b.data.name);
-});
+const allRetreats = await getCollection('retreats');
+const coachesWithRetreats = new Set(allRetreats.flatMap(r => r.data.coaches));
 
-// Instagram-only accounts (not in the coaches collection)
-const learningAccounts = [
-  { handle: 'gabosaturno', name: 'Gabo Saturno', image: `${MEDIA_URL}/images/community/gabo-saturno.webp` },
-  { handle: 'handstanddiary', name: 'Handstand Diary', image: `${MEDIA_URL}/images/community/handstand-diary.webp` },
-  { handle: 'gmbfitness', name: 'GMB Fitness', image: `${MEDIA_URL}/images/community/gmb-fitness.webp` },
-  { handle: 'sondre_berg', name: 'Berg Movement', image: `${MEDIA_URL}/images/community/berg-movement.webp` },
-  { handle: 'mission.e1', name: 'Mission E1', image: `${MEDIA_URL}/images/community/mission-e1.webp` },
+const coachPeople = allCoaches.map(c => ({
+  name: c.data.name,
+  image: c.data.photo ? `${MEDIA_URL}${c.data.photo}` : undefined,
+  instagram: c.data.instagram,
+  href: `/coaches/${c.id}`,
+  hasRetreats: coachesWithRetreats.has(c.id),
+}));
+
+const otherPeople = [
+  { name: 'Gabo Saturno', image: `${MEDIA_URL}/images/community/gabo-saturno.webp`, instagram: 'gabosaturno', href: 'https://instagram.com/gabosaturno' },
+  { name: 'Handstand Diary', image: `${MEDIA_URL}/images/community/handstand-diary.webp`, instagram: 'handstanddiary', href: 'https://instagram.com/handstanddiary' },
+  { name: 'GMB Fitness', image: `${MEDIA_URL}/images/community/gmb-fitness.webp`, instagram: 'gmbfitness', href: 'https://instagram.com/gmbfitness' },
+  { name: 'Berg Movement', image: `${MEDIA_URL}/images/community/berg-movement.webp`, instagram: 'sondre_berg', href: 'https://instagram.com/sondre_berg' },
+  { name: 'Stefanie Millinger', image: `${MEDIA_URL}/images/community/stefanie-millinger.webp`, instagram: 'stefaniemillinger', href: 'https://instagram.com/stefaniemillinger' },
+  { name: 'Sofie Dossi', image: `${MEDIA_URL}/images/community/sofie-dossi.webp`, instagram: 'sofie.dossi', href: 'https://instagram.com/sofie.dossi' },
+  { name: 'Olga Pikhienko', image: `${MEDIA_URL}/images/community/olga-pikhienko.webp`, instagram: 'olgaupsidedown', href: 'https://instagram.com/olgaupsidedown' },
+  { name: 'Gasya', image: `${MEDIA_URL}/images/community/gasya.webp`, instagram: 'gasya', href: 'https://instagram.com/gasya' },
+  { name: 'Yulya Mihailova', image: `${MEDIA_URL}/images/community/yulya-mihailova.webp`, instagram: 'djilieta', href: 'https://instagram.com/djilieta' },
+  { name: 'Anna Ivaseva', image: `${MEDIA_URL}/images/community/anna-ivaseva.webp`, instagram: 'anna_ivaseva', href: 'https://instagram.com/anna_ivaseva' },
+  { name: 'Anastasia Strizhanova', image: `${MEDIA_URL}/images/community/anastasia-strizhanova.webp`, instagram: 'anastasia.strizhanova', href: 'https://instagram.com/anastasia.strizhanova' },
+  { name: 'Mihaela Karkia', image: `${MEDIA_URL}/images/community/mihaela-karkia.webp`, instagram: 'mihaelaaureliakarkia', href: 'https://instagram.com/mihaelaaureliakarkia' },
+  { name: 'Pavel Stankevych', image: `${MEDIA_URL}/images/community/pavel-stankevych.webp`, instagram: 'pavel_stankevych', href: 'https://instagram.com/pavel_stankevych' },
+  { name: 'Valentin Chetverkin', image: `${MEDIA_URL}/images/community/valentin-chetverkin.webp`, instagram: 'valentin_chetverkin', href: 'https://instagram.com/valentin_chetverkin' },
+  { name: 'Paul Twyman', image: `${MEDIA_URL}/images/community/paul-twyman.webp`, instagram: 'pault8_upsidedown', href: 'https://instagram.com/pault8_upsidedown' },
 ];
 
-const artistAccounts = [
-  { handle: 'stefaniemillinger', name: 'Stefanie Millinger', image: `${MEDIA_URL}/images/community/stefanie-millinger.webp` },
-  { handle: 'sofie.dossi', name: 'Sofie Dossi', image: `${MEDIA_URL}/images/community/sofie-dossi.webp` },
-  { handle: 'olgaupsidedown', name: 'Olga Pikhienko', image: `${MEDIA_URL}/images/community/olga-pikhienko.webp` },
-  { handle: 'gasya', name: 'Gasya', image: `${MEDIA_URL}/images/community/gasya.webp` },
-  { handle: 'djilieta', name: 'Yulya Mihailova', image: `${MEDIA_URL}/images/community/yulya-mihailova.webp` },
-  { handle: 'anna_ivaseva', name: 'Anna Ivaseva', image: `${MEDIA_URL}/images/community/anna-ivaseva.webp` },
-  { handle: 'anastasia.strizhanova', name: 'Anastasia Strizhanova', image: `${MEDIA_URL}/images/community/anastasia-strizhanova.webp` },
-  { handle: 'mihaelaaureliakarkia', name: 'Mihaela Karkia', image: `${MEDIA_URL}/images/community/mihaela-karkia.webp` },
-  { handle: 'pavel_stankevych', name: 'Pavel Stankevych', image: `${MEDIA_URL}/images/community/pavel-stankevych.webp` },
-  { handle: 'valentin_chetverkin', name: 'Valentin Chetverkin', image: `${MEDIA_URL}/images/community/valentin-chetverkin.webp` },
-  { handle: 'pault8_upsidedown', name: 'Paul Twyman', image: `${MEDIA_URL}/images/community/paul-twyman.webp` },
-];
+const allPeople = [...coachPeople, ...otherPeople]
+  .sort((a, b) => a.name.localeCompare(b.name));
 
-const communityAccounts = [
-  { handle: 'handstand_extravaganza', name: 'Handstand Extravaganza' },
-  { handle: 'handstandfactory', name: 'Handstand Factory' },
+// Places & Events (orgs, not individual people)
+const placesAndEvents = [
+  { name: 'Handstand Extravaganza', instagram: 'handstand_extravaganza', href: 'https://instagram.com/handstand_extravaganza' },
+  { name: 'Handstand Factory', instagram: 'handstandfactory', href: 'https://instagram.com/handstandfactory' },
+  { name: 'Mission E1', image: `${MEDIA_URL}/images/community/mission-e1.webp`, instagram: 'mission.e1', href: 'https://instagram.com/mission.e1' },
 ];
 
 const resources = [
@@ -76,7 +83,7 @@ const videoMoments = [
 ];
 ---
 
-<BaseLayout title="Community" description="Coaches, artists, resources, and videos from the global handstand community.">
+<BaseLayout title="Community" description="People, places, and resources from the global handstand community.">
   <div class="max-w-5xl mx-auto px-6 py-16">
     <h1
       class="font-heading text-4xl md:text-5xl font-bold text-navy"
@@ -91,67 +98,36 @@ const videoMoments = [
       data-animate-delay="100"
       style="opacity: 0; transform: translateY(24px);"
     >
-      Coaches, artists, learning resources, and videos from the handstand world.
+      People, places, and resources from the handstand world.
     </p>
 
-    <!-- Coaches (from content collection) -->
+    <!-- People We Love Learning From -->
     <div class="mt-14" data-animate style="opacity: 0; transform: translateY(24px);">
-      <h2 class="font-heading text-2xl font-bold text-navy mb-6">Coaches</h2>
+      <h2 class="font-heading text-2xl font-bold text-navy mb-6">People We Love Learning From</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-        {sortedCoaches.map((coach, i) => (
+        {allPeople.map((person, i) => (
           <CommunityCard
-            name={coach.data.name}
-            image={coach.data.photo ? `${MEDIA_URL}${coach.data.photo}` : undefined}
-            location={`${coach.data.location.city}, ${coach.data.location.country}`}
-            instagram={coach.data.instagram}
-            href={`/coaches/${coach.id}`}
-            badge={coach.data.featured ? 'Featured' : undefined}
+            name={person.name}
+            image={person.image}
+            instagram={person.instagram}
+            href={person.href}
+            hasRetreats={'hasRetreats' in person && person.hasRetreats}
             index={i}
           />
         ))}
       </div>
     </div>
 
-    <!-- Learning & Training -->
+    <!-- Places & Events -->
     <div class="mt-12" data-animate style="opacity: 0; transform: translateY(24px);">
-      <h2 class="font-heading text-2xl font-bold text-navy mb-6">Learning & Training</h2>
+      <h2 class="font-heading text-2xl font-bold text-navy mb-6">Places & Events</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-        {learningAccounts.map((account, i) => (
+        {placesAndEvents.map((place, i) => (
           <CommunityCard
-            name={account.name}
-            image={account.image}
-            instagram={account.handle}
-            href={`https://instagram.com/${account.handle}`}
-            index={i}
-          />
-        ))}
-      </div>
-    </div>
-
-    <!-- Artists -->
-    <div class="mt-12" data-animate style="opacity: 0; transform: translateY(24px);">
-      <h2 class="font-heading text-2xl font-bold text-navy mb-6">Artists & Performers</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-        {artistAccounts.map((account, i) => (
-          <CommunityCard
-            name={account.name}
-            instagram={account.handle}
-            href={`https://instagram.com/${account.handle}`}
-            index={i}
-          />
-        ))}
-      </div>
-    </div>
-
-    <!-- Community Spaces -->
-    <div class="mt-12" data-animate style="opacity: 0; transform: translateY(24px);">
-      <h2 class="font-heading text-2xl font-bold text-navy mb-6">Community & Events</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-        {communityAccounts.map((account, i) => (
-          <CommunityCard
-            name={account.name}
-            instagram={account.handle}
-            href={`https://instagram.com/${account.handle}`}
+            name={place.name}
+            image={place.image}
+            instagram={place.instagram}
+            href={place.href}
             index={i}
           />
         ))}

@@ -1,436 +1,103 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import RetreatCard from '../components/RetreatCard.astro';
-import CoachCard from '../components/CoachCard.astro';
-import { getCollection } from 'astro:content';
-import { MEDIA_URL } from '../config';
-
-const allRetreats = await getCollection('retreats');
-const upcoming = allRetreats
-  .filter((r) => r.data.status === 'upcoming')
-  .sort((a, b) => a.data.dateStart.getTime() - b.data.dateStart.getTime());
-
-const allCoaches = await getCollection('coaches');
-const featured = allCoaches
-  .filter((c) => c.data.featured)
-  .sort((a, b) => a.data.name.localeCompare(b.data.name));
-
-// Photo gallery — bento grid mixing photos from all past events
-const th = `${MEDIA_URL}/images/retreats/thailand-2026`;
-const gr = `${MEDIA_URL}/images/retreats/greece-2025`;
-const sp = `${MEDIA_URL}/images/retreats/saopaulo-2024`;
-const galleryPhotos: { src: string; alt: string; span?: string }[] = [
-  { src: `${th}/38.webp`, alt: 'Thailand 2026', span: 'large' },
-  { src: `${gr}/01.webp`, alt: 'Greece 2025', span: 'tall' },
-  { src: `${sp}/35.webp`, alt: 'São Paulo 2024' },
-  { src: `${th}/28.webp`, alt: 'Thailand 2026' },
-  { src: `${sp}/95.webp`, alt: 'São Paulo 2024', span: 'wide' },
-  { src: `${gr}/10.webp`, alt: 'Greece 2025' },
-  { src: `${th}/11.webp`, alt: 'Thailand 2026', span: 'tall' },
-  { src: `${sp}/100.webp`, alt: 'São Paulo 2024', span: 'wide' },
-  { src: `${gr}/05.webp`, alt: 'Greece 2025' },
-  { src: `${th}/14.webp`, alt: 'Thailand 2026' },
-  { src: `${sp}/55.webp`, alt: 'São Paulo 2024', span: 'tall' },
-  { src: `${gr}/19.webp`, alt: 'Greece 2025', span: 'wide' },
-  { src: `${th}/57.webp`, alt: 'Thailand 2026' },
-  { src: `${sp}/45.webp`, alt: 'São Paulo 2024' },
-  { src: `${th}/53.webp`, alt: 'Thailand 2026', span: 'wide' },
-  { src: `${gr}/15.webp`, alt: 'Greece 2025' },
-  { src: `${sp}/50.webp`, alt: 'São Paulo 2024', span: 'tall' },
-  { src: `${th}/55.webp`, alt: 'Thailand 2026' },
-];
-
-// Horizontal carousel — more photos from all events
-const carouselPhotos: { src: string; alt: string }[] = [
-  { src: `${th}/12.webp`, alt: 'Thailand 2026' },
-  { src: `${gr}/02.webp`, alt: 'Greece 2025' },
-  { src: `${sp}/40.webp`, alt: 'São Paulo 2024' },
-  { src: `${th}/30.webp`, alt: 'Thailand 2026' },
-  { src: `${sp}/60.webp`, alt: 'São Paulo 2024' },
-  { src: `${gr}/07.webp`, alt: 'Greece 2025' },
-  { src: `${th}/36.webp`, alt: 'Thailand 2026' },
-  { src: `${sp}/85.webp`, alt: 'São Paulo 2024' },
-  { src: `${th}/49.webp`, alt: 'Thailand 2026' },
-  { src: `${gr}/12.webp`, alt: 'Greece 2025' },
-  { src: `${sp}/40.webp`, alt: 'São Paulo 2024' },
-  { src: `${th}/54.webp`, alt: 'Thailand 2026' },
-  { src: `${sp}/65.webp`, alt: 'São Paulo 2024' },
-  { src: `${gr}/16.webp`, alt: 'Greece 2025' },
-  { src: `${th}/39.webp`, alt: 'Thailand 2026' },
-  { src: `${sp}/70.webp`, alt: 'São Paulo 2024' },
-  { src: `${th}/44.webp`, alt: 'Thailand 2026' },
-  { src: `${sp}/90.webp`, alt: 'São Paulo 2024' },
-  { src: `${gr}/08.webp`, alt: 'Greece 2025' },
-  { src: `${sp}/70.webp`, alt: 'São Paulo 2024' },
-];
-
-// Short videos (≤20s) from past retreats — interleaved across events
-const vsp = `${MEDIA_URL}/videos/retreats/saopaulo-2024`;
-const vth = `${MEDIA_URL}/videos/retreats/thailand-2026`;
-const vgr = `${MEDIA_URL}/videos/retreats/greece-2025`;
-const shortVideos: { src: string; poster?: string }[] = [
-  { src: `${vsp}/04.mp4`, poster: `${sp}/105.webp` },   // 8s  — SP one-arm by pool
-  { src: `${vth}/10.mp4`, poster: `${th}/42.webp` },     // 7s  — Thailand
-  { src: `${vgr}/07.mp4`, poster: `${gr}/20.webp` },     // 17s — Greece
-  { src: `${vsp}/01.mp4`, poster: `${sp}/102.webp` },    // 13s — SP poolside handstand
-  { src: `${vth}/05.mp4`, poster: `${th}/38.webp` },     // 8s  — Thailand
-  { src: `${vsp}/03.mp4`, poster: `${sp}/103.webp` },    // 21s — SP trio
-  { src: `${vgr}/04.mp4`, poster: `${gr}/04.webp` },     // 19s — Greece
-  { src: `${vth}/07.mp4`, poster: `${th}/53.webp` },     // 11s — Thailand
-  { src: `${vsp}/05.mp4`, poster: `${sp}/106.webp` },    // 27s — SP straddle
-  { src: `${vth}/04.mp4`, poster: `${th}/55.webp` },     // 14s — Thailand
-  { src: `${vgr}/01.mp4`, poster: `${gr}/10.webp` },     // 21s — Greece
-];
+// Coming Soon — temporary landing page
+// To restore the full site, revert this commit
 ---
 
-<BaseLayout title="Home">
-  <!-- Hero -->
-  <section class="relative min-h-[85vh] flex items-center overflow-hidden">
-    <!-- Layered background: gradient + grain texture -->
-    <div class="absolute inset-0 bg-gradient-to-br from-sand via-sand-dark/30 to-coral/8" />
-    <div class="absolute inset-0 opacity-[0.035]" style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%270 0 256 256%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cfilter id=%27n%27%3E%3CfeTurbulence type=%27fractalNoise%27 baseFrequency=%270.9%27 numOctaves=%274%27 stitchTiles=%27stitch%27/%3E%3C/filter%3E%3Crect width=%27100%25%27 height=%27100%25%27 filter=%27url(%23n)%27/%3E%3C/svg%3E');" />
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Balance Atlas is coming soon. A community-driven directory for hand balancers worldwide." />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Sora:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Balance Atlas — Coming Soon</title>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
 
-    <div class="relative max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-[1fr_auto] gap-12 items-center">
-      <!-- Text -->
-      <div>
-        <p
-          class="text-sm font-medium uppercase tracking-widest text-coral/70 mb-5"
-          data-animate
-          style="opacity: 0; transform: translateY(24px);"
-        >
-          Find your line!
-        </p>
-        <h1
-          class="font-heading text-5xl md:text-6xl lg:text-7xl font-bold text-navy max-w-3xl leading-[1.08]"
-          data-animate
-          data-animate-delay="100"
-          style="opacity: 0; transform: translateY(24px);"
-        >
-          Community, workshops,
-          <span class="text-coral">retreats</span>
-          and info for hand balancers
-        </h1>
-        <p
-          class="mt-6 text-lg md:text-xl text-navy/45 max-w-lg leading-relaxed"
-          data-animate
-          data-animate-delay="200"
-          style="opacity: 0; transform: translateY(24px);"
-        >
-          Built by the community, for everyone who got into this odd niche.
-        </p>
-        <div
-          class="mt-10 flex flex-wrap gap-4"
-          data-animate
-          data-animate-delay="300"
-          style="opacity: 0; transform: translateY(24px);"
-        >
-          <a
-            href="/retreats"
-            class="inline-flex items-center gap-2 bg-coral hover:bg-coral-dark text-white font-medium px-7 py-3.5 rounded-full transition-all duration-300"
-          >
-            Browse retreats
-            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-            </svg>
-          </a>
-          <a
-            href="/community"
-            class="inline-flex items-center gap-2 bg-white/80 hover:bg-white text-navy font-medium px-7 py-3.5 rounded-full border border-navy/10 transition-all duration-300"
-          >
-            See the community
-          </a>
-        </div>
-      </div>
+      body {
+        min-height: 100dvh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'DM Sans', system-ui, sans-serif;
+        background: #FFF8F0;
+        color: #1B2A4A;
+        overflow: hidden;
+      }
 
-      <!-- Photo bento — small asymmetric grid -->
-      <div
-        class="hidden lg:grid grid-cols-2 grid-rows-2 gap-2.5 w-[380px] h-[420px]"
-        data-animate
-        data-animate-delay="250"
-        style="opacity: 0; transform: translateY(24px);"
-      >
-        <div class="col-span-2 rounded-2xl overflow-hidden shadow-xl shadow-navy/10">
-          <img src={`${sp}/103.webp`} alt="Handstands by the pool — São Paulo" class="w-full h-full object-cover" />
-        </div>
-        <div class="rounded-2xl overflow-hidden shadow-lg shadow-navy/10">
-          <img src={`${th}/47.webp`} alt="Training session — Thailand" class="w-full h-full object-cover" />
-        </div>
-        <div class="rounded-2xl overflow-hidden shadow-lg shadow-navy/10">
-          <img src={`${sp}/106.webp`} alt="Straddle handstand — São Paulo" class="w-full h-full object-cover" />
-        </div>
-      </div>
+      .container {
+        text-align: center;
+        padding: 2rem;
+        max-width: 480px;
+      }
+
+      .logo {
+        font-family: 'Sora', system-ui, sans-serif;
+        font-weight: 700;
+        font-size: clamp(2rem, 6vw, 3rem);
+        letter-spacing: -0.02em;
+        line-height: 1.1;
+        margin-bottom: 1.5rem;
+      }
+
+      .logo span {
+        color: #FF6B4A;
+      }
+
+      .tagline {
+        font-size: 1.125rem;
+        color: #1B2A4A99;
+        line-height: 1.6;
+        margin-bottom: 0.5rem;
+      }
+
+      .dot {
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        background: #FF6B4A;
+        border-radius: 50%;
+        margin: 2rem auto 0;
+        animation: pulse 2s ease-in-out infinite;
+      }
+
+      @keyframes pulse {
+        0%, 100% { opacity: 0.3; transform: scale(1); }
+        50% { opacity: 1; transform: scale(1.5); }
+      }
+
+      /* Subtle background circles */
+      body::before,
+      body::after {
+        content: '';
+        position: fixed;
+        border-radius: 50%;
+        opacity: 0.06;
+        pointer-events: none;
+      }
+      body::before {
+        width: 600px; height: 600px;
+        background: #FF6B4A;
+        top: -200px; right: -150px;
+      }
+      body::after {
+        width: 400px; height: 400px;
+        background: #2DD4BF;
+        bottom: -100px; left: -100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="logo">Balance <span>Atlas</span></h1>
+      <p class="tagline">Coming soon.</p>
+      <div class="dot"></div>
     </div>
-  </section>
-
-  <!-- Upcoming Retreats -->
-  {upcoming.length > 0 && (
-    <section class="max-w-7xl mx-auto px-6 py-20">
-      <div class="flex items-end justify-between mb-10">
-        <div>
-          <h2
-            class="font-heading text-3xl md:text-4xl font-bold text-navy"
-            data-animate
-            style="opacity: 0; transform: translateY(24px);"
-          >
-            Coming Up
-          </h2>
-          <p
-            class="mt-3 text-lg text-navy/50 max-w-2xl"
-            data-animate
-            data-animate-delay="100"
-            style="opacity: 0; transform: translateY(24px);"
-          >
-            Upcoming retreats and workshops.
-          </p>
-        </div>
-        <a
-          href="/retreats"
-          class="hidden md:inline-flex items-center gap-1 text-sm font-medium text-coral hover:text-coral-dark transition-colors shrink-0"
-          data-animate
-          style="opacity: 0; transform: translateY(24px);"
-        >
-          All retreats
-          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-          </svg>
-        </a>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {upcoming.map((retreat, i) => (
-          <RetreatCard
-            title={retreat.data.title}
-            slug={retreat.id}
-            status={retreat.data.status}
-            coaches={retreat.data.coaches}
-            city={retreat.data.location.city}
-            country={retreat.data.location.country}
-            venue={retreat.data.location.venue}
-            dateStart={retreat.data.dateStart}
-            dateEnd={retreat.data.dateEnd}
-            level={retreat.data.level}
-            type={retreat.data.type}
-            heroImage={retreat.data.heroImage ? `${MEDIA_URL}${retreat.data.heroImage}` : undefined}
-            description={retreat.data.description}
-            index={i}
-          />
-        ))}
-      </div>
-      <div class="mt-8 md:hidden">
-        <a href="/retreats" class="inline-flex items-center gap-1 text-sm font-medium text-coral">
-          All retreats
-          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-          </svg>
-        </a>
-      </div>
-    </section>
-  )}
-
-  <!-- Community Highlights -->
-  {featured.length > 0 && (
-    <section class="bg-navy/[0.03] py-20">
-      <div class="max-w-7xl mx-auto px-6">
-        <div class="flex items-end justify-between mb-10">
-          <div>
-            <h2
-              class="font-heading text-3xl md:text-4xl font-bold text-navy"
-              data-animate
-              style="opacity: 0; transform: translateY(24px);"
-            >
-              Community Highlights
-            </h2>
-            <p
-              class="mt-3 text-lg text-navy/50 max-w-2xl"
-              data-animate
-              data-animate-delay="100"
-              style="opacity: 0; transform: translateY(24px);"
-            >
-              Coaches from around the world.
-            </p>
-          </div>
-          <a
-            href="/community"
-            class="hidden md:inline-flex items-center gap-1 text-sm font-medium text-coral hover:text-coral-dark transition-colors shrink-0"
-            data-animate
-            style="opacity: 0; transform: translateY(24px);"
-          >
-            See the community
-            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-            </svg>
-          </a>
-        </div>
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
-          {featured.map((coach, i) => (
-            <CoachCard
-              name={coach.data.name}
-              slug={coach.id}
-              photo={coach.data.photo ? `${MEDIA_URL}${coach.data.photo}` : undefined}
-              city={coach.data.location.city}
-              country={coach.data.location.country}
-              instagram={coach.data.instagram}
-              featured={coach.data.featured}
-              index={i}
-            />
-          ))}
-        </div>
-        <div class="mt-8 md:hidden">
-          <a href="/community" class="inline-flex items-center gap-1 text-sm font-medium text-coral">
-            See the community
-            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-            </svg>
-          </a>
-        </div>
-      </div>
-    </section>
-  )}
-
-  <!-- Photo Gallery — appears when photos are populated -->
-  {galleryPhotos.length > 0 && (
-    <section class="py-20">
-      <div class="max-w-7xl mx-auto px-6">
-        <div class="text-center mb-10">
-          <h2
-            class="font-heading text-3xl md:text-4xl font-bold text-navy"
-            data-animate
-            style="opacity: 0; transform: translateY(24px);"
-          >
-            The Handstand Life
-          </h2>
-          <p
-            class="mt-3 text-lg text-navy/50 max-w-2xl mx-auto"
-            data-animate
-            data-animate-delay="100"
-            style="opacity: 0; transform: translateY(24px);"
-          >
-            Snapshots from retreats around the world.
-          </p>
-        </div>
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 auto-rows-[200px] md:auto-rows-[250px]">
-          {galleryPhotos.map((photo, i) => (
-            <div
-              class:list={[
-                'relative rounded-xl overflow-hidden group cursor-pointer',
-                photo.span === 'tall' && 'row-span-2',
-                photo.span === 'wide' && 'col-span-2',
-                photo.span === 'large' && 'col-span-2 row-span-2',
-              ]}
-              data-animate
-              data-animate-delay={String(Math.min(i * 60, 600))}
-              style="opacity: 0; transform: translateY(24px);"
-            >
-              <img
-                src={photo.src}
-                alt={photo.alt}
-                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                loading="lazy"
-              />
-              <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300" />
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  )}
-
-  <!-- Short Videos — autoplay muted clips from retreats -->
-  {shortVideos.length > 0 && (
-    <section class="py-12">
-      <div class="max-w-7xl mx-auto px-6">
-        <h3
-          class="font-heading text-2xl font-bold text-navy mb-6"
-          data-animate
-          style="opacity: 0; transform: translateY(24px);"
-        >
-          Moments
-        </h3>
-        <div class="flex gap-4 overflow-x-auto snap-x snap-mandatory pb-4 scrollbar-hide">
-          {shortVideos.map((video) => (
-            <div class="flex-none w-52 md:w-60 rounded-2xl overflow-hidden aspect-[9/16] bg-navy/5 snap-center">
-              <video
-                src={video.src}
-                poster={video.poster}
-                autoplay
-                muted
-                loop
-                playsinline
-                class="w-full h-full object-cover"
-              />
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  )}
-
-  <!-- Photo Carousel — horizontal scroll with more photos -->
-  {carouselPhotos.length > 0 && (
-    <section class="py-12 overflow-hidden">
-      <div class="max-w-7xl mx-auto px-6 mb-6">
-        <h3
-          class="font-heading text-2xl font-bold text-navy"
-          data-animate
-          style="opacity: 0; transform: translateY(24px);"
-        >
-          More from the community
-        </h3>
-      </div>
-      <div class="flex gap-4 overflow-x-auto snap-x snap-mandatory px-6 pb-4 scrollbar-hide">
-        {carouselPhotos.map((photo) => (
-          <div class="flex-none w-72 md:w-80 aspect-[4/3] rounded-xl overflow-hidden snap-center group">
-            <img
-              src={photo.src}
-              alt={photo.alt}
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              loading="lazy"
-            />
-          </div>
-        ))}
-      </div>
-    </section>
-  )}
-
-  <!-- CTA -->
-  <section class="py-20">
-    <div class="max-w-3xl mx-auto px-6 text-center">
-      <div
-        class="bg-gradient-to-br from-coral/10 to-teal/10 rounded-3xl px-8 py-16"
-        data-animate
-        style="opacity: 0; transform: translateY(24px);"
-      >
-        <h2 class="font-heading text-3xl md:text-4xl font-bold text-navy">
-          Know something we're missing?
-        </h2>
-        <p class="mt-4 text-lg text-navy/50 max-w-md mx-auto">
-          This directory grows with community contributions. Add a retreat, coach, or training spot.
-        </p>
-        <a
-          href="/contribute"
-          class="mt-8 inline-flex items-center gap-2 bg-navy hover:bg-navy-light text-white font-medium px-7 py-3.5 rounded-full transition-all duration-300"
-        >
-          How to contribute
-          <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-          </svg>
-        </a>
-      </div>
-    </div>
-  </section>
-</BaseLayout>
-
-<style>
-  [data-animate].is-visible {
-    opacity: 1 !important;
-    transform: translateY(0) !important;
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  }
-
-  .scrollbar-hide {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-  .scrollbar-hide::-webkit-scrollbar {
-    display: none;
-  }
-</style>
+  </body>
+</html>

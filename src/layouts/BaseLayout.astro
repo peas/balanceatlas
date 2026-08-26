@@ -24,6 +24,15 @@ const fullTitle = title === 'Home'
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- Coming soon: redirect all pages to home -->
+    <meta http-equiv="refresh" content="0;url=/" />
+    <title>Redirecting...</title>
+  </head>
+  <body></body>
+</html>
+<!-- Original layout below — uncomment (and remove redirect above) to restore the site
+  <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
     <meta property="og:title" content={fullTitle} />
@@ -49,4 +58,4 @@ const fullTitle = title === 'Home'
       import '../scripts/animations.ts';
     </script>
   </body>
-</html>
+-->

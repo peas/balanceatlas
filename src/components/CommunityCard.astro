@@ -5,11 +5,11 @@ interface Props {
   location?: string;
   instagram?: string;
   href: string;
-  badge?: string;
+  hasRetreats?: boolean;
   index?: number;
 }
 
-const { name, image, location, instagram, href, badge, index = 0 } = Astro.props;
+const { name, image, location, instagram, href, hasRetreats, index = 0 } = Astro.props;
 const isExternal = href.startsWith('http');
 ---
 
@@ -43,9 +43,9 @@ const isExternal = href.startsWith('http');
       <p class="font-heading font-semibold text-sm text-navy group-hover:text-coral transition-colors truncate">
         {name}
       </p>
-      {badge && (
-        <span class="shrink-0 text-[10px] font-bold uppercase tracking-wider bg-teal/15 text-teal-dark px-2 py-0.5 rounded-full">
-          {badge}
+      {hasRetreats && (
+        <span class="shrink-0 text-[10px] font-medium tracking-wide bg-teal/10 text-teal-dark px-2 py-0.5 rounded-full">
+          Retreats & Workshops
         </span>
       )}
     </div>
