@@ -2,7 +2,7 @@
 const currentPath = Astro.url.pathname;
 
 const links = [
-  { href: '/', label: 'Home' },
+  { href: '/principal', label: 'Home' },
   { href: '/community', label: 'Community' },
   { href: '/retreats', label: 'Retreats' },
   { href: '/handstand-life', label: 'Handstand Life' },
@@ -15,7 +15,7 @@ const isCoachesPath = currentPath.startsWith('/coaches');
 
 <nav class="fixed top-0 left-0 right-0 z-50 bg-sand/80 backdrop-blur-lg border-b border-navy/5">
   <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-    <a href="/" class="flex items-center gap-2 group">
+    <a href="/principal" class="flex items-center gap-2 group">
       <span class="text-2xl rotate-180 inline-block group-hover:scale-110 transition-transform">🤸</span>
       <span class="font-heading font-bold text-xl text-navy tracking-tight">
         Balance Atlas
