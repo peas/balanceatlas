@@ -185,11 +185,11 @@ export const Hero = () => (
 // Teacher card: B&W straddle, orange wipe in, name letters rising.
 export const TEACHER_FRAMES = 210;
 
-const Letters = ({ text, delay }: { text: string; delay: number }) => {
+const Letters = ({ text, delay, size = 132, color = ORANGE }: { text: string; delay: number; size?: number; color?: string }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   return (
-    <div style={{ display: 'flex', fontFamily: DISPLAY, fontSize: 132, lineHeight: 0.9, color: ORANGE, textTransform: 'uppercase' }}>
+    <div style={{ display: 'flex', fontFamily: DISPLAY, fontSize: size, lineHeight: 0.9, color, textTransform: 'uppercase', whiteSpace: 'pre' }}>
       {[...text].map((ch, i) => {
         const e = spring({ frame: frame - delay - i * 3, fps, config: { damping: 13, mass: 0.5 } });
         return (
@@ -214,6 +214,65 @@ export const Teacher = () => {
         <Letters text="Agustin" delay={18} />
       </div>
       <Triangle dur={TEACHER_FRAMES} side="right" />
+      <Grain />
+    </AbsoluteFill>
+  );
+};
+
+// Story-format poster for each invited teacher (after the Rosario festival stories):
+// photo with slow zoom and grade, name rising letter by letter, handle chip, a spinning shape, grain.
+export const POSTER_W = 540;
+export const POSTER_H = 960;
+export const POSTER_FRAMES = 180;
+
+export type PosterProps = {
+  img?: string; // no photo yet: big burst instead
+  first: string;
+  last: string;
+  handle: string;
+  shape: 'tri' | 'disc' | 'burst';
+  focus?: string; // object-position of the photo
+};
+
+const Shape = ({ shape }: { shape: PosterProps['shape'] }) => {
+  const frame = useCurrentFrame();
+  const e = useEnter(8, 11);
+  const base: CSSProperties = { position: 'absolute', background: ORANGE, transform: `scale(${e}) rotate(${frame * 0.6}deg)` };
+  if (shape === 'disc') return <div style={{ ...base, width: 150, height: 150, borderRadius: '50%', right: -40, top: 250, transform: `scale(${e})`, background: '#fff' }} />;
+  if (shape === 'burst')
+    return (
+      <div style={{ ...base, width: 170, height: 170, left: -30, top: 230, clipPath: 'polygon(50% 0,61% 33%,96% 21%,70% 46%,100% 64%,64% 66%,69% 100%,50% 72%,31% 100%,36% 66%,0 64%,30% 46%,4% 21%,39% 33%)' }} />
+    );
+  return <div style={{ ...base, width: 150, height: 150, right: 30, top: 260, clipPath: 'polygon(0 0,100% 0,50% 100%)', transform: `scale(${e}) rotate(${Math.sin(frame / 20) * 6}deg)` }} />;
+};
+
+export const Poster = ({ img, first, last, handle, shape, focus = 'center' }: PosterProps) => {
+  const frame = useCurrentFrame();
+  const reveal = interpolate(frame, [0, 16], [100, 0], { extrapolateRight: 'clamp' });
+  const zoom = interpolate(frame, [0, POSTER_FRAMES], [1.12, 1]);
+  const out = interpolate(frame, [POSTER_FRAMES - 14, POSTER_FRAMES], [1, 0], { extrapolateLeft: 'clamp' });
+  return (
+    <AbsoluteFill style={{ background: '#8a8986', overflow: 'hidden' }}>
+      <AbsoluteFill style={{ clipPath: `inset(${reveal}% 0 0 0)` }}>
+        {img ? (
+        <img
+          src={img}
+          style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: focus, transform: `scale(${zoom})`, filter: 'contrast(1.1) saturate(.8) sepia(.12)' }}
+        />
+        ) : (
+          <div style={{ position: 'absolute', left: '50%', top: '58%', width: 420, height: 420, marginLeft: -210, marginTop: -210, background: ORANGE, transform: `rotate(${frame * 0.4}deg) scale(${zoom})`, clipPath: 'polygon(50% 0,61% 33%,96% 21%,70% 46%,100% 64%,64% 66%,69% 100%,50% 72%,31% 100%,36% 66%,0 64%,30% 46%,4% 21%,39% 33%)' }} />
+        )}
+        <AbsoluteFill style={{ background: 'linear-gradient(180deg, rgba(0,0,0,.55) 0%, rgba(0,0,0,0) 38%, rgba(0,0,0,0) 70%, rgba(0,0,0,.5) 100%)' }} />
+      </AbsoluteFill>
+      {img && <Shape shape={shape} />}
+      <div style={{ position: 'absolute', left: 28, top: 70, opacity: out }}>
+        <Letters text={first} delay={10} size={104} />
+        <Letters text={last} delay={18} size={104} color="#fff" />
+      </div>
+      {handle && <Chip text={handle} delay={26} style={{ left: 28, top: 30, fontSize: 24, opacity: out }} />}
+      <div style={{ position: 'absolute', left: 28, bottom: 34, color: '#fff', fontFamily: DISPLAY, fontSize: 26, letterSpacing: 1, textTransform: 'uppercase', opacity: out }}>
+        1º HandstandFest · São Paulo · mar 2027
+      </div>
       <Grain />
     </AbsoluteFill>
   );

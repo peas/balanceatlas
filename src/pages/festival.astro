@@ -4,6 +4,7 @@
 // Festival media lives in public/festival/ (no R2 token for media-handstand on this machine yet);
 // retreat photos come straight from R2. Hero and teacher are Remotion compositions (src/festival/).
 import FestPlayer from '../festival/FestPlayer';
+import type { PosterProps } from '../festival/compositions';
 
 const R2 ='https://media.balanceatlas.com/images/retreats';
 const SIGNUP = 'mailto:paulo.silveira@gmail.com?subject=Quero%20ir%20ao%201%C2%BA%20HandstandFest';
@@ -68,6 +69,28 @@ const community: { src: string; alt: string; video?: string; span?: 'wide' | 'ta
   { src: `${R2}/thailand-2026/56.webp`, alt: 'Koh Phangan, 2026', span: 'tall' },
   { src: '/festival/posters/thailand-2026-09.webp', video: `${R2V}/thailand-2026/09.mp4`, alt: 'Koh Phangan, 2026', span: 'tall' },
   { src: `${R2}/saopaulo-2024/97.webp`, alt: 'São Paulo, 2024', span: 'wide' },
+];
+
+// Invited teachers. Bios are quoted from their Instagram profiles (checked 28/10/2026), never written by us.
+const lineup: { poster: PosterProps; url?: string; quote?: string; source?: string; where: string }[] = [
+  {
+    poster: { img: '/festival/teacher-rocio.webp', first: 'Rocío', last: '', handle: '@unapotaloka', shape: 'disc', focus: '50% 30%' },
+    url: 'https://www.instagram.com/unapotaloka/',
+    quote: 'Handstand performer · Escola Nacional de Circo 25/27 · Río de Janeiro',
+    source: 'https://www.instagram.com/unapotaloka/',
+    where: 'Rio de Janeiro',
+  },
+  {
+    poster: { img: '/festival/teacher-lou.webp', first: 'Louisse', last: 'Aldrigues', handle: '@lou.handstand', shape: 'tri', focus: '50% 40%' },
+    url: 'https://www.instagram.com/lou.handstand/',
+    quote: 'Estudos do equilíbrio · Parada de mão · Treinamento consciente · Aulas online · Artista circense',
+    source: 'https://www.instagram.com/lou.handstand/',
+    where: 'Aulas presenciais e online',
+  },
+  {
+    poster: { first: 'Dany', last: 'Garcia', handle: '', shape: 'burst' },
+    where: 'Foto e perfil em breve',
+  },
 ];
 
 const facts = ['5 dias', '3 salas', 'Básico e intermediário', 'Vila Madalena', 'Handstand', 'Parada de mão'];
@@ -148,11 +171,24 @@ const facts = ['5 dias', '3 salas', 'Básico e intermediário', 'Vila Madalena',
             <li>Handstand</li><li>Acompanhamento 1:1</li><li>Acroyoga</li><li>Portês acrobáticos</li>
           </ul>
           <p class="source">Áreas segundo o perfil dele no <a href="https://www.instagram.com/agustin_melesi/" target="_blank" rel="noopener">Instagram</a>.</p>
-          <div class="more">
-            <span class="more-card">?</span><span class="more-card">?</span><span class="more-card">?</span>
-            <p>Mais professores em breve.</p>
-          </div>
         </div>
+      </div>
+      <div class="wrap lineup">
+        <h3 class="lineup-title" data-reveal>Também na escalação</h3>
+        <div class="lineup-grid">
+          {lineup.map((t) => (
+            <article class="story-card" data-reveal>
+              <div class="story">
+                {t.poster.img && <img src={t.poster.img} alt={`${t.poster.first} ${t.poster.last}`} loading="lazy" style={`object-position: ${t.poster.focus ?? 'center'}`} />}
+                <FestPlayer client:visible comp="poster" props={t.poster} />
+              </div>
+              {t.url ? <a class="chip" href={t.url} target="_blank" rel="noopener">{t.poster.handle}</a> : <span class="chip">{t.poster.first} {t.poster.last}</span>}
+              {t.quote && <blockquote>“{t.quote}”</blockquote>}
+              <p class="source">{t.where}{t.quote && <> · <a href={t.source} target="_blank" rel="noopener">fonte</a></>}</p>
+            </article>
+          ))}
+        </div>
+        <p class="lineup-more" data-reveal>Mais nomes em breve.</p>
       </div>
     </section>
 
@@ -383,9 +419,15 @@ const facts = ['5 dias', '3 salas', 'Básico e intermediário', 'Vila Madalena',
   .tags { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
   .tags li { border: 2px solid var(--white); border-radius: 999px; padding: 4px 14px; font-weight: 500; }
   .teacher .source { margin-top: 12px; }
-  .more { display: flex; align-items: center; gap: 10px; margin-top: 40px; flex-wrap: wrap; }
-  .more-card { width: 56px; height: 76px; border: 2px dashed rgba(255,255,255,.7); border-radius: 8px; display: grid; place-items: center; font-family: var(--display); font-size: 1.8rem; }
-  .more p { margin-left: 8px; font-weight: 500; }
+  .lineup { margin-top: clamp(56px, 8vw, 96px); }
+  .lineup-title { font-family: var(--display); font-weight: 400; text-transform: uppercase; font-size: clamp(2rem, 4.5vw, 3.4rem); line-height: 1; margin-bottom: 24px; }
+  .lineup-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .story { position: relative; aspect-ratio: 9 / 16; border-radius: 12px; overflow: hidden; background: var(--ink); box-shadow: 0 24px 50px -24px rgba(0,0,0,.5); }
+  .story > img, .story > astro-island { position: absolute !important; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+  .story-card .chip { margin-top: 14px; font-size: 1.05rem; }
+  .story-card blockquote { margin-top: 12px; font-size: 1rem; line-height: 1.45; }
+  .story-card .source { margin-top: 6px; }
+  .lineup-more { margin-top: 28px; font-family: var(--display); text-transform: uppercase; font-size: 1.4rem; }
 
   /* SCHEDULE */
   .schedule { padding-block: clamp(64px, 10vw, 120px); }
@@ -474,6 +516,8 @@ const facts = ['5 dias', '3 salas', 'Básico e intermediário', 'Vila Madalena',
     .about-cols { font-size: 1.05rem; }
     .about-cols, .teacher-grid, .levels, .venue-grid { grid-template-columns: 1fr; }
     .poster { max-width: none; margin-right: 24px; }
+    .lineup-grid { grid-auto-flow: column; grid-template-columns: none; grid-auto-columns: 78%; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-inline: 16px; padding-bottom: 10px; margin-inline: -16px; padding-inline: 16px; }
+    .story-card { scroll-snap-align: start; }
     .grid-head { display: none; }
     .grid-row { grid-template-columns: 1fr; gap: 6px; margin-bottom: 18px; }
     .time { padding-top: 0; }
