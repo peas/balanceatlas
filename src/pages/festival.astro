@@ -33,16 +33,16 @@ const warmup: Row = { time: '9h30', all: 'Aquecimento conjunto · punhos e ombro
 const jam: Row = { time: '16h30 — 18h', all: 'Treino livre / jam com monitores' };
 
 const days: { id: string; label: string; date: string; rows: Row[] }[] = [
-  { id: 'sex', label: 'Sex', date: '19', rows: [
+  { id: 'sex', label: 'Sex', date: '5', rows: [
     { time: '9h30', all: 'Abertura · apresentação dos professores · vídeo do "antes"' },
     morning, afternoon, jam,
     { time: '19h — 20h30', all: 'Roda de abertura' },
   ] },
-  { id: 'sab', label: 'Sáb', date: '20', rows: [
+  { id: 'sab', label: 'Sáb', date: '6', rows: [
     warmup, morning, afternoon, jam,
     { time: '19h — 20h30', all: 'Mostra aberta' },
   ] },
-  { id: 'dom', label: 'Dom', date: '21', rows: [
+  { id: 'dom', label: 'Dom', date: '7', rows: [
     warmup, morning,
     { time: '14h — 16h', all: 'Vídeo do "depois" · círculo de fechamento' },
   ] },
@@ -99,7 +99,7 @@ const facts = ['3 dias', '3 salas', 'Básico e intermediário', 'Vila Madalena',
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, nofollow" />
-    <meta name="description" content="1º HandstandFest · 3 dias de parada de mão em São Paulo, 19 a 21 de março de 2027." />
+    <meta name="description" content="1º HandstandFest · 3 dias de parada de mão em São Paulo, 5 a 7 de março de 2027." />
     <title>1º HandstandFest · São Paulo</title>
     <script is:inline>
       // ?paleta=a|b|c|d picks the palette (comparison while the identity is open)
@@ -126,7 +126,7 @@ const facts = ['3 dias', '3 salas', 'Básico e intermediário', 'Vila Madalena',
         </h1>
       </div>
       <div class="hero-info">
-        <p class="dates">Sex 19 · Sáb 20 · Dom 21 de março</p>
+        <p class="dates">Sex 5 · Sáb 6 · Dom 7 de março</p>
         <p class="place"><span>São Paulo</span> Brasil · 2027</p>
         <a class="cta" href={SIGNUP}>Quero ir <span aria-hidden="true">→</span></a>
         <p class="cta-note">Lista de interesse. Ingressos e lotes em breve.</p>
@@ -290,7 +290,7 @@ const facts = ['3 dias', '3 salas', 'Básico e intermediário', 'Vila Madalena',
     <!-- SIGNUP -->
     <section class="signup grain">
       <div class="wrap signup-inner">
-        <h2 class="display" data-reveal>19 — 21 · março · 2027</h2>
+        <h2 class="display" data-reveal>5 — 7 · março · 2027</h2>
         <p>Ingressos por lote, com passe completo e passe de um dia. Entre na lista e avisamos primeiro.</p>
         <a class="cta cta-dark" href={SIGNUP}>Quero ir <span aria-hidden="true">→</span></a>
       </div>
