@@ -145,7 +145,7 @@ const StoryBars = ({ starts, total }: { starts: number[]; total: number }) => {
 type Scene = { src: string; frames: number; rate?: number; stamp: string; tri: 'left' | 'right' };
 
 const HERO: Scene[] = [
-  { src: '/festival/seg-1.mp4', frames: 150, stamp: '5 dias', tri: 'right' },
+  { src: '/festival/seg-1.mp4', frames: 150, stamp: '3 dias', tri: 'right' },
   { src: '/festival/seg-2.mp4', frames: 160, rate: 0.75, stamp: '3 salas', tri: 'left' },
   { src: '/festival/seg-3.mp4', frames: 135, stamp: 'Básico + inter', tri: 'right' },
   { src: '/festival/seg-4.mp4', frames: 180, stamp: 'São Paulo · mar 27', tri: 'left' },

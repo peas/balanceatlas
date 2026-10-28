@@ -31,19 +31,16 @@ const afternoon: Row = {
 };
 const warmup: Row = { time: '9h30', all: 'Aquecimento conjunto · punhos e ombros' };
 const jam: Row = { time: '16h30 — 18h', all: 'Treino livre / jam com monitores' };
-const talk: Row = { time: '19h — 20h30', all: 'Roda de conversa ou palestra' };
 
 const days: { id: string; label: string; date: string; rows: Row[] }[] = [
-  { id: 'qua', label: 'Qua', date: '17', rows: [
+  { id: 'sex', label: 'Sex', date: '19', rows: [
     { time: '9h30', all: 'Abertura · apresentação dos professores · vídeo do "antes"' },
     morning, afternoon, jam,
     { time: '19h — 20h30', all: 'Roda de abertura' },
   ] },
-  { id: 'qui', label: 'Qui', date: '18', rows: [warmup, morning, afternoon, jam, talk] },
-  { id: 'sex', label: 'Sex', date: '19', rows: [warmup, morning, afternoon, jam, talk] },
   { id: 'sab', label: 'Sáb', date: '20', rows: [
-    warmup, morning, afternoon,
-    { time: '16h — 18h', all: 'Mostra aberta' },
+    warmup, morning, afternoon, jam,
+    { time: '19h — 20h30', all: 'Mostra aberta' },
   ] },
   { id: 'dom', label: 'Dom', date: '21', rows: [
     warmup, morning,
@@ -93,7 +90,7 @@ const lineup: { poster: PosterProps; url?: string; quote?: string; source?: stri
   },
 ];
 
-const facts = ['5 dias', '3 salas', 'Básico e intermediário', 'Vila Madalena', 'Handstand', 'Parada de mão'];
+const facts = ['3 dias', '3 salas', 'Básico e intermediário', 'Vila Madalena', 'Handstand', 'Parada de mão'];
 ---
 
 <!doctype html>
@@ -102,10 +99,10 @@ const facts = ['5 dias', '3 salas', 'Básico e intermediário', 'Vila Madalena',
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, nofollow" />
-    <meta name="description" content="1º HandstandFest · 5 dias de parada de mão em São Paulo, 17 a 21 de março de 2027." />
+    <meta name="description" content="1º HandstandFest · 3 dias de parada de mão em São Paulo, 19 a 21 de março de 2027." />
     <title>1º HandstandFest · São Paulo</title>
     <script is:inline>
-      // ?paleta=a|b|c picks the palette (comparison while the identity is open)
+      // ?paleta=a|b|c|d picks the palette (comparison while the identity is open)
       const pal = new URLSearchParams(location.search).get('paleta');
       if (pal) document.documentElement.dataset.paleta = pal;
     </script>
@@ -129,7 +126,7 @@ const facts = ['5 dias', '3 salas', 'Básico e intermediário', 'Vila Madalena',
         </h1>
       </div>
       <div class="hero-info">
-        <p class="dates">17 · 18 · 19 · 20 · 21 de março</p>
+        <p class="dates">Sex 19 · Sáb 20 · Dom 21 de março</p>
         <p class="place"><span>São Paulo</span> Brasil · 2027</p>
         <a class="cta" href={SIGNUP}>Quero ir <span aria-hidden="true">→</span></a>
         <p class="cta-note">Lista de interesse. Ingressos e lotes em breve.</p>
@@ -152,7 +149,7 @@ const facts = ['5 dias', '3 salas', 'Básico e intermediário', 'Vila Madalena',
 
     <!-- ABOUT -->
     <section class="about wrap">
-      <h2 class="display" data-reveal>Cinco dias treinando, conversando e aprendendo parada de mão.</h2>
+      <h2 class="display" data-reveal>Três dias treinando, conversando e aprendendo parada de mão.</h2>
       <div class="about-cols">
         <p>A primeira edição é para quem pratica parada de mão por ela mesma: quem chegou pela calistenia, pelo yoga, pela dança, pelo movimento ou só pela teimosia de ficar de cabeça para baixo.</p>
         <p>Foco em <strong>básico</strong> e <strong>intermediário</strong>. Manhãs de técnica por nível, tardes de temas, fim de tarde de treino livre e noites de conversa. Três salas ao mesmo tempo, perto do metrô.</p>
@@ -293,7 +290,7 @@ const facts = ['5 dias', '3 salas', 'Básico e intermediário', 'Vila Madalena',
     <!-- SIGNUP -->
     <section class="signup grain">
       <div class="wrap signup-inner">
-        <h2 class="display" data-reveal>17 — 21 · março · 2027</h2>
+        <h2 class="display" data-reveal>19 — 21 · março · 2027</h2>
         <p>Ingressos por lote, com passe completo e passe de um dia. Entre na lista e avisamos primeiro.</p>
         <a class="cta cta-dark" href={SIGNUP}>Quero ir <span aria-hidden="true">→</span></a>
       </div>
@@ -301,9 +298,10 @@ const facts = ['5 dias', '3 salas', 'Básico e intermediário', 'Vila Madalena',
 
     <div class="paleta" role="group" aria-label="Paleta">
       Paleta
-      <button data-p="a" style="--sw:#2b3cf0" aria-pressed="true">A</button>
-      <button data-p="b" style="--sw:#0f3d33;color:#f4f1ea" aria-pressed="false">B</button>
-      <button data-p="c" style="--sw:#7c5cff;color:#fff" aria-pressed="false">C</button>
+      <button data-p="a" style="--sw:#f7931e" aria-pressed="false">A</button>
+      <button data-p="b" style="--sw:#2b3cf0;color:#fff" aria-pressed="true">B</button>
+      <button data-p="c" style="--sw:#0f3d33;color:#f4f1ea" aria-pressed="false">C</button>
+      <button data-p="d" style="--sw:#7c5cff;color:#fff" aria-pressed="false">D</button>
     </div>
 
     <footer class="foot wrap">
@@ -329,7 +327,7 @@ const facts = ['5 dias', '3 salas', 'Básico e intermediário', 'Vila Madalena',
         const u = new URL(location.href); u.searchParams.set('paleta', v); history.replaceState(null, '', u);
       };
       palBtns.forEach((b) => b.addEventListener('click', () => setPal(b.dataset.p!)));
-      setPal(document.documentElement.dataset.paleta ?? 'a');
+      setPal(document.documentElement.dataset.paleta ?? 'b');
 
       // Reveal on scroll
       const reveal = new IntersectionObserver(
@@ -362,16 +360,21 @@ const facts = ['5 dias', '3 salas', 'Básico e intermediário', 'Vila Madalena',
 </html>
 
 <style is:global>
-  /* Palettes (Paulo + Gabriel compare live with ?paleta=a|b|c; default A) */
-  :root, [data-paleta='a'] {
+  /* Palettes (Paulo + Gabriel compare live with ?paleta=a|b|c|d; default B)
+     A = the original orange + concrete, B = cobalt + lime, C = deep green + pink, D = black + violet */
+  [data-paleta='a'] {
+    --paper: #f4f1ea; --ink: #151515; --stage: #8a8986; --white: #ffffff;
+    --accent: #f7931e; --accent-ink: #151515; --muted: #6f6e6b;
+  }
+  :root:not([data-paleta]), [data-paleta='b'] {
     --paper: #f2efe6; --ink: #111111; --stage: #2b3cf0; --white: #f2efe6;
     --accent: #d7f55a; --accent-ink: #111111; --muted: #c9c5ba;
   }
-  [data-paleta='b'] {
+  [data-paleta='c'] {
     --paper: #f4f1ea; --ink: #0f2a24; --stage: #0f3d33; --white: #f4f1ea;
     --accent: #ff8fb8; --accent-ink: #0f2a24; --muted: #8ed8e8;
   }
-  [data-paleta='c'] {
+  [data-paleta='d'] {
     --paper: #edebe6; --ink: #0b0b0c; --stage: #0b0b0c; --white: #edebe6;
     --accent: #7c5cff; --accent-ink: #ffffff; --muted: #5cf2b5;
   }
