@@ -20,9 +20,15 @@ export const W = 720;
 export const H = 900;
 export const FPS = 30;
 
-const ORANGE = '#f7931e';
-const INK = '#151515';
-const DISPLAY = "'Anton', Impact, sans-serif";
+// Colors come from the page's palette tokens (the Player renders in the page DOM).
+const ACCENT = 'var(--accent, #d7f55a)';
+const ACCENT_INK = 'var(--accent-ink, #111)';
+const STAGE = 'var(--stage, #2b3cf0)';
+const CHALK = 'var(--white, #f2efe6)';
+const INK = '#111111';
+const DISPLAY = "'Archivo', 'Arial Black', sans-serif";
+const MONO = "'Space Mono', ui-monospace, monospace";
+const WIDE: CSSProperties = { fontFamily: DISPLAY, fontWeight: 900, fontStretch: '125%' };
 const T = 15; // transition frames
 
 const NOISE =
@@ -53,21 +59,17 @@ const useExit = (dur: number, len = 10) => {
   return interpolate(frame, [dur - len - T, dur - T], [1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
 };
 
-const Triangle = ({ dur, side }: { dur: number; side: 'left' | 'right' }) => {
-  const e = useEnter(4);
+// Hard geometry: a vertical bar growing from the bottom and a horizontal bar sliding in.
+const Bars = ({ dur, side }: { dur: number; side: 'left' | 'right' }) => {
+  const grow = useEnter(2, 16);
+  const slide = useEnter(9, 16);
   const out = useExit(dur);
-  const frame = useCurrentFrame();
-  const style: CSSProperties = {
-    position: 'absolute',
-    top: 104,
-    [side]: 40,
-    width: 120,
-    height: 120,
-    background: ORANGE,
-    clipPath: 'polygon(0 0, 100% 0, 50% 100%)',
-    transform: `translateY(${(1 - e) * -260}px) rotate(${Math.sin(frame / 18) * 4}deg) scale(${out})`,
-  };
-  return <div style={style} />;
+  return (
+    <>
+      <div style={{ position: 'absolute', bottom: 0, [side]: 34, width: 22, height: 520 * grow * out, background: ACCENT }} />
+      <div style={{ position: 'absolute', top: 104, [side]: 0, height: 18, width: 300 * slide * out, background: CHALK }} />
+    </>
+  );
 };
 
 const Stamp = ({ text, dur }: { text: string; dur: number }) => {
@@ -79,17 +81,17 @@ const Stamp = ({ text, dur }: { text: string; dur: number }) => {
         position: 'absolute',
         left: 40,
         bottom: 56,
-        background: ORANGE,
-        color: INK,
-        fontFamily: DISPLAY,
-        fontSize: 64,
+        background: ACCENT,
+        color: ACCENT_INK,
+        ...WIDE,
+        fontSize: 40,
+        maxWidth: 560,
         lineHeight: 1,
         padding: '10px 18px 8px',
         textTransform: 'uppercase',
         transformOrigin: 'left bottom',
-        transform: `rotate(${-5 + (1 - e) * -10}deg) scale(${(0.4 + 0.6 * e) * out})`,
+        transform: `translateY(${(1 - e) * 60}px) scaleX(${(0.3 + 0.7 * e) * out})`,
         opacity: Math.min(e * 1.5, 1) * out,
-        boxShadow: `6px 6px 0 ${INK}`,
       }}
     >
       {text}
@@ -103,12 +105,12 @@ const Chip = ({ text, delay = 0, style }: { text: string; delay?: number; style?
     <div
       style={{
         position: 'absolute',
-        background: '#fff',
+        background: CHALK,
         color: INK,
-        fontFamily: DISPLAY,
-        fontSize: 30,
+        fontFamily: MONO,
+        fontWeight: 700,
+        fontSize: 26,
         padding: '6px 14px',
-        borderRadius: 6,
         textTransform: 'uppercase',
         transform: `translateX(${(1 - e) * -420}px)`,
         ...style,
@@ -159,7 +161,7 @@ export const HERO_FRAMES = HERO.reduce((n, s) => n + s.frames, 0) - T * (HERO.le
 const SceneView = ({ s }: { s: Scene }) => (
   <AbsoluteFill style={{ background: INK }}>
     <Html5Video src={s.src} muted playbackRate={s.rate ?? 1} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-    <Triangle dur={s.frames} side={s.tri} />
+    <Bars dur={s.frames} side={s.tri} />
     <Stamp text={s.stamp} dur={s.frames} />
   </AbsoluteFill>
 );
@@ -185,11 +187,11 @@ export const Hero = () => (
 // Teacher card: B&W straddle, orange wipe in, name letters rising.
 export const TEACHER_FRAMES = 210;
 
-const Letters = ({ text, delay, size = 132, color = ORANGE }: { text: string; delay: number; size?: number; color?: string }) => {
+const Letters = ({ text, delay, size = 96, color = ACCENT }: { text: string; delay: number; size?: number; color?: string }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   return (
-    <div style={{ display: 'flex', fontFamily: DISPLAY, fontSize: size, lineHeight: 0.9, color, textTransform: 'uppercase', whiteSpace: 'pre' }}>
+    <div style={{ display: 'flex', ...WIDE, fontSize: size, lineHeight: 0.92, color, textTransform: 'uppercase', whiteSpace: 'pre' }}>
       {[...text].map((ch, i) => {
         const e = spring({ frame: frame - delay - i * 3, fps, config: { damping: 13, mass: 0.5 } });
         return (
@@ -209,11 +211,11 @@ export const Teacher = () => {
   return (
     <AbsoluteFill style={{ background: INK, overflow: 'hidden' }}>
       <Html5Video src="/festival/teacher.mp4" muted style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-      <AbsoluteFill style={{ background: ORANGE, transform: `translateX(${wipe}%)` }} />
+      <AbsoluteFill style={{ background: ACCENT, transform: `translateX(${wipe}%)` }} />
       <div style={{ position: 'absolute', left: 32, bottom: 40, opacity: fadeOut }}>
         <Letters text="Agustin" delay={18} />
       </div>
-      <Triangle dur={TEACHER_FRAMES} side="right" />
+      <Bars dur={TEACHER_FRAMES} side="right" />
       <Grain />
     </AbsoluteFill>
   );
@@ -230,21 +232,27 @@ export type PosterProps = {
   first: string;
   last: string;
   handle: string;
-  shape: 'tri' | 'disc' | 'burst';
+  shape: 'bar' | 'tee' | 'block';
   focus?: string; // object-position of the photo
 };
 
 const Shape = ({ shape }: { shape: PosterProps['shape'] }) => {
-  const frame = useCurrentFrame();
-  const e = useEnter(8, 11);
-  const base: CSSProperties = { position: 'absolute', background: ORANGE, transform: `scale(${e}) rotate(${frame * 0.6}deg)` };
-  if (shape === 'disc') return <div style={{ ...base, width: 150, height: 150, borderRadius: '50%', right: -40, top: 250, transform: `scale(${e})`, background: '#fff' }} />;
-  if (shape === 'burst')
+  const a = useEnter(8, 16);
+  const b = useEnter(16, 16);
+  if (shape === 'bar')
+    return <div style={{ position: 'absolute', right: 36, bottom: 0, width: 26, height: 640 * a, background: ACCENT }} />;
+  if (shape === 'tee')
     return (
-      <div style={{ ...base, width: 170, height: 170, left: -30, top: 230, clipPath: 'polygon(50% 0,61% 33%,96% 21%,70% 46%,100% 64%,64% 66%,69% 100%,50% 72%,31% 100%,36% 66%,0 64%,30% 46%,4% 21%,39% 33%)' }} />
+      <>
+        <div style={{ position: 'absolute', right: 0, top: 300, height: 24, width: 260 * a, background: ACCENT }} />
+        <div style={{ position: 'absolute', right: 118, top: 300, width: 24, height: 300 * b, background: ACCENT }} />
+      </>
     );
-  return <div style={{ ...base, width: 150, height: 150, right: 30, top: 260, clipPath: 'polygon(0 0,100% 0,50% 100%)', transform: `scale(${e}) rotate(${Math.sin(frame / 20) * 6}deg)` }} />;
+  return <div style={{ position: 'absolute', right: 0, top: 290, width: 180 * a, height: 180, background: ACCENT }} />;
 };
+
+// Wide type: shrink long names so they fit the 540px card
+const fit = (...words: string[]) => Math.min(72, Math.floor(470 / (Math.max(...words.map((w) => w.length)) * 0.82)));
 
 export const Poster = ({ img, first, last, handle, shape, focus = 'center' }: PosterProps) => {
   const frame = useCurrentFrame();
@@ -252,7 +260,7 @@ export const Poster = ({ img, first, last, handle, shape, focus = 'center' }: Po
   const zoom = interpolate(frame, [0, POSTER_FRAMES], [1.12, 1]);
   const out = interpolate(frame, [POSTER_FRAMES - 14, POSTER_FRAMES], [1, 0], { extrapolateLeft: 'clamp' });
   return (
-    <AbsoluteFill style={{ background: '#8a8986', overflow: 'hidden' }}>
+    <AbsoluteFill style={{ background: STAGE, overflow: 'hidden' }}>
       <AbsoluteFill style={{ clipPath: `inset(${reveal}% 0 0 0)` }}>
         {img ? (
         <img
@@ -260,17 +268,20 @@ export const Poster = ({ img, first, last, handle, shape, focus = 'center' }: Po
           style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: focus, transform: `scale(${zoom})`, filter: 'contrast(1.1) saturate(.8) sepia(.12)' }}
         />
         ) : (
-          <div style={{ position: 'absolute', left: '50%', top: '58%', width: 420, height: 420, marginLeft: -210, marginTop: -210, background: ORANGE, transform: `rotate(${frame * 0.4}deg) scale(${zoom})`, clipPath: 'polygon(50% 0,61% 33%,96% 21%,70% 46%,100% 64%,64% 66%,69% 100%,50% 72%,31% 100%,36% 66%,0 64%,30% 46%,4% 21%,39% 33%)' }} />
+          <>
+            <div style={{ position: 'absolute', left: 0, bottom: 0, width: '100%', height: `${42 * zoom}%`, background: ACCENT }} />
+            <div style={{ position: 'absolute', left: 60, bottom: 0, width: 40, height: `${(70 - 30 * (zoom - 1) * 8)}%`, background: CHALK }} />
+          </>
         )}
         <AbsoluteFill style={{ background: 'linear-gradient(180deg, rgba(0,0,0,.55) 0%, rgba(0,0,0,0) 38%, rgba(0,0,0,0) 70%, rgba(0,0,0,.5) 100%)' }} />
       </AbsoluteFill>
       {img && <Shape shape={shape} />}
       <div style={{ position: 'absolute', left: 28, top: 70, opacity: out }}>
-        <Letters text={first} delay={10} size={104} />
-        <Letters text={last} delay={18} size={104} color="#fff" />
+        <Letters text={first} delay={10} size={fit(first, last)} />
+        <Letters text={last} delay={18} size={fit(first, last)} color={CHALK} />
       </div>
-      {handle && <Chip text={handle} delay={26} style={{ left: 28, top: 30, fontSize: 24, opacity: out }} />}
-      <div style={{ position: 'absolute', left: 28, bottom: 34, color: '#fff', fontFamily: DISPLAY, fontSize: 26, letterSpacing: 1, textTransform: 'uppercase', opacity: out }}>
+      {handle && <Chip text={handle} delay={26} style={{ left: 28, top: 30, fontSize: 20, opacity: out }} />}
+      <div style={{ position: 'absolute', left: 28, bottom: 34, color: CHALK, fontFamily: MONO, fontWeight: 700, fontSize: 20, letterSpacing: 0.5, textTransform: 'uppercase', opacity: out }}>
         1º HandstandFest · São Paulo · mar 2027
       </div>
       <Grain />

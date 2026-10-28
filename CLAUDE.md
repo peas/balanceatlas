@@ -101,7 +101,8 @@ Always verify downloaded images are real (>5KB, not HTML redirects).
 ## Hidden pages (Oct 2026)
 - `/` is a "coming soon" landing; the full site lives at `/principal` (nav points there, all pages `noindex`).
 - `/festival` — **1º HandstandFest** (São Paulo, 17–21 Mar 2027), standalone page in **pt-BR** with its own identity
-  (Anton + DM Serif Display, concrete grey + orange). Exception to the English-only rule for page copy.
+  (Archivo 125% wide + Space Mono, hard geometry: bars and blocks; three palettes A/B/C as CSS tokens,
+  `?paleta=` + a floating switcher while the identity is open). Exception to the English-only rule for page copy.
   Its media is committed in `public/festival/` because this machine has no R2 token for `media-handstand`;
   move it to R2 once `.env` exists. Research: Drive `pesquisas/festival-handstand-sp-2027.md`.
   Hero and teacher cards are Remotion compositions (`src/festival/`, `@remotion/player` via `@astrojs/react`,
