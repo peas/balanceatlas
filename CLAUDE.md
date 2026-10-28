@@ -98,6 +98,15 @@ Always verify downloaded images are real (>5KB, not HTML redirects).
 - **Instagram handles**: verify the handle is correct (not a 404). When unsure, search for the person and confirm the exact handle.
 - **Never assume** a handle follows a pattern (e.g., `firstname.lastname.topic`). Always verify.
 
+## Hidden pages (Oct 2026)
+- `/` is a "coming soon" landing; the full site lives at `/principal` (nav points there, all pages `noindex`).
+- `/festival` — **1º HandstandFest** (São Paulo, 17–21 Mar 2027), standalone page in **pt-BR** with its own identity
+  (Anton + DM Serif Display, concrete grey + orange). Exception to the English-only rule for page copy.
+  Its media is committed in `public/festival/` because this machine has no R2 token for `media-handstand`;
+  move it to R2 once `.env` exists. Research: Drive `pesquisas/festival-handstand-sp-2027.md`.
+  Hero and teacher cards are Remotion compositions (`src/festival/`, `@remotion/player` via `@astrojs/react`,
+  `client:only`); clips are cut and graded by `scripts/festival_clips.sh`. Remotion packages pinned to one version.
+
 ## FAQ Page
 - The site has a `/faq` page explaining the community, how to contribute, etc.
 - Must include a question: "I'd like to remove a photo or my retreat/intensive, how do I do that?" → Answer: "Just send an email to paulo.silveira@gmail.com"
