@@ -7,7 +7,13 @@ import FestPlayer from '../festival/FestPlayer';
 import type { PosterProps } from '../festival/compositions';
 
 const R2 ='https://media.balanceatlas.com/images/retreats';
-const SIGNUP = 'mailto:paulo.silveira@gmail.com?subject=Quero%20ir%20ao%201%C2%BA%20HandstandFest';
+// Placeholder until the real ticketing link exists (Paulo, 29/10/2026: "link fake" for now)
+const TICKETS = 'https://example.com/handstandfest-ingressos';
+const LOTES = [
+  { n: '1º lote', price: 400, note: 'Primeiras 20 vagas', state: 'aberto' },
+  { n: '2º lote', price: 500, note: 'Depois das 20 primeiras', state: 'proximo' },
+  { n: '3º lote', price: 600, note: 'Último lote', state: 'proximo' },
+] as const;
 
 type Level = 'basico' | 'inter' | 'todos';
 type Slot = { t: string; level?: Level };
@@ -85,12 +91,15 @@ const lineup: { poster: PosterProps; url?: string; quote?: string; source?: stri
     where: 'Aulas presenciais e online',
   },
   {
-    poster: { first: 'Dany', last: 'Garcia', handle: '', shape: 'block' },
-    where: 'Foto e perfil em breve',
+    poster: { img: '/festival/teacher-dany.webp', first: 'Dany', last: 'García', handle: '@dany_slackwire', shape: 'block', focus: '50% 40%' },
+    url: 'https://www.instagram.com/dany_slackwire/',
+    quote: 'Artista Circense! · Alumno de la ENCLO 2025-2026 · Colombiano viviendo en Brasil',
+    source: 'https://www.instagram.com/dany_slackwire/',
+    where: 'Arame, parada de cabeça, malabares e acrobacia de solo',
   },
 ];
 
-const facts = ['3 dias', '3 salas', 'Básico e intermediário', 'Vila Madalena', 'Handstand', 'Parada de mão'];
+const facts = ['3 dias', '3 salas', 'Básico e intermediário', 'Butantã', '1º lote R$ 400', 'Handstand', 'Parada de mão'];
 ---
 
 <!doctype html>
@@ -128,8 +137,8 @@ const facts = ['3 dias', '3 salas', 'Básico e intermediário', 'Vila Madalena',
       <div class="hero-info">
         <p class="dates">Sex 5 · Sáb 6 · Dom 7 de março</p>
         <p class="place"><span>São Paulo</span> Brasil · 2027</p>
-        <a class="cta" href={SIGNUP}>Quero ir <span aria-hidden="true">→</span></a>
-        <p class="cta-note">Lista de interesse. Ingressos e lotes em breve.</p>
+        <a class="cta" href="#ingressos">Garantir vaga <span aria-hidden="true">→</span></a>
+        <a class="lote-pill" href="#ingressos"><i aria-hidden="true"></i>1º lote aberto · R$ 400 · 20 vagas</a>
       </div>
       <figure class="hero-media">
         <span class="hbar" aria-hidden="true"></span>
@@ -270,29 +279,49 @@ const facts = ['3 dias', '3 salas', 'Básico e intermediário', 'Vila Madalena',
     <section class="venue wrap" id="local">
       <div class="section-head">
         <h2 class="display" data-reveal>Onde</h2>
-        <p class="note">A confirmar.</p>
+        <p class="note">Butantã · São Paulo</p>
       </div>
       <div class="venue-grid">
         <div class="venue-photos">
-          <img class="v-main" src="/festival/greta-1.webp" alt="Galpão com pé-direito alto" loading="lazy" data-reveal />
-          <img src="/festival/greta-3.webp" alt="Sala com parede branca livre" loading="lazy" data-reveal />
-          <img src="/festival/greta-4.webp" alt="Pátio com plantas" loading="lazy" data-reveal />
+          <img class="v-main" src="/festival/venue-1.webp" alt="Salão do Trapézio Voador" loading="lazy" data-reveal />
+          <img src="/festival/venue-5.webp" alt="Fachada do Trapézio Voador" loading="lazy" data-reveal />
+          <img src="/festival/venue-2.webp" alt="Parede de aéreos" loading="lazy" data-reveal />
         </div>
         <div class="venue-info">
-          <h3>Vila Madalena</h3>
-          <p>Um galpão perto do metrô Vila Madalena (linha 2-verde), com salas de pé-direito alto e parede livre para treinar.</p>
-          <p class="pill">Local a confirmar</p>
-          <p class="source">Fotos: <a href="https://www.gretagalpao.com/espaco" target="_blank" rel="noopener">Greta Galpão</a>, um dos espaços em estudo.</p>
+          <h3>Trapézio Voador</h3>
+          <blockquote>“E mais: trampolim acrobático e um pé-direito de 10m para acrobacias aéreas.”</blockquote>
+          <p>R. Alvarenga, 150 · Jardim Guedala<br />“nas proximidades da Estação Butantã do metrô” (linha 4-amarela)</p>
+          <p class="source">Fonte e fotos: <a href="https://trapeziovoador.com.br/" target="_blank" rel="noopener">trapeziovoador.com.br</a> e <a href="https://www.instagram.com/trapeziovoador/" target="_blank" rel="noopener">@trapeziovoador</a></p>
+          <div class="venue-stories">
+            {['/festival/venue-3.webp', '/festival/venue-4.webp'].map((src) => (
+              <a class="mini-story" href="https://www.instagram.com/trapeziovoador/" target="_blank" rel="noopener" data-reveal>
+                <span class="mini-bars" aria-hidden="true"><b></b><b></b></span>
+                <span class="mini-handle">@trapeziovoador</span>
+                <img src={src} alt="Trapézio Voador no Instagram" loading="lazy" />
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- SIGNUP -->
-    <section class="signup grain">
+    <!-- TICKETS -->
+    <section class="signup grain" id="ingressos">
       <div class="wrap signup-inner">
-        <h2 class="display" data-reveal>5 — 7 · março · 2027</h2>
-        <p>Ingressos por lote, com passe completo e passe de um dia. Entre na lista e avisamos primeiro.</p>
-        <a class="cta cta-dark" href={SIGNUP}>Quero ir <span aria-hidden="true">→</span></a>
+        <p class="kicker">Ingressos · 5 — 7 · março · 2027</p>
+        <h2 class="display" data-reveal>Três lotes. Estamos no primeiro.</h2>
+        <div class="lotes">
+          {LOTES.map((l) => (
+            <article class:list={['lote', l.state]} data-reveal>
+              <span class="lote-bar" aria-hidden="true"><b></b></span>
+              <p class="lote-n">{l.n}{l.state === 'aberto' && <em><i aria-hidden="true"></i>agora</em>}</p>
+              <p class="lote-price"><small>R$</small>{l.price}</p>
+              <p class="lote-note">{l.note}</p>
+            </article>
+          ))}
+        </div>
+        <a class="cta cta-dark" href={TICKETS} target="_blank" rel="noopener">Garantir vaga no 1º lote <span aria-hidden="true">→</span></a>
+        <p class="lote-foot">Passe completo para os 3 dias. Quando as 20 vagas do 1º lote acabarem, abre o 2º.</p>
       </div>
     </section>
 
@@ -518,6 +547,14 @@ const facts = ['3 dias', '3 salas', 'Básico e intermediário', 'Vila Madalena',
   .venue-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
   .venue-photos img { width: 100%; height: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 10px; display: block; }
   .venue-photos .v-main { grid-column: span 2; aspect-ratio: 16 / 9; }
+  .venue-info blockquote { font-size: 1.15rem; line-height: 1.4; margin: 6px 0 14px; padding-left: 14px; border-left: 6px solid var(--accent); }
+  .venue-stories { display: flex; gap: 10px; margin-top: 18px; }
+  .mini-story { position: relative; width: 120px; aspect-ratio: 9 / 16; overflow: hidden; border-radius: 10px; background: var(--ink); display: block; }
+  .mini-story img { width: 100%; height: 100%; object-fit: cover; }
+  .mini-bars { position: absolute; top: 6px; left: 6px; right: 6px; display: flex; gap: 3px; z-index: 1; }
+  .mini-bars b { flex: 1; height: 3px; background: rgba(255,255,255,.5); }
+  .mini-bars b:first-child { background: #fff; }
+  .mini-handle { position: absolute; top: 14px; left: 6px; z-index: 1; color: #fff; font: 700 .6rem/1 var(--mono); text-shadow: 0 1px 3px rgba(0,0,0,.6); }
   .pill { display: inline-block; background: var(--accent); border: 2px solid var(--ink); border-radius: 999px; padding: 2px 12px; font-weight: 700; font-size: .9rem !important; text-transform: uppercase; letter-spacing: .06em; }
   [data-reveal] { opacity: 0; transform: translateY(28px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1); }
   [data-reveal].in { opacity: 1; transform: none; }
@@ -526,8 +563,27 @@ const facts = ['3 dias', '3 salas', 'Básico e intermediário', 'Vila Madalena',
   .venue-info p { margin-bottom: 10px; font-size: 1.1rem; }
 
   /* SIGNUP */
-  .signup { color: var(--white); padding-block: clamp(72px, 12vw, 140px); text-align: center; }
-  .signup-inner p { max-width: 46ch; margin: 18px auto 0; font-size: 1.15rem; }
+  .signup { color: var(--white); padding-block: clamp(72px, 12vw, 140px); }
+  .signup .kicker { margin-bottom: 14px; }
+  .lotes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 36px 0 32px; }
+  .lote { position: relative; padding: 26px 20px 20px; background: rgba(255,255,255,.06); border: 2px solid currentColor; color: var(--white); }
+  .lote.aberto { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+  .lote.proximo { opacity: .72; }
+  .lote-bar { position: absolute; top: 10px; left: 12px; right: 12px; height: 4px; background: rgba(127,127,127,.35); }
+  .lote-bar b { display: block; height: 100%; width: 0; background: currentColor; }
+  .lote.aberto .lote-bar b { animation: story 6s linear infinite; }
+  @keyframes story { from { width: 0; } to { width: 100%; } }
+  .lote-n { font-family: var(--mono); font-weight: 700; text-transform: uppercase; font-size: .9rem; display: flex; align-items: center; gap: 10px; }
+  .lote-n em { font-style: normal; display: inline-flex; align-items: center; gap: 6px; background: var(--accent-ink); color: var(--accent); padding: 2px 8px; font-size: .72rem; }
+  .lote-n em i, .lote-pill i { width: 8px; height: 8px; border-radius: 50%; background: currentColor; animation: pulse 1.4s ease-in-out infinite; }
+  @keyframes pulse { 50% { opacity: .25; } }
+  .lote-price { font-family: var(--display); font-weight: 900; font-stretch: 125%; font-size: clamp(2.4rem, 5vw, 3.6rem); line-height: 1; margin-top: 14px; }
+  .lote-price small { font-size: .38em; margin-right: 4px; vertical-align: .9em; }
+  .lote-note { margin-top: 8px; font-weight: 500; }
+  .lote-foot { margin-top: 14px; font-size: .95rem; opacity: .85; max-width: 52ch; }
+  .lote-pill { display: inline-flex; align-items: center; gap: 8px; margin-top: 14px; margin-left: 12px; padding: 8px 12px; background: var(--accent); color: var(--accent-ink); font-family: var(--mono); font-weight: 700; font-size: .78rem; text-transform: uppercase; text-decoration: none; }
+  .lote-pill:hover { background: var(--white); color: var(--ink); }
+  @media (prefers-reduced-motion: reduce) { .lote.aberto .lote-bar b { animation: none; width: 100%; } .lote-n em i, .lote-pill i { animation: none; } }
   .cta-dark { background: var(--accent); color: var(--accent-ink); }
   .cta-dark:hover { background: var(--white); color: var(--ink); }
 
@@ -545,6 +601,8 @@ const facts = ['3 dias', '3 salas', 'Básico e intermediário', 'Vila Madalena',
     .about-cols { font-size: 1.05rem; }
     .about-cols, .teacher-grid, .levels, .venue-grid { grid-template-columns: 1fr; }
     .poster { max-width: none; margin-right: 24px; }
+    .lotes { grid-template-columns: 1fr; }
+    .lote-pill { margin-left: 0; }
     .lineup-grid { grid-auto-flow: column; grid-template-columns: none; grid-auto-columns: 78%; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-inline: 16px; padding-bottom: 10px; margin-inline: -16px; padding-inline: 16px; }
     .story-card { scroll-snap-align: start; }
     .grid-head { display: none; }

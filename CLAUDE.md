@@ -105,6 +105,11 @@ Always verify downloaded images are real (>5KB, not HTML redirects).
   `?paleta=` + a floating switcher while the identity is open). Exception to the English-only rule for page copy.
   Its media is committed in `public/festival/` because this machine has no R2 token for `media-handstand`;
   move it to R2 once `.env` exists. Research: Drive `pesquisas/festival-handstand-sp-2027.md`.
+  **Design direction Paulo likes (29/10/2026): social-media cues** — story progress bars, ▶ video badges,
+  story-format teacher posters, mini Instagram stories, "agora" live dot on the open ticket batch. Keep exploring
+  this language (reels/stories/play affordances) in new sections.
+  Venue: Trapézio Voador (R. Alvarenga 150, metrô Butantã). Tickets: 1º lote R$400 (first 20), 2º R$500,
+  3º R$600; `TICKETS` in festival.astro is a placeholder (example.com) until the real link exists.
   Hero and teacher cards are Remotion compositions (`src/festival/`, `@remotion/player` via `@astrojs/react`,
   `client:only`); clips are cut and graded by `scripts/festival_clips.sh`. Remotion packages pinned to one version.
 
