@@ -10,10 +10,14 @@ const R2 ='https://media.balanceatlas.com/images/retreats';
 // Placeholder until the real ticketing link exists (Paulo, 29/10/2026: "link fake" for now)
 const TICKETS = 'https://example.com/handstandfest-ingressos';
 const LOTES = [
-  { n: '1º lote', price: 400, note: 'Primeiras 20 vagas', state: 'aberto' },
-  { n: '2º lote', price: 500, note: 'Depois das 20 primeiras', state: 'proximo' },
-  { n: '3º lote', price: 600, note: 'Último lote', state: 'proximo' },
+  { n: '1º lote', price: 400, note: 'Primeiras 10 vagas', state: 'aberto' },
+  { n: '2º lote', price: 500, note: 'Próximas 30 vagas', state: 'proximo' },
+  { n: '3º lote', price: 600, note: 'Últimas 15 vagas', state: 'proximo' },
 ] as const;
+const VAGAS = 55;
+const MAPS_Q = encodeURIComponent('Trapézio Voador, R. Alvarenga, 150, Jardim Guedala, São Paulo');
+// The venue's own Google Maps link (footer of trapeziovoador.com.br, 04/11/2026)
+const MAPS_PLACE = 'https://www.google.com/maps/place/Trap%C3%A9zio+Voador+Escola+de+Artes+Circenses/@-23.5793024,-46.7071634,15z/data=!4m2!3m1!1s0x0:0xa5afb1ebf939a9e5';
 
 type Level = 'basico' | 'inter' | 'todos';
 type Slot = { t: string; level?: Level };
@@ -99,7 +103,28 @@ const lineup: { poster: PosterProps; url?: string; quote?: string; source?: stri
   },
 ];
 
-const facts = ['3 dias', '3 salas', 'Básico e intermediário', 'Butantã', '1º lote R$ 400', 'Handstand', 'Parada de mão'];
+const facts = ['3 dias', '3 salas', 'Do básico ao avançado', 'Butantã', '1º lote R$ 400', `${VAGAS} vagas`, 'Handstand', 'Parada de mão'];
+
+// "Sobre o evento": the organizers' text (Gabriel + Paulo, 04/11/2026), reworded for the page.
+// Tabs are drawn as Instagram-style profile highlights (the social-media cue Paulo asked to keep exploring).
+const objetivos = [
+  'Colocar a parada de mão no centro: como disciplina corporal, artística e expressiva.',
+  'Abrir acesso a professores de especialidades diferentes, no mesmo fim de semana.',
+  'Integrar o que sustenta o equilíbrio invertido: força, mobilidade, flexibilidade e movimento consciente.',
+  'Explorar o handstand em dupla: mão a mão, acrobacia e invertidas sobre outros corpos.',
+  'Misturar iniciantes, praticantes avançados, artistas e professores na mesma sala.',
+  'Fazer as pessoas se conhecerem, criarem amizades e descobrirem interesses em comum.',
+  'Estimular a criatividade, a pesquisa corporal e transições novas.',
+  'Fortalecer a comunidade e abrir caminho para colaborações entre professores e artistas.',
+];
+const publico = [
+  { t: 'Começando', d: 'Quem está dando os primeiros passos na parada de mão, na parede ou perto dela.' },
+  { t: 'Intermediário', d: 'Quem quer alinhamento, mais tempo no livre, flexibilidade e shapes.' },
+  { t: 'Avançado', d: 'Press, one arm handstand e outras modalidades.' },
+  { t: 'Circo', d: 'Artistas circenses e acrobatas.' },
+  { t: 'Professores', d: 'Professores e profissionais do movimento.' },
+  { t: 'Yoga, acro e cali', d: 'Praticantes de yoga, acroyoga, calistenia, força e mobilidade que querem ampliar o repertório.' },
+];
 ---
 
 <!doctype html>
@@ -111,7 +136,7 @@ const facts = ['3 dias', '3 salas', 'Básico e intermediário', 'Butantã', '1º
     <meta name="description" content="1º HandstandFest · 3 dias de parada de mão em São Paulo, 5 a 7 de março de 2027." />
     <title>1º HandstandFest · São Paulo</title>
     <script is:inline>
-      // ?paleta=a|b|c|d picks the palette (comparison while the identity is open)
+      // ?paleta=a|b|c|d|e|f picks the palette (comparison while the identity is open)
       const pal = new URLSearchParams(location.search).get('paleta');
       if (pal) document.documentElement.dataset.paleta = pal;
     </script>
@@ -138,7 +163,7 @@ const facts = ['3 dias', '3 salas', 'Básico e intermediário', 'Butantã', '1º
         <p class="dates">Sex 5 · Sáb 6 · Dom 7 de março</p>
         <p class="place"><span>São Paulo</span> Brasil · 2027</p>
         <a class="cta" href="#ingressos">Garantir vaga <span aria-hidden="true">→</span></a>
-        <a class="lote-pill" href="#ingressos"><i aria-hidden="true"></i>1º lote aberto · R$ 400 · 20 vagas</a>
+        <a class="lote-pill" href="#ingressos"><i aria-hidden="true"></i>1º lote aberto · R$ 400 · 10 vagas</a>
       </div>
       <figure class="hero-media">
         <span class="hbar" aria-hidden="true"></span>
@@ -161,7 +186,46 @@ const facts = ['3 dias', '3 salas', 'Básico e intermediário', 'Butantã', '1º
       <h2 class="display" data-reveal>Três dias treinando, conversando e aprendendo parada de mão.</h2>
       <div class="about-cols">
         <p>A primeira edição é para quem pratica parada de mão por ela mesma: quem chegou pela calistenia, pelo yoga, pela dança, pelo movimento ou só pela teimosia de ficar de cabeça para baixo.</p>
-        <p>Foco em <strong>básico</strong> e <strong>intermediário</strong>. Manhãs de técnica por nível, tardes de temas, fim de tarde de treino livre e noites de conversa. Três salas ao mesmo tempo, perto do metrô.</p>
+        <p>Turmas por nível, <strong>do básico ao avançado</strong>. Manhãs de técnica, tardes de temas, fim de tarde de treino livre e noites de conversa. Três salas ao mesmo tempo, perto do metrô.</p>
+      </div>
+    </section>
+
+    <!-- SOBRE O EVENTO: tabs drawn as profile highlights -->
+    <section class="sobre wrap" id="sobre" data-tabs>
+      <div class="section-head">
+        <h2 class="display" data-reveal>Sobre o evento</h2>
+        <p class="note">O primeiro festival brasileiro dedicado à parada de mão.</p>
+      </div>
+      <div class="highlights" role="tablist" aria-label="Sobre o evento">
+        <button role="tab" data-tab="encontro" aria-selected="true"><span class="ring"><i class="shape-bar"></i></span>O encontro</button>
+        <button role="tab" data-tab="objetivos" aria-selected="false"><span class="ring"><i class="shape-block"></i></span>Objetivos</button>
+        <button role="tab" data-tab="publico" aria-selected="false"><span class="ring"><i class="shape-tee"></i></span>Para quem</button>
+      </div>
+
+      <div class="sobre-panel" data-panel="encontro">
+        <h3>Faz tempo que o handstand vive de carona.</h3>
+        <div class="sobre-cols">
+          <p>Na aula de yoga, no treino de calistenia, no box de crossfit, na roda de acro. Chegou a hora de ele ter um espaço só dele. O 1º HandstandFest nasce para isso: três dias de formação, troca e pesquisa corporal, com a comunidade de praticantes reunida num lugar só.</p>
+          <p>Em São Paulo, professores, artistas e praticantes de níveis e histórias diferentes se encontram em torno da parada de mão e de tudo o que nasce dela: yoga, mobilidade, força, calistenia, flexibilidade, mão a mão, acrobacia em dupla, invertidas sobre outros corpos e transições criativas.</p>
+          <p>A ideia vai além da aula técnica. É aprender, se inspirar, conhecer gente e conviver com quem divide o mesmo gosto pelo movimento. De quem está subindo na parede pela primeira vez a quem já treina one arm, cada pessoa encontra um desafio do seu tamanho.</p>
+        </div>
+      </div>
+
+      <div class="sobre-panel" data-panel="objetivos" hidden>
+        <h3>Um espaço de encontro, formação e troca em torno do handstand no Brasil.</h3>
+        <ol class="objetivos">
+          {objetivos.map((o) => <li>{o}</li>)}
+        </ol>
+      </div>
+
+      <div class="sobre-panel" data-panel="publico" hidden>
+        <h3>Para quem gosta de ficar de cabeça para baixo, em qualquer fase do caminho.</h3>
+        <div class="publico">
+          {publico.map((p) => (
+            <article><h4>{p.t}</h4><p>{p.d}</p></article>
+          ))}
+        </div>
+        <p class="note">A divisão por níveis, as turmas simultâneas e os pré-requisitos de cada oficina saem com a programação final.</p>
       </div>
     </section>
 
@@ -204,14 +268,14 @@ const facts = ['3 dias', '3 salas', 'Básico e intermediário', 'Butantã', '1º
     </section>
 
     <!-- SCHEDULE -->
-    <section class="schedule wrap" id="grade">
+    <section class="schedule wrap" id="grade" data-tabs>
       <div class="section-head">
         <h2 class="display" data-reveal>Grade</h2>
         <p class="note">Provisória. Os temas das tardes e os professores de cada bloco saem com o anúncio da equipe.</p>
       </div>
       <div class="days" role="tablist">
         {days.map((d, i) => (
-          <button role="tab" class="day" data-day={d.id} aria-selected={i === 0 ? 'true' : 'false'}>
+          <button role="tab" class="day" data-tab={d.id} aria-selected={i === 0 ? 'true' : 'false'}>
             <span>{d.label}</span><b>{d.date}</b>
           </button>
         ))}
@@ -251,6 +315,10 @@ const facts = ['3 dias', '3 salas', 'Básico e intermediário', 'Butantã', '1º
       <article class="level-card lvl-inter" data-reveal>
         <h3>Intermediário</h3>
         <p>Você fica uns 30 segundos na parede e já arrisca alguns segundos no livre. Quer equilíbrio, formas e consistência.</p>
+      </article>
+      <article class="level-card lvl-avancado" data-reveal>
+        <h3>Avançado</h3>
+        <p>Você segura o livre com folga e trabalha press, one arm e formas. Quer trocar com outros professores e artistas.</p>
       </article>
     </section>
 
@@ -303,6 +371,16 @@ const facts = ['3 dias', '3 salas', 'Básico e intermediário', 'Butantã', '1º
           </div>
         </div>
       </div>
+      <div class="map" data-reveal>
+        <iframe
+          src={`https://www.google.com/maps/embed?origin=mfe&pb=!1m3!2m1!1s${MAPS_Q}!6i15`}
+          title="Mapa: Trapézio Voador"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen
+        ></iframe>
+        <a class="chip map-link" href={MAPS_PLACE} target="_blank" rel="noopener">Como chegar <span aria-hidden="true">→</span></a>
+      </div>
     </section>
 
     <!-- TICKETS -->
@@ -321,7 +399,7 @@ const facts = ['3 dias', '3 salas', 'Básico e intermediário', 'Butantã', '1º
           ))}
         </div>
         <a class="cta cta-dark" href={TICKETS} target="_blank" rel="noopener">Garantir vaga no 1º lote <span aria-hidden="true">→</span></a>
-        <p class="lote-foot">Passe completo para os 3 dias. Quando as 20 vagas do 1º lote acabarem, abre o 2º.</p>
+        <p class="lote-foot">Passe completo para os 3 dias, {VAGAS} vagas no total. Quando as 10 do 1º lote acabarem, abre o 2º; depois das 30 do 2º, o 3º.</p>
       </div>
     </section>
 
@@ -331,6 +409,8 @@ const facts = ['3 dias', '3 salas', 'Básico e intermediário', 'Butantã', '1º
       <button data-p="b" style="--sw:#2b3cf0;color:#fff" aria-pressed="true">B</button>
       <button data-p="c" style="--sw:#0f3d33;color:#f4f1ea" aria-pressed="false">C</button>
       <button data-p="d" style="--sw:#7c5cff;color:#fff" aria-pressed="false">D</button>
+      <button data-p="e" style="--sw:linear-gradient(135deg,#0f3d33 50%,#ffd23f 50%);color:#fff" aria-pressed="false">E</button>
+      <button data-p="f" style="--sw:linear-gradient(135deg,#1b7a5a 50%,#ff6a4d 50%);color:#fff" aria-pressed="false">F</button>
     </div>
 
     <footer class="foot wrap">
@@ -339,14 +419,17 @@ const facts = ['3 dias', '3 salas', 'Básico e intermediário', 'Butantã', '1º
     </footer>
 
     <script>
-      const tabs = document.querySelectorAll<HTMLButtonElement>('.day');
-      const panels = document.querySelectorAll<HTMLElement>('.grid-day');
-      tabs.forEach((tab) =>
-        tab.addEventListener('click', () => {
-          tabs.forEach((t) => t.setAttribute('aria-selected', String(t === tab)));
-          panels.forEach((p) => (p.hidden = p.dataset.panel !== tab.dataset.day));
-        }),
-      );
+      // Tabs: any [data-tabs] scope with [role=tab][data-tab] buttons and [data-panel] panels
+      document.querySelectorAll<HTMLElement>('[data-tabs]').forEach((scope) => {
+        const tabs = scope.querySelectorAll<HTMLButtonElement>('[role=tab]');
+        const panels = scope.querySelectorAll<HTMLElement>('[data-panel]');
+        tabs.forEach((tab) =>
+          tab.addEventListener('click', () => {
+            tabs.forEach((t) => t.setAttribute('aria-selected', String(t === tab)));
+            panels.forEach((p) => (p.hidden = p.dataset.panel !== tab.dataset.tab));
+          }),
+        );
+      });
 
       // Palette switcher
       const palBtns = document.querySelectorAll<HTMLButtonElement>('.paleta button');
@@ -389,8 +472,9 @@ const facts = ['3 dias', '3 salas', 'Básico e intermediário', 'Butantã', '1º
 </html>
 
 <style is:global>
-  /* Palettes (Paulo + Gabriel compare live with ?paleta=a|b|c|d; default B)
-     A = the original orange + concrete, B = cobalt + lime, C = deep green + pink, D = black + violet */
+  /* Palettes (Paulo + Gabriel compare live with ?paleta=a|b|c|d|e|f; default B)
+     A = the original orange + concrete, B = cobalt + lime, C = deep green + pink, D = black + violet,
+     E = C's green + sun yellow (Gabriel liked C; Paulo found it serious), F = a brighter green + coral */
   [data-paleta='a'] {
     --paper: #f4f1ea; --ink: #151515; --stage: #8a8986; --white: #ffffff;
     --accent: #f7931e; --accent-ink: #151515; --muted: #6f6e6b;
@@ -406,6 +490,14 @@ const facts = ['3 dias', '3 salas', 'Básico e intermediário', 'Butantã', '1º
   [data-paleta='d'] {
     --paper: #edebe6; --ink: #0b0b0c; --stage: #0b0b0c; --white: #edebe6;
     --accent: #7c5cff; --accent-ink: #ffffff; --muted: #5cf2b5;
+  }
+  [data-paleta='e'] {
+    --paper: #f6f1e4; --ink: #0f2a24; --stage: #0f3d33; --white: #f6f1e4;
+    --accent: #ffd23f; --accent-ink: #0f2a24; --muted: #ffb86b;
+  }
+  [data-paleta='f'] {
+    --paper: #f4f1ea; --ink: #0b2a21; --stage: #1b7a5a; --white: #f4f1ea;
+    --accent: #ff6a4d; --accent-ink: #0b2a21; --muted: #ffd9c9;
   }
   :root {
     --display: 'Archivo', 'Arial Black', sans-serif;
@@ -467,6 +559,31 @@ const facts = ['3 dias', '3 salas', 'Básico e intermediário', 'Butantã', '1º
   .about .display { max-width: 15ch; }
   .about-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 40px; font-size: 1.15rem; max-width: 900px; }
 
+  /* SOBRE: highlights row (IG profile "destaques") as tabs */
+  .sobre { padding-bottom: clamp(64px, 10vw, 120px); }
+  .highlights { display: flex; gap: clamp(14px, 3vw, 32px); overflow-x: auto; padding: 4px 4px 12px; margin-bottom: 28px; }
+  .highlights button { flex: 0 0 auto; display: flex; flex-direction: column; align-items: center; gap: 10px; background: none; border: 0; cursor: pointer; color: var(--ink); font: 700 .78rem/1 var(--mono); text-transform: uppercase; letter-spacing: .06em; }
+  .ring { width: 84px; height: 84px; border-radius: 50%; padding: 4px; background: var(--muted); display: grid; place-items: center; transition: background .2s, transform .2s; }
+  .ring i { display: grid; place-items: center; width: 100%; height: 100%; border-radius: 50%; background: var(--paper); border: 3px solid var(--paper); }
+  .ring i::before { content: ''; display: block; background: var(--ink); }
+  .shape-bar::before { width: 10px; height: 38px; }
+  .shape-block::before { width: 30px; height: 30px; }
+  .shape-tee::before { width: 38px; height: 10px; box-shadow: 0 14px 0 0 var(--ink); transform: translateY(-7px); }
+  .highlights button:hover .ring { transform: translateY(-2px); }
+  .highlights button[aria-selected='true'] .ring { background: var(--accent); }
+  .highlights button[aria-selected='true'] .ring i { background: var(--ink); }
+  .highlights button[aria-selected='true'] .ring i::before, .highlights button[aria-selected='true'] .shape-tee::before { background: var(--accent); box-shadow: 0 14px 0 0 var(--accent); }
+  .highlights button[aria-selected='true'] .shape-bar::before, .highlights button[aria-selected='true'] .shape-block::before { box-shadow: none; }
+  .sobre-panel h3 { font-family: var(--display); font-weight: 900; font-stretch: 125%; text-transform: uppercase; line-height: 1; font-size: clamp(1.4rem, 3vw, 2.2rem); max-width: 24ch; margin-bottom: 24px; }
+  .sobre-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; font-size: 1.1rem; }
+  .objetivos { list-style: none; counter-reset: obj; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .objetivos li { counter-increment: obj; display: grid; grid-template-columns: 56px 1fr; gap: 14px; align-items: start; border: 2px solid var(--ink); border-radius: 10px; padding: 16px 18px; font-size: 1.05rem; font-weight: 500; }
+  .objetivos li::before { content: counter(obj, decimal-leading-zero); font-family: var(--display); font-weight: 900; font-stretch: 125%; font-size: 1.9rem; line-height: 1; color: var(--stage); }
+  .publico { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 20px; }
+  .publico article { background: var(--ink); color: var(--white); border-radius: 10px; padding: 20px; }
+  .publico h4 { font-family: var(--display); font-weight: 900; font-stretch: 125%; text-transform: uppercase; font-size: 1.15rem; line-height: 1; color: var(--accent); margin-bottom: 8px; }
+  .publico p { font-size: 1rem; }
+
   /* TEACHER */
   .teacher { color: var(--white); padding-block: clamp(64px, 10vw, 120px); }
   .teacher-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: clamp(32px, 6vw, 80px); align-items: center; }
@@ -511,7 +628,8 @@ const facts = ['3 dias', '3 salas', 'Básico e intermediário', 'Butantã', '1º
   .cell.all { grid-column: 2 / -1; background: var(--ink); color: var(--white); }
 
   /* LEVELS */
-  .levels { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; padding-bottom: clamp(64px, 10vw, 120px); }
+  .levels { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; padding-bottom: clamp(64px, 10vw, 120px); }
+  .lvl-avancado { --lvl: var(--ink); --lvl-ink: var(--white); }
   .level-card { background: var(--lvl); color: var(--lvl-ink); border: 3px solid var(--ink); border-radius: 12px; padding: 28px; }
   .level-card h3 { font-family: var(--display); font-weight: 900; font-stretch: 125%; text-transform: uppercase; font-size: clamp(1.25rem, 5.6vw, 1.9rem); line-height: 1; margin-bottom: 10px; }
   .level-card p { font-size: 1.1rem; }
@@ -559,6 +677,9 @@ const facts = ['3 dias', '3 salas', 'Básico e intermediário', 'Butantã', '1º
   [data-reveal] { opacity: 0; transform: translateY(28px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1); }
   [data-reveal].in { opacity: 1; transform: none; }
   @media (prefers-reduced-motion: reduce) { [data-reveal] { opacity: 1; transform: none; transition: none; } }
+  .map { position: relative; margin-top: 24px; border: 3px solid var(--ink); border-radius: 12px; overflow: hidden; background: var(--muted); }
+  .map iframe { display: block; width: 100%; height: clamp(260px, 36vw, 420px); border: 0; filter: grayscale(1) contrast(1.05); }
+  .map-link { position: absolute; right: 12px; bottom: 12px; background: var(--accent); color: var(--accent-ink); border: 2px solid var(--ink); }
   .venue-info h3 { font-family: var(--display); font-weight: 900; font-stretch: 125%; text-transform: uppercase; font-size: 1.9rem; line-height: 1; margin-bottom: 14px; }
   .venue-info p { margin-bottom: 10px; font-size: 1.1rem; }
 
@@ -599,7 +720,8 @@ const facts = ['3 dias', '3 salas', 'Básico e intermediário', 'Butantã', '1º
     .dates { margin-top: 0; letter-spacing: .08em; }
     .cta { width: 100%; justify-content: center; }
     .about-cols { font-size: 1.05rem; }
-    .about-cols, .teacher-grid, .levels, .venue-grid { grid-template-columns: 1fr; }
+    .about-cols, .teacher-grid, .levels, .venue-grid, .sobre-cols, .objetivos, .publico { grid-template-columns: 1fr; }
+    .ring { width: 72px; height: 72px; }
     .poster { max-width: none; margin-right: 24px; }
     .lotes { grid-template-columns: 1fr; }
     .lote-pill { margin-left: 0; }
