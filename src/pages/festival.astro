@@ -24,25 +24,38 @@ type Level = 'basico' | 'inter' | 'todos';
 type Slot = { t: string; level: Level };
 type Row = { time: string; all?: string; pause?: boolean } | { time: string; tracks: [Slot, Slot] };
 
-const warmup: Row = { time: '9h — 10h', all: 'Aquecimento: yoga com invertidas' };
-const handstand: Row = {
-  time: '10h30 — 12h',
+// Shape after what handstand festivals do (Drive: pesquisas/festival-handstand-grade-diaria.md, 04/11/2026):
+// yoga together but light, a wrist/shoulder warm-up per level right before class, jam instead of the last class
+// on Saturday and Sunday, Sunday ending earlier with a closing circle. Each day has a thread: base → construção → integração.
+const yoga: Row = { time: '9h — 9h45', all: 'Yoga e mobilidade, todo mundo junto' };
+const prep = (time = '10h — 10h30'): Row => ({
+  time,
+  tracks: [{ t: 'Aquecimento de punhos e ombros', level: 'basico' }, { t: 'Aquecimento de punhos e ombros', level: 'inter' }],
+});
+const handstand = (time = '10h30 — 12h'): Row => ({
+  time,
   tracks: [{ t: 'Parada de mão', level: 'basico' }, { t: 'Parada de mão', level: 'inter' }],
-};
+});
 const lunch: Row = { time: '12h — 14h', all: 'Almoço', pause: true };
-const third = (basico: string): Row => ({
-  time: '14h — 15h30',
+const third = (basico: string, time = '14h — 15h30'): Row => ({
+  time,
   tracks: [{ t: basico, level: 'basico' }, { t: 'Flexibilidade e força para press', level: 'inter' }],
 });
-const late: Row = {
-  time: '16h — 17h30',
-  tracks: [{ t: 'Parada de mão', level: 'basico' }, { t: 'Parada de mão', level: 'inter' }],
-};
 
-const days: { id: string; label: string; date: string; rows: Row[] }[] = [
-  { id: 'sex', label: 'Sex', date: '5', rows: [warmup, handstand, lunch, third('Acroyoga'), late] },
-  { id: 'sab', label: 'Sáb', date: '6', rows: [warmup, handstand, lunch, third('Acro handstand corpo a corpo'), late] },
-  { id: 'dom', label: 'Dom', date: '7', rows: [warmup, handstand, lunch, third('Handstand em objetos'), late] },
+const days: { id: string; label: string; date: string; arc: string; rows: Row[] }[] = [
+  { id: 'sex', label: 'Sex', date: '5', arc: 'Base', rows: [
+    yoga, prep(), handstand(), lunch, third('Acroyoga'), prep('15h45 — 16h'), handstand('16h — 17h30'),
+    { time: '17h30 — 18h30', all: 'Roda de abertura' },
+  ] },
+  { id: 'sab', label: 'Sáb', date: '6', arc: 'Construção', rows: [
+    yoga, prep(), handstand(), lunch, third('Acro handstand corpo a corpo'),
+    { time: '16h — 17h30', all: 'Jam: treino livre com os professores circulando' },
+  ] },
+  { id: 'dom', label: 'Dom', date: '7', arc: 'Integração', rows: [
+    { time: '9h — 9h45', all: 'Aquecimento lento, todo mundo junto' },
+    prep(), handstand(), lunch, third('Handstand em objetos'),
+    { time: '15h45 — 17h', all: 'Jam de encerramento, roda final e foto' },
+  ] },
 ];
 
 const levelName: Record<Level, string> = { basico: 'Básico', inter: 'Intermediário e avançado', todos: 'Todos juntos' };
@@ -51,8 +64,9 @@ const tracks = ['Básico', 'Intermediário e avançado'];
 // FAQ: only what is already decided; Paulo's own FAQ text (about handstand) is still to come (his paste came empty, 04/11/2026).
 const faqFest: { q: string; a: string }[] = [
   { q: 'Quando e onde?', a: 'Sexta, sábado e domingo, 5, 6 e 7 de março de 2027, no Trapézio Voador (R. Alvarenga, 150, Jardim Guedala), perto da Estação Butantã do metrô, em São Paulo.' },
-  { q: 'Como é um dia do festival?', a: 'Quatro aulas por dia: um aquecimento de yoga com invertidas para todo mundo, duas aulas de parada de mão e uma aula do meio da tarde. Em duas delas você escolhe a sua turma pelo nível. A grade ainda está sendo ajustada com os professores.' },
-  { q: 'Preciso já ficar em pé de mão?', a: 'Não. A turma de básico é para quem está começando, na parede ou perto dela. Se você já fica no livre, trabalha press ou one arm, a turma de intermediário e avançado é a sua.' },
+  { q: 'Como é um dia do festival?', a: 'Yoga e mobilidade com todo mundo junto, aquecimento de punhos e ombros já na sua turma, parada de mão de manhã, almoço, uma aula de tema à tarde e, no fim do dia, parada de mão de novo ou jam com os professores circulando. Cada dia tem um fio: sexta é base, sábado é construção, domingo é integração, e termina mais cedo. A grade ainda está sendo ajustada com os professores.' },
+  { q: 'Preciso já ficar em pé de mão?', a: 'Não. A turma de básico é para quem treina na parede e ainda não segura o livre. A turma de intermediário e avançado pede handstand livre por uns 10 segundos de forma consistente (30 é o ideal); é lá que entram press, one arm e formas.' },
+  { q: 'Qual turma é a minha?', a: 'Se você ainda não segura o livre, básico. Se segura 10 segundos no livre com consistência, intermediário e avançado. Na dúvida, manda um vídeo curto quando se inscrever e a gente te ajuda a escolher.' },
   { q: 'Quanto custa?', a: 'Passe completo para os 3 dias em três lotes: as primeiras 10 vagas a R$ 490, as 30 seguintes a R$ 590 e as últimas 15 a R$ 690. São 55 vagas no total. Por enquanto só vendemos o passe completo.' },
   { q: 'Como compro?', a: 'Pelo botão "Garanta sua vaga". Quando um lote esgota, o próximo abre sozinho.' },
   { q: 'Venho do yoga, do acroyoga ou da calistenia. É para mim?', a: 'Sim. O festival é para quem quer ampliar o repertório a partir da parada de mão, de qualquer prática: yoga, acroyoga, calistenia, circo, dança ou movimento.' },
@@ -60,6 +74,8 @@ const faqFest: { q: string; a: string }[] = [
 ];
 const faqHandstand: { q: string; a: string }[] = [
   { q: 'Handstand ou parada de mão?', a: 'A mesma coisa. Usamos as duas palavras de propósito: quem pesquisa na internet procura mais por "handstand", e quem treina no Brasil fala "parada de mão".' },
+  { q: 'Como começar?', a: 'Na parede, com pouco tempo e muita frequência: punhos e ombros aquecidos, barriga para a parede, segurar a linha por alguns segundos e descer com controle. Dez minutos por dia valem mais que uma hora por semana. No festival, a turma de básico começa exatamente daí.' },
+  { q: 'Vou sair do festival fazendo parada de mão?', a: 'Depois de três dias, não. Ninguém aprende a segurar o livre num fim de semana. O que você leva: ferramentas para treinar, direção para os próximos meses e um ganho real no equilíbrio na parede e com assistência. E gente para treinar junto.' },
 ];
 
 // Bento: photos and videos mixed. `video` cells play on hover (desktop) or when in view (touch).
@@ -191,7 +207,7 @@ const publico = [
       <h2 class="display" data-reveal>Três dias treinando, conversando e aprendendo parada de mão.</h2>
       <div class="about-cols">
         <p>A primeira edição é para quem pratica parada de mão por ela mesma: quem chegou pela calistenia, pelo yoga, pela dança, pelo movimento ou só pela teimosia de ficar de cabeça para baixo.</p>
-        <p><strong>Quatro aulas por dia</strong>, duas delas por nível, do básico ao avançado: aquecimento junto, parada de mão de manhã e no fim da tarde, e uma aula de tema no meio. Perto do metrô.</p>
+        <p><strong>Quatro blocos por dia</strong>, do básico ao avançado: yoga junto, parada de mão na sua turma, uma aula de tema à tarde e, no fim do dia, aula ou jam com os professores. Perto do metrô.</p>
       </div>
     </section>
 
@@ -276,12 +292,12 @@ const publico = [
     <section class="schedule wrap" id="grade" data-tabs>
       <div class="section-head">
         <h2 class="display" data-reveal>Grade</h2>
-        <p class="note"><span class="pill">Provisória</span> Ainda estamos ajustando as aulas e os professores de cada bloco. O que já vale: <strong>4 aulas por dia</strong>, e em 2 delas você escolhe a turma pelo seu nível.</p>
+        <p class="note"><span class="pill">Provisória</span> Ainda estamos ajustando as aulas e os professores de cada bloco. O que já vale: <strong>4 blocos por dia</strong>, parada de mão sempre na sua turma, e um fio que começa na base da sexta e termina no jam de domingo.</p>
       </div>
       <div class="days" role="tablist">
         {days.map((d, i) => (
           <button role="tab" class="day" data-tab={d.id} aria-selected={i === 0 ? 'true' : 'false'}>
-            <span>{d.label}</span><b>{d.date}</b>
+            <span>{d.label}</span><b>{d.date}</b><em>{d.arc}</em>
           </button>
         ))}
       </div>
@@ -315,15 +331,15 @@ const publico = [
     <section class="levels wrap">
       <article class="level-card lvl-basico" data-reveal>
         <h3>Básico</h3>
-        <p>Você já sobe na parede, ou está quase lá, e quer aprender a linha, o chute e a sair com segurança.</p>
+        <p><strong>Você treina na parede e ainda não segura o livre.</strong> Linha, chute, saída segura e os primeiros segundos sem a parede.</p>
       </article>
       <article class="level-card lvl-inter" data-reveal>
         <h3>Intermediário</h3>
-        <p>Você fica uns 30 segundos na parede e já arrisca alguns segundos no livre. Quer equilíbrio, formas e consistência.</p>
+        <p><strong>Você segura uns 10 segundos no livre, de forma consistente</strong> (30 é o ideal). Equilíbrio, formas, entradas e tempo.</p>
       </article>
       <article class="level-card lvl-avancado" data-reveal>
         <h3>Avançado</h3>
-        <p>Você segura o livre com folga e trabalha press, one arm e formas. Quer trocar com outros professores e artistas.</p>
+        <p><strong>Livre com folga.</strong> Press, one arm e formas, na mesma turma do intermediário, com trabalho de flexibilidade e força à tarde.</p>
       </article>
     </section>
 
@@ -647,6 +663,7 @@ const publico = [
   .day { flex: 1 0 auto; min-width: 72px; display: flex; flex-direction: column; align-items: center; padding: 10px 16px; border: 2px solid var(--ink); background: transparent; border-radius: 8px; cursor: pointer; font: inherit; color: var(--ink); transition: background .15s; }
   .day span { font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; }
   .day b { font-family: var(--display); font-weight: 900; font-stretch: 125%; font-size: 1.5rem; line-height: 1; }
+  .day em { font-style: normal; font-family: var(--mono); font-size: .68rem; text-transform: uppercase; letter-spacing: .08em; margin-top: 4px; opacity: .75; }
   .day:hover { background: rgba(0,0,0,.06); }
   .day[aria-selected='true'] { background: var(--ink); color: var(--white); }
   .legend { display: flex; gap: 8px; margin: 20px 0 16px; flex-wrap: wrap; }
