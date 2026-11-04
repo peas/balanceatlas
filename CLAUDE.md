@@ -101,15 +101,20 @@ Always verify downloaded images are real (>5KB, not HTML redirects).
 ## Hidden pages (Oct 2026)
 - `/` is a "coming soon" landing; the full site lives at `/principal` (nav points there, all pages `noindex`).
 - `/festival` — **1º HandstandFest** (São Paulo, Fri–Sun 5–7 Mar 2027), standalone page in **pt-BR** with its own identity
-  (Archivo 125% wide + Space Mono, hard geometry: bars and blocks; four palettes A (original orange) / B / C / D as CSS tokens,
-  `?paleta=` + a floating switcher while the identity is open). Exception to the English-only rule for page copy.
+  (Archivo 125% wide + Space Mono, hard geometry: bars and blocks; six palettes A (original orange) / B / C / D / E / F as CSS tokens,
+  `?paleta=` + a floating switcher while the identity is open; Gabriel liked C (deep green + pink), Paulo found it serious,
+  so E and F (04/11/2026) keep the green with sun yellow / coral). Exception to the English-only rule for page copy.
   Its media is committed in `public/festival/` because this machine has no R2 token for `media-handstand`;
   move it to R2 once `.env` exists. Research: Drive `pesquisas/festival-handstand-sp-2027.md`.
   **Design direction Paulo likes (29/10/2026): social-media cues** — story progress bars, ▶ video badges,
-  story-format teacher posters, mini Instagram stories, "agora" live dot on the open ticket batch. Keep exploring
-  this language (reels/stories/play affordances) in new sections.
-  Venue: Trapézio Voador (R. Alvarenga 150, metrô Butantã). Tickets: 1º lote R$400 (first 20), 2º R$500,
-  3º R$600; `TICKETS` in festival.astro is a placeholder (example.com) until the real link exists.
+  story-format teacher posters, mini Instagram stories, "agora" live dot on the open ticket batch, "Sobre o evento"
+  tabs drawn as Instagram profile highlights (04/11/2026). Keep exploring this language (reels/stories/play
+  affordances) in new sections. Any `[data-tabs]` scope with `[role=tab][data-tab]` + `[data-panel]` works as tabs.
+  Venue: Trapézio Voador (R. Alvarenga 150, metrô Butantã; confirmed 04/11/2026; Google Maps embed + the venue's
+  own place link). Tickets: 55 spots, 1º lote R$400 (first 10), 2º R$500 (next 30), 3º R$600 (last 15);
+  `TICKETS` in festival.astro is a placeholder (example.com) until the real link exists. Levels: básico,
+  intermediário, avançado (the organizers' brief of 04/11/2026 covers all levels). Date 5–7 Mar 2027 is under
+  review (Paulo asked for a holiday-free Fri–Sun in Mar/Apr; options in the Drive research file).
   Hero and teacher cards are Remotion compositions (`src/festival/`, `@remotion/player` via `@astrojs/react`,
   `client:only`); clips are cut and graded by `scripts/festival_clips.sh`. Remotion packages pinned to one version.
 
