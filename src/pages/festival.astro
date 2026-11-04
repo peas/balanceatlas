@@ -10,56 +10,57 @@ const R2 ='https://media.balanceatlas.com/images/retreats';
 // Placeholder until the real ticketing link exists (Paulo, 29/10/2026: "link fake" for now)
 const TICKETS = 'https://example.com/handstandfest-ingressos';
 const LOTES = [
-  { n: '1º lote', price: 400, note: 'Primeiras 10 vagas', state: 'aberto' },
-  { n: '2º lote', price: 500, note: 'Próximas 30 vagas', state: 'proximo' },
-  { n: '3º lote', price: 600, note: 'Últimas 15 vagas', state: 'proximo' },
+  { n: '1º lote', price: 490, note: 'Primeiras 10 vagas', state: 'aberto' },
+  { n: '2º lote', price: 590, note: 'Próximas 30 vagas', state: 'proximo' },
+  { n: '3º lote', price: 690, note: 'Últimas 15 vagas', state: 'proximo' },
 ] as const;
 const VAGAS = 55;
 const MAPS_Q = encodeURIComponent('Trapézio Voador, R. Alvarenga, 150, Jardim Guedala, São Paulo');
 // The venue's own Google Maps link (footer of trapeziovoador.com.br, 04/11/2026)
 const MAPS_PLACE = 'https://www.google.com/maps/place/Trap%C3%A9zio+Voador+Escola+de+Artes+Circenses/@-23.5793024,-46.7071634,15z/data=!4m2!3m1!1s0x0:0xa5afb1ebf939a9e5';
 
+// Schedule (Paulo, 04/11/2026): 4 classes a day, 2 of them split by level. Still provisional.
 type Level = 'basico' | 'inter' | 'todos';
-type Slot = { t: string; level?: Level };
-type Row = { time: string; all?: string } | { time: string; rooms: [Slot, Slot, Slot] };
+type Slot = { t: string; level: Level };
+type Row = { time: string; all?: string; pause?: boolean } | { time: string; tracks: [Slot, Slot] };
 
-const morning: Row = {
-  time: '10h — 12h30',
-  rooms: [
-    { t: 'Técnica: parede, linha, chute e saída segura', level: 'basico' },
-    { t: 'Técnica: livre, equilíbrio pelos dedos, formas', level: 'inter' },
-    { t: 'Mobilidade e compressão: pike, straddle, ombro', level: 'todos' },
-  ],
+const warmup: Row = { time: '9h — 10h', all: 'Aquecimento: yoga com invertidas' };
+const handstand: Row = {
+  time: '10h30 — 12h',
+  tracks: [{ t: 'Parada de mão', level: 'basico' }, { t: 'Parada de mão', level: 'inter' }],
 };
-const afternoon: Row = {
-  time: '14h — 16h',
-  rooms: [
-    { t: 'Workshop temático', level: 'basico' },
-    { t: 'Workshop temático', level: 'inter' },
-    { t: 'Clínica 1:1 · 15 min com hora marcada', level: 'todos' },
-  ],
+const lunch: Row = { time: '12h — 14h', all: 'Almoço', pause: true };
+const third = (basico: string): Row => ({
+  time: '14h — 15h30',
+  tracks: [{ t: basico, level: 'basico' }, { t: 'Flexibilidade e força para press', level: 'inter' }],
+});
+const late: Row = {
+  time: '16h — 17h30',
+  tracks: [{ t: 'Parada de mão', level: 'basico' }, { t: 'Parada de mão', level: 'inter' }],
 };
-const warmup: Row = { time: '9h30', all: 'Aquecimento conjunto · punhos e ombros' };
-const jam: Row = { time: '16h30 — 18h', all: 'Treino livre / jam com monitores' };
 
 const days: { id: string; label: string; date: string; rows: Row[] }[] = [
-  { id: 'sex', label: 'Sex', date: '5', rows: [
-    { time: '9h30', all: 'Abertura · apresentação dos professores · vídeo do "antes"' },
-    morning, afternoon, jam,
-    { time: '19h — 20h30', all: 'Roda de abertura' },
-  ] },
-  { id: 'sab', label: 'Sáb', date: '6', rows: [
-    warmup, morning, afternoon, jam,
-    { time: '19h — 20h30', all: 'Mostra aberta' },
-  ] },
-  { id: 'dom', label: 'Dom', date: '7', rows: [
-    warmup, morning,
-    { time: '14h — 16h', all: 'Vídeo do "depois" · círculo de fechamento' },
-  ] },
+  { id: 'sex', label: 'Sex', date: '5', rows: [warmup, handstand, lunch, third('Acroyoga'), late] },
+  { id: 'sab', label: 'Sáb', date: '6', rows: [warmup, handstand, lunch, third('Acro handstand corpo a corpo'), late] },
+  { id: 'dom', label: 'Dom', date: '7', rows: [warmup, handstand, lunch, third('Handstand em objetos'), late] },
 ];
 
-const levelName: Record<Level, string> = { basico: 'Básico', inter: 'Intermediário', todos: 'Todos' };
-const rooms = ['Sala A', 'Sala B', 'Sala C'];
+const levelName: Record<Level, string> = { basico: 'Básico', inter: 'Intermediário e avançado', todos: 'Todos juntos' };
+const tracks = ['Básico', 'Intermediário e avançado'];
+
+// FAQ: only what is already decided; Paulo's own FAQ text (about handstand) is still to come (his paste came empty, 04/11/2026).
+const faqFest: { q: string; a: string }[] = [
+  { q: 'Quando e onde?', a: 'Sexta, sábado e domingo, 5, 6 e 7 de março de 2027, no Trapézio Voador (R. Alvarenga, 150, Jardim Guedala), perto da Estação Butantã do metrô, em São Paulo.' },
+  { q: 'Como é um dia do festival?', a: 'Quatro aulas por dia: um aquecimento de yoga com invertidas para todo mundo, duas aulas de parada de mão e uma aula do meio da tarde. Em duas delas você escolhe a sua turma pelo nível. A grade ainda está sendo ajustada com os professores.' },
+  { q: 'Preciso já ficar em pé de mão?', a: 'Não. A turma de básico é para quem está começando, na parede ou perto dela. Se você já fica no livre, trabalha press ou one arm, a turma de intermediário e avançado é a sua.' },
+  { q: 'Quanto custa?', a: 'Passe completo para os 3 dias em três lotes: as primeiras 10 vagas a R$ 490, as 30 seguintes a R$ 590 e as últimas 15 a R$ 690. São 55 vagas no total. Por enquanto só vendemos o passe completo.' },
+  { q: 'Como compro?', a: 'Pelo botão "Garanta sua vaga". Quando um lote esgota, o próximo abre sozinho.' },
+  { q: 'Venho do yoga, do acroyoga ou da calistenia. É para mim?', a: 'Sim. O festival é para quem quer ampliar o repertório a partir da parada de mão, de qualquer prática: yoga, acroyoga, calistenia, circo, dança ou movimento.' },
+  { q: 'Quem dá aula?', a: 'Agustin Melesi, com Rocío, Louisse Aldrigues e Dany García já confirmados. Mais nomes em breve.' },
+];
+const faqHandstand: { q: string; a: string }[] = [
+  { q: 'Handstand ou parada de mão?', a: 'A mesma coisa. Usamos as duas palavras de propósito: quem pesquisa na internet procura mais por "handstand", e quem treina no Brasil fala "parada de mão".' },
+];
 
 // Bento: photos and videos mixed. `video` cells play on hover (desktop) or when in view (touch).
 const R2V = 'https://media.balanceatlas.com/videos/retreats';
@@ -103,7 +104,7 @@ const lineup: { poster: PosterProps; url?: string; quote?: string; source?: stri
   },
 ];
 
-const facts = ['3 dias', '3 salas', 'Do básico ao avançado', 'Butantã', '1º lote R$ 400', `${VAGAS} vagas`, 'Handstand', 'Parada de mão'];
+const facts = ['3 dias', '4 aulas por dia', 'Do básico ao avançado', 'Butantã', '1º lote R$ 490', `${VAGAS} vagas`, 'Handstand', 'Parada de mão'];
 
 // "Sobre o evento": the organizers' text (Gabriel + Paulo, 04/11/2026), reworded for the page.
 // Tabs are drawn as Instagram-style profile highlights (the social-media cue Paulo asked to keep exploring).
@@ -150,6 +151,10 @@ const publico = [
   <body>
     <!-- HERO -->
     <header class="hero grain">
+      <nav class="topnav" aria-label="Principal">
+        <a class="nav-cta" href={TICKETS} target="_blank" rel="noopener">Garanta sua vaga</a>
+        <a href="#perguntas">Perguntas sobre o HandstandFest</a>
+      </nav>
       <div class="hero-title">
         <p class="kicker">Festival de parada de mão · São Paulo</p>
         <h1 class="logo" aria-label="1º HandstandFest">
@@ -163,7 +168,7 @@ const publico = [
         <p class="dates">Sex 5 · Sáb 6 · Dom 7 de março</p>
         <p class="place"><span>São Paulo</span> Brasil · 2027</p>
         <a class="cta" href="#ingressos">Garantir vaga <span aria-hidden="true">→</span></a>
-        <a class="lote-pill" href="#ingressos"><i aria-hidden="true"></i>1º lote aberto · R$ 400 · 10 vagas</a>
+        <a class="lote-pill" href="#ingressos"><i aria-hidden="true"></i>1º lote aberto · R$ 490 · 10 vagas</a>
       </div>
       <figure class="hero-media">
         <span class="hbar" aria-hidden="true"></span>
@@ -186,7 +191,7 @@ const publico = [
       <h2 class="display" data-reveal>Três dias treinando, conversando e aprendendo parada de mão.</h2>
       <div class="about-cols">
         <p>A primeira edição é para quem pratica parada de mão por ela mesma: quem chegou pela calistenia, pelo yoga, pela dança, pelo movimento ou só pela teimosia de ficar de cabeça para baixo.</p>
-        <p>Turmas por nível, <strong>do básico ao avançado</strong>. Manhãs de técnica, tardes de temas, fim de tarde de treino livre e noites de conversa. Três salas ao mesmo tempo, perto do metrô.</p>
+        <p><strong>Quatro aulas por dia</strong>, duas delas por nível, do básico ao avançado: aquecimento junto, parada de mão de manhã e no fim da tarde, e uma aula de tema no meio. Perto do metrô.</p>
       </div>
     </section>
 
@@ -271,7 +276,7 @@ const publico = [
     <section class="schedule wrap" id="grade" data-tabs>
       <div class="section-head">
         <h2 class="display" data-reveal>Grade</h2>
-        <p class="note">Provisória. Os temas das tardes e os professores de cada bloco saem com o anúncio da equipe.</p>
+        <p class="note"><span class="pill">Provisória</span> Ainda estamos ajustando as aulas e os professores de cada bloco. O que já vale: <strong>4 aulas por dia</strong>, e em 2 delas você escolhe a turma pelo seu nível.</p>
       </div>
       <div class="days" role="tablist">
         {days.map((d, i) => (
@@ -286,17 +291,17 @@ const publico = [
       {days.map((d, i) => (
         <div class="grid-day" data-panel={d.id} hidden={i !== 0}>
           <div class="grid-row grid-head">
-            <span></span>{rooms.map((r) => <span>{r}</span>)}
+            <span></span>{tracks.map((r) => <span>{r}</span>)}
           </div>
           {d.rows.map((row) => (
             <div class="grid-row">
               <span class="time">{row.time}</span>
               {'all' in row ? (
-                <span class="cell all">{row.all}</span>
+                <span class:list={['cell', 'all', { pause: row.pause }]}>{row.all}</span>
               ) : (
-                row.rooms.map((s, k) => (
+                row.tracks.map((s) => (
                   <span class={`cell lvl-${s.level}`}>
-                    <small>{rooms[k]} · {levelName[s.level!]}</small>{s.t}
+                    <small>{levelName[s.level]}</small>{s.t}
                   </span>
                 ))
               )}
@@ -400,6 +405,28 @@ const publico = [
         </div>
         <a class="cta cta-dark" href={TICKETS} target="_blank" rel="noopener">Garantir vaga no 1º lote <span aria-hidden="true">→</span></a>
         <p class="lote-foot">Passe completo para os 3 dias, {VAGAS} vagas no total. Quando as 10 do 1º lote acabarem, abre o 2º; depois das 30 do 2º, o 3º.</p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq wrap" id="perguntas">
+      <div class="section-head">
+        <h2 class="display" data-reveal>Perguntas</h2>
+        <p class="note">Sobre o festival e sobre a prática. Não achou a sua? Manda no <a href="https://www.instagram.com/handstandfest/" target="_blank" rel="noopener">@handstandfest</a>.</p>
+      </div>
+      <div class="faq-cols">
+        <div>
+          <h3>Sobre o HandstandFest</h3>
+          {faqFest.map((f) => (
+            <details data-reveal><summary>{f.q}</summary><p>{f.a}</p></details>
+          ))}
+        </div>
+        <div>
+          <h3>Sobre handstand</h3>
+          {faqHandstand.map((f) => (
+            <details data-reveal><summary>{f.q}</summary><p>{f.a}</p></details>
+          ))}
+        </div>
       </div>
     </section>
 
@@ -620,7 +647,9 @@ const publico = [
   .lvl-inter { --lvl: var(--accent); --lvl-ink: var(--accent-ink); }
   .lvl-todos { --lvl: var(--stage); --lvl-ink: var(--white); }
   .lvl { background: var(--lvl); color: var(--lvl-ink); border: 2px solid var(--ink); }
-  .grid-row { display: grid; grid-template-columns: 120px repeat(3, 1fr); gap: 8px; margin-bottom: 8px; }
+  .grid-row { display: grid; grid-template-columns: 120px repeat(2, 1fr); gap: 8px; margin-bottom: 8px; }
+  .cell.pause { background: transparent; color: var(--ink); border-style: dashed; font-family: var(--mono); text-transform: uppercase; font-size: .85rem; }
+  .schedule .note .pill { margin-right: 6px; }
   .grid-head span { font-size: .8rem; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; padding: 0 4px; }
   .time { font-family: var(--mono); font-weight: 700; font-size: .95rem; padding-top: 12px; }
   .cell { background: var(--lvl, #fff); color: var(--lvl-ink, var(--ink)); border: 2px solid var(--ink); border-radius: 8px; padding: 12px 14px; font-weight: 500; }
@@ -708,10 +737,30 @@ const publico = [
   .cta-dark { background: var(--accent); color: var(--accent-ink); }
   .cta-dark:hover { background: var(--white); color: var(--ink); }
 
+  /* FAQ */
+  .faq { padding-block: clamp(64px, 10vw, 120px); }
+  .faq-cols { display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; align-items: start; }
+  .faq h3 { font-family: var(--mono); font-weight: 700; text-transform: uppercase; font-size: .9rem; letter-spacing: .08em; margin-bottom: 14px; }
+  .faq details { border-top: 2px solid var(--ink); padding: 14px 0; }
+  .faq details:last-child { border-bottom: 2px solid var(--ink); }
+  .faq summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 16px; align-items: center; font-family: var(--display); font-weight: 900; font-stretch: 125%; text-transform: uppercase; font-size: 1.05rem; line-height: 1.15; }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after { content: '+'; flex: 0 0 28px; height: 28px; display: grid; place-items: center; background: var(--accent); color: var(--accent-ink); border: 2px solid var(--ink); font-family: var(--mono); }
+  .faq details[open] summary::after { content: '−'; background: var(--ink); color: var(--white); }
+  .faq details p { margin-top: 10px; font-size: 1.05rem; max-width: 60ch; }
+
+  /* TOP NAV */
+  .topnav { position: absolute; top: 0; left: 0; right: 0; display: flex; justify-content: flex-end; align-items: center; gap: 8px; padding: 14px max(16px, calc((100% - 1200px) / 2)); font-family: var(--mono); font-weight: 700; font-size: .78rem; text-transform: uppercase; letter-spacing: .04em; z-index: 5; }
+  .topnav a { color: var(--white); text-decoration: none; padding: 8px 12px; border: 2px solid transparent; }
+  .topnav a:hover { border-color: var(--white); }
+  .topnav .nav-cta { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+  .topnav .nav-cta:hover { background: var(--white); color: var(--ink); border-color: var(--white); }
+
   .foot { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding-block: 28px; font-size: .9rem; }
 
   @media (max-width: 860px) {
-    .hero { grid-template-columns: 1fr; grid-template-areas: 'title' 'media' 'info'; min-height: auto; padding-top: 40px; row-gap: 28px; }
+    .hero { grid-template-columns: 1fr; grid-template-areas: 'nav' 'title' 'media' 'info'; min-height: auto; padding-top: 20px; row-gap: 28px; }
+    .topnav { grid-area: nav; }
     .hero .kicker { margin-bottom: 40px; }
     .logo { font-size: clamp(2.7rem, 14.5vw, 4.4rem); }
     .hero-media { width: 100%; max-width: 440px; }
@@ -720,7 +769,8 @@ const publico = [
     .dates { margin-top: 0; letter-spacing: .08em; }
     .cta { width: 100%; justify-content: center; }
     .about-cols { font-size: 1.05rem; }
-    .about-cols, .teacher-grid, .levels, .venue-grid, .sobre-cols, .objetivos, .publico { grid-template-columns: 1fr; }
+    .about-cols, .teacher-grid, .levels, .venue-grid, .sobre-cols, .objetivos, .publico, .faq-cols { grid-template-columns: 1fr; }
+    .topnav { position: static; justify-content: flex-start; flex-wrap: wrap; padding: 0 0 20px; margin-top: -8px; font-size: .72rem; }
     .ring { width: 72px; height: 72px; }
     .poster { max-width: none; margin-right: 24px; }
     .lotes { grid-template-columns: 1fr; }

@@ -244,15 +244,16 @@ const Shape = ({ shape }: { shape: PosterProps['shape'] }) => {
   if (shape === 'tee')
     return (
       <>
-        <div style={{ position: 'absolute', right: 0, top: 300, height: 24, width: 260 * a, background: ACCENT }} />
+        <div style={{ position: 'absolute', right: 0, top: 300, height: 24, width: 200 * a, background: ACCENT }} />
         <div style={{ position: 'absolute', right: 118, top: 300, width: 24, height: 300 * b, background: ACCENT }} />
       </>
     );
   return <div style={{ position: 'absolute', right: 0, top: 290, width: 180 * a, height: 180, background: ACCENT }} />;
 };
 
-// Wide type: shrink long names so they fit the 540px card
-const fit = (...words: string[]) => Math.min(72, Math.floor(470 / (Math.max(...words.map((w) => w.length)) * 0.82)));
+// Wide type: shrink long names so they stay in the top-left ~400px of the 540px card.
+// Handstand photos put the feet top-centre, so the name must not reach the centre (checked 04/11/2026).
+const fit = (...words: string[]) => Math.min(60, Math.floor(400 / (Math.max(...words.map((w) => w.length)) * 0.82)));
 
 export const Poster = ({ img, first, last, handle, shape, focus = 'center' }: PosterProps) => {
   const frame = useCurrentFrame();
