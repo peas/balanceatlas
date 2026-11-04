@@ -115,10 +115,14 @@ Always verify downloaded images are real (>5KB, not HTML redirects).
   Sympla (Paulo creates the event; see Drive `pesquisas/ingressos-pessoa-fisica-plataformas.md`);
   `TICKETS` in festival.astro is a placeholder (example.com) until the Sympla link exists. It feeds the top nav
   "Garanta sua vaga" and both CTAs. Levels: básico, intermediário, avançado (the organizers' brief of 04/11/2026
-  covers all levels). Schedule (04/11/2026, provisional): 4 classes a day, 2 split by level (9h warm-up yoga with
-  inversions; 10h30 handstand; 14h theme class: acroyoga / acro handstand / handstand on objects for básico,
-  flexibility + press strength for inter/avançado; 16h handstand). FAQ `#perguntas` holds only decided facts;
-  Paulo's own handstand FAQ text is still to come. Date 5–7 Mar 2027 is under review (Paulo asked for a
+  covers all levels; rule on the site: básico = trains on the wall, no freestanding yet; inter/avançado = 10 s
+  freestanding consistently, 30 s ideal; one shared track). Schedule (04/11/2026, provisional, shaped after the
+  Drive research `pesquisas/festival-handstand-grade-diaria.md`): 9h yoga together (light), 10h wrist/shoulder
+  warm-up per level, 10h30 handstand per level, lunch, 14h theme class (acroyoga / acro handstand / handstand on
+  objects for básico, flexibility + press strength for inter/avançado), then Fri 16h handstand + roda de abertura,
+  Sat 16h jam, Sun jam de encerramento 15h45–17h. Day threads: Sex Base, Sáb Construção, Dom Integração.
+  FAQ `#perguntas` holds decided facts plus two handstand answers Paulo asked for (como começar; "vou sair fazendo
+  parada de mão?" = no, tools + direction + wall/assisted gains); his longer FAQ text is still to come. Date 5–7 Mar 2027 is under review (Paulo asked for a
   holiday-free Fri–Sun in Mar/Apr; options in the Drive research file).
   **Overlay rule (Paulo, 04/11/2026):** whenever bars, Ts and blocks are laid over photos/videos, check they do not
   cover text or the body of the person in the handstand. Poster names stay in the top-left ~400px because the
