@@ -111,10 +111,22 @@ Always verify downloaded images are real (>5KB, not HTML redirects).
   tabs drawn as Instagram profile highlights (04/11/2026). Keep exploring this language (reels/stories/play
   affordances) in new sections. Any `[data-tabs]` scope with `[role=tab][data-tab]` + `[data-panel]` works as tabs.
   Venue: Trapézio Voador (R. Alvarenga 150, metrô Butantã; confirmed 04/11/2026; Google Maps embed + the venue's
-  own place link). Tickets: 55 spots, 1º lote R$400 (first 10), 2º R$500 (next 30), 3º R$600 (last 15);
-  `TICKETS` in festival.astro is a placeholder (example.com) until the real link exists. Levels: básico,
-  intermediário, avançado (the organizers' brief of 04/11/2026 covers all levels). Date 5–7 Mar 2027 is under
-  review (Paulo asked for a holiday-free Fri–Sun in Mar/Apr; options in the Drive research file).
+  own place link). Tickets: 55 spots, 1º lote R$490 (first 10), 2º R$590 (next 30), 3º R$690 (last 15), sold on
+  Sympla (Paulo creates the event; see Drive `pesquisas/ingressos-pessoa-fisica-plataformas.md`);
+  `TICKETS` in festival.astro is a placeholder (example.com) until the Sympla link exists. It feeds the top nav
+  "Garanta sua vaga" and both CTAs. Levels: básico, intermediário, avançado (the organizers' brief of 04/11/2026
+  covers all levels). Schedule (04/11/2026, provisional): 4 classes a day, 2 split by level (9h warm-up yoga with
+  inversions; 10h30 handstand; 14h theme class: acroyoga / acro handstand / handstand on objects for básico,
+  flexibility + press strength for inter/avançado; 16h handstand). FAQ `#perguntas` holds only decided facts;
+  Paulo's own handstand FAQ text is still to come. Date 5–7 Mar 2027 is under review (Paulo asked for a
+  holiday-free Fri–Sun in Mar/Apr; options in the Drive research file).
+  **Overlay rule (Paulo, 04/11/2026):** whenever bars, Ts and blocks are laid over photos/videos, check they do not
+  cover text or the body of the person in the handstand. Poster names stay in the top-left ~400px because the
+  feet sit top-centre (`fit()` in compositions.tsx); the T shape was narrowed for the same reason.
+  Palette research (04/11/2026, Drive `pesquisas/paleta-festival-esporte.md`): B ranked first (energy, contrast,
+  distance from Rosario), then D and C; A and F fail accent-on-stage contrast. Lime never sits on paper.
+  Instagram: @handstandfest (profile not taken as of 04/11/2026; Paulo creates it). Domain: handstandfest.com.br
+  (free on 04/11/2026, only via Registro.br; Cloudflare Registrar has no .br), .com/.org/.net also free.
   Hero and teacher cards are Remotion compositions (`src/festival/`, `@remotion/player` via `@astrojs/react`,
   `client:only`); clips are cut and graded by `scripts/festival_clips.sh`. Remotion packages pinned to one version.
 
