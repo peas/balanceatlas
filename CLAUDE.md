@@ -177,9 +177,13 @@ Always verify downloaded images are real (>5KB, not HTML redirects).
   second cover). The venue section of the home plays piece 03 without its closing card.
 - Footage caveat: on 04/11 the bodies are small in frame (8–35% of the height); crops beyond 2x are soft at 1080p.
   Next shoot: closer, phone at hip height, one take per figure.
-- **To do (Paulo, 05/11/2026)**: a local page where he labels positions and movements on photos and video excerpts,
-  saved as YAML, to settle a shared handstand vocabulary (the catalogue's `posicao` names are provisional until
-  then); bring the Balance Atlas retreat photos and videos into the same catalogue.
+- **Vocabulary page** (local only): `scripts/festival_vocabulario.py` serves `acervo/vocabulario.html` on
+  http://localhost:4331, one card per catalogued scene with a position, looping and zoomed on the body. Paulo marks
+  instants and names what he sees; it autosaves to `acervo/vocabulario.yaml` (`termos`, `marcacoes`). YAML is read
+  and written through the system ruby (no PyYAML here). Once he has filled it in, replace the provisional `posicao`
+  names in the catalogue with his terms.
+- **To do (Paulo, 05/11/2026)**: bring the Balance Atlas retreat photos and videos into the same catalogue, with
+  image cards on the vocabulary page.
 
 ## FAQ Page
 - The site has a `/faq` page explaining the community, how to contribute, etc.

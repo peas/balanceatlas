@@ -1,0 +1,274 @@
+<!doctype html>
+<!-- Local labelling page, served by scripts/festival_vocabulario.py (never published: the footage is in local/).
+     Paulo names positions and movements on catalogued excerpts; every change is saved to acervo/vocabulario.yaml. -->
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Vocabulário de handstand</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@125,800..900&family=DM+Sans:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --paper: #f2efe6; --ink: #111; --stage: #2b3cf0; --accent: #d7f55a; --line: #c9c5ba; --warn: #b3261e;
+    --display: 'Archivo', 'Arial Black', sans-serif; --mono: 'Space Mono', ui-monospace, monospace; --body: 'DM Sans', system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) { :root { --paper: #16161a; --ink: #f2efe6; --line: #3a3a44; --warn: #ff8a80; } }
+  * { box-sizing: border-box; margin: 0; }
+  body { font-family: var(--body); background: var(--paper); color: var(--ink); line-height: 1.45; }
+  button, input, select, textarea { font: inherit; color: inherit; }
+  button { cursor: pointer; }
+  :focus-visible { outline: 3px solid var(--stage); outline-offset: 2px; }
+
+  header { position: sticky; top: 0; z-index: 20; background: var(--stage); color: #f2efe6; padding: 12px clamp(14px, 3vw, 32px); display: flex; flex-wrap: wrap; align-items: center; gap: 8px 18px; }
+  h1 { font-family: var(--display); font-weight: 900; font-stretch: 125%; text-transform: uppercase; font-size: 1.15rem; line-height: 1; }
+  h1 span { color: var(--accent); }
+  .conta, #salvo { font-family: var(--mono); font-size: .75rem; }
+  #salvo { margin-left: auto; padding: 3px 8px; background: rgba(0, 0, 0, .25); }
+  #salvo.erro { background: var(--warn); color: #fff; }
+  .filtros { flex-basis: 100%; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+  .chip { font-family: var(--mono); font-weight: 700; font-size: .72rem; text-transform: uppercase; padding: 4px 9px; border: 2px solid currentColor; background: transparent; color: inherit; }
+  .chip[aria-pressed='true'] { background: var(--accent); color: #111; border-color: var(--accent); }
+  .chip small { font-weight: 400; opacity: .75; }
+
+  .como { padding: 14px clamp(14px, 3vw, 32px) 0; font-size: .92rem; max-width: 96ch; }
+  .como b { font-family: var(--mono); font-size: .8rem; }
+  main { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 24px; padding: 18px clamp(14px, 3vw, 32px) 80px; align-items: start; }
+  @media (max-width: 900px) { main { grid-template-columns: 1fr; } aside { position: static !important; max-height: none !important; } }
+  #trechos { display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 28px 18px; }
+  .vazio { font-family: var(--mono); font-size: .85rem; padding: 24px; border: 2px dashed var(--line); }
+
+  .card { border-top: 4px solid var(--ink); padding-top: 10px; }
+  .card.tem { border-top-color: var(--stage); }
+  .vbox { position: relative; aspect-ratio: 9 / 16; overflow: hidden; background: #111; cursor: pointer; }
+  .vbox video { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .vbox .agora { position: absolute; left: 8px; top: 8px; background: #111; color: #f2efe6; font-family: var(--mono); font-weight: 700; font-size: .8rem; padding: 2px 7px; }
+  .vbox .play { position: absolute; inset: 0; display: grid; place-items: center; color: #fff; font-size: 2.6rem; text-shadow: 0 2px 10px rgba(0, 0, 0, .6); pointer-events: none; }
+  .vbox.tocando .play { display: none; }
+  .ctl { display: flex; align-items: center; gap: 6px; margin-top: 6px; }
+  .ctl input[type='range'] { flex: 1; min-width: 0; accent-color: var(--stage); }
+  .mini { font-family: var(--mono); font-size: .7rem; font-weight: 700; padding: 3px 7px; border: 2px solid var(--ink); background: transparent; }
+  .mini[aria-pressed='true'] { background: var(--ink); color: var(--paper); }
+  .meta { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 8px; font-family: var(--mono); font-size: .68rem; }
+  .meta .prov { background: var(--line); color: #111; padding: 1px 6px; text-transform: uppercase; }
+  .meta .de { opacity: .7; }
+  .oque { font-size: .82rem; opacity: .75; margin-top: 6px; }
+  .oque::before { content: 'catalogação automática: '; font-family: var(--mono); font-size: .68rem; }
+
+  .marcas { margin-top: 10px; display: grid; gap: 6px; }
+  .marca { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 4px 6px; padding: 6px; background: color-mix(in srgb, var(--stage) 10%, transparent); }
+  .marca .t { font-family: var(--mono); font-weight: 700; font-size: .72rem; background: var(--stage); color: #fff; border: 0; padding: 2px 6px; align-self: start; }
+  .marca input, .marca select, .termo input, .termo select, .termo textarea { width: 100%; background: var(--paper); border: 2px solid var(--line); padding: 4px 6px; font-size: .88rem; min-width: 0; }
+  .marca input:focus, .marca select:focus, .termo input:focus, .termo textarea:focus, .termo select:focus { border-color: var(--stage); outline: 0; }
+  .marca .nome { font-weight: 700; }
+  .marca .linha2 { grid-column: 2 / 4; display: grid; grid-template-columns: 110px minmax(0, 1fr); gap: 6px; }
+  .x { border: 0; background: transparent; font-size: 1.1rem; line-height: 1; padding: 0 4px; opacity: .6; }
+  .x:hover { opacity: 1; color: var(--warn); }
+  .acoes { display: flex; gap: 6px; margin-top: 8px; flex-wrap: wrap; }
+  .acao { font-family: var(--mono); font-weight: 700; font-size: .74rem; text-transform: uppercase; padding: 7px 10px; border: 2px solid var(--ink); background: var(--accent); color: #111; }
+  .acao.sec { background: transparent; color: inherit; }
+
+  aside { position: sticky; top: 96px; max-height: calc(100vh - 110px); overflow: auto; border: 3px solid var(--ink); padding: 14px; }
+  aside h2 { font-family: var(--display); font-weight: 900; font-stretch: 125%; text-transform: uppercase; font-size: 1rem; }
+  aside > p { font-size: .82rem; opacity: .75; margin: 6px 0 12px; }
+  .termo { border-top: 2px solid var(--line); padding: 10px 0; display: grid; gap: 5px; }
+  .termo .topo { display: grid; grid-template-columns: minmax(0, 1fr) 118px auto; gap: 5px; align-items: center; }
+  .termo .tnome { font-weight: 700; }
+  .termo textarea { resize: vertical; min-height: 2.6em; }
+  .termo .usos { font-family: var(--mono); font-size: .68rem; background: transparent; border: 0; text-align: left; padding: 0; text-decoration: underline; text-underline-offset: 2px; }
+  label.so { font-family: var(--mono); font-size: .72rem; display: inline-flex; gap: 5px; align-items: center; margin-left: 8px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Vocabulário de <span>handstand</span></h1>
+  <span class="conta" id="conta"></span>
+  <span id="salvo">abrindo…</span>
+  <div class="filtros" id="filtros"></div>
+</header>
+<p class="como">Cada cartão é um trecho do acervo em loop, aproximado no corpo. Pause onde a posição aparece, toque em <b>MARCAR ESTE INSTANTE</b> e escreva o nome que você usa. O nome entra na lista ao lado, onde você diz se é posição ou movimento e como define. Tudo é salvo sozinho em <b>acervo/vocabulario.yaml</b>.</p>
+<main>
+  <section id="trechos" aria-label="Trechos"></section>
+  <aside aria-label="Termos">
+    <h2>Termos</h2>
+    <p>Os nomes que você já usou. Renomear aqui renomeia todas as marcações.</p>
+    <div id="termos"></div>
+  </aside>
+</main>
+<datalist id="nomes"></datalist>
+
+<script>
+const TIPOS = ['', 'posição', 'entrada', 'saída', 'transição', 'movimento', 'outro'];
+const QUEM = ['', 'Paulo', 'Gabriel', 'os dois', 'outra pessoa'];
+const $ = (s, el = document) => el.querySelector(s);
+const el = (tag, props = {}, ...kids) => { const e = Object.assign(document.createElement(tag), props); e.append(...kids); return e; };
+const seg = (t) => t.toFixed(1).replace('.', ',') + ' s';
+const igual = (a, b) => a.trim().toLowerCase() === b.trim().toLowerCase();
+
+let itens = [], termos = [], marcas = [];
+let filtro = null, soVazios = false, soTermo = null;
+
+// ---------- saving ----------
+let timer;
+const salvar = () => {
+  clearTimeout(timer);
+  $('#salvo').textContent = 'salvando…';
+  timer = setTimeout(async () => {
+    const estado = { termos: termos.map(({ nome, tipo, outros_nomes, definicao }) => ({ nome: nome.trim(), tipo, outros_nomes, definicao })), marcacoes: marcas.map(({ item, clip, t, nome, quem, nota }) => ({ item, clip, t, nome: nome.trim(), quem, nota })) };
+    try { localStorage.setItem('vocabulario-copia', JSON.stringify(estado)); } catch {}
+    try {
+      const r = await (await fetch('/salvar', { method: 'POST', body: JSON.stringify(estado) })).json();
+      if (!r.ok) throw new Error(r.erro);
+      $('#salvo').className = '';
+      $('#salvo').textContent = `salvo às ${new Date().toLocaleTimeString('pt-BR')}`;
+    } catch (e) {
+      $('#salvo').className = 'erro';
+      $('#salvo').textContent = `não salvou: ${e.message}`;
+    }
+    contar();
+  }, 600);
+};
+const contar = () => {
+  const comNome = marcas.filter((m) => m.nome.trim()).length;
+  $('#conta').textContent = `${itens.length} trechos · ${comNome} marcações · ${termos.length} termos`;
+  $('#nomes').replaceChildren(...termos.map((t) => el('option', { value: t.nome })));
+};
+
+// ---------- terms ----------
+const garantirTermo = (nome) => {
+  if (nome.trim() && !termos.some((t) => igual(t.nome, nome))) { termos.push({ nome: nome.trim(), tipo: '', outros_nomes: '', definicao: '' }); pintarTermos(); }
+};
+const pintarTermos = () => {
+  const box = $('#termos');
+  if (!termos.length) return box.replaceChildren(el('p', { className: 'vazio', textContent: 'Nenhum termo ainda. Eles aparecem quando você nomeia uma marcação.' }));
+  box.replaceChildren(...termos.map((t) => {
+    const usos = marcas.filter((m) => igual(m.nome, t.nome)).length;
+    const nome = el('input', { className: 'tnome', value: t.nome, ariaLabel: 'Nome do termo' });
+    nome.onchange = () => {
+      const novo = nome.value.trim();
+      if (!novo) return (nome.value = t.nome);
+      marcas.forEach((m) => { if (igual(m.nome, t.nome)) m.nome = novo; });
+      t.nome = novo; pintarTudo(); salvar();
+    };
+    const tipo = el('select', { ariaLabel: 'Tipo' }, ...TIPOS.map((v) => el('option', { value: v, textContent: v || 'tipo…', selected: v === t.tipo })));
+    tipo.onchange = () => { t.tipo = tipo.value; salvar(); };
+    const tirar = el('button', { className: 'x', textContent: '×', title: usos ? 'apague as marcações antes' : 'remover termo', disabled: usos > 0 });
+    tirar.onclick = () => { termos = termos.filter((x) => x !== t); pintarTermos(); salvar(); };
+    const outros = el('input', { value: t.outros_nomes || '', placeholder: 'outros nomes (inglês, apelidos), separados por vírgula' });
+    outros.oninput = () => { t.outros_nomes = outros.value; salvar(); };
+    const def = el('textarea', { value: t.definicao || '', placeholder: 'como você define: o que tem que acontecer para ser isso' });
+    def.oninput = () => { t.definicao = def.value; salvar(); };
+    const ver = el('button', { className: 'usos', textContent: soTermo === t.nome ? `mostrando só "${t.nome}" · ver tudo` : `${usos} ${usos === 1 ? 'marcação' : 'marcações'} · ver só estes trechos` });
+    ver.onclick = () => { soTermo = soTermo === t.nome ? null : t.nome; pintarTudo(); };
+    return el('div', { className: 'termo' }, el('div', { className: 'topo' }, nome, tipo, tirar), outros, def, ver);
+  }));
+};
+
+// ---------- cards ----------
+const tocarSo = (v) => document.querySelectorAll('video').forEach((o) => { if (o !== v && !o.paused) o.pause(); });
+const cartao = (it) => {
+  const card = el('article', { className: 'card' });
+  const v = el('video', { muted: true, playsInline: true, preload: 'metadata', loop: false });
+  const agora = el('span', { className: 'agora', textContent: seg(it.de) });
+  const vbox = el('div', { className: 'vbox', title: 'tocar ou pausar' }, v, agora, el('span', { className: 'play', textContent: '▶' }));
+  const barra = el('input', { type: 'range', min: it.de, max: it.ate, step: 0.05, value: it.de, ariaLabel: 'Posição no trecho' });
+  const lento = el('button', { className: 'mini', textContent: '0,5x', ariaPressed: 'false', title: 'metade da velocidade' });
+  const zoom = el('button', { className: 'mini', textContent: 'zoom', ariaPressed: String(!!it.zoom), title: it.zoom ? 'aproximar no corpo ou ver o quadro inteiro' : 'sem dados de pose neste trecho', disabled: !it.zoom });
+  const aplicarZoom = () => { v.style.transform = zoom.ariaPressed === 'true' && it.zoom ? `scale(${it.zoom.escala})` : ''; v.style.transformOrigin = it.zoom ? `${it.zoom.x}% ${it.zoom.y}%` : ''; };
+  aplicarZoom();
+
+  const carregar = () => { if (!v.src) { v.src = `/midia/${it.clip}.mp4#t=${it.de}`; } };
+  vbox.onclick = () => { carregar(); if (v.paused) { tocarSo(v); if (v.currentTime < it.de || v.currentTime >= it.ate) v.currentTime = it.de; v.play(); } else v.pause(); };
+  v.onplay = () => vbox.classList.add('tocando');
+  v.onpause = () => vbox.classList.remove('tocando');
+  v.ontimeupdate = () => {
+    if (v.currentTime >= it.ate || v.currentTime < it.de - 0.3) v.currentTime = it.de; // loop inside the excerpt
+    barra.value = v.currentTime; agora.textContent = seg(v.currentTime);
+  };
+  barra.oninput = () => { carregar(); v.pause(); v.currentTime = Number(barra.value); agora.textContent = seg(Number(barra.value)); };
+  lento.onclick = () => { const on = lento.ariaPressed !== 'true'; lento.ariaPressed = String(on); v.playbackRate = on ? 0.5 : 1; };
+  zoom.onclick = () => { zoom.ariaPressed = String(zoom.ariaPressed !== 'true'); aplicarZoom(); };
+
+  const lista = el('div', { className: 'marcas' });
+  const pintarMarcas = () => {
+    const minhas = marcas.filter((m) => m.item === it.id);
+    card.classList.toggle('tem', minhas.some((m) => m.nome.trim()));
+    lista.replaceChildren(...minhas.map((m) => {
+      const t = el('button', { className: 't', textContent: m.t == null ? 'trecho' : seg(m.t), title: 'ir para este instante' });
+      t.onclick = () => { carregar(); v.pause(); v.currentTime = m.t ?? it.de; };
+      const nome = el('input', { className: 'nome', value: m.nome, placeholder: 'como você chama isso?', ariaLabel: 'Nome' });
+      nome.setAttribute('list', 'nomes');
+      nome.oninput = () => { m.nome = nome.value; salvar(); };
+      nome.onchange = () => { garantirTermo(m.nome); pintarTermos(); card.classList.add('tem'); salvar(); };
+      const tirar = el('button', { className: 'x', textContent: '×', title: 'apagar marcação' });
+      tirar.onclick = () => { marcas = marcas.filter((x) => x !== m); pintarMarcas(); pintarTermos(); salvar(); };
+      const quem = el('select', { ariaLabel: 'Quem' }, ...QUEM.map((q) => el('option', { value: q, textContent: q || 'quem…', selected: q === (m.quem || '') })));
+      quem.onchange = () => { m.quem = quem.value; salvar(); };
+      const nota = el('input', { value: m.nota || '', placeholder: 'detalhe: pernas, entrada, o que diferencia', ariaLabel: 'Detalhe' });
+      nota.oninput = () => { m.nota = nota.value; salvar(); };
+      return el('div', { className: 'marca' }, t, nome, tirar, el('div', { className: 'linha2' }, quem, nota));
+    }));
+  };
+  const nova = (t) => { marcas.push({ item: it.id, clip: it.clip, t, nome: '', quem: '', nota: '' }); pintarMarcas(); lista.lastElementChild?.querySelector('.nome').focus(); };
+  const marcar = el('button', { className: 'acao', textContent: 'Marcar este instante' });
+  marcar.onclick = () => { carregar(); v.pause(); nova(Math.round(Math.min(it.ate, Math.max(it.de, v.currentTime || it.de)) * 10) / 10); };
+  const inteiro = el('button', { className: 'acao sec', textContent: 'O trecho inteiro' });
+  inteiro.onclick = () => nova(null);
+  pintarMarcas();
+
+  card.append(
+    vbox,
+    el('div', { className: 'ctl' }, barra, lento, zoom),
+    el('div', { className: 'meta' }, ...it.posicao.map((p) => el('span', { className: 'prov', textContent: p })), el('span', { className: 'de', textContent: `${it.clip} · ${seg(it.de)} a ${seg(it.ate)} · ${it.local}` })),
+    el('p', { className: 'oque', textContent: it.o_que }),
+    lista,
+    el('div', { className: 'acoes' }, marcar, inteiro),
+  );
+  // load the first frame only when the card gets near the screen (75 videos at once would stall the page)
+  new IntersectionObserver(([e], io) => { if (e.isIntersecting) { carregar(); io.disconnect(); } }, { rootMargin: '600px' }).observe(card);
+  if (new URLSearchParams(location.search).has('montar')) carregar();
+  return card;
+};
+
+const visiveis = () => itens.filter((it) => {
+  const minhas = marcas.filter((m) => m.item === it.id && m.nome.trim());
+  if (filtro && !it.posicao.includes(filtro)) return false;
+  if (soVazios && minhas.length) return false;
+  if (soTermo && !minhas.some((m) => igual(m.nome, soTermo))) return false;
+  return true;
+});
+const pintarFiltros = () => {
+  const cont = {};
+  itens.forEach((it) => it.posicao.forEach((p) => (cont[p] = (cont[p] || 0) + 1)));
+  const chips = Object.entries(cont).sort((a, b) => b[1] - a[1]).map(([p, n]) => {
+    const b = el('button', { className: 'chip', ariaPressed: String(filtro === p) }, p, ' ', el('small', { textContent: n }));
+    b.onclick = () => { filtro = filtro === p ? null : p; pintarTudo(); };
+    return b;
+  });
+  const so = el('input', { type: 'checkbox', checked: soVazios });
+  so.onchange = () => { soVazios = so.checked; pintarTudo(); };
+  $('#filtros').replaceChildren(el('span', { className: 'conta', textContent: 'rótulo provisório:' }), ...chips, el('label', { className: 'so' }, so, 'só sem marcação'));
+};
+const pintarTudo = () => {
+  pintarFiltros(); pintarTermos(); contar();
+  const lista = visiveis();
+  $('#trechos').replaceChildren(...(lista.length ? lista.map(cartao) : [el('p', { className: 'vazio', textContent: 'Nenhum trecho com esse filtro.' })]));
+};
+
+(async () => {
+  try {
+    const d = await (await fetch('/dados')).json();
+    itens = d.itens;
+    termos = d.estado.termos.map((t) => ({ tipo: '', outros_nomes: '', definicao: '', ...t, nome: String(t.nome) }));
+    marcas = d.estado.marcacoes.map((m) => ({ quem: '', nota: '', t: null, ...m, nome: String(m.nome ?? '') }));
+    marcas.forEach((m) => garantirTermo(m.nome));
+    $('#salvo').textContent = 'tudo salvo';
+    pintarTudo();
+  } catch (e) {
+    $('#salvo').className = 'erro';
+    $('#salvo').textContent = 'não abriu: rode scripts/festival_vocabulario.py';
+  }
+})();
+</script>
+</body>
+</html>

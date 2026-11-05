@@ -71,10 +71,23 @@ chutando), `uma-mao`, `troca-de-peso`, `parede`, `andando`, `queda`, `saida`, `d
 Regras: descrever só o que se vê e se ouve (nada inventado); nome de pessoa só quando for certo (Paulo, Gabriel),
 senão `praticante`; tempos com uma casa decimal, conferidos nas folhas e no `analise.json`.
 
+## Vocabulário (página local, 05/11/2026)
+
+```bash
+scripts/festival_vocabulario.py
+```
+
+Abre `http://localhost:4331` com um cartão por trecho do catálogo que tem posição (75 hoje), em loop e aproximado no
+corpo pela pose. O Paulo pausa, marca o instante e escreve o nome que usa; na lateral, cada nome vira um termo com
+tipo (posição, entrada, saída, transição, movimento), outros nomes e definição. Cada mudança é gravada na hora em
+`acervo/vocabulario.yaml` (`termos` e `marcacoes`, com o clipe e o segundo). Nada sai da máquina.
+
+Depois que ele preencher: usar `vocabulario.yaml` para trocar os rótulos provisórios de `posicao` no catálogo pelos
+nomes dele e atualizar a lista de vocabulário acima. A página só lê vídeo; para rotular fotos (retiros), falta um
+tipo de cartão de imagem.
+
 ## A fazer (pedidos do Paulo, 05/11/2026)
 
-- **Página de vocabulário**: uma página local onde o Paulo descreve fotos e trechos de vídeo (posição, movimento,
-  nome que ele usa) e o resultado vira YAML, para fechar um vocabulário comum de handstand para este projeto e
-  talvez outros. O `posicao` acima é provisório até lá (os nomes vieram da catalogação automática).
 - **Retiros do Balance Atlas**: trazer para este catálogo as fotos e vídeos dos retiros de que o Paulo participou
-  (hoje no R2, `media.balanceatlas.com`, com `manifest.json` por evento).
+  (hoje no R2, `media.balanceatlas.com`, com `manifest.json` por evento) e dar a eles cartões na página de
+  vocabulário.
