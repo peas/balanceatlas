@@ -1,0 +1,40 @@
+---
+// 'Sobre o evento' tabs drawn as Instagram profile highlights (moved from the festival home, 04/11/2026)
+import { objetivos, publico } from '../../festival/data';
+---
+
+<!-- SOBRE O EVENTO: tabs drawn as profile highlights -->
+<section class="sobre wrap" id="sobre" data-tabs>
+  <div class="highlights" role="tablist" aria-label="Sobre o evento">
+    <button role="tab" data-tab="encontro" aria-selected="true"><span class="ring"><i class="shape-bar"></i></span>O encontro</button>
+    <button role="tab" data-tab="objetivos" aria-selected="false"><span class="ring"><i class="shape-block"></i></span>Objetivos</button>
+    <button role="tab" data-tab="publico" aria-selected="false"><span class="ring"><i class="shape-tee"></i></span>Para quem</button>
+  </div>
+
+  <div class="sobre-panel" data-panel="encontro">
+    <h3>Faz tempo que o handstand vive de carona.</h3>
+    <div class="sobre-cols">
+      <p>Na aula de yoga, no treino de calistenia, no box de crossfit, na roda de acro. Chegou a hora de ele ter um espaço só dele. O 1º HandstandFest nasce para isso: três dias de formação, troca e pesquisa corporal, com a comunidade de praticantes reunida num lugar só.</p>
+      <p>Em São Paulo, professores, artistas e praticantes de níveis e histórias diferentes se encontram em torno da parada de mão e de tudo o que nasce dela: yoga, mobilidade, força, calistenia, flexibilidade, mão a mão, acrobacia em dupla, invertidas sobre outros corpos e transições criativas.</p>
+      <p>A ideia vai além da aula técnica. É aprender, se inspirar, conhecer gente e conviver com quem divide o mesmo gosto pelo movimento. De quem está subindo na parede pela primeira vez a quem já treina one arm, cada pessoa encontra um desafio do seu tamanho.</p>
+    </div>
+  </div>
+
+  <div class="sobre-panel" data-panel="objetivos" hidden>
+    <h3>Um espaço de encontro, formação e troca em torno do handstand no Brasil.</h3>
+    <ol class="objetivos">
+      {objetivos.map((o) => <li>{o}</li>)}
+    </ol>
+  </div>
+
+  <div class="sobre-panel" data-panel="publico" hidden>
+    <h3>Para quem gosta de ficar de cabeça para baixo, em qualquer fase do caminho.</h3>
+    <div class="publico">
+      {publico.map((p) => (
+        <article><h4>{p.t}</h4><p>{p.d}</p></article>
+      ))}
+    </div>
+    <p class="note">A divisão por níveis, as turmas simultâneas e os pré-requisitos de cada oficina saem com a programação final.</p>
+  </div>
+</section>
+

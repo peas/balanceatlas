@@ -1,0 +1,297 @@
+---
+// 1º HandstandFest — standalone festival page (pt-BR), own visual identity.
+// Hidden preview: noindex, not linked from the nav.
+// Festival media lives in public/festival/ (no R2 token for media-handstand on this machine yet);
+// retreat photos come straight from R2. Hero and teacher are Remotion compositions (src/festival/).
+import FestLayout from '../../layouts/FestLayout.astro';
+import FestNav from '../../components/fest/FestNav.astro';
+import FestPlayer from '../../festival/FestPlayer';
+import type { PosterProps } from '../../festival/compositions';
+import { TICKETS } from '../../festival/data';
+
+const LOTES = [
+  { n: '1º lote', price: 490, note: 'Primeiras 10 vagas', state: 'aberto' },
+  { n: '2º lote', price: 590, note: 'Próximas 30 vagas', state: 'proximo' },
+  { n: '3º lote', price: 690, note: 'Últimas 15 vagas', state: 'proximo' },
+] as const;
+const VAGAS = 55;
+const MAPS_Q = encodeURIComponent('Trapézio Voador, R. Alvarenga, 150, Jardim Guedala, São Paulo');
+// The venue's own Google Maps link (footer of trapeziovoador.com.br, 04/11/2026)
+const MAPS_PLACE = 'https://www.google.com/maps/place/Trap%C3%A9zio+Voador+Escola+de+Artes+Circenses/@-23.5793024,-46.7071634,15z/data=!4m2!3m1!1s0x0:0xa5afb1ebf939a9e5';
+
+// Schedule (Paulo, 04/11/2026): 4 classes a day, 2 of them split by level. Still provisional.
+type Level = 'basico' | 'inter' | 'todos';
+type Slot = { t: string; level: Level };
+type Row = { time: string; all?: string; pause?: boolean } | { time: string; tracks: [Slot, Slot] };
+
+// Shape after what handstand festivals do (Drive: pesquisas/festival-handstand-grade-diaria.md, 04/11/2026):
+// yoga together but light, a wrist/shoulder warm-up per level right before class, jam instead of the last class
+// on Saturday and Sunday, Sunday ending earlier with a closing circle. Each day has a thread: base → construção → integração.
+const yoga: Row = { time: '9h — 9h45', all: 'Yoga e mobilidade, todo mundo junto' };
+const prep = (time = '10h — 10h30'): Row => ({
+  time,
+  tracks: [{ t: 'Aquecimento de punhos e ombros', level: 'basico' }, { t: 'Aquecimento de punhos e ombros', level: 'inter' }],
+});
+const handstand = (time = '10h30 — 12h'): Row => ({
+  time,
+  tracks: [{ t: 'Parada de mão', level: 'basico' }, { t: 'Parada de mão', level: 'inter' }],
+});
+const lunch: Row = { time: '12h — 14h', all: 'Almoço', pause: true };
+const third = (basico: string, time = '14h — 15h30'): Row => ({
+  time,
+  tracks: [{ t: basico, level: 'basico' }, { t: 'Flexibilidade e força para press', level: 'inter' }],
+});
+
+const days: { id: string; label: string; date: string; arc: string; rows: Row[] }[] = [
+  { id: 'sex', label: 'Sex', date: '5', arc: 'Base', rows: [
+    yoga, prep(), handstand(), lunch, third('Acroyoga'), prep('15h45 — 16h'), handstand('16h — 17h30'),
+    { time: '17h30 — 18h30', all: 'Roda de abertura' },
+  ] },
+  { id: 'sab', label: 'Sáb', date: '6', arc: 'Construção', rows: [
+    yoga, prep(), handstand(), lunch, third('Acro handstand corpo a corpo'),
+    { time: '16h — 17h30', all: 'Jam: treino livre com os professores circulando' },
+  ] },
+  { id: 'dom', label: 'Dom', date: '7', arc: 'Integração', rows: [
+    { time: '9h — 9h45', all: 'Aquecimento lento, todo mundo junto' },
+    prep(), handstand(), lunch, third('Handstand em objetos'),
+    { time: '15h45 — 17h', all: 'Jam de encerramento, roda final e foto' },
+  ] },
+];
+
+const levelName: Record<Level, string> = { basico: 'Básico', inter: 'Intermediário e avançado', todos: 'Todos juntos' };
+const tracks = ['Básico', 'Intermediário e avançado'];
+
+
+
+// Invited teachers. Bios are quoted from their Instagram profiles (checked 28/10/2026), never written by us.
+const lineup: { poster: PosterProps; url?: string; quote?: string; source?: string; where: string }[] = [
+  {
+    poster: { img: '/festival/teacher-rocio.webp', first: 'Rocío', last: '', handle: '@unapotaloka', shape: 'bar', focus: '50% 30%' },
+    url: 'https://www.instagram.com/unapotaloka/',
+    quote: 'Handstand performer · Escola Nacional de Circo 25/27 · Río de Janeiro',
+    source: 'https://www.instagram.com/unapotaloka/',
+    where: 'Rio de Janeiro',
+  },
+  {
+    poster: { img: '/festival/teacher-lou.webp', first: 'Louisse', last: 'Aldrigues', handle: '@lou.handstand', shape: 'tee', focus: '50% 40%' },
+    url: 'https://www.instagram.com/lou.handstand/',
+    quote: 'Estudos do equilíbrio · Parada de mão · Treinamento consciente · Aulas online · Artista circense',
+    source: 'https://www.instagram.com/lou.handstand/',
+    where: 'Aulas presenciais e online',
+  },
+  {
+    poster: { img: '/festival/teacher-dany.webp', first: 'Dany', last: 'García', handle: '@dany_slackwire', shape: 'block', focus: '50% 40%' },
+    url: 'https://www.instagram.com/dany_slackwire/',
+    quote: 'Artista Circense! · Alumno de la ENCLO 2025-2026 · Colombiano viviendo en Brasil',
+    source: 'https://www.instagram.com/dany_slackwire/',
+    where: 'Arame, parada de cabeça, malabares e acrobacia de solo',
+  },
+];
+
+const facts = ['3 dias', '4 aulas por dia', 'Do básico ao avançado', 'Butantã', '1º lote R$ 490', `${VAGAS} vagas`, 'Handstand', 'Parada de mão'];
+
+---
+
+<FestLayout>
+  <!-- HERO -->
+  <header class="hero grain">
+    <FestNav home />
+    <div class="hero-title">
+      <p class="kicker">Festival de parada de mão · São Paulo</p>
+      <h1 class="logo" aria-label="1º HandstandFest">
+        <span class="mark" aria-hidden="true"><i></i><b>1º</b></span>
+        <span class="l1">Hand</span>
+        <span class="l2">stand</span>
+        <span class="l3">Fest</span>
+      </h1>
+    </div>
+    <div class="hero-info">
+      <p class="dates">Sex 5 · Sáb 6 · Dom 7 de março</p>
+      <p class="place"><span>São Paulo</span> Brasil · 2027</p>
+      <a class="cta" href="#ingressos">Garantir vaga <span aria-hidden="true">→</span></a>
+      <a class="lote-pill" href="#ingressos"><i aria-hidden="true"></i>1º lote aberto · R$ 490 · 10 vagas</a>
+    </div>
+    <figure class="hero-media">
+      <span class="hbar" aria-hidden="true"></span>
+      <span class="bar" aria-hidden="true"></span>
+      <div class="stage">
+        <img src="/festival/seg-1.webp" alt="Agustin Melesi em parada de mão" />
+        <FestPlayer client:only="react" comp="hero" />
+      </div>
+    </figure>
+  </header>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      {[0, 1].map(() => facts.map((f) => <span>{f}<em>■</em></span>))}
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about wrap">
+    <h2 class="display" data-reveal>Três dias treinando, conversando e aprendendo parada de mão.</h2>
+    <div class="about-cols">
+      <p>A primeira edição é para quem pratica parada de mão por ela mesma: quem chegou pela calistenia, pelo yoga, pela dança, pelo movimento ou só pela teimosia de ficar de cabeça para baixo.</p>
+      <p><strong>Quatro blocos por dia</strong>, do básico ao avançado: yoga junto, parada de mão na sua turma, uma aula de tema à tarde e, no fim do dia, aula ou jam com os professores. Perto do metrô.</p>
+    </div>
+  </section>
+
+  <!-- TEACHER -->
+  <section class="teacher grain" id="professores">
+    <div class="wrap teacher-grid">
+      <div class="poster">
+        <div class="stage">
+          <img src="/festival/teacher.webp" alt="Agustin Melesi" loading="lazy" />
+          <FestPlayer client:visible comp="teacher" />
+        </div>
+      </div>
+      <div class="teacher-info" data-reveal>
+        <p class="kicker">Professor convidado</p>
+        <h2 class="teacher-name"><span>Agustin</span> Melesi</h2>
+        <a class="chip" href="https://www.instagram.com/agustin_melesi/" target="_blank" rel="noopener">@agustin_melesi</a>
+        <ul class="tags">
+          <li>Handstand</li><li>Acompanhamento 1:1</li><li>Acroyoga</li><li>Portês acrobáticos</li>
+        </ul>
+        <p class="source">Áreas segundo o perfil dele no <a href="https://www.instagram.com/agustin_melesi/" target="_blank" rel="noopener">Instagram</a>.</p>
+      </div>
+    </div>
+    <div class="wrap lineup">
+      <h3 class="lineup-title" data-reveal>Também na escalação</h3>
+      <div class="lineup-grid">
+        {lineup.map((t) => (
+          <article class="story-card" data-reveal>
+            <div class="story">
+              {t.poster.img && <img src={t.poster.img} alt={`${t.poster.first} ${t.poster.last}`} loading="lazy" style={`object-position: ${t.poster.focus ?? 'center'}`} />}
+              <FestPlayer client:visible comp="poster" props={t.poster} />
+            </div>
+            {t.url ? <a class="chip" href={t.url} target="_blank" rel="noopener">{t.poster.handle}</a> : <span class="chip">{t.poster.first} {t.poster.last}</span>}
+            {t.quote && <blockquote>“{t.quote}”</blockquote>}
+            <p class="source">{t.where}{t.quote && <> · <a href={t.source} target="_blank" rel="noopener">fonte</a></>}</p>
+          </article>
+        ))}
+      </div>
+      <p class="lineup-more" data-reveal>Mais nomes em breve.</p>
+    </div>
+  </section>
+
+  <!-- SCHEDULE -->
+  <section class="schedule wrap" id="grade" data-tabs>
+    <div class="section-head">
+      <h2 class="display" data-reveal>Grade</h2>
+      <p class="note"><span class="pill">Provisória</span> Ainda estamos ajustando as aulas e os professores de cada bloco. O que já vale: <strong>4 blocos por dia</strong>, parada de mão sempre na sua turma, e um fio que começa na base da sexta e termina no jam de domingo.</p>
+    </div>
+    <div class="days" role="tablist">
+      {days.map((d, i) => (
+        <button role="tab" class="day" data-tab={d.id} aria-selected={i === 0 ? 'true' : 'false'}>
+          <span>{d.label}</span><b>{d.date}</b><em>{d.arc}</em>
+        </button>
+      ))}
+    </div>
+    <div class="legend">
+      {(Object.keys(levelName) as Level[]).map((l) => <span class={`lvl lvl-${l}`}>{levelName[l]}</span>)}
+    </div>
+    {days.map((d, i) => (
+      <div class="grid-day" data-panel={d.id} hidden={i !== 0}>
+        <div class="grid-row grid-head">
+          <span></span>{tracks.map((r) => <span>{r}</span>)}
+        </div>
+        {d.rows.map((row) => (
+          <div class="grid-row">
+            <span class="time">{row.time}</span>
+            {'all' in row ? (
+              <span class:list={['cell', 'all', { pause: row.pause }]}>{row.all}</span>
+            ) : (
+              row.tracks.map((s) => (
+                <span class={`cell lvl-${s.level}`}>
+                  <small>{levelName[s.level]}</small>{s.t}
+                </span>
+              ))
+            )}
+          </div>
+        ))}
+      </div>
+    ))}
+  </section>
+
+  <!-- LEVELS -->
+  <section class="levels wrap">
+    <article class="level-card lvl-basico" data-reveal>
+      <h3>Básico</h3>
+      <p><strong>Você treina na parede e ainda não segura o livre.</strong> Linha, chute, saída segura e os primeiros segundos sem a parede.</p>
+    </article>
+    <article class="level-card lvl-inter" data-reveal>
+      <h3>Intermediário</h3>
+      <p><strong>Você segura uns 10 segundos no livre, de forma consistente</strong> (30 é o ideal). Equilíbrio, formas, entradas e tempo.</p>
+    </article>
+    <article class="level-card lvl-avancado" data-reveal>
+      <h3>Avançado</h3>
+      <p><strong>Livre com folga.</strong> Press, one arm e formas, na mesma turma do intermediário, com trabalho de flexibilidade e força à tarde.</p>
+    </article>
+  </section>
+
+  <!-- MORE: the two subpages -->
+  <section class="more wrap">
+    <a class="more-card" href="/festival/sobre/" data-reveal><span>Sobre o evento</span><p>Quem faz, por que existe, para quem é e as perguntas mais comuns.</p><b aria-hidden="true">→</b></a>
+    <a class="more-card alt" href="/festival/handstand/" data-reveal><span>Sobre handstand</span><p>A prática, fotos de encontros pelo mundo e outros workshops e retiros.</p><b aria-hidden="true">→</b></a>
+  </section>
+
+  <!-- VENUE -->
+  <section class="venue wrap" id="local">
+    <div class="section-head">
+      <h2 class="display" data-reveal>Onde</h2>
+      <p class="note">Butantã · São Paulo</p>
+    </div>
+    <div class="venue-grid">
+      <div class="venue-photos">
+        <img class="v-main" src="/festival/venue-1.webp" alt="Salão do Trapézio Voador" loading="lazy" data-reveal />
+        <img src="/festival/venue-5.webp" alt="Fachada do Trapézio Voador" loading="lazy" data-reveal />
+        <img src="/festival/venue-2.webp" alt="Parede de aéreos" loading="lazy" data-reveal />
+      </div>
+      <div class="venue-info">
+        <h3>Trapézio Voador</h3>
+        <blockquote>“E mais: trampolim acrobático e um pé-direito de 10m para acrobacias aéreas.”</blockquote>
+        <p>R. Alvarenga, 150 · Jardim Guedala<br />“nas proximidades da Estação Butantã do metrô” (linha 4-amarela)</p>
+        <p class="source">Fonte e fotos: <a href="https://trapeziovoador.com.br/" target="_blank" rel="noopener">trapeziovoador.com.br</a> e <a href="https://www.instagram.com/trapeziovoador/" target="_blank" rel="noopener">@trapeziovoador</a></p>
+        <div class="venue-stories">
+          {['/festival/venue-3.webp', '/festival/venue-4.webp'].map((src) => (
+            <a class="mini-story" href="https://www.instagram.com/trapeziovoador/" target="_blank" rel="noopener" data-reveal>
+              <span class="mini-bars" aria-hidden="true"><b></b><b></b></span>
+              <span class="mini-handle">@trapeziovoador</span>
+              <img src={src} alt="Trapézio Voador no Instagram" loading="lazy" />
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+    <div class="map" data-reveal>
+      <iframe
+        src={`https://www.google.com/maps/embed?origin=mfe&pb=!1m3!2m1!1s${MAPS_Q}!6i15`}
+        title="Mapa: Trapézio Voador"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen
+      ></iframe>
+      <a class="chip map-link" href={MAPS_PLACE} target="_blank" rel="noopener">Como chegar <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
+  <!-- TICKETS -->
+  <section class="signup grain" id="ingressos">
+    <div class="wrap signup-inner">
+      <p class="kicker">Ingressos · 5 — 7 · março · 2027</p>
+      <h2 class="display" data-reveal>Três lotes. Estamos no primeiro.</h2>
+      <div class="lotes">
+        {LOTES.map((l) => (
+          <article class:list={['lote', l.state]} data-reveal>
+            <span class="lote-bar" aria-hidden="true"><b></b></span>
+            <p class="lote-n">{l.n}{l.state === 'aberto' && <em><i aria-hidden="true"></i>agora</em>}</p>
+            <p class="lote-price"><small>R$</small>{l.price}</p>
+            <p class="lote-note">{l.note}</p>
+          </article>
+        ))}
+      </div>
+      <a class="cta cta-dark" href={TICKETS} target="_blank" rel="noopener">Garantir vaga no 1º lote <span aria-hidden="true">→</span></a>
+      <p class="lote-foot">Passe completo para os 3 dias, {VAGAS} vagas no total. Quando as 10 do 1º lote acabarem, abre o 2º; depois das 30 do 2º, o 3º.</p>
+    </div>
+  </section>
+</FestLayout>

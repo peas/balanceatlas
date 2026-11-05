@@ -1,0 +1,57 @@
+---
+// "Sobre handstand": the practice, photos of gatherings around the world (the bento that used to sit on the
+// festival home plus the Balance Atlas home photos), a door to /festival/mundo, and the FAQ about the practice.
+// The intro reuses the organizers' own words (brief of 04/11/2026); no invented claims.
+import FestLayout from '../../layouts/FestLayout.astro';
+import FestNav from '../../components/fest/FestNav.astro';
+import Bento from '../../components/fest/Bento.astro';
+import { community, atlasPhotos, faqHandstand } from '../../festival/data';
+import { eventos, paises } from '../../festival/eventos';
+---
+
+<FestLayout title="Sobre handstand · 1º HandstandFest" description="O que é handstand (parada de mão), fotos de encontros pelo mundo e outros workshops e retiros.">
+  <header class="page-head grain">
+    <FestNav current="handstand" />
+    <p class="kicker">Handstand = parada de mão</p>
+    <h1>Sobre <span>handstand</span></h1>
+    <p class="lead">Ficar em equilíbrio sobre as mãos. Parece um truque. É uma prática.</p>
+  </header>
+
+  <!-- A PRÁTICA -->
+  <section class="about wrap">
+    <h2 class="display" data-reveal>Uma disciplina corporal, artística e expressiva.</h2>
+    <div class="sobre-cols" style="margin-top: 36px">
+      <p>A parada de mão aparece no yoga, na calistenia, no crossfit, na dança, no circo e no acroyoga. Em cada lugar com um nome e um jeito, sempre com a mesma pergunta: como ficar parado de cabeça para baixo.</p>
+      <p>A partir dela nascem outras práticas: força, mobilidade, flexibilidade, mão a mão, acrobacia em dupla, invertidas sobre outros corpos e transições criativas.</p>
+      <p>E é uma prática de comunidade. Gente que treina junto, viaja para treinar e se encontra em workshops, retiros e festivais pelo mundo.</p>
+    </div>
+  </section>
+
+  <!-- BENTO -->
+  <section class="community" id="comunidade">
+    <div class="wrap section-head">
+      <h2 class="display" data-reveal>De onde a gente vem</h2>
+      <p class="note">Encontros de parada de mão pelo mundo que viraram vontade de fazer um aqui. Fotos e vídeos do <a href="/retreats">Balance Atlas</a>. Os marcados com <span class="play-inline" aria-hidden="true">▶</span> são vídeos: passe o mouse, ou role até eles no celular.</p>
+    </div>
+    <Bento items={[...community, ...atlasPhotos]} />
+  </section>
+
+  <!-- WORLD -->
+  <a class="world-band" href="/festival/mundo/">
+    <strong>Conheça outros workshops e retiros que acontecem pelo mundo.</strong>
+    <span>{eventos.length} encontros com data marcada · {paises()} países <i aria-hidden="true">→</i></span>
+  </a>
+
+  <!-- FAQ -->
+  <section class="faq wrap" id="perguntas">
+    <div class="section-head">
+      <h2 class="display" data-reveal>Perguntas</h2>
+      <p class="note">Sobre a prática. As dúvidas sobre o festival estão em <a href="/festival/sobre/#perguntas">Sobre o evento</a>.</p>
+    </div>
+    <div class="faq-list">
+      {faqHandstand.map((f) => (
+        <details data-reveal><summary>{f.q}</summary><p>{f.a}</p></details>
+      ))}
+    </div>
+  </section>
+</FestLayout>

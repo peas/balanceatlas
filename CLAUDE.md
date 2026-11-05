@@ -131,6 +131,16 @@ Always verify downloaded images are real (>5KB, not HTML redirects).
   distance from Rosario), then D and C; A and F fail accent-on-stage contrast. Lime never sits on paper.
   Instagram: @handstandfest (profile not taken as of 04/11/2026; Paulo creates it). Domain: handstandfest.com.br
   (free on 04/11/2026, only via Registro.br; Cloudflare Registrar has no .br), .com/.org/.net also free.
+  **Structure (04/11/2026):** four pages under `src/pages/festival/` sharing `src/layouts/FestLayout.astro`
+  (head, palette switcher kept in sessionStorage, footer, tabs/reveal/bento scripts), `src/festival/festival.css`
+  (all styles), `src/festival/data.ts` (TICKETS, bento photos, FAQs, sobre texts) and `src/components/fest/`
+  (FestNav, SobreTabs, Bento): `/festival/` home; `/festival/sobre/` = "Sobre o evento" (highlights tabs, "Quem faz"
+  in Paulo's own words, festival FAQ); `/festival/handstand/` = "Sobre handstand" (the practice, the bento that left
+  the home plus the Balance Atlas home photos, handstand FAQ, band to the world list); `/festival/mundo/` =
+  handstand workshops/retreats worldwide from `src/festival/eventos.ts` (facts only; refresh from the Drive file
+  `pesquisas/handstand-workshops-retreats.md` and bump `LEVANTAMENTO`). Menu: Sobre o evento · Sobre handstand ·
+  Garanta sua vaga. The festival is meant to move to its own domain (handstandfest.com.br, not bought yet); links
+  are root-relative under `/festival/`, so a move needs a base-path pass.
   Hero and teacher cards are Remotion compositions (`src/festival/`, `@remotion/player` via `@astrojs/react`,
   `client:only`); clips are cut and graded by `scripts/festival_clips.sh`. Remotion packages pinned to one version.
 

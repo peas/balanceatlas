@@ -1,0 +1,42 @@
+---
+// Handstand workshops, retreats and festivals around the world (data in src/festival/eventos.ts).
+// Facts only (name, dates, place, teachers, link to the event's own page).
+import FestLayout from '../../layouts/FestLayout.astro';
+import FestNav from '../../components/fest/FestNav.astro';
+import { eventos, porMes, paises, LEVANTAMENTO } from '../../festival/eventos';
+
+const meses = porMes();
+---
+
+<FestLayout title="Handstand pelo mundo · 1º HandstandFest" description="Workshops, retiros e festivais de handstand com data marcada pelo mundo.">
+  <header class="page-head grain">
+    <FestNav current="mundo" />
+    <p class="kicker"><a href="/festival/handstand/">Sobre handstand</a> · pelo mundo</p>
+    <h1>Handstand <span>pelo mundo</span></h1>
+    <p class="lead">Workshops, retiros e festivais com data marcada. A parada de mão tem calendário, e ele é grande.</p>
+    <div class="mundo-stats">
+      <p><b>{eventos.length}</b>encontros</p>
+      <p><b>{paises()}</b>países</p>
+      <p><b>{meses.length}</b>meses</p>
+    </div>
+  </header>
+
+  <section class="mundo wrap">
+    {meses.map((m) => (
+      <div class="mes">
+        <h2>{m.label}</h2>
+        {m.items.map((e) => (
+          <article class:list={['ev', { ours: e.ours }]}>
+            <p class="ev-when">{e.when}</p>
+            <h3 class="ev-name">{e.name}<small>{e.place}</small></h3>
+            <p class="ev-who">{e.teachers}</p>
+            {e.ours
+              ? <a class="ev-link" href="/festival/">é o nosso →</a>
+              : <a class="ev-link" href={e.url} target="_blank" rel="noopener">site →</a>}
+          </article>
+        ))}
+      </div>
+    ))}
+    <p class="note mundo-note">Levantamento de {LEVANTAMENTO}, a partir da página de cada evento. Datas, professores e vagas mudam: confira sempre no site de quem organiza.</p>
+  </section>
+</FestLayout>

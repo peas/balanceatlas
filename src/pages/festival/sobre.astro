@@ -1,0 +1,59 @@
+---
+// "Sobre o evento": what the HandstandFest is (tabs), who makes it, and the FAQ about the festival.
+// "Quem faz" is Paulo's own text (04/11/2026), lightly edited; do not add biography that he did not give.
+import FestLayout from '../../layouts/FestLayout.astro';
+import FestNav from '../../components/fest/FestNav.astro';
+import SobreTabs from '../../components/fest/SobreTabs.astro';
+import { TICKETS, faqFest } from '../../festival/data';
+---
+
+<FestLayout title="Sobre o evento · 1º HandstandFest" description="Quem faz o 1º HandstandFest, por que ele existe, para quem é e as perguntas mais comuns.">
+  <header class="page-head grain">
+    <FestNav current="sobre" />
+    <p class="kicker">1º HandstandFest · São Paulo · 5 — 7 mar 2027</p>
+    <h1>Sobre <span>o evento</span></h1>
+    <p class="lead">O primeiro festival brasileiro dedicado à parada de mão. Três dias de aula, treino e gente que gosta de ficar de cabeça para baixo.</p>
+  </header>
+
+  <div class="page-section">
+    <SobreTabs />
+  </div>
+
+  <!-- QUEM FAZ -->
+  <section class="quem-wrap wrap" id="quem-faz">
+    <div class="section-head">
+      <h2 class="display" data-reveal>Quem faz</h2>
+      <p class="note">O festival nasceu de duas pessoas que treinam juntas.</p>
+    </div>
+    <div class="quem">
+      <figure class="quem-photo" data-reveal>
+        <img src="/festival/seg-1.webp" alt="Dois praticantes em parada de mão num parque" loading="lazy" />
+      </figure>
+      <div class="quem-cards">
+        <article class="quem-card" data-reveal>
+          <h3>Gabriel Agustin</h3>
+          <p>A ideia veio dele, depois de uma experiência incrível na Argentina. É artista de acro, yoga e parada de mão.</p>
+          <a class="chip" href="https://www.instagram.com/agustin_melesi/" target="_blank" rel="noopener">@agustin_melesi</a>
+        </article>
+        <article class="quem-card" data-reveal>
+          <h3>Paulo Silveira</h3>
+          <p>Professor e programador, pratica handstand há 9 anos. Aprendeu dentro da calistenia com o professor <a href="https://www.instagram.com/andrejuda/" target="_blank" rel="noopener">Andre Juda</a> e hoje treina junto com o Gabriel.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq wrap" id="perguntas">
+    <div class="section-head">
+      <h2 class="display" data-reveal>Perguntas</h2>
+      <p class="note">Sobre o festival. As dúvidas sobre a prática estão em <a href="/festival/handstand/#perguntas">Sobre handstand</a>.</p>
+    </div>
+    <div class="faq-list">
+      {faqFest.map((f) => (
+        <details data-reveal><summary>{f.q}</summary><p>{f.a}</p></details>
+      ))}
+    </div>
+    <a class="cta cta-ink" href={TICKETS} target="_blank" rel="noopener">Garanta sua vaga <span aria-hidden="true">→</span></a>
+  </section>
+</FestLayout>

@@ -1,0 +1,21 @@
+---
+// Bento of photos and videos. `video` cells play on hover (desktop) or when in view (touch); script lives in FestLayout.
+import type { BentoItem } from '../../festival/data';
+
+interface Props { items: BentoItem[] }
+const { items } = Astro.props;
+---
+
+<div class="bento">
+  {items.map((p) => (
+    <figure class:list={[p.span, { 'is-video': p.video }]} data-reveal>
+      {p.video ? (
+        <video src={p.video} poster={p.src} muted loop playsinline preload="none" aria-label={p.alt}></video>
+      ) : (
+        <img src={p.src} alt={p.alt} loading="lazy" />
+      )}
+      {p.video && <span class="vbadge" aria-hidden="true"><i>▶</i><b>vídeo</b><span class="eq"><s></s><s></s><s></s></span></span>}
+      <figcaption>{p.alt}</figcaption>
+    </figure>
+  ))}
+</div>

@@ -1,0 +1,14 @@
+---
+// Top menu of the festival pages. `home`: sits over the hero (no logo); otherwise it opens a subpage header.
+import { TICKETS } from '../../festival/data';
+
+interface Props { home?: boolean; current?: 'sobre' | 'handstand' | 'mundo' }
+const { home = false, current } = Astro.props;
+---
+
+<nav class:list={['topnav', { 'topnav-page': !home }]} aria-label="Principal">
+  {!home && <a class="nav-logo" href="/festival/"><b>1º</b> HandstandFest</a>}
+  <a href="/festival/sobre/" aria-current={current === 'sobre' ? 'page' : undefined}>Sobre o evento</a>
+  <a href="/festival/handstand/" aria-current={current === 'handstand' || current === 'mundo' ? 'page' : undefined}>Sobre handstand</a>
+  <a class="nav-cta" href={TICKETS} target="_blank" rel="noopener">Garanta sua vaga</a>
+</nav>

@@ -1,0 +1,111 @@
+---
+// Shared shell for /festival and its subpages (pt-BR, own identity; see CLAUDE.md "Hidden pages").
+// Head, palette tokens (?paleta=), fonts, global stylesheet, palette switcher, footer and the small page scripts.
+import '../festival/festival.css';
+
+interface Props { title?: string; description?: string }
+const {
+  title = '1º HandstandFest · São Paulo',
+  description = '1º HandstandFest · 3 dias de parada de mão em São Paulo, 5 a 7 de março de 2027.',
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    <script is:inline>
+      // ?paleta=a|b|c|d|e|f|g picks the palette (comparison while the identity is open); it sticks across pages
+      const pal = new URLSearchParams(location.search).get('paleta') || sessionStorage.getItem('paleta');
+      if (pal) document.documentElement.dataset.paleta = pal;
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@125,700..900&family=DM+Sans:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <slot />
+
+    <div class="paleta" role="group" aria-label="Paleta">
+      Paleta
+      <button data-p="a" style="--sw:linear-gradient(135deg,#222220 50%,#ff3b30 50%);color:#fff" aria-pressed="false">A</button>
+      <button data-p="b" style="--sw:#2b3cf0;color:#fff" aria-pressed="true">B</button>
+      <button data-p="c" style="--sw:#0f3d33;color:#f4f1ea" aria-pressed="false">C</button>
+      <button data-p="d" style="--sw:#7c5cff;color:#fff" aria-pressed="false">D</button>
+      <button data-p="e" style="--sw:linear-gradient(135deg,#0f3d33 50%,#ffd23f 50%);color:#fff" aria-pressed="false">E</button>
+      <button data-p="f" style="--sw:linear-gradient(135deg,#1b7a5a 50%,#ff6a4d 50%);color:#fff" aria-pressed="false">F</button>
+      <button data-p="g" style="--sw:linear-gradient(135deg,#0f3d33 50%,#ff8fb8 50%,#ff8fb8 75%,#d7f55a 75%);color:#fff" aria-pressed="false">G</button>
+    </div>
+
+    <footer class="foot wrap">
+      <span>1º HandstandFest · São Paulo · 2027</span>
+      <nav class="foot-nav" aria-label="Rodapé">
+        <a href="/festival/">Início</a>
+        <a href="/festival/sobre/">Sobre o evento</a>
+        <a href="/festival/handstand/">Sobre handstand</a>
+        <a href="/festival/mundo/">Pelo mundo</a>
+      </nav>
+      <a href="/principal">um projeto Balance Atlas</a>
+    </footer>
+
+    <script>
+      // Tabs: any [data-tabs] scope with [role=tab][data-tab] buttons and [data-panel] panels
+      document.querySelectorAll<HTMLElement>('[data-tabs]').forEach((scope) => {
+        const tabs = scope.querySelectorAll<HTMLButtonElement>('[role=tab]');
+        const panels = scope.querySelectorAll<HTMLElement>('[data-panel]');
+        tabs.forEach((tab) =>
+          tab.addEventListener('click', () => {
+            tabs.forEach((t) => t.setAttribute('aria-selected', String(t === tab)));
+            panels.forEach((p) => (p.hidden = p.dataset.panel !== tab.dataset.tab));
+          }),
+        );
+      });
+
+      // Palette switcher (kept in sessionStorage so it follows the visitor to the subpages)
+      const palBtns = document.querySelectorAll<HTMLButtonElement>('.paleta button');
+      const setPal = (v: string, store = true) => {
+        document.documentElement.dataset.paleta = v;
+        palBtns.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.p === v)));
+        if (!store) return;
+        try { sessionStorage.setItem('paleta', v); } catch {}
+        const u = new URL(location.href); u.searchParams.set('paleta', v); history.replaceState(null, '', u);
+      };
+      palBtns.forEach((b) => b.addEventListener('click', () => setPal(b.dataset.p!)));
+      setPal(document.documentElement.dataset.paleta ?? 'b', false);
+
+      // Reveal on scroll
+      const reveal = new IntersectionObserver(
+        (entries) => entries.forEach((e) => e.isIntersecting && (e.target.classList.add('in'), reveal.unobserve(e.target))),
+        { rootMargin: '0px 0px -10% 0px' },
+      );
+      document.querySelectorAll('[data-reveal]').forEach((el) => reveal.observe(el));
+
+      // Bento videos: hover plays on desktop; in view plays on touch screens
+      const cells = document.querySelectorAll<HTMLElement>('.bento .is-video');
+      const play = (cell: HTMLElement, on: boolean) => {
+        const v = cell.querySelector('video')!;
+        cell.classList.toggle('playing', on);
+        on ? v.play().catch(() => cell.classList.remove('playing')) : v.pause();
+      };
+      if (matchMedia('(hover: hover)').matches) {
+        cells.forEach((c) => {
+          c.addEventListener('mouseenter', () => play(c, true));
+          c.addEventListener('mouseleave', () => play(c, false));
+        });
+      } else {
+        const inView = new IntersectionObserver(
+          (entries) => entries.forEach((e) => play(e.target as HTMLElement, e.intersectionRatio > 0.6)),
+          { threshold: [0, 0.6] },
+        );
+        cells.forEach((c) => inView.observe(c));
+      }
+    </script>
+  </body>
+</html>
