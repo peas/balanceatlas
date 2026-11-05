@@ -100,7 +100,8 @@ Always verify downloaded images are real (>5KB, not HTML redirects).
 
 ## Hidden pages (Oct 2026)
 - `/` is a "coming soon" landing; the full site lives at `/principal` (nav points there, all pages `noindex`).
-- `/festival` — **1º HandstandFest** (São Paulo, Fri–Sun 5–7 Mar 2027), standalone page in **pt-BR** with its own identity
+- `/festival` — **1º HandstandFest** (São Paulo, Fri–Sun 16–18 Apr 2027; decided 05/11/2026, the dates live only in `FEST` in
+  `src/festival/data.ts`), standalone page in **pt-BR** with its own identity
   (Archivo 125% wide + Space Mono, hard geometry: bars and blocks; six palettes A (original orange) / B / C / D / E / F as CSS tokens,
   `?paleta=` + a floating switcher while the identity is open; Gabriel liked C (deep green + pink), Paulo found it serious,
   so E and F (04/11/2026) keep the green with sun yellow / coral). Exception to the English-only rule for page copy.
@@ -122,8 +123,7 @@ Always verify downloaded images are real (>5KB, not HTML redirects).
   objects for básico, flexibility + press strength for inter/avançado), then Fri 16h handstand + roda de abertura,
   Sat 16h jam, Sun jam de encerramento 15h45–17h. Day threads: Sex Base, Sáb Construção, Dom Integração.
   FAQ `#perguntas` holds decided facts plus two handstand answers Paulo asked for (como começar; "vou sair fazendo
-  parada de mão?" = no, tools + direction + wall/assisted gains); his longer FAQ text is still to come. Date 5–7 Mar 2027 is under review (Paulo asked for a
-  holiday-free Fri–Sun in Mar/Apr; options in the Drive research file).
+  parada de mão?" = no, tools + direction + wall/assisted gains); his longer FAQ text is still to come.
   **Overlay rule (Paulo, 04/11/2026):** whenever bars, Ts and blocks are laid over photos/videos, check they do not
   cover text or the body of the person in the handstand. Poster names stay in the top-left ~400px because the
   feet sit top-centre (`fit()` in compositions.tsx); the T shape was narrowed for the same reason.
@@ -149,6 +149,37 @@ Always verify downloaded images are real (>5KB, not HTML redirects).
   `[id]` has scroll-margin for it. Domain confirmed: handstandfest.com.br (not bought yet).
   Hero and teacher cards are Remotion compositions (`src/festival/`, `@remotion/player` via `@astrojs/react`,
   `client:only`); clips are cut and graded by `scripts/festival_clips.sh`. Remotion packages pinned to one version.
+
+## Festival footage archive and Instagram (Nov 2026)
+- **Raw footage never enters git.** It lives in `local/festival/` (gitignored): originals from the shared Drive folder
+  "Videos" (52 clips, 4 GB, 05/11/2026), the 7 venue photos, proxies, contact sheets, pose, transcripts,
+  `manifest.json` (fingerprints). Catalogue and contract, in pt-BR (same exception as the festival copy):
+  `acervo/catalogo.yaml` + `acervo/README.md` (schema, `posicao` vocabulary, flow for new uploads).
+- Flow for a new Drive upload: `scripts/festival_acervo.py sync` (read-only on Drive, skips by md5 or
+  name + size + duration) → `scripts/festival_derivados.py` (540x960 SDR proxies, wavs, contact sheets) →
+  `scripts/festival_analise.py tudo` (pose via `~/paulo.com.br-render/scripts/pose.py`, upside-down intervals,
+  two-phone sync by audio, Whisper) → catalogue the new ids. All have `--help`.
+- **Who is who** (inferred from speech and context, Paulo to confirm): Paulo = beard and glasses, black shorts, owns
+  the Pixel (`pxl-*`); Gabriel = the iPhone (`img-31xx`), beige shorts, hair tied. A child appears in `img-3177`:
+  always crop them out. The 18/10 clips show a group of other people: do not publish without asking.
+- **Two cameras**: 7 real pairs on 04/11/2026 (`par:` in the catalogue). An iPhone clip trimmed in Photos keeps the
+  creation date of the original recording, so wall-clock guesses were up to 70 s off: search wide (default 240 s),
+  trust score ≥ 25, and check on frames. Paulo (05/11): on the long palm-tree take use only short cuts of figures
+  already up, never the entries.
+- `/festival/instagram` (working page, not in the menu, noindex): ten pieces as live Remotion compositions, not
+  rendered (palette still open, so they follow the palette switcher). Contract and specs: `src/festival/ig/PECAS.md`;
+  kit `kit.tsx` (safe zones with a toggle, `Gancho`, `Legenda`, `Esqueleto`, `DuasCameras`, `Fecho`...), one file per
+  piece `pNN-*.tsx`, titles and draft captions in `pecas.ts`, glue in `registro.ts`. Web media is cut by
+  `scripts/festival_ig_midia.py` from `src/festival/ig/midia.json` into `public/festival/ig/` (committed, ~25 MB at
+  crf 30: keep it lean, recuts bloat the history; move to R2 with the rest). `?montar=1` mounts every player.
+  Format rules come from the Drive research `pesquisas/instagram-evento-formatos-playbook.md` (hook on frame 0,
+  what/when/where before 8 s, nothing fixed for the whole video, no music in the render, 2nd carousel slide as a
+  second cover). The venue section of the home plays piece 03 without its closing card.
+- Footage caveat: on 04/11 the bodies are small in frame (8–35% of the height); crops beyond 2x are soft at 1080p.
+  Next shoot: closer, phone at hip height, one take per figure.
+- **To do (Paulo, 05/11/2026)**: a local page where he labels positions and movements on photos and video excerpts,
+  saved as YAML, to settle a shared handstand vocabulary (the catalogue's `posicao` names are provisional until
+  then); bring the Balance Atlas retreat photos and videos into the same catalogue.
 
 ## FAQ Page
 - The site has a `/faq` page explaining the community, how to contribute, etc.

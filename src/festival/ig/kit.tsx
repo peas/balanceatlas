@@ -271,7 +271,9 @@ export const Barras = ({ side = 'left', delay = 2, outAt, v = 760, h = 420, y = 
 /** A block of colour that wipes across the whole canvas (scene change, or the base of a graphic slide). */
 export const Cortina = ({ at = 0, len = 12, tom = 'accent', dir = 'right', hold = 0 }: { at?: number; len?: number; tom?: Tom; dir?: 'right' | 'left' | 'up' | 'down'; hold?: number }) => {
   const frame = useCurrentFrame();
-  const p = interpolate(frame, [at, at + len, at + len + hold, at + len * 2 + hold], [-100, 0, 0, 100], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const clamp = { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' } as const;
+  // two ramps (one interpolate with hold = 0 would repeat a point in its input range, which Remotion rejects)
+  const p = frame < at + len + hold ? interpolate(frame, [at, at + len], [-100, 0], clamp) : interpolate(frame, [at + len + hold, at + len * 2 + hold], [0, 100], clamp);
   const sign = dir === 'right' || dir === 'down' ? 1 : -1;
   const axis = dir === 'right' || dir === 'left' ? 'X' : 'Y';
   return <AbsoluteFill style={{ background: TOM[tom].bg, transform: `translate${axis}(${p * sign}%)` }} />;
@@ -351,13 +353,16 @@ export const Fecho = ({ cta = 'Link na bio', sub = '1º lote · R$ 490 · 10 vag
         <div style={{ ...line, color: ACCENT }}>stand</div>
         <div style={line}>Fest</div>
       </div>
-      <div style={{ position: 'absolute', left: 65, top: top + 700, fontFamily: MONO, fontWeight: 700, fontSize: 46, lineHeight: 1.3, textTransform: 'uppercase', transform: `translateX(${(1 - b) * -600}px)` }}>
-        <div>{QUANDO_CURTO}</div>
-        <div>São Paulo · Trapézio Voador</div>
-        {sub && <div style={{ color: ACCENT }}>{sub}</div>}
-      </div>
-      <div style={{ position: 'absolute', left: 65, top: top + (sub ? 910 : 850), background: CHALK, color: INK, ...WIDE, fontSize: 60, lineHeight: 1, padding: '20px 30px 12px', textTransform: 'uppercase', transformOrigin: 'left center', transform: `scaleX(${c})` }}>
-        {cta} →
+      {/* one column, so a long `sub` wraps without running into the call to action */}
+      <div style={{ position: 'absolute', left: 65, top: top + 700, width: 900, display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 30 }}>
+        <div style={{ fontFamily: MONO, fontWeight: 700, fontSize: 44, lineHeight: 1.28, textTransform: 'uppercase', transform: `translateX(${(1 - b) * -600}px)` }}>
+          <div>{QUANDO_CURTO}</div>
+          <div>São Paulo · Trapézio Voador</div>
+          {sub && <div style={{ color: ACCENT }}>{sub}</div>}
+        </div>
+        <div style={{ background: CHALK, color: INK, ...WIDE, fontSize: 60, lineHeight: 1, padding: '20px 30px 12px', textTransform: 'uppercase', transformOrigin: 'left center', transform: `scaleX(${c})` }}>
+          {cta} →
+        </div>
       </div>
     </AbsoluteFill>
   );

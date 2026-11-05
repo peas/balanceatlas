@@ -50,6 +50,14 @@ A piece file imports only from `./kit`, `./tipos`, `../data` (dates, lotes), `re
   `http://localhost:4322/festival/instagram/?montar=1#<id>` shows the piece once the coordinator has wired it.
   You cannot see it before that: get the timings and positions right from the spec.
 
+## As built (05/11/2026)
+
+All ten pieces are implemented and were checked frame by frame in the Player. Hook sizes in the specs below are the
+design intent: the implementers measured every line with the real Archivo font and shrank the ones that passed the
+safe width (each change is commented in the piece file), so trust the code for sizes. `Fecho` stacks its lines, so a
+long `sub` wraps. To check a piece: `/festival/instagram/?montar=1`, then in the console
+`window.__ig['<id>'].seekTo(<frame>)`.
+
 ## Specs
 
 Notation: `S1 0.0 +2.6` = scene 1 starts at second 0.0 and lasts 2.6 s. `clip@1.2` = `<Clip src="clip" from={1.2}>`.
@@ -70,8 +78,7 @@ from={<same from as the Clip>} y={1140} />`, importing `./legendas/<clip>.json` 
   At f(3.3): `Etiqueta` "Trapézio Voador · metrô Butantã" (chalk, size 34) x 65 y 850.
 - S3 12.6 +5.2 `conv-quem@0.75`. Three `Etiqueta` (chalk, size 38) stacked at x 65, y 760 / 840 / 920, entering when
   each word is said: "acroyoga" f(2.9), "yoga" f(3.8), "calistenia" f(4.25). `Barras` right.
-- S4 17.8 +5.2 `conv-porque@7.7`. At f(2.9): `Gancho` ["de ponta-cabeça", "que nem você"], size 76, y 760, tom accent,
-  delay f(2.9).
+- S4 17.8 +5.2 `conv-porque@7.7`. Captions only (a hook block here duplicated the caption and covered the faces).
 - S5 23.0 +4.4 `conv-bora@0.9` (façade, one of them walks to the camera in the lower half; top half is free).
   `Gancho` ["HandstandFest", "Brasil!"], size 96, y 300, tom accent, delay f(2.1). `Barras` left.
 - S6 27.4 +3.4 `Fecho` cta "Link na bio", default sub.
@@ -213,7 +220,7 @@ The answer is the site's FAQ, word for word.
 - S2 3.8 +2.4 `STAGE` background, opened by `<Cortina tom="accent" len={8} />`. `Gancho` ["Depois de", "três dias,",
   "não."], size 128, y 420, tons [chalk, chalk, accent], delay 6. `Etiqueta` "ninguém aprende o livre num fim de
   semana" (ink, size 30) x 65 y 990, delay 20.
-- S3 6.2 +7.0 `p-espelho@0.5`, filter "brightness(.7)" (two silhouettes in mirror at y 650–1300; top free).
+- S3 6.2 +7.0 `p-espelho@0.5`, filter "brightness(.7)" (two silhouettes in mirror at y 920–1550; the top 45% is free).
   `Etiqueta` "o que você leva" (accent, size 40) x 65 y 290, delay 2. Four `Etiqueta` (chalk, size 34) at x 65,
   y 385 / 455 / 525 / 595, delays f(0.8) / f(2.0) / f(3.2) / f(4.4): "ferramentas para treinar" ·
   "direção para os próximos meses" · "equilíbrio na parede e com assistência" · "gente para treinar junto".
