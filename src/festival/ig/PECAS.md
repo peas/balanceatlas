@@ -58,6 +58,17 @@ safe width (each change is commented in the piece file), so trust the code for s
 long `sub` wraps. To check a piece: `/festival/instagram/?montar=1`, then in the console
 `window.__ig['<id>'].seekTo(<frame>)`.
 
+## Notes for the next pass (Paulo, 05/11/2026)
+
+He found the pieces excellent. Two things to do when the palette closes and before any render, not now:
+- **Blown highlights** in some clips. Likely the HLG to SDR tone-map (`SDR` in `scripts/festival_ig_midia.py`:
+  mobius, `npl=203`) on top of footage that is already backlit by the glass walls. Compare with the originals, try
+  a lower peak (`npl=100`) or `tonemap=hable`, and pull the exposure down per clip if needed (a `"look"` entry in
+  `midia.json`). The proxies in `local/festival/proxies` use the same chain, so check there first.
+- **Looks**: use black and white, sepia or another grade where it serves the piece (`Clip` and `Foto` already take
+  a CSS `filter`; the hero and the teacher card of the home are the reference for a graded look). Not on every
+  piece: pick by what each one is saying.
+
 ## Specs
 
 Notation: `S1 0.0 +2.6` = scene 1 starts at second 0.0 and lasts 2.6 s. `clip@1.2` = `<Clip src="clip" from={1.2}>`.

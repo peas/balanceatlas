@@ -175,6 +175,9 @@ Always verify downloaded images are real (>5KB, not HTML redirects).
   Format rules come from the Drive research `pesquisas/instagram-evento-formatos-playbook.md` (hook on frame 0,
   what/when/where before 8 s, nothing fixed for the whole video, no music in the render, 2nd carousel slide as a
   second cover). The venue section of the home plays piece 03 without its closing card.
+- Paulo's review (05/11): pieces approved as a direction; open notes in `PECAS.md` ("Notes for the next pass"):
+  some clips look blown out after the HDR tone-map, and some pieces should get a black-and-white or sepia look.
+  He tried the vocabulary page and found the automatic `posicao` labels good enough: no need to push him to fill it.
 - Footage caveat: on 04/11 the bodies are small in frame (8–35% of the height); crops beyond 2x are soft at 1080p.
   Next shoot: closer, phone at hip height, one take per figure.
 - **Vocabulary page** (local only): `scripts/festival_vocabulario.py` serves `acervo/vocabulario.html` on
