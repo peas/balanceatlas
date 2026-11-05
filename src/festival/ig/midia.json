@@ -1,0 +1,238 @@
+{
+  "clips": [
+    {
+      "nome": "tour-fachada",
+      "de": "pxl-20261104_192057904",
+      "ini": 3.2,
+      "fim": 7.4,
+      "w": 720,
+      "crf": 30
+    },
+    {
+      "nome": "tour-vidro",
+      "de": "img-3138",
+      "ini": 0.2,
+      "fim": 4.4,
+      "w": 720
+    },
+    {
+      "nome": "tour-palco",
+      "de": "pxl-20261104_184654046",
+      "ini": 0.6,
+      "fim": 5.0,
+      "w": 720
+    },
+    {
+      "nome": "tour-arena",
+      "de": "img-3141",
+      "ini": 0.0,
+      "fim": 3.6,
+      "w": 720,
+      "crf": 31
+    },
+    {
+      "nome": "conv-abre",
+      "de": "img-3161",
+      "ini": 0.0,
+      "fim": 5.7,
+      "crop": "iw/1.5:ih/1.5:iw*0.087:ih*0.185",
+      "som": true,
+      "legenda": true
+    },
+    {
+      "nome": "conv-onde",
+      "de": "img-3166-def713",
+      "ini": 6.6,
+      "fim": 13.5,
+      "crop": "iw/1.5:ih/1.5:iw*0.087:ih*0.21",
+      "som": true,
+      "legenda": true
+    },
+    {
+      "nome": "conv-quem",
+      "de": "img-3170",
+      "ini": 4.0,
+      "fim": 14.4,
+      "crop": "iw/2.2:ih/2.2:iw*0.27:ih*0.25",
+      "som": true,
+      "legenda": true
+    },
+    {
+      "nome": "conv-porque",
+      "de": "img-3171",
+      "ini": 13.0,
+      "fim": 29.2,
+      "crop": "iw/2.2:ih/2.2:iw*0.27:ih*0.25",
+      "som": true,
+      "legenda": true
+    },
+    {
+      "nome": "conv-bora",
+      "de": "img-3176",
+      "ini": 0.0,
+      "fim": 8.4,
+      "som": true,
+      "legenda": true
+    },
+    {
+      "nome": "mural-reta",
+      "de": "img-3177",
+      "ini": 0.0,
+      "fim": 13.6,
+      "crop": "iw*0.58:ih*0.58:0:ih*0.22",
+      "pose": true
+    },
+    {
+      "nome": "palm-largo",
+      "de": "img-3174",
+      "ini": 31.0,
+      "fim": 33.8
+    },
+    {
+      "nome": "palm-zoom",
+      "de": "img-3174",
+      "ini": 33.6,
+      "fim": 35.6,
+      "crop": "iw/2:ih/2:iw*0.10:ih*0.38"
+    },
+    {
+      "nome": "palm-px1",
+      "de": "pxl-20261104_192358456",
+      "ini": 58.2,
+      "fim": 60.4,
+      "crop": "iw/2.5:ih/2.5:iw*0.55:ih*0.33"
+    },
+    {
+      "nome": "palm-perto",
+      "de": "img-3174",
+      "ini": 10.0,
+      "fim": 12.4
+    },
+    {
+      "nome": "palm-px2",
+      "de": "pxl-20261104_192358456",
+      "ini": 35.0,
+      "fim": 36.9,
+      "crop": "iw/2.5:ih/2.5:iw*0.37:ih*0.32"
+    },
+    {
+      "nome": "palm-px3",
+      "de": "pxl-20261104_192358456",
+      "ini": 176.0,
+      "fim": 178.4,
+      "crop": "iw/2.5:ih/2.5:iw*0.57:ih*0.35"
+    },
+    {
+      "nome": "palm-zoom3",
+      "de": "img-3174",
+      "ini": 155.4,
+      "fim": 157.6,
+      "crop": "iw/2.5:ih/2.5:iw*0.32:ih*0.40"
+    },
+    {
+      "nome": "palm-mural",
+      "de": "img-3173",
+      "ini": 36.0,
+      "fim": 38.8,
+      "crop": "iw/2:ih/2:iw*0.25:ih*0.30"
+    },
+    {
+      "nome": "dupla-reta",
+      "de": "pxl-20261104_183102030",
+      "ini": 29.5,
+      "fim": 37.2,
+      "pose": {
+        "esq": [
+          0,
+          0.52
+        ],
+        "dir": [
+          0.48,
+          1
+        ]
+      }
+    },
+    {
+      "nome": "dupla-a",
+      "de": "img-3152",
+      "ini": 0.0,
+      "fim": 19.6,
+      "som": true
+    },
+    {
+      "nome": "dupla-b",
+      "de": "pxl-20261104_183943647",
+      "ini": 67.68,
+      "fim": 87.28
+    },
+    {
+      "nome": "j-chao",
+      "de": "img-2389",
+      "ini": 8.0,
+      "fim": 13.2,
+      "crop": "iw/1.8:ih/1.8:iw*0.25:ih*0.44"
+    },
+    {
+      "nome": "j-entrada",
+      "de": "img-3174",
+      "ini": 7.0,
+      "fim": 10.8
+    },
+    {
+      "nome": "j-press",
+      "de": "pxl-20261104_183102030",
+      "ini": 25.3,
+      "fim": 30.7
+    },
+    {
+      "nome": "p-desce",
+      "de": "pxl-20261104_183102030",
+      "ini": 40.0,
+      "fim": 46.6
+    },
+    {
+      "nome": "p-espelho",
+      "de": "img-3147",
+      "ini": 19.0,
+      "fim": 27.2,
+      "crop": "iw/2:ih/2:iw*0.18:ih*0.38"
+    }
+  ],
+  "fotos": [
+    {
+      "nome": "tv-palco-largo.webp",
+      "de": "fotos/trapezio-voador/PXL_20261104_173348522.jpg",
+      "w": 1440
+    },
+    {
+      "nome": "tv-palco-tecidos.webp",
+      "de": "fotos/trapezio-voador/PXL_20261104_182518161.jpg"
+    },
+    {
+      "nome": "tv-sala-vidro.webp",
+      "de": "fotos/trapezio-voador/PXL_20261104_184620743.jpg",
+      "w": 1440
+    },
+    {
+      "nome": "tv-palco-luzes.webp",
+      "de": "fotos/trapezio-voador/PXL_20261104_184633596.jpg",
+      "w": 1440
+    },
+    {
+      "nome": "tv-palco-alto.webp",
+      "de": "fotos/trapezio-voador/PXL_20261104_184638210.jpg"
+    },
+    {
+      "nome": "tv-fachada.webp",
+      "de": "fotos/trapezio-voador/PXL_20261104_192125754.jpg",
+      "w": 1440
+    },
+    {
+      "nome": "still-dupla.webp",
+      "quadro": {
+        "de": "pxl-20261104_183102030",
+        "t": 33.0
+      }
+    }
+  ]
+}

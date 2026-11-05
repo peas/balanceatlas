@@ -1,0 +1,2386 @@
+# Catálogo do acervo do 1º HandstandFest (contrato e vocabulário em acervo/README.md).
+# 52 vídeos e 7 fotos do Drive "Videos" (05/11/2026). Tempos em segundos do arquivo original.
+# `par` vem de local/festival/sync.json (áudio): t_outro = t_este + offset; `juntos` = segundos filmados pelos dois.
+
+- id: img-3138
+  arquivo: videos-do-trapezio-voador/IMG_3138.MOV
+  camera: iphone
+  data: 2026-11-04
+  hora: "14:32"
+  duracao: 8.6
+  local: trapezio-sala-vidro
+  quem: []
+  tipo: ambiente
+  som: ambiente
+  resumo: panorâmica na mão da sala de vidro vazia, piso de madeira brilhando, teto de madeira e janelas para o verde
+  destaque: 3
+  cenas:
+    - de: 0.0
+      ate: 1.5
+      quem: []
+      posicao: ambiente
+      o_que: sala inteira vista do canto, janelas de vidro ao fundo com verde lá fora, piso de madeira refletindo
+      quadro: plano geral, na mão, girando para a direita
+      nota: 3
+    - de: 1.5
+      ate: 3.5
+      quem: []
+      posicao: ambiente
+      o_que: a câmera passa pela parede de vidro e mostra a rede colorida do lado de fora
+      quadro: panorâmica na mão para a direita
+      nota: 3
+    - de: 3.5
+      ate: 5.5
+      quem: []
+      posicao: ambiente
+      o_que: teto de madeira com vigas pretas, parede branca e portas amarelas
+      quadro: panorâmica com inclinação vertical forte
+      nota: 2
+    - de: 5.5
+      ate: 8.6
+      quem: []
+      posicao: ambiente
+      o_que: volta para as janelas, sala vazia e muito clara
+      quadro: plano geral, na mão
+      nota: 3
+  problemas: panorâmica rápida e inclinada; janelas estouradas; vozes ao fundo sem sentido (Whisper)
+
+- id: img-3139
+  arquivo: videos-do-trapezio-voador/IMG_3139.MOV
+  camera: iphone
+  data: 2026-11-04
+  hora: "14:34"
+  duracao: 9.2
+  local: trapezio-palco
+  quem: [Paulo]
+  tipo: ambiente
+  som: fala
+  resumo: panorâmica na mão do palco, tecidos vermelhos e rosa, cortinas pretas, colchonetes cinza; Paulo aparece no fim
+  destaque: 3
+  fala: |
+    conversa fora de quadro, não é para a câmera:
+    [0.0-3.1] E olha, fruta, faz alguma coisa vegana [?], sabe?
+    [3.5-3.9] Aham.
+    [3.9-5.8] Coisa simples, até que as pessoas não ficam interessadas [?].
+  cenas:
+    - de: 0.0
+      ate: 3.0
+      quem: []
+      posicao: ambiente
+      o_que: tecidos aéreos vermelhos e rosa pendurados, cortina preta, parede de vidro à direita, piso de madeira
+      quadro: plano geral, na mão
+      nota: 3
+    - de: 3.0
+      ate: 7.0
+      quem: []
+      posicao: ambiente
+      o_que: colchonetes cinza no chão, grade de luz no teto, tecidos; um pedestal no meio do piso
+      quadro: panorâmica na mão para a direita
+      nota: 3
+    - de: 7.0
+      ate: 9.2
+      quem: [Paulo]
+      posicao: ambiente
+      o_que: câmera chega à escada e à porta; Paulo de camiseta branca e bermuda preta parado à direita
+      quadro: plano geral, Paulo de corpo inteiro pequeno
+      nota: 2
+  problemas: panorâmica rápida; janelas estouradas; a conversa é de bastidor (comida), não serve como fala
+
+- id: img-3141
+  arquivo: videos-do-trapezio-voador/IMG_3141.MOV
+  camera: iphone
+  data: 2026-11-04
+  hora: "14:46"
+  duracao: 12.9
+  local: trapezio-externo
+  quem: [Paulo]
+  tipo: ambiente
+  som: ambiente
+  resumo: passeio na mão pela área externa, do mural colorido ao palco redondo, à arquibancada e ao térreo coberto, terminando no Paulo
+  destaque: 3
+  cenas:
+    - de: 0.0
+      ate: 1.5
+      quem: []
+      posicao: ambiente
+      o_que: muro com mural colorido (azul, rosa, vermelho), piso de tijolinho, palmeira no alto
+      quadro: plano geral, na mão
+      nota: 4
+    - de: 1.5
+      ate: 3.0
+      quem: []
+      posicao: ambiente
+      o_que: palco redondo de concreto e degraus da arquibancada com o muro verde e palmeiras
+      quadro: panorâmica na mão
+      nota: 3
+    - de: 3.0
+      ate: 9.0
+      quem: []
+      posicao: ambiente
+      o_que: térreo coberto com mesas e cadeiras de madeira, fachada do prédio, vidraças; uma pessoa de branco ao fundo perto das mesas (4 s)
+      quadro: panorâmica na mão, inclinada
+      nota: 2
+    - de: 9.0
+      ate: 12.9
+      quem: [Paulo]
+      posicao: ambiente
+      o_que: Paulo de camiseta branca e bermuda preta mexendo no celular entre as mesas
+      quadro: plano médio, corpo inteiro
+      nota: 2
+  problemas: panorâmica rápida e torta; céu estourado no começo
+
+- id: img-3142
+  arquivo: videos-do-trapezio-voador/IMG_3142.MOV
+  camera: iphone
+  data: 2026-11-04
+  hora: "15:05"
+  duracao: 10.6
+  local: trapezio-sala-vidro
+  quem: [Paulo]
+  tipo: ambiente
+  som: ambiente
+  resumo: panorâmica na mão da sala de vidro; abre com o Paulo sentado no chão com o notebook
+  destaque: 2
+  cenas:
+    - de: 0.0
+      ate: 1.0
+      quem: [Paulo]
+      posicao: ambiente
+      o_que: Paulo agachado no piso de madeira mexendo num notebook, perto das portas amarelas
+      quadro: plano geral, Paulo no canto inferior esquerdo
+      nota: 2
+    - de: 1.0
+      ate: 10.6
+      quem: []
+      posicao: ambiente
+      o_que: a câmera gira pela sala vazia, passa pela parede de vidro com a escada do lado de fora (4 s) e termina nas janelas para o verde
+      quadro: panorâmica na mão, com inclinação
+      nota: 3
+  problemas: panorâmica com inclinação vertical; janelas estouradas
+
+- id: img-3143
+  arquivo: videos-do-trapezio-voador/IMG_3143.mov
+  camera: iphone
+  data: 2026-11-04
+  hora: "15:14"
+  duracao: 14.4
+  local: trapezio-sala-vidro
+  quem: [Gabriel, Paulo]
+  tipo: treino
+  som: fala
+  resumo: os dois sobem juntos de frente e trocam de figura conforme uma voz chama palito (reta) e afasta (straddle); o clipe acaba com os dois ainda no ar
+  destaque: 3
+  fala: |
+    voz chamando as figuras (de quem não dá para ver):
+    [0.0-0.9] Descansa em fundo [?].
+    [1.9-5.4] Bom, mas, estou lá no palito [?], para você.
+    [5.9-7.6] Palito, palito.
+    [8.1-8.9] Palito, palito.
+    [9.7-10.6] Afasta.
+    [11.6-12.5] Palito.
+    [14.0-14.3] Palito.
+  cenas:
+    - de: 0.0
+      ate: 1.3
+      quem: [Gabriel, Paulo]
+      posicao: aquecimento
+      o_que: os dois dobrados à frente, mãos no chão, prontos para subir
+      quadro: frente, corpo inteiro, câmera parada no chão
+      nota: 2
+    - de: 1.3
+      ate: 14.4
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, chute, straddle, reta, tuck]
+      o_que: sobem juntos (Gabriel à esquerda em straddle, Paulo à direita); alternam straddle, reta e tuck, quase sempre na mesma figura; aos 11-12,5 s os dois abertos em straddle, aos 13-14 s os dois retos
+      quadro: frente, corpo inteiro, câmera parada, corpos com cerca de 22% da altura do quadro, muito teto
+      nota: 3
+  problemas: contraluz das janelas; corpos pequenos; metade de cima do quadro é teto; o clipe corta com os dois ainda de ponta-cabeça
+
+- id: img-3144
+  arquivo: videos-do-trapezio-voador/IMG_3144.mov
+  camera: iphone
+  data: 2026-11-04
+  hora: "15:15"
+  duracao: 32.6
+  local: trapezio-sala-vidro
+  quem: [Gabriel, Paulo]
+  tipo: treino
+  som: fala
+  resumo: jogo de figuras em dupla, de frente; uma voz chama agrupa, afasta, alinha, divide e os dois trocam juntos durante cerca de 23 s
+  destaque: 4
+  fala: |
+    voz chamando as figuras (de quem não dá para ver):
+    [1.0-2.1] Segura a tala [?].
+    [3.7-4.6] Caliente [?].
+    [6.4-7.0] Agrupando.
+    [8.9-9.0] Afasta.
+    [11.4-12.3] Alinha [?] (Whisper ouviu "Alimento").
+    [14.0-15.3] Agrupando.
+    [16.8-17.6] Afasta.
+    [18.5-19.5] Alinha [?] (Whisper ouviu "Alimento").
+    [20.8-21.3] Divide.
+    [24.0-25.8] Divide-se [?].
+    [26.9-28.6] Pronto, esse cê é um novo [?].
+  cenas:
+    - de: 0.0
+      ate: 2.5
+      quem: [Gabriel, Paulo]
+      posicao: aquecimento
+      o_que: Gabriel de camiseta branca e bermuda cáqui à esquerda, Paulo sem camisa à direita; dobram o tronco para subir
+      quadro: frente, corpo inteiro, câmera parada no chão
+      nota: 2
+    - de: 2.5
+      ate: 26.3
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, press, straddle, reta, tuck]
+      o_que: sobem em press abrindo em straddle (Gabriel 2,5 s, Paulo 3,0 s); depois, seguindo a voz, reta (5-8 s), tuck (8-9,5 s), straddle (10-12,5 s), reta (13-15 s), tuck (16 s), straddle (17-19,5 s), reta (20-24 s); sincronizados quase o tempo todo
+      quadro: frente, corpo inteiro, corpos com cerca de 22% da altura do quadro
+      nota: 4
+    - de: 26.3
+      ate: 29.5
+      quem: [Gabriel, Paulo]
+      posicao: [saida, straddle]
+      o_que: Paulo desce dobrando à frente e fica de pé; Gabriel desce devagar em straddle até sentar aberto no chão
+      quadro: frente, corpo inteiro
+      nota: 3
+    - de: 29.5
+      ate: 32.6
+      quem: [Gabriel, Paulo]
+      posicao: saida
+      o_que: Gabriel sentado no chão, Paulo de pé ao fundo
+      quadro: frente
+      nota: 1
+  problemas: contraluz das janelas; corpos pequenos; metade de cima do quadro é teto e luz fluorescente
+
+- id: img-3145
+  arquivo: videos-do-trapezio-voador/IMG_3145.MOV
+  camera: iphone
+  data: 2026-11-04
+  hora: "15:18"
+  duracao: 6.1
+  local: trapezio-sala-vidro
+  quem: [Paulo]
+  tipo: treino
+  som: fala
+  resumo: Paulo sozinho de perfil, pernas em stag e tuck, desce aos 4,5 s
+  destaque: 2
+  fala: |
+    fala fora de quadro, pouco inteligível:
+    [0.0-4.5] Agora, eu acho que eu faço a pasta [?], é tudo bem, interessa [?].
+    [5.3-6.0] Então, sigamos.
+  cenas:
+    - de: 0.0
+      ate: 4.4
+      quem: [Paulo]
+      posicao: [stag, tuck]
+      o_que: já está de ponta-cabeça quando o clipe começa; troca de stag para pernas dobradas e desce
+      quadro: perfil, corpo inteiro, câmera parada, corpo com cerca de 20% da altura do quadro, no centro
+      nota: 2
+    - de: 4.4
+      ate: 6.1
+      quem: [Paulo]
+      posicao: saida
+      o_que: pés no chão, fica de pé
+      quadro: perfil
+      nota: 1
+  problemas: contraluz; corpo pequeno; começo do equilíbrio cortado; a pose não pegou o corpo invertido
+
+- id: img-3146
+  arquivo: videos-do-trapezio-voador/IMG_3146.mov
+  camera: iphone
+  data: 2026-11-04
+  hora: "15:19"
+  duracao: 28.4
+  local: trapezio-sala-vidro
+  quem: [Gabriel, Paulo]
+  tipo: treino
+  som: ambiente
+  resumo: os dois de perfil, um atrás do outro, sobem chutando e brincam com as pernas (tesoura, stag, tuck) por cerca de 21 s
+  destaque: 4
+  cenas:
+    - de: 0.0
+      ate: 1.0
+      quem: [Gabriel, Paulo]
+      posicao: aquecimento
+      o_que: os dois dobrados, mãos no chão
+      quadro: perfil, corpo inteiro, câmera parada no chão
+      nota: 2
+    - de: 1.0
+      ate: 6.0
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, chute, stag]
+      o_que: Gabriel (à frente, camiseta branca) chuta aos 1,0 s e Paulo aos 1,5 s; os dois abrem as pernas em tesoura, uma para frente e outra para trás
+      quadro: perfil, corpo inteiro, corpos com cerca de 20% da altura do quadro
+      nota: 4
+    - de: 6.0
+      ate: 23.8
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, stag, tuck]
+      o_que: trocam entre stag e pernas dobradas (tuck aberto) em espelho; aos 15 s os dois com os joelhos dobrados e os pés quase se tocando
+      quadro: perfil, corpo inteiro
+      nota: 4
+    - de: 23.3
+      ate: 28.4
+      quem: [Gabriel, Paulo]
+      posicao: saida
+      o_que: Gabriel desce e fica de pé; Paulo desce e senta no chão
+      quadro: perfil
+      nota: 2
+  problemas: contraluz das janelas; corpos pequenos; teto ocupa o terço de cima
+
+- id: img-3147
+  arquivo: videos-do-trapezio-voador/IMG_3147.mov
+  camera: iphone
+  data: 2026-11-04
+  hora: "15:22"
+  duracao: 33.9
+  local: trapezio-sala-vidro
+  quem: [Gabriel, Paulo]
+  tipo: treino
+  som: fala
+  resumo: a melhor sequência de perfil na sala de vidro, 26 s de figuras em espelho (stag, tuck, tesoura horizontal) e cumprimento no fim
+  destaque: 5
+  fala: |
+    voz ao fundo, Whisper incerto:
+    [0.0-17.6] palavras soltas: "flex" [?], "palma da mão" [?], "meia" [?], "sete, sete" [?]
+    [25.9-26.2] E desce [?].
+    [31.9-33.4] Vamos! Vamos lá!
+  cenas:
+    - de: 0.0
+      ate: 1.0
+      quem: [Gabriel, Paulo]
+      posicao: aquecimento
+      o_que: os dois dobrados, mãos no chão
+      quadro: perfil, corpo inteiro, câmera parada no chão
+      nota: 2
+    - de: 1.0
+      ate: 13.0
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, chute, stag]
+      o_que: Gabriel chuta aos 1,0 s, Paulo aos 1,5 s; os dois seguram stag com um joelho dobrado, um de frente para o outro, os pés quase se encontrando no meio
+      quadro: perfil, corpo inteiro, corpos com cerca de 20% da altura do quadro
+      nota: 5
+    - de: 13.0
+      ate: 19.0
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, tuck]
+      o_que: fecham as pernas em tuck, cada um no seu tempo
+      quadro: perfil, corpo inteiro
+      nota: 4
+    - de: 19.0
+      ate: 27.5
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, stag]
+      o_que: abrem em tesoura quase horizontal (uma perna à frente dobrada, a outra para trás), espelhados
+      quadro: perfil, corpo inteiro
+      nota: 5
+    - de: 27.5
+      ate: 33.9
+      quem: [Gabriel, Paulo]
+      posicao: saida
+      o_que: descem juntos, ficam de pé, se cumprimentam (31-32 s) e o Gabriel vem até a câmera
+      quadro: perfil, depois Gabriel grande de frente no fim
+      nota: 3
+  problemas: contraluz das janelas; corpos pequenos; teto ocupa o terço de cima
+
+- id: img-3148
+  arquivo: videos-do-trapezio-voador/IMG_3148.mov
+  camera: iphone
+  data: 2026-11-04
+  hora: "15:28"
+  duracao: 24.3
+  local: trapezio-palco
+  quem: [Gabriel, Paulo]
+  tipo: treino
+  som: ambiente
+  resumo: press em dupla no palco, câmera baixa com tecidos vermelhos no alto do quadro; sobem devagar, seguram retos e descem em straddle
+  destaque: 3
+  cenas:
+    - de: 0.0
+      ate: 5.0
+      quem: [Gabriel, Paulo]
+      posicao: aquecimento
+      o_que: de pé, depois dobrados com as mãos no chão (Gabriel à frente, Paulo atrás à direita)
+      quadro: 3/4, corpo inteiro, câmera parada no chão, grande-angular
+      nota: 2
+    - de: 5.0
+      ate: 8.5
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, press]
+      o_que: sobem em press devagar, Gabriel passando por stag com as pernas dobradas, Paulo um pouco antes
+      quadro: 3/4, corpo inteiro, corpos com cerca de 22% da altura do quadro
+      nota: 3
+    - de: 8.5
+      ate: 17.0
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, reta]
+      o_que: os dois retos, parados
+      quadro: 3/4, corpo inteiro
+      nota: 3
+    - de: 17.0
+      ate: 22.5
+      quem: [Gabriel, Paulo]
+      posicao: [saida, straddle]
+      o_que: Gabriel desce em straddle devagar até ficar de pé (22,5 s); Paulo desce perto dos 20 s
+      quadro: 3/4, corpo inteiro
+      nota: 3
+    - de: 22.5
+      ate: 24.3
+      quem: [Gabriel, Paulo]
+      posicao: saida
+      o_que: os dois de pé
+      quadro: 3/4
+      nota: 1
+  par:
+    com: pxl-20261104_182844212
+    offset: 23.38
+    juntos: 24.3
+  problemas: contraluz forte da janela grande à esquerda (estourada); corpos pequenos; os dois se sobrepõem em parte
+
+- id: img-3149
+  arquivo: videos-do-trapezio-voador/IMG_3149.mov
+  camera: iphone
+  data: 2026-11-04
+  hora: "15:30"
+  duracao: 32.8
+  local: trapezio-palco
+  quem: [Gabriel, Paulo]
+  tipo: treino
+  som: ambiente
+  resumo: segunda tentativa do press em dupla no palco, mesma câmera baixa; Gabriel na frente esconde o Paulo quase o tempo todo
+  destaque: 2
+  cenas:
+    - de: 0.0
+      ate: 3.5
+      quem: [Gabriel, Paulo]
+      posicao: aquecimento
+      o_que: de pé e depois dobrados, um atrás do outro
+      quadro: 3/4, corpo inteiro, câmera parada no chão
+      nota: 2
+    - de: 3.5
+      ate: 7.0
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, press]
+      o_que: sobem em press; Gabriel passa por pernas dobradas e chega reto aos 7 s
+      quadro: 3/4, corpo inteiro, corpos com cerca de 22% da altura do quadro
+      nota: 3
+    - de: 7.0
+      ate: 17.0
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, reta]
+      o_que: os dois retos, Paulo quase todo atrás do Gabriel
+      quadro: 3/4, corpo inteiro
+      nota: 2
+    - de: 17.0
+      ate: 22.0
+      quem: [Gabriel]
+      posicao: [stag, saida]
+      o_que: Gabriel dobra as pernas em stag e desce em straddle até o chão
+      quadro: 3/4, corpo inteiro
+      nota: 2
+    - de: 22.0
+      ate: 32.8
+      quem: [Gabriel, Paulo]
+      posicao: saida
+      o_que: os dois sentados no chão, depois levantam e saem andando
+      quadro: 3/4
+      nota: 1
+  par:
+    com: pxl-20261104_183102030
+    offset: 21.7
+    juntos: 32.8
+  problemas: os dois se sobrepõem (Paulo escondido); contraluz da janela estourada; corpos pequenos
+  # sync.json sugere pxl-20261104_183102030 (offset -12.9), mas score 4.4 é baixo: par não confirmado
+
+- id: img-3150
+  arquivo: videos-do-trapezio-voador/IMG_3150.mov
+  camera: iphone
+  data: 2026-11-04
+  hora: "15:35"
+  duracao: 15.3
+  local: trapezio-palco
+  quem: [Gabriel, Paulo]
+  tipo: treino
+  som: ambiente
+  resumo: de frente no palco, lado a lado, os dois abertos em straddle por 12 s com o mezanino e o armário ao fundo; clipe acaba com eles no ar
+  destaque: 4
+  cenas:
+    - de: 0.0
+      ate: 2.5
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, chute, reta]
+      o_que: Gabriel (esquerda) já está de ponta-cabeça quando o clipe começa; Paulo (direita) chuta aos 0,5 s; os dois retos
+      quadro: frente, corpo inteiro, câmera parada, corpos com cerca de 22% da altura do quadro
+      nota: 3
+    - de: 2.5
+      ate: 15.3
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, straddle, stag]
+      o_que: abrem em straddle e seguram; o Paulo passa por stag aos 6-7 s e volta ao straddle; os dois firmes até o fim do clipe
+      quadro: frente, corpo inteiro
+      nota: 4
+  par:
+    com: pxl-20261104_183544033
+    offset: 28.33
+    juntos: 15.3
+  problemas: janelas estouradas dos dois lados; entrada do Gabriel cortada; o clipe acaba antes da saída
+
+- id: img-3151
+  arquivo: videos-do-trapezio-voador/IMG_3151.mov
+  camera: iphone
+  data: 2026-11-04
+  hora: "15:37"
+  duracao: 19.5
+  local: trapezio-palco
+  quem: [Gabriel, Paulo]
+  tipo: treino
+  som: fala
+  resumo: os dois colados lado a lado no palco, retos e depois em straddle cruzando as pernas; Paulo desce aos 13 s e Gabriel segue até 17,5 s
+  destaque: 4
+  fala: |
+    fala curta, Whisper incerto:
+    [9.5-10.0] Opa!
+    [12.7-16.2] E aí, eu usava, peraí, vamos de novo [?], porque eu usava a coisa trabalhando [?].
+    [17.1-19.1] Eu disse que foi muito bom [?], foi muito bom.
+  cenas:
+    - de: 0.0
+      ate: 7.5
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, reta]
+      o_que: já estão de ponta-cabeça quando o clipe começa, retos, ombro com ombro (Gabriel à esquerda, um pouco à frente)
+      quadro: frente, corpo inteiro, câmera parada, corpos com cerca de 30% da altura do quadro
+      nota: 4
+    - de: 7.5
+      ate: 13.0
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, straddle]
+      o_que: abrem em straddle juntos, as pernas de um cruzando as do outro
+      quadro: frente, corpo inteiro
+      nota: 4
+    - de: 13.0
+      ate: 17.5
+      quem: [Gabriel]
+      posicao: [stag, tuck, straddle]
+      o_que: Paulo desce e sai para a direita; Gabriel continua sozinho trocando de figura
+      quadro: frente, corpo inteiro
+      nota: 3
+    - de: 17.5
+      ate: 19.5
+      quem: [Gabriel, Paulo]
+      posicao: saida
+      o_que: Gabriel desce; os dois vêm andando para a câmera
+      quadro: frente
+      nota: 2
+  par:
+    com: pxl-20261104_183734415
+    offset: 44.28
+    juntos: 19.5
+  problemas: janela estourada à direita; entrada dos dois cortada (começam no ar); sobreposição parcial dos corpos
+  # sync.json sugere pxl-20261104_183734415 (offset -16.5), mas juntos = 3,0 s e score 6.6: par não confirmado
+
+- id: img-3152
+  arquivo: videos-do-trapezio-voador/IMG_3152.mov
+  camera: iphone
+  data: 2026-11-04
+  hora: "15:39"
+  duracao: 20.9
+  local: trapezio-palco
+  quem: [Gabriel, Paulo]
+  tipo: treino
+  som: fala
+  resumo: a melhor imagem de dupla do dia, colados lado a lado, reta, tesoura em espelho e joelhos dobrados; descem e batem as mãos
+  destaque: 5
+  fala: |
+    [6.8-8.0] Abre o dedo [?].
+    [16.1-17.9] Se você ficou bom, não esquece [?].
+    [19.0-20.5] Esse foi o primeiro longo.
+  cenas:
+    - de: 0.0
+      ate: 2.5
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, reta]
+      o_que: já estão de ponta-cabeça quando o clipe começa, retos e colados (Gabriel à esquerda)
+      quadro: frente, corpo inteiro, câmera parada, corpos com cerca de 35% da altura do quadro
+      nota: 5
+    - de: 2.5
+      ate: 8.0
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, stag]
+      o_que: abrem em tesoura em espelho, as pernas se cruzando por cima dos dois
+      quadro: frente, corpo inteiro
+      nota: 5
+    - de: 8.0
+      ate: 15.1
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, tuck]
+      o_que: dobram os joelhos para trás, os dois iguais, e seguram
+      quadro: frente, corpo inteiro
+      nota: 4
+    - de: 15.1
+      ate: 17.0
+      quem: [Gabriel, Paulo]
+      posicao: saida
+      o_que: Gabriel desce primeiro (15,3 s), Paulo logo depois (16,0 s)
+      quadro: frente
+      nota: 3
+    - de: 17.0
+      ate: 20.9
+      quem: [Gabriel, Paulo]
+      posicao: saida
+      o_que: batem as mãos no alto (17,5-18,5 s), sorrindo; Gabriel vem até a câmera
+      quadro: frente, os dois grandes de corpo inteiro
+      nota: 4
+  par:
+    com: pxl-20261104_183943647
+    offset: 67.68
+    juntos: 20.9
+  problemas: janela estourada à direita; entrada cortada (começam no ar)
+
+- id: img-3160
+  arquivo: videos-do-trapezio-voador/IMG_3160.mov
+  camera: iphone
+  data: 2026-11-04
+  hora: "15:54"
+  duracao: 18.7
+  local: trapezio-palco
+  quem: [Gabriel, Paulo]
+  tipo: convite
+  som: fala
+  resumo: ensaio do convite no palco, os dois de pé de frente com o tecido vermelho atrás; combinam a frase e falam uma vez
+  destaque: 2
+  fala: |
+    [0.0-1.2] Tempo, como é a frase?
+    [1.7-3.2] Quero te convidar para o primeiro Handstand...
+    [6.1-9.9] Queremos convidar vocês para o primeiro festival de Handstand do Brasil.
+  cenas:
+    - de: 0.0
+      ate: 5.5
+      quem: [Gabriel, Paulo]
+      posicao: fala
+      o_que: os dois combinam a frase olhando um para o outro
+      quadro: frente, corpo inteiro, câmera parada, corpos com cerca de 55% da altura do quadro
+      nota: 2
+    - de: 6.1
+      ate: 9.9
+      quem: [Gabriel, Paulo]
+      posicao: fala
+      o_que: dizem o convite para a câmera (quem fala não dá para afirmar)
+      quadro: frente, corpo inteiro
+      nota: 3
+    - de: 9.9
+      ate: 18.7
+      quem: [Gabriel, Paulo]
+      posicao: fala
+      o_que: ficam parados, o Gabriel gesticula para cima nos últimos segundos
+      quadro: frente, corpo inteiro
+      nota: 2
+  problemas: é ensaio; janelas estouradas atrás
+
+- id: img-3161
+  arquivo: videos-do-trapezio-voador/IMG_3161.mov
+  camera: iphone
+  data: 2026-11-04
+  hora: "15:55"
+  duracao: 6.2
+  local: trapezio-palco
+  quem: [Gabriel, Paulo]
+  tipo: convite
+  som: fala
+  resumo: a frase do convite inteira e limpa, os dois de frente apontando para cima
+  destaque: 4
+  fala: |
+    [0.0-5.4] Queremos convidar vocês para o primeiro Festival de Handstand do Brasil.
+  cenas:
+    - de: 0.0
+      ate: 5.4
+      quem: [Gabriel, Paulo]
+      posicao: fala
+      o_que: os dois de pé, Gabriel com o indicador para cima; parece que falam juntos [?]
+      quadro: frente, corpo inteiro, câmera parada, corpos com cerca de 55% da altura do quadro
+      nota: 4
+  problemas: janelas estouradas atrás; pés perto da borda de baixo
+
+- id: img-3162
+  arquivo: videos-do-trapezio-voador/IMG_3162.mov
+  camera: iphone
+  data: 2026-11-04
+  hora: "15:56"
+  duracao: 13.5
+  local: trapezio-palco
+  quem: [Gabriel, Paulo]
+  tipo: convite
+  som: fala
+  resumo: Gabriel pergunta onde estão, Paulo responde Trapézio Voador ao lado do metrô Butantã; viram de costas no fim
+  destaque: 4
+  fala: |
+    [0.6-2.0] Gabriel: Paulo, e a gente está onde agora?
+    [2.6-6.1] Paulo: A gente está aqui no Trapézio Voador, em São Paulo, do lado do metrô Butantã.
+    [6.9-9.0] Onde vai acontecer nosso festival maravilhoso. [?] (quem fala)
+    [10.5-11.1] Vem ver com a gente.
+  cenas:
+    - de: 0.6
+      ate: 2.0
+      quem: [Gabriel]
+      posicao: fala
+      o_que: Gabriel vira para o Paulo e pergunta
+      quadro: frente, corpo inteiro, câmera parada, corpos com cerca de 55% da altura do quadro
+      nota: 3
+    - de: 2.6
+      ate: 9.0
+      quem: [Paulo]
+      posicao: fala
+      o_que: Paulo responde gesticulando
+      quadro: frente, corpo inteiro
+      nota: 4
+    - de: 10.0
+      ate: 11.1
+      quem: [Gabriel, Paulo]
+      posicao: fala
+      o_que: Gabriel aponta o espaço com a mão, chamando
+      quadro: frente, corpo inteiro
+      nota: 3
+    - de: 11.5
+      ate: 13.5
+      quem: [Gabriel, Paulo]
+      posicao: andando
+      o_que: os dois viram de costas e vão andando para o fundo
+      quadro: de costas, corpo inteiro
+      nota: 3
+  problemas: janelas estouradas atrás; "Butantã" o Whisper ouviu "Botandão"
+
+- id: img-3166-def713
+  arquivo: videos-do-trapezio-voador/IMG_3166-def713.mov
+  camera: iphone
+  data: 2026-11-04
+  hora: "16:04"
+  duracao: 14.4
+  local: trapezio-palco
+  quem: [Gabriel, Paulo]
+  tipo: convite
+  som: fala
+  resumo: melhor tomada do convite, frase inteira mais a pergunta e a resposta sobre o Trapézio Voador, tecido vermelho atrás
+  destaque: 5
+  fala: |
+    [0.0-4.6] Queremos convidar vocês ao primeiro festival de Handstand do Brasil.
+    [6.8-8.3] Gabriel: E aí, Paulo, a gente está onde?
+    [9.0-13.1] Paulo: Hoje a gente está aqui no Trapézio Voador, em São Paulo, pertinho do metrô Butantã.
+  cenas:
+    - de: 0.0
+      ate: 4.6
+      quem: [Gabriel, Paulo]
+      posicao: fala
+      o_que: os dois de frente, Gabriel com o indicador para o alto; o convite inteiro (quem fala não dá para afirmar [?])
+      quadro: frente, corpo inteiro, câmera parada, corpos com cerca de 45% da altura do quadro
+      nota: 5
+    - de: 6.8
+      ate: 8.3
+      quem: [Gabriel]
+      posicao: fala
+      o_que: Gabriel vira para o Paulo e pergunta
+      quadro: frente, corpo inteiro
+      nota: 4
+    - de: 9.0
+      ate: 13.1
+      quem: [Paulo]
+      posicao: fala
+      o_que: Paulo responde gesticulando para o espaço
+      quadro: frente, corpo inteiro
+      nota: 4
+    - de: 13.1
+      ate: 14.4
+      quem: [Gabriel, Paulo]
+      posicao: fala
+      o_que: fim da resposta, os dois parados
+      quadro: frente, corpo inteiro
+      nota: 2
+  problemas: janelas estouradas atrás; mesma hora de captura (16:04:18) e mesmo nome de arquivo que img-3166, mas é outro arquivo
+
+- id: img-3166
+  arquivo: videos-do-trapezio-voador/IMG_3166.mov
+  camera: iphone
+  data: 2026-11-04
+  hora: "16:04"
+  duracao: 7.4
+  local: trapezio-palco
+  quem: [Gabriel, Paulo]
+  tipo: convite
+  som: fala
+  resumo: fecho do convite, onde vai acontecer o festival, vem conhecer, e os dois saem andando de costas
+  destaque: 3
+  fala: |
+    [0.0-2.5] Onde vai acontecer nosso maravilhoso festival.
+    [3.6-5.3] Vem conhecer [?] com a gente. (Whisper ouviu "Bem conhecido")
+  cenas:
+    - de: 0.0
+      ate: 2.5
+      quem: [Gabriel, Paulo]
+      posicao: fala
+      o_que: Gabriel com a mão para cima, Paulo olhando para a câmera (quem fala não dá para afirmar)
+      quadro: frente, corpo inteiro, câmera parada, corpos com cerca de 45% da altura do quadro
+      nota: 3
+    - de: 3.6
+      ate: 5.3
+      quem: [Gabriel, Paulo]
+      posicao: fala
+      o_que: viram um para o outro, Paulo gesticula
+      quadro: frente, corpo inteiro
+      nota: 3
+    - de: 5.3
+      ate: 7.4
+      quem: [Gabriel, Paulo]
+      posicao: andando
+      o_que: viram de costas e andam para o fundo do palco
+      quadro: de costas, corpo inteiro
+      nota: 3
+  problemas: janelas estouradas atrás; ver img-3166-def713 (mesma hora de captura)
+
+- id: img-3167
+  arquivo: videos-do-trapezio-voador/IMG_3167.MOV
+  camera: iphone
+  data: 2026-11-04
+  hora: "16:06"
+  duracao: 8.5
+  local: trapezio-palco
+  quem: [Paulo]
+  tipo: ambiente
+  som: fala
+  resumo: passeio na mão pelo palco seguindo o Paulo de costas, tecidos, grade de luz e colchonetes
+  destaque: 2
+  fala: |
+    [0.0-1.8] Estou caminhando, isso, curtindo o espaço [?].
+  cenas:
+    - de: 0.0
+      ate: 3.0
+      quem: [Paulo]
+      posicao: andando
+      o_que: Paulo de camiseta branca e bermuda preta anda de costas pelo palco; tecidos vermelhos, colchonetes e cortina preta ao fundo
+      quadro: de costas, na mão, corpo inteiro
+      nota: 2
+    - de: 3.0
+      ate: 5.5
+      quem: []
+      posicao: ambiente
+      o_que: a câmera sobe para a grade de luz e para a parede com o tecido vermelho
+      quadro: panorâmica na mão, inclinada
+      nota: 2
+    - de: 5.5
+      ate: 8.5
+      quem: [Paulo]
+      posicao: ambiente
+      o_que: Paulo bem perto da câmera, de costas, ao lado da parede de vidro com o tecido
+      quadro: de costas, cortado, na mão
+      nota: 1
+  problemas: panorâmica rápida e torta; janelas estouradas
+
+- id: img-3168
+  arquivo: videos-do-trapezio-voador/IMG_3168.MOV
+  camera: iphone
+  data: 2026-11-04
+  hora: "16:09"
+  duracao: 33.0
+  local: trapezio-palco
+  quem: [Gabriel]
+  tipo: ambiente
+  som: ambiente
+  resumo: Gabriel abre a porta cinza do hall e revela o palco; atravessa o palco até o fundo e volta, a câmera mostra a escada e a porta com cortina
+  destaque: 4
+  cenas:
+    - de: 0.0
+      ate: 6.0
+      quem: [Gabriel]
+      posicao: ambiente
+      o_que: Gabriel parado ao lado da porta dupla cinza num hall branco, ajeita o cabelo
+      quadro: plano médio, corpo inteiro, na mão
+      nota: 2
+    - de: 6.0
+      ate: 11.0
+      quem: [Gabriel]
+      posicao: andando
+      o_que: abre a porta e entra; o palco aparece com os tecidos e a luz das janelas
+      quadro: de costas, na mão seguindo
+      nota: 4
+    - de: 11.0
+      ate: 23.0
+      quem: [Gabriel]
+      posicao: andando
+      o_que: abre os braços (12 s) e atravessa o palco até a cortina preta do fundo; tecidos vermelhos e rosa, grade de luz no teto
+      quadro: plano geral, na mão, Gabriel pequeno
+      nota: 4
+    - de: 23.0
+      ate: 26.5
+      quem: [Gabriel]
+      posicao: andando
+      o_que: volta andando para a câmera e passa por ela
+      quadro: de frente, corpo inteiro crescendo
+      nota: 3
+    - de: 26.5
+      ate: 31.5
+      quem: []
+      posicao: ambiente
+      o_que: panorâmica para a escada metálica e a porta com cortina azul-escura
+      quadro: panorâmica na mão
+      nota: 2
+    - de: 31.5
+      ate: 33.0
+      quem: [outra pessoa]
+      posicao: andando
+      o_que: uma pessoa de camiseta branca e bermuda preta entra pela frente da câmera, de costas (pela roupa, provavelmente o Paulo [?])
+      quadro: de costas, cortado
+      nota: 1
+  par:
+    com: pxl-20261104_190908352
+    offset: -3.13
+    juntos: 25.8
+  problemas: na mão, balançando; janelas estouradas; quem filma não é o Gabriel (ele está em quadro)
+
+- id: img-3169
+  arquivo: videos-do-trapezio-voador/IMG_3169.MOV
+  camera: iphone
+  data: 2026-11-04
+  hora: "16:09"
+  duracao: 27.8
+  local: trapezio-sala-vidro
+  quem: [Paulo]
+  tipo: ambiente
+  som: ambiente
+  resumo: segue o Paulo do palco pela escada até a sala de vidro, ele atravessa a sala e acena; termina nas janelas com o mural lá fora
+  destaque: 2
+  cenas:
+    - de: 0.0
+      ate: 2.0
+      quem: [Paulo]
+      posicao: andando
+      o_que: Paulo sai do palco pela porta com cortina azul-escura
+      quadro: corpo inteiro, na mão
+      nota: 2
+    - de: 2.0
+      ate: 14.0
+      quem: [Paulo]
+      posicao: andando
+      o_que: atravessa o corredor e sobe a escada cinza, de costas
+      quadro: na mão, seguindo de costas
+      nota: 2
+    - de: 14.0
+      ate: 23.0
+      quem: [Paulo]
+      posicao: andando
+      o_que: entra na sala de vidro, se vira e acena (16 s) e atravessa a sala até as janelas
+      quadro: plano geral, na mão, corpo inteiro
+      nota: 3
+    - de: 23.0
+      ate: 27.8
+      quem: []
+      posicao: ambiente
+      o_que: panorâmica para as janelas com o mural colorido e o prédio vizinho lá fora
+      quadro: panorâmica na mão
+      nota: 2
+  problemas: na mão, balançando; o trecho na escada é escuro e torto
+  # sync.json sugere pxl-20261104_190908352 (offset 21.2), mas esse Pixel termina às 16:09:34 e este clipe começa às 16:09:40: par descartado
+
+- id: img-3170
+  arquivo: videos-do-trapezio-voador/IMG_3170.mov
+  camera: iphone
+  data: 2026-11-04
+  hora: "16:12"
+  duracao: 14.4
+  local: trapezio-sala-vidro
+  quem: [Gabriel, Paulo]
+  tipo: convite
+  som: fala
+  resumo: na sala de vidro, Gabriel diz que estão numa das salas do festival e Paulo convida o pessoal do acroyoga, do yoga e da calistenia
+  destaque: 3
+  fala: |
+    [0.0-2.8] Gabriel: A gente está aqui em uma das salas que vai acontecer na [?].
+    [4.1-9.6] Paulo: Pois é, e a gente está convidando todo mundo do movimento, do acroyoga, do yoga, da calistenia,
+    [10.0-14.1] Paulo: para realmente firmar o movimento de Handstand do Brasil, não é isso, Gabriel?
+  cenas:
+    - de: 0.0
+      ate: 2.8
+      quem: [Gabriel]
+      posicao: fala
+      o_que: Gabriel fala gesticulando, Paulo com a mão na cintura
+      quadro: frente, corpo inteiro, câmera parada, corpos com cerca de 30% da altura do quadro
+      nota: 3
+    - de: 4.1
+      ate: 14.1
+      quem: [Paulo]
+      posicao: fala
+      o_que: Paulo fala gesticulando com as duas mãos
+      quadro: frente, corpo inteiro
+      nota: 3
+  problemas: contraluz forte das janelas, rostos escuros; corpos no terço central com muito teto em cima; final da primeira frase incompreensível
+
+- id: img-3171
+  arquivo: videos-do-trapezio-voador/IMG_3171.mov
+  camera: iphone
+  data: 2026-11-04
+  hora: "16:13"
+  duracao: 29.4
+  local: trapezio-sala-vidro
+  quem: [Gabriel, Paulo]
+  tipo: convite
+  som: fala
+  resumo: o convite mais completo, três dias de festival, juntar a comunidade, a parada de mão já é grande fora do Brasil; termina com esperamos vocês
+  destaque: 4
+  fala: |
+    [0.0-12.4] Gabriel: Então, um pouco antes [?], a ideia é isso, juntar a comunidade, vir curtir esses três dias de festival para render [?] sua prática, seu movimento e muita coisa mais que tem em seu desejo [?] de juntar a comunidade.
+    [13.2-25.2] Paulo: Pois é, porque a parada de mão, handstand, já é algo muito grande fora do Brasil e chegou a hora da gente fixar [?] a nossa comunidade, trazer o pessoal junto para você conhecer pessoas que gostam de ficar de ponta-cabeça que nem você.
+    [26.3-28.4] Gabriel [?]: Vai ser muito bom. Esperamos vocês.
+  cenas:
+    - de: 0.0
+      ate: 12.4
+      quem: [Gabriel]
+      posicao: fala
+      o_que: Gabriel fala gesticulando, Paulo ouve com a mão na cintura
+      quadro: frente, corpo inteiro, câmera parada, corpos com cerca de 30% da altura do quadro
+      nota: 3
+    - de: 13.2
+      ate: 25.2
+      quem: [Paulo]
+      posicao: fala
+      o_que: Paulo fala gesticulando; frase forte sobre ficar de ponta-cabeça
+      quadro: frente, corpo inteiro
+      nota: 4
+    - de: 26.3
+      ate: 28.4
+      quem: [Gabriel, Paulo]
+      posicao: fala
+      o_que: fecho, os dois de frente para a câmera
+      quadro: frente, corpo inteiro
+      nota: 3
+  problemas: contraluz forte das janelas, rostos escuros; muito teto em cima
+
+- id: img-3172
+  arquivo: videos-do-trapezio-voador/IMG_3172.MOV
+  camera: iphone
+  data: 2026-11-04
+  hora: "16:17"
+  duracao: 43.0
+  local: trapezio-externo
+  quem: [Paulo]
+  tipo: ambiente
+  som: ambiente
+  resumo: segue o Paulo da sala de vidro escada abaixo até o térreo; depois passeio pela área externa (palco redondo, muro verde, palmeiras, mural, mesas)
+  destaque: 3
+  cenas:
+    - de: 0.0
+      ate: 3.0
+      quem: [Paulo]
+      posicao: andando
+      o_que: Paulo sai da sala de vidro pela porta de vidro, de costas
+      quadro: na mão, seguindo
+      nota: 2
+    - de: 3.0
+      ate: 17.0
+      quem: [Paulo]
+      posicao: andando
+      o_que: desce a escada cinza descalço, olha para trás (10 s), passa pelos extintores
+      quadro: na mão, seguindo, corpo inteiro
+      nota: 3
+    - de: 17.0
+      ate: 21.0
+      quem: [Paulo]
+      posicao: andando
+      o_que: sai para o térreo coberto, ao fundo o palco redondo e o muro verde
+      quadro: de costas, corpo inteiro
+      nota: 3
+    - de: 21.0
+      ate: 33.0
+      quem: []
+      posicao: ambiente
+      o_que: palco redondo de concreto, mural colorido (24 s), muro verde, palmeiras e degraus da arquibancada (28-30 s), mural e lixeira (32 s)
+      quadro: panorâmica na mão
+      nota: 3
+    - de: 33.0
+      ate: 43.0
+      quem: []
+      posicao: ambiente
+      o_que: térreo coberto com mesas e cadeiras dobráveis de madeira; termina numa mochila em cima da mesa
+      quadro: panorâmica na mão
+      nota: 1
+  problemas: na mão, balançando; céu estourado; fim sem uso
+
+- id: img-3173
+  arquivo: videos-do-trapezio-voador/IMG_3173.mov
+  camera: iphone
+  data: 2026-11-04
+  hora: "16:21"
+  duracao: 59.0
+  local: trapezio-externo
+  quem: [Gabriel, Paulo]
+  tipo: treino
+  som: ambiente
+  resumo: os dois em frente ao mural colorido, atrás do palco redondo, seguram juntos cerca de 27 s (Paulo em straddle, Gabriel trocando de figura); corpos muito pequenos
+  destaque: 3
+  cenas:
+    - de: 0.0
+      ate: 2.0
+      quem: [Gabriel]
+      posicao: andando
+      o_que: Gabriel se afasta da câmera depois de deixá-la no chão
+      quadro: de costas, cortado
+      nota: 1
+    - de: 2.0
+      ate: 22.0
+      quem: [Gabriel, Paulo]
+      posicao: aquecimento
+      o_que: Paulo, de camiseta, tira a camisa (11,5-12,5 s) e se prepara diante do mural; Gabriel à direita
+      quadro: frente, câmera parada no chão, palco redondo ocupa a metade de baixo
+      nota: 2
+    - de: 22.0
+      ate: 53.0
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, chute, straddle, stag, tuck]
+      o_que: Paulo (esquerda) chuta aos 22,0 s, reto até 27 s e depois straddle largo até 52 s, desce aos 53 s; Gabriel (direita) chuta aos 23,5 s, tesoura, stag e tuck, desce aos 51 s
+      quadro: frente, corpo inteiro, corpos com cerca de 11% da altura do quadro, mural atrás
+      nota: 3
+    - de: 53.0
+      ate: 59.0
+      quem: [Gabriel, Paulo]
+      posicao: saida
+      o_que: os dois de pé, vão um até o outro e se cumprimentam (56 s)
+      quadro: frente, pequenos
+      nota: 2
+  problemas: corpos minúsculos; metade de baixo é o palco de concreto; pessoas de amarelo ao fundo à direita perto do prédio; voz "Vamos lá" aos 9,5 s, o resto do Whisper é lixo
+  # sync.json sugere pxl-20261104_192057904 (offset 7.1), mas score 6.6 e o relógio diz ~16 s: par não confirmado
+
+- id: img-3174
+  arquivo: videos-do-trapezio-voador/IMG_3174.MOV
+  camera: iphone
+  data: 2026-11-04
+  hora: "16:24"
+  duracao: 189.0
+  local: trapezio-externo
+  quem: [Gabriel, Paulo]
+  tipo: treino
+  som: fala
+  resumo: treino longo na arquibancada com palmeiras e muro verde; bom só no começo (8-16 s, perto da câmera); depois os dois sobem várias vezes lá longe nos degraus
+  destaque: 3
+  fala: |
+    [0.0-4.5] A gente vai fazendo de curtinhos, né? Cada um numa figura, vai.
+    [46.5-51.7] A gente vai ficar ali, eu vou ficar aqui.
+    [53.8-55.0] Ô meu irmão, você vai sair?
+    [55.6-56.5] Eu vou ficar aqui agora.
+    [57.7-58.1] Passa onde?
+    [61.8-62.3] Vamos lá.
+    [63.2-64.4] Por favor, embaixo, você aí [?].
+    [123.2-125.1] Pronto? Pronto? Boa!
+    [126.4-127.9] Não foi assim, não.
+    [129.3-130.8] Tá ótimo, hein?
+    [131.6] Sim.
+    [133.2-136.0] Dá pra fazer assim, né? Assim.
+    [167.8-168.6] Boa! Boa!
+  cenas:
+    - de: 0.0
+      ate: 7.5
+      quem: [Gabriel, Paulo]
+      posicao: aquecimento
+      o_que: Paulo sem camisa nos degraus; Gabriel passa rente à câmera (2-3 s, pernas grandes em quadro) e os dois se posicionam no piso de concreto
+      quadro: frente, câmera parada no chão, palmeiras e muro verde atrás
+      nota: 2
+    - de: 7.5
+      ate: 16.5
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, chute, reta, straddle]
+      o_que: Gabriel (esquerda, mais longe) chuta aos 7,5 s e segura reto de 8,1 a 14,0 s; Paulo (direita, perto) chuta aos 8,5 s, straddle largo de 9 a 14 s, fecha e desce aos 16,5 s
+      quadro: frente, corpo inteiro, Paulo com cerca de 30% da altura do quadro e Gabriel com 15%, palmeiras e céu em cima
+      nota: 4
+    - de: 16.5
+      ate: 30.0
+      quem: [Gabriel, Paulo]
+      posicao: andando
+      o_que: voltam para os degraus da arquibancada
+      quadro: frente, pequenos
+      nota: 1
+    - de: 30.0
+      ate: 44.8
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, stag, reta]
+      o_que: nos degraus, Gabriel (esquerda) em stag e Paulo (direita) reto; Paulo desce perto de 41,5 s, Gabriel aos 44,8 s
+      quadro: frente, corpo inteiro, corpos com cerca de 8% da altura do quadro
+      nota: 2
+    - de: 44.8
+      ate: 69.0
+      quem: [Gabriel, Paulo]
+      posicao: fala
+      o_que: conversam sobre onde cada um fica e se preparam
+      quadro: frente, pequenos
+      nota: 1
+    - de: 69.0
+      ate: 84.0
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, chute, stag, straddle]
+      o_que: sobem de novo juntos nos degraus (tempos aproximados, a cada 2 s)
+      quadro: frente, corpos com cerca de 8% da altura do quadro
+      nota: 2
+    - de: 108.0
+      ate: 125.0
+      quem: [Gabriel, Paulo]
+      posicao: [reta, chute, stag]
+      o_que: Paulo reto lá no alto da arquibancada (esquerda); Gabriel tenta subir à direita algumas vezes; "Pronto? Boa!" no fim (tempos aproximados)
+      quadro: frente, minúsculos
+      nota: 1
+    - de: 148.0
+      ate: 166.0
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, chute, stag, tuck, reta]
+      o_que: última subida juntos nos degraus, Gabriel à esquerda trocando de figura, Paulo à direita; "Boa! Boa!" aos 167,8 s (tempos aproximados)
+      quadro: frente, corpos com cerca de 8% da altura do quadro
+      nota: 2
+    - de: 166.0
+      ate: 189.0
+      quem: [Gabriel, Paulo]
+      posicao: andando
+      o_que: Paulo sai; Gabriel desce os degraus e vem até a câmera
+      quadro: frente
+      nota: 1
+  par:
+    com: pxl-20261104_192358456
+    offset: 22.82
+    juntos: 182.1
+  problemas: depois dos 17 s os corpos ficam minúsculos; metade de baixo é piso de concreto; céu estourado; tempos depois de 69 s medidos de 2 em 2 s
+
+- id: img-3176
+  arquivo: videos-do-trapezio-voador/IMG_3176.MOV
+  camera: iphone
+  data: 2026-11-04
+  hora: "16:28"
+  duracao: 12.3
+  local: trapezio-externo
+  quem: [Paulo]
+  tipo: ambiente
+  som: ambiente
+  resumo: fachada do prédio de três andares vista de baixo; Paulo vem pelo caminho de tijolinho e aponta para o prédio
+  destaque: 3
+  cenas:
+    - de: 0.0
+      ate: 3.0
+      quem: [Paulo]
+      posicao: andando
+      o_que: Paulo pequeno no caminho de tijolinho, vindo para a câmera, fachada com vidraças e estruturas cinza
+      quadro: contra-plongée, na mão, corpo inteiro
+      nota: 3
+    - de: 3.0
+      ate: 6.5
+      quem: [Paulo]
+      posicao: ambiente
+      o_que: Paulo aponta para o alto do prédio sorrindo e sai pela borda de baixo
+      quadro: contra-plongée, na mão, cortado na cintura
+      nota: 3
+    - de: 6.5
+      ate: 12.3
+      quem: []
+      posicao: ambiente
+      o_que: panorâmica para a direita pela fachada, palmeira, muro verde, palco redondo e degraus
+      quadro: panorâmica na mão
+      nota: 3
+  problemas: céu estourado; prédio inclinado pela grande-angular
+
+- id: img-3177
+  arquivo: videos-do-trapezio-voador/IMG_3177.MOV
+  camera: iphone
+  data: 2026-11-04
+  hora: "16:29"
+  duracao: 14.1
+  local: trapezio-externo
+  quem: [Paulo, outra pessoa]
+  tipo: treino
+  som: ambiente
+  resumo: Paulo de camiseta segura reto 13 s diante do mural colorido, enquanto uma criança brinca com uma bola de futebol ao fundo
+  destaque: 4
+  cenas:
+    - de: 0.0
+      ate: 10.8
+      quem: [Paulo, outra pessoa]
+      posicao: reta
+      o_que: já está de ponta-cabeça quando o clipe começa; reto e firme; à direita uma criança chuta e quica a bola diante do mural
+      quadro: perfil, corpo inteiro, na mão quase parada, corpo com cerca de 45% da altura do quadro
+      nota: 4
+    - de: 10.8
+      ate: 13.2
+      quem: [Paulo]
+      posicao: [tuck, reta, saida]
+      o_que: dobra as pernas (11 s), volta a esticar e desce dobrando (13 s)
+      quadro: perfil, corpo inteiro
+      nota: 3
+    - de: 13.2
+      ate: 14.1
+      quem: [Paulo]
+      posicao: saida
+      o_que: pés no chão
+      quadro: perfil
+      nota: 1
+  problemas: camiseta cobre o rosto (identificado pela roupa, camiseta branca e bermuda preta); quadro inclinado; faixa escura da marquise no topo; outra pessoa (criança) em quadro
+
+- id: pxl-20261104_182844212
+  arquivo: videos-do-trapezio-voador/PXL_20261104_182844212.mp4
+  camera: pixel
+  data: 2026-11-04
+  hora: "15:28"
+  duracao: 62.6
+  local: trapezio-palco
+  quem: [Paulo, Gabriel]
+  tipo: treino
+  som: fala
+  resumo: primeira dupla do dia no palco, de longe e de frente; Gabriel sobe em straddle press e Paulo em tuck, retos juntos uns 8 s
+  destaque: 3
+  fala: |
+    [0.0] Play aí? [?]
+    [0.7] Tá, eu vou do seu lado aqui.
+    [8.0] Aqui?
+    [16.3] Vamos começar assim, vamos começar assim.
+    [19.9] Tá bom.
+    [21.5] Tá bom.
+    [23.6] E... foi.
+    [35.4] Segura.
+    [36.6] Quer descer?
+    [38.6] Desce por onde a gente veio, beleza?
+    [40.0] Um, dois, três e foi.
+  cenas:
+    - de: 0.0
+      ate: 25.0
+      quem: [Gabriel, Paulo]
+      posicao: aquecimento
+      o_que: Gabriel parado à esquerda; Paulo entra vindo da câmera (4 s), vai até o lado dele, os dois combinam e se dobram
+      quadro: frente, corpo inteiro, câmera parada no chão, pessoas com uns 20% da altura
+      nota: 1
+    - de: 26.0
+      ate: 45.0
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, press, straddle, tuck, reta]
+      o_que: Gabriel (esq.) põe as mãos em 26.0 e sobe devagar em straddle press, vertical em 31.5; Paulo (dir.) sobe pulando em tuck e abrindo em pike entre 28.5 e 30.8. Retos juntos de 31.5 a 39.5; Paulo desce em pike de 42.0 a 44.7, Gabriel desce em straddle de 40.0 a 45.0
+      quadro: frente, um pouco de 3/4, corpo inteiro, câmera parada no chão, corpos com uns 25% da altura
+      nota: 3
+    - de: 46.0
+      ate: 62.6
+      quem: [Paulo, Gabriel]
+      posicao: ambiente
+      o_que: comemoram com as mãos (48), Paulo caminha até a câmera, passa colado na lente (58) e desliga
+      quadro: frente; Paulo em close cortado no fim
+      nota: 1
+  par:
+    com: img-3148
+    offset: -23.38
+    juntos: 24.3
+  problemas: contraluz forte das janelas, imagem lavada; corpos pequenos e distantes; Paulo colado na lente em 56-60 s
+
+- id: pxl-20261104_183102030
+  arquivo: videos-do-trapezio-voador/PXL_20261104_183102030.mp4
+  camera: pixel
+  data: 2026-11-04
+  hora: "15:31"
+  duracao: 61.3
+  local: trapezio-palco
+  quem: [Paulo, Gabriel]
+  tipo: treino
+  som: fala
+  resumo: a melhor dupla do palco; straddle press sincronizado, retos, abrem e descem juntos, de frente, com os tecidos vermelho e branco atrás
+  destaque: 5
+  fala: |
+    [1.9] Aí você me manda o seu e eu peço para ele fazer um Reels usando os dois takes, sabe?
+    [7.1] É...
+    [8.6] Tá, tá bom.
+    [10.8] É, eu fico naquele mesmo... [?]
+    [14.5] Aqui, né?
+    [30.5] Olha ali. [?]
+    [32.2] E avisa quando vai acontecer. [?]
+    [52.0] Te matei, né? [?]
+    [53.9] É, já me pegou aqui, papá. [?]
+    [56.5] Boa, boa.
+  cenas:
+    - de: 0.0
+      ate: 22.0
+      quem: [Paulo, Gabriel]
+      posicao: ambiente
+      o_que: Paulo passa de costas colado na lente (0-2) e vai até o Gabriel, que espera de pé (camiseta branca "BANCÃO LA PARADA", calça bege); conversam
+      quadro: frente, corpo inteiro, câmera parada no chão
+      nota: 2
+    - de: 22.0
+      ate: 37.0
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, press, straddle, reta]
+      o_que: mãos no chão em 22.5; os dois sobem juntos em straddle press de 25.5 a 29.5 e ficam retos lado a lado até 37.0
+      quadro: frente, corpo inteiro, câmera parada no chão, corpos com uns 40% da altura; tecidos e rig de luz no fundo
+      nota: 5
+    - de: 37.0
+      ate: 46.0
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, straddle, saida]
+      o_que: abrem straddle ao mesmo tempo (37.0-40.0) e descem em straddle press lento (40.0-44.5); Paulo termina sentado em abertura (44.5), Gabriel pisa em 45.5
+      quadro: frente, corpo inteiro
+      nota: 5
+    - de: 46.0
+      ate: 61.3
+      quem: [Paulo, Gabriel]
+      posicao: ambiente
+      o_que: os dois sentados alongando, comemoram com as mãos (52), Paulo caminha até a câmera (54-57) e desliga
+      quadro: frente, corpo inteiro
+      nota: 2
+  par:
+    com: img-3149
+    offset: -21.7
+    juntos: 32.8
+  problemas: contraluz das janelas e chão espelhando, mas dá para ler bem os corpos; Paulo de costas na lente nos 2 primeiros segundos
+
+- id: pxl-20261104_183544033
+  arquivo: videos-do-trapezio-voador/PXL_20261104_183544033.mp4
+  camera: pixel
+  data: 2026-11-04
+  hora: "15:35"
+  duracao: 67.2
+  local: trapezio-palco
+  quem: [Paulo, Gabriel]
+  tipo: treino
+  som: fala
+  resumo: dupla de longe com o iPhone no tripé em primeiro plano; duas subidas, a segunda com variações de pernas, Paulo fica mais
+  destaque: 2
+  fala: |
+    [19.0] Não, eu paro. [?]
+    [19.8] Agrupado?
+    [20.6] Tá bom.
+    [20.9] Vai aí.
+    [51.9] Eu não treinei, eu tô zerado.
+    [54.0] Escorregando pra caramba.
+    [55.6] Deu, deu.
+  cenas:
+    - de: 0.0
+      ate: 21.0
+      quem: [Paulo, Gabriel]
+      posicao: aquecimento
+      o_que: Paulo passa pela câmera e vai até o lugar; Gabriel de mãos na cintura; os dois se dobram e põem as mãos no chão
+      quadro: frente, corpo inteiro, câmera parada no chão, iPhone no tripé no canto inferior esquerdo
+      nota: 1
+    - de: 21.5
+      ate: 24.5
+      quem: [Gabriel, Paulo]
+      posicao: dupla
+      o_que: primeira subida curta dos dois, Gabriel de 22.0 a 23.5, Paulo até 24.5
+      quadro: frente, corpos com uns 20% da altura
+      nota: 2
+    - de: 28.5
+      ate: 44.5
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, reta, stag, straddle]
+      o_que: sobem em 29, retos até 31, depois cada um brinca com as pernas (stag, uma perna dobrada, straddle); Gabriel desce em 44.5
+      quadro: frente, corpo inteiro, corpos pequenos
+      nota: 3
+    - de: 44.5
+      ate: 50.5
+      quem: [Paulo]
+      posicao: [stag, reta]
+      o_que: Paulo segue sozinho com variações de pernas, fecha reto em 49 e desce em 50.5; Gabriel vai até o iPhone e o para (46-50)
+      quadro: frente; Gabriel atravessa o quadro na frente
+      nota: 2
+    - de: 51.0
+      ate: 67.2
+      quem: [Gabriel, Paulo]
+      posicao: ambiente
+      o_que: cabeça e mão do Gabriel em primeiro plano mexendo no iPhone; Paulo vem até a câmera (62-64, corpo em close) e pega o Pixel (66, cortina preta)
+      quadro: primeiro plano tapado
+      nota: 1
+  par:
+    com: img-3150
+    offset: -28.33
+    juntos: 15.3
+  problemas: iPhone no tripé cobre o canto inferior esquerdo o tempo todo; corpos com uns 20% da altura; contraluz; cabeça do Gabriel tapa 51-60 s
+
+- id: pxl-20261104_183734415
+  arquivo: videos-do-trapezio-voador/PXL_20261104_183734415.mp4
+  camera: pixel
+  data: 2026-11-04
+  hora: "15:37"
+  duracao: 77.2
+  local: trapezio-palco
+  quem: [Paulo, Gabriel]
+  tipo: treino
+  som: fala
+  resumo: dupla de perfil, bem perto um do outro; retos juntos 10 s, abrem straddle, Paulo cai e reclama dos óculos
+  destaque: 3
+  fala: |
+    [0.5] Vamos fazer o seguinte, é que sua linha é melhor que a minha, vou tentar abrir um pouco mais o...
+    [5.4] Ah, sua linha é melhor.
+    [7.5] Ah, eu pensava fazer de costas um com o outro, assim também pode.
+    [12.8] Tá bom, pode ser diferente.
+    [14.9] Então fica um pouquinho mais para cá, para a gente ficar bem no 90 graus.
+    [18.3] Vira um pouquinho mais para mim aqui, ó.
+    [19.9] Aí, para a gente ficar na perpendicular.
+    [22.9] E aí a gente pode fazer um pouquinho intercalar só para a nossa linha. [?]
+    [26.1] Ah, vamos arriscar.
+    [29.9] Eu acho que tem um tempo, peraí. [?]
+    [33.2] Tá bom, vai.
+    [37.2] Só eu e você depois o meu. [?]
+    [56.8] E aí, meus óculos, peraí, vamos de novo que meus óculos atrapalharam.
+    [61.2] Esse foi muito bom, foi muito bom, vamos de novo.
+    [64.8] Os óculos atrapalharam.
+    [68.1] Já foi boa. [?]
+    [70.9] Deixa eu ver só como foi.
+  cenas:
+    - de: 0.0
+      ate: 36.0
+      quem: [Gabriel, Paulo]
+      posicao: aquecimento
+      o_que: Gabriel de pé, Paulo entra (6); combinam a posição (fala) e ficam em compressão com as mãos no chão de 29 a 36
+      quadro: perfil, corpo inteiro, câmera parada no chão, iPhone no tripé no canto inferior esquerdo
+      nota: 1
+    - de: 36.0
+      ate: 52.0
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, chute, press, reta]
+      o_que: Paulo chuta em 37.5 e fica vertical em 39; Gabriel sobe com uma perna estendida e fica vertical em 42; retos lado a lado de 42 a 52
+      quadro: perfil, corpo inteiro, corpos com uns 35% da altura, Gabriel na frente cobrindo parte do Paulo
+      nota: 4
+    - de: 52.0
+      ate: 60.0
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, straddle, queda]
+      o_que: abrem straddle juntos (52-57); Paulo cai em 57.5 e sai correndo para a direita; Gabriel desce em tuck por volta de 59.5
+      quadro: perfil, corpo inteiro
+      nota: 3
+    - de: 60.0
+      ate: 77.2
+      quem: [Paulo, Gabriel]
+      posicao: ambiente
+      o_que: comemoram, Paulo abre os braços (68), vem até a câmera (70) e mexe no iPhone (72-76, cabeça e mão em primeiro plano)
+      quadro: perfil; primeiro plano tapado no fim
+      nota: 1
+  par:
+    com: img-3151
+    offset: -44.28
+    juntos: 19.5
+  problemas: corpos sobrepostos de perfil; contraluz forte; iPhone no tripé no canto inferior esquerdo; cabeça do Paulo tapa 70-77 s
+
+- id: pxl-20261104_183943647
+  arquivo: videos-do-trapezio-voador/PXL_20261104_183943647.mp4
+  camera: pixel
+  data: 2026-11-04
+  hora: "15:39"
+  duracao: 110.5
+  local: trapezio-palco
+  quem: [Paulo, Gabriel]
+  tipo: treino
+  som: fala
+  resumo: três subidas em dupla de perfil; a última é a parada mais longa e sincronizada do dia (uns 22 s com straddle e pernas dobradas)
+  destaque: 4
+  fala: |
+    [0.5] O Elio [?] a gente vai se esbarrar, vamos direto para o agrupado.
+    [3.8] Não, mas fica legal o relasado [?] porque você vai para um lado e faz para o outro.
+    [8.7] Só fazer o que a gente fez igual, né?
+    [10.1] Aham, igual.
+    [11.7] Eu e você...
+    [13.1] Você não quer subir o longo do tempo? [?]
+    [16.0] Só que não vem tão perto, Gabriel.
+    [18.1] Porra!
+    [31.1] Eu não consegui resistir. [?]
+    [33.0] Aí não conseguiu. Vamos lá de novo.
+    [35.7] Mas você passou um pouquinho.
+    [37.6] Passou um pouco.
+    [38.4] Por isso que eu te encostei nem sei onde. [?]
+    [41.4] Faz dois dedos para trás que a gente não...
+    [45.7] Calma, fica ali.
+    [48.4] Espera aí.
+    [49.2] Espera aí que eu falo dois [?], tá?
+    [54.6] De novo, de novo.
+    [73.6] Abre o pé.
+  cenas:
+    - de: 0.0
+      ate: 22.5
+      quem: [Gabriel, Paulo]
+      posicao: aquecimento
+      o_que: Gabriel perto da câmera (0), Paulo passa de costas (2); combinam a sequência e ficam em compressão de 10 a 22
+      quadro: perfil, corpo inteiro, câmera parada no chão, iPhone no tripé no canto inferior esquerdo
+      nota: 1
+    - de: 22.5
+      ate: 30.0
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, chute, reta]
+      o_que: Gabriel chuta em 22.5 e Paulo em 23; retos juntos de 24.5 a 28.0; Gabriel desce em 28.5, Paulo em 29.8
+      quadro: perfil, corpo inteiro, corpos com uns 30% da altura
+      nota: 3
+    - de: 30.0
+      ate: 59.0
+      quem: [Gabriel, Paulo]
+      posicao: [aquecimento, chute, queda]
+      o_que: conversam e ajustam a distância (fala); Paulo sobe sozinho de 52.5 a 57, Gabriel tenta de 53 a 56 e cai
+      quadro: perfil, corpo inteiro
+      nota: 2
+    - de: 59.5
+      ate: 84.0
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, chute, reta, straddle, tuck]
+      o_que: sobem juntos em 60; retos de 61.5 a 69.5, straddle de 70 a 75.5, pernas dobradas para trás de 76 a 82.5; descem em 83.0 (Gabriel) e 83.5 (Paulo)
+      quadro: perfil, corpo inteiro, corpos com uns 30% da altura, quase lado a lado
+      nota: 4
+    - de: 84.0
+      ate: 110.5
+      quem: [Gabriel, Paulo]
+      posicao: ambiente
+      o_que: comemoram com as mãos (85); Gabriel vem sorrindo até a câmera (87-88, rosto de perto); Paulo atravessa a sala e mexe no iPhone do tripé (90-108, mão em primeiro plano)
+      quadro: perfil; primeiro plano tapado no fim
+      nota: 2
+  par:
+    com: img-3152
+    offset: -67.68
+    juntos: 20.9
+  problemas: contraluz forte; iPhone no tripé no canto inferior esquerdo; corpos se sobrepõem em parte de perfil; mão do Paulo tapa o fim
+
+- id: pxl-20261104_184654046
+  arquivo: videos-do-trapezio-voador/PXL_20261104_184654046.mp4
+  camera: pixel
+  data: 2026-11-04
+  hora: "15:46"
+  duracao: 12.2
+  local: trapezio-palco
+  quem: [Gabriel]
+  tipo: ambiente
+  som: ambiente
+  resumo: tour rápido de mão pelo palco vazio, do teto de luzes e tecidos até a parede de vidro e a copa
+  destaque: 4
+  cenas:
+    - de: 0.0
+      ate: 4.0
+      quem: []
+      posicao: ambiente
+      o_que: câmera olha para cima, tecidos vermelho e branco e rig de luz (0-2), desce para a cortina preta e os colchonetes cinza (2-4)
+      quadro: na mão, panorâmica de baixo para cima e de volta
+      nota: 4
+    - de: 4.0
+      ate: 12.2
+      quem: [Gabriel]
+      posicao: ambiente
+      o_que: gira para a parede de vidro com o tecido vermelho no chão (6), a copa com o Gabriel ao fundo mexendo no celular (8) e as portas de vidro sob o mezanino (10-12)
+      quadro: na mão, panorâmica horizontal, Gabriel pequeno
+      nota: 3
+  problemas: panorâmica rápida, algum tremor; luz estourada nas janelas
+
+- id: pxl-20261104_190908352
+  arquivo: videos-do-trapezio-voador/PXL_20261104_190908352.mp4
+  camera: pixel
+  data: 2026-11-04
+  hora: "16:09"
+  duracao: 25.8
+  local: trapezio-palco
+  quem: [Gabriel]
+  tipo: ambiente
+  som: fala
+  resumo: Gabriel sorri para a câmera, abre a porta e entra no palco; a câmera vai atrás e revela a sala alta com tecidos, cortinas e luzes
+  destaque: 4
+  fala: |
+    [0.0] Pode ir.
+  cenas:
+    - de: 0.0
+      ate: 6.0
+      quem: [Gabriel]
+      posicao: ambiente
+      o_que: Gabriel no corredor branco olha e sorri para a câmera (0), vira, abre a porta cinza e entra (2-6)
+      quadro: na mão, atrás dele, corpo inteiro e depois de costas
+      nota: 4
+    - de: 6.0
+      ate: 12.0
+      quem: [Gabriel]
+      posicao: ambiente
+      o_que: Gabriel caminha de costas na sala e abre os braços (8-10) diante da parede de vidro com o tecido vermelho
+      quadro: na mão, de costas, meio corpo a corpo inteiro
+      nota: 4
+    - de: 12.0
+      ate: 25.8
+      quem: [Gabriel]
+      posicao: ambiente
+      o_que: a câmera gira e mostra a sala inteira, tecidos, colchonetes, cortina preta e rig de luz (12-18); Gabriel volta caminhando de frente (20-22); no fim a câmera mostra a outra parede com a porta e os tecidos (24)
+      quadro: na mão, panorâmica, Gabriel com uns 30% da altura
+      nota: 4
+  par:
+    com: img-3168
+    offset: 3.13
+    juntos: 25.8
+  problemas: câmera na mão com algum balanço; "Pode ir" no começo é a única fala
+
+- id: pxl-20261104_192034863
+  arquivo: videos-do-trapezio-voador/PXL_20261104_192034863.mp4
+  camera: pixel
+  data: 2026-11-04
+  hora: "16:20"
+  duracao: 18.6
+  local: trapezio-externo
+  quem: [Gabriel]
+  tipo: convite
+  som: fala
+  resumo: tour de mão pela área externa (mural, parede verde, palco redondo, fachada) com a voz de quem filma apresentando o HandstandFest
+  destaque: 4
+  fala: |
+    [0.0] Olha só, é aqui onde vai ser o nosso HandstandFest,
+    [7.0] nessas duas salas aqui, na primeira sala e no auditório principal.
+    [14.2] Olha só.
+  cenas:
+    - de: 0.0
+      ate: 3.5
+      quem: []
+      posicao: ambiente
+      o_que: mural colorido (0-1.5), parede verde e o palco redondo de concreto (2-3)
+      quadro: na mão, panorâmica
+      nota: 3
+    - de: 3.5
+      ate: 6.0
+      quem: [Gabriel]
+      posicao: ambiente
+      o_que: Gabriel de pé no alto da arquibancada olhando o celular
+      quadro: na mão, Gabriel pequeno
+      nota: 2
+    - de: 6.0
+      ate: 14.0
+      quem: []
+      posicao: ambiente
+      o_que: fachada do prédio com o térreo de cadeiras (6.5-10), a mão de quem filma aponta na frente da lente (10.5-11.5), fachada de novo (12-13.5)
+      quadro: na mão, contra-plongée
+      nota: 3
+    - de: 14.0
+      ate: 18.6
+      quem: [Gabriel]
+      posicao: ambiente
+      o_que: volta para a arquibancada com palmeiras e parede verde, Gabriel lá em cima
+      quadro: na mão, plano geral
+      nota: 3
+  problemas: a voz é de quem filma (pela mão em quadro, o Paulo), rosto não aparece; mão na frente da lente em 10.5-11.5 s; céu branco estourado
+
+- id: pxl-20261104_192057904
+  arquivo: videos-do-trapezio-voador/PXL_20261104_192057904.mp4
+  camera: pixel
+  data: 2026-11-04
+  hora: "16:20"
+  duracao: 16.4
+  local: trapezio-externo
+  quem: []
+  tipo: convite
+  som: fala
+  resumo: panorâmica limpa da fachada e do palco redondo, sem ninguém em quadro, com a voz convidando para o HandstandFest no Trapézio Voador
+  destaque: 5
+  fala: |
+    [0.0] O HandstandFest Brasil vai ser aqui, no Trapézio Voador,
+    [5.5] um espaço incrível, um auditório, sala, tatame,
+    [11.5] espaço para a gente ficar de ponta cabeça no meio do Butantã.
+  cenas:
+    - de: 0.0
+      ate: 2.0
+      quem: []
+      posicao: ambiente
+      o_que: palmeiras, viga amarela, arquibancada e palco redondo
+      quadro: na mão, grande-angular, contra-plongée
+      nota: 4
+    - de: 2.0
+      ate: 11.5
+      quem: []
+      posicao: ambiente
+      o_que: a câmera gira até a fachada de três andares com o palco redondo na frente e fica nela
+      quadro: na mão, grande-angular, movimento suave
+      nota: 4
+    - de: 11.5
+      ate: 16.4
+      quem: []
+      posicao: ambiente
+      o_que: volta para palmeiras, arquibancada e parede verde
+      quadro: na mão, grande-angular
+      nota: 4
+  problemas: ninguém em quadro, a voz é de quem filma (provavelmente o Paulo, mesma voz do clipe anterior); céu branco; inclinação de grande-angular
+
+- id: pxl-20261104_192358456
+  arquivo: videos-do-trapezio-voador/PXL_20261104_192358456.mp4
+  camera: pixel
+  data: 2026-11-04
+  hora: "16:23"
+  duracao: 204.9
+  local: trapezio-externo
+  quem: [Paulo, Gabriel]
+  tipo: treino
+  som: fala
+  resumo: câmera no chão olhando a arquibancada; várias subidas dos dois nos degraus, sempre muito pequenos no quadro
+  destaque: 2
+  fala: |
+    [0.0] Sabe por quê? Porque a gente consegue fazer edição, ele consegue fazer o vídeo e fazer...
+    [5.9] E aqui é o Padrão... [?]
+    [10.3] Olha que lindo que sai. Aqui vai pegar tudo isso e...
+    [15.0] Primeiro vamos fazer uma aqui e depois vamos sair e a gente vai brincar.
+    [20.7] Deixa rodando, né?
+    [22.0] Se rodando [?] a gente vai fazendo de curtinho, né?
+    [26.1] Cada um uma figura, vai.
+    [41.7] E aí, eu vou pegar. [?]
+    [45.3] Vai aí, eu faço aqui.
+    [55.0] Peguei.
+    [59.9] Pronto.
+    [66.1] Deixa eu procurar fazer isso aí. [?]
+    [152.8] Tá ótimo, hein?
+    [156.2] Dá pra fazer assim, né?
+    [162.5] Faz qualquer um jeito [?]
+    [163.7] Só pra gente ter mais
+    [164.8] Porque esse aqui ficou muito bom essa ideia, vai.
+    [166.5] Faz qualquer coisa aí.
+    [168.8] Qualquer coisa é certo. [?]
+    [190.6] Boa!
+  cenas:
+    - de: 0.0
+      ate: 28.0
+      quem: [Paulo, Gabriel]
+      posicao: ambiente
+      o_que: mão do Paulo ajeita a câmera (0-2), Paulo passa perto pela direita (8-10) e vai até os degraus (20-28); Gabriel chega em 26; a fala do começo é de quem arruma a câmera
+      quadro: câmera parada no chão, contra-plongée, metade de baixo é piso desfocado
+      nota: 1
+    - de: 29.0
+      ate: 38.0
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, chute, reta, stag]
+      o_que: sobem juntos em 30-31 num degrau; Gabriel reto, Paulo com as pernas abertas; Gabriel desce em 37, Paulo em 38
+      quadro: frente, corpo inteiro, corpos com uns 12% da altura
+      nota: 2
+    - de: 50.5
+      ate: 66.0
+      quem: [Paulo, Gabriel]
+      posicao: [reta, stag]
+      o_que: Paulo reto sozinho à direita de 51.5 a 64.5; à esquerda o Gabriel fica de pernas em tesoura com o tronco escondido atrás de um degrau (53-66)
+      quadro: frente, Paulo corpo inteiro, Gabriel cortado pelo degrau
+      nota: 2
+    - de: 93.0
+      ate: 107.0
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, straddle, reta]
+      o_que: dupla em degraus diferentes, Gabriel (esq., mais baixo) em straddle e Paulo (dir.) reto, de 93.5 a 106.5
+      quadro: frente, corpo inteiro, muito pequenos
+      nota: 2
+    - de: 134.0
+      ate: 145.5
+      quem: [Gabriel, Paulo]
+      posicao: [tuck, reta]
+      o_que: Gabriel no degrau de cima, à direita, com as pernas dobradas; Paulo à esquerda atrás do tronco de uma palmeira
+      quadro: frente, Paulo meio escondido pela palmeira
+      nota: 1
+    - de: 171.5
+      ate: 190.5
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, reta, tuck]
+      o_que: lado a lado, bem juntos, no mesmo degrau; Paulo (dir.) sobe em 171.5, Gabriel (esq.) em 172.5, variam pernas retas e dobradas e descem por volta de 190
+      quadro: frente, corpo inteiro, corpos com uns 12% da altura
+      nota: 2
+    - de: 191.0
+      ate: 204.9
+      quem: [Paulo, Gabriel]
+      posicao: ambiente
+      o_que: Paulo passa pela câmera e sai pela direita (191-193); Gabriel vem caminhando até a câmera; ela é recolhida em 204
+      quadro: frente
+      nota: 1
+  par:
+    com: img-3174
+    offset: -22.82
+    juntos: 182.1
+  problemas: corpos minúsculos (10-12% da altura) e longe; metade de baixo do quadro é piso fora de foco; céu branco estourado; tronco de palmeira esconde o Paulo em 134-145 s
+
+- id: pxl-20261104_192753308
+  arquivo: videos-do-trapezio-voador/PXL_20261104_192753308.mp4
+  camera: pixel
+  data: 2026-11-04
+  hora: "16:27"
+  duracao: 15.2
+  local: trapezio-externo
+  quem: [Gabriel]
+  tipo: convite
+  som: fala
+  resumo: convite falado, voz de quem filma, enquanto a câmera mostra a fachada e o palco redondo com o Gabriel sentado na borda
+  destaque: 4
+  fala: |
+    [0.0] Primeiro HandstandFest do Brasil vai ser aqui, no Trapézio Voador,
+    [5.7] nessas salas, na primeira sala e no auditório,
+    [10.2] um super espaço [de] parada de mão no meio do Butantã, verde.
+  cenas:
+    - de: 0.0
+      ate: 4.0
+      quem: [Gabriel]
+      posicao: ambiente
+      o_que: palmeiras e palco redondo, Gabriel entra pela esquerda (2) e senta na borda do palco (4)
+      quadro: na mão, grande-angular, contra-plongée
+      nota: 3
+    - de: 4.0
+      ate: 11.5
+      quem: [Gabriel]
+      posicao: ambiente
+      o_que: fachada com o Gabriel sentado na borda do palco; a mão de quem filma aponta para o prédio (7-9.5)
+      quadro: na mão, grande-angular, Gabriel com uns 15% da altura
+      nota: 3
+    - de: 11.5
+      ate: 15.2
+      quem: []
+      posicao: ambiente
+      o_que: volta para palmeiras, viga amarela, arquibancada e palco
+      quadro: na mão, grande-angular
+      nota: 3
+  problemas: rosto de quem fala não aparece (a mão em quadro indica o Paulo); mão na frente da lente em 7-9.5 s; o Whisper escreveu "botantã" e engoliu uma palavra antes de "parada de mão"
+
+# ---------------------------------------------------------------- Outros: parque, 11/10/2026
+
+- id: img-0134
+  arquivo: outros/IMG_0134.MOV
+  camera: iphone
+  data: 2026-10-11
+  hora: "14:06"
+  duracao: 14.1
+  local: parque
+  quem: [Gabriel, Paulo]
+  tipo: treino
+  som: ambiente
+  resumo: os dois retos lado a lado de perfil, de perto, do começo ao fim do arquivo (4K)
+  destaque: 4
+  cenas:
+    - de: 0.0
+      ate: 14.1
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, reta]
+      o_que: o arquivo já começa com os dois retos e termina com os dois ainda em cima; Gabriel (esq., camiseta e short pretos) um pouco atrás, Paulo (dir., camiseta preta e short azul com friso) na frente
+      quadro: perfil, corpo inteiro, câmera parada, corpos com uns 85% da altura; pilar de concreto entre os dois
+      nota: 4
+  problemas: pilar de concreto atrás e entre os dois; pés perto da borda de cima; sem entrada nem saída; gente passando ao fundo; nomes pelas roupas das edições
+
+- id: img-2381
+  arquivo: outros/IMG_2381.MOV
+  camera: iphone
+  data: 2026-10-11
+  hora: "14:08"
+  duracao: 35.7
+  local: parque
+  quem: [Gabriel, Paulo]
+  tipo: treino
+  som: ambiente
+  resumo: estrela sincronizada, abrindo e fechando as pernas juntos por quase 30 s, de frente, de camisetas pretas (fonte da edição "Estrela esfinge")
+  destaque: 4
+  cenas:
+    - de: 0.0
+      ate: 28.5
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, straddle, reta]
+      o_que: sobem em 1.5 e passam o tempo todo abrindo e fechando straddle no mesmo ritmo; Paulo (dir.) desce em 28.5
+      quadro: frente, corpo inteiro, câmera parada, corpos com uns 30% da altura, pilares e árvores grandes atrás
+      nota: 4
+    - de: 28.5
+      ate: 31.0
+      quem: [Gabriel]
+      posicao: [straddle, saida]
+      o_que: Gabriel (esq.) fica sozinho e desce em 30.5
+      quadro: frente, corpo inteiro
+      nota: 3
+    - de: 31.0
+      ate: 35.7
+      quem: [Gabriel, Paulo]
+      posicao: ambiente
+      o_que: conversam de pé e se abraçam perto da câmera (35)
+      quadro: frente, close no fim
+      nota: 2
+  problemas: pilar no meio do quadro, entre os dois; gente passando ao fundo
+
+- id: img-2384
+  arquivo: outros/IMG_2384.MOV
+  camera: iphone
+  data: 2026-10-11
+  hora: "14:13"
+  duracao: 36.4
+  local: parque
+  quem: [Gabriel, Paulo]
+  tipo: treino
+  som: ambiente
+  resumo: mesma estrela sincronizada, agora sem camisa, com subida em press e uma bicicleta cruzando na frente
+  destaque: 3
+  cenas:
+    - de: 0.0
+      ate: 32.0
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, press, straddle, reta]
+      o_que: mãos no chão, sobem em press de 1.5 a 3.0 e abrem e fecham straddle juntos até 31.5
+      quadro: frente, corpo inteiro, câmera parada, corpos com uns 30% da altura
+      nota: 3
+    - de: 32.0
+      ate: 36.4
+      quem: [Gabriel, Paulo]
+      posicao: [saida, ambiente]
+      o_que: Gabriel (esq.) desce em 32.0, Paulo (dir.) em 33.5; comemoram com as mãos (35.5)
+      quadro: frente, corpo inteiro
+      nota: 2
+  problemas: bicicleta passa em primeiro plano à esquerda em 13.5-14.5 s; o Whisper ouviu "Sim, juntos!" (7.5 s) e "Sim, aí foi!" (32.3 s), não confirmado
+
+- id: img-2387
+  arquivo: outros/IMG_2387.MOV
+  camera: iphone
+  data: 2026-10-11
+  hora: "14:20"
+  duracao: 60.4
+  local: parque
+  quem: [Gabriel, Paulo]
+  tipo: treino
+  som: ambiente
+  resumo: pernas em L alternadas e sincronizadas, os dois colados de perfil, uns 25 s (fonte da edição "Pernas em L")
+  destaque: 4
+  cenas:
+    - de: 0.0
+      ate: 12.0
+      quem: [Paulo, Gabriel]
+      posicao: aquecimento
+      o_que: Paulo (dir.) dobrado; Gabriel entra vindo da câmera (4) e se dobra ao lado; compressão
+      quadro: perfil/3-4, corpo inteiro, câmera parada
+      nota: 1
+    - de: 12.0
+      ate: 18.0
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, chute]
+      o_que: primeira subida curta com uma perna à frente (12.1-15.5) e descida
+      quadro: perfil, corpo inteiro
+      nota: 3
+    - de: 20.5
+      ate: 49.5
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, pike, stag, straddle]
+      o_que: sobem em 20.7 e trocam as pernas em L (uma à frente, outra em cima) no mesmo tempo; Gabriel desce por volta de 47, Paulo em 49
+      quadro: perfil, corpo inteiro, câmera parada, corpos com uns 40% da altura, um quase atrás do outro
+      nota: 4
+    - de: 50.0
+      ate: 60.4
+      quem: [Gabriel, Paulo]
+      posicao: ambiente
+      o_que: abraço (52-55); Gabriel caminha sorrindo até a câmera (56-57, rosto e tronco de perto); Paulo atrás
+      quadro: frente, close
+      nota: 2
+  problemas: os dois se sobrepõem de perfil; o Whisper ouviu "Tá muito sincronizado" (44.8 s), não confirmado; o resto da transcrição é lixo
+
+- id: img-2389
+  arquivo: outros/IMG_2389.MOV
+  camera: iphone
+  data: 2026-10-11
+  hora: "14:25"
+  duracao: 62.2
+  local: parque
+  quem: [Gabriel, Paulo]
+  tipo: treino
+  som: fala
+  resumo: pike press juntos e 18 s retos lado a lado de perfil, limpo, com as árvores do parque atrás (fonte da edição "Pike press")
+  destaque: 5
+  fala: |
+    [53.8] Eu subi agora, você falou que eu subi mais lento, né?
+    [58.9] Que você subiu mais lento, aí eu subi muito lento, eu acho.
+  cenas:
+    - de: 0.0
+      ate: 22.0
+      quem: [Paulo, Gabriel]
+      posicao: aquecimento
+      o_que: Paulo (dir.) dobrado; Gabriel entra pela esquerda (4) e os dois ficam em compressão em pike lado a lado
+      quadro: perfil, corpo inteiro, câmera parada
+      nota: 2
+    - de: 22.0
+      ate: 46.0
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, press, pike, reta]
+      o_que: sobem juntos em pike press de 22 a 25.3; retos lado a lado de 25.3 a 43.3; Paulo (dir.) desce em 44.5, Gabriel (esq.) em pike de 42 a 46
+      quadro: perfil, corpo inteiro, câmera parada, corpos com uns 40% da altura, pés e mãos dentro
+      nota: 5
+    - de: 46.0
+      ate: 62.2
+      quem: [Gabriel, Paulo]
+      posicao: [ambiente, fala]
+      o_que: comemoram com as mãos (50-52), conversam sobre a velocidade da subida; Gabriel passa perto da câmera (54-55); Paulo alonga levantando o joelho (56-58); a câmera é levantada em 60
+      quadro: frente
+      nota: 2
+  problemas: quem fala não aparece em close; gente e bicicletas pequenas ao fundo
+
+- id: img-2390
+  arquivo: outros/IMG_2390.MOV
+  camera: iphone
+  data: 2026-10-11
+  hora: "14:27"
+  duracao: 48.6
+  local: parque
+  quem: [Gabriel, Paulo]
+  tipo: treino
+  som: ambiente
+  resumo: outro pike press juntos de perfil, retos uns 12 s, descem em straddle
+  destaque: 4
+  cenas:
+    - de: 0.0
+      ate: 22.0
+      quem: [Paulo, Gabriel]
+      posicao: aquecimento
+      o_que: Paulo (dir.) dobrado; Gabriel entra perto da câmera pela esquerda (4) e os dois ficam em compressão
+      quadro: perfil, corpo inteiro, câmera parada
+      nota: 1
+    - de: 22.0
+      ate: 39.0
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, press, pike, reta, straddle]
+      o_que: pike press juntos de 22 a 24.8, retos lado a lado até 36, descem em straddle de 36 a 38.5
+      quadro: perfil, corpo inteiro, câmera parada, corpos com uns 40% da altura
+      nota: 4
+    - de: 39.0
+      ate: 48.6
+      quem: [Gabriel, Paulo]
+      posicao: ambiente
+      o_que: de pé, comemoram com as mãos (42), vêm até a câmera (44); braço na frente da lente (46)
+      quadro: frente, close no fim
+      nota: 1
+  problemas: braço tapa a lente no fim
+
+# ---------------------------------------------------------------- Outros: gramado à beira-mar, 18/10/2026
+
+- id: img-0967
+  arquivo: outros/IMG_0967.MOV
+  camera: iphone
+  data: 2026-10-18
+  hora: "16:33"
+  duracao: 30.5
+  local: outro (gramado à beira-mar)
+  quem: [grupo]
+  tipo: treino
+  som: ambiente
+  resumo: quatro pessoas em parada lado a lado no gramado, com a praia, um morro e o céu de nuvens atrás, sombras longas
+  destaque: 3
+  cenas:
+    - de: 0.0
+      ate: 4.0
+      quem: [grupo]
+      posicao: aquecimento
+      o_que: quatro pessoas se preparando (mulher de top azul, pessoa de branco sobre blocos de madeira, mulher de preto, homem de regata laranja)
+      quadro: frente, corpo inteiro, câmera na mão
+      nota: 2
+    - de: 4.0
+      ate: 26.0
+      quem: [grupo]
+      posicao: [reta, straddle, stag, troca-de-peso]
+      o_que: os quatro sobem e descem em parada lado a lado, cada um no seu ritmo, com aberturas de pernas; a câmera anda de lado e entra uma palmeira (12 em diante)
+      quadro: frente, corpo inteiro, corpos com uns 20% da altura, câmera na mão andando
+      nota: 3
+    - de: 26.0
+      ate: 30.5
+      quem: [grupo]
+      posicao: saida
+      o_que: descem; uma pessoa deita no gramado
+      quadro: frente
+      nota: 1
+  problemas: câmera na mão andando; corpos pequenos; muita gente na areia ao fundo; nenhum dos quatro é claramente Paulo ou Gabriel
+
+- id: img-0974
+  arquivo: outros/IMG_0974.MOV
+  camera: iphone
+  data: 2026-10-18
+  hora: "16:44"
+  duracao: 44.4
+  local: outro (gramado à beira-mar)
+  quem: [grupo]
+  tipo: treino
+  som: ambiente
+  resumo: grupo de cinco ou seis pessoas fazendo paradas apoiadas umas nas outras, câmera chegando perto
+  destaque: 3
+  cenas:
+    - de: 0.0
+      ate: 15.0
+      quem: [grupo]
+      posicao: [acro, straddle]
+      o_que: aglomerado de quatro ou cinco pessoas, umas de cabeça para baixo com as pernas apoiadas nas outras (mulher de collant azul no centro, homem de regata laranja, pessoa de preto), uma sobre blocos de madeira
+      quadro: frente, corpo inteiro, câmera na mão
+      nota: 3
+    - de: 15.0
+      ate: 26.0
+      quem: [grupo]
+      posicao: [acro, straddle]
+      o_que: a câmera chega perto; pernas e pés se tocando no alto, close do homem de regata laranja de cabeça para baixo (24)
+      quadro: na mão, close, pés cortados em alguns momentos
+      nota: 3
+    - de: 26.0
+      ate: 37.5
+      quem: [grupo]
+      posicao: [reta, stag, straddle]
+      o_que: três ou quatro em parada lado a lado (28-34); a mulher de azul sai (32); homem de laranja abre straddle (36)
+      quadro: frente, corpo inteiro, corpos com uns 30% da altura
+      nota: 3
+    - de: 37.5
+      ate: 44.4
+      quem: [grupo]
+      posicao: ambiente
+      o_que: pessoas de pé; uma mulher sentada no gramado alonga com os blocos (40-42)
+      quadro: na mão
+      nota: 1
+  problemas: câmera na mão, tremida e aproximando; muita gente na praia ao fundo; nenhum é claramente Paulo ou Gabriel
+
+- id: img-0980
+  arquivo: outros/IMG_0980.MOV
+  camera: iphone
+  data: 2026-10-18
+  hora: "16:57"
+  duracao: 36.0
+  local: outro (gramado à beira-mar)
+  quem: [grupo]
+  tipo: treino
+  som: ambiente
+  resumo: mulher de top azul em parada de perto com aberturas de pernas, e um homem de regata laranja reto sobre canes brancos, de frente
+  destaque: 4
+  cenas:
+    - de: 0.0
+      ate: 22.0
+      quem: [grupo]
+      posicao: [straddle, stag, reta]
+      o_que: mulher de top azul em parada no primeiro plano abrindo e fechando as pernas; atrás dela, outra pessoa (de preto) em parada com pernas dobradas, parecendo sobreposta
+      quadro: frente, corpo inteiro, câmera na mão, corpo grande (uns 50% da altura)
+      nota: 3
+    - de: 22.0
+      ate: 27.0
+      quem: [grupo]
+      posicao: troca-de-peso
+      o_que: troca de pessoas; duas em parada ao fundo
+      quadro: frente
+      nota: 2
+    - de: 27.5
+      ate: 32.5
+      quem: [outra pessoa]
+      posicao: [reta, "parada em canes"]
+      o_que: homem de regata laranja reto sobre um suporte branco de canes baixos, pernas juntas, desce em 32.5
+      quadro: frente, corpo inteiro, câmera na mão, uns 60% da altura, praia e morro atrás
+      nota: 4
+    - de: 33.0
+      ate: 36.0
+      quem: [outra pessoa]
+      posicao: ambiente
+      o_que: o homem de regata laranja vem sorrindo até a câmera
+      quadro: frente, close
+      nota: 2
+  problemas: câmera na mão; gente na praia ao fundo; o homem de regata laranja não é claramente Paulo nem Gabriel (cabelo claro, barba ruiva), confirmar quem é
+
+# ---------------------------------------------------------------- Outros: edições já prontas (WhatsApp)
+
+- id: 277def9a-e50e-4e93-84e2-088c351af74e
+  arquivo: outros/277def9a-e50e-4e93-84e2-088c351af74e.mp4
+  camera: whatsapp
+  data: 2026-10-11
+  duracao: 45.0
+  local: parque
+  quem: [Gabriel, Paulo]
+  tipo: edicao
+  som: mudo
+  resumo: edição "Pernas em L" do img-2387 (de uns 9 s a 54 s do original) com esqueleto de pose e ângulos na tela
+  destaque: 4
+  cenas:
+    - de: 0.0
+      ate: 45.0
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, pike, stag]
+      o_que: 'cartela no alto à esquerda "Pernas em L / brincando com as pernas, no mesmo tempo"; esqueleto desenhado sobre cada corpo (verde-água no Gabriel, amarelo no Paulo); embaixo um card por pessoa, "Gabriel" à esquerda e "Paulo" à direita, com ângulos de quadril e ombro mudando quadro a quadro (ex.: 144° e 171° contra 152° e 172° em 20 s); "em pé" quando descem'
+      quadro: perfil, corpo inteiro, 480x848
+      nota: 4
+  problemas: baixa resolução (480x848) e compressão do WhatsApp; sem áudio
+
+- id: de174d34-7697-406c-8a1d-0c85b3b32f53
+  arquivo: outros/de174d34-7697-406c-8a1d-0c85b3b32f53.mp4
+  camera: whatsapp
+  data: 2026-10-11
+  duracao: 29.0
+  local: parque
+  quem: [Gabriel, Paulo]
+  tipo: edicao
+  som: mudo
+  resumo: edição "Estrela esfinge" do img-2381 (praticamente do começo até 29 s) com esqueleto e ângulos de pernas e inclinação
+  destaque: 4
+  cenas:
+    - de: 0.0
+      ate: 29.0
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, straddle, reta]
+      o_que: 'cartela "Estrela esfinge / abrindo e fechando as pernas no mesmo tempo"; esqueleto sobre os dois; cards "Gabriel" (esq.) e "Paulo" (dir.) com abertura das pernas e inclinação em graus (ex.: 19° e 0° contra 24° e 2° em 20 s; 170° de abertura no Paulo em 0 s)'
+      quadro: frente, corpo inteiro, 480x848
+      nota: 4
+  problemas: baixa resolução e compressão do WhatsApp; sem áudio; pilar no meio do quadro
+
+- id: e7078797-3590-42d5-92b0-91ac2edfa0d2
+  arquivo: outros/e7078797-3590-42d5-92b0-91ac2edfa0d2.mp4
+  camera: whatsapp
+  data: 2026-10-11
+  duracao: 33.0
+  local: parque
+  quem: [Gabriel, Paulo]
+  tipo: edicao
+  som: mudo
+  resumo: edição "Pike press" do img-2389 (de uns 19.5 s a 52 s do original) com esqueleto e ângulos de quadril e ombro
+  destaque: 5
+  cenas:
+    - de: 0.0
+      ate: 33.0
+      quem: [Gabriel, Paulo]
+      posicao: [dupla, press, pike, reta]
+      o_que: 'cartela "Pike press / dobra, compressão e subida juntos"; esqueleto sobre os dois; cards "Gabriel" (esq.) e "Paulo" (dir.) com quadril e ombro (ex.: 176° e 175° contra 170° e 175° em 20 s); sobem de 4 a 6, retos até uns 24, "em pé" a partir de 28'
+      quadro: perfil, corpo inteiro, 480x848
+      nota: 5
+  problemas: baixa resolução e compressão do WhatsApp; sem áudio
+
+# ---------------------------------------------------------------- Fotos do Trapézio Voador (Pixel), 04/11/2026
+
+- id: pxl_20261104_173348522
+  arquivo: fotos/trapezio-voador/PXL_20261104_173348522.jpg
+  camera: foto
+  data: 2026-11-04
+  hora: "14:33"
+  local: trapezio-palco
+  quadro: paisagem
+  resumo: palco vazio em plano geral, cortina preta, colchonetes cinza no chão e encostados, tecidos vermelho e branco, parede de vidro à direita, um tripé no centro
+  destaque: 4
+  problemas: tripé solto no meio do chão
+
+- id: pxl_20261104_182518161
+  arquivo: fotos/trapezio-voador/PXL_20261104_182518161.jpg
+  camera: foto
+  data: 2026-11-04
+  hora: "15:25"
+  local: trapezio-palco
+  quadro: retrato
+  resumo: palco vazio na vertical, rig de luz e tecidos no alto, colchonetes cinza, chão de madeira brilhando
+  destaque: 4
+  problemas: nenhum de vulto
+
+- id: pxl_20261104_184620743
+  arquivo: fotos/trapezio-voador/PXL_20261104_184620743.jpg
+  camera: foto
+  data: 2026-11-04
+  hora: "15:46"
+  local: trapezio-sala-vidro
+  quadro: paisagem
+  resumo: sala de vidro vazia, forro de madeira, vidro dos três lados com a parede verde e o mural colorido lá fora, chão de madeira escuro
+  destaque: 4
+  problemas: chão um pouco escuro
+
+- id: pxl_20261104_184633596
+  arquivo: fotos/trapezio-voador/PXL_20261104_184633596.jpg
+  camera: foto
+  data: 2026-11-04
+  hora: "15:46"
+  local: trapezio-palco
+  quadro: paisagem
+  resumo: canto do palco com colchonetes encostados, tecidos, rig de luz, arandelas acesas na parede de madeira e o vidro à direita
+  destaque: 4
+  problemas: nenhum de vulto
+
+- id: pxl_20261104_184638210
+  arquivo: fotos/trapezio-voador/PXL_20261104_184638210.jpg
+  camera: foto
+  data: 2026-11-04
+  hora: "15:46"
+  local: trapezio-palco
+  quadro: retrato
+  resumo: palco visto de baixo na vertical, rig de luz e refletores acesos, tecidos vermelho e branco, cortina e colchonetes
+  destaque: 4
+  problemas: refletores estourados no alto
+
+- id: pxl_20261104_192124844
+  arquivo: fotos/trapezio-voador/PXL_20261104_192124844.jpg
+  camera: foto
+  data: 2026-11-04
+  hora: "16:21"
+  local: trapezio-externo
+  quadro: paisagem
+  resumo: fachada do prédio com o palco redondo, a arquibancada, palmeiras e a parede verde; Gabriel caminha no palco, pequeno
+  destaque: 4
+  problemas: céu branco; grande-angular inclina a fachada
+
+- id: pxl_20261104_192125754
+  arquivo: fotos/trapezio-voador/PXL_20261104_192125754.jpg
+  camera: foto
+  data: 2026-11-04
+  hora: "16:21"
+  local: trapezio-externo
+  quadro: paisagem
+  resumo: mesma fachada um segundo depois, Gabriel de pé no palco redondo perto da escada
+  destaque: 3
+  problemas: quase igual à anterior; céu branco

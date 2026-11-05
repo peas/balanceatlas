@@ -29,3 +29,6 @@ public/videos/
 
 # claude local settings (permissions are machine-specific)
 .claude/settings.local.json
+
+# raw festival footage, proxies, pose, contact sheets (see scripts/festival_acervo.py)
+local/

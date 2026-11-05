@@ -201,9 +201,9 @@ a { color: inherit; }
 /* VENUE */
 .venue { padding-bottom: clamp(64px, 10vw, 120px); }
 .venue-grid { display: grid; grid-template-columns: 1.6fr 1fr; gap: 24px; align-items: start; }
-.venue-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
-.venue-photos img { width: 100%; height: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 10px; display: block; }
-.venue-photos .v-main { grid-column: span 2; aspect-ratio: 16 / 9; }
+.venue-photos { display: grid; grid-template-columns: 1.05fr 1fr; grid-template-rows: repeat(3, 1fr); gap: 8px; }
+.venue-photos img { width: 100%; height: 100%; min-height: 0; object-fit: cover; border-radius: 10px; display: block; }
+.venue-tour { position: relative; grid-row: span 3; aspect-ratio: 9 / 16; border-radius: 10px; overflow: hidden; background: var(--ink); }
 .venue-info blockquote { font-size: 1.15rem; line-height: 1.4; margin: 6px 0 14px; padding-left: 14px; border-left: 6px solid var(--accent); }
 .venue-stories { display: flex; gap: 10px; margin-top: 18px; }
 .mini-story { position: relative; width: 120px; aspect-ratio: 9 / 16; overflow: hidden; border-radius: 10px; background: var(--ink); display: block; }
@@ -418,3 +418,29 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
   .snake figure img, .snake figure.wide img { aspect-ratio: 3 / 2; }
   .snake p { font-size: 1.1rem; }
 }
+
+/* ---------- /festival/instagram (working page) ---------- */
+.ig { padding: clamp(40px, 6vw, 72px) 0 clamp(64px, 10vw, 120px); }
+.ig-regras { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 8px; margin-bottom: 40px; font-size: .9rem; }
+.ig-regras li { border: 2px solid var(--ink); padding: 10px 12px; }
+.ig-regras b { display: block; font-family: var(--mono); text-transform: uppercase; font-size: .75rem; letter-spacing: .08em; }
+.ig-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 48px 28px; align-items: start; }
+.ig-card header { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-bottom: 12px; }
+.ig-card h2 { flex-basis: 100%; font-family: var(--display); font-weight: 900; font-stretch: 125%; text-transform: uppercase; font-size: 1.5rem; line-height: 1; }
+.ig-n { font-family: var(--mono); font-weight: 700; font-size: .8rem; background: var(--ink); color: var(--paper); padding: 3px 7px; }
+.ig-tag { font-family: var(--mono); font-weight: 700; font-size: .72rem; text-transform: uppercase; letter-spacing: .06em; padding: 3px 8px; border: 2px solid var(--ink); }
+.ig-tag.reel { background: var(--stage); color: var(--white); border-color: var(--stage); }
+.ig-tag.story { background: var(--live); color: var(--accent-ink); }
+.ig-phone { position: relative; width: 100%; background: #111; border: 3px solid var(--ink); border-radius: 18px; overflow: hidden; }
+.ig-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-top: 10px; font-family: var(--mono); font-size: .72rem; }
+.ig-slides { display: flex; flex-wrap: wrap; gap: 4px; }
+.ig-slides button { font: inherit; font-weight: 700; width: 26px; height: 26px; border: 2px solid var(--ink); background: transparent; color: var(--ink); cursor: pointer; }
+.ig-slides button[aria-selected='true'] { background: var(--ink); color: var(--paper); }
+.ig-slides button:hover { background: var(--accent); color: var(--accent-ink); }
+.ig-guides { margin-left: auto; display: inline-flex; align-items: center; gap: 5px; cursor: pointer; }
+.ig-ideia { margin-top: 12px; font-size: .95rem; }
+.ig-card details { margin-top: 10px; font-size: .88rem; border-top: 2px solid var(--ink); padding-top: 8px; }
+.ig-card summary { cursor: pointer; font-family: var(--mono); font-weight: 700; font-size: .75rem; text-transform: uppercase; }
+.ig-card details p { margin-top: 10px; }
+.ig-card code { font-family: var(--mono); font-size: .72rem; word-break: break-word; }
+.ig-missing { font-family: var(--mono); font-size: .8rem; padding: 24px; border: 2px dashed var(--ink); }

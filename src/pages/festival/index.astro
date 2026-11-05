@@ -243,15 +243,20 @@ const facts = ['3 dias', '4 aulas por dia', 'Do básico ao avançado', 'Butantã
     </div>
     <div class="venue-grid">
       <div class="venue-photos">
-        <img class="v-main" src="/festival/venue-1.webp" alt="Salão do Trapézio Voador" loading="lazy" data-reveal />
-        <img src="/festival/venue-5.webp" alt="Fachada do Trapézio Voador" loading="lazy" data-reveal />
-        <img src="/festival/venue-2.webp" alt="Parede de aéreos" loading="lazy" data-reveal />
+        <!-- our own footage of 04/11/2026: the tour is the Instagram piece "O lugar" without its closing card -->
+        <div class="venue-tour" data-reveal>
+          <FestPlayer client:only="react" comp="lugar" />
+          <span class="vbadge" aria-hidden="true"><i>▶</i>tour</span>
+        </div>
+        <img src="/festival/ig/tv-sala-vidro.webp" alt="Sala de vidro do Trapézio Voador, com piso de madeira" loading="lazy" data-reveal />
+        <img src="/festival/ig/tv-palco-luzes.webp" alt="Palco do Trapézio Voador, com tecidos e refletores" loading="lazy" data-reveal />
+        <img src="/festival/ig/tv-fachada.webp" alt="Fachada do Trapézio Voador e a arena externa" loading="lazy" data-reveal />
       </div>
       <div class="venue-info">
         <h3>Trapézio Voador</h3>
         <blockquote>“E mais: trampolim acrobático e um pé-direito de 10m para acrobacias aéreas.”</blockquote>
         <p>R. Alvarenga, 150 · Jardim Guedala<br />“nas proximidades da Estação Butantã do metrô” (linha 4-amarela)</p>
-        <p class="source">Fonte e fotos: <a href="https://trapeziovoador.com.br/" target="_blank" rel="noopener">trapeziovoador.com.br</a> e <a href="https://www.instagram.com/trapeziovoador/" target="_blank" rel="noopener">@trapeziovoador</a></p>
+        <p class="source">Texto entre aspas e as duas fotos abaixo: <a href="https://trapeziovoador.com.br/" target="_blank" rel="noopener">trapeziovoador.com.br</a> e <a href="https://www.instagram.com/trapeziovoador/" target="_blank" rel="noopener">@trapeziovoador</a>. O tour e as três fotos grandes são da nossa visita, em 4 de novembro de 2026.</p>
         <div class="venue-stories">
           {['/festival/venue-3.webp', '/festival/venue-4.webp'].map((src) => (
             <a class="mini-story" href="https://www.instagram.com/trapeziovoador/" target="_blank" rel="noopener" data-reveal>

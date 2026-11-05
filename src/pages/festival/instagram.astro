@@ -1,0 +1,46 @@
+---
+// Working page (not in the menu, noindex): the Instagram pieces of the festival as live Remotion compositions.
+// Nothing is rendered to MP4 yet: the palette is still open, so the pieces follow the palette switcher of the page.
+import FestLayout from '../../layouts/FestLayout.astro';
+import FestNav from '../../components/fest/FestNav.astro';
+import IgCard from '../../festival/ig/IgCard';
+import { PECAS, ROTULO } from '../../festival/ig/pecas';
+---
+
+<FestLayout title="Instagram · 1º HandstandFest" description="As peças de Instagram do 1º HandstandFest, em Remotion.">
+  <header class="page-head grain">
+    <FestNav />
+    <p class="kicker">Página de trabalho · @handstandfest</p>
+    <h1>Insta<span>gram</span></h1>
+    <p class="lead">{PECAS.length} peças para abrir o perfil. São composições ao vivo, ainda sem render: troque a paleta no canto e todas mudam junto.</p>
+  </header>
+
+  <section class="ig wrap">
+    <ul class="ig-regras">
+      <li><b>Reel</b> 1080 × 1920 · 15 a 45 s · texto e rosto dentro da zona segura</li>
+      <li><b>Carrossel</b> 1080 × 1440 · a 2ª lâmina vale como segunda capa</li>
+      <li><b>Stories</b> 3 a 7 quadros · figurinhas entram no app</li>
+      <li><b>Som</b> voz e ambiente aqui; a música entra no app, na hora de postar</li>
+    </ul>
+
+    <div class="ig-grid">
+      {PECAS.map((p, i) => (
+        <article class="ig-card" id={p.id}>
+          <header>
+            <span class="ig-n">{String(i + 1).padStart(2, '0')}</span>
+            <span class:list={['ig-tag', p.formato]}>{ROTULO[p.formato]}</span>
+            <h2>{p.titulo}</h2>
+          </header>
+          <IgCard client:only="react" id={p.id} />
+          <p class="ig-ideia">{p.ideia}</p>
+          <details>
+            <summary>Legenda, som e material</summary>
+            <p><b>Legenda (rascunho)</b><br />{p.legenda}</p>
+            <p><b>Som</b><br />{p.som}</p>
+            <p><b>Material</b><br /><code>{p.material.join(' · ')}</code></p>
+          </details>
+        </article>
+      ))}
+    </div>
+  </section>
+</FestLayout>
