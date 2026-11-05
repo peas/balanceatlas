@@ -4,6 +4,10 @@ export const R2 ='https://media.balanceatlas.com/images/retreats';
 // Placeholder until the real ticketing link exists (Paulo, 29/10/2026: "link fake" for now)
 export const TICKETS = 'https://example.com/handstandfest-ingressos';
 
+// The festival dates live here only (pages, FAQ and Remotion compositions read these)
+export const FEST = { dias: [16, 17, 18], mes: 'abril', mesCurto: 'abr', ano: 2027 } as const;
+export const QUANDO = `${FEST.dias[0]} — ${FEST.dias[2]} ${FEST.mesCurto} ${FEST.ano}`; // 16 — 18 abr 2027
+
 // Bento: photos and videos mixed. `video` cells play on hover (desktop) or when in view (touch).
 export const R2V = 'https://media.balanceatlas.com/videos/retreats';
 export type BentoItem = { src: string; alt: string; video?: string; span?: 'wide' | 'tall' | 'large' };
@@ -24,7 +28,7 @@ export const community: BentoItem[] = [
 
 // FAQ: only what is already decided; Paulo's own FAQ text (about handstand) is still to come (his paste came empty, 04/11/2026).
 export const faqFest: { q: string; a: string }[] = [
-  { q: 'Quando e onde?', a: 'Sexta, sábado e domingo, 5, 6 e 7 de março de 2027, no Trapézio Voador (R. Alvarenga, 150, Jardim Guedala), perto da Estação Butantã do metrô, em São Paulo.' },
+  { q: 'Quando e onde?', a: `Sexta, sábado e domingo, ${FEST.dias[0]}, ${FEST.dias[1]} e ${FEST.dias[2]} de ${FEST.mes} de ${FEST.ano}, no Trapézio Voador (R. Alvarenga, 150, Jardim Guedala), perto da Estação Butantã do metrô, em São Paulo.` },
   { q: 'Como é um dia do festival?', a: 'Yoga e mobilidade com todo mundo junto, aquecimento de punhos e ombros já na sua turma, parada de mão de manhã, almoço, uma aula de tema à tarde e, no fim do dia, parada de mão de novo ou jam com os professores circulando. Cada dia tem um fio: sexta é base, sábado é construção, domingo é integração, e termina mais cedo. A grade ainda está sendo ajustada com os professores.' },
   { q: 'Preciso já ficar em pé de mão?', a: 'Não. A turma de básico é para quem treina na parede e ainda não segura o livre. A turma de intermediário e avançado pede handstand livre por uns 10 segundos de forma consistente (30 é o ideal); é lá que entram press, one arm e formas.' },
   { q: 'Qual turma é a minha?', a: 'Se você ainda não segura o livre, básico. Se segura 10 segundos no livre com consistência, intermediário e avançado. Na dúvida, manda um vídeo curto quando se inscrever e a gente te ajuda a escolher.' },

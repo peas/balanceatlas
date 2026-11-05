@@ -4,13 +4,13 @@
 import FestLayout from '../../layouts/FestLayout.astro';
 import FestNav from '../../components/fest/FestNav.astro';
 import SobreTabs from '../../components/fest/SobreTabs.astro';
-import { TICKETS, faqFest } from '../../festival/data';
+import { TICKETS, QUANDO, faqFest } from '../../festival/data';
 ---
 
 <FestLayout title="Sobre o evento · 1º HandstandFest" description="Quem faz o 1º HandstandFest, por que ele existe, para quem é e as perguntas mais comuns.">
   <header class="page-head grain">
     <FestNav current="sobre" />
-    <p class="kicker">1º HandstandFest · São Paulo · 5 — 7 mar 2027</p>
+    <p class="kicker">1º HandstandFest · São Paulo · {QUANDO}</p>
     <h1>Sobre <span>o evento</span></h1>
     <p class="lead">O primeiro festival brasileiro dedicado à parada de mão. Três dias de aula, treino e gente que gosta de ficar de cabeça para baixo.</p>
   </header>

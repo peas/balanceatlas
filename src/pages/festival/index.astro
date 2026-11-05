@@ -7,7 +7,7 @@ import FestLayout from '../../layouts/FestLayout.astro';
 import FestNav from '../../components/fest/FestNav.astro';
 import FestPlayer from '../../festival/FestPlayer';
 import type { PosterProps } from '../../festival/compositions';
-import { TICKETS } from '../../festival/data';
+import { TICKETS, FEST } from '../../festival/data';
 
 const LOTES = [
   { n: '1º lote', price: 490, note: 'Primeiras 10 vagas', state: 'aberto' },
@@ -43,15 +43,15 @@ const third = (basico: string, time = '14h — 15h30'): Row => ({
 });
 
 const days: { id: string; label: string; date: string; arc: string; rows: Row[] }[] = [
-  { id: 'sex', label: 'Sex', date: '5', arc: 'Base', rows: [
+  { id: 'sex', label: 'Sex', date: String(FEST.dias[0]), arc: 'Base', rows: [
     yoga, prep(), handstand(), lunch, third('Acroyoga'), prep('15h45 — 16h'), handstand('16h — 17h30'),
     { time: '17h30 — 18h30', all: 'Roda de abertura' },
   ] },
-  { id: 'sab', label: 'Sáb', date: '6', arc: 'Construção', rows: [
+  { id: 'sab', label: 'Sáb', date: String(FEST.dias[1]), arc: 'Construção', rows: [
     yoga, prep(), handstand(), lunch, third('Acro handstand corpo a corpo'),
     { time: '16h — 17h30', all: 'Jam: treino livre com os professores circulando' },
   ] },
-  { id: 'dom', label: 'Dom', date: '7', arc: 'Integração', rows: [
+  { id: 'dom', label: 'Dom', date: String(FEST.dias[2]), arc: 'Integração', rows: [
     { time: '9h — 9h45', all: 'Aquecimento lento, todo mundo junto' },
     prep(), handstand(), lunch, third('Handstand em objetos'),
     { time: '15h45 — 17h', all: 'Jam de encerramento, roda final e foto' },
@@ -106,7 +106,7 @@ const facts = ['3 dias', '4 aulas por dia', 'Do básico ao avançado', 'Butantã
       </h1>
     </div>
     <div class="hero-info">
-      <p class="dates">Sex 5 · Sáb 6 · Dom 7 de março</p>
+      <p class="dates">Sex {FEST.dias[0]} · Sáb {FEST.dias[1]} · Dom {FEST.dias[2]} de {FEST.mes}</p>
       <p class="place"><span>São Paulo</span> Brasil · 2027</p>
       <a class="cta" href="#ingressos">Garantir vaga <span aria-hidden="true">→</span></a>
       <a class="lote-pill" href="#ingressos"><i aria-hidden="true"></i>1º lote aberto · R$ 490 · 10 vagas</a>
@@ -278,7 +278,7 @@ const facts = ['3 dias', '4 aulas por dia', 'Do básico ao avançado', 'Butantã
   <!-- TICKETS -->
   <section class="signup grain" id="ingressos">
     <div class="wrap signup-inner">
-      <p class="kicker">Ingressos · 5 — 7 · março · 2027</p>
+      <p class="kicker">Ingressos · {FEST.dias[0]} — {FEST.dias[2]} · {FEST.mes} · {FEST.ano}</p>
       <h2 class="display" data-reveal>Três lotes. Estamos no primeiro.</h2>
       <div class="lotes">
         {LOTES.map((l) => (

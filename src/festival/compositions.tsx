@@ -15,27 +15,28 @@ import { TransitionSeries, linearTiming } from '@remotion/transitions';
 import { pushCut } from '@remotion/transitions/push-cut';
 import { slide } from '@remotion/transitions/slide';
 import { iris } from '@remotion/transitions/iris';
+import { FEST } from './data';
 
 export const W = 720;
 export const H = 900;
 export const FPS = 30;
 
 // Colors come from the page's palette tokens (the Player renders in the page DOM).
-const ACCENT = 'var(--accent, #d7f55a)';
-const ACCENT_INK = 'var(--accent-ink, #111)';
-const STAGE = 'var(--stage, #2b3cf0)';
-const CHALK = 'var(--white, #f2efe6)';
-const INK = '#111111';
-const DISPLAY = "'Archivo', 'Arial Black', sans-serif";
-const MONO = "'Space Mono', ui-monospace, monospace";
-const WIDE: CSSProperties = { fontFamily: DISPLAY, fontWeight: 900, fontStretch: '125%' };
+export const ACCENT = 'var(--accent, #d7f55a)';
+export const ACCENT_INK = 'var(--accent-ink, #111)';
+export const STAGE = 'var(--stage, #2b3cf0)';
+export const CHALK = 'var(--white, #f2efe6)';
+export const INK = '#111111';
+export const DISPLAY = "'Archivo', 'Arial Black', sans-serif";
+export const MONO = "'Space Mono', ui-monospace, monospace";
+export const WIDE: CSSProperties = { fontFamily: DISPLAY, fontWeight: 900, fontStretch: '125%' };
 const T = 15; // transition frames
 
 const NOISE =
   "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E\")";
 
 // Film grain: one static tile, jittered every 2 frames (cheap on phones).
-const Grain = () => {
+export const Grain = () => {
   const frame = useCurrentFrame();
   const step = Math.floor(frame / 2);
   const x = Math.round(random(`gx${step}`) * 180);
@@ -47,7 +48,7 @@ const Grain = () => {
   );
 };
 
-const useEnter = (delay = 0, damping = 12) => {
+export const useEnter = (delay = 0, damping = 12) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   return spring({ frame: frame - delay, fps, config: { damping, mass: 0.6 } });
@@ -148,7 +149,7 @@ const HERO: Scene[] = [
   { src: '/festival/seg-1.mp4', frames: 150, stamp: '3 dias', tri: 'right' },
   { src: '/festival/seg-2.mp4', frames: 160, rate: 0.75, stamp: '3 salas', tri: 'left' },
   { src: '/festival/seg-3.mp4', frames: 135, stamp: 'Básico + inter', tri: 'right' },
-  { src: '/festival/seg-4.mp4', frames: 180, stamp: 'São Paulo · mar 27', tri: 'left' },
+  { src: '/festival/seg-4.mp4', frames: 180, stamp: `São Paulo · ${FEST.mesCurto} ${String(FEST.ano).slice(2)}`, tri: 'left' },
 ];
 const HERO_TRANSITIONS = [
   pushCut({ flashColor: '#fff', flashOpacity: 0.9, flashFrames: 4 }),
@@ -283,7 +284,7 @@ export const Poster = ({ img, first, last, handle, shape, focus = 'center' }: Po
       </div>
       {handle && <Chip text={handle} delay={26} style={{ left: 28, top: 30, fontSize: 20, opacity: out }} />}
       <div style={{ position: 'absolute', left: 28, bottom: 34, color: CHALK, fontFamily: MONO, fontWeight: 700, fontSize: 20, letterSpacing: 0.5, textTransform: 'uppercase', opacity: out }}>
-        1º HandstandFest · São Paulo · mar 2027
+        1º HandstandFest · São Paulo · {FEST.mesCurto} {FEST.ano}
       </div>
       <Grain />
     </AbsoluteFill>

@@ -2,12 +2,12 @@
 // Shared shell for /festival and its subpages (pt-BR, own identity; see CLAUDE.md "Hidden pages").
 // Head, palette tokens (?paleta=), fonts, global stylesheet, palette switcher, footer and the small page scripts.
 import '../festival/festival.css';
-import { TICKETS } from '../festival/data';
+import { TICKETS, FEST } from '../festival/data';
 
 interface Props { title?: string; description?: string }
 const {
   title = '1º HandstandFest · São Paulo',
-  description = '1º HandstandFest · 3 dias de parada de mão em São Paulo, 5 a 7 de março de 2027.',
+  description = `1º HandstandFest · 3 dias de parada de mão em São Paulo, ${FEST.dias[0]} a ${FEST.dias[2]} de ${FEST.mes} de ${FEST.ano}.`,
 } = Astro.props;
 ---
 
