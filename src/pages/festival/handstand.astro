@@ -1,81 +1,91 @@
 ---
-// "Sobre handstand": the practice, photos of gatherings around the world (the bento that used to sit on the
-// festival home plus the Balance Atlas home photos), a door to /festival/mundo, and the FAQ about the practice.
-// The intro reuses the organizers' own words (brief of 04/11/2026); no invented claims.
+// "Sobre handstand". The running text is PAULO'S OWN (dictated 04/11/2026), edited minimally with the voz-paulo
+// rules: cut speech redundancy, fix agreement, no paraphrase, no added claims. Section headings reuse his phrases.
+// Photos float left/right so the text snakes around them; bento strips sit between sections.
+// The five-step cards at the end are ours (a summary that maps his "jornada" onto the festival's two classes).
 import FestLayout from '../../layouts/FestLayout.astro';
 import FestNav from '../../components/fest/FestNav.astro';
 import Bento from '../../components/fest/Bento.astro';
-import { community, atlasPhotos, faqHandstand } from '../../festival/data';
+import { R2, community, atlasPhotos, faqHandstand } from '../../festival/data';
 import { eventos, paises } from '../../festival/eventos';
+
+// Photos the text wraps around (the rest of the Balance Atlas home photos go into the second strip)
+const wrap = {
+  intro: `${R2}/saopaulo-2024/100.webp`,
+  porque: `${R2}/greece-2025/01.webp`,
+  sempre: `${R2}/saopaulo-2024/95.webp`,
+  chao: `${R2}/saopaulo-2024/35.webp`,
+  spot: `${R2}/thailand-2026/28.webp`,
+};
+const used = new Set(Object.values(wrap));
+const stripA = community.slice(0, 6);
+const stripB = [...community.slice(6), ...atlasPhotos.filter((p) => !used.has(p.src))];
 ---
 
-<FestLayout title="Sobre handstand · 1º HandstandFest" description="O que é handstand (parada de mão), fotos de encontros pelo mundo e outros workshops e retiros.">
+<FestLayout title="Sobre handstand · 1º HandstandFest" description="O que é handstand (parada de mão), por que praticar, como é a jornada e outros workshops e retiros pelo mundo.">
   <header class="page-head grain">
     <FestNav current="handstand" />
     <p class="kicker">Handstand = parada de mão</p>
     <h1>Sobre <span>handstand</span></h1>
-    <p class="lead">Ficar em equilíbrio sobre as mãos. Parece um truque. É uma prática.</p>
+    <p class="lead">Ficar parado de ponta-cabeça. Parece difícil? É muito mais do que parece.</p>
   </header>
 
-  <!-- A PRÁTICA -->
-  <section class="about wrap">
-    <h2 class="display" data-reveal>Uma disciplina corporal, artística e expressiva.</h2>
-    <div class="sobre-cols" style="margin-top: 36px">
-      <p>A parada de mão aparece no yoga, na calistenia, no crossfit, na dança, no circo e no acroyoga. Em cada lugar com um nome e um jeito, sempre com a mesma pergunta: como ficar parado de cabeça para baixo.</p>
-      <p>A partir dela nascem outras práticas: força, mobilidade, flexibilidade, mão a mão, acrobacia em dupla, invertidas sobre outros corpos e transições criativas.</p>
-      <p>E é uma prática de comunidade. Gente que treina junto, viaja para treinar e se encontra em workshops, retiros e festivais pelo mundo.</p>
-    </div>
+  <article class="snake">
+    <h2>Uma prática que aparece em diversos esportes</h2>
+    <figure class="r"><img src={wrap.intro} alt="Parada de mão com as pernas abertas num jardim, São Paulo, 2024" loading="lazy" /></figure>
+    <p>O handstand é uma prática que aparece em diversos esportes e disciplinas. Você já viu no yoga, no CrossFit, na calistenia. Também aparece na ginástica olímpica e na capoeira. No circo é bastante comum. Em cada lugar desses, ele tem a sua variação.</p>
+    <p>Na última década, o handstand tem se popularizado como prática específica. Tem ganhado mais espaços, grupos e praticantes que focam apenas nele: nesse balanço em duas mãos, tanto para ficar em posições estáticas quanto no movimento.</p>
+
+    <h2>Por que o handstand?</h2>
+    <figure class="l"><img src={wrap.porque} alt="Árvore retorcida numa praia de Paros, Grécia, 2025" loading="lazy" /></figure>
+    <p>O sentimento de ficar parado de ponta-cabeça é único, difícil de explicar, em especial porque a jornada é bastante longa. Se você acha que vai conseguir uma parada de mão longa, com uma linha bonita, com facilidade e em pouco tempo, você está bastante enganado.</p>
+    <p>É óbvio que há exceções. Mas todo mundo acaba encarando essa prática pela paixão de entender que a jornada é longa, mais difícil do que parece, e exige paciência, dedicação e disciplina.</p>
+    <p>Paciência, dedicação e disciplina são aspectos importantes da nossa vida que, no mundo acelerado, no mundo digital, vão ser cada vez mais difíceis. É aí que o handstand entra, até mesmo como uma forma contemplativa e de meditação. Não é à toa que diversos retiros e workshops são feitos fora das grandes cidades, no meio da natureza.</p>
+  </article>
+
+  <section class="community strip">
+    <Bento items={stripA} />
   </section>
 
-  <!-- DE ONDE VEM -->
-  <section class="hs-section wrap">
-    <h2 class="display" data-reveal>Muitos nomes, o mesmo gesto.</h2>
-    <p class="lead-text">No Brasil, quase todo mundo já tentou uma vez na infância: é a velha bananeira. O que muda quando ela vira prática é a intenção. Em vez de cair de qualquer jeito depois de dois segundos, a pessoa aprende a subir, a ficar e a descer quando quer.</p>
-    <ul class="origens">
-      <li><b>Ginástica</b>a linha reta e a parada como base de tudo</li>
-      <li><b>Circo</b>o equilíbrio como número: bengalas, formas, um braço</li>
-      <li><b>Yoga</b>a invertida como postura</li>
-      <li><b>Calistenia</b>a força: press, flexões em parada</li>
-      <li><b>Capoeira e dança</b>a bananeira em movimento</li>
-      <li><b>Acroyoga</b>a parada sobre outro corpo</li>
-    </ul>
-  </section>
+  <article class="snake">
+    <h2>Uma prática que estará sempre com você</h2>
+    <figure class="r wide"><img src={wrap.sempre} alt="Grupo treinando invertidas na grama, São Paulo, 2024" loading="lazy" /></figure>
+    <p>Ao mesmo tempo, o interessante do handstand, assim como o yoga, a calistenia e algumas modalidades de circo, é que você pode praticar em qualquer lugar. É uma prática que estará sempre com você.</p>
+    <p>De alguma forma, você vai acabar ganhando uma paixão por técnicas que costumam ser deixadas de lado em muitos esportes e por muitos praticantes amadores. A flexibilidade, a mobilidade, o treino dedicado de força e o cuidado com as articulações são essenciais. Você vai aprender a gostar disso.</p>
+    <p>O próprio equilíbrio vai aparecer tanto na parte técnica quanto na parte mental. Para um praticante de handstand, depois de algum tempo, fica bastante óbvia a neuroplasticidade e como a inteligência e a capacidade cognitiva estão fortemente ligadas ao sucesso dessa jornada.</p>
 
-  <!-- O CAMINHO -->
-  <section class="hs-section wrap">
-    <div class="section-head">
-      <h2 class="display" data-reveal>O caminho</h2>
-      <p class="note">Cada pessoa leva o seu tempo. A ordem costuma ser parecida, e é ela que separa as turmas do festival.</p>
-    </div>
-    <ol class="caminho">
-      <li data-reveal><h3>Parede</h3><p>Punhos e ombros preparados, barriga para a parede, corpo em linha. Aprender a subir e a sair com segurança.</p></li>
-      <li data-reveal><h3>Primeiros segundos</h3><p>Sair da parede e encontrar o ponto de equilíbrio. Corrigir com os dedos, sem andar com as mãos.</p></li>
-      <li data-reveal><h3>Livre</h3><p>Segurar com consistência: 10 segundos, depois 30. Subir de formas diferentes e manter a linha.</p></li>
-      <li data-reveal><h3>Formas e press</h3><p>Straddle, tuck, pike. Subir sem impulso, só com força e mobilidade.</p></li>
-      <li data-reveal><h3>Um braço</h3><p>O one arm handstand. Anos de treino, e o motivo de muita gente continuar.</p></li>
-    </ol>
-  </section>
+    <h2>A jornada</h2>
+    <figure class="l wide"><img src={wrap.chao} alt="Turma treinando com as mãos e a cabeça no chão, São Paulo, 2024" loading="lazy" /></figure>
+    <p>É incrível pensar que você vai começar sua jornada com as mãos no chão, em posições triviais como o sapinho e o elefante, para depois encarar o equilíbrio com o apoio da parede. Os primeiros segundos, os primeiros 10 segundos mesmo, com essa ajuda, serão bastante difíceis para quem nunca fez nenhuma dessas práticas. Vai levar tempo e você vai entender a diversão.</p>
+    <figure class="r"><img src={wrap.spot} alt="Professor ajustando o ombro de um praticante, Koh Phangan, 2026" loading="lazy" /></figure>
+    <p>Depois virão as entradas, os chutes, as formas de você tentar ficar de ponta-cabeça sem usar os apoios. No começo, alguma pessoa vai te ajudar, o tal do spotting. Por muito tempo, você vai perceber que está sempre caindo e não consegue fazer as correções com as mãos: seja porque seus ombros não estão parados, seja porque suas pernas não estão esticadas, seja porque você está muito arqueado, ou até mesmo por medo.</p>
+    <p>Depois de um tempo, você vai precisar ter a coragem de enfrentar essa posição e saber sair dela sem se machucar. Isso tudo apenas para a parada de mão simples.</p>
+    <p>Depois de muito tempo, quando você conquistar seus primeiros 10 segundos sem nenhuma ajuda, aí sim você pode começar a pensar em mudar suas pernas de posição, criar as formas, os shapes. Depois de muita prática, paciência e treino, quem sabe encarar, com mobilidade e força, o press handstand, que é a subida de força. Também existem muitos formatos. São movimentos bonitos, que exigem força, equilíbrio e concentração.</p>
+    <p>Quem encara essa jornada por muito tempo vai depois sonhar com a parada de uma única mão.</p>
+    <p class="punch">Parece difícil? <span>É muito mais do que parece.</span></p>
+  </article>
 
-  <!-- O QUE SE TREINA -->
-  <section class="hs-section wrap">
-    <h2 class="display" data-reveal>O que se treina</h2>
-    <div class="publico" style="margin-top: 28px">
-      <article><h4>Punhos e ombros</h4><p>É neles que o peso do corpo passa a morar. Aquecer e fortalecer vem antes de tudo.</p></article>
-      <article><h4>Linha</h4><p>Mãos, ombros, quadril e pés empilhados. Quanto mais alinhado, menos força o equilíbrio pede.</p></article>
-      <article><h4>Equilíbrio</h4><p>Ajustes pequenos e constantes, feitos com os dedos e os ombros. Não se fica parado: corrige-se o tempo todo.</p></article>
-      <article><h4>Força e mobilidade</h4><p>Ombro aberto, posterior alongado, abdômen ativo. O press nasce da soma das duas.</p></article>
-      <article><h4>Saber cair</h4><p>Sair girando ou rolando tira o medo. Sem medo, o treino rende.</p></article>
-      <article><h4>Paciência</h4><p>Pouco tempo, muitas vezes por semana. O progresso vem em meses, não em dias.</p></article>
-    </div>
-  </section>
-
-  <!-- BENTO -->
-  <section class="community" id="comunidade">
+  <section class="community strip" id="comunidade">
     <div class="wrap section-head">
       <h2 class="display" data-reveal>De onde a gente vem</h2>
       <p class="note">Encontros de parada de mão pelo mundo que viraram vontade de fazer um aqui. Fotos e vídeos do <a href="/retreats">Balance Atlas</a>. Os marcados com <span class="play-inline" aria-hidden="true">▶</span> são vídeos: passe o mouse, ou role até eles no celular.</p>
     </div>
-    <Bento items={[...community, ...atlasPhotos]} />
+    <Bento items={stripB} />
+  </section>
+
+  <!-- O CAMINHO: our summary, mapped onto the festival's classes -->
+  <section class="hs-section wrap">
+    <div class="section-head">
+      <h2 class="display" data-reveal>A jornada em cinco passos</h2>
+      <p class="note">É a régua das turmas do festival: os dois primeiros passos são a turma de básico; do terceiro em diante, intermediário e avançado.</p>
+    </div>
+    <ol class="caminho">
+      <li data-reveal><h3>Chão e parede</h3><p>Mãos no chão, punhos e ombros preparados, corpo em linha com o apoio da parede.</p></li>
+      <li data-reveal><h3>Entradas</h3><p>Chutes, spotting, primeiros segundos sem apoio. Aprender a cair e a sair.</p></li>
+      <li data-reveal><h3>10 segundos</h3><p>Segurar sozinho, com consistência. Corrigir com as mãos.</p></li>
+      <li data-reveal><h3>Formas e press</h3><p>Mudar as pernas de posição, os shapes, e a subida de força.</p></li>
+      <li data-reveal><h3>Uma mão</h3><p>A parada de uma única mão, para quem segue por muito tempo.</p></li>
+    </ol>
   </section>
 
   <!-- WORLD -->

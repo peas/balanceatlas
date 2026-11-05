@@ -135,8 +135,10 @@ Always verify downloaded images are real (>5KB, not HTML redirects).
   (head, palette switcher kept in sessionStorage, footer, tabs/reveal/bento scripts), `src/festival/festival.css`
   (all styles), `src/festival/data.ts` (TICKETS, bento photos, FAQs, sobre texts) and `src/components/fest/`
   (FestNav, SobreTabs, Bento): `/festival/` home; `/festival/sobre/` = "Sobre o evento" (highlights tabs, "Quem faz"
-  in Paulo's own words, festival FAQ); `/festival/handstand/` = "Sobre handstand" (the practice, the bento that left
-  the home plus the Balance Atlas home photos, handstand FAQ, band to the world list); `/festival/mundo/` =
+  in Paulo's own words, festival FAQ); `/festival/handstand/` = "Sobre handstand" (running text is PAULO'S OWN,
+  dictated 04/11/2026 and edited only with the voz-paulo rules: never paraphrase or add claims; photos float so the
+  text snakes around them (`.snake`), two bento strips, a five-step summary mapped to the two classes, handstand
+  FAQ, band to the world list); `/festival/mundo/` =
   handstand workshops/retreats worldwide from `src/festival/eventos.ts` (facts only; refresh from the Drive file
   `pesquisas/handstand-workshops-retreats.md` and bump `LEVANTAMENTO`). Menu: Sobre o evento · Sobre handstand ·
   Garanta sua vaga. The festival is meant to move to its own domain (handstandfest.com.br, not bought yet); links

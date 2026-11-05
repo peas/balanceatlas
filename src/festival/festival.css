@@ -385,8 +385,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .caminho li::before { content: counter(step, decimal-leading-zero); display: block; font-family: var(--mono); font-weight: 700; font-size: .8rem; margin-bottom: 10px; }
 .caminho h3 { font-family: var(--display); font-weight: 900; font-stretch: 125%; text-transform: uppercase; font-size: 1.05rem; line-height: 1.05; margin-bottom: 8px; }
 .caminho p { font-size: .98rem; }
-.caminho li:nth-child(n+4) { background: var(--ink); color: var(--white); }
-.caminho li:nth-child(n+4) h3 { color: var(--accent); }
+.caminho li:nth-child(n+3) { background: var(--ink); color: var(--white); }
+.caminho li:nth-child(n+3) h3 { color: var(--accent); }
 .hs-section { padding-bottom: clamp(56px, 9vw, 110px); }
 .hs-section .lead-text { font-size: 1.15rem; max-width: 62ch; margin-top: 18px; }
 .origens { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; list-style: none; }
@@ -396,3 +396,25 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 @media (max-width: 560px) { .caminho { grid-template-columns: 1fr; } }
 .stickybar .nav-logo, .stickybar .nav-cta { white-space: nowrap; }
 @media (max-width: 420px) { .stickybar { font-size: .68rem; } .stickybar .nav-logo { font-size: .8rem; } }
+
+/* ---------- Sobre handstand: Paulo's text snaking around floated photos (04/11/2026) ---------- */
+.snake { width: min(880px, 100% - 2 * var(--gutter)); margin-inline: auto; padding-top: clamp(40px, 7vw, 88px); }
+.snake::after { content: ''; display: block; clear: both; }
+.snake h2 { clear: both; font-family: var(--display); font-weight: 900; font-stretch: 125%; text-transform: uppercase; line-height: .98; font-size: clamp(1.6rem, 3.6vw, 2.6rem); max-width: 20ch; margin-bottom: 24px; }
+.snake h2:not(:first-child) { padding-top: clamp(40px, 6vw, 72px); }
+.snake p { font-size: 1.18rem; line-height: 1.62; margin-bottom: 1.15em; }
+.snake figure { width: min(44%, 380px); margin-bottom: 18px; border-radius: 10px; overflow: hidden; background: var(--stage); }
+.snake figure.r { float: right; margin-left: clamp(20px, 4vw, 44px); }
+.snake figure.l { float: left; margin-right: clamp(20px, 4vw, 44px); }
+.snake figure img { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
+.snake figure.wide { width: min(52%, 460px); }
+.snake figure.wide img { aspect-ratio: 3 / 2; }
+.snake .punch { clear: both; padding-top: clamp(28px, 5vw, 56px); font-family: var(--display); font-weight: 900; font-stretch: 125%; text-transform: uppercase; line-height: .95; font-size: clamp(1.9rem, 5.4vw, 3.8rem); margin-bottom: 0; }
+.snake .punch span { display: block; color: var(--stage); }
+.strip { padding-block: clamp(40px, 7vw, 88px) 0; }
+.strip + .hs-section { padding-top: clamp(56px, 9vw, 110px); }
+@media (max-width: 640px) {
+  .snake figure, .snake figure.wide { float: none; width: 100%; margin: 0 0 20px; }
+  .snake figure img, .snake figure.wide img { aspect-ratio: 3 / 2; }
+  .snake p { font-size: 1.1rem; }
+}
