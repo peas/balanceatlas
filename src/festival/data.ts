@@ -28,10 +28,10 @@ export const faqFest: { q: string; a: string }[] = [
   { q: 'Como é um dia do festival?', a: 'Yoga e mobilidade com todo mundo junto, aquecimento de punhos e ombros já na sua turma, parada de mão de manhã, almoço, uma aula de tema à tarde e, no fim do dia, parada de mão de novo ou jam com os professores circulando. Cada dia tem um fio: sexta é base, sábado é construção, domingo é integração, e termina mais cedo. A grade ainda está sendo ajustada com os professores.' },
   { q: 'Preciso já ficar em pé de mão?', a: 'Não. A turma de básico é para quem treina na parede e ainda não segura o livre. A turma de intermediário e avançado pede handstand livre por uns 10 segundos de forma consistente (30 é o ideal); é lá que entram press, one arm e formas.' },
   { q: 'Qual turma é a minha?', a: 'Se você ainda não segura o livre, básico. Se segura 10 segundos no livre com consistência, intermediário e avançado. Na dúvida, manda um vídeo curto quando se inscrever e a gente te ajuda a escolher.' },
-  { q: 'Quanto custa?', a: 'Passe completo para os 3 dias em três lotes: as primeiras 10 vagas a R$ 490, as 30 seguintes a R$ 590 e as últimas 15 a R$ 690. São 55 vagas no total. Por enquanto só vendemos o passe completo.' },
+  { q: 'Quanto custa?', a: 'Passe completo para os 3 dias em três lotes: as primeiras 10 vagas a R$ 490, as 35 seguintes a R$ 590 e as últimas 15 a R$ 690. São 60 vagas no total. Por enquanto só vendemos o passe completo.' },
   { q: 'Como compro?', a: 'Pelo botão "Garanta sua vaga". Quando um lote esgota, o próximo abre sozinho.' },
   { q: 'Venho do yoga, do acroyoga ou da calistenia. É para mim?', a: 'Sim. O festival é para quem quer ampliar o repertório a partir da parada de mão, de qualquer prática: yoga, acroyoga, calistenia, circo, dança ou movimento.' },
-  { q: 'Quem dá aula?', a: 'Agustin Melesi, com Rocío, Louisse Aldrigues e Dany García já confirmados. Mais nomes em breve.' },
+  { q: 'Quem dá aula?', a: 'Agustin Melesi, com Rocío, Louisse Aldrigues e Dany García já confirmados. Cada turma tem também professores assistentes. Mais nomes em breve.' },
 ];
 export const faqHandstand: { q: string; a: string }[] = [
   { q: 'Handstand ou parada de mão?', a: 'A mesma coisa. Usamos as duas palavras de propósito: quem pesquisa na internet procura mais por "handstand", e quem treina no Brasil fala "parada de mão".' },

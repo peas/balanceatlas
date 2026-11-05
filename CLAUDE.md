@@ -111,7 +111,7 @@ Always verify downloaded images are real (>5KB, not HTML redirects).
   tabs drawn as Instagram profile highlights (04/11/2026). Keep exploring this language (reels/stories/play
   affordances) in new sections. Any `[data-tabs]` scope with `[role=tab][data-tab]` + `[data-panel]` works as tabs.
   Venue: Trapézio Voador (R. Alvarenga 150, metrô Butantã; confirmed 04/11/2026; Google Maps embed + the venue's
-  own place link). Tickets: 55 spots, 1º lote R$490 (first 10), 2º R$590 (next 30), 3º R$690 (last 15), sold on
+  own place link). Tickets: 60 spots, 1º lote R$490 (first 10), 2º R$590 (next 35), 3º R$690 (last 15), sold on
   Sympla (Paulo creates the event; see Drive `pesquisas/ingressos-pessoa-fisica-plataformas.md`);
   `TICKETS` in festival.astro is a placeholder (example.com) until the Sympla link exists. It feeds the top nav
   "Garanta sua vaga" and both CTAs. Levels: básico, intermediário, avançado (the organizers' brief of 04/11/2026
@@ -141,6 +141,10 @@ Always verify downloaded images are real (>5KB, not HTML redirects).
   `pesquisas/handstand-workshops-retreats.md` and bump `LEVANTAMENTO`). Menu: Sobre o evento · Sobre handstand ·
   Garanta sua vaga. The festival is meant to move to its own domain (handstandfest.com.br, not bought yet); links
   are root-relative under `/festival/`, so a move needs a base-path pass.
+  Each class has a teacher plus assistant teachers (Paulo, 04/11/2026). Layout rules (04/11/2026): content width
+  `--max: 1120px`, fluid side margin `--gutter: clamp(20px, 5vw, 72px)` (never hard-code 16px/1200px), bento capped
+  at 1360px, hero height capped at 880px, a slim sticky bar (logo + links + CTA) slides in after the page header,
+  `[id]` has scroll-margin for it. Domain confirmed: handstandfest.com.br (not bought yet).
   Hero and teacher cards are Remotion compositions (`src/festival/`, `@remotion/player` via `@astrojs/react`,
   `client:only`); clips are cut and graded by `scripts/festival_clips.sh`. Remotion packages pinned to one version.
 

@@ -2,6 +2,7 @@
 // Shared shell for /festival and its subpages (pt-BR, own identity; see CLAUDE.md "Hidden pages").
 // Head, palette tokens (?paleta=), fonts, global stylesheet, palette switcher, footer and the small page scripts.
 import '../festival/festival.css';
+import { TICKETS } from '../festival/data';
 
 interface Props { title?: string; description?: string }
 const {
@@ -31,6 +32,14 @@ const {
     />
   </head>
   <body>
+    <!-- Slim bar that slides in once the page header has scrolled away (inert while hidden) -->
+    <div class="stickybar" data-sticky inert>
+      <a class="nav-logo" href="/festival/"><b>1º</b> HandstandFest</a>
+      <a class="sb-link" href="/festival/sobre/">Sobre o evento</a>
+      <a class="sb-link" href="/festival/handstand/">Sobre handstand</a>
+      <a class="nav-cta" href={TICKETS} target="_blank" rel="noopener">Garanta sua vaga</a>
+    </div>
+
     <slot />
 
     <div class="paleta" role="group" aria-label="Paleta">
@@ -79,6 +88,16 @@ const {
       };
       palBtns.forEach((b) => b.addEventListener('click', () => setPal(b.dataset.p!)));
       setPal(document.documentElement.dataset.paleta ?? 'b', false);
+
+      // Sticky bar: shown after the page header (hero or subpage head) leaves the viewport
+      const bar = document.querySelector<HTMLElement>('[data-sticky]');
+      const head = document.querySelector('header');
+      if (bar && head) {
+        new IntersectionObserver(([e]) => {
+          bar.classList.toggle('on', !e.isIntersecting);
+          bar.inert = e.isIntersecting;
+        }).observe(head);
+      }
 
       // Reveal on scroll
       const reveal = new IntersectionObserver(

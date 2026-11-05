@@ -11,10 +11,10 @@ import { TICKETS } from '../../festival/data';
 
 const LOTES = [
   { n: '1º lote', price: 490, note: 'Primeiras 10 vagas', state: 'aberto' },
-  { n: '2º lote', price: 590, note: 'Próximas 30 vagas', state: 'proximo' },
+  { n: '2º lote', price: 590, note: 'Próximas 35 vagas', state: 'proximo' },
   { n: '3º lote', price: 690, note: 'Últimas 15 vagas', state: 'proximo' },
 ] as const;
-const VAGAS = 55;
+const VAGAS = 60;
 const MAPS_Q = encodeURIComponent('Trapézio Voador, R. Alvarenga, 150, Jardim Guedala, São Paulo');
 // The venue's own Google Maps link (footer of trapeziovoador.com.br, 04/11/2026)
 const MAPS_PLACE = 'https://www.google.com/maps/place/Trap%C3%A9zio+Voador+Escola+de+Artes+Circenses/@-23.5793024,-46.7071634,15z/data=!4m2!3m1!1s0x0:0xa5afb1ebf939a9e5';
@@ -178,7 +178,7 @@ const facts = ['3 dias', '4 aulas por dia', 'Do básico ao avançado', 'Butantã
   <section class="schedule wrap" id="grade" data-tabs>
     <div class="section-head">
       <h2 class="display" data-reveal>Grade</h2>
-      <p class="note"><span class="pill">Provisória</span> Ainda estamos ajustando as aulas e os professores de cada bloco. O que já vale: <strong>4 blocos por dia</strong>, parada de mão sempre na sua turma, e um fio que começa na base da sexta e termina no jam de domingo.</p>
+      <p class="note"><span class="pill">Provisória</span> Ainda estamos ajustando as aulas e os professores de cada bloco. O que já vale: <strong>4 blocos por dia</strong>, parada de mão sempre na sua turma, com professor e professores assistentes, e um fio que começa na base da sexta e termina no jam de domingo.</p>
     </div>
     <div class="days" role="tablist">
       {days.map((d, i) => (
@@ -291,7 +291,7 @@ const facts = ['3 dias', '4 aulas por dia', 'Do básico ao avançado', 'Butantã
         ))}
       </div>
       <a class="cta cta-dark" href={TICKETS} target="_blank" rel="noopener">Garantir vaga no 1º lote <span aria-hidden="true">→</span></a>
-      <p class="lote-foot">Passe completo para os 3 dias, {VAGAS} vagas no total. Quando as 10 do 1º lote acabarem, abre o 2º; depois das 30 do 2º, o 3º.</p>
+      <p class="lote-foot">Passe completo para os 3 dias, {VAGAS} vagas no total. Quando as 10 do 1º lote acabarem, abre o 2º; depois das 35 do 2º, o 3º.</p>
     </div>
   </section>
 </FestLayout>
