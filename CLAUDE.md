@@ -129,6 +129,11 @@ Always verify downloaded images are real (>5KB, not HTML redirects).
   feet sit top-centre (`fit()` in compositions.tsx); the T shape was narrowed for the same reason.
   Palette research (04/11/2026, Drive `pesquisas/paleta-festival-esporte.md`): B ranked first (energy, contrast,
   distance from Rosario), then D and C; A and F fail accent-on-stage contrast. Lime never sits on paper.
+  **Brand (Paulo, 10/11/2026): one brand only, HandstandFest.** No parent brand ("Handstand Lab" and "Casa do
+  Handstand" were studied and dropped, Drive `pesquisas/handstand-lab-nomes.md`); the same site and Instagram carry
+  articles, news and meetups between editions. Palette and logo are still open: `src/festival/MARCA.md` (pt-BR) is
+  the brand brief with every decision, the open questions and the prompt Paulo takes to other design tools (Astra).
+  Update it on every brand decision.
   Instagram: @handstandfest (profile not taken as of 04/11/2026; Paulo creates it). Domain: handstandfest.com.br
   (free on 04/11/2026, only via Registro.br; Cloudflare Registrar has no .br), .com/.org/.net also free.
   **Structure (04/11/2026):** four pages under `src/pages/festival/` sharing `src/layouts/FestLayout.astro`

@@ -60,6 +60,8 @@ long `sub` wraps. To check a piece: `/festival/instagram/?montar=1`, then in the
 
 ## Notes for the next pass (Paulo, 05/11/2026)
 
+Brand decisions and the open palette/logo questions live in `../MARCA.md` (10/11/2026).
+
 He found the pieces excellent. Two things to do when the palette closes and before any render, not now:
 - **Blown highlights** in some clips. Likely the HLG to SDR tone-map (`SDR` in `scripts/festival_ig_midia.py`:
   mobius, `npl=203`) on top of footage that is already backlit by the glass walls. Compare with the originals, try
