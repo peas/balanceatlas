@@ -4,7 +4,7 @@
 import FestLayout from '../../layouts/FestLayout.astro';
 import FestNav from '../../components/fest/FestNav.astro';
 import SobreTabs from '../../components/fest/SobreTabs.astro';
-import { TICKETS, QUANDO, faqFest } from '../../festival/data';
+import { TICKETS, TICKETS_ALVO, QUANDO, faqFest } from '../../festival/data';
 ---
 
 <FestLayout title="Sobre o evento · 1º HandstandFest" description="Quem faz o 1º HandstandFest, por que ele existe, para quem é e as perguntas mais comuns.">
@@ -54,6 +54,6 @@ import { TICKETS, QUANDO, faqFest } from '../../festival/data';
         <details data-reveal><summary>{f.q}</summary><p>{f.a}</p></details>
       ))}
     </div>
-    <a class="cta cta-ink" href={TICKETS} target="_blank" rel="noopener">Garanta sua vaga <span aria-hidden="true">→</span></a>
+    <a class="cta cta-ink" href={TICKETS} target={TICKETS_ALVO} rel="noopener">Garanta sua vaga <span aria-hidden="true">→</span></a>
   </section>
 </FestLayout>

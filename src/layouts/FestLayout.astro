@@ -2,7 +2,7 @@
 // Shared shell for /festival and its subpages (pt-BR, own identity; see CLAUDE.md "Hidden pages").
 // Head, fonts, global stylesheet, footer and the small page scripts.
 import '../festival/festival.css';
-import { TICKETS, FEST } from '../festival/data';
+import { TICKETS, TICKETS_ALVO, FEST, VENDA } from '../festival/data';
 import HFSelo from '../components/fest/HFSelo.astro';
 
 interface Props { title?: string; description?: string; stickyNav?: boolean }
@@ -29,13 +29,13 @@ const {
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body data-venda-abre={VENDA.abre}>
     <!-- Slim bar that slides in once the page header has scrolled away (inert while hidden) -->
     {stickyNav && <div class="stickybar" data-sticky inert>
       <a class="nav-logo" href="/festival/"><HFSelo tom="amarelo" simples class="selo-nav" /> HandstandFest</a>
       <a class="sb-link" href="/festival/sobre/">Sobre o evento</a>
       <a class="sb-link" href="/festival/handstand/">Sobre handstand</a>
-      <a class="nav-cta" href={TICKETS} target="_blank" rel="noopener">Garanta sua vaga</a>
+      <a class="nav-cta" href={TICKETS} target={TICKETS_ALVO} rel="noopener">Garanta sua vaga</a>
     </div>}
 
     <slot />
@@ -64,6 +64,10 @@ const {
           }),
         );
       });
+
+      // Ticket sales: before the opening time the page says "abre 18/11"; after it, the word in data-venda
+      if (Date.now() >= Date.parse(document.body.dataset.vendaAbre!))
+        document.querySelectorAll<HTMLElement>('[data-venda]').forEach((e) => (e.textContent = e.dataset.venda!));
 
       // Sticky bar: shown after the page header (hero or subpage head) leaves the viewport
       const bar = document.querySelector<HTMLElement>('[data-sticky]');

@@ -1,6 +1,6 @@
 ---
 // Top menu of the festival pages. `home`: sits over the hero (no logo); otherwise it opens a subpage header.
-import { TICKETS } from '../../festival/data';
+import { TICKETS, TICKETS_ALVO } from '../../festival/data';
 import HFSelo from './HFSelo.astro';
 
 interface Props { home?: boolean; current?: 'sobre' | 'handstand' | 'mundo' }
@@ -11,5 +11,5 @@ const { home = false, current } = Astro.props;
   <a class="nav-logo" href="/festival/" aria-label="HandstandFest"><HFSelo simples class="selo-nav" />{!home && ' HandstandFest'}</a>
   <a href="/festival/sobre/" aria-current={current === 'sobre' ? 'page' : undefined}>Sobre o evento</a>
   <a href="/festival/handstand/" aria-current={current === 'handstand' || current === 'mundo' ? 'page' : undefined}>Sobre handstand</a>
-  <a class="nav-cta" href={TICKETS} target="_blank" rel="noopener">Garanta sua vaga</a>
+  <a class="nav-cta" href={TICKETS} target={TICKETS_ALVO} rel="noopener">Garanta sua vaga</a>
 </nav>

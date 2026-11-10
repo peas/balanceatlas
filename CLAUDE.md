@@ -134,11 +134,14 @@ Always verify downloaded images are real (>5KB, not HTML redirects).
   articles, news and meetups between editions. Green/yellow and the brush-circle HF are now in use: `src/festival/MARCA.md` (pt-BR) is
   the brand brief with every decision, the open questions and the prompt Paulo takes to other design tools (Astra).
   Update it on every brand decision.
-  **Sympla linked (10/11/2026):** `TICKETS` = https://www.sympla.com.br/evento/handstand-fest/3650651 (older notes
-  calling it a placeholder are superseded). Open mismatches found that day, for Paulo and Gabriel to settle: Sympla
-  has ONE ticket ("Ingresso Promocional", 25 units, R$490 + R$49 fee paid by the buyer, sales shown as "Não
-  iniciado", ending 17/03/2027) while the site says three lots of 10/35/15 and "1º lote aberto"; Sympla ends Sunday
-  at 19h, the site at 17h; the payout registration (CPF/CNPJ) was still empty.
+  **Sympla (10/11/2026):** event https://www.sympla.com.br/evento/handstand-fest/3650651, edited that day to match
+  the site (name "1º HandstandFest · festival de parada de mão", Sunday ends 17h, description built from the site
+  copy, ticket renamed "1º lote", 10 units, R$490 + R$49 fee, sales 18/11/2026 14:21 to 17/03/2027). Saving it
+  without the payout registration (CPF/CNPJ, Gabriel's job) sent the event back to DRAFT, so the public URL is 404
+  and lots 2 and 3 cannot be created yet (Sympla opens the payout form instead of the ticket form). Until it is
+  published again `SYMPLA_NO_AR` in `data.ts` is false and every ticket button scrolls to `#ingressos`; flip it to
+  true afterwards. Then create "2º lote" (35, R$590) and "3º lote" (15, R$690) with "Por lote" (starts when the
+  previous one sells out). The site shows "abre 18/11" until `VENDA.abre` and switches to "aberto" in the browser.
   **Brush circle (Gabriel's idea, applied 10/11/2026):** HF on a painted circle, redrawn as vectors by
   `scripts/festival_pincel.py` (fixed seed → `src/festival/pincel.ts`, `public/festival/traco.svg`, favicon, avatar in
   `design/handstandfest-selo-06/`). Use it large and seldom: seal on the home hero (`HFSelo.astro`), one brush stroke

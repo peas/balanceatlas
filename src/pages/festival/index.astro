@@ -8,7 +8,7 @@ import FestNav from '../../components/fest/FestNav.astro';
 import FestPlayer from '../../festival/FestPlayer';
 import HFSelo from '../../components/fest/HFSelo.astro';
 import type { PosterProps } from '../../festival/compositions';
-import { TICKETS, FEST } from '../../festival/data';
+import { TICKETS, TICKETS_ALVO, FEST, VENDA } from '../../festival/data';
 
 const LOTES = [
   { n: '1º lote', price: 490, note: 'Primeiras 10 vagas', state: 'aberto' },
@@ -113,7 +113,7 @@ const facts = ['3 dias', '4 aulas por dia', 'Do básico ao avançado', 'Butantã
       </div>
       <div class="hero-actions">
         <a class="cta" href="#ingressos">Garantir vaga <span aria-hidden="true">→</span></a>
-        <a class="lote-pill" href="#ingressos"><i aria-hidden="true"></i>1º lote aberto · R$ 490 · 10 vagas</a>
+        <a class="lote-pill" href="#ingressos"><i aria-hidden="true"></i>1º lote <span data-venda="aberto">abre {VENDA.dia}</span> · R$ 490 · 10 vagas</a>
       </div>
     </div>
     <figure class="hero-media">
@@ -288,18 +288,18 @@ const facts = ['3 dias', '4 aulas por dia', 'Do básico ao avançado', 'Butantã
   <section class="signup grain" id="ingressos">
     <div class="wrap signup-inner">
       <p class="kicker">Ingressos · {FEST.dias[0]} — {FEST.dias[2]} · {FEST.mes} · {FEST.ano}</p>
-      <h2 class="display" data-reveal>Três lotes. Estamos no primeiro.</h2>
+      <h2 class="display" data-reveal>Três lotes. Começa pelo primeiro.</h2>
       <div class="lotes">
         {LOTES.map((l) => (
           <article class:list={['lote', l.state]} data-reveal>
             <span class="lote-bar" aria-hidden="true"><b></b></span>
-            <p class="lote-n">{l.n}{l.state === 'aberto' && <em><i aria-hidden="true"></i>agora</em>}</p>
+            <p class="lote-n">{l.n}{l.state === 'aberto' && <em><i aria-hidden="true"></i><span data-venda="agora">abre {VENDA.dia}</span></em>}</p>
             <p class="lote-price"><small>R$</small>{l.price}</p>
             <p class="lote-note">{l.note}</p>
           </article>
         ))}
       </div>
-      <a class="cta cta-dark" href={TICKETS} target="_blank" rel="noopener">Garantir vaga no 1º lote <span aria-hidden="true">→</span></a>
+      <a class="cta cta-dark" href={TICKETS} target={TICKETS_ALVO} rel="noopener">Garantir vaga no 1º lote <span aria-hidden="true">→</span></a>
       <p class="lote-foot">Passe completo para os 3 dias, {VAGAS} vagas no total. Quando as 10 do 1º lote acabarem, abre o 2º; depois das 35 do 2º, o 3º.</p>
     </div>
   </section>
