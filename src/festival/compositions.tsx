@@ -179,7 +179,6 @@ export const Hero = () => (
           : []),
       ])}
     </TransitionSeries>
-    <Grain />
     <StoryBars starts={HERO_STARTS} total={HERO_FRAMES} />
     <Chip text="Agustin Melesi" delay={6} style={{ top: 48, left: 24 }} />
   </AbsoluteFill>

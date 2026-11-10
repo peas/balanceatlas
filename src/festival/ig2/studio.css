@@ -1,0 +1,22 @@
+.ig2-library{min-width:0}
+.ig2-studio{display:grid;grid-template-columns:minmax(250px,.85fr) minmax(0,1.15fr);gap:clamp(30px,6vw,90px);align-items:start;padding:40px 0 80px;color:var(--stage)}
+.ig2-overline,.ig2-preview-head,.ig2-choice small,.ig2-number,.ig2-swatches small,.ig2-cues,.ig2-options,.ig2-slides,.ig2-notes dt{font-family:var(--mono);font-size:11px;font-weight:700;letter-spacing:.035em}
+.ig2-overline{margin:0 0 18px;text-transform:uppercase}
+.ig2-choices{border-top:1px solid var(--stage)}
+.ig2-choice{display:grid;grid-template-columns:28px 1fr 18px;align-items:center;gap:12px;width:100%;text-align:left;background:transparent;color:inherit;border:0;border-bottom:1px solid #0f3d3333;padding:20px 14px;cursor:pointer;transition:background .15s}
+.ig2-choice small{display:block;text-transform:uppercase;margin-bottom:5px;font-size:10px}
+.ig2-choice strong{font-family:var(--body);font-size:18px;line-height:1.2;display:block}
+.ig2-choice[aria-pressed=true]{background:var(--stage);color:var(--paper)}
+.ig2-choice[aria-pressed=true] .ig2-number{color:var(--accent)}
+.ig2-choice:hover:not([aria-pressed=true]){background:#0f3d330b}
+.ig2-direction{margin-top:45px;max-width:390px}.ig2-direction h2{font-family:var(--display);font-weight:900;font-stretch:125%;font-size:clamp(20px,2.3vw,29px);line-height:1.14;letter-spacing:-.035em;margin:0 0 15px}
+.ig2-direction p{font-family:var(--body);font-size:15px;line-height:1.7;margin:0;max-width:33ch}.ig2-swatches{display:flex;gap:6px;align-items:center;margin-top:25px}.ig2-swatches span{width:18px;height:18px;background:var(--stage)}.ig2-swatches span:nth-child(2){background:var(--accent)}.ig2-swatches span:nth-child(3){background:var(--paper);border:1px solid #0f3d3366}.ig2-swatches small{margin-left:8px;font-size:9px}
+.ig2-preview{min-width:0}.ig2-preview-head{display:flex;justify-content:space-between;gap:12px;text-transform:uppercase;border-bottom:1px solid #0f3d3333;padding-bottom:14px;line-height:1.6}
+.ig2-player-wrap{background:#e5e1d5;padding:24px;display:flex;justify-content:center;margin-top:20px}.ig2-player{width:100%;box-shadow:0 10px 28px #0f2a2414;background:var(--paper);overflow:hidden}.ig2-player p{padding:25px;font:14px var(--body)}
+.ig2-cues,.ig2-slides{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;align-items:center}.ig2-cues span{margin-right:8px;opacity:.7;font-size:10px}.ig2-cues button,.ig2-slides button{font:inherit;border:1px solid #0f3d3355;color:var(--stage);background:transparent;padding:8px 10px;cursor:pointer}.ig2-cues button:hover,.ig2-slides button:hover{background:var(--accent)}.ig2-slides button[aria-pressed=true]{background:var(--stage);color:var(--paper)}
+.ig2-options{display:flex;flex-wrap:wrap;align-items:center;gap:20px;margin-top:22px;padding-bottom:24px;border-bottom:1px solid #0f3d3333}.ig2-options label{display:flex;gap:10px;align-items:center}.ig2-options select{font:inherit;color:var(--stage);background:transparent;border:1px solid #0f3d3355;padding:10px;max-width:100%}.ig2-guides input{accent-color:var(--stage);width:16px;height:16px}
+.ig2-notes{padding-top:24px}.ig2-notes h2{font-size:21px;line-height:1.25;font-family:var(--body);font-weight:700;margin:0 0 12px}.ig2-notes p,.ig2-notes dd{font:15px/1.65 var(--body);margin:0}.ig2-notes dl{margin:20px 0 0;display:grid;gap:15px}.ig2-notes dt{text-transform:uppercase;opacity:.7;margin-bottom:4px}
+.ig2-studio button:focus-visible,.ig2-studio select:focus-visible,.ig2-studio input:focus-visible{outline:3px solid var(--stage);outline-offset:4px}
+@media(min-width:1000px){.ig2-library{position:sticky;top:90px}}
+@media(max-width:700px){.ig2-studio{grid-template-columns:minmax(0,1fr);gap:28px;padding-top:25px}.ig2-direction{display:none}.ig2-choices{display:flex;overflow:auto;scroll-snap-type:x mandatory;border-top:0;gap:8px;padding:0 0 8px}.ig2-choice{flex:0 0 210px;border:1px solid #0f3d3333;padding:14px;grid-template-columns:20px 1fr;scroll-snap-align:start}.ig2-choice>span:last-child{display:none}.ig2-choice strong{font-size:14px}.ig2-choice small{font-size:9px}.ig2-overline{margin-bottom:12px}.ig2-player-wrap{padding:0}.ig2-options{gap:14px}.ig2-options label{flex-wrap:wrap}.ig2-preview-head{font-size:10px}.ig2-cues{gap:6px}.ig2-cues button{padding:9px}.ig2-notes h2{font-size:20px}}
+@media(prefers-reduced-motion:reduce){.ig2-choice{transition:none}}

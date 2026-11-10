@@ -107,14 +107,17 @@ const facts = ['3 dias', '4 aulas por dia', 'Do básico ao avançado', 'Butantã
       </h1>
     </div>
     <div class="hero-info">
-      <p class="dates">Sex {FEST.dias[0]} · Sáb {FEST.dias[1]} · Dom {FEST.dias[2]} de {FEST.mes}</p>
-      <p class="place"><span>São Paulo</span> Brasil · 2027</p>
-      <a class="cta" href="#ingressos">Garantir vaga <span aria-hidden="true">→</span></a>
-      <a class="lote-pill" href="#ingressos"><i aria-hidden="true"></i>1º lote aberto · R$ 490 · 10 vagas</a>
+      <div class="hero-facts">
+        <p class="dates">Sex {FEST.dias[0]} · Sáb {FEST.dias[1]} · Dom {FEST.dias[2]} de {FEST.mes}</p>
+        <p class="place"><span>São Paulo</span> Brasil · 2027</p>
+      </div>
+      <div class="hero-actions">
+        <a class="cta" href="#ingressos">Garantir vaga <span aria-hidden="true">→</span></a>
+        <a class="lote-pill" href="#ingressos"><i aria-hidden="true"></i>1º lote aberto · R$ 490 · 10 vagas</a>
+      </div>
     </div>
     <figure class="hero-media">
       <HFSelo class="hero-selo" />
-      <span class="bar" aria-hidden="true"></span>
       <div class="stage">
         <img src="/festival/seg-1.webp" alt="Agustin Melesi em parada de mão" />
         <FestPlayer client:only="react" comp="hero" />

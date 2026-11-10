@@ -19,7 +19,7 @@ midia.json
   {"clips": [{"nome": "tour-vidro", "de": "img-3138", "ini": 0, "fim": 8, "w": 720, "som": false, "pose": false}],
    "fotos": [{"nome": "tv-palco.webp", "de": "fotos/trapezio-voador/PXL_20261104_173348522.jpg"}]}
   "de" = clip id of local/festival/manifest.json; "ini"/"fim" = seconds of the original.
-  Optional per clip: "crop": "iw:ih*0.8:0:ih*0.1" (ffmpeg crop on the upright frame, before scaling), "crf" (30).
+  Optional per clip: "crop": "iw:ih*0.8:0:ih*0.1" (ffmpeg crop on the upright frame, before scaling), "crf" (30), "h" (output height; default w * 16 / 9).
 
 Examples
   scripts/festival_ig_midia.py                 # whatever is missing
@@ -50,9 +50,10 @@ def run(cmd):
 
 def cut(c, src, out):
     w = c.get('w', 540)
+    h = c.get('h', w * 16 // 9)
     hdr = src.get('transfer') in ('arib-std-b67', 'smpte2084')
     crop = f"crop={c['crop']}," if c.get('crop') else ''
-    vf = f"{crop}scale={w}:{w * 16 // 9}:force_original_aspect_ratio=increase,crop={w}:{w * 16 // 9},{SDR if hdr else ''}format=yuv420p"
+    vf = f"{crop}scale={w}:{h}:force_original_aspect_ratio=increase,crop={w}:{h},{SDR if hdr else ''}format=yuv420p"
     audio = ['-c:a', 'aac', '-b:a', '96k', '-ac', '1'] if c.get('som') and src.get('audio') else ['-an']
     cor = ['-color_primaries', 'bt709', '-color_trc', 'bt709', '-colorspace', 'bt709'] if hdr else []
     run([FFULL, '-nostdin', '-v', 'error', '-y', '-ss', c['ini'], '-t', c['fim'] - c['ini'], '-i', LOCAL / src['local'],

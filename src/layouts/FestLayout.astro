@@ -5,8 +5,9 @@ import '../festival/festival.css';
 import { TICKETS, FEST } from '../festival/data';
 import HFSelo from '../components/fest/HFSelo.astro';
 
-interface Props { title?: string; description?: string }
+interface Props { title?: string; description?: string; stickyNav?: boolean }
 const {
+  stickyNav = true,
   title = '1º HandstandFest · São Paulo',
   description = `1º HandstandFest · 3 dias de parada de mão em São Paulo, ${FEST.dias[0]} a ${FEST.dias[2]} de ${FEST.mes} de ${FEST.ano}.`,
 } = Astro.props;
@@ -30,12 +31,12 @@ const {
   </head>
   <body>
     <!-- Slim bar that slides in once the page header has scrolled away (inert while hidden) -->
-    <div class="stickybar" data-sticky inert>
+    {stickyNav && <div class="stickybar" data-sticky inert>
       <a class="nav-logo" href="/festival/"><HFSelo tom="amarelo" simples class="selo-nav" /> HandstandFest</a>
       <a class="sb-link" href="/festival/sobre/">Sobre o evento</a>
       <a class="sb-link" href="/festival/handstand/">Sobre handstand</a>
       <a class="nav-cta" href={TICKETS} target="_blank" rel="noopener">Garanta sua vaga</a>
-    </div>
+    </div>}
 
     <slot />
 

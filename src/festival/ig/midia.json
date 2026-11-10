@@ -196,6 +196,40 @@
       "ini": 19.0,
       "fim": 27.2,
       "crop": "iw/2:ih/2:iw*0.18:ih*0.25"
+    },
+    {
+      "nome": "ig2-formas",
+      "de": "img-3144",
+      "ini": 5,
+      "fim": 24,
+      "crop": "iw:ih*0.68:0:ih*0.24",
+      "w": 720,
+      "h": 960
+    },
+    {
+      "nome": "ig2-pernas-l",
+      "de": "img-2387",
+      "ini": 23,
+      "fim": 36,
+      "crop": "iw:ih*0.72:0:ih*0.23",
+      "w": 720,
+      "h": 960
+    },
+    {
+      "nome": "ig2-press-parque",
+      "de": "img-2390",
+      "ini": 21,
+      "fim": 34,
+      "crop": "iw:ih*0.72:0:ih*0.23",
+      "w": 720,
+      "h": 960
+    },
+    {
+      "nome": "ig2-porta",
+      "de": "pxl-20261104_190908352",
+      "ini": 0.5,
+      "fim": 12,
+      "w": 720
     }
   ],
   "fotos": [
@@ -233,6 +267,33 @@
         "de": "pxl-20261104_183102030",
         "t": 33.0
       }
+    },
+    {
+      "nome": "ig2-estrela-aberta.webp",
+      "quadro": {
+        "de": "img-2381",
+        "t": 10
+      },
+      "crop": "iw:ih*0.62:0:ih*0.16",
+      "w": 1080
+    },
+    {
+      "nome": "ig2-estrela-reta.webp",
+      "quadro": {
+        "de": "img-2381",
+        "t": 6
+      },
+      "crop": "iw:ih*0.62:0:ih*0.16",
+      "w": 1080
+    },
+    {
+      "nome": "ig2-estrela-transicao.webp",
+      "quadro": {
+        "de": "img-2381",
+        "t": 4
+      },
+      "crop": "iw:ih*0.62:0:ih*0.16",
+      "w": 1080
     }
   ]
 }

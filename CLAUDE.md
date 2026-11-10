@@ -131,7 +131,7 @@ Always verify downloaded images are real (>5KB, not HTML redirects).
   distance from Rosario), then D and C; A and F fail accent-on-stage contrast. Lime never sits on paper.
   **Brand (Paulo, 10/11/2026): one brand only, HandstandFest.** No parent brand ("Handstand Lab" and "Casa do
   Handstand" were studied and dropped, Drive `pesquisas/handstand-lab-nomes.md`); the same site and Instagram carry
-  articles, news and meetups between editions. Palette and logo are still open: `src/festival/MARCA.md` (pt-BR) is
+  articles, news and meetups between editions. Green/yellow and the brush-circle HF are now in use: `src/festival/MARCA.md` (pt-BR) is
   the brand brief with every decision, the open questions and the prompt Paulo takes to other design tools (Astra).
   Update it on every brand decision.
   **Brush circle (Gabriel's idea, applied 10/11/2026):** HF on a painted circle, redrawn as vectors by
@@ -148,14 +148,14 @@ Always verify downloaded images are real (>5KB, not HTML redirects).
   `npl=100` + `tonemap=hable` (sky and glass walls keep detail), and the hero/teacher clips lost the old baked grade
   (`scripts/festival_clips.sh`; sources in `~/paulo.com.br-render/local/treinos/2026-10-11-gabriel/girados-hd/` and
   `~/Downloads`). The MediaPipe venv moved to `~/ciencia/tamanhodouniverso/.venv-rosto`.
-  **Applied on the site (10/11/2026):** only palettes E (green + yellow, default) and C (green + pink) remain in
+  **Earlier state, superseded by the closed palette and brush circle above:** only palettes E (green + yellow, default) and C (green + pink) remain in
   `festival.css` and in the switcher (`?paleta=e|c`); A/B/D/F/G are history in MARCA.md, so older notes in this file
   about seven palettes and "default B" are superseded. The HF symbol is `src/components/fest/HFMark.astro` (nav,
   sticky bar, footer, favicon, `Fecho` card of the Instagram kit). The hero and subpage headers are light (`.claro`,
   paper background, accent as a block behind the word, never as text on paper); `.grain` green stays for teachers,
   tickets and the sticky bar. Photo treatment is recorded but not applied yet. Only `design/handstandfest-logo-05/`
   is committed; rounds 01–04 (86 MB of boards) stay local and untracked.
-  Current direction (latest feedback, 10/11/2026): **original E (forest green/yellow) and C (forest green/pink)**.
+  Historical shortlist before the closed palette and brush circle: **original E (forest green/yellow) and C (forest green/pink)**.
   Paulo supplied screenshots of Gabriel's favorites and wants to follow them; no final choice between the two.
   Scope: logo and documentation only. `design/handstandfest-logo-05/` has the upright HF refinement with a shared
   crossbar and fixed 4:3 enclosure, SVG/PNG variants and before/after. Refined drawing pending review.
@@ -205,6 +205,14 @@ Always verify downloaded images are real (>5KB, not HTML redirects).
   creation date of the original recording, so wall-clock guesses were up to 70 s off: search wide (default 240 s),
   trust score ≥ 25, and check on frames. Paulo (05/11): on the long palm-tree take use only short cuts of figures
   already up, never the entries.
+- `/festival/instagram2` (10/11/2026): alternative proposal in `src/festival/ig2/`, alias `/instagram2/`.
+  Ten pieces using the current green/yellow brush-circle identity: 6 reels, two static 5-slide carousels and two story sequences (3 + 2 frames).
+  Single live Player, scene/slide navigation, photo-look override and safe-zone guides; existing instagram unchanged.
+  Paulo found the first typography too small: main info now 40–48 px, headlines mostly 80–125 px at 1080; review at
+  phone width. No added grain/music, text kept off bodies, dates from QUANDO. Details and checks in ig2/README.md.
+  New cuts/stills from five additional catalogue sources in `ig/midia.json`; carousels are images/text only, frozen with no video controls.
+  Publication authorized 10/11/2026 via GitHub Pages; no MP4 exports. Editorial research: KB `handstand-instagram-editorial-alem-evento.md` (24 ideas).
+  Global complementary playbooks: `~/.claude/skills/instagram-creation/SKILL.md` and `~/.claude/skills/videos-remotion/SKILL.md`.
 - `/festival/instagram` (working page, not in the menu, noindex): ten pieces as live Remotion compositions, not
   rendered (palette still open, so they follow the palette switcher). Contract and specs: `src/festival/ig/PECAS.md`;
   kit `kit.tsx` (safe zones with a toggle, `Gancho`, `Legenda`, `Esqueleto`, `DuasCameras`, `Fecho`...), one file per
@@ -231,3 +239,7 @@ Always verify downloaded images are real (>5KB, not HTML redirects).
 - The site has a `/faq` page explaining the community, how to contribute, etc.
 - Must include a question: "I'd like to remove a photo or my retreat/intensive, how do I do that?" → Answer: "Just send an email to paulo.silveira@gmail.com"
 - Contact email for removals: paulo.silveira@gmail.com
+
+## Festival refinement — 10 November 2026
+
+Paulo approved a small hierarchy/decoration pass alongside the Instagram proposal: mobile hero now places date/city above the video; desktop hierarchy is retained. Removed the external bar behind the hero video, seal drop shadow, animated hero grain and noise texture in green fields. Keep the seal, one brush highlight and real photography as the identity. Remaining ideas (not implemented): explicit pause/offscreen handling for other video surfaces, editorial links, branded social preview image. Ticket URL remains the pre-existing example.com placeholder; obtain the real destination before promoting ticket sales.

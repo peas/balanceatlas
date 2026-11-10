@@ -1,0 +1,70 @@
+# Instagram 02 — composition proposal
+
+Working route: `/festival/instagram2/`. `/instagram2/` redirects there. The original `/festival/instagram/` and its pieces are unchanged.
+
+## Direction
+
+This proposal follows the latest actual identity, not the previous palette studies: original E green/yellow, upright HF on Gabriel's painted circle. `../pincel.ts` is the source of the shapes; `Selo` from `../ig/kit.tsx` supplies the closing animation. One brush gesture per scene, stable typography, direct cuts, real footage. No artificial grain, sepia, music or added people.
+
+Ten selectable pieces, twenty-one preview units. The first five:
+
+- Together: 17.5 s reel, natural color → B&W → natural color, then 3.5 s closing card.
+- Venue: 14.5 s reel, three spaces, natural color/natural color/B&W, then closing card.
+- Line: 14.5 s reel, uncropped portrait in B&W; large headline above footage, then closing card.
+- Class: five 1080×1440 carousel slides. The question on slide 2 works independently as a second cover.
+- Encounter: three 1080×1920 story frames with date, place and invitation.
+
+Copy and factual statements come from `../ig/PECAS.md`, existing compositions and `../data.ts`; dates come from `QUANDO`. Speech clips were not reused, so all clips are muted. Venue statements retain the source trail of the existing venue piece. No new event or booking claims. Scenes are live previews, not finished MP4 exports.
+
+## Typography and safe areas
+
+Paulo's feedback during review: text looked too small. Layouts were reflowed, not simply magnified. Display headlines generally 80–125 px (the one-line room title is 75 px); main information is 40–48 px on a 1080-wide composition. Carousel counters are 26 px and its secondary kicker 36 px. Archivo 900 / 125% width, Space Mono for facts; fonts are awaited before first preview, with system fallback if loading fails.
+
+All essential reel text stays at x 65–950 and y 269–1500; stories x 65–1015 / y 250–1580; carousel x 60–1020 / y 60–1380. Shared safe-zone overlay distinguishes the conservative reel region from the harder lower limit. These are the project's conservative working guides, not a guarantee for every Instagram UI placement. Recheck the final export in the target app.
+
+Text and media windows are disjoint. `Line` contains the complete source portrait; the duet windows crop only roof/floor at reviewed moments. No overlay covers hands, feet or bodies. The three-line opening hooks allow bigger text without unintended line wraps. Read at phone width, not just full-size on a monitor.
+
+## Implementation
+
+- `kit.tsx`: layout primitives, one-stroke title reveal, media windows and closing card.
+- `pieces.tsx`: declarative durations, scenes, review cues and slide registry.
+- `Studio.tsx`: one mounted Player, piece/slide controls, jump-to-scene buttons, filter comparison and guide toggle.
+- `studio.css`: responsive workbench; horizontal selection strip on mobile.
+
+`direction` uses the selected look per scene. `cor`, `pb`, `cru` override only the photographic layer, keeping branding colored. `cru` means no extra CSS filter on the already tone-mapped SDR asset, not raw HDR. Reuse `LOOK` from the shared kit to stay aligned with the site. No new dependencies. New derivatives have distinct names and documented source times.
+
+## Validation
+
+Build with `npm run build`. Type-check with `./node_modules/.bin/tsc --noEmit`. The pre-existing generic transition error in `../compositions.tsx:178` also occurs before this work; no new TypeScript diagnostics were introduced.
+
+Browser review covered desktop and a 390 px mobile viewport, piece/slide switching, timeline cue seeks, filter override, guide toggle and playback. Rendered text bounds were checked in 19 scene/slide states for clipping, text/text collisions and intersections with media windows. Source clip duration limits were checked with ffprobe. The initial round was local only. This round is approved for publication through the existing GitHub Pages workflow.
+
+## Second round — 10 November 2026
+
+Paulo requested five more examples from unused footage, an editorial research track beyond the festival, and deployment. He explicitly prefers photo/text carousels, never video carousels. Both carousels in this proposal are now frozen compositions with no playback controls. `more-pieces.tsx` adds:
+
+| Piece | Format | Source / original seconds | Intent |
+| --- | --- | --- | --- |
+| Parada? Só no nome. | 16.5 s reel | img-3144, 5–18 shown (5–24 derivative) | One continuous sequence of changing shapes |
+| No mesmo ritmo | 15.5 s reel | img-2387, 23–35 shown (23–36 derivative) | Legs in L, B&W, real-time duet |
+| Antes de ficar no ar | 15.5 s reel | img-2390, 21–33 shown (21–34 derivative) | Entry and hold, no exercise prescription |
+| Pode entrar | Two 5.5 s stories | pxl-20261104_190908352, 0.5–11.5 shown | Door opening and venue interior |
+| Uma parada. Quantas formas? | Five static carousel images | img-2381, frames at 10 / 6 / 4 s | Observation prompts, open/joined legs and transition |
+
+All five source recordings are new to this proposal. None were used in its initial five pieces. The four video cuts and three stills are reproducible through `../ig/midia.json` and `scripts/festival_ig_midia.py --so NAME`; the cutter now accepts an optional output `h`, retaining the original default for older media. Real HDR material uses the existing SDR pipeline; clips are optimized H.264/faststart and stills are WebP. The new files total approximately 10.5 MB. Source provenance and people/restrictions are in `acervo/catalogo.yaml`; no 18 October group footage or child footage was added.
+
+The three educational reels close with an observation/community question, not festival dates or ticket sales. Their new copy is an original editorial draft based on visible footage, not an attributed quote or a promise about learning outcomes. The venue stories retain the established event facts. No audio was added.
+
+The new carousel uses full-image containment so no feet/hands are cropped. Each static slide wraps the composition in `Freeze frame={30}`. Do not disable the seal animation by passing `giro={0}`: that creates an invalid interpolation range. Keep a positive duration and freeze after completion.
+
+The workbench omits the public-site sticky ticket bar so it does not cover preview controls. Public festival pages retain their navigation.
+
+## Related editorial work
+
+The research note `handstand-instagram-editorial-alem-evento.md` lives in Paulo's research KB. It contains 24 sourced post ideas and distinguishes editorial hypotheses from verified claims. First candidates: shapes glossary, two views of one figure, wall as a tool, record versus daily practice, finding training partners. Instagram and Shorts access was limited; no viral-performance claims were made.
+
+The reusable playbooks are global: `~/.claude/skills/instagram-creation/SKILL.md` (content, formats, composition and review) and `~/.claude/skills/videos-remotion/SKILL.md` (technical implementation). They complement each other; local brand rules remain in MARCA.md.
+
+## Publication checks for the second round
+
+The 48-page production build passes. TypeScript still reports only the baseline generic TransitionSeries issue in `compositions.tsx:178`; the Instagram files introduce no new diagnostics. New scenes and all carousel slides were inspected with rendered font bounds, corrected line breaks, media duration probes and real playback (video readyState 4, advancing time). Static slides contain no video elements. Mobile 390px has no horizontal page overflow. The updated home hero was checked at 390px and 1280px; facts precede the video on mobile without colliding with the seal.

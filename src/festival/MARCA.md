@@ -3,7 +3,15 @@
 Em pt-BR, como o texto do festival: é o documento que o Paulo leva para outras ferramentas de design (Astra) e
 lê com o Gabriel. Atualizar aqui a cada decisão; o `CLAUDE.md` do repo aponta para cá.
 
-## Direção atual — revisão mais recente de 10/11/2026
+## Proposta de Instagram 02 — 10/11/2026
+
+Paulo pediu uma página alternativa combinando Remotion, tratamento de imagem, posição das frases e o novo selo de pincel. Proposta local em `/festival/instagram2/` (atalho `/instagram2/`), código e notas em `src/festival/ig2/`. Usa a **paleta verde/amarelo já fechada e o círculo de pincel atual**, sem redesenhar o logo.
+
+Cinco peças: três reels, um carrossel de cinco lâminas e três stories. Pincelada pontual na palavra, letras estáveis, selo animado no encerramento; cor natural e P&B por cena. Texto e imagem em áreas separadas, sem grão adicional ou música. Controles para comparar filtros, navegar pelos momentos e ver as áreas seguras. A `/instagram` original permanece disponível para comparação.
+
+**Feedback do Paulo durante a revisão:** a tipografia parecia pequena. Refeitas as quebras de linha; informações principais em 40–48 px e títulos geralmente em 80–125 px no arquivo de 1080. A peça “A linha” passou a ter título grande acima do vídeo, preservando o corpo inteiro. Proposta ainda em avaliação; sem publicar ou renderizar MP4 nesta etapa.
+
+## Histórico da seleção de paletas — rodada 5 de 10/11/2026
 
 Paulo enviou dois prints do site e disse: “essas duas versões são as que o Gabriel mais gostou” e “acho que vou tentar ir por aí mesmo”. Os seletores nos prints são **E (verde/amarelo)** e **C (verde/rosa)**, nas cores originais. Esta é a direção atual; as versões dessaturadas da rodada 4 ficam como exploração anterior. Ainda não houve escolha entre E e C.
 
@@ -269,3 +277,12 @@ Paulo pediu mais duas pranchas retomando paletas anteriores. Comentário mais re
 - **D ajustada / grafite + lavanda:** paper `#f0eeea`, ink e accent-ink `#27262e`, stage `#303038`, accent/live `#bdb1de`, muted `#c5c2cf`. Grafite no lugar do preto, lavanda no lugar do violeta elétrico, cinza lilás no lugar do verde-menta. Acento/stage 6,54:1; ink/paper 12,92:1.
 
 Pranchas em `design/handstandfest-identity-04/pranchas/`, com as mesmas aplicações e três fundos da rodada 3. São derivações das candidatas, não substituem seus tokens históricos. Nada aprovado ou publicado.
+
+
+## Refinamento aplicado e nova rodada de Instagram — 10/11/2026
+
+A pedido do Paulo: data/local antes do vídeo no celular; menos decoração concorrendo com o selo. Saíram a barra externa atrás do hero, a sombra do selo, o grão animado do hero e o ruído nos campos verdes. Letras, selo e pincelada seguem como identidade.
+
+A `/festival/instagram2/` passa a dez exemplos: mais três reels sobre a prática, dois stories de bastidor e um carrossel de cinco imagens estáticas. Cinco gravações adicionais do catálogo, sem repetir as fontes das primeiras peças. Carrosséis desta proposta são somente imagem e texto, inclusive na prévia; manter títulos grandes e reformular quebras antes de diminuir fonte.
+
+Aprendizado reutilizável fora desta marca: playbooks globais `instagram-creation` (conteúdo/composição/revisão) e `videos-remotion` (implementação técnica), complementares. Pesquisa de 24 pautas além do festival registrada na KB como `handstand-instagram-editorial-alem-evento.md`.
