@@ -2,7 +2,7 @@
 
 export const R2 ='https://media.balanceatlas.com/images/retreats';
 // Placeholder until the real ticketing link exists (Paulo, 29/10/2026: "link fake" for now)
-export const TICKETS = 'https://example.com/handstandfest-ingressos';
+export const TICKETS = 'https://www.sympla.com.br/evento/handstand-fest/3650651'; // Sympla event, created by Gabriel/Paulo (10/11/2026)
 
 // The festival dates live here only (pages, FAQ and Remotion compositions read these)
 export const FEST = { dias: [16, 17, 18], mes: 'abril', mesCurto: 'abr', ano: 2027 } as const;
