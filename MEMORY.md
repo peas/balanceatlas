@@ -1,5 +1,10 @@
 # Balance Atlas memory
 
+## 2026-11-10 — Brush seal traced from supplied reference
+
+- Paulo found the site's procedural brush too simple and requested an SVG matching a supplied richer brush-circle HF. Archived the source, true-vector transparent/cream SVGs and transparent PNG in `design/handstandfest-selo-07/`.
+- Reproducible via `scripts/festival_trace_seal.py` (ImageMagick + Potrace). Preserves dry-brush gaps and upright joined HF; uses current green/yellow. Flat pigment, no raster/paper texture embedded. Render inspected. Candidate only; live site's version 06 is unchanged.
+
 ## 2026-11-10 — Instagram gallery without selection clicks
 
 - Paulo wants all pieces listed like the original Instagram page. Replaced the one-player selector in instagram2 with a continuous gallery: all ten pieces and all 21 reel/story/carousel previews. Three columns desktop, one on phones; static carousel frames remain static.

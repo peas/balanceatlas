@@ -17,6 +17,15 @@ Paulo enviou dois prints do site e disse: “essas duas versões são as que o G
 
 Escopo desta revisão: **somente logo e registro**. HF em pé com moldura, refinado com barra central contínua, espessuras uniformes e proporção 4:3. O desenho refinado ainda é proposta para avaliação. Kit em `design/handstandfest-logo-05/`, com SVG/PNG, contorno, monocromático, assinaturas e comparação antes/depois. Edição permanece fora da marca. Site não alterado.
 
+## Pincelada vetorizada da referência — rodada 7, 10/11/2026
+
+Paulo considerou a pincelada do site simples demais e enviou uma referência com cerdas e falhas mais ricas.
+Vetor guardado em `design/handstandfest-selo-07/`: `hf-brush.svg` transparente, versão sobre creme e PNG.
+Contorno traçado da imagem com Potrace; HF reconstruído em um caminho geométrico com a barra contínua.
+Paleta atual verde/amarelo. Sem bitmap embutido: os vazios são transparência real. A granulação do papel e as
+variações de pigmento da referência não fazem parte deste SVG de duas cores. Referência e receita regenerável
+em `scripts/festival_trace_seal.py` guardadas no repo. Proposta arquivada; ainda não substitui o selo do site.
+
 ## Círculo de pincel — ideia do Gabriel, aplicada em 10/11/2026
 
 O Gabriel propôs o HF sobre um círculo pintado a pincel. Leitura do Paulo: as letras retas mantêm a força do
