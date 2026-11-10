@@ -1,6 +1,6 @@
 // Alternative Instagram direction. Keep the existing ig/ pieces unchanged.
 import type { CSSProperties, ReactNode } from 'react';
-import { AbsoluteFill, Easing, Html5Video, Img, interpolate, useCurrentFrame } from 'remotion';
+import { AbsoluteFill, Easing, Html5Video, Img, interpolate, useCurrentFrame, getRemotionEnvironment, staticFile } from 'remotion';
 import { ACCENT, CHALK, INK, MONO, STAGE, WIDE, LOOK, Quadro, Selo, f, type Formato, type Look } from '../ig/kit';
 import { BrushStroke } from '../Brush';
 import { QUANDO } from '../data';
@@ -29,10 +29,12 @@ export function Headline({ lines, x = 65, y = 290, size = 80, accentLine = -1, d
 export function Media({ src, photo = false, x = 65, y = 600, w = 885, h = 950, from = 0, treatment = 'direction', look = 'cor', contain = false }: {
   src: string; photo?: boolean; x?: number; y?: number; w?: number; h?: number; from?: number; treatment?: Treatment; look?: Look; contain?: boolean;
 }) {
+  const path = `/festival/ig/${src}${photo ? '' : '.mp4'}`;
+  const mediaUrl = getRemotionEnvironment().isPlayer ? path : staticFile(path);
   const filter = LOOK[treatment === 'direction' ? look : treatment];
   const style: CSSProperties = { width: '100%', height: '100%', objectFit: contain ? 'contain' : 'cover', objectPosition: '50% 50%', filter };
   return <div data-ig2-media style={{ position: 'absolute', left: x, top: y, width: w, height: h, overflow: 'hidden', background: contain ? 'transparent' : STAGE }}>
-    {photo ? <Img src={`/festival/ig/${src}`} alt="" style={style} /> : <Html5Video src={`/festival/ig/${src}.mp4`} trimBefore={f(from)} muted pauseWhenBuffering style={style} />}
+    {photo ? <Img src={mediaUrl} alt="" style={style} /> : <Html5Video src={mediaUrl} trimBefore={f(from)} muted pauseWhenBuffering style={style} />}
   </div>;
 }
 export function Facts({ y = 505, dark = false }: { y?: number; dark?: boolean }) {

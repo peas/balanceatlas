@@ -319,3 +319,16 @@ letras em curvas, WebPs para comparação; receita em `scripts/festival_shirts.p
 Pinceladas devem acompanhar ou suceder o texto, nunca surgir como faixa vazia. Nos pôsteres, esperar o nome
 entrar e recolorir as letras acompanhando o avanço do pincel; no Instagram 2, texto no frame 0 e pincel a partir
 do frame 5. O kit original mantém texto e faixa no mesmo transform de entrada/saída.
+
+
+### Camisetas — segunda rodada, 10/11/2026
+
+Paulo pediu duas composições sem data/ano: (04) três figuras de frente — reta, straddle e one arm — ao lado do HF, com HAND / STAND / FEST.com.br nas costas; (05) apenas HF no peito e as três figuras + handstandfest.com.br nas costas. `.com.br` em minúsculas e amarelo junto ao FEST creme. Mantidas três poses para não apertar a leitura. Proposta 05 é a preferência do assistente, não aprovação final. SVGs com letras em curvas, WebPs ilustrados, fontes/prompt e receita no diretório `design/handstandfest-camisetas/`; página mostra novas primeiro e estudos anteriores abaixo.
+
+
+### Selo pintado — aprovado por Paulo, 10/11/2026
+
+Paulo gostou do logo sendo pincelado/pintado nos Reels e vídeos. Manter como assinatura de movimento. A pintura pode ocorrer junto à entrada do texto e de outros elementos quando precisamos de velocidade, sem esperar a conclusão do selo para começar a leitura. Não confundir com grifo de título: o grifo acompanha a palavra ou vem depois, nunca antes. Preferência registrada também nos playbooks globais instagram-creation e videos-remotion.
+
+
+Paulo rejeitou duas versões do one arm: a transferência de peso precisa ser real, com quadril sobre o apoio e inclinação correspondente do tronco. Pediu uma referência de handbalancer conhecido. A terceira proposta parte da posição observada numa foto de Nicolás Montes de Oca publicada pelo Guinness; primeira e segunda silhuetas preservadas. Fonte/prompt registrados no README das camisetas; imagem de referência fora do Git e fora do site.

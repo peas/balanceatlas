@@ -5,12 +5,17 @@ Illustrated garment mockups, not official Insider product photography or product
 Run with a Python environment containing fonttools; no dependencies added to the website.
 """
 from pathlib import Path
+import argparse
 import copy
+import tempfile
 import subprocess
 import xml.etree.ElementTree as ET
 from fontTools.ttLib import TTFont
 from fontTools.pens.svgPathPen import SVGPathPen
 
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument('--trace-front', action='store_true', help='Retrace the three front-view figures from the saved generated source PNG (requires Potrace).')
+args = parser.parse_args()
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'public/festival/camisetas'
 OUT.mkdir(parents=True, exist_ok=True)
@@ -21,6 +26,29 @@ glyphs = font.getGlyphSet()
 cmap = font.getBestCmap()
 cap = font['OS/2'].sCapHeight
 
+# Normalize all three figures to the same scale and palm baseline, preserving proportions.
+if args.trace_front:
+    with tempfile.TemporaryDirectory() as temp:
+        for name, left, width in [('straight',0,350),('straddle',350,700)]:
+            pbm, traced = Path(temp)/'pose.pbm', Path(temp)/'pose.svg'
+            source_name = 'silhouettes-front-source.png'
+            subprocess.run(['magick',str(ROOT/'design/handstandfest-camisetas'/source_name),'-crop',f'{width}x887+{left}+0','+repage','-alpha','extract','-negate','-threshold','50%',str(pbm)],check=True)
+            subprocess.run(['potrace',str(pbm),'-s','-o',str(traced),'--turdsize','5','--opttolerance','0.3'],check=True)
+            tree = ET.parse(traced).getroot()
+            group = tree.find(NS+'g')
+            scale = 400/887
+            body = ET.tostring(group,encoding='unicode')
+            (ROOT/f'design/handstandfest-camisetas/{name}-master.svg').write_text(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width*scale:.6f} 400"><g transform="scale({scale})">{body}</g></svg>')
+
+        # Final one-arm comes from a real pose reference, not the rejected sheet versions.
+        subprocess.run(['magick',str(ROOT/'design/handstandfest-camisetas/one-arm-reference-source.png'),'-alpha','extract','-negate','-threshold','50%','-trim','+repage','-bordercolor','white','-border','8',str(pbm)],check=True)
+        subprocess.run(['potrace',str(pbm),'-s','-o',str(traced),'--turdsize','5','--opttolerance','0.3'],check=True)
+        tree = ET.parse(traced).getroot()
+        _,_,width,height = map(float,tree.get('viewBox').split())
+        scale = 285/height
+        body = ET.tostring(tree.find(NS+'g'),encoding='unicode')
+        (ROOT/'design/handstandfest-camisetas/one-arm-master.svg').write_text(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width*scale+12:.6f} 400"><g transform="translate(6 97) scale({scale})">{body}</g></svg>')
+
 # AI-generated illustration, reviewed then traced; master retains real transparency.
 PROFILE = ET.parse(ROOT / 'design/handstandfest-camisetas/handstand-profile-master.svg').getroot()
 
@@ -30,6 +58,33 @@ def silhouette(x, y, height, color=CREAM):
         if 'fill' in el.attrib: el.set('fill', color)
     group.set('fill', color)
     return f'<g transform="translate({x} {y}) scale({height/400})">'+ET.tostring(group,encoding='unicode')+'</g>'
+
+def trio(x, y, width, color=CREAM):
+    # The wider poses retain the same anatomical scale as the straight handstand.
+    content, cursor = [], 0
+    for name in ['straight','straddle','one-arm']:
+        root = ET.parse(ROOT/f'design/handstandfest-camisetas/{name}-master.svg').getroot()
+        group = copy.deepcopy(root.find(NS+'g'))
+        for el in group.iter():
+            if 'fill' in el.attrib: el.set('fill', color)
+        group.set('fill', color)
+        content.append(f'<g transform="translate({cursor} 0)">'+ET.tostring(group,encoding='unicode')+'</g>')
+        cursor += float(root.get('viewBox').split()[2]) + 14
+    return f'<g transform="translate({x} {y}) scale({width/(cursor-14)})">'+''.join(content)+'</g>'
+
+def advance(text):
+    return sum(glyphs[cmap[ord(c)]].width for c in text)
+
+def domain_stack(x, y, width):
+    scale = width/advance('STAND')
+    result = stack(x,y,width)
+    suffix_x = x + advance('FEST')*scale + 7
+    suffix_scale = (x + width - suffix_x)/advance('.com.br')
+    baseline = y + 2*cap*scale*1.12 + cap*scale
+    return result + word('.com.br',suffix_x,baseline-cap*suffix_scale,suffix_scale,YELLOW)
+
+def domain(x,y,width):
+    return word('handstandfest.com.br',x,y,width/advance('handstandfest.com.br'),YELLOW)
 
 def word(word, x, y, scale, color):
     paths, pos = [], 0
@@ -59,6 +114,10 @@ def svg(body, box='0 0 400 500', title='HandstandFest — print study'):
     return f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="{box}" role="img"><title>{title}</title>{body}</svg>'
 
 art = {
+    ('04','front'): trio(0, 50, 290) + seal(313, 99, 78),
+    ('04','back'): domain_stack(20, 55, 360),
+    ('05','front'): seal(270, 40, 86),
+    ('05','back'): trio(0, 40, 400) + domain(22, 255, 356),
     ('01','front'): seal(270, 40, 86),
     ('01','back'): stack(20, 80, 265) + silhouette(305, 48, 295, YELLOW),
     ('02','front'): silhouette(120, 15, 365) + stack(215, 255, 155, (YELLOW, YELLOW, YELLOW)),
@@ -90,4 +149,5 @@ for (number, side), body in art.items():
     rendered = subprocess.run(['rsvg-convert','-w','1200','-h','1440',str(path)], capture_output=True, check=True)
     subprocess.run(['magick','png:-','-quality','88',str(path.with_suffix('.webp'))], input=rendered.stdout, check=True)
 (OUT/'handstand-profile.svg').write_text(svg(silhouette(0,0,400), '0 0 110 400', 'Handstand — perfil'))
-print('Generated 3 front/back studies, print-art SVGs and profile silhouette.')
+(OUT/'handstand-trio.svg').write_text(svg(trio(0,0,800), '0 0 800 400', 'Handstand — reta, straddle e one arm'))
+print(f'Generated {len(art)//2} front/back studies, print-art SVGs, profile and trio silhouettes.')

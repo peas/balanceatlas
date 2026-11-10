@@ -58,6 +58,21 @@ function Line(p: PieceProps) {
     <Sequence from={f(11)} durationInFrames={f(3.5)}><EndCard {...p} cta="Básico · intermediário · avançado" /></Sequence>
   </>;
 }
+// Same reviewed crop as Line: img-3177, child outside the frame; the ball enters near source 9 s.
+function Football(p: PieceProps) {
+  return <>
+    <Sequence durationInFrames={f(10)}><Canvas {...p}>
+      <Sequence durationInFrames={f(5.5)} layout="none">
+        <Headline lines={['Gosta de', 'futebol?']} size={105} accentLine={1} />
+      </Sequence>
+      <Sequence from={f(5.5)} layout="none">
+        <Headline lines={['Aqui a mão', 'não é falta.']} size={89} accentLine={1} />
+      </Sequence>
+      <Media src="mural-reta" from={3.4} x={65} y={610} w={885} h={960} contain {...p} />
+    </Canvas></Sequence>
+    <Sequence from={f(10)} durationInFrames={f(3.5)}><EndCard {...p} cta="Vem fazer handstand!" /></Sequence>
+  </>;
+}
 function ClassCover(p: PieceProps) {
   return <Canvas {...p} format="card"><Headline lines={['Qual é', 'a sua turma?']} y={105} size={91} accentLine={1} />
     <Label y={340} size={40}>{QUANDO.toUpperCase()} · SÃO PAULO</Label>
@@ -115,6 +130,7 @@ export const PIECES: Piece[] = [
   { id: 'junto', title: 'Gente para treinar junto', format: 'Reel', description: 'O treino ocupa a imagem. As frases têm um espaço próprio, acima do corpo.', look: 'Cor → P&B → cor', movement: 'Uma pincelada revela a palavra. Cortes entre câmeras e selo no encerramento.', slides: [slide('Treinar junto', Together, 17.5, 1920, [{label:'Abertura',frame:0},{label:'P&B',frame:f(6)},{label:'Encontro',frame:f(11)},{label:'Selo',frame:f(15.5)}])] },
   { id: 'lugar', title: 'É aqui', format: 'Reel', description: 'Um passeio pelo Trapézio Voador com espaço para olhar a arquitetura.', look: 'Cor → cor → P&B', movement: 'Títulos assentados na mesma linha. O pincel aparece na abertura e no selo final.', slides: [slide('O lugar', Venue, 14.5, 1920, [{label:'Fachada',frame:24},{label:'Vidro',frame:f(5)},{label:'Palco',frame:f(8.5)},{label:'Selo',frame:f(12.5)}])] },
   { id: 'linha', title: 'É muito mais do que parece', format: 'Reel', description: 'Um plano sem corte para acompanhar o equilíbrio. Título grande acima, corpo inteiro abaixo.', look: 'Preto e branco', movement: 'O gesto da pessoa faz o movimento. As frases ocupam a largura de leitura, sempre fora da imagem.', slides: [slide('A linha', Line, 14.5, 1920, [{label:'Pergunta',frame:24},{label:'Resposta',frame:f(6)},{label:'Selo',frame:f(12.5)}])] },
+  { id: 'futebol', title: 'Gosta de futebol?', format: 'Reel', description: 'A bola entra no treino e vira a piada: “Aqui a mão não é falta.” Uma versão bem-humorada do vídeo do mural.', look: 'Cor natural', movement: 'O plano segue sem corte até a descida. A resposta acompanha a entrada da bola; convite no fecho.', slides: [slide('Aqui a mão não é falta', Football, 13.5, 1920, [{label:'Pergunta',frame:0},{label:'A bola',frame:f(6.3)},{label:'Convite',frame:f(11)}])] },
   { id: 'turma', title: 'Qual é a sua turma?', format: 'Carrossel', description: 'Cinco lâminas. A segunda também funciona como capa e a informação fica fora da foto.', look: 'Cor com P&B pontual', movement: 'Leitura calma, uma palavra marcada e fechamento com o círculo de pincel.', slides: [slide('Capa',ClassCover,4,1440),slide('A pergunta',ClassQuestion,4,1440),slide('Básico',Basic,5,1440),slide('Inter e avançado',Advanced,5,1440),slide('Encontro',ClassEnd,4,1440)] },
   { id: 'encontro', title: 'Três dias em São Paulo', format: 'Stories', description: 'Data, lugar e convite em três quadros. Sem barras falsas de story nem música embutida.', look: 'Cor natural suavizada', movement: 'A pintura entra uma vez. O selo resolve o último quadro.', slides: [slide('A data',StoryDate,4),slide('O lugar',StoryPlace,4),slide('O convite',StoryEnd,4)] },
   ...MORE_PIECES,

@@ -90,3 +90,19 @@ Gallery implementation: commit `71a5933`, published successfully by [GitHub Acti
 ## Shared brush identity — version 07
 
 The site and both Instagram kits now use the traced version 07 master. `../Brush.tsx` renders the shared horizontal mark derived from that circle's edges; `Selo` uses the full traced silhouette and a separate HF path. Generation and responsive PNG/WebP assets are documented in `design/handstandfest-selo-07/README.md`. Composition timing, safe areas and gallery behavior are retained.
+
+## Football variant and capture planning (10 November 2026)
+
+Paulo requested a joke using the ball in the mural handstand. Piece `futebol` adds a 13.5-second Reel: “Gosta de futebol?” → “Aqui a mão não é falta.” → “Vem fazer handstand!”. It reuses `mural-reta` (catalogue img-3177, existing crop excludes the child), starting at 3.4 s for 10 s, then a 3.5 s end card. No new derivative or soundtrack. The source ball enters around 9 s, close to the 5.5 s headline change. This is a humorous variant, not a new source or a claim that handstand trains football skills. Gallery now has 11 pieces and 22 previews.
+
+[PAUTAS.md](PAUTAS.md) is the editable production companion to the existing research: 24 ideas with suggested archive footage/photos, new-shot briefs, candidate catalogue IDs where known, and blank file/timecode fields. It includes the original sourced editorial table. No new technical exercise claims or viral metrics were added. The research KB remains the reference; this repository file tracks material selection and was opened in VS Code at Paulo's request.
+
+## MP4 export (10 November 2026)
+
+`python scripts/festival_render.py futebol formas` prepares an isolated public directory, local licensed Archivo/Space Mono fonts, and the site's actual root CSS tokens, bundles once, and renders the registered Reel IDs. CLI dependency is pinned to the same Remotion version as the Player (4.0.534). `render.tsx` registers the shared compositions, waits for fonts, and keeps guides disabled. `Media` uses the page URL in Player and `staticFile()` in offline render. No copied composition or separate copy/animation fork.
+
+1080×1920, 30 fps, H.264 CRF 18, BT.709, PNG frame capture, concurrency 2, faststart. MP4s and staged render CSS/assets remain under gitignored `local/festival/`. Font sources and licenses are committed in `design/fonts/`. No soundtrack added. The script has `--help` and `--output-dir`; it does not send files or publish anything.
+
+Paulo explicitly requested the football Reel and another one via Faisca/Telegram. Exported “Gosta de futebol?” (13.5 s, 3.4 MB) and “Parada? Só no nome.” (16.5 s, 2.2 MB), reviewed frame sheets and metadata, then sent as original MP4 documents through his configured Faisca bot. No Telegram token or recipient data belongs in this repository.
+
+Rendering documentation: [Remotion CLI](https://www.remotion.dev/docs/render) and [public directory](https://www.remotion.dev/docs/options/public-dir). A normal `npm run build` does not render videos; CLI-only entry is not imported into Astro pages.

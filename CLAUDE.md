@@ -161,7 +161,7 @@ Always verify downloaded images are real (>5KB, not HTML redirects).
   **Legacy cleanup (Paulo, 10/11/2026):** removed obsolete logo kits 05/06, HFMark, the procedural generator,
   old favicon and old stroke from the current tree. Prior tracked versions remain recoverable in Git history;
   untracked rounds 01–04 were moved outside the repository. Version 07 is the only active logo master.
-  **Shirts:** `/festival/camisetas/` lists three timeless front/back proposals, using the HF, stacked name and
+  **Shirts:** `/festival/camisetas/` lists five timeless front/back proposals. New 04/05 lead with three front-view figures (straight/straddle/one-arm) and lowercase handstandfest.com.br; 01–03 below use the HF, stacked name and
   an original side-profile handstand silhouette. Illustrated crewneck mockups reference Insider Nori Green;
   exact fabric color/printing require a physical sample. No dates, years or city on the prints.
   `scripts/festival_shirts.py` regenerates outlined SVG print artwork and WebP mockups with fonttools + librsvg;
@@ -207,13 +207,13 @@ Always verify downloaded images are real (>5KB, not HTML redirects).
   trust score ≥ 25, and check on frames. Paulo (05/11): on the long palm-tree take use only short cuts of figures
   already up, never the entries.
 - `/festival/instagram2` (10/11/2026): alternative proposal in `src/festival/ig2/`, alias `/instagram2/`.
-  Ten pieces using the current green/yellow brush-circle identity: 6 reels, two static 5-slide carousels and two story sequences (3 + 2 frames).
-  Continuous gallery requested by Paulo: all 10 pieces and 21 previews are listed, including every carousel/story frame.
+  Eleven pieces using the current green/yellow brush-circle identity: 7 reels, two static 5-slide carousels and two story sequences (3 + 2 frames).
+  Continuous gallery requested by Paulo: all 11 pieces and 22 previews are listed, including every carousel/story frame.
   Players mount automatically near the viewport and pause offscreen; shared photo-look override and safe-zone guides. Existing instagram unchanged.
   Paulo found the first typography too small: main info now 40–48 px, headlines mostly 80–125 px at 1080; review at
   phone width. No added grain/music, text kept off bodies, dates from QUANDO. Details and checks in ig2/README.md.
   New cuts/stills from five additional catalogue sources in `ig/midia.json`; carousels are images/text only, frozen with no video controls.
-  Publication authorized 10/11/2026 via GitHub Pages; no MP4 exports. Editorial research: KB `handstand-instagram-editorial-alem-evento.md` (24 ideas).
+  Publication authorized 10/11/2026 via GitHub Pages. MP4 export: `python scripts/festival_render.py futebol formas` (CLI pinned 4.0.534, shared compositions, local fonts and site tokens, files in gitignored local/festival/renders). First two exports sent to Paulo via Faisca on explicit request. Editorial research: KB `handstand-instagram-editorial-alem-evento.md` (24 ideas). Editable shot planning in `src/festival/ig2/PAUTAS.md` (archive candidates, new photos/videos, file/timecode fields). Football variant `futebol` reuses the reviewed mural crop; no new source.
   Global complementary playbooks: `~/.claude/skills/instagram-creation/SKILL.md` and `~/.claude/skills/videos-remotion/SKILL.md`.
 - `/festival/instagram` (working page, not in the menu, noindex): ten pieces as live Remotion compositions, not
   rendered (palette still open, so they follow the palette switcher). Contract and specs: `src/festival/ig/PECAS.md`;
