@@ -6,6 +6,7 @@
 import FestLayout from '../../layouts/FestLayout.astro';
 import FestNav from '../../components/fest/FestNav.astro';
 import FestPlayer from '../../festival/FestPlayer';
+import HFSelo from '../../components/fest/HFSelo.astro';
 import type { PosterProps } from '../../festival/compositions';
 import { TICKETS, FEST } from '../../festival/data';
 
@@ -112,7 +113,7 @@ const facts = ['3 dias', '4 aulas por dia', 'Do básico ao avançado', 'Butantã
       <a class="lote-pill" href="#ingressos"><i aria-hidden="true"></i>1º lote aberto · R$ 490 · 10 vagas</a>
     </div>
     <figure class="hero-media">
-      <span class="hbar" aria-hidden="true"></span>
+      <HFSelo class="hero-selo" />
       <span class="bar" aria-hidden="true"></span>
       <div class="stage">
         <img src="/festival/seg-1.webp" alt="Agustin Melesi em parada de mão" />

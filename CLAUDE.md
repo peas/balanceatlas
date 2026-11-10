@@ -134,6 +134,11 @@ Always verify downloaded images are real (>5KB, not HTML redirects).
   articles, news and meetups between editions. Palette and logo are still open: `src/festival/MARCA.md` (pt-BR) is
   the brand brief with every decision, the open questions and the prompt Paulo takes to other design tools (Astra).
   Update it on every brand decision.
+  **Brush circle (Gabriel's idea, applied 10/11/2026):** HF on a painted circle, redrawn as vectors by
+  `scripts/festival_pincel.py` (fixed seed → `src/festival/pincel.ts`, `public/festival/traco.svg`, favicon, avatar in
+  `design/handstandfest-selo-06/`). Use it large and seldom: seal on the home hero (`HFSelo.astro`), one brush stroke
+  behind a word per header (CSS mask), animated `Selo` in the `Fecho` card. Nav, sticky bar, footer, schedule and
+  buttons keep the rectangular `HFMark` and the hard geometry. Rules in MARCA.md.
   **Palette closed (Paulo, 10/11/2026): green + yellow only** (former E), tokens on `:root` in `festival.css`; the
   switcher and `?paleta=` are gone, so everything below about E/C or seven palettes is history. **Photo treatment
   applied by CSS** (no recuts): softened natural colour by default (`--foto-cor`), moderate black and white

@@ -9,6 +9,21 @@ Paulo enviou dois prints do site e disse: “essas duas versões são as que o G
 
 Escopo desta revisão: **somente logo e registro**. HF em pé com moldura, refinado com barra central contínua, espessuras uniformes e proporção 4:3. O desenho refinado ainda é proposta para avaliação. Kit em `design/handstandfest-logo-05/`, com SVG/PNG, contorno, monocromático, assinaturas e comparação antes/depois. Edição permanece fora da marca. Site não alterado.
 
+## Círculo de pincel — ideia do Gabriel, aplicada em 10/11/2026
+
+O Gabriel propôs o HF sobre um círculo pintado a pincel. Leitura do Paulo: as letras retas mantêm a força do
+handstand, e a tinta traz giro e equilíbrio, tirando o ar estático. A imagem dele era um mock-up em bitmap, então as
+formas foram redesenhadas em vetor por `scripts/festival_pincel.py` (semente fixa; gera `src/festival/pincel.ts`,
+`public/festival/traco.svg`, o favicon e `design/handstandfest-selo-06/avatar.svg` + PNG de 1080 para o Instagram).
+
+Regra de uso: **uma textura só, grande e rara.**
+- Círculo verde com HF amarelo é o selo principal: hero da home (colado no canto do vídeo), favicon (sem cerdas),
+  avatar. Círculo amarelo com HF verde vai sobre fundo escuro: cartão final das peças, onde o pincel dá um giro e as
+  letras pousam em cima (`Selo` no kit).
+- Uma pincelada amarela atrás de uma palavra por cabeçalho ("HAND" na home, segunda linha do título nas subpáginas).
+- Menu, barra fixa, rodapé, grade, ingressos e botões seguem com o HF no retângulo e a geometria reta.
+- Se o Gabriel mandar o arquivo original da pincelada, troca-se a forma no script e tudo acompanha.
+
 ## Palheta fechada e fotos tratadas — 10/11/2026 (decisão mais recente)
 
 - **Palheta fechada pelo Paulo: verde + amarelo** (a antiga E): paper `#f6f1e4`, ink `#0f2a24`, stage `#0f3d33`,

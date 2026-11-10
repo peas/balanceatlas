@@ -8,9 +8,10 @@
 //    come and go, the logo lives only on the end card
 //  - no music in the composition (it is added in the app at upload); voice and room sound only
 //  - overlays never cover the body of the person in the handstand (Paulo, 04/11/2026)
-import { useEffect, useState, type CSSProperties, type ReactNode } from 'react';
+import { useEffect, useId, useState, type CSSProperties, type ReactNode } from 'react';
 import {
   AbsoluteFill,
+  Easing,
   Html5Video,
   Img,
   continueRender,
@@ -21,6 +22,7 @@ import {
   useVideoConfig,
 } from 'remotion';
 import { ACCENT, ACCENT_INK, CHALK, Grain, INK, MONO, STAGE, WIDE } from '../compositions';
+import { CIRCULO, HF } from '../pincel';
 import { FEST } from '../data';
 
 export { ACCENT, ACCENT_INK, CHALK, Grain, INK, MONO, STAGE, WIDE };
@@ -360,20 +362,16 @@ export const Fecho = ({ cta = 'Link na bio', sub = '1º lote · R$ 490 · 10 vag
   return (
     <AbsoluteFill style={{ background: STAGE, color: CHALK }}>
       <div style={{ position: 'absolute', left: 65, top, transform: `translateY(${(1 - a) * 80}px)`, opacity: a }}>
-        <div style={{ display: 'flex', alignItems: 'stretch', gap: 16, marginBottom: 22 }}>
-          {/* HF symbol (design/handstandfest-logo-05): accent block, stage letters, fixed 4:3 */}
-          <svg viewBox="0 0 192 144" style={{ height: 132, display: 'block' }}>
-            <rect width="192" height="144" fill={ACCENT} />
-            <path d="M0 0 H18 V30 H38 V0 H56 V30 H72 V0 H132 V18 H90 V30 H120 V48 H90 V80 H72 V48 H56 V80 H38 V48 H18 V80 H0 Z" fill={STAGE} transform="translate(30,32)" />
-          </svg>
-          <div style={{ display: 'flex', alignItems: 'center', border: `6px solid ${ACCENT}`, color: ACCENT, ...WIDE, fontSize: 76, lineHeight: 1, padding: '8px 20px 0' }}>1º</div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 22, marginBottom: 26 }}>
+          <Selo size={170} />
+          <div style={{ border: `6px solid ${ACCENT}`, color: ACCENT, ...WIDE, fontSize: 76, lineHeight: 1, padding: '14px 20px 6px' }}>1º</div>
         </div>
         <div style={line}>Hand</div>
         <div style={{ ...line, color: ACCENT }}>stand</div>
         <div style={line}>Fest</div>
       </div>
       {/* one column, so a long `sub` wraps without running into the call to action */}
-      <div style={{ position: 'absolute', left: 65, top: top + 700, width: 900, display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 30 }}>
+      <div style={{ position: 'absolute', left: 65, top: top + 745, width: 900, display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 30 }}>
         <div style={{ fontFamily: MONO, fontWeight: 700, fontSize: 44, lineHeight: 1.28, textTransform: 'uppercase', transform: `translateX(${(1 - b) * -600}px)` }}>
           <div>{QUANDO_CURTO}</div>
           <div>São Paulo · Trapézio Voador</div>
@@ -384,6 +382,32 @@ export const Fecho = ({ cta = 'Link na bio', sub = '1º lote · R$ 490 · 10 vag
         </div>
       </div>
     </AbsoluteFill>
+  );
+};
+
+/** The HF letters on the painted circle (Gabriel's idea, 10/11/2026). The brush turns once (a wedge sweeps the
+ *  circle open over `giro` frames, starting at `from`), then the straight letters land on it. */
+export const Selo = ({ size = 230, from = 0, giro = 16 }: { size?: number; from?: number; giro?: number }) => {
+  const frame = useCurrentFrame();
+  const t = interpolate(frame, [from, from + giro], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic) });
+  const hf = interpolate(frame, [from + giro - 4, from + giro + 6], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.back(1.6)) });
+  // wedge from 10 o'clock, clockwise; points on a square larger than the box so the bristles are not clipped
+  const id = useId();
+  const pts = ['100,100'];
+  for (let i = 0; i <= 24; i++) {
+    const a = -2.5 + (Math.PI * 2 * t * i) / 24;
+    pts.push(`${100 + 160 * Math.cos(a)},${100 + 160 * Math.sin(a)}`);
+  }
+  return (
+    <svg viewBox="0 0 200 200" style={{ width: size, height: size, display: 'block', overflow: 'visible', flex: 'none' }}>
+      <clipPath id={id}><polygon points={pts.join(' ')} /></clipPath>
+      <g clipPath={t >= 1 ? undefined : `url(#${id})`}>
+        <path d={CIRCULO.corpo} fill={ACCENT} />
+        {CIRCULO.cerdas.map((c, i) => <path key={i} d={c.d} fill="none" stroke={ACCENT} strokeWidth={c.w} />)}
+        {CIRCULO.riscos.map((c, i) => <path key={i} d={c.d} fill="none" stroke={STAGE} strokeWidth={c.w} opacity={0.7} />)}
+      </g>
+      <path d={HF} fill={STAGE} opacity={Math.min(1, hf * 2)} transform={`translate(100,100) scale(${0.75 * hf}) translate(-66,-40)`} />
+    </svg>
   );
 };
 
