@@ -1,0 +1,97 @@
+[
+  {
+    "file": "logos/hf-e.svg",
+    "width": 768,
+    "height": 576
+  },
+  {
+    "file": "logos/hf-e-inverso.svg",
+    "width": 768,
+    "height": 576
+  },
+  {
+    "file": "logos/assinatura-e.svg",
+    "width": 1600,
+    "height": 400
+  },
+  {
+    "file": "logos/assinatura-e-negativa.svg",
+    "width": 1600,
+    "height": 400
+  },
+  {
+    "file": "logos/reducao-e-32.svg",
+    "width": 32,
+    "height": 24.0
+  },
+  {
+    "file": "logos/reducao-e-48.svg",
+    "width": 48,
+    "height": 36.0
+  },
+  {
+    "file": "logos/reducao-e-96.svg",
+    "width": 96,
+    "height": 72.0
+  },
+  {
+    "file": "logos/hf-c.svg",
+    "width": 768,
+    "height": 576
+  },
+  {
+    "file": "logos/hf-c-inverso.svg",
+    "width": 768,
+    "height": 576
+  },
+  {
+    "file": "logos/assinatura-c.svg",
+    "width": 1600,
+    "height": 400
+  },
+  {
+    "file": "logos/assinatura-c-negativa.svg",
+    "width": 1600,
+    "height": 400
+  },
+  {
+    "file": "logos/reducao-c-32.svg",
+    "width": 32,
+    "height": 24.0
+  },
+  {
+    "file": "logos/reducao-c-48.svg",
+    "width": 48,
+    "height": 36.0
+  },
+  {
+    "file": "logos/reducao-c-96.svg",
+    "width": 96,
+    "height": 72.0
+  },
+  {
+    "file": "logos/hf-contorno.svg",
+    "width": 768,
+    "height": 576
+  },
+  {
+    "file": "logos/hf-mono-preto.svg",
+    "width": 768,
+    "height": 576
+  },
+  {
+    "file": "logos/hf-mono-branco.svg",
+    "width": 768,
+    "height": 576
+  },
+  {
+    "file": "pranchas/01-logo-verde-amarelo-e-verde-rosa.svg",
+    "width": 2200,
+    "height": 1710
+  },
+  {
+    "file": "pranchas/02-antes-e-depois.svg",
+    "width": 1600,
+    "height": 970
+  }
+]

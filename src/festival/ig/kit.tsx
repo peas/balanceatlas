@@ -24,7 +24,7 @@ import { ACCENT, ACCENT_INK, CHALK, Grain, INK, MONO, STAGE, WIDE } from '../com
 import { FEST } from '../data';
 
 export { ACCENT, ACCENT_INK, CHALK, Grain, INK, MONO, STAGE, WIDE };
-export const LIVE = 'var(--live, var(--accent, #d7f55a))';
+export const LIVE = 'var(--live, var(--accent, #ffd23f))';
 
 export const FPS = 30;
 export const REEL = { w: 1080, h: 1920 }; // reels and stories
@@ -348,7 +348,14 @@ export const Fecho = ({ cta = 'Link na bio', sub = '1º lote · R$ 490 · 10 vag
   return (
     <AbsoluteFill style={{ background: STAGE, color: CHALK }}>
       <div style={{ position: 'absolute', left: 65, top, transform: `translateY(${(1 - a) * 80}px)`, opacity: a }}>
-        <div style={{ display: 'inline-block', background: ACCENT, color: ACCENT_INK, ...WIDE, fontSize: 76, lineHeight: 1, padding: '14px 22px 8px', marginBottom: 18 }}>1º</div>
+        <div style={{ display: 'flex', alignItems: 'stretch', gap: 16, marginBottom: 22 }}>
+          {/* HF symbol (design/handstandfest-logo-05): accent block, stage letters, fixed 4:3 */}
+          <svg viewBox="0 0 192 144" style={{ height: 132, display: 'block' }}>
+            <rect width="192" height="144" fill={ACCENT} />
+            <path d="M0 0 H18 V30 H38 V0 H56 V30 H72 V0 H132 V18 H90 V30 H120 V48 H90 V80 H72 V48 H56 V80 H38 V48 H18 V80 H0 Z" fill={STAGE} transform="translate(30,32)" />
+          </svg>
+          <div style={{ display: 'flex', alignItems: 'center', border: `6px solid ${ACCENT}`, color: ACCENT, ...WIDE, fontSize: 76, lineHeight: 1, padding: '8px 20px 0' }}>1º</div>
+        </div>
         <div style={line}>Hand</div>
         <div style={{ ...line, color: ACCENT }}>stand</div>
         <div style={line}>Fest</div>

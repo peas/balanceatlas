@@ -1,36 +1,14 @@
 /* 1º HandstandFest: shared styles for /festival and its subpages (imported by FestLayout.astro) */
-/* Palettes (Paulo + Gabriel compare live with ?paleta=a|b|c|d|e|f|g; default B)
-   A = the original orange + concrete, B = cobalt + lime, C = deep green + pink, D = black + violet,
-   E = C's green + sun yellow (Gabriel liked C; Paulo found it serious), F = a brighter green + coral */
-[data-paleta='a'] {
-  /* adjusted 04/11/2026: dark concrete instead of mid grey (accent contrast 1.5 → 5), red instead of Rosario's orange */
-  --paper: #f4f1ea; --ink: #151515; --stage: #222220; --white: #f4f1ea;
-  --accent: #ff3b30; --accent-ink: #151515; --muted: #8a8986;
-}
-:root:not([data-paleta]), [data-paleta='b'] {
-  --paper: #f2efe6; --ink: #111111; --stage: #2b3cf0; --white: #f2efe6;
-  --accent: #d7f55a; --accent-ink: #111111; --muted: #c9c5ba;
+/* Palettes (10/11/2026): the two with the deep green stage, the ones Gabriel liked and Paulo wants to follow.
+   E = green + sun yellow (default), C = green + pink; ?paleta=e|c and the switcher compare them until one is chosen.
+   The five dropped candidates (A, B, D, F, G) are recorded with their tokens in src/festival/MARCA.md. */
+:root, [data-paleta='e'] {
+  --paper: #f6f1e4; --ink: #0f2a24; --stage: #0f3d33; --white: #f6f1e4;
+  --accent: #ffd23f; --accent-ink: #0f2a24; --muted: #ffb86b;
 }
 [data-paleta='c'] {
   --paper: #f4f1ea; --ink: #0f2a24; --stage: #0f3d33; --white: #f4f1ea;
   --accent: #ff8fb8; --accent-ink: #0f2a24; --muted: #8ed8e8;
-}
-[data-paleta='d'] {
-  --paper: #edebe6; --ink: #0b0b0c; --stage: #0b0b0c; --white: #edebe6;
-  --accent: #7c5cff; --accent-ink: #ffffff; --muted: #5cf2b5;
-}
-[data-paleta='e'] {
-  --paper: #f6f1e4; --ink: #0f2a24; --stage: #0f3d33; --white: #f6f1e4;
-  --accent: #ffd23f; --accent-ink: #0f2a24; --muted: #ffb86b;
-}
-[data-paleta='f'] {
-  --paper: #f4f1ea; --ink: #0b2a21; --stage: #1b7a5a; --white: #f4f1ea;
-  --accent: #ff6a4d; --accent-ink: #0b2a21; --muted: #ffd9c9;
-}
-/* G = C with the research's fix: pink stays on titles and blocks, lime (9.9:1 on the green) takes the "live" cues */
-[data-paleta='g'] {
-  --paper: #f4f1ea; --ink: #0f2a24; --stage: #0f3d33; --white: #f4f1ea;
-  --accent: #ff8fb8; --accent-ink: #0f2a24; --muted: #8ed8e8; --live: #d7f55a;
 }
 :root {
   --max: 1120px; /* content width: wide screens get air instead of longer lines */
@@ -296,7 +274,7 @@ a { color: inherit; }
   .bento .large { grid-column: span 2; }
 }
 .paleta { position: fixed; left: 12px; bottom: 12px; z-index: 50; display: flex; align-items: center; gap: 6px; background: #fff; color: #111; border: 2px solid #111; padding: 6px 8px; font: 700 .72rem/1 var(--mono); text-transform: uppercase; }
-.paleta button { width: 26px; height: 26px; border: 2px solid #111; cursor: pointer; font: inherit; color: #111; background: var(--sw); }
+.paleta button { height: 26px; padding: 0 8px 0 30px; text-transform: uppercase; background-size: 22px 100% !important; background-repeat: no-repeat !important; border: 2px solid #111; cursor: pointer; font: inherit; color: #111; background: var(--sw) #fff; }
 .paleta button[aria-pressed='true'] { outline: 3px solid #111; outline-offset: 1px; }
 
 /* ---------- Subpages (04/11/2026): header, quem faz, more cards, world list ---------- */
@@ -444,3 +422,31 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .ig-card details p { margin-top: 10px; }
 .ig-card code { font-family: var(--mono); font-size: .72rem; word-break: break-word; }
 .ig-missing { font-family: var(--mono); font-size: .8rem; padding: 24px; border: 2px dashed var(--ink); }
+
+/* ---------- Light headers + HF symbol (10/11/2026) ----------
+   The hero and the subpage headers sit on paper, so the green stage is a moment (teachers, tickets, sticky bar,
+   video frames) instead of the whole site. An accent never works as text on paper: on light headers it becomes a
+   block behind the word. */
+.hf { display: block; height: 2.1em; width: auto; flex: none; }
+.nav-logo { display: inline-flex; align-items: center; gap: 10px; }
+.claro { color: var(--ink); background: var(--paper); }
+.claro .kicker, .hero.claro .kicker { color: var(--ink); }
+.claro .topnav a { color: var(--ink); }
+.claro .topnav a:hover, .claro .topnav a[aria-current='page'] { border-color: var(--ink); }
+.claro .topnav .nav-cta { background: var(--stage); color: var(--white); border-color: var(--stage); }
+.claro .topnav .nav-cta:hover { background: var(--accent); color: var(--accent-ink); border-color: var(--ink); }
+.claro .nav-logo b { color: inherit; }
+.hero.claro .logo { color: var(--stage); }
+.hero.claro .logo .l1, .page-head.claro h1 span { color: var(--stage); background: var(--accent); align-self: flex-start; width: fit-content; padding: .06em .12em 0; margin-left: -.12em; }
+.hero.claro .mark i { background: var(--stage); }
+.hero.claro .mark b { background: var(--stage); color: var(--accent); }
+.hero.claro .place span { color: inherit; font-weight: 700; }
+.hero.claro .cta { background: var(--stage); color: var(--white); }
+.hero.claro .cta:hover { background: var(--accent); color: var(--accent-ink); }
+.hero.claro .lote-pill { border: 2px solid var(--ink); }
+.hero.claro .lote-pill:hover { background: var(--stage); color: var(--white); }
+.hero.claro .hbar { background: var(--stage); }
+.page-head.claro { border-bottom: 3px solid var(--ink); }
+.page-head.claro h1 { color: var(--stage); }
+.foot { align-items: center; }
+.foot-logo { display: inline-flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 900; font-stretch: 125%; text-transform: uppercase; }

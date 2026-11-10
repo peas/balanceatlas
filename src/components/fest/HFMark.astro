@@ -1,0 +1,17 @@
+---
+// The HF symbol (upright H and F sharing one crossbar, inside a fixed 4:3 block). Drawing from the logo kit in
+// design/handstandfest-logo-05 (10/11/2026, still under review). Colours follow the palette tokens.
+// `tom`: "bloco" = stage block with accent letters (for light fields), "inverso" = accent block with stage letters
+// (for dark fields), "contorno" = outlined frame in the current text colour.
+interface Props { tom?: 'bloco' | 'inverso' | 'contorno'; class?: string }
+const { tom = 'bloco', class: cls } = Astro.props;
+const HF = 'M0 0 H18 V30 H38 V0 H56 V30 H72 V0 H132 V18 H90 V30 H120 V48 H90 V80 H72 V48 H56 V80 H38 V48 H18 V80 H0 Z';
+const bloco = tom === 'inverso' ? 'var(--accent)' : 'var(--stage)';
+const letra = tom === 'inverso' ? 'var(--stage)' : 'var(--accent)';
+---
+
+<svg class:list={['hf', cls]} viewBox="0 0 192 144" aria-hidden="true" focusable="false">
+  {tom === 'contorno'
+    ? <><rect x="3" y="3" width="186" height="138" fill="none" stroke="currentColor" stroke-width="6" /><path d={HF} fill="currentColor" transform="translate(30,32)" /></>
+    : <><rect width="192" height="144" fill={bloco} /><path d={HF} fill={letra} transform="translate(30,32)" /></>}
+</svg>

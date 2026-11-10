@@ -134,6 +134,26 @@ Always verify downloaded images are real (>5KB, not HTML redirects).
   articles, news and meetups between editions. Palette and logo are still open: `src/festival/MARCA.md` (pt-BR) is
   the brand brief with every decision, the open questions and the prompt Paulo takes to other design tools (Astra).
   Update it on every brand decision.
+  **Applied on the site (10/11/2026):** only palettes E (green + yellow, default) and C (green + pink) remain in
+  `festival.css` and in the switcher (`?paleta=e|c`); A/B/D/F/G are history in MARCA.md, so older notes in this file
+  about seven palettes and "default B" are superseded. The HF symbol is `src/components/fest/HFMark.astro` (nav,
+  sticky bar, footer, favicon, `Fecho` card of the Instagram kit). The hero and subpage headers are light (`.claro`,
+  paper background, accent as a block behind the word, never as text on paper); `.grain` green stays for teachers,
+  tickets and the sticky bar. Photo treatment is recorded but not applied yet. Only `design/handstandfest-logo-05/`
+  is committed; rounds 01–04 (86 MB of boards) stay local and untracked.
+  Current direction (latest feedback, 10/11/2026): **original E (forest green/yellow) and C (forest green/pink)**.
+  Paulo supplied screenshots of Gabriel's favorites and wants to follow them; no final choice between the two.
+  Scope: logo and documentation only. `design/handstandfest-logo-05/` has the upright HF refinement with a shared
+  crossbar and fixed 4:3 enclosure, SVG/PNG variants and before/after. Refined drawing pending review.
+  Rounds 03/04 remain historical PNG studies; muted C/sage and D/lavender are not the current direction.
+  Photo direction recorded at Paulo's request: softened natural color by default, moderate-contrast B&W as a
+  secondary treatment, approximately 2:1 as a flexible starting rhythm. Preserve skin/detail, keep brand accents
+  colored outside body zones; avoid sepia, strong duotone and visible grain. Full guidance in MARCA.md.
+  Interactive identity study (10/11/2026, round 02): `design/handstandfest-identity-02/index.html`, with SVG/PNG assets
+  and reproducible scripts. Paulo requested inverted F vs upright HF, a new palette, and a **less brutal/neon** tone.
+  More paper, smaller titles and natural-color photos; plum/butter/cream is compared with B. No final choice yet.
+  Round 01 remains at `design/handstandfest-identity-01/index.html`; its B/Apoio recommendation was not approved. Contrast audit:
+  A accent/stage is 4.493:1 (not the old 1.5); D white/accent is 4.346:1 and fails normal button text. Details in MARCA.md.
   Instagram: @handstandfest (profile not taken as of 04/11/2026; Paulo creates it). Domain: handstandfest.com.br
   (free on 04/11/2026, only via Registro.br; Cloudflare Registrar has no .br), .com/.org/.net also free.
   **Structure (04/11/2026):** four pages under `src/pages/festival/` sharing `src/layouts/FestLayout.astro`

@@ -22,9 +22,9 @@ export const H = 900;
 export const FPS = 30;
 
 // Colors come from the page's palette tokens (the Player renders in the page DOM).
-export const ACCENT = 'var(--accent, #d7f55a)';
+export const ACCENT = 'var(--accent, #ffd23f)';
 export const ACCENT_INK = 'var(--accent-ink, #111)';
-export const STAGE = 'var(--stage, #2b3cf0)';
+export const STAGE = 'var(--stage, #0f3d33)';
 export const CHALK = 'var(--white, #f2efe6)';
 export const INK = '#111111';
 export const DISPLAY = "'Archivo', 'Arial Black', sans-serif";

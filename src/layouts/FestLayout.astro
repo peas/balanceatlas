@@ -3,6 +3,7 @@
 // Head, palette tokens (?paleta=), fonts, global stylesheet, palette switcher, footer and the small page scripts.
 import '../festival/festival.css';
 import { TICKETS, FEST } from '../festival/data';
+import HFMark from '../components/fest/HFMark.astro';
 
 interface Props { title?: string; description?: string }
 const {
@@ -19,10 +20,11 @@ const {
     <meta name="robots" content="noindex, nofollow" />
     <meta name="description" content={description} />
     <title>{title}</title>
+    <link rel="icon" type="image/svg+xml" href="/festival/favicon.svg" />
     <script is:inline>
-      // ?paleta=a|b|c|d|e|f|g picks the palette (comparison while the identity is open); it sticks across pages
+      // ?paleta=e|c picks one of the two palettes still in play (E is the default); it sticks across pages
       const pal = new URLSearchParams(location.search).get('paleta') || sessionStorage.getItem('paleta');
-      if (pal) document.documentElement.dataset.paleta = pal;
+      document.documentElement.dataset.paleta = pal === 'c' ? 'c' : 'e';
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,7 +36,7 @@ const {
   <body>
     <!-- Slim bar that slides in once the page header has scrolled away (inert while hidden) -->
     <div class="stickybar" data-sticky inert>
-      <a class="nav-logo" href="/festival/"><b>1º</b> HandstandFest</a>
+      <a class="nav-logo" href="/festival/"><HFMark tom="inverso" /> HandstandFest</a>
       <a class="sb-link" href="/festival/sobre/">Sobre o evento</a>
       <a class="sb-link" href="/festival/handstand/">Sobre handstand</a>
       <a class="nav-cta" href={TICKETS} target="_blank" rel="noopener">Garanta sua vaga</a>
@@ -44,17 +46,13 @@ const {
 
     <div class="paleta" role="group" aria-label="Paleta">
       Paleta
-      <button data-p="a" style="--sw:linear-gradient(135deg,#222220 50%,#ff3b30 50%);color:#fff" aria-pressed="false">A</button>
-      <button data-p="b" style="--sw:#2b3cf0;color:#fff" aria-pressed="true">B</button>
-      <button data-p="c" style="--sw:#0f3d33;color:#f4f1ea" aria-pressed="false">C</button>
-      <button data-p="d" style="--sw:#7c5cff;color:#fff" aria-pressed="false">D</button>
-      <button data-p="e" style="--sw:linear-gradient(135deg,#0f3d33 50%,#ffd23f 50%);color:#fff" aria-pressed="false">E</button>
-      <button data-p="f" style="--sw:linear-gradient(135deg,#1b7a5a 50%,#ff6a4d 50%);color:#fff" aria-pressed="false">F</button>
-      <button data-p="g" style="--sw:linear-gradient(135deg,#0f3d33 50%,#ff8fb8 50%,#ff8fb8 75%,#d7f55a 75%);color:#fff" aria-pressed="false">G</button>
+      <button data-p="e" style="--sw:linear-gradient(90deg,#0f3d33 50%,#ffd23f 50%)" aria-pressed="true">Amarelo</button>
+      <button data-p="c" style="--sw:linear-gradient(90deg,#0f3d33 50%,#ff8fb8 50%)" aria-pressed="false">Rosa</button>
     </div>
 
     <footer class="foot wrap">
-      <span>1º HandstandFest · São Paulo · 2027</span>
+      <span class="foot-logo"><HFMark /> HandstandFest</span>
+      <span>1ª edição · São Paulo · 2027</span>
       <nav class="foot-nav" aria-label="Rodapé">
         <a href="/festival/">Início</a>
         <a href="/festival/sobre/">Sobre o evento</a>
@@ -87,7 +85,7 @@ const {
         const u = new URL(location.href); u.searchParams.set('paleta', v); history.replaceState(null, '', u);
       };
       palBtns.forEach((b) => b.addEventListener('click', () => setPal(b.dataset.p!)));
-      setPal(document.documentElement.dataset.paleta ?? 'b', false);
+      setPal(document.documentElement.dataset.paleta ?? 'e', false);
 
       // Sticky bar: shown after the page header (hero or subpage head) leaves the viewport
       const bar = document.querySelector<HTMLElement>('[data-sticky]');
