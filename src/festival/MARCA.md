@@ -21,7 +21,11 @@ Regra de uso: **uma textura só, grande e rara.**
   avatar. Círculo amarelo com HF verde vai sobre fundo escuro: cartão final das peças, onde o pincel dá um giro e as
   letras pousam em cima (`Selo` no kit).
 - Uma pincelada amarela atrás de uma palavra por cabeçalho ("HAND" na home, segunda linha do título nas subpáginas).
-- Menu, barra fixa, rodapé, grade, ingressos e botões seguem com o HF no retângulo e a geometria reta.
+- **Revisto no mesmo dia, a pedido do Paulo:** o círculo virou o logo também no menu, na barra fixa e no rodapé
+  (versão sem cerdas, que em tamanho pequeno viram sujeira). O HF no retângulo (`HFMark.astro`) ficou sem uso no
+  site, guardado como versão alternativa. Nas peças de Instagram, cada linha do gancho é uma pincelada no lugar do
+  bloco reto (linhas alternadas espelhadas para não parecer carimbo).
+- Grade, ingressos, botões, etiquetas e abas seguem com a geometria reta: é o contraste que faz a tinta aparecer.
 - Se o Gabriel mandar o arquivo original da pincelada, troca-se a forma no script e tudo acompanha.
 
 ## Palheta fechada e fotos tratadas — 10/11/2026 (decisão mais recente)

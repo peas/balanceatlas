@@ -22,7 +22,7 @@ import {
   useVideoConfig,
 } from 'remotion';
 import { ACCENT, ACCENT_INK, CHALK, Grain, INK, MONO, STAGE, WIDE } from '../compositions';
-import { CIRCULO, HF } from '../pincel';
+import { CIRCULO, HF, TRACO } from '../pincel';
 import { FEST } from '../data';
 
 export { ACCENT, ACCENT_INK, CHALK, Grain, INK, MONO, STAGE, WIDE };
@@ -227,7 +227,7 @@ const TOM: Record<Tom, { bg: string; fg: string }> = {
   accent: { bg: ACCENT, fg: ACCENT_INK }, chalk: { bg: CHALK, fg: INK }, stage: { bg: STAGE, fg: CHALK }, ink: { bg: INK, fg: CHALK },
 };
 
-/** The hook: one solid block per line, wide Archivo, fully visible at frame 0 unless `delay` is given.
+/** The hook: one brush stroke per line, wide Archivo, fully visible at frame 0 unless `delay` is given.
  *  Lines leave one by one from `outAt` (frame) if set. */
 export const Gancho = ({ lines, x = 65, y = 300, size = 104, tom = 'accent', tons, delay, outAt, align = 'left' }: {
   lines: string[]; x?: number; y?: number; size?: number; tom?: Tom; tons?: Tom[]; delay?: number; outAt?: number; align?: 'left' | 'right';
@@ -242,9 +242,16 @@ export const Gancho = ({ lines, x = 65, y = 300, size = 104, tom = 'accent', ton
         const leave = outAt === undefined ? 1 : interpolate(frame, [outAt + i * 3, outAt + i * 3 + 7], [1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
         return (
           <div key={i} style={{
-            ...WIDE, fontSize: size, lineHeight: 1, textTransform: 'uppercase', background: t.bg, color: t.fg, padding: `${size * 0.14}px ${size * 0.22}px ${size * 0.08}px`,
+            ...WIDE, position: 'relative', fontSize: size, lineHeight: 1, textTransform: 'uppercase', color: t.fg, padding: `${size * 0.14}px ${size * 0.22}px ${size * 0.08}px`,
             whiteSpace: 'nowrap', transformOrigin: `${align} center`, transform: `scaleX(${enter * leave})`, opacity: enter * leave > 0.02 ? 1 : 0,
-          }}>{line}</div>
+          }}>
+            {/* the block is one brush stroke (pincel.ts); alternate lines are mirrored so they do not look stamped */}
+            <svg viewBox="0 0 400 100" preserveAspectRatio="none" style={{ position: 'absolute', left: '-1%', top: '-4%', width: '104%', height: '108%', overflow: 'visible', transform: i % 2 ? 'scaleY(-1)' : undefined }}>
+              <path d={TRACO.corpo} fill={t.bg} transform="translate(-8,-19.5) scale(1.02,1.39)" />
+              {TRACO.cerdas.map((c, k) => <path key={k} d={c.d} fill="none" stroke={t.bg} strokeWidth={c.w * 1.4} transform="translate(-8,-19.5) scale(1.02,1.39)" />)}
+            </svg>
+            <span style={{ position: 'relative' }}>{line}</span>
+          </div>
         );
       })}
     </div>

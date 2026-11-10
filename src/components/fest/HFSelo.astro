@@ -1,11 +1,12 @@
 ---
 // The HF letters on the painted circle (Gabriel's idea, 10/11/2026): the straight letters are the handstand, the
 // brush is the turn. Shapes come from src/festival/pincel.ts (generated). Use it large and seldom: hero, closing
-// cards, avatar. Small functional spots (nav, sticky bar) keep the rectangular HFMark.
+// cards, avatar. Small spots (nav, sticky bar, footer) use it with `simples`.
 // `tom`: "verde" = green circle, yellow letters (default); "amarelo" = the reverse, for dark fields.
 import { CIRCULO, HF } from '../../festival/pincel';
-interface Props { tom?: 'verde' | 'amarelo'; class?: string }
-const { tom = 'verde', class: cls } = Astro.props;
+// `simples`: the circle alone, without bristles, for small sizes (menu, sticky bar, footer), where they read as dirt.
+interface Props { tom?: 'verde' | 'amarelo'; simples?: boolean; class?: string }
+const { tom = 'verde', simples = false, class: cls } = Astro.props;
 const tinta = tom === 'verde' ? 'var(--stage)' : 'var(--accent)';
 const letra = tom === 'verde' ? 'var(--accent)' : 'var(--stage)';
 const fundo = tom === 'verde' ? 'var(--paper)' : 'var(--stage)';
@@ -13,7 +14,7 @@ const fundo = tom === 'verde' ? 'var(--paper)' : 'var(--stage)';
 
 <svg class:list={['selo', cls]} viewBox="0 0 200 200" aria-hidden="true" focusable="false">
   <path d={CIRCULO.corpo} fill={tinta} />
-  {CIRCULO.cerdas.map((c) => <path d={c.d} fill="none" stroke={tinta} stroke-width={c.w} />)}
-  {CIRCULO.riscos.map((c) => <path d={c.d} fill="none" stroke={fundo} stroke-width={c.w} opacity=".7" />)}
+  {!simples && CIRCULO.cerdas.map((c) => <path d={c.d} fill="none" stroke={tinta} stroke-width={c.w} />)}
+  {!simples && CIRCULO.riscos.map((c) => <path d={c.d} fill="none" stroke={fundo} stroke-width={c.w} opacity=".7" />)}
   <path d={HF} fill={letra} transform="translate(50.5,70) scale(.75)" />
 </svg>

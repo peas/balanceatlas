@@ -3,7 +3,7 @@
 // Head, fonts, global stylesheet, footer and the small page scripts.
 import '../festival/festival.css';
 import { TICKETS, FEST } from '../festival/data';
-import HFMark from '../components/fest/HFMark.astro';
+import HFSelo from '../components/fest/HFSelo.astro';
 
 interface Props { title?: string; description?: string }
 const {
@@ -31,7 +31,7 @@ const {
   <body>
     <!-- Slim bar that slides in once the page header has scrolled away (inert while hidden) -->
     <div class="stickybar" data-sticky inert>
-      <a class="nav-logo" href="/festival/"><HFMark tom="inverso" /> HandstandFest</a>
+      <a class="nav-logo" href="/festival/"><HFSelo tom="amarelo" simples class="selo-nav" /> HandstandFest</a>
       <a class="sb-link" href="/festival/sobre/">Sobre o evento</a>
       <a class="sb-link" href="/festival/handstand/">Sobre handstand</a>
       <a class="nav-cta" href={TICKETS} target="_blank" rel="noopener">Garanta sua vaga</a>
@@ -40,7 +40,7 @@ const {
     <slot />
 
     <footer class="foot wrap">
-      <span class="foot-logo"><HFMark /> HandstandFest</span>
+      <span class="foot-logo"><HFSelo simples class="selo-nav" /> HandstandFest</span>
       <span>1ª edição · São Paulo · 2027</span>
       <nav class="foot-nav" aria-label="Rodapé">
         <a href="/festival/">Início</a>
