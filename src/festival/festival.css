@@ -448,5 +448,5 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .foot-logo { display: inline-flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 900; font-stretch: 125%; text-transform: uppercase; }
 
 /* ---------- Photo treatment (10/11/2026) ---------- */
-.bento img, .bento video, .snake figure img, .venue-photos img, .quem img, .hero-media .stage > img { filter: var(--foto-cor); }
+.bento img, .bento video, .snake figure img, .venue-photos img, .quem img { filter: var(--foto-cor); }
 .bento .pb img, .bento .pb video, .snake figure.pb img { filter: var(--foto-pb); }

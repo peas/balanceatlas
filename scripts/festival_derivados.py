@@ -20,7 +20,7 @@ from pathlib import Path
 
 LOCAL = Path(__file__).resolve().parent.parent / 'local' / 'festival'
 FFULL = Path('/opt/homebrew/opt/ffmpeg-full/bin/ffmpeg')
-SDR = 'zscale=t=linear:npl=203,format=gbrpf32le,zscale=p=bt709,tonemap=tonemap=mobius:desat=2,zscale=t=bt709:m=bt709:r=tv,format=yuv420p,'
+SDR = 'zscale=t=linear:npl=100,format=gbrpf32le,zscale=p=bt709,tonemap=tonemap=hable:desat=0,zscale=t=bt709:m=bt709:r=tv,format=yuv420p,'
 FONT = '/System/Library/Fonts/Supplemental/Arial Bold.ttf'
 
 

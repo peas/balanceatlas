@@ -23,7 +23,7 @@ from pathlib import Path
 
 LOCAL = Path(__file__).resolve().parent.parent / 'local' / 'festival'
 RENDER = Path.home() / 'paulo.com.br-render'
-PY = Path.home() / 'paulo.com.br' / 'tamanhodouniverso' / '.venv-rosto' / 'bin' / 'python'
+PY = Path.home() / 'ciencia' / 'tamanhodouniverso' / '.venv-rosto' / 'bin' / 'python'
 NOMES = 'HandstandFest, handstand, parada de mão, Trapézio Voador, Gabriel, Agustin, Paulo, acroyoga, São Paulo.'
 
 

@@ -138,8 +138,10 @@ Always verify downloaded images are real (>5KB, not HTML redirects).
   switcher and `?paleta=` are gone, so everything below about E/C or seven palettes is history. **Photo treatment
   applied by CSS** (no recuts): softened natural colour by default (`--foto-cor`), moderate black and white
   (`--foto-pb`) on about a third (`pb: true` on a bento item, class `pb` on a figure, `look="pb"` on `Clip`/`Foto`
-  in the Instagram kit, used for backdrops behind text). Still open: blown highlights need a new tone-map, and the
-  hero/teacher clips carry an older baked grade (`scripts/festival_clips.sh`).
+  in the Instagram kit, used for backdrops behind text). Clips were recut the same day: HLG to SDR is now
+  `npl=100` + `tonemap=hable` (sky and glass walls keep detail), and the hero/teacher clips lost the old baked grade
+  (`scripts/festival_clips.sh`; sources in `~/paulo.com.br-render/local/treinos/2026-10-11-gabriel/girados-hd/` and
+  `~/Downloads`). The MediaPipe venv moved to `~/ciencia/tamanhodouniverso/.venv-rosto`.
   **Applied on the site (10/11/2026):** only palettes E (green + yellow, default) and C (green + pink) remain in
   `festival.css` and in the switcher (`?paleta=e|c`); A/B/D/F/G are history in MARCA.md, so older notes in this file
   about seven palettes and "default B" are superseded. The HF symbol is `src/components/fest/HFMark.astro` (nav,

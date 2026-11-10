@@ -20,9 +20,11 @@ Escopo desta revisão: **somente logo e registro**. HF em pé com moldura, refin
   das peças de Instagram 07 a 10 (identidade colorida sobre foto P&B). Pôsteres dos professores perderam o sépia.
   Valores em `--foto-cor` / `--foto-pb` (festival.css) e `LOOK` (ig/kit.tsx); escolher P&B = `pb: true` no dado do
   bento, classe `pb` na figura, `look="pb"` em `Clip`/`Foto`.
-- **Não feito:** filtro de CSS não recupera alta luz estourada (isso pede refazer o tone-map dos clipes). Os clipes do
-  hero e do cartão do professor têm um grade antigo gravado no arquivo (contraste alto, vinheta, P&B duro no cartão),
-  fora da direção nova; trocar exige recortar com `scripts/festival_clips.sh`. O grão animado das composições segue.
+- **Clipes recortados (10/11/2026, mais tarde):** a conversão HDR → SDR passou para pico de 100 nits com curva hable
+  (antes 203 com mobius), escolhida comparando cinco quadros; céu e paredes de vidro voltaram a ter detalhe. Os 26
+  clipes das peças de Instagram e o tour do local foram refeitos. Os clipes do hero e do cartão do professor
+  perderam o grade antigo (tom quente, vinheta, P&B duro) e seguem o mesmo look do site. Os proxies locais ainda
+  estão na conversão antiga (só afetam a página de vocabulário). O grão animado das composições segue ligado.
 
 ## Aplicado no site em 10/11/2026
 

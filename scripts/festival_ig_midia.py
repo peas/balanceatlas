@@ -33,9 +33,11 @@ LOCAL = ROOT / 'local' / 'festival'
 OUT = ROOT / 'public' / 'festival' / 'ig'
 IG = ROOT / 'src' / 'festival' / 'ig'
 FFULL = '/opt/homebrew/opt/ffmpeg-full/bin/ffmpeg'
-SDR = 'zscale=t=linear:npl=203,format=gbrpf32le,zscale=p=bt709,tonemap=tonemap=mobius:desat=2,zscale=t=bt709:m=bt709:r=tv,'
+# HLG -> SDR. Peak 100 nits + hable since 10/11/2026: the first chain (npl=203, mobius) blew the sky and the glass
+# walls. Compared on five frames; hable at 100 keeps windows and sky without darkening skin.
+SDR = 'zscale=t=linear:npl=100,format=gbrpf32le,zscale=p=bt709,tonemap=tonemap=hable:desat=0,zscale=t=bt709:m=bt709:r=tv,'
 RENDER = Path.home() / 'paulo.com.br-render'
-PY = Path.home() / 'paulo.com.br' / 'tamanhodouniverso' / '.venv-rosto' / 'bin' / 'python'
+PY = Path.home() / 'ciencia' / 'tamanhodouniverso' / '.venv-rosto' / 'bin' / 'python'
 JOINTS = [11, 12, 13, 14, 15, 16, 23, 24, 25, 26, 27, 28]  # MediaPipe indices, in the order of JOINTS in kit.tsx
 
 

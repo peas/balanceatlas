@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Builds the HandstandFest clips (public/festival/) from the duo training videos (11/10/2026).
-# Each cut is cropped to 4:5, graded (warm, contrast, vignette, grain) and kept short; transitions,
+# Each cut is cropped to 4:5, given the soft natural look (or a moderate black and white) and kept short; transitions,
 # slow-mo and overlays happen in the Remotion compositions (src/festival/).
 set -euo pipefail
 
@@ -23,8 +23,10 @@ EOF
 SEQ="$1"; STR="$2"; OUT="${3:-public/festival}"
 mkdir -p "$OUT"
 FIT="scale=720:900:force_original_aspect_ratio=increase,crop=720:900,setsar=1,fps=30"
-GRADE="eq=contrast=1.12:saturation=0.82:gamma=0.97,colorbalance=rm=0.05:gm=0.01:bm=-0.05,vignette=PI/5"
-BW="hue=s=0,curves=preset=increase_contrast,vignette=PI/4"
+# Looks since 10/11/2026 (src/festival/MARCA.md): softened natural colour, moderate black and white. No warm cast,
+# no vignette, no crushed blacks. The compositions add no filter on top, so the look is baked here.
+GRADE="eq=saturation=0.86:contrast=0.96:brightness=0.01"
+BW="hue=s=0,eq=contrast=1.06:brightness=0.02"
 SEQ_CROP="crop=1080:1350:0:430"                                   # legs at the top, roof beam out
 STR_CROP="crop=iw*0.8:iw*0.8*5/4:iw*0.1:ih-iw*0.8*5/4-ih*0.07"   # tighter on the pair
 
@@ -42,7 +44,7 @@ cut seg-2 "$SEQ" "$SEQ_CROP" 28 4   "$GRADE"
 cut seg-3 "$SEQ" "$SEQ_CROP" 33 4.5 "$GRADE"
 cut seg-4 "$STR" "$STR_CROP" 9  6   "$GRADE"
 cut teacher "$STR" "$STR_CROP" 9 7  "$BW"
-still seg-1   "$SEQ" "$SEQ_CROP" 23 "eq=contrast=1.12:saturation=0.82"
-still teacher "$STR" "$STR_CROP" 13 "hue=s=0,curves=preset=increase_contrast"
+still seg-1   "$SEQ" "$SEQ_CROP" 23 "$GRADE"
+still teacher "$STR" "$STR_CROP" 13 "$BW"
 
 ls -la "$OUT"/seg-* "$OUT"/teacher.*
