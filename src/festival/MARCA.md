@@ -303,3 +303,19 @@ A pedido do Paulo: data/local antes do vídeo no celular; menos decoração conc
 A `/festival/instagram2/` passa a dez exemplos: mais três reels sobre a prática, dois stories de bastidor e um carrossel de cinco imagens estáticas. Cinco gravações adicionais do catálogo, sem repetir as fontes das primeiras peças. Carrosséis desta proposta são somente imagem e texto, inclusive na prévia; manter títulos grandes e reformular quebras antes de diminuir fonte.
 
 Aprendizado reutilizável fora desta marca: playbooks globais `instagram-creation` (conteúdo/composição/revisão) e `videos-remotion` (implementação técnica), complementares. Pesquisa de 24 pautas além do festival registrada na KB como `handstand-instagram-editorial-alem-evento.md`.
+
+
+## Camisetas e limpeza — 10/11/2026
+
+A pedido do Paulo, removidos da árvore atual os kits antigos 05/06, HFMark, gerador procedural e favicon/traço
+antigos. Rodadas locais 01–04 foram movidas para fora do repositório. As menções anteriores a esses arquivos
+são históricas; a única fonte atual do logo é o selo 07. A fonte Archivo e sua licença ficam em `design/fonts/`.
+
+`/festival/camisetas/`: três propostas com frente e costas, sem ano, data ou cidade. Base ilustrada de gola
+redonda em verde inspirado no Nori Green da Insider; não é foto oficial nem prova de produção. HF + nome
+HAND / STAND / FEST + silhueta original de perfil, pernas juntas e braços estendidos. Arte vetorial com
+letras em curvas, WebPs para comparação; receita em `scripts/festival_shirts.py`.
+
+Pinceladas devem acompanhar ou suceder o texto, nunca surgir como faixa vazia. Nos pôsteres, esperar o nome
+entrar e recolorir as letras acompanhando o avanço do pincel; no Instagram 2, texto no frame 0 e pincel a partir
+do frame 5. O kit original mantém texto e faixa no mesmo transform de entrada/saída.

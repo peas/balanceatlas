@@ -31,6 +31,6 @@ Run `python3 scripts/festival_brand_assets.py` after changing the master. It gen
 
 Keep counters, buttons, schedule cells and utility chips straight. Use one brush accent per title instead of making every UI surface textured. Teacher/poster grain overlays were removed so paper-like noise does not compete with the actual brush. Static carousels remain frozen photos/text, without video.
 
-Versioned asset URLs avoid serving the previous drawing from cache. The historical `festival_pincel.py` now writes only inside the version 06 archive. To regenerate the complete chain: `festival_trace_seal.py` → `festival_brand_assets.py` → `npm run build`.
+Versioned asset URLs avoid serving the previous drawing from cache. The obsolete version 06 generator and assets have been removed from the current tree at Paulo’s request; tracked history is retained in Git. To regenerate the complete chain: `festival_trace_seal.py` → `festival_brand_assets.py` → `npm run build`.
 
 Validation: 48-page production build passed. TypeScript diagnostics match the existing transition generic issue in `compositions.tsx` (line shifted by the new import); no new errors. Desktop 1280 px and phone 390 px: seals load as WebP, no page overflow. Both Instagram pages render the derived stroke; the new gallery has 10 pieces/21 previews and no video in its static carousel. The new circular seal was inspected in the closing card; original-gallery video playback reached readyState 4 with advancing time.

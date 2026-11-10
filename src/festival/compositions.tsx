@@ -260,6 +260,9 @@ export const Poster = ({ img, first, last, handle, shape, focus = 'center' }: Po
   const reveal = interpolate(frame, [0, 16], [100, 0], { extrapolateRight: 'clamp' });
   const zoom = interpolate(frame, [0, POSTER_FRAMES], [1.12, 1]);
   const out = interpolate(frame, [POSTER_FRAMES - 14, POSTER_FRAMES], [1, 0], { extrapolateLeft: 'clamp' });
+  // Let every letter settle before underlining; recolor text only where the brush has reached.
+  const brushStart = 10 + first.length * 3 + 12;
+  const brushClip = `inset(0 ${100 * (1 - interpolate(frame, [brushStart, brushStart + 14], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' }))}% 0 0)`;
   return (
     <AbsoluteFill style={{ background: STAGE, overflow: 'hidden' }}>
       <AbsoluteFill style={{ clipPath: `inset(${reveal}% 0 0 0)` }}>
@@ -279,8 +282,11 @@ export const Poster = ({ img, first, last, handle, shape, focus = 'center' }: Po
       {img && <Shape shape={shape} />}
       <div style={{ position: 'absolute', left: 28, top: 70, opacity: out }}>
         <div style={{ position: 'relative', width: 'fit-content', padding: '4px 9px', marginLeft: -9 }}>
-          <BrushStroke color={ACCENT} style={{ position: 'absolute', inset: '-8% -3%', width: '106%', height: '116%' }} />
-          <div style={{ position: 'relative' }}><Letters text={first} delay={10} size={fit(first, last)} color={STAGE} /></div>
+          <BrushStroke color={ACCENT} style={{ position: 'absolute', inset: '-8% -3%', width: '106%', height: '116%', clipPath: brushClip }} />
+          <div style={{ position: 'relative' }}>
+            <Letters text={first} delay={10} size={fit(first, last)} color={CHALK} />
+            <div aria-hidden="true" style={{ position: 'absolute', inset: 0, clipPath: brushClip }}><Letters text={first} delay={10} size={fit(first, last)} color={STAGE} /></div>
+          </div>
         </div>
         <Letters text={last} delay={18} size={fit(first, last)} color={CHALK} />
       </div>

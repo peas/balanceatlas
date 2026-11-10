@@ -246,7 +246,7 @@ export const Gancho = ({ lines, x = 65, y = 300, size = 104, tom = 'accent', ton
             ...WIDE, position: 'relative', fontSize: size, lineHeight: 1, textTransform: 'uppercase', color: t.fg, padding: `${size * 0.14}px ${size * 0.22}px ${size * 0.08}px`,
             whiteSpace: 'nowrap', transformOrigin: `${align} center`, transform: `scaleX(${enter * leave})`, opacity: enter * leave > 0.02 ? 1 : 0,
           }}>
-            {/* the block is one brush stroke (pincel.ts); alternate lines are mirrored so they do not look stamped */}
+            {/* Text and brush share this exact entrance/exit transform: never show an empty highlight first. */}
             <BrushStroke color={t.bg} style={{ position: 'absolute', left: '-2%', top: '-9%', width: '104%', height: '118%', transform: i % 2 ? 'scaleY(-1)' : undefined }} />
             <span style={{ position: 'relative' }}>{line}</span>
           </div>
