@@ -142,12 +142,15 @@ Always verify downloaded images are real (>5KB, not HTML redirects).
   published again `SYMPLA_NO_AR` in `data.ts` is false and every ticket button scrolls to `#ingressos`; flip it to
   true afterwards. Then create "2º lote" (35, R$590) and "3º lote" (15, R$690) with "Por lote" (starts when the
   previous one sells out). The site shows "abre 18/11" until `VENDA.abre` and switches to "aberto" in the browser.
-  **Brush circle (Gabriel's idea, applied 10/11/2026):** HF on a painted circle, redrawn as vectors by
-  `scripts/festival_pincel.py` (fixed seed → `src/festival/pincel.ts`, `public/festival/traco.svg`, favicon, avatar in
-  `design/handstandfest-selo-06/`). Use it large and seldom: seal on the home hero (`HFSelo.astro`), one brush stroke
-  behind a word per header (CSS mask), animated `Selo` in the `Fecho` card, one stroke per `Gancho` line in the
-  Instagram kit. Nav, sticky bar and footer use the circle without bristles (`simples`); `HFMark.astro` (rectangle)
-  is kept but unused. Schedule, tickets, buttons and chips keep the hard geometry. Rules in MARCA.md.
+  **Brush identity v07 (10/11/2026):** master traced from Paulo's supplied reference in
+  `design/handstandfest-selo-07/hf-brush.svg`. `scripts/festival_brand_assets.py` generates `src/festival/pincel.ts`
+  and versioned `public/festival/brand/` assets: green/yellow seal SVGs, transparent PNG + lossless WebP at
+  96/192/384/768 px, and a horizontal stroke derived from the same circle's dry-brush edges.
+  `HFSelo.astro` serves responsive pictures (menu, sticky bar, footer, hero); `simples` means small delivery,
+  not a different shape. Shared `Brush.tsx` serves Instagram hooks and the site's video stamps/teacher posters;
+  CSS headings use the same stroke as a mask. Animated `Selo` keeps brush and HF independent with real transparent
+  gaps. One brush accent per heading; buttons, schedule and utility chips keep hard geometry. Version 06 generator
+  is archive-only and cannot overwrite live assets. Recipe and validation in the v07 README; direction in MARCA.md.
   **Palette closed (Paulo, 10/11/2026): green + yellow only** (former E), tokens on `:root` in `festival.css`; the
   switcher and `?paleta=` are gone, so everything below about E/C or seven palettes is history. **Photo treatment
   applied by CSS** (no recuts): softened natural colour by default (`--foto-cor`), moderate black and white

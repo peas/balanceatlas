@@ -434,8 +434,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .claro .nav-logo b { color: inherit; }
 .hero.claro .logo { color: var(--stage); }
 .hero.claro .logo .l1, .page-head.claro h1 span { position: relative; isolation: isolate; color: var(--stage); align-self: flex-start; width: fit-content; padding: .06em .16em 0 .12em; margin-left: -.12em; }
-/* the accent behind the word is one brush stroke (public/festival/traco.svg, generated), not a hard block */
-.hero.claro .logo .l1::before, .page-head.claro h1 span::before { content: ''; position: absolute; inset: -.02em -.14em -.04em -.04em; z-index: -1; background: var(--accent); -webkit-mask: url('/festival/traco.svg') center / 100% 100% no-repeat; mask: url('/festival/traco.svg') center / 100% 100% no-repeat; }
+/* the accent behind the word is one brush stroke (public/festival/brand/stroke-v7.svg, generated), not a hard block */
+.hero.claro .logo .l1::before, .page-head.claro h1 span::before { content: ''; position: absolute; inset: -.02em -.14em -.04em -.04em; z-index: -1; background: var(--accent); -webkit-mask: url('/festival/brand/stroke-v7.svg') center / 100% 100% no-repeat; mask: url('/festival/brand/stroke-v7.svg') center / 100% 100% no-repeat; }
 .hero.claro .mark i { background: var(--stage); }
 .hero.claro .mark b { background: var(--stage); color: var(--accent); }
 .hero.claro .place span { color: inherit; font-weight: 700; }
@@ -455,6 +455,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 
 /* ---------- Painted circle (10/11/2026) ---------- */
 .selo { display: block; width: 100%; height: auto; overflow: visible; }
+.selo img { display: block; width: 100%; height: auto; }
 .selo-nav { width: 2.9em; flex: none; }
 .stickybar .selo-nav { width: 2.5em; }
 .hero-selo { position: absolute; z-index: 2; width: 34%; top: -11%; right: -13%; transform: rotate(-8deg); }

@@ -1,5 +1,10 @@
 # Balance Atlas memory
 
+## 2026-11-10 — Apply version 07 as the shared brush identity
+
+- Paulo requested PNG/WebP application in the menu/seal and matching brushwork in site videos and Instagram Remotion. Responsive transparent images now serve all static seals; animations share traced SVG paths. Horizontal stroke derives from the same brush perimeter, used by CSS headings, both Instagram kits, hero video stamps and teacher poster highlights. Utility geometry stays straight.
+- `scripts/festival_brand_assets.py` regenerates versioned assets and `pincel.ts`; recipe in the v07 design README and CLAUDE.md. Legacy procedural generator is archive-only.
+
 ## 2026-11-10 — Brush seal traced from supplied reference
 
 - Paulo found the site's procedural brush too simple and requested an SVG matching a supplied richer brush-circle HF. Archived the source, true-vector transparent/cream SVGs and transparent PNG in `design/handstandfest-selo-07/`.

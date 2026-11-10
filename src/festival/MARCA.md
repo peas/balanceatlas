@@ -24,7 +24,15 @@ Vetor guardado em `design/handstandfest-selo-07/`: `hf-brush.svg` transparente, 
 Contorno traçado da imagem com Potrace; HF reconstruído em um caminho geométrico com a barra contínua.
 Paleta atual verde/amarelo. Sem bitmap embutido: os vazios são transparência real. A granulação do papel e as
 variações de pigmento da referência não fazem parte deste SVG de duas cores. Referência e receita regenerável
-em `scripts/festival_trace_seal.py` guardadas no repo. Proposta arquivada; ainda não substitui o selo do site.
+em `scripts/festival_trace_seal.py` guardadas no repo.
+
+**Aplicação autorizada na sequência:** versão 7 passa a menu, barra fixa, rodapé, hero, favicon e selos dos
+Remotions. `scripts/festival_brand_assets.py` gera PNG/WebP transparentes responsivos (96/192/384/768), SVGs
+nas duas inversões e `src/festival/pincel.ts`. A faixa horizontal vem das bordas da mesma pincelada, abertas
+em uma faixa com centro legível; títulos CSS, ganchos das duas páginas de Instagram, etiquetas do vídeo do
+hero e nomes nos pôsteres compartilham esse desenho. Os vazios são transparência, sem pintar a cor do fundo.
+Uma pincelada por título; botões, grade e chips utilitários continuam retos. Saíram os grãos dos cards de
+professores. O script da rodada 6 agora só escreve no arquivo histórico, sem sobrescrever a identidade atual.
 
 ## Círculo de pincel — ideia do Gabriel, aplicada em 10/11/2026
 

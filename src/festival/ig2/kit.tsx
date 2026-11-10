@@ -2,7 +2,7 @@
 import type { CSSProperties, ReactNode } from 'react';
 import { AbsoluteFill, Easing, Html5Video, Img, interpolate, useCurrentFrame } from 'remotion';
 import { ACCENT, CHALK, INK, MONO, STAGE, WIDE, LOOK, Quadro, Selo, f, type Formato, type Look } from '../ig/kit';
-import { TRACO } from '../pincel';
+import { BrushStroke } from '../Brush';
 import { QUANDO } from '../data';
 export { ACCENT, CHALK, INK, MONO, STAGE, WIDE, f };
 export type Treatment = 'direction' | Look;
@@ -20,9 +20,7 @@ export function Headline({ lines, x = 65, y = 290, size = 80, accentLine = -1, d
   const frame = useCurrentFrame();
   return <div style={{ position: 'absolute', left: x, top: y, width, ...WIDE, fontSize: size, lineHeight: 1.02, letterSpacing: '-.035em', textTransform: 'uppercase', color: dark ? CHALK : STAGE }}>
     {lines.map((line, i) => <div key={i} style={{ position: 'relative', width: 'fit-content', maxWidth: '100%', whiteSpace: 'nowrap', padding: '4px 0' }}>
-      {i === accentLine && <svg viewBox="0 0 400 100" preserveAspectRatio="none" aria-hidden style={{ position: 'absolute', left: -15, top: -4, width: 'calc(100% + 30px)', height: 'calc(100% + 10px)', clipPath: `inset(0 ${(1 - move(frame, 0, 20)) * 100}% 0 0)` }}>
-        <path d={TRACO.corpo} fill={ACCENT} />{TRACO.cerdas.map((p, j) => <path key={j} d={p.d} stroke={ACCENT} strokeWidth={p.w} />)}
-      </svg>}
+      {i === accentLine && <BrushStroke color={ACCENT} style={{ position: 'absolute', left: -15, top: -4, width: 'calc(100% + 30px)', height: 'calc(100% + 10px)', clipPath: `inset(0 ${(1 - move(frame, 0, 20)) * 100}% 0 0)` }} />}
       <span data-ig2-text style={{ position: 'relative', color: i === accentLine && !dark ? STAGE : undefined }}>{line}</span>
     </div>)}
   </div>;

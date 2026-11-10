@@ -22,7 +22,8 @@ import {
   useVideoConfig,
 } from 'remotion';
 import { ACCENT, ACCENT_INK, CHALK, Grain, INK, MONO, STAGE, WIDE } from '../compositions';
-import { CIRCULO, HF, TRACO } from '../pincel';
+import { CIRCULO, HF } from '../pincel';
+import { BrushStroke } from '../Brush';
 import { FEST } from '../data';
 
 export { ACCENT, ACCENT_INK, CHALK, Grain, INK, MONO, STAGE, WIDE };
@@ -246,10 +247,7 @@ export const Gancho = ({ lines, x = 65, y = 300, size = 104, tom = 'accent', ton
             whiteSpace: 'nowrap', transformOrigin: `${align} center`, transform: `scaleX(${enter * leave})`, opacity: enter * leave > 0.02 ? 1 : 0,
           }}>
             {/* the block is one brush stroke (pincel.ts); alternate lines are mirrored so they do not look stamped */}
-            <svg viewBox="0 0 400 100" preserveAspectRatio="none" style={{ position: 'absolute', left: '-1%', top: '-4%', width: '104%', height: '108%', overflow: 'visible', transform: i % 2 ? 'scaleY(-1)' : undefined }}>
-              <path d={TRACO.corpo} fill={t.bg} transform="translate(-8,-19.5) scale(1.02,1.39)" />
-              {TRACO.cerdas.map((c, k) => <path key={k} d={c.d} fill="none" stroke={t.bg} strokeWidth={c.w * 1.4} transform="translate(-8,-19.5) scale(1.02,1.39)" />)}
-            </svg>
+            <BrushStroke color={t.bg} style={{ position: 'absolute', left: '-2%', top: '-9%', width: '104%', height: '118%', transform: i % 2 ? 'scaleY(-1)' : undefined }} />
             <span style={{ position: 'relative' }}>{line}</span>
           </div>
         );
@@ -409,11 +407,11 @@ export const Selo = ({ size = 230, from = 0, giro = 16 }: { size?: number; from?
     <svg viewBox="0 0 200 200" style={{ width: size, height: size, display: 'block', overflow: 'visible', flex: 'none' }}>
       <clipPath id={id}><polygon points={pts.join(' ')} /></clipPath>
       <g clipPath={t >= 1 ? undefined : `url(#${id})`}>
-        <path d={CIRCULO.corpo} fill={ACCENT} />
-        {CIRCULO.cerdas.map((c, i) => <path key={i} d={c.d} fill="none" stroke={ACCENT} strokeWidth={c.w} />)}
-        {CIRCULO.riscos.map((c, i) => <path key={i} d={c.d} fill="none" stroke={STAGE} strokeWidth={c.w} opacity={0.7} />)}
+        <path d={CIRCULO.corpo} transform={CIRCULO.transform} fill={ACCENT} />
       </g>
-      <path d={HF} fill={STAGE} opacity={Math.min(1, hf * 2)} transform={`translate(100,100) scale(${0.75 * hf}) translate(-66,-40)`} />
+      <g opacity={Math.min(1, hf * 2)} transform={`translate(100,100) scale(${hf}) translate(-100,-100)`}>
+        <path d={HF.d} transform={HF.transform} fill={STAGE} />
+      </g>
     </svg>
   );
 };

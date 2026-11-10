@@ -16,6 +16,7 @@ import { pushCut } from '@remotion/transitions/push-cut';
 import { slide } from '@remotion/transitions/slide';
 import { iris } from '@remotion/transitions/iris';
 import { FEST } from './data';
+import { BrushStroke } from './Brush';
 
 export const W = 720;
 export const H = 900;
@@ -82,7 +83,6 @@ const Stamp = ({ text, dur }: { text: string; dur: number }) => {
         position: 'absolute',
         left: 40,
         bottom: 56,
-        background: ACCENT,
         color: ACCENT_INK,
         ...WIDE,
         fontSize: 40,
@@ -95,7 +95,8 @@ const Stamp = ({ text, dur }: { text: string; dur: number }) => {
         opacity: Math.min(e * 1.5, 1) * out,
       }}
     >
-      {text}
+      <BrushStroke color={ACCENT} style={{ position: 'absolute', inset: '-10% -3%', width: '106%', height: '120%' }} />
+      <span style={{ position: 'relative' }}>{text}</span>
     </div>
   );
 };
@@ -216,7 +217,6 @@ export const Teacher = () => {
         <Letters text="Agustin" delay={18} />
       </div>
       <Bars dur={TEACHER_FRAMES} side="right" />
-      <Grain />
     </AbsoluteFill>
   );
 };
@@ -278,14 +278,16 @@ export const Poster = ({ img, first, last, handle, shape, focus = 'center' }: Po
       </AbsoluteFill>
       {img && <Shape shape={shape} />}
       <div style={{ position: 'absolute', left: 28, top: 70, opacity: out }}>
-        <Letters text={first} delay={10} size={fit(first, last)} />
+        <div style={{ position: 'relative', width: 'fit-content', padding: '4px 9px', marginLeft: -9 }}>
+          <BrushStroke color={ACCENT} style={{ position: 'absolute', inset: '-8% -3%', width: '106%', height: '116%' }} />
+          <div style={{ position: 'relative' }}><Letters text={first} delay={10} size={fit(first, last)} color={STAGE} /></div>
+        </div>
         <Letters text={last} delay={18} size={fit(first, last)} color={CHALK} />
       </div>
       {handle && <Chip text={handle} delay={26} style={{ left: 28, top: 30, fontSize: 20, opacity: out }} />}
       <div style={{ position: 'absolute', left: 28, bottom: 34, color: CHALK, fontFamily: MONO, fontWeight: 700, fontSize: 20, letterSpacing: 0.5, textTransform: 'uppercase', opacity: out }}>
         1º HandstandFest · São Paulo · {FEST.mesCurto} {FEST.ano}
       </div>
-      <Grain />
     </AbsoluteFill>
   );
 };

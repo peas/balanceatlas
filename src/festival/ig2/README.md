@@ -4,7 +4,7 @@ Working route: `/festival/instagram2/`. `/instagram2/` redirects there. The orig
 
 ## Direction
 
-This proposal follows the latest actual identity, not the previous palette studies: original E green/yellow, upright HF on Gabriel's painted circle. `../pincel.ts` is the source of the shapes; `Selo` from `../ig/kit.tsx` supplies the closing animation. One brush gesture per scene, stable typography, direct cuts, real footage. No artificial grain, sepia, music or added people.
+This proposal follows the latest actual identity, not the previous palette studies: original E green/yellow, upright HF on Gabriel's painted circle (version 07, traced from the supplied reference). `../pincel.ts` is the source of the shapes; `Selo` from `../ig/kit.tsx` supplies the closing animation. One brush gesture per scene, stable typography, direct cuts, real footage. No artificial grain, sepia, music or added people.
 
 Ten listed pieces, twenty-one preview units. All are displayed in document order; no piece/slide selector. The first five:
 
@@ -85,3 +85,8 @@ Verified 10 articles / 21 preview slots, automatic viewport mounting, all five s
 6. Sync with `git pull --ff-only`, commit only the intended files, and push `main`. `.github/workflows/deploy.yml` builds and publishes to GitHub Pages. Wait for that commit's workflow to succeed, then reload `/festival/instagram2/` and verify the hydrated gallery; an immediate DOM check before React mounts can incorrectly report zero pieces.
 
 Gallery implementation: commit `71a5933`, published successfully by [GitHub Actions run 42883552446](https://github.com/peas/balanceatlas/actions/runs/42883552446). Production verification found all 10 articles and 21 preview slots with no horizontal overflow.
+
+
+## Shared brush identity — version 07
+
+The site and both Instagram kits now use the traced version 07 master. `../Brush.tsx` renders the shared horizontal mark derived from that circle's edges; `Selo` uses the full traced silhouette and a separate HF path. Generation and responsive PNG/WebP assets are documented in `design/handstandfest-selo-07/README.md`. Composition timing, safe areas and gallery behavior are retained.
