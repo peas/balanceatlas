@@ -6,7 +6,7 @@ Working route: `/festival/instagram2/`. `/instagram2/` redirects there. The orig
 
 This proposal follows the latest actual identity, not the previous palette studies: original E green/yellow, upright HF on Gabriel's painted circle. `../pincel.ts` is the source of the shapes; `Selo` from `../ig/kit.tsx` supplies the closing animation. One brush gesture per scene, stable typography, direct cuts, real footage. No artificial grain, sepia, music or added people.
 
-Ten selectable pieces, twenty-one preview units. The first five:
+Ten listed pieces, twenty-one preview units. All are displayed in document order; no piece/slide selector. The first five:
 
 - Together: 17.5 s reel, natural color → B&W → natural color, then 3.5 s closing card.
 - Venue: 14.5 s reel, three spaces, natural color/natural color/B&W, then closing card.
@@ -28,8 +28,8 @@ Text and media windows are disjoint. `Line` contains the complete source portrai
 
 - `kit.tsx`: layout primitives, one-stroke title reveal, media windows and closing card.
 - `pieces.tsx`: declarative durations, scenes, review cues and slide registry.
-- `Studio.tsx`: one mounted Player, piece/slide controls, jump-to-scene buttons, filter comparison and guide toggle.
-- `studio.css`: responsive workbench; horizontal selection strip on mobile.
+- `Studio.tsx`: continuous gallery of every piece and slide, automatically mounted near the viewport; offscreen pause, per-video scene cues, shared filter comparison and guide toggle.
+- `studio.css`: three-column desktop gallery, two-column tablet and one-column phone layout. Carousel/story groups span the full gallery width and expose every frame.
 
 `direction` uses the selected look per scene. `cor`, `pb`, `cru` override only the photographic layer, keeping branding colored. `cru` means no extra CSS filter on the already tone-mapped SDR asset, not raw HDR. Reuse `LOOK` from the shared kit to stay aligned with the site. No new dependencies. New derivatives have distinct names and documented source times.
 
@@ -68,3 +68,9 @@ The reusable playbooks are global: `~/.claude/skills/instagram-creation/SKILL.md
 ## Publication checks for the second round
 
 The 48-page production build passes. TypeScript still reports only the baseline generic TransitionSeries issue in `compositions.tsx:178`; the Instagram files introduce no new diagnostics. New scenes and all carousel slides were inspected with rendered font bounds, corrected line breaks, media duration probes and real playback (video readyState 4, advancing time). Static slides contain no video elements. Mobile 390px has no horizontal page overflow. The updated home hero was checked at 390px and 1280px; facts precede the video on mobile without colliding with the seal.
+
+## Gallery navigation — 10 November 2026
+
+Paulo requested the same browse-by-scrolling approach as the original Instagram page. All ten pieces now appear together, with all 21 previews directly in the document. Nothing requires selecting a piece or slide. IntersectionObserver mounts each preview automatically within 400 px of the viewport; a separate observer pauses video when it exits the visible viewport. No autoplay. Mounted players retain their frame when revisited. Fonts are awaited and dimensions reserved to prevent layout shifts.
+
+Verified 10 articles / 21 preview slots, automatic viewport mounting, all five static carousel frames together on desktop, zero video elements in the static carousel, real playback followed by offscreen pause, and the last carousel at 390 px without horizontal overflow. Build passed; TypeScript baseline remains unchanged.

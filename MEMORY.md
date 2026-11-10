@@ -1,5 +1,10 @@
 # Balance Atlas memory
 
+## 2026-11-10 — Instagram gallery without selection clicks
+
+- Paulo wants all pieces listed like the original Instagram page. Replaced the one-player selector in instagram2 with a continuous gallery: all ten pieces and all 21 reel/story/carousel previews. Three columns desktop, one on phones; static carousel frames remain static.
+- Automatic near-viewport mounting avoids preloading every video; offscreen playback pauses. Shared filters/guides and per-video cue buttons remain. Build and desktop/mobile checks passed; deploy follows the existing GitHub Pages workflow.
+
 ## 2026-11-10 — Second Instagram batch and restrained site refinement
 
 - Added five examples (three reels, two story frames, a five-image carousel) from five additional catalogued recordings: img-3144, img-2387, img-2390, pxl-20261104_190908352 and img-2381. Total ten pieces. User prefers static image/text carousels; both are frozen and have no playback controls. New optimized SDR assets/provenance in ig/midia.json.

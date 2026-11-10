@@ -207,7 +207,8 @@ Always verify downloaded images are real (>5KB, not HTML redirects).
   already up, never the entries.
 - `/festival/instagram2` (10/11/2026): alternative proposal in `src/festival/ig2/`, alias `/instagram2/`.
   Ten pieces using the current green/yellow brush-circle identity: 6 reels, two static 5-slide carousels and two story sequences (3 + 2 frames).
-  Single live Player, scene/slide navigation, photo-look override and safe-zone guides; existing instagram unchanged.
+  Continuous gallery requested by Paulo: all 10 pieces and 21 previews are listed, including every carousel/story frame.
+  Players mount automatically near the viewport and pause offscreen; shared photo-look override and safe-zone guides. Existing instagram unchanged.
   Paulo found the first typography too small: main info now 40–48 px, headlines mostly 80–125 px at 1080; review at
   phone width. No added grain/music, text kept off bodies, dates from QUANDO. Details and checks in ig2/README.md.
   New cuts/stills from five additional catalogue sources in `ig/midia.json`; carousels are images/text only, frozen with no video controls.
