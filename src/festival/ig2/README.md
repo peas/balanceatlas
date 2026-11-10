@@ -74,3 +74,14 @@ The 48-page production build passes. TypeScript still reports only the baseline 
 Paulo requested the same browse-by-scrolling approach as the original Instagram page. All ten pieces now appear together, with all 21 previews directly in the document. Nothing requires selecting a piece or slide. IntersectionObserver mounts each preview automatically within 400 px of the viewport; a separate observer pauses video when it exits the visible viewport. No autoplay. Mounted players retain their frame when revisited. Fonts are awaited and dimensions reserved to prevent layout shifts.
 
 Verified 10 articles / 21 preview slots, automatic viewport mounting, all five static carousel frames together on desktop, zero video elements in the static carousel, real playback followed by offscreen pause, and the last carousel at 390 px without horizontal overflow. Build passed; TypeScript baseline remains unchanged.
+
+### Maintaining this gallery
+
+1. Add or revise a piece in the `PIECES` registry in `pieces.tsx` (additional compositions live in `more-pieces.tsx`). Each piece has a stable `id`, metadata and a `slides` array; the gallery maps both levels, so new slides appear without navigation wiring.
+2. Keep layout in `studio.css`: three columns by default, two below 1000 px, one below 651 px. Multi-frame pieces span the gallery and use their own responsive grid. Reserve each preview's `1080 / slide.height` aspect ratio before mounting.
+3. Keep the two observers in `Preview` separate: the 400 px preload observer mounts once; the visibility observer pauses offscreen playback. Do not unmount previously viewed players or autoplay every card. Shared `inputProps` remain memoized so unrelated renders do not reset timelines.
+4. Use static photo/text compositions for carousels, frozen at the intended frame with playback controls disabled. Reels and stories retain individual playback and review cues; filters and safe-zone guides remain global.
+5. Review at desktop and phone width: every piece/slide is reachable by scrolling, no horizontal overflow, fonts loaded, video advances on play and pauses offscreen. Check the last sequence as well as the first row. Run `npm run build`, compare TypeScript diagnostics against the known baseline, and run `git diff --check`.
+6. Sync with `git pull --ff-only`, commit only the intended files, and push `main`. `.github/workflows/deploy.yml` builds and publishes to GitHub Pages. Wait for that commit's workflow to succeed, then reload `/festival/instagram2/` and verify the hydrated gallery; an immediate DOM check before React mounts can incorrectly report zero pieces.
+
+Gallery implementation: commit `71a5933`, published successfully by [GitHub Actions run 42883552446](https://github.com/peas/balanceatlas/actions/runs/42883552446). Production verification found all 10 articles and 21 preview slots with no horizontal overflow.

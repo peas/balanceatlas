@@ -4,6 +4,7 @@
 
 - Paulo wants all pieces listed like the original Instagram page. Replaced the one-player selector in instagram2 with a continuous gallery: all ten pieces and all 21 reel/story/carousel previews. Three columns desktop, one on phones; static carousel frames remain static.
 - Automatic near-viewport mounting avoids preloading every video; offscreen playback pauses. Shared filters/guides and per-video cue buttons remain. Build and desktop/mobile checks passed; deploy follows the existing GitHub Pages workflow.
+- Published as `71a5933`; GitHub Actions run `42883552446` succeeded and the production gallery was verified (10 articles, 21 slots). Paulo requested the implementation recipe be kept in the repository and pull/push performed: see “Maintaining this gallery” in `src/festival/ig2/README.md` for registry, layout, observers, review and publication steps.
 
 ## 2026-11-10 — Second Instagram batch and restrained site refinement
 
