@@ -74,7 +74,7 @@ const Seta = ({ cx, bottom }: { cx: number; bottom: number }) => {
 // Hook shrunk from 200 to 184: at 200 "ABRIU." is 1006 px wide, past x 1015.
 const Abriu = ({ guides }: PecaProps) => (
   <Quadro formato="story" guides={guides}>
-    <Clip src="tour-fachada" from={0} filter="brightness(.8)" />
+    <Clip src="tour-fachada" from={0} look="pb" filter="brightness(.8)" />
     <AoVivo text="1º lote · agora" x={65} y={300} />
     <Gancho lines={['Abriu.']} y={400} size={184} tom="accent" />
     <Etiqueta text={`1º HandstandFest · ${QUANDO_CURTO}`} x={65} y={700} tom="chalk" size={34} delay={10} />
@@ -101,7 +101,7 @@ const ITENS = [
 ];
 const OQueTem = ({ guides }: PecaProps) => (
   <Quadro formato="story" guides={guides}>
-    <Foto src="tv-palco-luzes.webp" filter="brightness(.45)" />
+    <Foto src="tv-palco-luzes.webp" look="pb" filter="brightness(.45)" />
     <Etiqueta text="o que tem" x={65} y={290} tom="accent" size={40} />
     {ITENS.map((t, n) => <Etiqueta key={t} text={t} x={65} y={400 + 86 * n} tom="chalk" size={36} delay={6 + 8 * n} />)}
   </Quadro>

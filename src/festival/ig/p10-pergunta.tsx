@@ -22,7 +22,7 @@ const Pergunta = ({ guides }: PecaProps) => (
       <Cortina tom="accent" len={8} />
     </Sequence>
     <Sequence from={f(6.2)} durationInFrames={f(7.0)}>
-      <Clip src="p-espelho" from={0.5} filter="brightness(.7)" />
+      <Clip src="p-espelho" from={0.5} look="pb" filter="brightness(.7)" />
       <Etiqueta text="o que você leva" tom="accent" size={40} x={65} y={290} delay={2} />
       {LEVA.map((t, i) => (
         <Etiqueta key={t} text={t} tom="chalk" size={34} x={65} y={385 + 70 * i} delay={f(LEVA_DELAYS[i])} />

@@ -10,18 +10,18 @@ export const QUANDO = `${FEST.dias[0]} — ${FEST.dias[2]} ${FEST.mesCurto} ${FE
 
 // Bento: photos and videos mixed. `video` cells play on hover (desktop) or when in view (touch).
 export const R2V = 'https://media.balanceatlas.com/videos/retreats';
-export type BentoItem = { src: string; alt: string; video?: string; span?: 'wide' | 'tall' | 'large' };
+export type BentoItem = { src: string; alt: string; video?: string; span?: 'wide' | 'tall' | 'large'; pb?: boolean }; // pb = black and white look
 export const community: BentoItem[] = [
   { src: `${R2}/saopaulo-2024/96.webp`, alt: 'São Paulo, 2024', span: 'large' },
-  { src: '/festival/posters/greece-2025-07.webp', video: `${R2V}/greece-2025/07.mp4`, alt: 'Paros, 2025', span: 'tall' },
+  { src: '/festival/posters/greece-2025-07.webp', video: `${R2V}/greece-2025/07.mp4`, alt: 'Paros, 2025', span: 'tall', pb: true },
   { src: `${R2}/thailand-2026/11.webp`, alt: 'Koh Phangan, 2026', span: 'wide' },
   { src: `${R2}/greece-2025/20.webp`, alt: 'Paros, 2025', span: 'tall' },
   { src: '/festival/posters/thailand-2026-10.webp', video: `${R2V}/thailand-2026/10.mp4`, alt: 'Koh Phangan, 2026', span: 'tall' },
-  { src: `${R2}/saopaulo-2024/106.webp`, alt: 'São Paulo, 2024' },
+  { src: `${R2}/saopaulo-2024/106.webp`, alt: 'São Paulo, 2024', pb: true },
   { src: `${R2}/saopaulo-2024/94.webp`, alt: 'São Paulo, 2024' },
-  { src: '/festival/posters/saopaulo-2024-04.webp', video: `${R2V}/saopaulo-2024/04.mp4`, alt: 'São Paulo, 2024', span: 'tall' },
+  { src: '/festival/posters/saopaulo-2024-04.webp', video: `${R2V}/saopaulo-2024/04.mp4`, alt: 'São Paulo, 2024', span: 'tall', pb: true },
   { src: `${R2}/greece-2025/09.webp`, alt: 'Paros, 2025', span: 'wide' },
-  { src: `${R2}/thailand-2026/56.webp`, alt: 'Koh Phangan, 2026', span: 'tall' },
+  { src: `${R2}/thailand-2026/56.webp`, alt: 'Koh Phangan, 2026', span: 'tall', pb: true },
   { src: '/festival/posters/thailand-2026-09.webp', video: `${R2V}/thailand-2026/09.mp4`, alt: 'Koh Phangan, 2026', span: 'tall' },
   { src: `${R2}/saopaulo-2024/97.webp`, alt: 'São Paulo, 2024', span: 'wide' },
 ];
@@ -67,14 +67,14 @@ export const publico = [
 // More photos for /festival/handstand: the ones the Balance Atlas home (/principal) shows, minus repeats.
 export const atlasPhotos: BentoItem[] = [
   { src: `${R2}/thailand-2026/38.webp`, alt: 'Koh Phangan, 2026', span: 'large' },
-  { src: `${R2}/greece-2025/01.webp`, alt: 'Paros, 2025', span: 'tall' },
+  { src: `${R2}/greece-2025/01.webp`, alt: 'Paros, 2025', span: 'tall', pb: true },
   { src: `${R2}/saopaulo-2024/35.webp`, alt: 'São Paulo, 2024' },
-  { src: `${R2}/thailand-2026/28.webp`, alt: 'Koh Phangan, 2026' },
+  { src: `${R2}/thailand-2026/28.webp`, alt: 'Koh Phangan, 2026', pb: true },
   { src: `${R2}/saopaulo-2024/95.webp`, alt: 'São Paulo, 2024', span: 'wide' },
   { src: `${R2}/greece-2025/10.webp`, alt: 'Paros, 2025' },
   { src: `${R2}/saopaulo-2024/100.webp`, alt: 'São Paulo, 2024', span: 'wide' },
-  { src: `${R2}/greece-2025/05.webp`, alt: 'Paros, 2025' },
+  { src: `${R2}/greece-2025/05.webp`, alt: 'Paros, 2025', pb: true },
   { src: `${R2}/thailand-2026/14.webp`, alt: 'Koh Phangan, 2026' },
   { src: `${R2}/greece-2025/19.webp`, alt: 'Paros, 2025', span: 'wide' },
-  { src: `${R2}/thailand-2026/53.webp`, alt: 'Koh Phangan, 2026', span: 'wide' },
+  { src: `${R2}/thailand-2026/53.webp`, alt: 'Koh Phangan, 2026', span: 'wide', pb: true },
 ];

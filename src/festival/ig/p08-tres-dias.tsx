@@ -94,7 +94,7 @@ const Blocos = ({ guides }: PecaProps) => (
 // Day header shrunk from 110 to 94: at 110 "CONSTRUÇÃO" is 1091 px and "INTEGRAÇÃO" 1021 px wide, past x 1020.
 const DiaView = ({ d, i, guides }: { d: Dia; i: number } & PecaProps) => (
   <Lamina n={3 + i} total={TOTAL} guides={guides}>
-    <Foto src={d.foto} filter="brightness(.45)" />
+    <Foto src={d.foto} look="pb" filter="brightness(.45)" />
     <Gancho lines={[`${d.rotulo} ${FEST.dias[i]}`, d.fio]} x={60} y={110} size={94} tons={['accent', 'chalk']} />
     <Grade linhas={d.linhas} />
     <Provisoria />

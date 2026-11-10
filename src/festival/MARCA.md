@@ -9,6 +9,21 @@ Paulo enviou dois prints do site e disse: “essas duas versões são as que o G
 
 Escopo desta revisão: **somente logo e registro**. HF em pé com moldura, refinado com barra central contínua, espessuras uniformes e proporção 4:3. O desenho refinado ainda é proposta para avaliação. Kit em `design/handstandfest-logo-05/`, com SVG/PNG, contorno, monocromático, assinaturas e comparação antes/depois. Edição permanece fora da marca. Site não alterado.
 
+## Palheta fechada e fotos tratadas — 10/11/2026 (decisão mais recente)
+
+- **Palheta fechada pelo Paulo: verde + amarelo** (a antiga E): paper `#f6f1e4`, ink `#0f2a24`, stage `#0f3d33`,
+  accent `#ffd23f`, accent-ink `#0f2a24`, muted `#ffb86b`. A verde + rosa (C) saiu do site junto com o seletor de
+  palheta e o parâmetro `?paleta=`. O que as seções abaixo dizem sobre "duas palhetas" e "escolha em aberto" é histórico.
+- **Tratamento de fotos aplicado por CSS**, sem recortar mídia: cor natural suavizada como base
+  (`saturate(.86) contrast(.96) brightness(1.02)`) e preto e branco moderado (`grayscale(1) contrast(1.06)
+  brightness(1.03)`) em 8 das 23 imagens dos bentos, 2 das 5 fotos do texto de handstand e nos fundos atrás de texto
+  das peças de Instagram 07 a 10 (identidade colorida sobre foto P&B). Pôsteres dos professores perderam o sépia.
+  Valores em `--foto-cor` / `--foto-pb` (festival.css) e `LOOK` (ig/kit.tsx); escolher P&B = `pb: true` no dado do
+  bento, classe `pb` na figura, `look="pb"` em `Clip`/`Foto`.
+- **Não feito:** filtro de CSS não recupera alta luz estourada (isso pede refazer o tone-map dos clipes). Os clipes do
+  hero e do cartão do professor têm um grade antigo gravado no arquivo (contraste alto, vinheta, P&B duro no cartão),
+  fora da direção nova; trocar exige recortar com `scripts/festival_clips.sh`. O grão animado das composições segue.
+
 ## Aplicado no site em 10/11/2026
 
 A pedido do Paulo, o site ficou só com as duas palhetas de fundo verde: **E (verde + amarelo, padrão)** e **C (verde +

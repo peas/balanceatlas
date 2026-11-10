@@ -134,6 +134,12 @@ Always verify downloaded images are real (>5KB, not HTML redirects).
   articles, news and meetups between editions. Palette and logo are still open: `src/festival/MARCA.md` (pt-BR) is
   the brand brief with every decision, the open questions and the prompt Paulo takes to other design tools (Astra).
   Update it on every brand decision.
+  **Palette closed (Paulo, 10/11/2026): green + yellow only** (former E), tokens on `:root` in `festival.css`; the
+  switcher and `?paleta=` are gone, so everything below about E/C or seven palettes is history. **Photo treatment
+  applied by CSS** (no recuts): softened natural colour by default (`--foto-cor`), moderate black and white
+  (`--foto-pb`) on about a third (`pb: true` on a bento item, class `pb` on a figure, `look="pb"` on `Clip`/`Foto`
+  in the Instagram kit, used for backdrops behind text). Still open: blown highlights need a new tone-map, and the
+  hero/teacher clips carry an older baked grade (`scripts/festival_clips.sh`).
   **Applied on the site (10/11/2026):** only palettes E (green + yellow, default) and C (green + pink) remain in
   `festival.css` and in the switcher (`?paleta=e|c`); A/B/D/F/G are history in MARCA.md, so older notes in this file
   about seven palettes and "default B" are superseded. The HF symbol is `src/components/fest/HFMark.astro` (nav,

@@ -1,18 +1,17 @@
 /* 1º HandstandFest: shared styles for /festival and its subpages (imported by FestLayout.astro) */
-/* Palettes (10/11/2026): the two with the deep green stage, the ones Gabriel liked and Paulo wants to follow.
-   E = green + sun yellow (default), C = green + pink; ?paleta=e|c and the switcher compare them until one is chosen.
-   The five dropped candidates (A, B, D, F, G) are recorded with their tokens in src/festival/MARCA.md. */
-:root, [data-paleta='e'] {
+/* Palette (closed by Paulo on 10/11/2026): deep green + sun yellow, the former candidate E.
+   The six dropped candidates are recorded with their tokens in src/festival/MARCA.md. */
+:root {
   --paper: #f6f1e4; --ink: #0f2a24; --stage: #0f3d33; --white: #f6f1e4;
   --accent: #ffd23f; --accent-ink: #0f2a24; --muted: #ffb86b;
-}
-[data-paleta='c'] {
-  --paper: #f4f1ea; --ink: #0f2a24; --stage: #0f3d33; --white: #f4f1ea;
-  --accent: #ff8fb8; --accent-ink: #0f2a24; --muted: #8ed8e8;
 }
 :root {
   --max: 1120px; /* content width: wide screens get air instead of longer lines */
   --gutter: clamp(20px, 5vw, 72px); /* side margin, fluid from phone to desktop */
+  /* Photo treatment (MARCA.md, 10/11/2026): softened natural colour is the base; moderate black and white is the
+     second look, about one image in three. No sepia, no duotone, no added grain. Same values in ig/kit.tsx (LOOK). */
+  --foto-cor: saturate(.86) contrast(.96) brightness(1.02);
+  --foto-pb: grayscale(1) contrast(1.06) brightness(1.03);
   --live: var(--accent); /* live/social cues (play badges, "agora", pill, nav CTA); palettes may split it from --accent */
   --display: 'Archivo', 'Arial Black', sans-serif;
   --mono: 'Space Mono', ui-monospace, monospace;
@@ -273,9 +272,6 @@ a { color: inherit; }
   .bento { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 170px; }
   .bento .large { grid-column: span 2; }
 }
-.paleta { position: fixed; left: 12px; bottom: 12px; z-index: 50; display: flex; align-items: center; gap: 6px; background: #fff; color: #111; border: 2px solid #111; padding: 6px 8px; font: 700 .72rem/1 var(--mono); text-transform: uppercase; }
-.paleta button { height: 26px; padding: 0 8px 0 30px; text-transform: uppercase; background-size: 22px 100% !important; background-repeat: no-repeat !important; border: 2px solid #111; cursor: pointer; font: inherit; color: #111; background: var(--sw) #fff; }
-.paleta button[aria-pressed='true'] { outline: 3px solid #111; outline-offset: 1px; }
 
 /* ---------- Subpages (04/11/2026): header, quem faz, more cards, world list ---------- */
 .page-head { color: var(--white); padding: 0 max(var(--gutter), calc((100% - var(--max)) / 2)) clamp(40px, 7vw, 88px); }
@@ -450,3 +446,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .page-head.claro h1 { color: var(--stage); }
 .foot { align-items: center; }
 .foot-logo { display: inline-flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 900; font-stretch: 125%; text-transform: uppercase; }
+
+/* ---------- Photo treatment (10/11/2026) ---------- */
+.bento img, .bento video, .snake figure img, .venue-photos img, .quem img, .hero-media .stage > img { filter: var(--foto-cor); }
+.bento .pb img, .bento .pb video, .snake figure.pb img { filter: var(--foto-pb); }

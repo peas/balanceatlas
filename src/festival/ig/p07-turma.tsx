@@ -41,7 +41,7 @@ const Pergunta = ({ guides }: PecaProps) => (
 
 const Basico = ({ guides }: PecaProps) => (
   <Lamina n={3} total={TOTAL} guides={guides}>
-    <Foto src="tv-sala-vidro.webp" filter="brightness(.5)" />
+    <Foto src="tv-sala-vidro.webp" look="pb" filter="brightness(.5)" />
     <Etiqueta text="ainda não" x={60} y={150} tom="accent" size={40} />
     <Gancho lines={['Básico']} x={60} y={250} size={150} tom="chalk" />
     <Texto y={520}>Você treina na parede e ainda não segura o livre.</Texto>
@@ -52,7 +52,7 @@ const Basico = ({ guides }: PecaProps) => (
 // Hook shrunk from 88 to 82: at 88 "INTERMEDIÁRIO" is 985 px wide, past x 1020.
 const InterAvancado = ({ guides }: PecaProps) => (
   <Lamina n={4} total={TOTAL} guides={guides}>
-    <Foto src="tv-palco-luzes.webp" filter="brightness(.5)" />
+    <Foto src="tv-palco-luzes.webp" look="pb" filter="brightness(.5)" />
     <Etiqueta text="sim" x={60} y={150} tom="accent" size={40} />
     <Gancho lines={['Intermediário', 'e avançado']} x={60} y={250} size={82} tom="chalk" />
     <Texto y={520}>Você segura uns 10 segundos no livre, de forma consistente (30 é o ideal).</Texto>

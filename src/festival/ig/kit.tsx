@@ -94,11 +94,23 @@ export type ClipProps = {
   zoom?: [number, number]; // scale at the first and last frame of the enclosing <Sequence>
   focus?: [number, number]; // % of the clip that stays put while zooming, and vertical anchor when cropping
   aspect?: number; // height / width of the clip (default 16/9 portrait)
-  filter?: string; // CSS filter (e.g. 'grayscale(1) contrast(1.15)')
+  look?: Look; // photo treatment (default 'cor'); see LOOK
+  filter?: string; // extra CSS filter on top of the look (e.g. 'brightness(.5)' behind text)
   children?: ReactNode; // drawn in the clip's own box (so a <Esqueleto> follows zoom and crop)
 };
+/** Photo treatment (MARCA.md, 10/11/2026), same values as --foto-cor / --foto-pb in festival.css.
+ *  cor = softened natural colour, the base; pb = moderate black and white, for backdrops behind text and a few
+ *  movement shots (brand colour stays on the type and blocks); cru = untouched. No sepia, duotone or added grain. */
+export const LOOK = {
+  cor: 'saturate(.86) contrast(.96) brightness(1.02)',
+  pb: 'grayscale(1) contrast(1.06) brightness(1.03)',
+  cru: '',
+} as const;
+export type Look = keyof typeof LOOK;
+const lookFilter = (look: Look = 'cor', filter?: string) => [LOOK[look], filter].filter(Boolean).join(' ') || undefined;
+
 /** A shot. The clip covers the canvas; on a 3:4 card it is cropped vertically around `focus[1]`. */
-export const Clip = ({ src, from = 0, rate = 1, volume = 0, zoom = [1, 1], focus = [50, 50], aspect = 16 / 9, filter, children }: ClipProps) => {
+export const Clip = ({ src, from = 0, rate = 1, volume = 0, zoom = [1, 1], focus = [50, 50], aspect = 16 / 9, look, filter, children }: ClipProps) => {
   const frame = useCurrentFrame();
   const { width, height, durationInFrames } = useVideoConfig();
   const z = interpolate(frame, [0, Math.max(1, durationInFrames - 1)], zoom, { extrapolateRight: 'clamp' });
@@ -115,7 +127,7 @@ export const Clip = ({ src, from = 0, rate = 1, volume = 0, zoom = [1, 1], focus
       >
         <Html5Video
           src={`${MEDIA}/${src}.mp4`} trimBefore={f(from)} playbackRate={rate} muted={volume === 0} volume={volume} pauseWhenBuffering
-          style={{ width: '100%', height: '100%', objectFit: 'cover', filter }}
+          style={{ width: '100%', height: '100%', objectFit: 'cover', filter: lookFilter(look, filter) }}
         />
         {children}
       </div>
@@ -124,13 +136,13 @@ export const Clip = ({ src, from = 0, rate = 1, volume = 0, zoom = [1, 1], focus
 };
 
 /** A still photo with a slow push (Ken Burns). `src` is a file name in MEDIA (with extension). */
-export const Foto = ({ src, zoom = [1.04, 1.12], focus = [50, 50], filter }: { src: string; zoom?: [number, number]; focus?: [number, number]; filter?: string }) => {
+export const Foto = ({ src, zoom = [1.04, 1.12], focus = [50, 50], look, filter }: { src: string; zoom?: [number, number]; focus?: [number, number]; look?: Look; filter?: string }) => {
   const frame = useCurrentFrame();
   const { durationInFrames } = useVideoConfig();
   const z = interpolate(frame, [0, Math.max(1, durationInFrames - 1)], zoom, { extrapolateRight: 'clamp' });
   return (
     <AbsoluteFill style={{ overflow: 'hidden', background: INK }}>
-      <Img src={`${MEDIA}/${src}`} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: `${focus[0]}% ${focus[1]}%`, transform: `scale(${z})`, transformOrigin: `${focus[0]}% ${focus[1]}%`, filter }} />
+      <Img src={`${MEDIA}/${src}`} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: `${focus[0]}% ${focus[1]}%`, transform: `scale(${z})`, transformOrigin: `${focus[0]}% ${focus[1]}%`, filter: lookFilter(look, filter) }} />
     </AbsoluteFill>
   );
 };

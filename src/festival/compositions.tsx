@@ -267,7 +267,7 @@ export const Poster = ({ img, first, last, handle, shape, focus = 'center' }: Po
         {img ? (
         <img
           src={img}
-          style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: focus, transform: `scale(${zoom})`, filter: 'contrast(1.1) saturate(.8) sepia(.12)' }}
+          style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: focus, transform: `scale(${zoom})`, filter: 'saturate(.86) contrast(.96) brightness(1.02)' /* = LOOK.cor */ }}
         />
         ) : (
           <>

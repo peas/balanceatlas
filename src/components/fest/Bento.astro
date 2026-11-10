@@ -8,7 +8,7 @@ const { items } = Astro.props;
 
 <div class="bento">
   {items.map((p) => (
-    <figure class:list={[p.span, { 'is-video': p.video }]} data-reveal>
+    <figure class:list={[p.span, { 'is-video': p.video, pb: p.pb }]} data-reveal>
       {p.video ? (
         <video src={p.video} poster={p.src} muted loop playsinline preload="none" aria-label={p.alt}></video>
       ) : (
