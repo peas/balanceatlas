@@ -6,6 +6,7 @@ Run with a Python environment containing fonttools; no dependencies added to the
 """
 from pathlib import Path
 import argparse
+import base64
 import copy
 import tempfile
 import subprocess
@@ -126,10 +127,31 @@ art = {
     ('03','back'): stack(115, 35, 170),
 }
 
-def shirt(body, back=False):
+def engraving(name, color, dark=False):
+    """Mixed raster engraving + actual vector bristles; not a production separation."""
+    body = base64.b64encode((ROOT/f'public/festival/ig/arte/{name}.webp').read_bytes()).decode()
+    brush = copy.deepcopy(master.find(f"{NS}g[@id='brush']"))
+    brush.set('fill', color)
+    ink = CREAM if dark else '#202d26'
+    return (f'<g transform="translate(65 82) scale(.27)">{ET.tostring(brush,encoding="unicode")}</g>'
+        + f'<path d="M47 236 C28 88 216 40 321 124 M354 204 C393 349 243 422 110 354" fill="none" stroke="{ink}" stroke-width="1.1"/>'
+        + f'<path d="M192 39 L193 111 M194 361 L194 403" stroke="{ink}" stroke-width=".65"/>'
+        + f'<image href="data:image/webp;base64,{body}" x="16" y="15" width="368" height="370" preserveAspectRatio="xMidYMid meet"/>'
+        + word('handstandfest.com.br',37,411,326/advance('handstandfest.com.br'),ink))
+
+art.update({
+    ('06','front'): engraving('straddle','#ffd23f'),
+    ('06','back'): seal(165,25,70) + stack(100,130,200,('#202d26',)*3),
+    ('07','front'): engraving('stag','#cb8b34'),
+    ('07','back'): seal(165,25,70) + stack(100,130,200,('#202d26',)*3),
+    ('08','front'): seal(270,40,86),
+    ('08','back'): engraving('straddle','#eac74f',True),
+})
+
+def shirt(body, back=False, light=False):
     neck = 'C235 92 365 92 390 70' if back else 'C232 116 368 116 390 70'
     shape = f'M210 70 {neck} L440 85 L560 160 L518 260 L450 228 L455 640 Q300 670 145 640 L150 228 L82 260 L40 160 L160 85 Z'
-    return svg(f'''<defs>
+    result = svg(f'''<defs>
       <linearGradient id="fabric" x1="0" x2="1"><stop stop-color="#25352c"/><stop offset=".25" stop-color="{GREEN}"/><stop offset=".6" stop-color="#3c5044"/><stop offset="1" stop-color="#293a30"/></linearGradient>
       <linearGradient id="fold"><stop stop-color="#16261c" stop-opacity=".24"/><stop offset=".5" stop-color="#68806b" stop-opacity=".12"/><stop offset="1" stop-color="#19291e" stop-opacity="0"/></linearGradient>
     </defs>
@@ -141,11 +163,15 @@ def shirt(body, back=False):
     <path d="M154 232 Q199 359 172 622 L149 634 Q164 424 154 232 M448 232 Q406 394 432 633 L451 638 Q437 407 448 232" fill="url(#fold)"/>
     <g transform="translate(175 150) scale(.625)" opacity=".97">{body}</g>
     ''', '0 0 600 720', 'HandstandFest — '+('costas' if back else 'frente'))
+    if light:
+        for old,new in {'#25352c':'#ded8c6','stop-color="#34463c"':'stop-color="#f0ebdd"','#3c5044':'#f8f3e7','#293a30':'#e0d9c8','#26392c':'#c6beac','#213328':'#d3ccb9','#526551':'#fffaf0'}.items():
+            result=result.replace(old,new)
+    return result
 
 for (number, side), body in art.items():
     (OUT/f'{number}-{side}-art.svg').write_text(svg(body))
     path = OUT/f'{number}-{side}.svg'
-    path.write_text(shirt(body, side=='back'))
+    path.write_text(shirt(body, side=='back',number in ('06','07')))
     rendered = subprocess.run(['rsvg-convert','-w','1200','-h','1440',str(path)], capture_output=True, check=True)
     subprocess.run(['magick','png:-','-quality','88',str(path.with_suffix('.webp'))], input=rendered.stdout, check=True)
 (OUT/'handstand-profile.svg').write_text(svg(silhouette(0,0,400), '0 0 110 400', 'Handstand — perfil'))

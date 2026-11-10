@@ -11,9 +11,8 @@ Promise.all([
   .then(() => continueRender(fontsReady)).catch(cancelRender);
 
 function RenderRoot() {
-  return <>{PIECES.filter(piece => piece.format === 'Reel').map(piece => {
-    const slide = piece.slides[0];
-    return <Composition key={piece.id} id={piece.id} component={slide.component} durationInFrames={Math.round(slide.seconds * 30)} fps={30} width={1080} height={slide.height} defaultProps={{ guides: false, treatment: 'direction' as const }} />;
+  return <>{PIECES.flatMap(piece => piece.slides.map((slide, i) => ({piece,slide,i}))).map(({piece,slide,i}) => {
+    return <Composition key={`${piece.id}-${i}`} id={piece.slides.length === 1 ? piece.id : `${piece.id}-${i+1}`}  component={slide.component} durationInFrames={Math.round(slide.seconds * 30)} fps={30} width={1080} height={slide.height} defaultProps={{ guides: false, treatment: 'direction' as const }} />;
   })}</>;
 }
 registerRoot(RenderRoot);

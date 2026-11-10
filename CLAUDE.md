@@ -245,3 +245,7 @@ Always verify downloaded images are real (>5KB, not HTML redirects).
 ## Festival refinement — 10 November 2026
 
 Paulo approved a small hierarchy/decoration pass alongside the Instagram proposal: mobile hero now places date/city above the video; desktop hierarchy is retained. Removed the external bar behind the hero video, seal drop shadow, animated hero grain and noise texture in green fields. Keep the seal, one brush highlight and real photography as the identity. Remaining ideas (not implemented): explicit pause/offscreen handling for other video surfaces, editorial links, branded social preview image. Ticket URL remains the pre-existing example.com placeholder; obtain the real destination before promoting ticket sales.
+
+## Artistic festival studies — 10 November 2026
+
+Shirt proposals 06–08 and three static art cards + two freeze/paint Reels now explore the engraving references supplied by Paulo (himself and Gabriel). Sources, exact built-in ImageGen prompts and regeneration: `design/handstandfest-arte/README.md`. Shared `ig2/art-pieces.tsx` keeps figure, v07 brush, orbit and text separate. Ochre is experimental; keep global green/yellow. Gallery now has 14 pieces / 27 previews. Print SVGs for these shirts contain raster engravings: do not call them entirely vector or press-ready. Render script supports `--still --frame` and uses explicit `bundle --out-dir`.

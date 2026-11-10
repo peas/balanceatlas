@@ -17,6 +17,8 @@ parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.R
 parser.add_argument('pieces', nargs='+', help='Reel IDs from ig2/pieces.tsx, e.g. futebol formas')
 parser.add_argument('--output-dir', type=Path, default=ROOT/'local/festival/renders', help='MP4 destination')
 parser.add_argument('--concurrency', type=int, default=2, help='Concurrent frames (default 2)')
+parser.add_argument('--still', action='store_true', help='Export each composition as a static PNG instead of MP4')
+parser.add_argument('--frame', type=int, default=0, help='Frame for --still (default 0)')
 args = parser.parse_args()
 if any(not re.fullmatch(r'[a-z][a-z0-9-]*', p) for p in args.pieces):
     parser.error('Piece IDs must contain lowercase letters, digits or hyphens.')
@@ -31,9 +33,12 @@ for name in ['archivo.ttf', 'space-mono-bold.ttf']:
 css = (ROOT/'src/festival/festival.css').read_text()
 (ROOT/'local/festival/render.css').write_text('\n'.join(re.findall(r':root\s*\{[^}]*\}', css)) + '\n* { box-sizing: border-box; margin: 0; padding: 0; }\n')
 bundle = ROOT/'local/festival/render-bundle'
-subprocess.run(['npx','remotion','bundle','src/festival/ig2/render.tsx',str(bundle),'--public-dir',str(public)],cwd=ROOT,check=True)
+subprocess.run(['npx','remotion','bundle','src/festival/ig2/render.tsx','--out-dir',str(bundle),'--public-dir',str(public)],cwd=ROOT,check=True)
 args.output_dir.mkdir(parents=True, exist_ok=True)
 for piece in args.pieces:
+    if args.still:
+        subprocess.run(['npx','remotion','still',str(bundle),piece,str(args.output_dir/f'{piece}.png'),'--frame',str(args.frame),'--overwrite'],cwd=ROOT,check=True)
+        continue
     raw = args.output_dir/f'{piece}-raw.mp4'
     final = args.output_dir/f'{piece}.mp4'
     subprocess.run(['npx','remotion','render',str(bundle),piece,str(raw),'--codec','h264','--crf','18','--concurrency',str(args.concurrency),'--color-space','bt709','--image-format','png','--overwrite'],cwd=ROOT,check=True)

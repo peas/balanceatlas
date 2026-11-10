@@ -332,3 +332,8 @@ Paulo gostou do logo sendo pincelado/pintado nos Reels e vídeos. Manter como as
 
 
 Paulo rejeitou duas versões do one arm: a transferência de peso precisa ser real, com quadril sobre o apoio e inclinação correspondente do tronco. Pediu uma referência de handbalancer conhecido. A terceira proposta parte da posição observada numa foto de Nicolás Montes de Oca publicada pelo Guinness; primeira e segunda silhuetas preservadas. Fonte/prompt registrados no README das camisetas; imagem de referência fora do Git e fora do site.
+
+
+### Gravura e gesto — exploração, 10/11/2026
+
+Paulo enviou referências artísticas de si e Gabriel: gravura em preto/creme, disco ocre com falhas, arcos finos e apoio pincelado. Pediu trazer esse tom às camisetas e ao Instagram, incluindo vídeo → congelamento → P&B → pintura. Estudos 06–08 e cinco novas peças em `ig2/art-pieces.tsx`. Amarelo HF e ocre comparados sem mudar a paleta global. O ocre no creme é a preferência do assistente nesta rodada, ainda sem aprovação do Paulo. Corpo, tinta, traço e texto são camadas independentes; cerdas vêm do selo v07. Manter pose real, texto legível e gesto concentrado na arte, sem pincelar toda a interface. Receita e fontes em `design/handstandfest-arte/README.md`.

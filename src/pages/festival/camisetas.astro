@@ -2,6 +2,9 @@
 import FestLayout from '../../layouts/FestLayout.astro';
 import HFSelo from '../../components/fest/HFSelo.astro';
 const proposals = [
+  { id: '06', name: 'O corpo desenha', tag: 'ARTE / AMARELO HF', description: 'A figura em gravura sobre creme, com o amarelo original da marca. O círculo tem as mesmas cerdas do selo; dois arcos finos acompanham a abertura das pernas.', front: 'Gravura + amarelo · cerca de 28 cm', back: 'HF + nome em três linhas', inks: 'Preto + creme + amarelo', note: 'Arte integrada ao tecido, sem retângulo de fundo. Referência enviada por vocês.' },
+  { id: '07', name: 'O gesto fica', tag: 'ARTE / OCRE', description: 'Traçado detalhado, roupa com volume e um círculo ocre. A opção mais próxima das referências: quente, mais silenciosa e com espaço para o corpo.', front: 'Gravura + ocre · cerca de 28 cm', back: 'HF + nome em três linhas', inks: 'Preto + creme + ocre', note: 'O ocre é um teste para esta estampa; a identidade do festival continua verde e amarela.' },
+  { id: '08', name: 'O gesto nas costas', tag: 'ARTE / VERDE', description: 'HF pequeno no peito. Atrás, a gravura ganha escala sobre o verde, com luzes em creme e tinta amarela. A frente continua discreta.', front: 'Selo no peito · cerca de 6 cm', back: 'Gravura + endereço · cerca de 28 cm', inks: 'Preto + creme + amarelo', note: 'A versão de maior contraste. As luzes da gravura precisam de base clara na impressão.' },
   { id: '04', name: 'Três formas. Um nome.', tag: 'NOVA / NOME NAS COSTAS', description: 'Reta, straddle e one arm de frente, ao lado do HF. Nas costas, HAND / STAND / FEST.com.br: letras grandes em creme e o endereço completado em amarelo, em minúsculas.', front: 'Três figuras + HF · cerca de 27 cm', back: 'Nome em três linhas · cerca de 28 cm', inks: 'Creme + amarelo', note: 'O .com.br acompanha FEST na mesma linha, com uma escala menor.' },
   { id: '05', name: 'As formas nas costas', tag: 'NOVA / MINHA ESCOLHA', description: 'Só o selo HF no peito. Nas costas, as três formas de frente e handstandfest.com.br em minúsculas. Uma frente discreta, com a prática em destaque atrás.', front: 'Selo no peito · cerca de 6 cm', back: 'Três figuras + endereço · cerca de 28 cm', inks: 'Creme + amarelo', note: 'A reta, o straddle e o one arm compartilham a mesma escala e a linha das mãos.' },
   { id: '01', name: 'O clássico', tag: 'ESTUDO ANTERIOR / PERFIL', description: 'HF pequeno na frente. Nas costas, o nome em três linhas e uma parada de mão de perfil. Uma camiseta discreta de frente, reconhecível de costas.', front: 'Selo no peito · cerca de 6 cm', back: 'Nome + silhueta · cerca de 25 cm', inks: 'Creme + amarelo', note: 'O nome tem presença; a silhueta deixa claro o que nos reúne.' },
@@ -17,8 +20,8 @@ const proposals = [
     </nav>
     <header class="shirt-intro">
       <p class="eyebrow">ESTUDO DE CAMISETAS / HF</p>
-      <div class="intro-grid"><h1>PARA USAR.<br /><span>SEM DATA.</span></h1><p>O nome, o gesto e a marca.<br />Duas novas propostas com três formas de handstand e o endereço. Os estudos anteriores continuam abaixo para comparar.</p></div>
-      <div class="materials"><span><i></i> Verde · referência Nori Green</span><span>Creme + amarelo na estampa</span><span>Frente e costas, lado a lado</span></div>
+      <div class="intro-grid"><h1>O CORPO.<br /><span>O TRAÇO.</span></h1><p>Três novas propostas de arte: gravura, tinta com falhas e o gesto de vocês. Creme com amarelo, creme com ocre e verde. Os estudos anteriores continuam abaixo.</p></div>
+      <div class="materials"><span><i></i> Verde e creme</span><span>Amarelo HF × ocre</span><span>Frente e costas, lado a lado</span></div>
     </header>
 
     {proposals.map(p => <section class="proposal" id={`proposta-${p.id}`} aria-labelledby={`title-${p.id}`}>
@@ -26,13 +29,14 @@ const proposals = [
       <div class="garments">
         {(['front','back'] as const).map(side => <figure>
           <figcaption><strong>{side==='front'?'FRENTE':'COSTAS'}</strong><span>{side==='front'?p.front:p.back}</span></figcaption>
-          <picture><source srcset={`/festival/camisetas/${p.id}-${side}.webp`} type="image/webp" /><img src={`/festival/camisetas/${p.id}-${side}.svg`} width="600" height="720" loading={p.id==='04'?'eager':'lazy'} alt={`Proposta ${p.id}, ${side==='front'?'frente':'costas'} da camiseta verde: ${side==='front'?p.front:p.back}`} /></picture>
-          <a class="art-link" href={`/festival/camisetas/${p.id}-${side}-art.svg`} download>Baixar arte vetorial {side==='front'?'da frente':'das costas'} ↓</a>
+          <picture><source srcset={`/festival/camisetas/${p.id}-${side}.webp`} type="image/webp" /><img src={`/festival/camisetas/${p.id}-${side}.svg`} width="600" height="720" loading={p.id==='06'?'eager':'lazy'} alt={`Proposta ${p.id}, ${side==='front'?'frente':'costas'}: ${side==='front'?p.front:p.back}`} /></picture>
+          <a class="art-link" href={`/festival/camisetas/${p.id}-${side}-art.svg`} download>Baixar composição {side==='front'?'da frente':'das costas'} ↓</a>
         </figure>)}
       </div>
       <footer class="proposal-footer"><span>{p.note}</span><span>{p.inks} · sem data, ano ou cidade</span></footer>
     </section>)}
 
+    <p class="art-note">Estudos 06–08: gravuras raster com transparência e grafismos vetoriais. Composições para avaliar; a separação de tintas e a resolução final para estampa serão preparadas após escolher a direção. <a href="/festival/instagram2/#arte-gravura">Ver a mesma linguagem no Instagram ↗</a></p>
     <section class="details" aria-labelledby="detail-title">
       <div class="pose"><img src="/festival/camisetas/handstand-trio.svg" alt="Três silhuetas vistas de frente: reta, straddle com pernas afastadas e equilíbrio em um braço." width="800" height="400" /></div>
       <div><p class="eyebrow">O GESTO PERMANECE</p><h2 id="detail-title">Três formas.<br />A mesma prática.</h2><p>Agora as figuras aparecem de frente: reta com pernas juntas, straddle com pernas afastadas e one arm com o braço livre para o lado. Três silhuetas deixam cada forma respirar, mesmo na estampa menor.</p><a href="/festival/camisetas/handstand-trio.svg" download>Baixar as três silhuetas em SVG ↓</a></div>

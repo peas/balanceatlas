@@ -1,5 +1,10 @@
 # Balance Atlas memory
 
+## 2026-11-10 — Engraving and paint studies
+
+- Paulo supplied artistic shirt illustrations of himself/Gabriel and requested a less rigid direction, static Instagram art and live-video → freeze → grayscale → paint tests. Added shirts 06–08, three static cards and two 10-second Reels. Built-in ImageGen transparent extractions preserve reference poses; the motion matte reveals original video pixels. Same v07 bristles, independent body/ink/orbit/text layers. Ochre is an experiment, not a global palette change. Recipe, prompts and limitations: `design/handstandfest-arte/README.md`.
+- Fixed render bundle output flag (`--out-dir`), added PNG still exports. Sent three shirt comparisons and three static cards as original PNG documents via @FaiscaDoisBot; Telegram acknowledged all six (2926–2931).
+
 ## 2026-11-10 — First MP4 exports
 
 - Explicit request: render football plus another Reel and send via Faisca. Sent football (13.5 s) and Shapes (16.5 s) as original MP4 documents through @FaiscaDoisBot; Telegram acknowledged both. 1080×1920, 30 fps, H.264, no soundtrack. Repeatable `scripts/festival_render.py`, shared render entry and staticFile-aware ig2 media; fonts loaded locally and CSS tokens read from the site. MP4s remain outside git.
