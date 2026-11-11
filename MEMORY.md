@@ -1,5 +1,9 @@
 # Balance Atlas memory
 
+## 2026-11-11 — Restore the static ochre hero
+
+- Paulo prefers the original authored engraving with anatomy-following hatching for `/festival/home2/ocre/`. Restored the stag illustration in the hero; kept the straddle below, ochre palette, brush graphics and teacher stories. Other theme heroes are unchanged. The separate procedural filter study is not a replacement for these illustrations.
+
 ## 2026-11-11 — Approved ochre and moving home
 
 - Paulo chose ochre over yellow and approved cream/ochre alternating with deep green/light ochre. Updated global festival tokens, v07 SVG/PNG/WebP seals and favicon; Instagram2/render CLI now default to ochre, with old yellow retained as explicit comparison. Increased supporting text/counters, larger gallery previews, green third photo card.

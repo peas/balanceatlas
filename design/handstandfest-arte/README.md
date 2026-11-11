@@ -59,3 +59,7 @@ Paulo selected ochre as the main accent, with cream and deep-green backgrounds. 
 `src/festival/ArtStories.tsx`: 720×900, 30 fps, 180-frame scenes overlapping by 12 frames. Event facts come from `data.ts`/`home-content.ts`; teacher photos/profiles are reused without invented bios. Preserve full source frames with `objectFit: contain`. Selected clips freeze at frame 120, grayscale ramps over 15 frames, brush reveals from 125 to 155; the seal may paint alongside other information. Use the same traced v07 paths, not a generic rough filter. Text on dark scenes has a clipped dark duplicate that follows the paint, keeping contrast through the reveal.
 
 `ArtStoryPlayer.tsx`: wait for fonts, autoplay muted at ≥25% visibility, pause offscreen/backgrounded, respect reduced motion, retain manual pause. Four progress buttons plus previous/next/pause. Hero and teachers are separate sequences; static teacher cards remain available. Inline music listening is only in the Instagram studio and is separate from these silent website stories.
+
+### Ochre hero restoration — 11 November 2026
+
+At Paulo's request, `/festival/home2/ocre/` again leads with the original static `stag.webp` engraving through `ArtGesture`, with the v07 ochre disc, orbit and ground stroke. The existing `straddle.webp` illustration remains in the meeting note. These are the authored anatomical engravings, not procedural filters applied to footage. Teacher stories and other theme heroes retain their current behavior.
