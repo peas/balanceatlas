@@ -1,3 +1,4 @@
+import { OCHRE_PHOTOS } from './ochre-photos';
 // Copy and footage from ig/PECAS.md and the existing festival pages. No new event claims.
 import type { ComponentType } from 'react';
 import { Freeze, Sequence } from 'remotion';
@@ -128,6 +129,7 @@ const slide = (name: string, component: ComponentType<PieceProps>, seconds: numb
   return { name, component: height === 1440 ? (p: PieceProps) => <Freeze frame={30}><Card {...p} /></Freeze> : component, seconds, height, cover: 24, cues: height === 1440 ? [] : cues };
 };
 export const PIECES: Piece[] = [
+  ...OCHRE_PHOTOS,
   ...ART_PIECES,
   { id: 'junto', title: 'Gente para treinar junto', format: 'Reel', description: 'O treino ocupa a imagem. As frases têm um espaço próprio, acima do corpo.', look: 'Cor → P&B → cor', movement: 'Uma pincelada revela a palavra. Cortes entre câmeras e selo no encerramento.', slides: [slide('Treinar junto', Together, 17.5, 1920, [{label:'Abertura',frame:0},{label:'P&B',frame:f(6)},{label:'Encontro',frame:f(11)},{label:'Selo',frame:f(15.5)}])] },
   { id: 'lugar', title: 'É aqui', format: 'Reel', description: 'Um passeio pelo Trapézio Voador com espaço para olhar a arquitetura.', look: 'Cor → cor → P&B', movement: 'Títulos assentados na mesma linha. O pincel aparece na abertura e no selo final.', slides: [slide('O lugar', Venue, 14.5, 1920, [{label:'Fachada',frame:24},{label:'Vidro',frame:f(5)},{label:'Palco',frame:f(8.5)},{label:'Selo',frame:f(12.5)}])] },

@@ -4,8 +4,8 @@ import type { Piece, Slide } from './pieces';
 import { Canvas, Facts, Headline, Label, Media, ACCENT, CHALK, f, type PieceProps } from './kit';
 import { Selo } from '../ig/kit';
 
-function Signoff({ guides, title, question }: PieceProps & { title: string[]; question: string }) {
-  return <Canvas guides={guides} dark>
+function Signoff({ guides, palette, title, question }: PieceProps & { title: string[]; question: string }) {
+  return <Canvas guides={guides} palette={palette} dark>
     <div style={{ position: 'absolute', left: 65, top: 280 }}><Selo size={240} giro={24} /></div>
     <Headline lines={title} y={620} size={94} dark />
     <Label y={1020} size={44} color={CHALK} style={{ width: 850 }}>{question}</Label>

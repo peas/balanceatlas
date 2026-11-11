@@ -31,7 +31,7 @@ function Orbits({color, progress=1}:{color:string;progress?:number}) {
   </svg>;
 }
 export function ArtPoster({variant=0, ...p}:PieceProps & {variant?:number}) {
-  const dark=variant===2, color=variant===1?'#cb8b34':'#ffd23f';
+  const dark=variant===2, color=variant===1?'#cb8b34':'var(--ig2-art-paint, #ffd23f)';
   const text=dark?PAPER:INK;
   return <Canvas {...p} format="card" dark={dark}>
     <AbsoluteFill style={{background:dark?GREEN:PAPER,color:text}}>
@@ -56,7 +56,7 @@ const PosterGreen=(p:PieceProps)=><Freeze frame={240}><ArtPoster {...p} variant=
 function FreezeArt({bold=false,...p}:PieceProps & {bold?:boolean}) {
   const frame=useCurrentFrame(), freezeAt=150;
   const mono=move(frame,freezeAt,18), paint=move(frame,freezeAt+15,42);
-  const color=bold?'#ffd23f':'#cb8b34', paper=bold?GREEN:PAPER, ink=bold?PAPER:INK;
+  const color=bold?'var(--ig2-art-paint, #ffd23f)':'#cb8b34', paper=bold?GREEN:PAPER, ink=bold?PAPER:INK;
   const framing = {position:'absolute' as const,left:0,top:0,width:885,height:1030,transform:'translate(40px, -35px) scale(1.45)'};
   const media=<Html5Video src={url('ig2-formas.mp4')} muted style={{width:'100%',height:'100%',objectFit:'contain'}}/>;
   return <Canvas {...p} dark={bold}>
@@ -80,6 +80,6 @@ function FreezeArt({bold=false,...p}:PieceProps & {bold?:boolean}) {
 const FreezeOchre=(p:PieceProps)=><FreezeArt {...p}/>;
 const FreezeBold=(p:PieceProps)=><FreezeArt {...p} bold/>;
 export const ART_PIECES:Piece[]=[
-  {id:'arte-gravura',title:'Corpo, tinta e papel',format:'Carrossel',description:'Três estudos estáticos com as figuras das referências de vocês: amarelo HF, ocre e verde. Gravura, cerdas e arcos em camadas independentes.',look:'Amarelo × ocre × verde',movement:'Imagens estáticas. A arte tem textura; a tipografia preserva a leitura no celular.',slides:[PosterYellow,PosterOchre,PosterGreen].map((component,i)=>({name:['Amarelo HF','Ocre / gesto','Verde / ousado'][i],component,seconds:1,height:1440,cover:0,cues:[]}))},
-  ...[false,true].map((bold):Piece=>({id:bold?'arte-freeze-amarelo':'arte-freeze-ocre',title:bold?'O gesto ocupa o quadro':'Do vídeo à tinta',format:'Reel',description:bold?'Teste mais ousado: verde profundo, pincelada amarela ampla e o corpo em P&B.':'O vídeo congela; o P&B chega primeiro, seguido da pintura ocre e de um traço de órbita.',look:bold?'Verde + amarelo HF':'Papel + ocre',movement:'5 s de vídeo real → congelamento no mesmo quadro → P&B → tinta em 1,4 s. Selo entra junto.',slides:[{name:'Vídeo → quadro → pintura',component:bold?FreezeBold:FreezeOchre,seconds:10,height:1920,cover:0,cues:[{label:'Vídeo',frame:0},{label:'Congela',frame:150},{label:'Pintura',frame:180},{label:'Arte',frame:240}]}]})),
+  {id:'arte-gravura',title:'Corpo, tinta e papel',format:'Carrossel',description:'Três estudos estáticos com as figuras das referências de vocês: papel claro e fundo verde. Gravura, cerdas e arcos em camadas independentes.',look:'Papel × gesto × verde',movement:'Imagens estáticas. A arte tem textura; a tipografia preserva a leitura no celular.',slides:[PosterYellow,PosterOchre,PosterGreen].map((component,i)=>({name:['Corpo / papel','Gesto / papel','Verde / ousado'][i],component,seconds:1,height:1440,cover:0,cues:[]}))},
+  ...[false,true].map((bold):Piece=>({id:bold?'arte-freeze-amarelo':'arte-freeze-ocre',title:bold?'O gesto ocupa o quadro':'Do vídeo à tinta',format:'Reel',description:bold?'Teste mais ousado: verde profundo, pincelada ampla e o corpo em P&B.':'O vídeo congela; o P&B chega primeiro, seguido da pintura ocre e de um traço de órbita.',look:bold?'Verde + tinta':'Papel + ocre',movement:'5 s de vídeo real → congelamento no mesmo quadro → P&B → tinta em 1,4 s. Selo entra junto.',slides:[{name:'Vídeo → quadro → pintura',component:bold?FreezeBold:FreezeOchre,seconds:10,height:1920,cover:0,cues:[{label:'Vídeo',frame:0},{label:'Congela',frame:150},{label:'Pintura',frame:180},{label:'Arte',frame:240}]}]})),
 ];

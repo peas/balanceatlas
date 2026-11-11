@@ -1,7 +1,7 @@
 import { Player, type PlayerRef } from '@remotion/player';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { PIECES, type Slide } from './pieces';
-import { f, type PieceProps, type Treatment } from './kit';
+import { f, type PieceProps, type Treatment, type Palette, OCHRE_TOKENS } from './kit';
 import './studio.css';
 
 function Preview({ slide, still, ready, inputProps, label }: { slide: Slide; still: boolean; ready: boolean; inputProps: PieceProps; label: string }) {
@@ -35,18 +35,26 @@ function Preview({ slide, still, ready, inputProps, label }: { slide: Slide; sti
 
 export default function Studio() {
   const [treatment, setTreatment] = useState<Treatment>('direction');
+  const [palette, setPalette] = useState<Palette>(() => typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('paleta') === 'ocre' ? 'ocre' : 'original');
+  function changePalette(value: Palette) {
+    setPalette(value);
+    const url = new URL(window.location.href);
+    if (value === 'ocre') url.searchParams.set('paleta', value); else url.searchParams.delete('paleta');
+    window.history.replaceState(null, '', url);
+  }
   const [guides, setGuides] = useState(false);
   const [ready, setReady] = useState(false);
-  const inputProps = useMemo(() => ({ treatment, guides }), [treatment, guides]);
+  const inputProps = useMemo(() => ({ treatment, guides, palette }), [treatment, guides, palette]);
   useEffect(() => {
     let alive = true;
     Promise.all([document.fonts.load('900 80px Archivo'), document.fonts.load('700 30px "Space Mono"')]).catch(() => undefined).then(() => { if (alive) setReady(true); });
     return () => { alive = false; };
   }, []);
-  return <div className="ig2-studio">
+  return <div className="ig2-studio" data-palette={palette} style={palette === 'ocre' ? OCHRE_TOKENS : undefined}>
     <div className="ig2-toolbar">
       <p className="ig2-overline">{PIECES.length} peças · todas nesta página</p>
       <div className="ig2-options">
+        <label>Paleta<select value={palette} onChange={e => changePalette(e.target.value as Palette)}><option value="original">Amarelo / direção original</option><option value="ocre">Ocre / papel quente</option></select></label>
         <label>Tratamento<select value={treatment} onChange={e => setTreatment(e.target.value as Treatment)}><option value="direction">Direção de cada peça</option><option value="cor">Cor natural</option><option value="pb">Preto e branco</option><option value="cru">Sem filtro adicional</option></select></label>
         <label className="ig2-guides"><input type="checkbox" checked={guides} onChange={e => setGuides(e.target.checked)} /> Zonas seguras</label>
       </div>

@@ -342,3 +342,8 @@ Paulo enviou referências artísticas de si e Gabriel: gravura em preto/creme, d
 ### Home2 — exploração e retorno das cerdas, 10/11/2026
 
 Quatro aplicações em URLs próprias: `/festival/home2/` (mistura), `/ocre/`, `/amarelo/`, `/verde/`. Paulo achou a versão bonita, mas sentiu falta das cerdas nos professores convidados. Aplicado o mesmo traço v07 atrás das bordas dos retratos e como grifo curto nos nomes. A expressão deve reaparecer em pontos de identidade ao longo da página, sem cobrir rosto, mãos ou pés. Manter programação, botões e informações práticas simples. O estudo compartilha dados com a home atual e não substitui a identidade aprovada.
+
+
+### Ocre no Instagram2 — teste solicitado, 10/11/2026
+
+Paulo pediu experimentar a direção ocre da home2 no Instagram2 e aplicar P&B + pincel ocre a fotos dos carrosséis. Comparação em `?paleta=ocre`, reversível no seletor. Três PNGs fotográficos e um Reel separado de fotos com pintura; também exportado o teste de vídeo real → congelamento → P&B → tinta, com selo ocre. As fotos continuam fotos; grayscale não vira gravura. Corpos inteiros, pigmento nas árvores acima deles e nas bordas. Paleta global ainda verde/amarelo.

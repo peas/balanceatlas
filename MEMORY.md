@@ -1,5 +1,9 @@
 # Balance Atlas memory
 
+## 2026-11-10 — Ochre Instagram comparison
+
+- Paulo requested home2 ochre on Instagram2, plus actual carousel photographs in P&B with ochre painting and motion tests. Added shareable `?paleta=ocre` selector, export palette props, three static photo cards and a separate 9-second photo animation; exported the existing 10-second freeze/paint footage with an ochre seal too. Full bodies preserved, pigment in trees and bristled edges. No global palette change or social-account posting. Recipe/source times in ig2/README.md.
+
 ## 2026-11-10 — Alternative artistic homepage
 
 - `/festival/home2/` mixes engraved cream/ochre with green/yellow; `/ocre/`, `/amarelo/`, `/verde/` compare the same full event page. Shared `home-content.ts` keeps original and alternative schedules, teachers and lots aligned. Current homepage remains the default.

@@ -6,11 +6,13 @@ import { BrushStroke } from '../Brush';
 import { QUANDO } from '../data';
 export { ACCENT, CHALK, INK, MONO, STAGE, WIDE, f };
 export type Treatment = 'direction' | Look;
-export type PieceProps = { guides?: boolean; treatment?: Treatment };
+export type Palette = 'original' | 'ocre';
+export type PieceProps = { guides?: boolean; treatment?: Treatment; palette?: Palette };
+export const OCHRE_TOKENS = { '--accent': '#cb8b34', '--accent-ink': '#22332a', '--stage': '#22332a', '--white': '#f3eddf', '--paper': '#f3eddf', '--ig2-art-paint': '#cb8b34' } as CSSProperties;
 export const move = (frame: number, start = 0, length = 18) => interpolate(frame, [start, start + length], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic) });
 
-export function Canvas({ children, guides, format = 'reel', dark = false }: PieceProps & { children: ReactNode; format?: Formato; dark?: boolean }) {
-  return <Quadro formato={format} guides={guides} grain={false}><AbsoluteFill data-ig2-canvas style={{ background: dark ? STAGE : CHALK, color: dark ? CHALK : STAGE }}>{children}</AbsoluteFill></Quadro>;
+export function Canvas({ children, guides, format = 'reel', dark = false, palette = 'original' }: PieceProps & { children: ReactNode; format?: Formato; dark?: boolean }) {
+  return <Quadro formato={format} guides={guides} grain={false}><AbsoluteFill data-ig2-canvas style={{ ...(palette === 'ocre' ? OCHRE_TOKENS : {}), background: dark ? STAGE : CHALK, color: dark ? CHALK : STAGE }}>{children}</AbsoluteFill></Quadro>;
 }
 export function Label({ children, x = 65, y, color = STAGE, size = 42, style }: { children: ReactNode; x?: number; y: number; color?: string; size?: number; style?: CSSProperties }) {
   return <div data-ig2-text style={{ position: 'absolute', left: x, top: y, color, fontFamily: MONO, fontSize: size, lineHeight: 1.4, fontWeight: 700, ...style }}>{children}</div>;
@@ -40,10 +42,10 @@ export function Media({ src, photo = false, x = 65, y = 600, w = 885, h = 950, f
 export function Facts({ y = 505, dark = false }: { y?: number; dark?: boolean }) {
   return <Label y={y} size={42} color={dark ? CHALK : STAGE}>{QUANDO.toUpperCase()} · SÃO PAULO</Label>;
 }
-export function EndCard({ guides, format = 'reel', cta = 'Vem junto.' }: PieceProps & { format?: Formato; cta?: string }) {
+export function EndCard({ guides, format = 'reel', palette, cta = 'Vem junto.' }: PieceProps & { format?: Formato; cta?: string }) {
   const card = format === 'card';
   const frame = useCurrentFrame();
-  return <Canvas guides={guides} format={format} dark>
+  return <Canvas guides={guides} palette={palette} format={format} dark>
     <div style={{ position: 'absolute', left: 340, top: card ? 100 : 275, transform: `rotate(${interpolate(move(frame, 0, 26), [0, 1], [-12, 0])}deg)` }}><Selo size={340} giro={24} /></div>
     <Headline lines={['HANDSTAND', 'FEST']} y={card ? 510 : 720} size={97} dark />
     <Label y={card ? 775 : 990} size={48} color={ACCENT}>{QUANDO.toUpperCase()}</Label>

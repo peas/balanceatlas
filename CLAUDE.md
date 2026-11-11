@@ -253,3 +253,7 @@ Shirt proposals 06–08 and three static art cards + two freeze/paint Reels now 
 ## Alternative festival homepage — 10 November 2026
 
 `/festival/home2/` is the mixed art study, with `/ocre/`, `/amarelo/` and `/verde/` variants. `ArtHome.astro` shares event facts via `home-content.ts` with the original home; `ArtGesture.astro` reuses the engraved figures and v07 brush. Paulo liked the direction and requested recognizable bristles around invited teachers: textured underlays outside photos and short name highlights, with bodies unobscured. Keep utilities clean. The original home stays the default; ochre remains exploratory. Recipe in `design/handstandfest-arte/README.md`.
+
+## Instagram ochre experiment — 10 November 2026
+
+`/festival/instagram2/?paleta=ocre` applies the home2 ochre/paper direction to the live compositions, via a reversible toolbar selector and exportable `PieceProps.palette`. New `ochre-photos.tsx`: three P&B/ochre photo cards from existing img-2381 stills plus a separate animated-photo Reel. Current gallery: 16 pieces / 31 previews. CLI `--palette ocre` also colors closing seals; photo and freeze/paint MP4s are exported outside Git. Local palette experiment, not global approval. See ig2/README.md.

@@ -7,6 +7,7 @@ Examples: python scripts/festival_render.py futebol formas
           python scripts/festival_render.py futebol --output-dir /absolute/output
 """
 import argparse
+import json
 from pathlib import Path
 import re
 import shutil
@@ -19,7 +20,9 @@ parser.add_argument('--output-dir', type=Path, default=ROOT/'local/festival/rend
 parser.add_argument('--concurrency', type=int, default=2, help='Concurrent frames (default 2)')
 parser.add_argument('--still', action='store_true', help='Export each composition as a static PNG instead of MP4')
 parser.add_argument('--frame', type=int, default=0, help='Frame for --still (default 0)')
+parser.add_argument('--palette', choices=['original', 'ocre'], default='original', help='Composition palette')
 args = parser.parse_args()
+render_props = ['--props', json.dumps({'palette': args.palette})]
 if any(not re.fullmatch(r'[a-z][a-z0-9-]*', p) for p in args.pieces):
     parser.error('Piece IDs must contain lowercase letters, digits or hyphens.')
 if args.concurrency < 1:
@@ -37,11 +40,11 @@ subprocess.run(['npx','remotion','bundle','src/festival/ig2/render.tsx','--out-d
 args.output_dir.mkdir(parents=True, exist_ok=True)
 for piece in args.pieces:
     if args.still:
-        subprocess.run(['npx','remotion','still',str(bundle),piece,str(args.output_dir/f'{piece}.png'),'--frame',str(args.frame),'--overwrite'],cwd=ROOT,check=True)
+        subprocess.run(['npx','remotion','still',str(bundle),piece,str(args.output_dir/f'{piece}.png'),'--frame',str(args.frame),'--overwrite'] + render_props,cwd=ROOT,check=True)
         continue
     raw = args.output_dir/f'{piece}-raw.mp4'
     final = args.output_dir/f'{piece}.mp4'
-    subprocess.run(['npx','remotion','render',str(bundle),piece,str(raw),'--codec','h264','--crf','18','--concurrency',str(args.concurrency),'--color-space','bt709','--image-format','png','--overwrite'],cwd=ROOT,check=True)
+    subprocess.run(['npx','remotion','render',str(bundle),piece,str(raw),'--codec','h264','--crf','18','--concurrency',str(args.concurrency),'--color-space','bt709','--image-format','png','--overwrite'] + render_props,cwd=ROOT,check=True)
     subprocess.run(['ffmpeg','-nostdin','-y','-hide_banner','-loglevel','error','-i',str(raw),'-c','copy','-movflags','+faststart',str(final)],check=True)
     raw.unlink()
     print(f'Rendered {piece}: {final}')

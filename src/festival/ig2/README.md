@@ -106,3 +106,18 @@ Paulo requested a joke using the ball in the mural handstand. Piece `futebol` ad
 Paulo explicitly requested the football Reel and another one via Faisca/Telegram. Exported “Gosta de futebol?” (13.5 s, 3.4 MB) and “Parada? Só no nome.” (16.5 s, 2.2 MB), reviewed frame sheets and metadata, then sent as original MP4 documents through his configured Faisca bot. No Telegram token or recipient data belongs in this repository.
 
 Rendering documentation: [Remotion CLI](https://www.remotion.dev/docs/render) and [public directory](https://www.remotion.dev/docs/options/public-dir). A normal `npm run build` does not render videos; CLI-only entry is not imported into Astro pages.
+
+## Ochre comparison and photographic studies — 10 November 2026
+
+`?paleta=ocre` opens the gallery with warm paper `#f3eddf`, dark green ink `#22332a` and ochre `#cb8b34`. The toolbar switches back to the original direction and updates the shareable URL. `PieceProps.palette` reaches Canvas and both closing-card helpers, so the same palette works in Player and CLI exports, including SVG seals. No global festival palette change. Art pieces retain their intentional light/dark layouts; the alternate yellow disc follows the palette override.
+
+`ochre-photos.tsx` adds three static carousel images and a separate nine-second photo Reel. Reuses `img-2381` stills at 10 / 6 / 4 seconds (`ig2-estrela-*.webp`), already present in the gallery. Filenames are legacy labels, not reliable pose annotations: inspect the actual frame. Full-image containment, grayscale, v07 bristles at the edges and a multiply-blended ochre disc in the trees above the athletes. No generated redraw or body motion. For the static branch, paint progress is explicitly 1; do not rely on a Freeze frame beyond a short composition's duration.
+
+Motion: each photo stays three seconds; grayscale changes over frames 0–18, paint starts at 18 and completes at 56. Titles are visible from frame 0. The existing `arte-freeze-ocre` provides the separate live-footage experiment: video → freeze → P&B → paint behind the original-pixel cutout.
+
+```sh
+python3 scripts/festival_render.py fotos-ocre-1 fotos-ocre-2 fotos-ocre-3 --still --palette ocre
+python3 scripts/festival_render.py fotos-ocre-motion arte-freeze-ocre --palette ocre
+```
+
+Gallery: 16 pieces / 31 previews. PNGs are 1080×1440; MP4s 1080×1920, 30 fps, 9 and 10 seconds, no audio. New files stay in outputs/local, not public Git media. Reviewed actual exports and palette switching, including a Reel closing card. Build passes; the existing generic transition TypeScript diagnostic is unchanged.
