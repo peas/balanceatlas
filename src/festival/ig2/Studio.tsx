@@ -3,6 +3,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { PIECES, type Slide } from './pieces';
 import { f, type PieceProps, type Treatment, type Palette, OCHRE_TOKENS } from './kit';
 import './studio.css';
+import { suggestedMusic } from './music';
 
 function Preview({ slide, still, ready, inputProps, label }: { slide: Slide; still: boolean; ready: boolean; inputProps: PieceProps; label: string }) {
   const box = useRef<HTMLDivElement>(null);
@@ -35,13 +36,14 @@ function Preview({ slide, still, ready, inputProps, label }: { slide: Slide; sti
 
 export default function Studio() {
   const [treatment, setTreatment] = useState<Treatment>('direction');
-  const [palette, setPalette] = useState<Palette>(() => typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('paleta') === 'ocre' ? 'ocre' : 'original');
+  const [palette, setPalette] = useState<Palette>(() => typeof window !== 'undefined' && new URLSearchParams(window.location.search).get('paleta') === 'original' ? 'original' : 'ocre');
   function changePalette(value: Palette) {
     setPalette(value);
     const url = new URL(window.location.href);
-    if (value === 'ocre') url.searchParams.set('paleta', value); else url.searchParams.delete('paleta');
+    if (value === 'original') url.searchParams.set('paleta', value); else url.searchParams.delete('paleta');
     window.history.replaceState(null, '', url);
   }
+  const [large, setLarge] = useState(true);
   const [guides, setGuides] = useState(false);
   const [ready, setReady] = useState(false);
   const inputProps = useMemo(() => ({ treatment, guides, palette }), [treatment, guides, palette]);
@@ -50,12 +52,13 @@ export default function Studio() {
     Promise.all([document.fonts.load('900 80px Archivo'), document.fonts.load('700 30px "Space Mono"')]).catch(() => undefined).then(() => { if (alive) setReady(true); });
     return () => { alive = false; };
   }, []);
-  return <div className="ig2-studio" data-palette={palette} style={palette === 'ocre' ? OCHRE_TOKENS : undefined}>
+  return <div className={`ig2-studio${large ? ' ig2-large' : ''}`} data-palette={palette} style={palette === 'ocre' ? OCHRE_TOKENS : undefined}>
     <div className="ig2-toolbar">
       <p className="ig2-overline">{PIECES.length} peças · todas nesta página</p>
       <div className="ig2-options">
-        <label>Paleta<select value={palette} onChange={e => changePalette(e.target.value as Palette)}><option value="original">Amarelo / direção original</option><option value="ocre">Ocre / papel quente</option></select></label>
+        <label>Paleta<select value={palette} onChange={e => changePalette(e.target.value as Palette)}><option value="ocre">Ocre / creme e verde</option><option value="original">Amarelo / comparação anterior</option></select></label>
         <label>Tratamento<select value={treatment} onChange={e => setTreatment(e.target.value as Treatment)}><option value="direction">Direção de cada peça</option><option value="cor">Cor natural</option><option value="pb">Preto e branco</option><option value="cru">Sem filtro adicional</option></select></label>
+        <label className="ig2-guides"><input type="checkbox" checked={large} onChange={e => setLarge(e.target.checked)} /> Prévias maiores</label>
         <label className="ig2-guides"><input type="checkbox" checked={guides} onChange={e => setGuides(e.target.checked)} /> Zonas seguras</label>
       </div>
     </div>
@@ -70,6 +73,7 @@ export default function Studio() {
           {piece.slides.map((slide, index) => <Preview key={slide.name} slide={slide} still={piece.format === 'Carrossel'} ready={ready} inputProps={inputProps} label={`${piece.title} · ${index + 1}. ${slide.name}`} />)}
         </div>
         <p className="ig2-notes"><strong>{piece.look}.</strong> {piece.movement}</p>
+        {suggestedMusic[piece.id] && <aside className="ig2-music"><strong>Trilha para testar no Instagram</strong><a href={suggestedMusic[piece.id].url} target="_blank" rel="noopener">{suggestedMusic[piece.id].artist} · {suggestedMusic[piece.id].track} ↗</a><p>{suggestedMusic[piece.id].note}</p><small>Selecione a faixa no Instagram ao publicar. O export fica sem música.</small><details><summary>Ouvir referência aqui</summary><iframe title={`${suggestedMusic[piece.id].artist} — ${suggestedMusic[piece.id].track}`} src={`https://www.youtube-nocookie.com/embed/${new URL(suggestedMusic[piece.id].url).searchParams.get('v')}`} loading="lazy" allow="encrypted-media; picture-in-picture" allowFullScreen/><small>Reprodução separada da prévia, para escolher o clima da trilha.</small></details></aside>}
       </article>)}
     </div>
   </div>;

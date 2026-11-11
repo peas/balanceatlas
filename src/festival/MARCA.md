@@ -3,6 +3,20 @@
 Em pt-BR, como o texto do festival: é o documento que o Paulo leva para outras ferramentas de design (Astra) e
 lê com o Gabriel. Atualizar aqui a cada decisão; o `CLAUDE.md` do repo aponta para cá.
 
+## Direção aprovada — 11/11/2026
+
+Esta decisão substitui as paletas exploratórias e a escolha verde/amarelo abaixo: **ocre é o acento principal**, alternando duas aplicações: creme + ocre e verde profundo + ocre claro. Creme `#f3eddf`, verde `#123d33`, ocre `#cb8b34`, ocre claro `#dfab5b`. O tom claro preserva leitura sobre verde; em textos pequenos sobre tinta usamos verde mais escuro. Não criar um terceiro sistema visual só para variar o feed.
+
+Instagram2 abre em ocre; a terceira foto do carrossel usa fundo verde. Textos de apoio e contadores aumentaram, com prévias maiores por padrão. A forma do HF e a pincelada v07 continuam as mesmas. Novos arquivos `hf-ochre-v7` e `hf-green-ochre-v7` nas escalas responsivas vêm de `festival_brand_assets.py`.
+
+A home2 recupera stories automáticos silenciosos na abertura e nos professores, com navegação e pausa. Em momentos selecionados: vídeo natural → freeze aos 4 s → P&B → cerdas/selo. Texto permanece legível antes da tinta; pincel acompanha ou sucede o texto. A pintura não encobre mãos, pés ou rostos. Fora da tela e com movimento reduzido, não há autoplay. A home original continua no endereço oficial.
+
+Música brasileira: energia, percussão e groove, sem atmosfera padrão de yoga. Curadoria por peça em `ig2/MUSICA.md`; escuta de referência separada na galeria e escolha final no Instagram. Não há áudio comercial nem sincronização final embutidos nos renders.
+
+## Histórico das explorações anteriores
+
+As seções datadas abaixo descrevem decisões anteriores; a direção vigente está acima.
+
 ## Proposta de Instagram 02 — 10/11/2026
 
 Paulo pediu uma página alternativa combinando Remotion, tratamento de imagem, posição das frases e o novo selo de pincel. Proposta local em `/festival/instagram2/` (atalho `/instagram2/`), código e notas em `src/festival/ig2/`. Usa a **paleta verde/amarelo já fechada e o círculo de pincel atual**, sem redesenhar o logo.

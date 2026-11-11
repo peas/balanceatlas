@@ -1,9 +1,8 @@
 /* 1º HandstandFest: shared styles for /festival and its subpages (imported by FestLayout.astro) */
-/* Palette (closed by Paulo on 10/11/2026): deep green + sun yellow, the former candidate E.
-   The six dropped candidates are recorded with their tokens in src/festival/MARCA.md. */
+/* Palette approved 11/11/2026: ochre, warm paper and deep green. Earlier studies remain in MARCA.md. */
 :root {
-  --paper: #f6f1e4; --ink: #0f2a24; --stage: #0f3d33; --white: #f6f1e4;
-  --accent: #ffd23f; --accent-ink: #0f2a24; --muted: #ffb86b;
+  --paper: #f3eddf; --ink: #22332a; --stage: #123d33; --white: #f3eddf;
+  --accent: #cb8b34; --accent-light: #dfab5b; --accent-ink: #0f2a24; --muted: #dfab5b;
 }
 :root {
   --max: 1120px; /* content width: wide screens get air instead of longer lines */
@@ -90,7 +89,7 @@ a { color: inherit; }
 .objetivos li::before { content: counter(obj, decimal-leading-zero); font-family: var(--display); font-weight: 900; font-stretch: 125%; font-size: 1.9rem; line-height: 1; color: var(--stage); }
 .publico { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 20px; }
 .publico article { background: var(--ink); color: var(--white); border-radius: 10px; padding: 20px; }
-.publico h4 { font-family: var(--display); font-weight: 900; font-stretch: 125%; text-transform: uppercase; font-size: 1.15rem; line-height: 1; color: var(--accent); margin-bottom: 8px; }
+.publico h4 { font-family: var(--display); font-weight: 900; font-stretch: 125%; text-transform: uppercase; font-size: 1.15rem; line-height: 1; color: var(--accent-light); margin-bottom: 8px; }
 .publico p { font-size: 1rem; }
 
 /* TEACHER */
@@ -277,7 +276,7 @@ a { color: inherit; }
 .page-head { color: var(--white); padding: 0 max(var(--gutter), calc((100% - var(--max)) / 2)) clamp(40px, 7vw, 88px); }
 .topnav.topnav-page { position: static; padding: 14px 0 clamp(40px, 7vw, 88px); margin: 0; flex-wrap: wrap; justify-content: flex-end; }
 .nav-logo { margin-right: auto; font-family: var(--display); font-weight: 900; font-stretch: 125%; font-size: 1rem; letter-spacing: 0; padding-left: 0 !important; }
-.nav-logo b { color: var(--accent); font-family: var(--mono); }
+.nav-logo b { color: var(--accent-light); font-family: var(--mono); }
 .topnav a[aria-current='page'] { border-color: var(--white); }
 .page-head h1 { font-family: var(--display); font-weight: 900; font-stretch: 125%; text-transform: uppercase; line-height: .86; font-size: clamp(2.5rem, 8vw, 6.4rem); }
 .page-head h1 span { color: var(--accent); display: block; }
@@ -360,7 +359,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .caminho h3 { font-family: var(--display); font-weight: 900; font-stretch: 125%; text-transform: uppercase; font-size: 1.05rem; line-height: 1.05; margin-bottom: 8px; }
 .caminho p { font-size: .98rem; }
 .caminho li:nth-child(n+3) { background: var(--ink); color: var(--white); }
-.caminho li:nth-child(n+3) h3 { color: var(--accent); }
+.caminho li:nth-child(n+3) h3 { color: var(--accent-light); }
 .hs-section { padding-bottom: clamp(56px, 9vw, 110px); }
 .hs-section .lead-text { font-size: 1.15rem; max-width: 62ch; margin-top: 18px; }
 .origens { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; list-style: none; }
@@ -437,7 +436,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 /* the accent behind the word is one brush stroke (public/festival/brand/stroke-v7.svg, generated), not a hard block */
 .hero.claro .logo .l1::before, .page-head.claro h1 span::before { content: ''; position: absolute; inset: -.02em -.14em -.04em -.04em; z-index: -1; background: var(--accent); -webkit-mask: url('/festival/brand/stroke-v7.svg') center / 100% 100% no-repeat; mask: url('/festival/brand/stroke-v7.svg') center / 100% 100% no-repeat; }
 .hero.claro .mark i { background: var(--stage); }
-.hero.claro .mark b { background: var(--stage); color: var(--accent); }
+.hero.claro .mark b { background: var(--stage); color: var(--accent-light); }
 .hero.claro .place span { color: inherit; font-weight: 700; }
 .hero.claro .cta { background: var(--stage); color: var(--white); }
 .hero.claro .cta:hover { background: var(--accent); color: var(--accent-ink); }

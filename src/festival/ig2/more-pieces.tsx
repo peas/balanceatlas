@@ -82,8 +82,8 @@ function PhotoCard({ index, ...p }: PieceProps & { index: number }) {
     <Headline lines={[...item.title]} x={60} y={155} size={item.size} accentLine={index === 0 ? 1 : -1} />
     <Media photo contain src={item.src} x={60} y={450} w={960} h={650} look={item.look} {...p} />
     <Label x={60} y={1150} size={44} style={{ width: 950 }}>{item.caption}</Label>
-    <Label x={60} y={1330} size={28}>{String(index + 1).padStart(2, '0')} / 05</Label>
-    {index === 4 ? <div style={{ position: 'absolute', right: 60, top: 1305 }}><Selo size={78} giro={16} /></div> : <Label x={750} y={1330} size={28}>ARRASTA →</Label>}
+    <Label x={60} y={1330} size={36}>{String(index + 1).padStart(2, '0')} / 05</Label>
+    {index === 4 ? <div style={{ position: 'absolute', right: 60, top: 1305 }}><Selo size={78} giro={16} /></div> : <Label x={710} y={1330} size={36}>ARRASTA →</Label>}
   </Canvas>;
 }
 const stillSlides: Slide[] = photos.map((item, index) => ({ name: item.name, component: (p: PieceProps) => <Freeze frame={30}><PhotoCard {...p} index={index} /></Freeze>, seconds: 5, height: 1440, cover: 30, cues: [] }));

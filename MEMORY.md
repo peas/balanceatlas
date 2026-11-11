@@ -1,5 +1,11 @@
 # Balance Atlas memory
 
+## 2026-11-11 — Approved ochre and moving home
+
+- Paulo chose ochre over yellow and approved cream/ochre alternating with deep green/light ochre. Updated global festival tokens, v07 SVG/PNG/WebP seals and favicon; Instagram2/render CLI now default to ochre, with old yellow retained as explicit comparison. Increased supporting text/counters, larger gallery previews, green third photo card.
+- Restored silent autoplay stories on home2 hero and teachers: four scenes each, progress/navigation/pause, suspend offscreen and respect reduced motion. Selected clips freeze at 4 s, then P&B + bristles + seal. Original route is still the official homepage. Shared event facts unchanged.
+- Parallel Brazilian music research: BaianaSystem for community, Luedji/Maz for freeze/paint, Jorge Ben for football; six suggestions with optional listening embeds in the gallery, eight-track shortlist in ig2/MUSICA.md and personal research KB. Final Instagram selection/sync remains pending; no commercial audio in exports.
+
 ## 2026-11-10 — Ochre Instagram comparison
 
 - Paulo requested home2 ochre on Instagram2, plus actual carousel photographs in P&B with ochre painting and motion tests. Added shareable `?paleta=ocre` selector, export palette props, three static photo cards and a separate 9-second photo animation; exported the existing 10-second freeze/paint footage with an ochre seal too. Full bodies preserved, pigment in trees and bristled edges. No global palette change or social-account posting. Recipe/source times in ig2/README.md.

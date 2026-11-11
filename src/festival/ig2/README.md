@@ -4,9 +4,9 @@ Working route: `/festival/instagram2/`. `/instagram2/` redirects there. The orig
 
 ## Direction
 
-This proposal follows the latest actual identity, not the previous palette studies: original E green/yellow, upright HF on Gabriel's painted circle (version 07, traced from the supplied reference). `../pincel.ts` is the source of the shapes; `Selo` from `../ig/kit.tsx` supplies the closing animation. One brush gesture per scene, stable typography, direct cuts, real footage. No artificial grain, sepia, music or added people.
+This proposal follows the latest actual identity, not the previous palette studies: approved ochre/cream/deep green (11 November 2026), upright HF on Gabriel's painted circle (version 07, traced from the supplied reference). `../pincel.ts` is the source of the shapes; `Selo` from `../ig/kit.tsx` supplies the closing animation. One brush gesture per scene, stable typography, direct cuts, real footage. No artificial grain, sepia or added people. Compositions remain silent; optional music references are separate.
 
-Ten listed pieces, twenty-one preview units. All are displayed in document order; no piece/slide selector. The first five:
+Sixteen listed pieces, thirty-one preview units. All are displayed in document order; no piece/slide selector. The first five:
 
 - Together: 17.5 s reel, natural color → B&W → natural color, then 3.5 s closing card.
 - Venue: 14.5 s reel, three spaces, natural color/natural color/B&W, then closing card.
@@ -18,7 +18,7 @@ Copy and factual statements come from `../ig/PECAS.md`, existing compositions an
 
 ## Typography and safe areas
 
-Paulo's feedback during review: text looked too small. Layouts were reflowed, not simply magnified. Display headlines generally 80–125 px (the one-line room title is 75 px); main information is 40–48 px on a 1080-wide composition. Carousel counters are 26 px and its secondary kicker 36 px. Archivo 900 / 125% width, Space Mono for facts; fonts are awaited before first preview, with system fallback if loading fails.
+Paulo's feedback during review: text looked too small. Layouts were reflowed, not simply magnified. Display headlines generally 80–125 px (the one-line room title is 75 px); main information is 40–48 px on a 1080-wide composition. Carousel counters are 36 px and its secondary kicker 36 px. Archivo 900 / 125% width, Space Mono for facts; fonts are awaited before first preview, with system fallback if loading fails.
 
 All essential reel text stays at x 65–950 and y 269–1500; stories x 65–1015 / y 250–1580; carousel x 60–1020 / y 60–1380. Shared safe-zone overlay distinguishes the conservative reel region from the harder lower limit. These are the project's conservative working guides, not a guarantee for every Instagram UI placement. Recheck the final export in the target app.
 
@@ -109,7 +109,7 @@ Rendering documentation: [Remotion CLI](https://www.remotion.dev/docs/render) an
 
 ## Ochre comparison and photographic studies — 10 November 2026
 
-`?paleta=ocre` opens the gallery with warm paper `#f3eddf`, dark green ink `#22332a` and ochre `#cb8b34`. The toolbar switches back to the original direction and updates the shareable URL. `PieceProps.palette` reaches Canvas and both closing-card helpers, so the same palette works in Player and CLI exports, including SVG seals. No global festival palette change. Art pieces retain their intentional light/dark layouts; the alternate yellow disc follows the palette override.
+`?paleta=ocre` opens the gallery with warm paper `#f3eddf`, deep green `#123d33` and ochre `#cb8b34`. The toolbar switches back to the original direction and updates the shareable URL. `PieceProps.palette` reaches Canvas and both closing-card helpers, so the same palette works in Player and CLI exports, including SVG seals. This began as a palette comparison; the 11 November approval below makes ochre the default. Art pieces retain their intentional light/dark layouts; the alternate yellow disc follows the palette override.
 
 `ochre-photos.tsx` adds three static carousel images and a separate nine-second photo Reel. Reuses `img-2381` stills at 10 / 6 / 4 seconds (`ig2-estrela-*.webp`), already present in the gallery. Filenames are legacy labels, not reliable pose annotations: inspect the actual frame. Full-image containment, grayscale, v07 bristles at the edges and a multiply-blended ochre disc in the trees above the athletes. No generated redraw or body motion. For the static branch, paint progress is explicitly 1; do not rely on a Freeze frame beyond a short composition's duration.
 
@@ -121,3 +121,12 @@ python3 scripts/festival_render.py fotos-ocre-motion arte-freeze-ocre --palette 
 ```
 
 Gallery: 16 pieces / 31 previews. PNGs are 1080×1440; MP4s 1080×1920, 30 fps, 9 and 10 seconds, no audio. New files stay in outputs/local, not public Git media. Reviewed actual exports and palette switching, including a Reel closing card. Build passes; the existing generic transition TypeScript diagnostic is unchanged.
+
+
+## Approved ochre, larger previews and music — 11 November 2026
+
+Ochre is the default in `Canvas`, Studio and `festival_render.py`. `?paleta=original` keeps yellow as a comparison; `?paleta=ocre` is still accepted. Cream `#f3eddf` / green `#123d33` with ochre `#cb8b34`, lighter ochre `#dfab5b` on dark backgrounds. Photo card 3 (and segment 3 of its animation) is green. Captions are 40 px, counters 36 px; art-card kickers 36 px and domains 38 px. Larger two-column previews are on by default, with a checkbox to restore the compact view. Review at phone width as well as full export size.
+
+`music.ts` maps six existing pieces to Brazilian tracks; [MUSICA.md](MUSICA.md) records the eight-track research and sources. Each suggestion has an external official listening link and an optional YouTube embed. This player is separate from Remotion and never autoplays. Exports contain no commercial soundtrack; the actual recording/segment is selected in Instagram, with synchronization still pending.
+
+The website counterpart lives in `../ArtStories.tsx` and `../ArtStoryPlayer.tsx`: real-time visual sequences reuse v07 brush assets and shared event facts, without importing social UI safe zones into the website layout.

@@ -8,11 +8,11 @@ export { ACCENT, CHALK, INK, MONO, STAGE, WIDE, f };
 export type Treatment = 'direction' | Look;
 export type Palette = 'original' | 'ocre';
 export type PieceProps = { guides?: boolean; treatment?: Treatment; palette?: Palette };
-export const OCHRE_TOKENS = { '--accent': '#cb8b34', '--accent-ink': '#22332a', '--stage': '#22332a', '--white': '#f3eddf', '--paper': '#f3eddf', '--ig2-art-paint': '#cb8b34' } as CSSProperties;
+export const OCHRE_TOKENS = { '--accent': '#cb8b34', '--accent-ink': '#22332a', '--stage': '#123d33', '--white': '#f3eddf', '--paper': '#f3eddf', '--ig2-art-paint': '#cb8b34' } as CSSProperties;
 export const move = (frame: number, start = 0, length = 18) => interpolate(frame, [start, start + length], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing: Easing.out(Easing.cubic) });
 
-export function Canvas({ children, guides, format = 'reel', dark = false, palette = 'original' }: PieceProps & { children: ReactNode; format?: Formato; dark?: boolean }) {
-  return <Quadro formato={format} guides={guides} grain={false}><AbsoluteFill data-ig2-canvas style={{ ...(palette === 'ocre' ? OCHRE_TOKENS : {}), background: dark ? STAGE : CHALK, color: dark ? CHALK : STAGE }}>{children}</AbsoluteFill></Quadro>;
+export function Canvas({ children, guides, format = 'reel', dark = false, palette = 'ocre' }: PieceProps & { children: ReactNode; format?: Formato; dark?: boolean }) {
+  return <Quadro formato={format} guides={guides} grain={false}><AbsoluteFill data-ig2-canvas style={{ ...(palette === 'ocre' ? {...OCHRE_TOKENS, '--accent': dark ? '#dfab5b' : '#cb8b34', '--ig2-art-paint': dark ? '#dfab5b' : '#cb8b34'} : {'--accent':'#ffd23f','--stage':'#0f3d33','--white':'#f6f1e4','--ig2-art-paint':'#ffd23f'}), background: dark ? STAGE : CHALK, color: dark ? CHALK : STAGE }}>{children}</AbsoluteFill></Quadro>;
 }
 export function Label({ children, x = 65, y, color = STAGE, size = 42, style }: { children: ReactNode; x?: number; y: number; color?: string; size?: number; style?: CSSProperties }) {
   return <div data-ig2-text style={{ position: 'absolute', left: x, top: y, color, fontFamily: MONO, fontSize: size, lineHeight: 1.4, fontWeight: 700, ...style }}>{children}</div>;

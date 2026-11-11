@@ -20,7 +20,7 @@ parser.add_argument('--output-dir', type=Path, default=ROOT/'local/festival/rend
 parser.add_argument('--concurrency', type=int, default=2, help='Concurrent frames (default 2)')
 parser.add_argument('--still', action='store_true', help='Export each composition as a static PNG instead of MP4')
 parser.add_argument('--frame', type=int, default=0, help='Frame for --still (default 0)')
-parser.add_argument('--palette', choices=['original', 'ocre'], default='original', help='Composition palette')
+parser.add_argument('--palette', choices=['original', 'ocre'], default='ocre', help='Composition palette')
 args = parser.parse_args()
 render_props = ['--props', json.dumps({'palette': args.palette})]
 if any(not re.fullmatch(r'[a-z][a-z0-9-]*', p) for p in args.pieces):

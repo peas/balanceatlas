@@ -25,7 +25,7 @@ hf = tree.getroot().find(f"{NS}path[@id='hf']")
 def run(*args):
     subprocess.run(args, check=True)
 
-for variant, ink, letters in [('green', '#0f3d33', '#ffd23f'), ('yellow', '#ffd23f', '#0f3d33')]:
+for variant, ink, letters in [('green', '#0f3d33', '#ffd23f'), ('yellow', '#ffd23f', '#0f3d33'), ('green-ochre', '#123d33', '#dfab5b'), ('ochre', '#cb8b34', '#123d33')]:
     root = copy.deepcopy(tree.getroot())
     root.find(f"{NS}g[@id='brush']").set('fill', ink)
     root.find(f"{NS}path[@id='hf']").set('fill', letters)

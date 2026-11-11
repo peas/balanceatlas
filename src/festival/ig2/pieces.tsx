@@ -79,7 +79,7 @@ function ClassCover(p: PieceProps) {
   return <Canvas {...p} format="card"><Headline lines={['Qual é', 'a sua turma?']} y={105} size={91} accentLine={1} />
     <Label y={340} size={40}>{QUANDO.toUpperCase()} · SÃO PAULO</Label>
     <Media src="still-dupla.webp" photo x={60} y={430} w={960} h={870} {...p} />
-    <Label x={60} y={1330} size={26}>01 / 05 <span style={{ marginLeft: 560 }}>ARRASTA →</span></Label>
+    <Label x={60} y={1330} size={36}>01 / 05 <span style={{ marginLeft: 560 }}>ARRASTA →</span></Label>
   </Canvas>;
 }
 function ClassQuestion(p: PieceProps) {
@@ -87,7 +87,7 @@ function ClassQuestion(p: PieceProps) {
     <Label x={60} y={80} size={36} color={CHALK}>HANDSTANDFEST · {QUANDO.toUpperCase()}</Label>
     <Headline lines={['Você segura', '10 segundos', 'longe da', 'parede?']} x={60} y={305} size={93} dark />
     <Label x={60} y={1010} size={42} color={ACCENT}>QUAL É A SUA TURMA?</Label>
-    <Label x={60} y={1330} size={26} color={CHALK}>02 / 05</Label>
+    <Label x={60} y={1330} size={36} color={CHALK}>02 / 05</Label>
   </Canvas>;
 }
 function Basic(p: PieceProps) {
@@ -97,7 +97,7 @@ function Basic(p: PieceProps) {
     <Label x={60} y={380} size={44} style={{ width: 925 }}>Você treina na parede e ainda não segura o livre.</Label>
     <Media photo src="tv-sala-vidro.webp" x={60} y={595} w={960} h={520} {...p} />
     <Label x={60} y={1160} size={40} style={{ width: 930 }}>Linha, chute, saída segura e os primeiros segundos sem a parede.</Label>
-    <Label x={60} y={1330} size={26}>03 / 05</Label>
+    <Label x={60} y={1330} size={36}>03 / 05</Label>
   </Canvas>;
 }
 function Advanced(p: PieceProps) {
@@ -107,7 +107,7 @@ function Advanced(p: PieceProps) {
     <Label x={60} y={380} size={44} style={{ width: 925 }}>Você segura uns 10 segundos no livre, de forma consistente (30 é o ideal).</Label>
     <Media photo src="tv-palco-luzes.webp" x={60} y={595} w={960} h={520} look="pb" {...p} />
     <Label x={60} y={1160} size={40} style={{ width: 930 }}>Equilíbrio, formas, entradas, press e one arm.</Label>
-    <Label x={60} y={1330} size={26}>04 / 05</Label>
+    <Label x={60} y={1330} size={36}>04 / 05</Label>
   </Canvas>;
 }
 const ClassEnd = (p: PieceProps) => <EndCard {...p} format="card" cta="Na dúvida, manda um vídeo na inscrição." />;

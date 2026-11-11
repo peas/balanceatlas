@@ -1,9 +1,9 @@
 ---
 // Version 07 master; responsive raster derivatives preserve the same bristles at every size.
 // `simples` now selects small-image delivery, not a different simplified drawing.
-interface Props { tom?: 'verde' | 'amarelo'; simples?: boolean; class?: string }
+interface Props { tom?: 'verde' | 'amarelo' | 'ocre'; simples?: boolean; class?: string }
 const { tom = 'verde', simples = false, class: cls } = Astro.props;
-const base = `/festival/brand/hf-${tom === 'verde' ? 'green' : 'yellow'}-v7`;
+const base = `/festival/brand/hf-${tom === 'verde' ? 'green-ochre' : 'ochre'}-v7`;
 const sizes = simples ? '64px' : '(max-width: 860px) 30vw, 240px';
 const srcset = (ext: string) => [96, 192, 384, 768].map(size => `${base}-${size}.${ext} ${size}w`).join(', ');
 ---

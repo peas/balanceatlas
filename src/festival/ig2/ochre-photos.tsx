@@ -1,35 +1,35 @@
 import { Freeze, Img, Sequence, getRemotionEnvironment, staticFile, useCurrentFrame } from 'remotion';
 import { BrushStroke } from '../Brush';
 import { Selo } from '../ig/kit';
-import { Canvas, Headline, Label, move, type PieceProps } from './kit';
+import { Canvas, Headline, Label, ACCENT, CHALK, STAGE, move, type PieceProps } from './kit';
 import { InkDisc } from './art-pieces';
 import type { Piece } from './pieces';
 
 const photos = [
-  {src:'ig2-estrela-aberta.webp',title:['UMA PARADA.', 'MUITAS FORMAS.'],note:'PERNAS AFASTADAS. OUTRO DESENHO.'},
+  {src:'ig2-estrela-aberta.webp',title:['UMA PARADA.', 'MUITAS FORMAS.'],note:'UMA FORMA. OUTRA PERSPECTIVA.'},
   {src:'ig2-estrela-reta.webp',title:['O MESMO TREINO.', 'OUTRO INSTANTE.'],note:'O EQUILÍBRIO MUDA DE DESENHO.'},
-  {src:'ig2-estrela-transicao.webp',title:['ENTRE UMA', 'E OUTRA.'],note:'O MOVIMENTO TAMBÉM ESTÁ NA TRANSIÇÃO.'},
+  {src:'ig2-estrela-transicao.webp',title:['ENTRE UMA', 'E OUTRA.'],note:'O MOVIMENTO ESTÁ NA TRANSIÇÃO.'},
 ];
 
 // The colored intervention stays in the trees above the athletes, never over their bodies.
 function PhotoStudy({index=0,motion=false,...p}:PieceProps & {index?:number;motion?:boolean}) {
-  const frame=useCurrentFrame(), item=photos[index];
+  const frame=useCurrentFrame(), item=photos[index], dark=index===2, text=dark?CHALK:STAGE;
   const paint=motion?move(frame,18,38):1, gray=motion?move(frame,0,18):1;
   const path=`festival/ig/${item.src}`;
   const src=getRemotionEnvironment().isPlayer?`/${path}`:staticFile(path);
   const y=motion?590:350;
-  return <Canvas {...p} palette="ocre" format={motion?'reel':'card'}>
-    <Label x={65} y={motion?280:65} size={28}>HANDSTANDFEST / CORPO & GESTO</Label>
-    <Headline x={65} y={motion?350:125} lines={item.title} size={index===1?73:motion?78:82} width={motion?885:950}/>
+  return <Canvas {...p} palette="ocre" dark={dark} format={motion?'reel':'card'}>
+    <Label x={65} y={motion?280:65} size={36} color={text}>HANDSTANDFEST / CORPO & GESTO</Label>
+    <Headline dark={dark} x={65} y={motion?350:125} lines={item.title} size={index===1?73:motion?78:82} width={motion?885:950}/>
     <div style={{position:'absolute',left:65,top:y,width:950,height:850}}>
-      <BrushStroke color="#cb8b34" style={{position:'absolute',left:60,top:45,width:830,height:770,transform:`rotate(${index===1?3:-3}deg)`,clipPath:`inset(0 ${(1-paint)*100}% 0 0)`}}/>
+      <BrushStroke color={ACCENT} style={{position:'absolute',left:60,top:45,width:830,height:770,transform:`rotate(${index===1?3:-3}deg)`,clipPath:`inset(0 ${(1-paint)*100}% 0 0)`}}/>
       <Img src={src} style={{position:'absolute',left:0,top:0,width:950,height:850,objectFit:'contain',filter:`grayscale(${gray}) contrast(1.07)`}}/>
       <div style={{position:'absolute',left:340,top:0,width:270,height:270,mixBlendMode:'multiply',opacity:.8}}>
         <div style={{width:270,height:270,transform:`rotate(${index*25-15}deg)`}}><InkDisc color="#cb8b34" progress={paint}/></div>
       </div>
     </div>
-    <Label x={65} y={motion?1460:1240} size={30} style={{width:820}}>{item.note}</Label>
-    {!motion && <><Label x={65} y={1340} size={27}>{String(index+1).padStart(2,'0')} / 03</Label><div style={{position:'absolute',right:65,top:1295}}><Selo size={85}/></div></>}
+    <Label x={65} y={motion?1460:1240} size={40} color={text} style={{width:885}}>{item.note}</Label>
+    {!motion && <><Label x={65} y={1340} size={36} color={text}>{String(index+1).padStart(2,'0')} / 03</Label><div style={{position:'absolute',right:65,top:1295}}><Selo size={85}/></div></>}
   </Canvas>;
 }
 

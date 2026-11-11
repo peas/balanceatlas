@@ -6,7 +6,7 @@ import { Selo, WIDE, MONO } from '../ig/kit';
 import { Canvas, move, type PieceProps } from './kit';
 import type { Piece } from './pieces';
 
-const PAPER = '#f3eddd', INK = '#202d26', GREEN = '#123d33';
+const PAPER = '#f3eddf', INK = '#202d26', GREEN = '#123d33';
 const url = (name: string) => {
   const path = `festival/ig/${name}`;
   return getRemotionEnvironment().isPlayer ? `/${path}` : staticFile(path);
@@ -35,7 +35,7 @@ export function ArtPoster({variant=0, ...p}:PieceProps & {variant?:number}) {
   const text=dark?PAPER:INK;
   return <Canvas {...p} format="card" dark={dark}>
     <AbsoluteFill style={{background:dark?GREEN:PAPER,color:text}}>
-      <div style={{position:'absolute',left:65,top:65,fontFamily:MONO,fontWeight:700,fontSize:29,letterSpacing:2}}>HANDSTANDFEST / CORPO & GESTO</div>
+      <div style={{position:'absolute',left:65,top:65,fontFamily:MONO,fontWeight:700,fontSize:36,letterSpacing:2}}>HANDSTANDFEST / CORPO & GESTO</div>
       <div style={{position:'absolute',left:65,top:133,...WIDE,fontSize:94,lineHeight:.98,letterSpacing:-4}}>{variant===0?'O CORPO':variant===1?'O GESTO':'FORA'}<br/>{variant===0?'DESENHA.':variant===1?'FICA.':'DO EIXO.'}</div>
       <div style={{position:'absolute',left:35,top:320,width:990,height:930}}>
         <div style={{position:'absolute',left:185,top:170,width:650,height:650,transform:dark?'rotate(-24deg) scale(1.22)':'rotate(13deg)'}}><InkDisc color={color}/></div>
@@ -43,7 +43,7 @@ export function ArtPoster({variant=0, ...p}:PieceProps & {variant?:number}) {
         <Img src={url(`arte/${variant===1?'stag':'straddle'}.webp`)} style={{position:'absolute',left:80,top:15,width:840,height:885,objectFit:'contain'}}/>
         <BrushStroke color={text} style={{position:'absolute',left:290,top:878,width:400,height:17,opacity:.75}}/>
       </div>
-      <div style={{position:'absolute',left:65,top:1310,fontFamily:MONO,fontWeight:700,fontSize:30}}>handstandfest.com.br</div>
+      <div style={{position:'absolute',left:65,top:1310,fontFamily:MONO,fontWeight:700,fontSize:38}}>handstandfest.com.br</div>
       <div style={{position:'absolute',right:65,top:1285}}><Freeze frame={35}><Selo size={92}/></Freeze></div>
     </AbsoluteFill>
   </Canvas>;
@@ -72,7 +72,7 @@ function FreezeArt({bold=false,...p}:PieceProps & {bold?:boolean}) {
         <BrushStroke color={ink} style={{position:'absolute',left:625,top:527,width:120,height:8,opacity:.6*paint}}/>
         <Img src={url('arte/freeze-cutout.webp')} style={{...framing,objectFit:'contain',filter:'grayscale(1) contrast(1.12)',opacity:paint}}/>
       </div>
-      <div style={{position:'absolute',left:65,top:1480,fontFamily:MONO,fontWeight:700,fontSize:34}}>HANDSTAND É MOVIMENTO.</div>
+      <div style={{position:'absolute',left:65,top:1480,fontFamily:MONO,fontWeight:700,fontSize:42}}>HANDSTAND É MOVIMENTO.</div>
       {frame>=freezeAt && <Sequence from={freezeAt} layout="none"><div style={{position:'absolute',left:810,top:1370}}><Selo size={115} giro={32}/></div></Sequence>}
     </AbsoluteFill>
   </Canvas>;

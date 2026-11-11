@@ -19,3 +19,9 @@
 @media(min-width:1000px){.ig2-piece:not(.ig2-piece-sequence) .ig2-piece-header{min-height:172px}}
 @media(max-width:999px){.ig2-gallery,.ig2-piece-sequence .ig2-previews{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:650px){.ig2-gallery,.ig2-piece-sequence .ig2-previews{grid-template-columns:minmax(0,1fr)}.ig2-gallery{gap:40px}.ig2-toolbar{display:block}.ig2-options{margin-top:15px;gap:12px}.ig2-options label{flex-wrap:wrap}.ig2-piece-header h2{font-size:24px}.ig2-previews{gap:30px}}
+
+@media(min-width:1000px){.ig2-large .ig2-gallery,.ig2-large .ig2-piece-sequence .ig2-previews{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+.ig2-music{padding:18px;border-left:4px solid var(--accent);background:#123d3308;margin-top:20px;font:14px/1.6 var(--body)}.ig2-music strong{display:block;font-size:12px;text-transform:uppercase;margin-bottom:6px}.ig2-music a{font-weight:700}.ig2-music p{margin-top:8px}.ig2-music small{display:block;margin-top:8px;font-size:12px}
+
+.ig2-music details{margin-top:12px}.ig2-music summary{cursor:pointer;font-weight:700}.ig2-music iframe{display:block;width:100%;aspect-ratio:16/9;border:0;margin-top:12px}
