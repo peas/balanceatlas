@@ -175,6 +175,12 @@ Always verify downloaded images are real (>5KB, not HTML redirects).
   domain). The zone was assigned `dolly.ns.cloudflare.com` + `matt.ns.cloudflare.com`; Registro.br had been set
   to `byron` + `kim` (the pair of paulo.com.br); Paulo changed it the same day and the domain went live: apex and
   `www`, http and https, all answer 302 to the festival (checked 11/11/2026).
+  **Served on the domain (11/11/2026, later the same day):** the Redirect Rule is disabled (kept, not deleted) and
+  the Worker `handstandfest-site` (`worker-handstandfest/`, routes on apex and `www`, `npx wrangler deploy` there)
+  proxies `handstandfest.com.br/<page>` to `balanceatlas.com/festival/<page>` and strips `/festival/` from page
+  links in the HTML; assets keep `/festival/...` and `/_astro/...`; old `/festival/<page>` URLs, `www` and http
+  301 to the clean URL. The site is still built once, for balanceatlas.com, so keep links root-relative under
+  `/festival/`; both addresses work. Pages are still `noindex`.
   The dashboard's API refuses writes from page scripts (403) and the local wrangler token only reads zones: DNS
   changes go through the dashboard UI. Older notes saying the domain is not bought are superseded.
   Instagram: @handstandfest (profile not taken as of 04/11/2026; Paulo creates it). Domain: handstandfest.com.br
@@ -277,3 +283,13 @@ Shirt proposals 06–08 and three static art cards + two freeze/paint Reels now 
 ## Instagram ochre experiment — 10 November 2026
 
 `/festival/instagram2/` defaults to the approved ochre/paper/green direction (`?paleta=original` compares the old yellow) to the live compositions, via a reversible toolbar selector and exportable `PieceProps.palette`. New `ochre-photos.tsx`: three P&B/ochre photo cards from existing img-2381 stills plus a separate animated-photo Reel. Current gallery: 17 pieces / 34 previews. CLI `--palette ocre` also colors closing seals; photo and freeze/paint MP4s are exported outside Git. Approved palette with larger previews and increased secondary typography; card 3 supplies the green contrast. Six pieces have Brazilian music suggestions and optional official YouTube listening embeds, separate from the silent compositions. Final music selection happens in Instagram; no recording or synchronization is bundled. See ig2/README.md and ig2/MUSICA.md.
+
+## Official home takes the home2/ocre art language — 11 November 2026
+
+Paulo and Gabriel chose the home2/ocre look for the official home and subpages, keeping the official copy and
+structure (hero title with the brushed HAND, ticker, teacher section unchanged). Added in `festival.css` (last
+block): `.moldura` = one v07 brush stroke behind a photo/video, outside the media so it never covers a body (hero
+video, teacher poster, lineup stories, "Quem faz" photo); `ArtGesture` straddle left of "Três dias treinando"
+(`.about` is now a two-column grid) and stag on the green tickets section (`.signup-art`, hidden under 900 px).
+Instagram pages already followed the ochre tokens. home2 stays online as a study. "handstandlife" (hashtag,
+maybe a domain instead of the dropped Handstand Lab) is an idea only; note in MARCA.md.

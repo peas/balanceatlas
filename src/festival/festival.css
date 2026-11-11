@@ -459,3 +459,31 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .stickybar .selo-nav { width: 2.5em; }
 .hero-selo { position: absolute; z-index: 2; width: 34%; top: -11%; right: -13%; transform: rotate(-8deg); }
 @media (max-width: 860px) { .hero-selo { width: 30%; right: -4%; top: -9%; } }
+
+/* ---------- Art language from the home2/ocre study, on the official pages (11/11/2026) ----------
+   Engraved figures over an ochre blot (ArtGesture) and a brush stroke behind photos and videos (.moldura).
+   The stroke sits outside the media, so it never covers a body; copy and structure stay the official ones. */
+.moldura { position: relative; isolation: isolate; --tinta: var(--accent); }
+.moldura::before { content: ''; position: absolute; z-index: -1; inset: 6% -5% 14% -6%; background: var(--tinta); -webkit-mask: url('/festival/brand/stroke-v7.svg') center / 100% 100% no-repeat; mask: url('/festival/brand/stroke-v7.svg') center / 100% 100% no-repeat; transform: rotate(-5deg); }
+.hero-media.moldura::before { inset: 10% -9% 22% -10%; transform: rotate(-7deg); }
+.hero-media .stage, .story, .poster .stage { box-shadow: none; }
+.lineup-grid .story-card:nth-child(even) .moldura { --tinta: var(--paper); }
+.lineup-grid .story-card:nth-child(even) .moldura::before { transform: rotate(4deg); inset: 12% -4% 8% -4%; }
+.lineup-grid .story-card:nth-child(3n) .moldura::before { transform: rotate(-3deg); inset: 20% -5% 4% -5%; }
+.teacher .moldura { --tinta: var(--accent-light); }
+.quem > .moldura { max-width: 440px; }
+
+.about { display: grid; grid-template-columns: minmax(180px, .42fr) 1fr; gap: clamp(28px, 6vw, 88px); align-items: center; }
+.about-art { max-width: 330px; width: 100%; justify-self: center; }
+.about .display { max-width: 15ch; }
+
+.signup-inner { position: relative; }
+.signup-art { position: absolute; right: 2%; top: -84px; width: 250px; --art-paint: var(--accent-light); --art-ink: var(--paper); pointer-events: none; }
+@media (min-width: 901px) { .signup .display { max-width: 15ch; } }
+@media (max-width: 900px) { .signup-art { display: none; } }
+@media (max-width: 860px) {
+  .about { grid-template-columns: 1fr; }
+  .about-art { max-width: 200px; justify-self: start; }
+  .moldura::before { inset: 6% -3% 14% -3%; }
+  .hero-media.moldura::before { inset: 10% -4% 22% -4%; }
+}

@@ -1,0 +1,10 @@
+# handstandfest.com.br serves the festival pages that GitHub Pages publishes at balanceatlas.com/festival/.
+# Deploy from this folder: npx wrangler deploy   (see README.md)
+name = "handstandfest-site"
+main = "src/index.js"
+compatibility_date = "2026-11-01"
+workers_dev = false
+routes = [
+  { pattern = "handstandfest.com.br/*", zone_name = "handstandfest.com.br" },
+  { pattern = "www.handstandfest.com.br/*", zone_name = "handstandfest.com.br" },
+]

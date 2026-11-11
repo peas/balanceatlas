@@ -7,6 +7,7 @@ import FestLayout from '../../layouts/FestLayout.astro';
 import FestNav from '../../components/fest/FestNav.astro';
 import FestPlayer from '../../festival/FestPlayer';
 import HFSelo from '../../components/fest/HFSelo.astro';
+import ArtGesture from '../../components/fest/ArtGesture.astro';
 import { TICKETS, TICKETS_ALVO, FEST, VENDA } from '../../festival/data';
 
 import { LOTES, VAGAS, MAPS_Q, MAPS_PLACE, days, levelName, tracks, lineup, facts } from '../../festival/home-content';
@@ -36,7 +37,7 @@ import { LOTES, VAGAS, MAPS_Q, MAPS_PLACE, days, levelName, tracks, lineup, fact
         <a class="lote-pill" href="#ingressos"><i aria-hidden="true"></i>1º lote <span data-venda="aberto">abre {VENDA.dia}</span> · R$ 490 · 10 vagas</a>
       </div>
     </div>
-    <figure class="hero-media">
+    <figure class="hero-media moldura">
       <HFSelo class="hero-selo" />
       <div class="stage">
         <img src="/festival/seg-1.webp" alt="Agustin Melesi em parada de mão" />
@@ -53,17 +54,20 @@ import { LOTES, VAGAS, MAPS_Q, MAPS_PLACE, days, levelName, tracks, lineup, fact
 
   <!-- ABOUT -->
   <section class="about wrap">
+    <div class="about-art" data-reveal><ArtGesture pose="straddle" /></div>
+    <div class="about-text">
     <h2 class="display" data-reveal>Três dias treinando, conversando e aprendendo parada de mão.</h2>
     <div class="about-cols">
       <p>A primeira edição é para quem pratica parada de mão por ela mesma: quem chegou pela calistenia, pelo yoga, pela dança, pelo movimento ou só pela teimosia de ficar de cabeça para baixo.</p>
       <p><strong>Quatro blocos por dia</strong>, do básico ao avançado: yoga junto, parada de mão na sua turma, uma aula de tema à tarde e, no fim do dia, aula ou jam com os professores. Perto do metrô.</p>
+    </div>
     </div>
   </section>
 
   <!-- TEACHER -->
   <section class="teacher grain" id="professores">
     <div class="wrap teacher-grid">
-      <div class="poster">
+      <div class="poster moldura">
         <div class="stage">
           <img src="/festival/teacher.webp" alt="Agustin Melesi" loading="lazy" />
           <FestPlayer client:visible comp="teacher" />
@@ -84,10 +88,10 @@ import { LOTES, VAGAS, MAPS_Q, MAPS_PLACE, days, levelName, tracks, lineup, fact
       <div class="lineup-grid">
         {lineup.map((t) => (
           <article class="story-card" data-reveal>
-            <div class="story">
+            <div class="moldura"><div class="story">
               {t.poster.img && <img src={t.poster.img} alt={`${t.poster.first} ${t.poster.last}`} loading="lazy" style={`object-position: ${t.poster.focus ?? 'center'}`} />}
               <FestPlayer client:visible comp="poster" props={t.poster} />
-            </div>
+            </div></div>
             {t.url ? <a class="chip" href={t.url} target="_blank" rel="noopener">{t.poster.handle}</a> : <span class="chip">{t.poster.first} {t.poster.last}</span>}
             {t.quote && <blockquote>“{t.quote}”</blockquote>}
             <p class="source">{t.where}{t.quote && <> · <a href={t.source} target="_blank" rel="noopener">fonte</a></>}</p>
@@ -207,6 +211,7 @@ import { LOTES, VAGAS, MAPS_Q, MAPS_PLACE, days, levelName, tracks, lineup, fact
   <!-- TICKETS -->
   <section class="signup grain" id="ingressos">
     <div class="wrap signup-inner">
+      <div class="signup-art" aria-hidden="true"><ArtGesture pose="stag" /></div>
       <p class="kicker">Ingressos · {FEST.dias[0]} — {FEST.dias[2]} · {FEST.mes} · {FEST.ano}</p>
       <h2 class="display" data-reveal>Três lotes. Começa pelo primeiro.</h2>
       <div class="lotes">

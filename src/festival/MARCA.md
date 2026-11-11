@@ -380,3 +380,12 @@ Quatro aplicações em URLs próprias: `/festival/home2/` (mistura), `/ocre/`, `
 ### Ocre no Instagram2 — teste solicitado, 10/11/2026
 
 Paulo pediu experimentar a direção ocre da home2 no Instagram2 e aplicar P&B + pincel ocre a fotos dos carrosséis. Comparação em `?paleta=ocre`, reversível no seletor. Três PNGs fotográficos e um Reel separado de fotos com pintura; também exportado o teste de vídeo real → congelamento → P&B → tinta, com selo ocre. As fotos continuam fotos; grayscale não vira gravura. Corpos inteiros, pigmento nas árvores acima deles e nas bordas. Paleta global ainda verde/amarelo.
+
+
+### Home oficial com a linguagem da home2/ocre — 11/11/2026
+
+Paulo e Gabriel preferiram as cores e o estilo da `/festival/home2/ocre/` e pediram trazer isso para a home oficial e as subpáginas, mantendo os textos e a forma de comunicar que a home já tinha. Aplicado: pincelada ocre atrás do vídeo do hero (o título com HAND pincelado e a faixa rodando ficam como estavam), gravura com mancha ocre à esquerda de "Três dias treinando", pincelada atrás do pôster do professor convidado e dos stories da escalação, gravura sobre o verde nos ingressos e pincelada atrás da foto de "Quem faz". Classe `.moldura` (pincel atrás de foto ou vídeo, sempre fora do corpo) e componente `ArtGesture`. A home2 continua no ar como estudo.
+
+### "handstandlife" — ideia, 11/11/2026
+
+Paulo e Gabriel estão gostando da expressão "handstandlife", como hashtag e talvez como domínio (no lugar da ideia antiga de Handstand Lab). Em 11/11/2026 o whois não achou registro de handstandlife.com, .com.br nem .org, e a consulta ao perfil @handstandlife no Instagram voltou "não encontrado". Nada comprado nem decidido. O Balance Atlas já tem uma página `/handstand-life`.
