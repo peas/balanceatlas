@@ -1,5 +1,11 @@
 # Reusable engraving and brush prompts — 11 November 2026
 
+## Latest decision and handoff
+
+Paulo liked the result and requested **65% opacity for the next intermediate-paint test**. Existing SVG/PNG files and the compositor default remain at **55%**, deliberately: **no regeneration requested now**. On the next authorized render, use `node design/handstandfest-arte/2026-11-11-prompts/compose-hybrid.mjs 0.65`. Do not describe 65% as already rendered or apply it to all brand paint.
+
+The official-home / ochre-home2 merge now moves to Paulo's other agent. Preserve the approved art options, optional independent paint, photographic group scenes and story playback/accessibility behavior. Entry points and live applications are documented below and in the root CLAUDE.md. Current implementation commits: `6af08b0` and `b71d1b1`; this handoff changes notes only.
+
 ## Intent and handoff
 
 Paulo wants anatomical contour hatching and transparent figures for selected static emphasis in the site and Instagram, including freezes from footage. He will merge his preferred parts of the official home and home2 with another agent. **The three original applications were approved on 11 November. They are now used on `/festival/handstand/`, `/festival/sobre/` and as the `gravuras-aprovadas` static carousel in Instagram2. Neither homepage is redesigned here.** Use it as an asset/prompt library, not authorization to redesign the home.

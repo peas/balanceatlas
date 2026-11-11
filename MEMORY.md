@@ -1,5 +1,11 @@
 # Balance Atlas memory
 
+## 2026-11-11 — Final preference and handoff
+
+- Paulo liked the selective engraved-person / photographic-scenery study and now prefers **65% paint opacity** for its intermediate layer. Existing files remain at 55%; **do not regenerate yet**. The 65% value is a next-render preference, not a tested output or a global opacity token.
+- He is moving the official-home/ochre-home2 merge to another agent. Handoff and retained design decisions are in CLAUDE.md and the engraving kit README. This turn updates notes only.
+
+
 ## 2026-11-11 — Approved art, selected bento and photographic scene
 
 - Applied approved art to handstand/about pages and `gravuras-aprovadas` static carousel. Reusable `EngravingArtwork` keeps figure, optional paint and background independent.

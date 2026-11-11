@@ -51,7 +51,8 @@
       "output": "previews/hybrid-paint.svg",
       "script": "compose-hybrid.mjs",
       "paint_opacity": 0.55,
-      "status": "User requested stronger pigment after 36% test; adjustable and separate from figure."
+      "status": "Existing output remains at 55%. Paulo liked it and prefers 65% next; notes only, no regeneration requested. Home merge moves to another agent.",
+      "next_preferred_paint_opacity": 0.65
     }
   ]
 }
