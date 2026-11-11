@@ -28,3 +28,10 @@ Published in `/festival/sobre/#practice-title`, also present in the static `grav
 Prompts, tested assets and provenance: [engraving kit](../../design/handstandfest-arte/2026-11-11-prompts/README.md). Brand decisions: [MARCA.md](MARCA.md). Instagram usage: [ig2/README.md](ig2/README.md). General editorial and implementation guidance also live in the complementary global `instagram-creation` and `videos-remotion` playbooks.
 
 The upcoming merge of the official home and `/festival/home2/ocre/` remains with Paulo's other agent. Reuse this language there; this change adds the photographic treatment to an existing official subpage and retains the approved green application.
+
+
+## C — Continuous exercise-video hatching (experiment, 11 November 2026)
+
+Paulo requested an additional treatment for whole exercise demonstrations with future voiceover, possibly under “Handstand Life” (name undecided). Review page: `/festival/gravura-lab/`; engine, controls, media provenance, Remotion adapter and export instructions: [engraving/README.md](engraving/README.md). Two real clips loop with independent contrast/gamma, hatching strength/spacing/angle, contour, ink/paper and photographic-colour controls. Graphite, green/colour and ochre are starting points for selecting one or two eventual standards, **not approved presets**.
+
+This continuous filter is procedural and geometry-preserving; it treats the background too and does not follow individual muscles like the generated static art. It is appropriate to test for educational footage, while A/B remain the approved static/freeze language. Prioritize joint/hand visibility and temporal readability over ornament. Keep voiceover and captions separate, retain a natural-colour comparison, and document the chosen processing resolution with future presets. No narration or new final visual standard has been approved in this lab.

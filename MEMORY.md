@@ -1,5 +1,10 @@
 # Balance Atlas memory
 
+## 2026-11-11 — Adjustable continuous-video engraving
+
+- Built `/festival/gravura-lab/`: two exercise clips containing Paulo, muted loops, independently adjustable contrast/tones/hatching/contours/colour, saved browser state and portable JSON. GPU preview reached ~30 fps versus ~8 fps with both CPU filters in this browser.
+- Reusable engine and actual Remotion adapter: `src/festival/engraving/README.md`. A short 30 fps MP4 verifies export. Full-video treatment is a draft for a possible Handstand Life exercise + voiceover series, not yet an approved preset or title. Anatomical static illustrations and freeze/paint remain complementary.
+
 ## 2026-11-11 — Two approved image/video treatments, published
 
 - Paulo explicitly approved both scenery + engraved person + intermediate ochre paint, and engraved person + brush on green, as general imagery language for site/Instagram and message-bearing video freezes. Canonical guide: `src/festival/IMAGERY.md`.

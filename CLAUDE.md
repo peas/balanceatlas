@@ -305,3 +305,8 @@ defaults to "Janela no papel" unless added to `STYLE_OF`. The treatment selector
 and the `.ig-*` CSS are unused but kept. Use these style names when talking to Paulo and Gabriel.
 "handstandlife": ideas for use (community hashtag vs. event hashtag, section name for between-editions content)
 were discussed on 11/11/2026; nothing decided.
+
+
+## Continuous engraving / prospective Handstand Life — 11 November 2026
+
+`/festival/gravura-lab/` is Paulo's adjustable two-video study (noindex, not in navigation). Canonical implementation/recipe: `src/festival/engraving/README.md`; portable CPU RGBA engine, faster WebGL preview, CPU worker fallback, bounded local JSON presets, and tested Remotion `OffthreadVideo.onVideoFrame` adapter. Reuses `mural-reta`, `p-desce`, optional `j-press`; no raw footage added. Presets are drafts for Paulo to choose, not new brand defaults. Whole-video procedural hatching is an additional option for future narrated exercise demonstrations (“Handstand Life”, provisional name); keep voiceover/captions separate. It is not generated anatomical art or foreground segmentation. Shared visual guidance is in IMAGERY.md and the complementary global Instagram/Remotion playbooks.
