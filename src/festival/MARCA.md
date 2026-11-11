@@ -1,5 +1,14 @@
 # Marca do HandstandFest: decisões, dúvidas abertas e brief para design
 
+## Linguagem aprovada de imagens e vídeos — 11/11/2026
+
+Paulo aprovou **as duas aplicações**, para reutilizar no site oficial, Instagram e outros assets:
+
+1. Pessoa em preto e branco/creme, com hachuras acompanhando músculos e roupa, cenário com aparência fotográfica e colorida, e mancha ocre em camada intermediária a **65% de opacidade**. Pessoa acima da tinta; cenário visível através dela. Publicada em Sobre handstand.
+2. Pessoa com o mesmo tratamento de gravura, pincelada ocre clara atrás e fundo verde profundo. Mantida em Sobre o evento e no Instagram2.
+
+Também são destinos aprovados para vídeos que congelam na hora de transmitir uma mensagem. Separar vídeo/frame, figura, tinta, selo e texto; entrada da tinta junto ou depois da mensagem, nunca grifo vazio antes da palavra. Privilegiar uma pessoa com pouca informação no entorno; manter fotos coletivas fotográficas. Isso é linguagem geral aprovada, não obrigação de aplicar em toda peça. Guia de aplicação, limitações de fidelidade e estado de implementação: [IMAGERY.md](IMAGERY.md).
+
 ## Gravura e família de manchas — 11/11/2026
 
 Paulo pediu prompts reutilizáveis para transformar fotos em figuras com hachuras acompanhando músculos/roupas e fundo transparente, usadas em destaques estáticos ou congelamentos. [Kit, testes e passagem para o próximo agente](../../design/handstandfest-arte/2026-11-11-prompts/README.md). Duas fotos foram testadas com ImageGen; as três aplicações foram aprovadas visualmente em 11/11. É interpretação ilustrada, não filtro exato nem correção técnica da postura.
@@ -8,7 +17,7 @@ Separar figura, tinta, traço, logo e texto. A **marca HF continua idêntica**; 
 
 A fusão entre home oficial e home2 será feita por Paulo em outro agente. As aplicações aprovadas entram em Sobre handstand, Sobre o evento e no carrossel `gravuras-aprovadas` do Instagram2, sem fazer essa fusão. Figura e mancha continuam independentes.
 
-Para o bento, Paulo quer hachuras e pontilhado acompanhando o corpo, não só grayscale. Priorizar uma pessoa e pouco cenário; fotos coletivas continuam fotográficas. Outra possibilidade testada: cenário fotográfico colorido + pessoa hachurada; uma mancha ocre opcional no meio deixa a intervenção evidente. **Preferência mais recente: 65% de opacidade** nessa aplicação sobre cenário fotográfico. O teste entregue está em 55% (36% pareceu fraco); Paulo gostou e pediu apenas registrar 65%, **sem regenerar agora**. Isso não é uma mudança global da opacidade das manchas ou do logo. Esses testes adicionais não substituem as composições com mancha em fundo liso. O híbrido gerado não preserva cada pixel da foto original; ver limites e compositor no kit.
+Para o bento, Paulo quer hachuras e pontilhado acompanhando o corpo, não só grayscale. Priorizar uma pessoa e pouco cenário; fotos coletivas continuam fotográficas. Outra possibilidade testada: cenário fotográfico colorido + pessoa hachurada; uma mancha ocre opcional no meio deixa a intervenção evidente. **Preferência mais recente: 65% de opacidade** nessa aplicação sobre cenário fotográfico. Depois de uma rodada somente de anotações, Paulo autorizou colocar as duas aplicações no site oficial; a versão sobre cenário foi então exportada e publicada a 65%. Os estudos anteriores usaram 36% e 55%. Isso não é uma mudança global da opacidade das manchas ou do logo. Esses testes adicionais não substituem as composições com mancha em fundo liso. O híbrido gerado não preserva cada pixel da foto original; ver limites e compositor no kit.
 
 Em pt-BR, como o texto do festival: é o documento que o Paulo leva para outras ferramentas de design (Astra) e
 lê com o Gabriel. Atualizar aqui a cada decisão; o `CLAUDE.md` do repo aponta para cá.

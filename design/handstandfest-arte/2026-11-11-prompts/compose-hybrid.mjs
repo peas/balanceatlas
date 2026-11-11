@@ -5,7 +5,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import sharp from 'sharp';
 const here = path.dirname(fileURLToPath(import.meta.url));
-const opacity = Number(process.argv[2] ?? .55);
+const opacity = Number(process.argv[2] ?? .65);
 if (!(opacity >= 0 && opacity <= 1)) throw new Error('Opacity must be 0–1');
 const image = (await fs.readFile(path.join(here, 'assets/straddle-landscape-hybrid.png'))).toString('base64');
 const brush = (await fs.readFile(path.join(here, 'sources/brush-v7.svg'), 'utf8')).replace(/<\?xml[^>]*>/g, '').replace(/fill="[^"]*"/g, 'fill="#cb8b34"');
@@ -33,4 +33,9 @@ const maskData=matte.toString('base64');
 const drawing = `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="941" height="1672" viewBox="0 0 941 1672"><defs><image id="scene" width="941" height="1672" href="data:image/png;base64,${image}"/><mask id="person"><image width="941" height="1672" href="data:image/png;base64,${maskData}"/></mask></defs><use href="#scene" data-layer="photographic-scene"/><g data-layer="ochre-paint" opacity="${opacity}" transform="translate(130 430) scale(.65 .65)">${brush}</g><g data-layer="engraved-person" mask="url(#person)"><use href="#scene"/></g></svg>`;
 await fs.writeFile(path.join(here, 'previews/hybrid-paint.svg'), drawing);
 await sharp(Buffer.from(drawing)).png().toFile(path.join(here, 'previews/hybrid-paint.png'));
+if (process.argv.includes('--publish')) {
+  const destination = path.resolve(here, '../../../public/festival/ig/arte/engraving-v1/landscape-paint.webp');
+  await sharp(Buffer.from(drawing)).webp({ quality: 90 }).toFile(destination);
+  console.log('Published', destination);
+}
 console.log('hybrid-paint.svg + PNG; paint opacity', opacity);

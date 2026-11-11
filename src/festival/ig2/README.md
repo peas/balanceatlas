@@ -132,3 +132,7 @@ Ochre is the default in `Canvas`, Studio and `festival_render.py`. `?paleta=orig
 `music.ts` maps six existing pieces to Brazilian tracks; [MUSICA.md](MUSICA.md) records the eight-track research and sources. Each suggestion has an external official listening link and an optional YouTube embed. This player is separate from Remotion and never autoplays. Exports contain no commercial soundtrack; the actual recording/segment is selected in Instagram, with synchronization still pending.
 
 The website counterpart lives in `../ArtStories.tsx` and `../ArtStoryPlayer.tsx`: real-time visual sequences reuse v07 brush assets and shared event facts, without importing social UI safe zones into the website layout.
+
+## Shared image/video language approved — 11 November 2026
+
+See [IMAGERY.md](../IMAGERY.md). Paulo approved both photographic scenery + selectively engraved person + intermediate ochre paint (65%), and engraved person + light-ochre brush on deep green. Reuse these in static pieces and selected message-bearing freezes, with independent layers and verified frame registration. This approval does not mean new freeze compositions have already been implemented. Existing art carousels remain.

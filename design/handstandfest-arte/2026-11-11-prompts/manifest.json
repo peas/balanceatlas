@@ -50,9 +50,9 @@
       "method": "Native SVG three-layer composite with scene-specific colour matte",
       "output": "previews/hybrid-paint.svg",
       "script": "compose-hybrid.mjs",
-      "paint_opacity": 0.55,
-      "status": "Existing output remains at 55%. Paulo liked it and prefers 65% next; notes only, no regeneration requested. Home merge moves to another agent.",
-      "next_preferred_paint_opacity": 0.65
+      "paint_opacity": 0.65,
+      "status": "Approved as general site/Instagram image and video-freeze language alongside the green-background application. Published at 65% on official handstand page after explicit authorization.",
+      "public_output": "/festival/ig/arte/engraving-v1/landscape-paint.webp"
     }
   ]
 }

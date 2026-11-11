@@ -1,10 +1,12 @@
 # Reusable engraving and brush prompts — 11 November 2026
 
-## Latest decision and handoff
+## Latest approval, publication and handoff
 
-Paulo liked the result and requested **65% opacity for the next intermediate-paint test**. Existing SVG/PNG files and the compositor default remain at **55%**, deliberately: **no regeneration requested now**. On the next authorized render, use `node design/handstandfest-arte/2026-11-11-prompts/compose-hybrid.mjs 0.65`. Do not describe 65% as already rendered or apply it to all brand paint.
+Paulo approved BOTH the photographic-scene/intermediate-paint treatment and the engraved figure on green as a general image/video language for site and Instagram, including freezes that deliver a message. Canonical guide: [IMAGERY.md](../../../src/festival/IMAGERY.md).
 
-The official-home / ochre-home2 merge now moves to Paulo's other agent. Preserve the approved art options, optional independent paint, photographic group scenes and story playback/accessibility behavior. Entry points and live applications are documented below and in the root CLAUDE.md. Current implementation commits: `6af08b0` and `b71d1b1`; this handoff changes notes only.
+The latest publication request supersedes the earlier no-regeneration note. The scene treatment is now exported at **65% opacity** and published on `/festival/handstand/#pratica-em-qualquer-lugar`; the green treatment remains on `/festival/sobre/#practice-title`. Run `node design/handstandfest-arte/2026-11-11-prompts/compose-hybrid.mjs 0.65 --publish` for layered SVG, PNG and public WebP. Neither the figure nor scenery is regenerated to adjust paint. The original 55% output remains in the earlier delivered kit/history.
+
+The official-home/ochre-home2 merge stays with Paulo's other agent. Retain approved art options, optional independent paint, photographic group scenes and story playback/accessibility behavior. The new image-specific freeze transitions are a direction to implement and validate, not completed video work.
 
 ## Intent and handoff
 
@@ -72,6 +74,6 @@ Paulo clarified that he means anatomical hatching/stipple, not ordinary grayscal
 
 A further requested study keeps the mountain/deck scene photographic and renders only the athlete as engraving: `assets/straddle-landscape-hybrid.png`. See reusable prompt `prompts/03-selective-photo.txt` and the exact executed `test-hybrid.txt`. This is a generative composite: the background looks like the original but is NOT a byte-identical retained photograph. For exact preservation, a registered foreground and a reviewed matte are needed. The standalone cutout changed proportions slightly; a naive paste would leave a doubled silhouette.
 
-`compose-hybrid.mjs` adds native v07 paint BETWEEN that photographic scene and its existing engraved person, restoring person pixels through a scene-specific warm/cool colour mask. It does not redraw the person to adjust paint. The mask works for this warm figure against cool scenery, not arbitrary photographs; inspect edge pixels and dark hatching. Output is an editable three-layer SVG and PNG preview. `node .../compose-hybrid.mjs 0.55` changes opacity; 36% was too faint, 55% is the current study at Paulo's request. These two new landscape studies are additional options, not replacements for the approved cream/green compositions, and are not live-page additions.
+`compose-hybrid.mjs` adds native v07 paint BETWEEN that photographic scene and its existing engraved person, restoring person pixels through a scene-specific warm/cool colour mask. It does not redraw the person to adjust paint. The mask works for this warm figure against cool scenery, not arbitrary photographs; inspect edge pixels and dark hatching. Output is an editable three-layer SVG and PNG preview. `node .../compose-hybrid.mjs 0.55` changes opacity; 36% was too faint, 55% was the next study, and 65% is now the approved publication setting. The two landscape treatments are additional options, not replacements for the approved cream/green compositions, and the painted scene is now used on the official handstand page.
 
 Prefer isolated subjects, readable negative spaces, light/simple backgrounds and limited ornament. Keep authentic group/community photographs photographic. For video, this is a selected frozen still: exact source registration is not yet validated and is required before a seamless live-to-art transition.

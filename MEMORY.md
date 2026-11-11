@@ -1,5 +1,12 @@
 # Balance Atlas memory
 
+## 2026-11-11 — Two approved image/video treatments, published
+
+- Paulo explicitly approved both scenery + engraved person + intermediate ochre paint, and engraved person + brush on green, as general imagery language for site/Instagram and message-bearing video freezes. Canonical guide: `src/festival/IMAGERY.md`.
+- The publication request supersedes the prior notes-only request: rendered the scenery version at 65% paint and applied it to the official handstand page; retained the green version in Sobre o evento. The replaced group photo stays in the community bento. Layered masters remain editable; the site serves an optimized WebP.
+- Prompts and global playbooks updated. New matching freeze transitions are design guidance, not newly implemented videos. Home merge still belongs to the other agent.
+
+
 ## 2026-11-11 — Final preference and handoff
 
 - Paulo liked the selective engraved-person / photographic-scenery study and now prefers **65% paint opacity** for its intermediate layer. Existing files remain at 55%; **do not regenerate yet**. The 65% value is a next-render preference, not a tested output or a global opacity token.

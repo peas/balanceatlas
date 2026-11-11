@@ -14,7 +14,6 @@ import { eventos, paises } from '../../festival/eventos';
 const wrap = {
   intro: `${R2}/saopaulo-2024/100.webp`,
   porque: `${R2}/greece-2025/01.webp`,
-  sempre: `${R2}/saopaulo-2024/95.webp`,
   chao: `${R2}/saopaulo-2024/35.webp`,
   spot: `${R2}/thailand-2026/28.webp`,
 };
@@ -49,8 +48,8 @@ const stripB = [...community.slice(6), ...atlasPhotos.filter((p) => !used.has(p.
   </section>
 
   <article class="snake">
-    <h2>Uma prática que estará sempre com você</h2>
-    <figure class="r wide"><img src={wrap.sempre} alt="Grupo treinando invertidas na grama, São Paulo, 2024" loading="lazy" /></figure>
+    <h2 id="pratica-em-qualquer-lugar">Uma prática que estará sempre com você</h2>
+    <figure class="r engraving-scene"><img src="/festival/ig/arte/engraving-v1/landscape-paint.webp" width="941" height="1672" alt="Pessoa em parada de mão ilustrada em gravura, com mancha ocre sobre uma paisagem de montanhas e deck" loading="lazy" /></figure>
     <p>Ao mesmo tempo, o interessante do handstand, assim como o yoga, a calistenia e algumas modalidades de circo, é que você pode praticar em qualquer lugar. É uma prática que estará sempre com você.</p>
     <p>De alguma forma, você vai acabar ganhando uma paixão por técnicas que costumam ser deixadas de lado em muitos esportes e por muitos praticantes amadores. A flexibilidade, a mobilidade, o treino dedicado de força e o cuidado com as articulações são essenciais. Você vai aprender a gostar disso.</p>
     <p>O próprio equilíbrio vai aparecer tanto na parte técnica quanto na parte mental. Para um praticante de handstand, depois de algum tempo, fica bastante óbvia a neuroplasticidade e como a inteligência e a capacidade cognitiva estão fortemente ligadas ao sucesso dessa jornada.</p>
@@ -110,6 +109,7 @@ const stripB = [...community.slice(6), ...atlasPhotos.filter((p) => !used.has(p.
 </FestLayout>
 
 <style>
+  .snake figure.engraving-scene img { aspect-ratio: 941 / 1672; object-fit: contain; filter: none; }
   .snake figure.engraving { background: transparent; border-radius: 0; overflow: visible; }
   .snake figure.engraving-straight { width: min(38%, 300px); }
   @media (max-width: 640px) {
