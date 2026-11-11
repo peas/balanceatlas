@@ -1,7 +1,7 @@
 import { Player, type PlayerRef } from '@remotion/player';
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { type Slide } from './pieces';
-import { CATALOG, STYLES, type StyleId } from './catalog';
+import { CATALOG, STYLES, UNIT, type StyleId } from './catalog';
 import { f, type PieceProps, type Treatment, type Palette, OCHRE_TOKENS } from './kit';
 import './studio.css';
 import { suggestedMusic } from './music';
@@ -30,7 +30,7 @@ function Preview({ slide, still, ready, inputProps, label }: { slide: Slide; sti
       {ready && near ? <Player ref={player} component={slide.component} inputProps={inputProps} durationInFrames={f(slide.seconds)} fps={30} compositionWidth={1080} compositionHeight={slide.height} initialFrame={slide.cover} controls={!still} loop={!still} clickToPlay={!still} acknowledgeRemotionLicense style={{ width: '100%', height: '100%' }} /> : <p>Preparando a prévia…</p>}
     </div>
     {slide.cues.length > 0 && <div className="ig2-cues" role="group" aria-label={`Momentos de ${slide.name}`}>
-      {slide.cues.map(cue => <button key={cue.label} disabled={!ready || !near} onClick={() => { player.current?.pause(); player.current?.seekTo(cue.frame); }}>{cue.label}</button>)}
+      {slide.cues.map(cue => <button key={cue.label} disabled={!ready || !near} onClick={() => { player.current?.seekTo(cue.frame); }}>{cue.label}</button>)}
     </div>}
   </div>;
 }
@@ -72,14 +72,14 @@ export default function Studio() {
     {STYLES.filter(s => style === 'todos' || style === s.id).map(s => <section className="ig2-style" id={s.id} key={s.id} aria-labelledby={`style-${s.id}`}>
       <header className="ig2-style-head"><p className="ig2-overline">Estilo {STYLES.indexOf(s) + 1} de {STYLES.length}</p><h2 id={`style-${s.id}`}>{s.name}</h2><p>{s.what}</p></header>
       <div className="ig2-gallery">
-      {CATALOG.filter(p => p.style === s.id).map(piece => <article className={`ig2-piece${piece.slides.length > 1 ? ' ig2-piece-sequence' : ''}`} id={piece.id} key={piece.id} aria-labelledby={`title-${piece.id}`}>
+      {CATALOG.filter(p => p.style === s.id).map(piece => <article className="ig2-piece" id={piece.id} key={piece.id} aria-labelledby={`title-${piece.id}`}>
         <header className="ig2-piece-header">
-          <p className="ig2-overline"><span className="ig2-number">{String(CATALOG.indexOf(piece) + 1).padStart(2, '0')}</span>{piece.format} · {piece.slides.length > 1 ? `${piece.slides.length} quadros` : `${piece.slides[0].seconds.toLocaleString('pt-BR')} s`}</p>
+          <p className="ig2-overline"><span className="ig2-number">{String(CATALOG.indexOf(piece) + 1).padStart(2, '0')}</span>{piece.format} · {piece.slides.length > 1 ? `${piece.slides.length} ${piece.format.startsWith('Carrossel') ? 'lâminas' : 'quadros'} · ` : ''}{Math.round(UNIT[piece.id].seconds)} s</p>
           <h3 id={`title-${piece.id}`}>{piece.title}</h3>
           <p>{piece.description}</p>
         </header>
         <div className="ig2-previews">
-          {piece.slides.map((slide, index) => <Preview key={slide.name} slide={slide} still={piece.format === 'Carrossel'} ready={ready} inputProps={inputProps} label={`${piece.title} · ${index + 1}. ${slide.name}`} />)}
+          <Preview slide={UNIT[piece.id]} still={false} ready={ready} inputProps={inputProps} label={piece.title} />
         </div>
         {piece.caption && <details className="ig2-caption"><summary>Legenda e material</summary><p><b>Legenda (rascunho)</b><br />{piece.caption}</p><p><b>Material</b><br /><code>{piece.material}</code></p></details>}
         <p className="ig2-notes"><strong>{piece.look}.</strong> {piece.movement}</p>

@@ -1,6 +1,8 @@
 // Every Instagram piece of the festival on one page: the first ten (ig/) and the second study (ig2/), grouped by
 // named visual style so Paulo and Gabriel can compare and pick. A new piece needs one entry in STYLE_OF.
-import { PIECES, type Piece } from './pieces';
+import { Series } from 'remotion';
+import { PIECES, type Piece, type Slide } from './pieces';
+import { f, type PieceProps } from './kit';
 import { PECAS, ROTULO } from '../ig/pecas';
 import { REGISTRO } from '../ig/registro';
 import { FPS } from '../ig/kit';
@@ -31,3 +33,17 @@ const first: CatalogPiece[] = PECAS.map((p) => ({
 const second: CatalogPiece[] = PIECES.map((p) => ({ ...p, style: STYLE_OF[p.id] ?? 'janela' }));
 
 export const CATALOG: CatalogPiece[] = STYLES.flatMap((s) => [...first, ...second].filter((p) => p.style === s.id));
+
+// One player per piece: a carousel or a story sequence plays as one composition, slide after slide, and the
+// slide names become jump buttons. Built once per piece (a new component on each render would restart the Player).
+const STILL_SECONDS = 3.5;
+function joinSlides(piece: CatalogPiece): Slide {
+  if (piece.slides.length === 1) return piece.slides[0];
+  const still = piece.format === 'Carrossel';
+  const parts = piece.slides.map((s) => ({ ...s, frames: f(still ? Math.max(s.seconds, STILL_SECONDS) : s.seconds) }));
+  let at = 0;
+  const cues = parts.map((s) => { const cue = { label: s.name, frame: at + Math.min(s.cover, s.frames - 1) }; at += s.frames; return cue; });
+  const Joined = (props: PieceProps) => <Series>{parts.map((s) => <Series.Sequence key={s.name} durationInFrames={s.frames}><s.component {...props} /></Series.Sequence>)}</Series>;
+  return { name: piece.title, component: Joined, seconds: at / FPS, height: Math.max(...parts.map((s) => s.height)), cover: cues[0].frame, cues };
+}
+export const UNIT: Record<string, Slide> = Object.fromEntries(CATALOG.map((p) => [p.id, joinSlides(p)]));

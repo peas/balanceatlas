@@ -296,6 +296,7 @@ maybe a domain instead of the dropped Handstand Lab) is an idea only; note in MA
 
 ## One Instagram page, named styles — 11 November 2026
 
+One player per piece (`UNIT` in `catalog.tsx` joins the slides of a carousel or story sequence with `<Series>`; slide names are jump buttons) — Paulo found separate per-slide players hard to follow.
 `/festival/instagram/` now lists every piece (the ten of `ig/` and the seventeen of `ig2/`) in one Studio gallery,
 grouped by named style with filter chips (`#<style-id>` in the URL). `/festival/instagram2/` and `/instagram2/`
 redirect there. Styles and the piece → style map live in `src/festival/ig2/catalog.tsx`: **Tela cheia** (`ig/`
