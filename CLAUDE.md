@@ -293,3 +293,15 @@ video, teacher poster, lineup stories, "Quem faz" photo); `ArtGesture` straddle 
 (`.about` is now a two-column grid) and stag on the green tickets section (`.signup-art`, hidden under 900 px).
 Instagram pages already followed the ochre tokens. home2 stays online as a study. "handstandlife" (hashtag,
 maybe a domain instead of the dropped Handstand Lab) is an idea only; note in MARCA.md.
+
+## One Instagram page, named styles — 11 November 2026
+
+`/festival/instagram/` now lists every piece (the ten of `ig/` and the seventeen of `ig2/`) in one Studio gallery,
+grouped by named style with filter chips (`#<style-id>` in the URL). `/festival/instagram2/` and `/instagram2/`
+redirect there. Styles and the piece → style map live in `src/festival/ig2/catalog.tsx`: **Tela cheia** (`ig/`
+p01–p10, full-bleed video with text strips), **Janela no papel** (ig2 default: cream canvas, text in its own
+space, media in a window), **Gravura e mancha**, **Congela e pinta**, **Foto P&B com ocre**. A new ig2 piece
+defaults to "Janela no papel" unless added to `STYLE_OF`. The treatment selector only affects ig2 pieces; `IgCard`
+and the `.ig-*` CSS are unused but kept. Use these style names when talking to Paulo and Gabriel.
+"handstandlife": ideas for use (community hashtag vs. event hashtag, section name for between-editions content)
+were discussed on 11/11/2026; nothing decided.

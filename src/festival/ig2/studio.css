@@ -7,7 +7,7 @@
 .ig2-piece{min-width:0;border-top:2px solid var(--stage);padding-top:18px;scroll-margin-top:24px}
 .ig2-piece-sequence{grid-column:1/-1}
 .ig2-number{display:inline-block;margin-right:10px;background:var(--stage);color:var(--paper);padding:3px 7px}
-.ig2-piece-header h2{font:900 25px/1.1 var(--display);font-stretch:125%;letter-spacing:-.035em;margin:12px 0}
+.ig2-piece-header h3{font:900 25px/1.1 var(--display);font-stretch:125%;letter-spacing:-.035em;margin:12px 0}
 .ig2-piece-header>p:last-child{font:15px/1.6 var(--body);margin:0 0 22px;max-width:75ch}
 .ig2-previews{display:grid;grid-template-columns:minmax(0,1fr);gap:26px}
 .ig2-piece-sequence .ig2-previews{grid-template-columns:repeat(3,minmax(0,1fr))}
@@ -18,10 +18,23 @@
 .ig2-studio button:focus-visible,.ig2-studio select:focus-visible,.ig2-studio input:focus-visible{outline:3px solid var(--stage);outline-offset:4px}
 @media(min-width:1000px){.ig2-piece:not(.ig2-piece-sequence) .ig2-piece-header{min-height:172px}}
 @media(max-width:999px){.ig2-gallery,.ig2-piece-sequence .ig2-previews{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:650px){.ig2-gallery,.ig2-piece-sequence .ig2-previews{grid-template-columns:minmax(0,1fr)}.ig2-gallery{gap:40px}.ig2-toolbar{display:block}.ig2-options{margin-top:15px;gap:12px}.ig2-options label{flex-wrap:wrap}.ig2-piece-header h2{font-size:24px}.ig2-previews{gap:30px}}
+@media(max-width:650px){.ig2-gallery,.ig2-piece-sequence .ig2-previews{grid-template-columns:minmax(0,1fr)}.ig2-gallery{gap:40px}.ig2-toolbar{display:block}.ig2-options{margin-top:15px;gap:12px}.ig2-options label{flex-wrap:wrap}.ig2-piece-header h3{font-size:24px}.ig2-previews{gap:30px}}
 
 @media(min-width:1000px){.ig2-large .ig2-gallery,.ig2-large .ig2-piece-sequence .ig2-previews{grid-template-columns:repeat(2,minmax(0,1fr))}}
 
 .ig2-music{padding:18px;border-left:4px solid var(--accent);background:#123d3308;margin-top:20px;font:14px/1.6 var(--body)}.ig2-music strong{display:block;font-size:12px;text-transform:uppercase;margin-bottom:6px}.ig2-music a{font-weight:700}.ig2-music p{margin-top:8px}.ig2-music small{display:block;margin-top:8px;font-size:12px}
 
 .ig2-music details{margin-top:12px}.ig2-music summary{cursor:pointer;font-weight:700}.ig2-music iframe{display:block;width:100%;aspect-ratio:16/9;border:0;margin-top:12px}
+
+/* One page for every piece, grouped by named style (11/11/2026) */
+.ig2-styles{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:44px}
+.ig2-styles button{font:700 12px/1 var(--mono);text-transform:uppercase;letter-spacing:.03em;padding:11px 14px;border:2px solid var(--stage);background:transparent;color:var(--stage);cursor:pointer}
+.ig2-styles button span{opacity:.6;margin-left:6px}
+.ig2-styles button:hover{background:var(--accent)}
+.ig2-styles button[aria-pressed='true']{background:var(--stage);color:var(--paper)}
+.ig2-style{margin-bottom:84px;scroll-margin-top:24px}
+.ig2-style-head{margin-bottom:34px;max-width:70ch}
+.ig2-style-head h2{display:inline-block;position:relative;isolation:isolate;font:900 clamp(30px,4.4vw,52px)/1 var(--display);font-stretch:125%;text-transform:uppercase;letter-spacing:-.035em;margin:10px 0 16px}
+.ig2-style-head h2::before{content:'';position:absolute;inset:58% -.12em -.08em -.08em;z-index:-1;background:var(--accent);mask:url('/festival/brand/stroke-v7.svg') center/100% 100% no-repeat;-webkit-mask:url('/festival/brand/stroke-v7.svg') center/100% 100% no-repeat}
+.ig2-style-head>p:last-child{font:17px/1.6 var(--body);margin:0}
+.ig2-caption{margin-top:16px;font:14px/1.6 var(--body);border-top:1px solid #0f3d3355;padding-top:10px}.ig2-caption summary{cursor:pointer;font:700 11px var(--mono);text-transform:uppercase}.ig2-caption p{margin-top:10px}.ig2-caption code{font:11px var(--mono);word-break:break-word}

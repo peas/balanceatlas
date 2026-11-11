@@ -1,24 +1,4 @@
 ---
-import FestLayout from '../../layouts/FestLayout.astro';
-import HFSelo from '../../components/fest/HFSelo.astro';
-import Studio from '../../festival/ig2/Studio';
+// Merged into /festival/instagram/ on 11/11/2026 (one page, pieces grouped by named style).
+return Astro.redirect('/festival/instagram/');
 ---
-<FestLayout stickyNav={false} title="Instagram 02 · HandstandFest" description="Uma nova proposta de composição e movimento para o Instagram do HandstandFest.">
-  <main class="ig2-page wrap">
-    <header class="ig2-header">
-      <nav class="ig2-nav" aria-label="Estudo de Instagram"><a href="/festival/" class="ig2-brand"><HFSelo simples /> HandstandFest</a><a href="/festival/instagram/">Ver peças anteriores ↗</a></nav>
-      <div class="ig2-intro"><div><p>ESTUDO 02 / INSTAGRAM</p><h1>Corpo em<br /><span>movimento.</span></h1></div><p class="ig2-summary">Peças para explorar o encontro entre a geometria das letras e o gesto do pincel. Fotografia real, cor e preto e branco.</p></div>
-    </header>
-    <Studio client:only="react"><p slot="fallback">Carregando as composições…</p></Studio>
-    <p class="ig2-footnote">Proposta em avaliação · prévias ao vivo · sem música adicionada</p>
-  </main>
-</FestLayout>
-<style>
-  .ig2-page{max-width:1200px}.ig2-page:has([data-palette="ocre"]){--accent:#cb8b34;--stage:#22332a;--paper:#f3eddf;--white:#f3eddf}.ig2-header{padding-top:25px;border-bottom:2px solid var(--stage)}
-  .ig2-nav{display:flex;justify-content:space-between;align-items:center;gap:25px;padding-bottom:35px;font:11px var(--mono)}
-  .ig2-nav a{color:var(--stage);text-decoration:none}.ig2-nav a:hover{text-decoration:underline}.ig2-brand{display:flex;align-items:center;gap:10px;font-weight:700}.ig2-brand :global(.selo){width:45px;height:45px}
-  .ig2-intro{display:flex;justify-content:space-between;gap:35px;align-items:end;padding-bottom:35px}.ig2-intro>div>p{font:11px var(--mono);letter-spacing:.1em;margin:0 0 14px}
-  .ig2-intro h1{font-family:var(--display);font-weight:900;font-stretch:125%;font-size:clamp(36px,5.4vw,66px);line-height:.98;text-transform:uppercase;color:var(--stage);letter-spacing:-.045em;margin:0}.ig2-intro h1 span{position:relative;isolation:isolate}.ig2-intro h1 span::before{content:'';position:absolute;inset:73% -.04em -.06em;z-index:-1;background:var(--accent);mask:url('/festival/brand/stroke-v7.svg') center/100% 100% no-repeat;-webkit-mask:url('/festival/brand/stroke-v7.svg') center/100% 100% no-repeat}
-  .ig2-summary{max-width:32ch;margin:0;font:15px/1.65 var(--body);color:var(--stage)}.ig2-footnote{font:11px var(--mono);padding-bottom:40px;color:var(--stage)}
-  @media(max-width:700px){.ig2-nav{font-size:9px;padding-bottom:28px;gap:15px}.ig2-brand :global(.selo){width:35px;height:35px}.ig2-intro{display:block;padding-bottom:26px}.ig2-summary{font-size:14px;margin-top:20px;max-width:40ch}.ig2-header{padding-top:15px}}
-</style>
