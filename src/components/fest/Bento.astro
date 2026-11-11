@@ -17,7 +17,7 @@ const { items } = Astro.props;
         <img src={p.engraving || p.src} alt={p.alt} loading="lazy" data-treatment={p.engraving ? 'engraving' : p.pb ? 'pb' : 'color'} style={{filter: p.engraving ? 'none' : LOOK[p.pb ? 'pb' : 'cor']}} />
       )}
       {p.video && <span class="vbadge" aria-hidden="true"><i>▶</i><b>vídeo</b><span class="eq"><s></s><s></s><s></s></span></span>}
-      <figcaption>{p.alt}</figcaption>
+      <figcaption>{p.caption || p.alt}</figcaption>
     </figure>
   ))}
 </div>

@@ -20,14 +20,14 @@ export const QUANDO = `${FEST.dias[0]} — ${FEST.dias[2]} ${FEST.mesCurto} ${FE
 
 // Bento: photos and videos mixed. `video` cells play on hover (desktop) or when in view (touch).
 export const R2V = 'https://media.balanceatlas.com/videos/retreats';
-export type BentoItem = { src: string; alt: string; video?: string; span?: 'wide' | 'tall' | 'large'; pb?: boolean; engraving?: string; paint?: 'ochre' | 'green' }; // Independent image treatment and optional bristle underlay.
+export type BentoItem = { src: string; alt: string; caption?: string; video?: string; span?: 'wide' | 'tall' | 'large'; pb?: boolean; engraving?: string; paint?: 'ochre' | 'green' }; // Independent image treatment and optional bristle underlay.
 export const community: BentoItem[] = [
   { src: `${R2}/saopaulo-2024/96.webp`, alt: 'São Paulo, 2024', span: 'large' },
   { src: '/festival/posters/greece-2025-07.webp', video: `${R2V}/greece-2025/07.mp4`, alt: 'Paros, 2025', span: 'tall', pb: true },
   { src: `${R2}/thailand-2026/11.webp`, alt: 'Koh Phangan, 2026', span: 'wide' },
   { src: `${R2}/greece-2025/20.webp`, alt: 'Paros, 2025', span: 'tall' },
   { src: '/festival/posters/thailand-2026-10.webp', video: `${R2V}/thailand-2026/10.mp4`, alt: 'Koh Phangan, 2026', span: 'tall' },
-  { src: `${R2}/saopaulo-2024/106.webp`, engraving: '/festival/ig/arte/engraving-v1/straddle-overhead.webp', alt: 'Gravura a partir de uma foto de parada de mão em straddle, São Paulo, 2024', span: 'wide', paint: 'ochre' },
+  { src: `${R2}/saopaulo-2024/106.webp`, engraving: '/festival/ig/arte/engraving-v1/straddle-overhead.webp', alt: 'Gravura a partir de uma foto de parada de mão em straddle, São Paulo, 2024', caption: 'São Paulo · gravura', span: 'wide', paint: 'ochre' },
   { src: `${R2}/saopaulo-2024/94.webp`, alt: 'São Paulo, 2024' },
   { src: '/festival/posters/saopaulo-2024-04.webp', video: `${R2V}/saopaulo-2024/04.mp4`, alt: 'São Paulo, 2024', span: 'tall', pb: true },
   { src: `${R2}/greece-2025/09.webp`, alt: 'Paros, 2025', span: 'wide' },
