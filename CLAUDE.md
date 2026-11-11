@@ -169,6 +169,13 @@ Always verify downloaded images are real (>5KB, not HTML redirects).
   **Brush timing:** text must appear with or before its highlight. Instagram 2 holds the text from frame 0 and
   starts brushing at frame 5; the original kit shares the text/brush transform. Poster names finish entering
   before their brush; text changes color only where the brush has reached to preserve contrast.
+  **Domain (11/11/2026):** handstandfest.com.br was registered by Paulo at Registro.br that day. Cloudflare zone
+  created in his account (Free plan): proxied A records for the apex and `www` (192.0.2.1, placeholder) and one
+  Redirect Rule, all requests → `https://balanceatlas.com/festival/` (302, temporary until the site moves to the
+  domain). The zone was assigned `dolly.ns.cloudflare.com` + `matt.ns.cloudflare.com`; Registro.br had been set
+  to `byron` + `kim` (the pair of paulo.com.br), so the zone stays pending until the nameservers are changed there.
+  The dashboard's API refuses writes from page scripts (403) and the local wrangler token only reads zones: DNS
+  changes go through the dashboard UI. Older notes saying the domain is not bought are superseded.
   Instagram: @handstandfest (profile not taken as of 04/11/2026; Paulo creates it). Domain: handstandfest.com.br
   (free on 04/11/2026, only via Registro.br; Cloudflare Registrar has no .br), .com/.org/.net also free.
   **Structure (04/11/2026):** four pages under `src/pages/festival/` sharing `src/layouts/FestLayout.astro`
