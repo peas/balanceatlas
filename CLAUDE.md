@@ -173,7 +173,8 @@ Always verify downloaded images are real (>5KB, not HTML redirects).
   created in his account (Free plan): proxied A records for the apex and `www` (192.0.2.1, placeholder) and one
   Redirect Rule, all requests → `https://balanceatlas.com/festival/` (302, temporary until the site moves to the
   domain). The zone was assigned `dolly.ns.cloudflare.com` + `matt.ns.cloudflare.com`; Registro.br had been set
-  to `byron` + `kim` (the pair of paulo.com.br), so the zone stays pending until the nameservers are changed there.
+  to `byron` + `kim` (the pair of paulo.com.br); Paulo changed it the same day and the domain went live: apex and
+  `www`, http and https, all answer 302 to the festival (checked 11/11/2026).
   The dashboard's API refuses writes from page scripts (403) and the local wrangler token only reads zones: DNS
   changes go through the dashboard UI. Older notes saying the domain is not bought are superseded.
   Instagram: @handstandfest (profile not taken as of 04/11/2026; Paulo creates it). Domain: handstandfest.com.br
