@@ -37,3 +37,16 @@ Print-art SVGs embed raster engravings and vector text/graphics. They are portab
 Checked the three final PNGs, all three front/back garment exports, Reel contact sheets and freeze/paint/closing frames. Preserved body extremities, moved the video crop down to clear the extended feet, kept headline inside the working safe width. Browser playback checked, static cards have no controls or movement. Build passes; TypeScript retains the pre-existing generic transition union error in `src/festival/compositions.tsx:179`, unrelated to these studies.
 
 Render pipeline correction: Remotion 4.0.534 requires `bundle --out-dir <path>`; a second positional argument was ignored. The script now uses the explicit flag and also exports PNGs with `--still --frame`.
+
+## Alternative homepage
+
+`/festival/home2/` combines paper/ochre engraving with green/yellow ticket fields. Three sibling routes compare ochre, yellow and green. `src/components/fest/ArtHome.astro` holds the template, `ArtGesture.astro` the layered engraving. Shared schedules, teachers and ticket lots live in `src/festival/home-content.ts`, also consumed by the original homepage. Dates and sales availability stay in `data.ts`.
+
+Teacher portraits have dry-brush underlays using the actual `stroke-v7.svg` mask and short name highlights. This restores the identity Paulo missed in the first home2 review. Keep paint outside the photographed bodies. Hero paint respects reduced motion; the practice video is user-controlled and has a same-source poster.
+
+```sh
+ffmpeg -nostdin -y -loglevel error -i public/festival/ig/ig2-formas.mp4 -frames:v 1 -f image2pipe -vcodec png - | magick png:- -quality 82 public/festival/ig/arte/formas-poster.webp
+npm run build
+```
+
+Reviewed desktop and mobile layouts, teacher bristles, ticket anchors, schedule and FAQ disclosures. These routes are noindex studies; they do not replace `/festival/`.

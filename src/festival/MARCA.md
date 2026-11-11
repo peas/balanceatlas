@@ -337,3 +337,8 @@ Paulo rejeitou duas versões do one arm: a transferência de peso precisa ser re
 ### Gravura e gesto — exploração, 10/11/2026
 
 Paulo enviou referências artísticas de si e Gabriel: gravura em preto/creme, disco ocre com falhas, arcos finos e apoio pincelado. Pediu trazer esse tom às camisetas e ao Instagram, incluindo vídeo → congelamento → P&B → pintura. Estudos 06–08 e cinco novas peças em `ig2/art-pieces.tsx`. Amarelo HF e ocre comparados sem mudar a paleta global. O ocre no creme é a preferência do assistente nesta rodada, ainda sem aprovação do Paulo. Corpo, tinta, traço e texto são camadas independentes; cerdas vêm do selo v07. Manter pose real, texto legível e gesto concentrado na arte, sem pincelar toda a interface. Receita e fontes em `design/handstandfest-arte/README.md`.
+
+
+### Home2 — exploração e retorno das cerdas, 10/11/2026
+
+Quatro aplicações em URLs próprias: `/festival/home2/` (mistura), `/ocre/`, `/amarelo/`, `/verde/`. Paulo achou a versão bonita, mas sentiu falta das cerdas nos professores convidados. Aplicado o mesmo traço v07 atrás das bordas dos retratos e como grifo curto nos nomes. A expressão deve reaparecer em pontos de identidade ao longo da página, sem cobrir rosto, mãos ou pés. Manter programação, botões e informações práticas simples. O estudo compartilha dados com a home atual e não substitui a identidade aprovada.

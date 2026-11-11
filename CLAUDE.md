@@ -249,3 +249,7 @@ Paulo approved a small hierarchy/decoration pass alongside the Instagram proposa
 ## Artistic festival studies — 10 November 2026
 
 Shirt proposals 06–08 and three static art cards + two freeze/paint Reels now explore the engraving references supplied by Paulo (himself and Gabriel). Sources, exact built-in ImageGen prompts and regeneration: `design/handstandfest-arte/README.md`. Shared `ig2/art-pieces.tsx` keeps figure, v07 brush, orbit and text separate. Ochre is experimental; keep global green/yellow. Gallery now has 14 pieces / 27 previews. Print SVGs for these shirts contain raster engravings: do not call them entirely vector or press-ready. Render script supports `--still --frame` and uses explicit `bundle --out-dir`.
+
+## Alternative festival homepage — 10 November 2026
+
+`/festival/home2/` is the mixed art study, with `/ocre/`, `/amarelo/` and `/verde/` variants. `ArtHome.astro` shares event facts via `home-content.ts` with the original home; `ArtGesture.astro` reuses the engraved figures and v07 brush. Paulo liked the direction and requested recognizable bristles around invited teachers: textured underlays outside photos and short name highlights, with bodies unobscured. Keep utilities clean. The original home stays the default; ochre remains exploratory. Recipe in `design/handstandfest-arte/README.md`.

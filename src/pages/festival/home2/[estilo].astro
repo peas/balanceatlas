@@ -1,0 +1,6 @@
+---
+import ArtHome from '../../../components/fest/ArtHome.astro';
+export function getStaticPaths(){return ['ocre','amarelo','verde'].map(estilo=>({params:{estilo},props:{theme:estilo}}));}
+const {theme}=Astro.props;
+---
+<ArtHome theme={theme} />

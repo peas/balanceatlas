@@ -1,0 +1,24 @@
+---
+import { CIRCULO, TRACO } from '../../festival/pincel';
+interface Props { pose?: 'straddle' | 'stag'; class?: string; }
+const {pose='straddle',class:cls} = Astro.props;
+---
+<div class:list={['art-gesture',cls]}>
+  <svg class="art-disc" viewBox="0 0 200 200" aria-hidden="true"><path d={CIRCULO.corpo} transform={CIRCULO.transform}/></svg>
+  <svg class="art-orbit" viewBox="0 0 600 680" fill="none" aria-hidden="true">
+    <path d="M80 340 C13 140 294 63 480 200 M527 289 C594 466 459 617 249 587"/>
+    <path class="echo" d="M77 346 C26 146 296 67 473 196 M532 300 C589 478 455 612 255 591"/>
+    <path class="axis" d="M293 88 L294 205 M294 592 L295 636"/>
+    <circle cx="293" cy="77" r="2.3"/>
+  </svg>
+  <img class="art-person" src={`/festival/ig/arte/${pose}.webp`} width="1120" height="1400" alt="Figura em parada de mão, desenhada em traço de gravura" fetchpriority="high"/>
+  <svg class="art-ground" viewBox="0 0 400 100" preserveAspectRatio="none" aria-hidden="true"><path d={TRACO.corpo} transform={TRACO.transform}/></svg>
+</div>
+<style>
+.art-gesture{position:relative;aspect-ratio:600/680;width:100%;isolation:isolate;--paint:var(--art-paint,#cb8b34);--line:var(--art-ink,#203128)}
+.art-disc{position:absolute;left:14%;top:25%;width:77%;height:auto;fill:var(--paint);transform:rotate(-12deg);animation:paint-in 1.4s cubic-bezier(.2,.8,.2,1) both}
+.art-orbit{position:absolute;inset:0;width:100%;height:100%;stroke:var(--line);stroke-width:1.2}.art-orbit .echo{opacity:.4;stroke-width:.6}.art-orbit .axis{stroke-width:.7}.art-orbit circle{fill:var(--line);stroke:none}
+.art-person{position:absolute;inset:0;width:100%;height:96%;object-fit:contain;z-index:1}.art-ground{position:absolute;left:32%;top:95%;width:37%;height:1.2%;fill:var(--line);opacity:.6}
+@keyframes paint-in{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+@media(prefers-reduced-motion:reduce){.art-disc{animation:none}}
+</style>

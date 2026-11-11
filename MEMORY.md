@@ -1,5 +1,10 @@
 # Balance Atlas memory
 
+## 2026-11-10 — Alternative artistic homepage
+
+- `/festival/home2/` mixes engraved cream/ochre with green/yellow; `/ocre/`, `/amarelo/`, `/verde/` compare the same full event page. Shared `home-content.ts` keeps original and alternative schedules, teachers and lots aligned. Current homepage remains the default.
+- Paulo liked home2 but missed the brushwork around invited teachers. Restored v07 dry-brush edges behind portraits and short highlights under names; preserve faces and handstand bodies. Use expressive marks at focal points, retain simple utilities. ArtGesture reuses the shirt illustrations and actual circle/stroke vectors. Native video has controls and a poster from the same clip; no autoplay. Four variants are studies, not final palette approval.
+
 ## 2026-11-10 — Engraving and paint studies
 
 - Paulo supplied artistic shirt illustrations of himself/Gabriel and requested a less rigid direction, static Instagram art and live-video → freeze → grayscale → paint tests. Added shirts 06–08, three static cards and two 10-second Reels. Built-in ImageGen transparent extractions preserve reference poses; the motion matte reveals original video pixels. Same v07 bristles, independent body/ink/orbit/text layers. Ochre is an experiment, not a global palette change. Recipe, prompts and limitations: `design/handstandfest-arte/README.md`.
