@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-11",
+  "method": "Built-in ImageGen edit, one initial pass and one cleanup pass each",
+  "approval": "Pending user visual approval",
+  "assets": [
+    {
+      "id": "reta-costas",
+      "source_local_path": "/var/folders/83/q475hh4168d7w1t4xs1z0zz40000gn/T/codex-clipboard-b5019ba9-0f70-4c79-a009-adfa61def667.png",
+      "source_sha256": "c9588ee391d2e1e391c7ecbf676432f7f1bd3f597dc54756480077d0138ac7f1",
+      "style_reference": "../straddle-source.png",
+      "initial_generation_local_path": "/Users/peas/.codex/generated_images/01a1c53f-e80f-77b3-9f93-db7f76f6d427/exec-ab9b047f-8f9a-4323-a03d-0c17f049be49.png",
+      "final_generation_local_path": "/Users/peas/.codex/generated_images/01a1c53f-e80f-77b3-9f93-db7f76f6d427/exec-603b6dc5-8879-48e7-9d29-63a5bc378bf9.png",
+      "output": "assets/reta-costas.png",
+      "output_sha256": "41b87330e61c48816818961a90be5d03ed69a2bfc95ebf802338eea257ea649f",
+      "prompt": "prompts/test-reta-costas.txt",
+      "cleanup_prompt": "prompts/repair-reta-costas.txt"
+    },
+    {
+      "id": "straddle-montanha",
+      "source_local_path": "/Users/peas/Downloads/Photos-1-001 (7)/PXL_20260711_135536963.jpg",
+      "source_sha256": "bafae781238bea142a15acbcd57151d55cfd16b5ecbf6672ff8a6474008649e6",
+      "style_reference": "../straddle-source.png",
+      "initial_generation_local_path": "/Users/peas/.codex/generated_images/01a1c53f-e80f-77b3-9f93-db7f76f6d427/exec-3e21eade-5d90-4276-a7cb-275abeb71688.png",
+      "final_generation_local_path": "/Users/peas/.codex/generated_images/01a1c53f-e80f-77b3-9f93-db7f76f6d427/exec-7f8bd256-25d2-40ed-8f07-a2bcda66e443.png",
+      "output": "assets/straddle-montanha.png",
+      "output_sha256": "863c834a82ffe3f4577a85f10c7006a422e02bb9a38b7d41281189e66eb7474b",
+      "prompt": "prompts/test-straddle-montanha.txt",
+      "cleanup_prompt": "prompts/repair-straddle-montanha.txt"
+    }
+  ]
+}

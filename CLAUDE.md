@@ -256,6 +256,8 @@ Paulo approved a small hierarchy/decoration pass alongside the Instagram proposa
 
 ## Artistic festival studies — 10 November 2026
 
+**Reusable photo-to-engraving kit (11 November 2026):** `design/handstandfest-arte/2026-11-11-prompts/README.md` holds two reusable prompts (anatomical contour hatching + transparent extraction; separate brush composition), exact tested prompts, two photo-derived candidate PNGs, source hashes and a native SVG compositor with oval/sweep/open-arc variants. Decoration may vary within the v07 bristle language; the HF seal itself stays fixed. Generative illustration is not the deterministic JS/FFmpeg filter and is not anatomy-exact; inspect fingers, proportions, alpha and residual coloured edges. Prefer selected stills or an exact freeze frame, not per-frame generation. Paulo will merge official home/home2 with another agent: this session does not change live pages; candidates are not approved replacements for existing art. Shared guidance is in the Instagram and Remotion playbooks.
+
 Shirt proposals 06–08 and three static art cards + two freeze/paint Reels now explore the engraving references supplied by Paulo (himself and Gabriel). Sources, exact built-in ImageGen prompts and regeneration: `design/handstandfest-arte/README.md`. Shared `ig2/art-pieces.tsx` keeps figure, v07 brush, orbit and text separate. Ochre is experimental; keep global green/yellow. Gallery now has 14 pieces / 27 previews. Print SVGs for these shirts contain raster engravings: do not call them entirely vector or press-ready. Render script supports `--still --frame` and uses explicit `bundle --out-dir`.
 
 ## Alternative festival homepage — 10 November 2026

@@ -1,5 +1,11 @@
 # Balance Atlas memory
 
+## 2026-11-11 — Reusable engraving prompts and paint family
+
+- Two real-photo tests (rear straight handstand, mountain straddle) generated via built-in ImageGen with anatomical contour hatching and alpha. Exact prompts/provenance/limitations: `design/handstandfest-arte/2026-11-11-prompts/README.md`. Generative redraw approximates anatomy; not an exact filter. User review pending.
+- Separate figure from paint. Native SVG oval/sweep/open-arc variants inherit v07 bristles; HF seal stays fixed. Compositor + 1080×1440 previews saved. Minor edge colours remain; review before large/print use. Original photos stay outside Git.
+- Updated global Instagram/Remotion playbooks. Paulo will merge official home + home2 in another agent; no live-page or source-composition changes here. Two other supplied side-profile photos were not processed.
+
 ## 2026-11-11 — Restore the static ochre hero
 
 - Paulo prefers the original authored engraving with anatomy-following hatching for `/festival/home2/ocre/`. Restored the stag illustration in the hero; kept the straddle below, ochre palette, brush graphics and teacher stories. Other theme heroes are unchanged. The separate procedural filter study is not a replacement for these illustrations.

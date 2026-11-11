@@ -1,5 +1,7 @@
 # Instagram 02 — composition proposal
 
+For new static/freeze illustration accents, use the [reusable engraving and brush kit](../../../design/handstandfest-arte/2026-11-11-prompts/README.md). It keeps anatomical hatching, transparent figure and decorative paint separate. Two photo-derived examples are review candidates, not new compositions in this gallery. Keep generated art distinct from the reproducible JS/FFmpeg filter and review source-pose alignment before any freeze transition.
+
 Working route: `/festival/instagram2/`. `/instagram2/` redirects there. The original `/festival/instagram/` and its pieces are unchanged.
 
 ## Direction

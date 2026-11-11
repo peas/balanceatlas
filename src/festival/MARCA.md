@@ -1,5 +1,13 @@
 # Marca do HandstandFest: decisões, dúvidas abertas e brief para design
 
+## Gravura e família de manchas — 11/11/2026
+
+Paulo pediu prompts reutilizáveis para transformar fotos em figuras com hachuras acompanhando músculos/roupas e fundo transparente, usadas em destaques estáticos ou congelamentos. [Kit, testes e passagem para o próximo agente](../../design/handstandfest-arte/2026-11-11-prompts/README.md). Duas fotos foram testadas com ImageGen; resultados ainda dependem de aprovação visual. É interpretação ilustrada, não filtro exato nem correção técnica da postura.
+
+Separar figura, tinta, traço, logo e texto. A **marca HF continua idêntica**; a **mancha decorativa pode variar** entre oval, faixa inclinada e arco aberto, preservando cerdas e falhas do v07. As três primeiras variantes são SVGs derivados dos assets existentes. Evitar repetir sempre o mesmo círculo ou transformar toda a interface em pincelada. Ocre/creme e verde/ocre claro seguem a direção aprovada.
+
+A fusão entre home oficial e home2 será feita por Paulo em outro agente. Esta rodada fornece prompts e assets de estudo; não substitui as ilustrações atuais nem altera as páginas.
+
 Em pt-BR, como o texto do festival: é o documento que o Paulo leva para outras ferramentas de design (Astra) e
 lê com o Gabriel. Atualizar aqui a cada decisão; o `CLAUDE.md` do repo aponta para cá.
 
