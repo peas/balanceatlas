@@ -104,12 +104,8 @@ export type ClipProps = {
 /** Photo treatment (MARCA.md, 10/11/2026), same values as --foto-cor / --foto-pb in festival.css.
  *  cor = softened natural colour, the base; pb = moderate black and white, for backdrops behind text and a few
  *  movement shots (brand colour stays on the type and blocks); cru = untouched. No sepia, duotone or added grain. */
-export const LOOK = {
-  cor: 'saturate(.86) contrast(.96) brightness(1.02)',
-  pb: 'grayscale(1) contrast(1.06) brightness(1.03)',
-  cru: '',
-} as const;
-export type Look = keyof typeof LOOK;
+import { LOOK, type Look } from '../photo-look';
+export { LOOK, type Look } from '../photo-look';
 const lookFilter = (look: Look = 'cor', filter?: string) => [LOOK[look], filter].filter(Boolean).join(' ') || undefined;
 
 /** A shot. The clip covers the canvas; on a 3:4 card it is cropped vertically around `focus[1]`. */

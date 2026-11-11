@@ -1,6 +1,6 @@
 # Body, ink and gesture — 10 November 2026
 
-**New reusable kit, 11 November 2026:** [photo-to-engraving prompts, independent brush variants, examples and handoff](2026-11-11-prompts/README.md). This tests real photographs, unlike the earlier extraction of supplied illustrations below. No live-page change; Paulo plans the official/home2 merge with another agent. Ochre is now approved; earlier yellow/experimental wording below records the initial study.
+**New reusable kit, 11 November 2026:** [photo-to-engraving prompts, independent brush variants, examples and handoff](2026-11-11-prompts/README.md). This tests real photographs, unlike the earlier extraction of supplied illustrations below. Approved art is applied to handstand/about pages and Instagram2; single-person bento and selective photo/paint studies are documented in the kit. Paulo plans the official/home2 merge with another agent. Ochre is now approved; earlier yellow/experimental wording below records the initial study.
 
 Exploratory direction requested by Paulo from four WhatsApp images of shirts and art depicting him and Gabriel. The images combine black engraved figures, warm paper, an ochre/orange imperfect disc, thin orbit/axis marks and a brush ground. Do not infer which figure is which person. These are proposals, not approval of a new global palette.
 

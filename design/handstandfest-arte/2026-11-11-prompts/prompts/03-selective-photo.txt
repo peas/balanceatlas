@@ -1,0 +1,9 @@
+Use case: selective style-transfer.
+Input 1: original photograph, controlling composition, perspective, geometry and environment.
+Input 2: approved engraved person, controlling line quality only.
+Keep the original photographic scenery in its natural colours. Apply warm ivory and black contour-following hatching and stipple ONLY to the selected person, following muscles and clothing folds. Preserve the source silhouette, relative proportions, limb angles, contact points, clothing and face orientation. No doubled limbs, photographic body fringe, artificial pose correction, new objects or text. Keep natural cast shadows. Do not apply a monochrome or sepia filter to the environment.
+
+This is an image-generation brief, not a guarantee of pixel-identical background preservation. For exact compositing, generate a registered foreground/matte and retain the original photograph as a separate layer. Review correspondence before animation; the already-extracted free-standing figure may have different proportions and cannot simply be pasted over the photo.
+
+Optional paint pass, performed in native SVG/code AFTER illustration approval:
+Bottom: photographic scene. Middle: actual v07 decorative brush in ochre #cb8b34 at 55% opacity. Top: registered engraved person protected by a reviewed alpha mask. The scenery must remain visible through the pigment. Paint never tints the person. Keep opacity and shape independently editable; do not regenerate anatomy to change paint. 36% was too transparent for Paulo; 55% is the current test.

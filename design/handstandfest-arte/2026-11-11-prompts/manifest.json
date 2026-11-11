@@ -1,7 +1,7 @@
 {
   "date": "2026-11-11",
   "method": "Built-in ImageGen edit, one initial pass and one cleanup pass each",
-  "approval": "Pending user visual approval",
+  "approval": "Three original applications visually approved by Paulo on 2026-11-11; approved for handstand/about pages and Instagram reuse.",
   "assets": [
     {
       "id": "reta-costas",
@@ -26,6 +26,32 @@
       "output_sha256": "863c834a82ffe3f4577a85f10c7006a422e02bb9a38b7d41281189e66eb7474b",
       "prompt": "prompts/test-straddle-montanha.txt",
       "cleanup_prompt": "prompts/repair-straddle-montanha.txt"
+    }
+  ],
+  "additional_tests": [
+    {
+      "id": "straddle-overhead",
+      "source": "https://media.balanceatlas.com/images/retreats/saopaulo-2024/106.webp",
+      "method": "Built-in ImageGen style transfer with transparent extraction",
+      "output": "assets/straddle-overhead.png",
+      "prompt": "prompts/test-straddle-overhead.txt",
+      "status": "Applied to one low-clutter bento image; user liked the paint application."
+    },
+    {
+      "id": "selective-landscape",
+      "source": "PXL_20260711_135536963.jpg",
+      "method": "Built-in ImageGen selective style transfer; photographic-looking background is not pixel-identical to source",
+      "output": "assets/straddle-landscape-hybrid.png",
+      "prompt": "prompts/test-hybrid.txt",
+      "status": "Additional visual study, not applied to live pages."
+    },
+    {
+      "id": "selective-landscape-paint",
+      "method": "Native SVG three-layer composite with scene-specific colour matte",
+      "output": "previews/hybrid-paint.svg",
+      "script": "compose-hybrid.mjs",
+      "paint_opacity": 0.55,
+      "status": "User requested stronger pigment after 36% test; adjustable and separate from figure."
     }
   ]
 }

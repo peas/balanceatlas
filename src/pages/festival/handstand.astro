@@ -6,6 +6,7 @@
 import FestLayout from '../../layouts/FestLayout.astro';
 import FestNav from '../../components/fest/FestNav.astro';
 import Bento from '../../components/fest/Bento.astro';
+import EngravingArtwork from '../../festival/EngravingArtwork';
 import { R2, community, atlasPhotos, faqHandstand } from '../../festival/data';
 import { eventos, paises } from '../../festival/eventos';
 
@@ -32,18 +33,18 @@ const stripB = [...community.slice(6), ...atlasPhotos.filter((p) => !used.has(p.
 
   <article class="snake">
     <h2>Uma prática que aparece em diversos esportes</h2>
-    <figure class="r"><img src={wrap.intro} alt="Parada de mão com as pernas abertas num jardim, São Paulo, 2024" loading="lazy" /></figure>
+    <figure class="r engraving"><EngravingArtwork figure="straddle" paint="arc" /></figure>
     <p>O handstand é uma prática que aparece em diversos esportes e disciplinas. Você já viu no yoga, no CrossFit, na calistenia. Também aparece na ginástica olímpica e na capoeira. No circo é bastante comum. Em cada lugar desses, ele tem a sua variação.</p>
     <p>Na última década, o handstand tem se popularizado como prática específica. Tem ganhado mais espaços, grupos e praticantes que focam apenas nele: nesse balanço em duas mãos, tanto para ficar em posições estáticas quanto no movimento.</p>
 
     <h2>Por que o handstand?</h2>
-    <figure class="l pb"><img src={wrap.porque} alt="Árvore retorcida numa praia de Paros, Grécia, 2025" loading="lazy" /></figure>
+    <figure class="l engraving engraving-straight"><EngravingArtwork figure="straight" paint="oval" /></figure>
     <p>O sentimento de ficar parado de ponta-cabeça é único, difícil de explicar, em especial porque a jornada é bastante longa. Se você acha que vai conseguir uma parada de mão longa, com uma linha bonita, com facilidade e em pouco tempo, você está bastante enganado.</p>
     <p>É óbvio que há exceções. Mas todo mundo acaba encarando essa prática pela paixão de entender que a jornada é longa, mais difícil do que parece, e exige paciência, dedicação e disciplina.</p>
     <p>Paciência, dedicação e disciplina são aspectos importantes da nossa vida que, no mundo acelerado, no mundo digital, vão ser cada vez mais difíceis. É aí que o handstand entra, até mesmo como uma forma contemplativa e de meditação. Não é à toa que diversos retiros e workshops são feitos fora das grandes cidades, no meio da natureza.</p>
   </article>
 
-  <section class="community strip">
+  <section class="community strip" id="fotos-da-pratica">
     <Bento items={stripA} />
   </section>
 
@@ -107,3 +108,12 @@ const stripB = [...community.slice(6), ...atlasPhotos.filter((p) => !used.has(p.
     </div>
   </section>
 </FestLayout>
+
+<style>
+  .snake figure.engraving { background: transparent; border-radius: 0; overflow: visible; }
+  .snake figure.engraving-straight { width: min(38%, 300px); }
+  @media (max-width: 640px) {
+    .snake figure.engraving { float: none; width: min(100%, 360px); margin: 0 auto 24px; }
+    .snake figure.engraving-straight { width: min(80%, 280px); }
+  }
+</style>

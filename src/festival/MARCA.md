@@ -2,11 +2,13 @@
 
 ## Gravura e família de manchas — 11/11/2026
 
-Paulo pediu prompts reutilizáveis para transformar fotos em figuras com hachuras acompanhando músculos/roupas e fundo transparente, usadas em destaques estáticos ou congelamentos. [Kit, testes e passagem para o próximo agente](../../design/handstandfest-arte/2026-11-11-prompts/README.md). Duas fotos foram testadas com ImageGen; resultados ainda dependem de aprovação visual. É interpretação ilustrada, não filtro exato nem correção técnica da postura.
+Paulo pediu prompts reutilizáveis para transformar fotos em figuras com hachuras acompanhando músculos/roupas e fundo transparente, usadas em destaques estáticos ou congelamentos. [Kit, testes e passagem para o próximo agente](../../design/handstandfest-arte/2026-11-11-prompts/README.md). Duas fotos foram testadas com ImageGen; as três aplicações foram aprovadas visualmente em 11/11. É interpretação ilustrada, não filtro exato nem correção técnica da postura.
 
 Separar figura, tinta, traço, logo e texto. A **marca HF continua idêntica**; a **mancha decorativa pode variar** entre oval, faixa inclinada e arco aberto, preservando cerdas e falhas do v07. As três primeiras variantes são SVGs derivados dos assets existentes. Evitar repetir sempre o mesmo círculo ou transformar toda a interface em pincelada. Ocre/creme e verde/ocre claro seguem a direção aprovada.
 
-A fusão entre home oficial e home2 será feita por Paulo em outro agente. Esta rodada fornece prompts e assets de estudo; não substitui as ilustrações atuais nem altera as páginas.
+A fusão entre home oficial e home2 será feita por Paulo em outro agente. As aplicações aprovadas entram em Sobre handstand, Sobre o evento e no carrossel `gravuras-aprovadas` do Instagram2, sem fazer essa fusão. Figura e mancha continuam independentes.
+
+Para o bento, Paulo quer hachuras e pontilhado acompanhando o corpo, não só grayscale. Priorizar uma pessoa e pouco cenário; fotos coletivas continuam fotográficas. Outra possibilidade testada: cenário fotográfico colorido + pessoa hachurada; uma mancha ocre opcional no meio, a 55% de opacidade (36% pareceu fraco), deixa a intervenção evidente. Esses testes adicionais não substituem as composições com mancha em fundo liso. O híbrido gerado não preserva cada pixel da foto original; ver limites e compositor no kit.
 
 Em pt-BR, como o texto do festival: é o documento que o Paulo leva para outras ferramentas de design (Astra) e
 lê com o Gabriel. Atualizar aqui a cada decisão; o `CLAUDE.md` do repo aponta para cá.

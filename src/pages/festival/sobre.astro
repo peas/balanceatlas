@@ -4,6 +4,7 @@
 import FestLayout from '../../layouts/FestLayout.astro';
 import FestNav from '../../components/fest/FestNav.astro';
 import SobreTabs from '../../components/fest/SobreTabs.astro';
+import EngravingArtwork from '../../festival/EngravingArtwork';
 import { TICKETS, TICKETS_ALVO, QUANDO, faqFest } from '../../festival/data';
 ---
 
@@ -43,6 +44,15 @@ import { TICKETS, TICKETS_ALVO, QUANDO, faqFest } from '../../festival/data';
     </div>
   </section>
 
+  <section class="practice-art wrap" aria-labelledby="practice-title">
+    <div class="practice-art-image"><EngravingArtwork figure="straddle" paint="sweep" background="green" /></div>
+    <div class="practice-art-copy">
+      <p class="kicker">Handstand = parada de mão</p>
+      <h2 id="practice-title">Sobre handstand</h2>
+      <a class="cta cta-ink" href="/festival/handstand/">Conheça a prática <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+
   <!-- FAQ -->
   <section class="faq wrap" id="perguntas">
     <div class="section-head">
@@ -57,3 +67,10 @@ import { TICKETS, TICKETS_ALVO, QUANDO, faqFest } from '../../festival/data';
     <a class="cta cta-ink" href={TICKETS} target={TICKETS_ALVO} rel="noopener">Garanta sua vaga <span aria-hidden="true">→</span></a>
   </section>
 </FestLayout>
+
+<style>
+  .practice-art { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1fr); gap: clamp(28px, 6vw, 80px); align-items: center; padding-block: clamp(36px, 6vw, 72px); }
+  .practice-art-image { max-width: 420px; width: 100%; }
+  .practice-art-copy h2 { font: 900 clamp(32px, 5vw, 64px)/1 var(--display); font-stretch: 125%; text-transform: uppercase; margin: 18px 0 28px; }
+  @media (max-width: 640px) { .practice-art { grid-template-columns: 1fr; } .practice-art-image { max-width: 340px; margin-inline: auto; } .practice-art-copy { text-align: center; } }
+</style>

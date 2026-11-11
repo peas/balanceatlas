@@ -1,6 +1,6 @@
 # Instagram 02 — composition proposal
 
-For new static/freeze illustration accents, use the [reusable engraving and brush kit](../../../design/handstandfest-arte/2026-11-11-prompts/README.md). It keeps anatomical hatching, transparent figure and decorative paint separate. Two photo-derived examples are review candidates, not new compositions in this gallery. Keep generated art distinct from the reproducible JS/FFmpeg filter and review source-pose alignment before any freeze transition.
+For new static/freeze illustration accents, use the [reusable engraving and brush kit](../../../design/handstandfest-arte/2026-11-11-prompts/README.md). It keeps anatomical hatching, transparent figure and decorative paint separate. The three approved applications form the `gravuras-aprovadas` static carousel, using the shared `EngravingArtwork` component with independent optional paint. Keep generated art distinct from the reproducible JS/FFmpeg filter and review source-pose alignment before any freeze transition.
 
 Working route: `/festival/instagram2/`. `/instagram2/` redirects there. The original `/festival/instagram/` and its pieces are unchanged.
 
@@ -122,7 +122,7 @@ python3 scripts/festival_render.py fotos-ocre-1 fotos-ocre-2 fotos-ocre-3 --stil
 python3 scripts/festival_render.py fotos-ocre-motion arte-freeze-ocre --palette ocre
 ```
 
-Gallery: 16 pieces / 31 previews. PNGs are 1080×1440; MP4s 1080×1920, 30 fps, 9 and 10 seconds, no audio. New files stay in outputs/local, not public Git media. Reviewed actual exports and palette switching, including a Reel closing card. Build passes; the existing generic transition TypeScript diagnostic is unchanged.
+Gallery after the approved-art integration: 17 pieces / 34 previews. PNGs are 1080×1440; MP4s 1080×1920, 30 fps, 9 and 10 seconds, no audio. New files stay in outputs/local, not public Git media. Reviewed actual exports and palette switching, including a Reel closing card. Build passes; the existing generic transition TypeScript diagnostic is unchanged.
 
 
 ## Approved ochre, larger previews and music — 11 November 2026

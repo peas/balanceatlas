@@ -6,13 +6,17 @@ import {fileURLToPath} from 'node:url';
 import sharp from 'sharp';
 const here=path.dirname(fileURLToPath(import.meta.url));
 const help=`Usage: node compose.mjs [--figure FILE] [--shape oval|sweep|arc] [--background cream|green] [--output FILE.svg]
+       node compose.mjs --publish
 Without options, export the three study cards and three independent brush SVGs beside this script.
+--publish also writes separate approved WebP figures and ochre/light-ochre SVG brushes to public/festival/ig/arte/engraving-v1 (run from the repository copy).
 Outputs: SVG composition + PNG + WebP (1080x1440). Existing outputs are replaced deterministically.
 Requires the repository's Sharp dependency. Does not generate or redraw people; preserves source alpha.
 The seal/logo master is never changed. Decorative masks inherit real v07 bristles.
 `;
 if(process.argv.includes('--help')){console.log(help);process.exit(0)}
-const args={};for(let i=2;i<process.argv.length;i+=2){const k=process.argv[i];if(!['--figure','--shape','--background','--output'].includes(k)||!process.argv[i+1])throw Error(help);args[k.slice(2)]=process.argv[i+1]}
+const publish=process.argv.includes('--publish');
+const argv=process.argv.slice(2).filter(v=>v!=='--publish');
+const args={};for(let i=0;i<argv.length;i+=2){const k=argv[i];if(!['--figure','--shape','--background','--output'].includes(k)||!argv[i+1])throw Error(help);args[k.slice(2)]=argv[i+1]}
 const master=await fs.readFile(path.join(here,'sources/brush-v7.svg'),'utf8');
 const brush=master.match(/<g\b[^>]*id="brush"[^>]*>[\s\S]*?<\/g>/)?.[0];
 if(!brush)throw Error('v07 brush group not found');
@@ -25,6 +29,14 @@ function mark(shape,color){
  throw Error('Unknown shape');
 }
 const svg=(inner)=>`<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1440" viewBox="0 0 1080 1440">${inner}</svg>`;
+if(publish){
+ const target=path.resolve(here,'../../../public/festival/ig/arte/engraving-v1');
+ await fs.mkdir(target,{recursive:true});
+ for(const name of ['reta-costas','straddle-montanha','straddle-overhead'])await sharp(path.join(here,'assets',name+'.png')).webp({lossless:true}).toFile(path.join(target,name+'.webp'));
+ await fs.copyFile(path.join(here,'sources/brush-v7.svg'),path.join(target,'brush-v7.svg'));
+ for(const shape of ['oval','sweep','arc'])for(const [suffix,color] of [['','#cb8b34'],['-light','#dfab5b']])await fs.writeFile(path.join(target,shape+suffix+'.svg'),svg(mark(shape,color)));
+ console.log('Published separate figure and paint assets:',target);
+}
 const outputDir=path.join(here,'previews');await fs.mkdir(outputDir,{recursive:true});await fs.mkdir(path.join(here,'brushes'),{recursive:true});
 async function render({figure,shape,background,output}){
  if(!['cream','green'].includes(background))throw Error('Unknown background');

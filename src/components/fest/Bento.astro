@@ -1,6 +1,7 @@
 ---
 // Bento of photos and videos. `video` cells play on hover (desktop) or when in view (touch); script lives in FestLayout.
 import type { BentoItem } from '../../festival/data';
+import { LOOK } from '../../festival/photo-look';
 
 interface Props { items: BentoItem[] }
 const { items } = Astro.props;
@@ -8,14 +9,29 @@ const { items } = Astro.props;
 
 <div class="bento">
   {items.map((p) => (
-    <figure class:list={[p.span, { 'is-video': p.video, pb: p.pb }]} data-reveal>
+    <figure class:list={[p.span, { 'is-video': p.video, pb: p.pb, painted: p.paint, illustrated: p.engraving }]} style={p.paint ? `--bento-paint: ${p.paint === 'green' ? '#123d33' : '#cb8b34'}` : undefined} data-reveal>
+      {p.paint && <span class="bento-paint" aria-hidden="true"></span>}
       {p.video ? (
-        <video src={p.video} poster={p.src} muted loop playsinline preload="none" aria-label={p.alt}></video>
+        <video src={p.video} poster={p.src} muted loop playsinline preload="none" aria-label={p.alt} style={{filter: LOOK[p.pb ? 'pb' : 'cor']}}></video>
       ) : (
-        <img src={p.src} alt={p.alt} loading="lazy" />
+        <img src={p.engraving || p.src} alt={p.alt} loading="lazy" data-treatment={p.engraving ? 'engraving' : p.pb ? 'pb' : 'color'} style={{filter: p.engraving ? 'none' : LOOK[p.pb ? 'pb' : 'cor']}} />
       )}
       {p.video && <span class="vbadge" aria-hidden="true"><i>▶</i><b>vídeo</b><span class="eq"><s></s><s></s><s></s></span></span>}
       <figcaption>{p.alt}</figcaption>
     </figure>
   ))}
 </div>
+
+<style>
+  /* The original photo stays whole inside its existing crop. Paint lives outside it,
+     never over fingers/faces, and can be removed through the data alone. */
+  .bento figure.painted { background: transparent; border-radius: 0; padding: 14px 10px; isolation: isolate; }
+  .bento-paint { position: absolute; inset: 0; z-index: -1; background: var(--bento-paint); mask: url('/festival/brand/stroke-v7.svg') center / 100% 100% no-repeat; transform: rotate(-1deg); pointer-events: none; }
+  .bento figure.painted:nth-child(even) .bento-paint { transform: rotate(1deg) scaleX(-1); }
+  .bento figure.painted img { border-radius: 3px; }
+  .bento figure.painted:hover img { transform: none; }
+  .bento figure.painted figcaption { left: 18px; bottom: 20px; }
+  .bento figure.illustrated { background: #f3eddf; padding: 10px; }
+  .bento figure.illustrated .bento-paint { inset: 8% 22%; mask-image: url('/festival/ig/arte/engraving-v1/brush-v7.svg'); transform: rotate(-12deg); }
+  .bento figure.illustrated img { object-fit: contain; }
+</style>

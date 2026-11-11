@@ -1,10 +1,17 @@
 # Balance Atlas memory
 
+## 2026-11-11 — Approved art, selected bento and photographic scene
+
+- Applied approved art to handstand/about pages and `gravuras-aprovadas` static carousel. Reusable `EngravingArtwork` keeps figure, optional paint and background independent.
+- Paulo corrected ordinary P&B to anatomical hatching/stipple and prefers single subjects with little clutter. Rejected procedural crosshatch on group photos; one overhead straddle is illustrated with a separate brush. Group photos keep their previous appearance.
+- Added selective illustration over photographic scenery as an additional study, then a native v07 intermediate paint layer. Raised paint opacity from 36% to 55% at Paulo’s request. Generative hybrid is not a pixel-exact original background; scene-specific mask and editable SVG are recorded in the kit. Neither replaces the cream/green applications.
+
+
 ## 2026-11-11 — Reusable engraving prompts and paint family
 
-- Two real-photo tests (rear straight handstand, mountain straddle) generated via built-in ImageGen with anatomical contour hatching and alpha. Exact prompts/provenance/limitations: `design/handstandfest-arte/2026-11-11-prompts/README.md`. Generative redraw approximates anatomy; not an exact filter. User review pending.
+- Two real-photo tests (rear straight handstand, mountain straddle) generated via built-in ImageGen with anatomical contour hatching and alpha. Exact prompts/provenance/limitations: `design/handstandfest-arte/2026-11-11-prompts/README.md`. Generative redraw approximates anatomy; not an exact filter. The three original applications were visually approved on 11 November.
 - Separate figure from paint. Native SVG oval/sweep/open-arc variants inherit v07 bristles; HF seal stays fixed. Compositor + 1080×1440 previews saved. Minor edge colours remain; review before large/print use. Original photos stay outside Git.
-- Updated global Instagram/Remotion playbooks. Paulo will merge official home + home2 in another agent; no live-page or source-composition changes here. Two other supplied side-profile photos were not processed.
+- Updated global Instagram/Remotion playbooks. Paulo will merge official home + home2 in another agent; the later approved integration adds handstand/about illustrations and a three-image Instagram2 carousel. Two other supplied side-profile photos were not processed.
 
 ## 2026-11-11 — Restore the static ochre hero
 
