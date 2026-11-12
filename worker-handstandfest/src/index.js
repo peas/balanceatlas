@@ -1,10 +1,11 @@
-// Reverse proxy: handstandfest.com.br/<page> -> balanceatlas.com/festival/<page>.
+// Reverse proxy: handstandfest.com.br/<page> -> balanceatlas.com/hf/<page>.
 // The site keeps root-relative links under /festival/ (it is still built for balanceatlas.com), so:
-//   pages   /sobre/            -> origin /festival/sobre/, with /festival/ stripped from the links in the HTML
+//   pages   /sobre/            -> origin /hf/sobre/, with /festival/ stripped from the links in the HTML
 //   assets  /festival/x.webp, /_astro/x.js -> origin, same path
 //   old page URLs /festival/sobre/ -> 301 to /sobre/
 const ORIGIN = 'https://balanceatlas.com';
-const PREFIX = '/festival';
+const PREFIX = '/festival'; // how the site writes its own links and assets
+const PAGES = '/hf'; // where the built pages live on the origin (scripts/festival_hide.mjs); /festival/ is a 404 there
 const APEX = 'handstandfest.com.br';
 
 const isAsset = (path) => path.startsWith('/_astro/') || /\.[a-z0-9]+$/i.test(path);
@@ -28,15 +29,18 @@ export default {
     const asset = isAsset(path);
     if (!asset && underPrefix(path)) return Response.redirect(`https://${APEX}${strip(path)}${url.search}`, 301);
 
-    const target = ORIGIN + (asset ? path : PREFIX + path) + url.search;
+    const target = ORIGIN + (asset ? path : PAGES + path) + url.search;
     const headers = new Headers(request.headers);
     headers.delete('host');
-    const res = await fetch(target, { method: request.method, headers, redirect: 'manual' });
+    let res = await fetch(target, { method: request.method, headers, redirect: 'manual' });
+    // a build from before the pages moved to /hf/ (or a rollback) still has them under /festival/
+    if (!asset && res.status === 404) res = await fetch(ORIGIN + PREFIX + path + url.search, { method: request.method, headers, redirect: 'manual' });
 
     if (res.status >= 300 && res.status < 400 && res.headers.has('location')) {
       const to = new URL(res.headers.get('location'), target);
       const out = new Headers(res.headers);
-      out.set('location', to.origin === ORIGIN ? localHref(to.pathname + to.search) : to.href);
+      const back = to.pathname.startsWith(PAGES + '/') ? to.pathname.slice(PAGES.length) : to.pathname;
+      out.set('location', to.origin === ORIGIN ? localHref(back + to.search) : to.href);
       return new Response(null, { status: res.status, headers: out });
     }
     if (!(res.headers.get('content-type') || '').includes('text/html')) return res;

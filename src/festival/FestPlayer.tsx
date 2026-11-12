@@ -1,5 +1,5 @@
-import { Player } from '@remotion/player';
-import { useMemo } from 'react';
+import { Player, type PlayerRef } from '@remotion/player';
+import { useEffect, useMemo, useRef } from 'react';
 import {
   FPS,
   H,
@@ -31,15 +31,25 @@ export default function FestPlayer({ comp, props }: { comp: keyof typeof COMPS; 
     () => typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches,
     [],
   );
+  // Only the players on screen run: six of them decoding video at once made old computers stutter and flicker.
+  const box = useRef<HTMLDivElement>(null);
+  const player = useRef<PlayerRef>(null);
+  useEffect(() => {
+    if (reduced || !box.current) return;
+    const io = new IntersectionObserver(([e]) => (e.isIntersecting ? player.current?.play() : player.current?.pause()), { threshold: 0.15 });
+    io.observe(box.current);
+    return () => io.disconnect();
+  }, [reduced]);
   return (
+    <div ref={box} style={{ width: '100%', height: '100%' }}>
     <Player
+      ref={player}
       component={component as React.ComponentType<Record<string, unknown>>}
       inputProps={inputProps}
       durationInFrames={frames}
       fps={FPS}
       compositionWidth={w}
       compositionHeight={h}
-      autoPlay={!reduced}
       loop
       initiallyMuted
       controls={false}
@@ -48,5 +58,6 @@ export default function FestPlayer({ comp, props }: { comp: keyof typeof COMPS; 
       acknowledgeRemotionLicense
       style={{ width: '100%', height: '100%' }}
     />
+    </div>
   );
 }

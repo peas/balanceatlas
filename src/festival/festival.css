@@ -475,7 +475,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 
 .about { display: grid; grid-template-columns: minmax(180px, .42fr) 1fr; gap: clamp(28px, 6vw, 88px); align-items: center; }
 .about-art { max-width: 330px; width: 100%; justify-self: center; }
-.about .display { max-width: 15ch; }
+.about .display { max-width: 20ch; }
+.about-cols { grid-template-columns: 1fr; max-width: 56ch; }
 
 .signup-inner { position: relative; }
 .signup-art { position: absolute; right: 2%; top: -84px; width: 250px; --art-paint: var(--accent-light); --art-ink: var(--paper); pointer-events: none; }

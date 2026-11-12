@@ -311,3 +311,16 @@ were discussed on 11/11/2026; nothing decided.
 ## Continuous engraving / prospective Handstand Life — 11 November 2026
 
 `/festival/gravura-lab/` is Paulo's adjustable two-video study (noindex, not in navigation). Canonical implementation/recipe: `src/festival/engraving/README.md`; portable CPU RGBA engine, faster WebGL preview, CPU worker fallback, bounded local JSON presets, and tested Remotion `OffthreadVideo.onVideoFrame` adapter. Reuses `mural-reta`, `p-desce`, optional `j-press`; no raw footage added. Presets are drafts for Paulo to choose, not new brand defaults. Whole-video procedural hatching is an additional option for future narrated exercise demonstrations (“Handstand Life”, provisional name); keep voiceover/captions separate. It is not generated anatomical art or foreground segmentation. Shared visual guidance is in IMAGERY.md and the complementary global Instagram/Remotion playbooks.
+
+## Festival hidden on balanceatlas.com — 12 November 2026
+
+Paulo asked for `balanceatlas.com/festival/` to be a 404: the festival answers only on handstandfest.com.br.
+`npm run build` = `astro build && node scripts/festival_hide.mjs`, which moves every built festival HTML page from
+`dist/festival/` to `dist/hf/` (assets stay in `dist/festival/`). The Worker reads pages from `/hf/` (falls back to
+`/festival/` on 404). Source, links and `astro dev` still use `/festival/`; do not link to balanceatlas.com/festival
+anywhere. The repo is public, so `/hf/` is unlisted, not secret. `/instagram2` on Balance Atlas redirects to the
+festival domain. Home copy changed the same day (Gabriel's notes): intro heading and paragraph rewritten, the
+"Quatro blocos por dia" paragraph and "Perto do metrô" removed. `FestPlayer` now plays only while on screen
+(six players at once made old computers flicker). Open: Friday's "Roda de abertura" sits at 17h30–18h30, after
+the last class; Paulo flagged it as wrong, new time not decided. The adjustable engraving video filter lives at
+`/festival/gravura-lab/` (another agent, commit 18cf134).
