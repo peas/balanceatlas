@@ -389,3 +389,10 @@ Paulo e Gabriel preferiram as cores e o estilo da `/festival/home2/ocre/` e pedi
 ### "handstandlife" — ideia, 11/11/2026
 
 Paulo e Gabriel estão gostando da expressão "handstandlife", como hashtag e talvez como domínio (no lugar da ideia antiga de Handstand Lab). Em 11/11/2026 o whois não achou registro de handstandlife.com, .com.br nem .org, e a consulta ao perfil @handstandlife no Instagram voltou "não encontrado". Nada comprado nem decidido. O Balance Atlas já tem uma página `/handstand-life`.
+
+
+## Menos decoração sobre a prática — decisão de 12/11/2026
+
+Paulo rejeitou os blocos, barras e Ts soltos sobre fotos/vídeos (exemplo: quadrado ocre sobre o card de Dany). Removidos das composições compartilhadas do site, inclusive hero e professor principal, e removidas as manchas atrás dos professores/escalação. Priorizar pessoa, movimento e informação. Isso não revoga as gravuras com mancha em camada separada aprovadas em IMAGERY.md nem os destaques de texto pincelados. Não reintroduzir geometria ornamental sobre o corpo.
+
+Botões de inscrição arredondados e destacados, inclusive navegação fixa e subpáginas. Informação do lote no hero é texto, sem fundo/borda de botão nem link concorrente. Título principal sem a linha vertical; edição “1º” ao lado de HAND. Aplicar a mesma hierarquia nas demais páginas: ação reconhecível; informação não deve imitar botão.

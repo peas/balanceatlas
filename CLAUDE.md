@@ -124,9 +124,7 @@ Always verify downloaded images are real (>5KB, not HTML redirects).
   Sat 16h jam, Sun jam de encerramento 15h45–17h. Day threads: Sex Base, Sáb Construção, Dom Integração.
   FAQ `#perguntas` holds decided facts plus two handstand answers Paulo asked for (como começar; "vou sair fazendo
   parada de mão?" = no, tools + direction + wall/assisted gains); his longer FAQ text is still to come.
-  **Overlay rule (Paulo, 04/11/2026):** whenever bars, Ts and blocks are laid over photos/videos, check they do not
-  cover text or the body of the person in the handstand. Poster names stay in the top-left ~400px because the
-  feet sit top-centre (`fit()` in compositions.tsx); the T shape was narrowed for the same reason.
+  **Overlay rule (updated by Paulo, 12/11/2026):** no decorative bars, Ts or blocks over site photos/videos; no paint behind teacher/lineup cards. Keep meaningful text highlights and approved engraved-person/paint layers (IMAGERY.md). Shared site players were cleaned. Purchase CTAs are rounded and prominent across subpages; hero lot information is plain text, not a competing button. Hero has no vertical line and “1º” sits beside HAND. See MARCA.md for the decision.
   Palette research (04/11/2026, Drive `pesquisas/paleta-festival-esporte.md`): B ranked first (energy, contrast,
   distance from Rosario), then D and C; A and F fail accent-on-stage contrast. Lime never sits on paper.
   **Brand (Paulo, 10/11/2026): one brand only, HandstandFest.** No parent brand ("Handstand Lab" and "Casa do

@@ -35,3 +35,8 @@ The upcoming merge of the official home and `/festival/home2/ocre/` remains with
 Paulo requested an additional treatment for whole exercise demonstrations with future voiceover, possibly under “Handstand Life” (name undecided). Review page: `/festival/gravura-lab/`; engine, controls, media provenance, Remotion adapter and export instructions: [engraving/README.md](engraving/README.md). Two real clips loop with independent contrast/gamma, hatching strength/spacing/angle, contour, ink/paper and photographic-colour controls. Graphite, green/colour and ochre are starting points for selecting one or two eventual standards, **not approved presets**.
 
 This continuous filter is procedural and geometry-preserving; it treats the background too and does not follow individual muscles like the generated static art. It is appropriate to test for educational footage, while A/B remain the approved static/freeze language. Prioritize joint/hand visibility and temporal readability over ornament. Keep voiceover and captions separate, retain a natural-colour comparison, and document the chosen processing resolution with future presets. No narration or new final visual standard has been approved in this lab.
+
+
+## Site simplification — 12 November 2026
+
+Paulo removed decorative blocks, Ts and bars over site photos/videos, and paint behind teacher cards. Shared site compositions follow this rule (hero, teacher, lineup). Retain meaningful text highlights and approved engraved-person/paint compositions A/B; this is not a rejection of the engraving language. Avoid reintroducing floating geometry as filler.

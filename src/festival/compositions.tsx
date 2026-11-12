@@ -61,19 +61,6 @@ const useExit = (dur: number, len = 10) => {
   return interpolate(frame, [dur - len - T, dur - T], [1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
 };
 
-// Hard geometry: a vertical bar growing from the bottom and a horizontal bar sliding in.
-const Bars = ({ dur, side }: { dur: number; side: 'left' | 'right' }) => {
-  const grow = useEnter(2, 16);
-  const slide = useEnter(9, 16);
-  const out = useExit(dur);
-  return (
-    <>
-      <div style={{ position: 'absolute', bottom: 0, [side]: 34, width: 22, height: 520 * grow * out, background: ACCENT }} />
-      <div style={{ position: 'absolute', top: 104, [side]: 0, height: 18, width: 300 * slide * out, background: CHALK }} />
-    </>
-  );
-};
-
 const Stamp = ({ text, dur }: { text: string; dur: number }) => {
   const e = useEnter(10, 10);
   const out = useExit(dur);
@@ -163,7 +150,6 @@ export const HERO_FRAMES = HERO.reduce((n, s) => n + s.frames, 0) - T * (HERO.le
 const SceneView = ({ s }: { s: Scene }) => (
   <AbsoluteFill style={{ background: INK }}>
     <Html5Video src={s.src} muted playbackRate={s.rate ?? 1} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
-    <Bars dur={s.frames} side={s.tri} />
     <Stamp text={s.stamp} dur={s.frames} />
   </AbsoluteFill>
 );
@@ -216,13 +202,12 @@ export const Teacher = () => {
       <div style={{ position: 'absolute', left: 32, bottom: 40, opacity: fadeOut }}>
         <Letters text="Agustin" delay={18} />
       </div>
-      <Bars dur={TEACHER_FRAMES} side="right" />
     </AbsoluteFill>
   );
 };
 
 // Story-format poster for each invited teacher (after the Rosario festival stories):
-// photo with slow zoom and grade, name rising letter by letter, handle chip, a spinning shape, grain.
+// photo with slow zoom and grade, name rising letter by letter and handle chip; no decorative geometry over bodies.
 export const POSTER_W = 540;
 export const POSTER_H = 960;
 export const POSTER_FRAMES = 180;
@@ -236,26 +221,11 @@ export type PosterProps = {
   focus?: string; // object-position of the photo
 };
 
-const Shape = ({ shape }: { shape: PosterProps['shape'] }) => {
-  const a = useEnter(8, 16);
-  const b = useEnter(16, 16);
-  if (shape === 'bar')
-    return <div style={{ position: 'absolute', right: 36, bottom: 0, width: 26, height: 640 * a, background: ACCENT }} />;
-  if (shape === 'tee')
-    return (
-      <>
-        <div style={{ position: 'absolute', right: 0, top: 300, height: 24, width: 200 * a, background: ACCENT }} />
-        <div style={{ position: 'absolute', right: 118, top: 300, width: 24, height: 300 * b, background: ACCENT }} />
-      </>
-    );
-  return <div style={{ position: 'absolute', right: 0, top: 290, width: 180 * a, height: 180, background: ACCENT }} />;
-};
-
 // Wide type: shrink long names so they stay in the top-left ~400px of the 540px card.
 // Handstand photos put the feet top-centre, so the name must not reach the centre (checked 04/11/2026).
 const fit = (...words: string[]) => Math.min(60, Math.floor(400 / (Math.max(...words.map((w) => w.length)) * 0.82)));
 
-export const Poster = ({ img, first, last, handle, shape, focus = 'center' }: PosterProps) => {
+export const Poster = ({ img, first, last, handle, focus = 'center' }: PosterProps) => {
   const frame = useCurrentFrame();
   const reveal = interpolate(frame, [0, 16], [100, 0], { extrapolateRight: 'clamp' });
   const zoom = interpolate(frame, [0, POSTER_FRAMES], [1.12, 1]);
@@ -279,7 +249,6 @@ export const Poster = ({ img, first, last, handle, shape, focus = 'center' }: Po
         )}
         <AbsoluteFill style={{ background: 'linear-gradient(180deg, rgba(0,0,0,.55) 0%, rgba(0,0,0,0) 38%, rgba(0,0,0,0) 70%, rgba(0,0,0,.5) 100%)' }} />
       </AbsoluteFill>
-      {img && <Shape shape={shape} />}
       <div style={{ position: 'absolute', left: 28, top: 70, opacity: out }}>
         <div style={{ position: 'relative', width: 'fit-content', padding: '4px 9px', marginLeft: -9 }}>
           <BrushStroke color={ACCENT} style={{ position: 'absolute', inset: '-8% -3%', width: '106%', height: '116%', clipPath: brushClip }} />
