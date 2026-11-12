@@ -248,8 +248,7 @@ Always verify downloaded images are real (>5KB, not HTML redirects).
   instants and names what he sees; it autosaves to `acervo/vocabulario.yaml` (`termos`, `marcacoes`). YAML is read
   and written through the system ruby (no PyYAML here). Once he has filled it in, replace the provisional `posicao`
   names in the catalogue with his terms.
-- **To do (Paulo, 05/11/2026)**: bring the Balance Atlas retreat photos and videos into the same catalogue, with
-  image cards on the vocabulary page.
+- **Photo index (12/11/2026)**: `acervo/catalogo.yaml` now includes 190 image records (189 visually reviewed, one missing URL), with approximate `handstand`, person counts, shapes, full-body status and suggested uses. Consult `acervo/README.md` and `scripts/festival_image_index.py --help` before selecting exercise/Instagram images. Keep annotations in this existing YAML; no batch pose detection needed. Retreat videos and image cards on the vocabulary page remain to do.
 
 ## FAQ Page
 - The site has a `/faq` page explaining the community, how to contribute, etc.

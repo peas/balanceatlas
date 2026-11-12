@@ -88,6 +88,54 @@ tipo de cartão de imagem.
 
 ## A fazer (pedidos do Paulo, 05/11/2026)
 
-- **Retiros do Balance Atlas**: trazer para este catálogo as fotos e vídeos dos retiros de que o Paulo participou
-  (hoje no R2, `media.balanceatlas.com`, com `manifest.json` por evento) e dar a eles cartões na página de
-  vocabulário.
+- **Retiros do Balance Atlas**: fotos catalogadas em 12/11/2026 (abaixo). Ainda faltam os vídeos dos retiros e cartões de imagem na página de vocabulário.
+
+
+## Índice visual de fotos — 12/11/2026
+
+A fonte única continua sendo `catalogo.yaml`: **190 registros de imagem**, incluindo as sete fotos do local
+já cadastradas e 183 caminhos únicos referenciados pelos retiros em `src/content/retreats/*.md`.
+Foram inspecionadas visualmente 189 imagens. `turkey-antalya.webp` retornou HTTP 404; seus campos desconhecidos
+ficam `null`, não `false`. Este inventário não inclui automaticamente todo PNG/SVG derivado do site.
+
+Classificação aproximada para descobrir imagens, conforme pedido do Paulo; não é análise biomecânica.
+Não rodamos detecção de esqueletos em lote nem identificamos pessoas pelo rosto.
+
+- `midia: imagem`, `camera: foto`: distinguem fotos dos vídeos existentes.
+- `resumo`: descrição curta do que está visível.
+- `handstand`: `true` quando há pelo menos uma pessoa em parada de mãos; `false` quando não há.
+  Apoio sobre a cabeça (`apoio-cabeca`) fica separado, com `handstand: false` se ninguém estiver em parada de mãos.
+- `pessoas`: total aproximado de pessoas visíveis, incluindo observadores e corpos parciais.
+- `pessoas_em_handstand`: quantas estão em parada de mãos.
+- `forma`: lista de formas visíveis, podendo conter várias numa foto: `reta`, `straddle`, `tuck`, `stag`,
+  `uma-mao`, `diamond`, `mexicano`; outros apoios incluem `apoio-cabeca`, `sapinho`, `ponte`, `v-sit`, `prancha`.
+  Lista vazia quando não identificável ou não aplicável. Foto isolada não comprova entrada/press ou movimento.
+- `grupo_em_handstand`: pelo menos duas pessoas em parada de mãos.
+- `todos_em_handstand`: todos os visíveis em parada de mãos; também pode ser verdadeiro para uma pessoa sozinha.
+- `atividade`: aula, demonstração, mobilidade, convivência etc.
+- `corpo`: `inteiro` ou `parcial`, referente ao sujeito principal.
+- `uso_sugerido`: candidatos a post, ilustração de exercício, recorte/gravura ou treino coletivo;
+  é sugestão para triagem, não aprovação automática de qualidade ou uso.
+- `revisao_visual`: data, método, precisão e estado; observações quando há ambiguidade.
+- `url`, `referencias`, `largura`, `altura`, `sha256`: origem e metadados para reencontrar o arquivo.
+
+### Consultar e manter
+
+Requer Python 3, Pillow e Ruby do sistema (o mesmo leitor YAML do vocabulário). A partir da raiz:
+
+```bash
+python3 scripts/festival_image_index.py --validate --summary
+python3 scripts/festival_image_index.py --list --handstand true --people 1 --whole-body
+python3 scripts/festival_image_index.py --list --shape straddle
+python3 scripts/festival_image_index.py --list --group --all-in-handstand
+python3 scripts/festival_image_index.py --json --use recorte-gravura
+```
+
+`--json` exporta uma seleção derivada; editar sempre o YAML. `--prepare` atualiza inventário técnico e folhas
+de contato em `local/image-index/`, sem alterar classificações. Novas referências precisam de revisão visual
+e inclusão no catálogo. Downloads e folhas ficam fora do git. Conferir a imagem maior nos casos ambíguos,
+principalmente mãos/cabeça apoiadas, pessoas pequenas ao fundo e membros cortados.
+
+O detector opcional existente em `~/paulo.com.br-render/scripts/pose.py` pode apoiar um caso específico,
+mas não é pré-requisito para este índice. Consultar primeiro estes rótulos ao escolher imagens para Instagram,
+exercícios ou gravuras; confirmar visualmente a seleção final.

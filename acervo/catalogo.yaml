@@ -1,5 +1,6 @@
 # Catálogo do acervo do 1º HandstandFest (contrato e vocabulário em acervo/README.md).
-# 52 vídeos e 7 fotos do Drive "Videos" (05/11/2026). Tempos em segundos do arquivo original.
+# Vídeos e 7 fotos do Drive "Videos" + 183 referências de imagens de retiros (12/11/2026).
+# Tempos dos vídeos em segundos do arquivo original; rótulos visuais das fotos são aproximados.
 # `par` vem de local/festival/sync.json (áudio): t_outro = t_este + offset; `juntos` = segundos filmados pelos dois.
 
 - id: img-3138
@@ -2318,6 +2319,18 @@
   resumo: palco vazio em plano geral, cortina preta, colchonetes cinza no chão e encostados, tecidos vermelho e branco, parede de vidro à direita, um tripé no centro
   destaque: 4
   problemas: tripé solto no meio do chão
+  midia: "imagem"
+  handstand: false
+  pessoas: 0
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "ambiente"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["contexto-local"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  largura: 4032
+  altura: 2268
 
 - id: pxl_20261104_182518161
   arquivo: fotos/trapezio-voador/PXL_20261104_182518161.jpg
@@ -2329,6 +2342,18 @@
   resumo: palco vazio na vertical, rig de luz e tecidos no alto, colchonetes cinza, chão de madeira brilhando
   destaque: 4
   problemas: nenhum de vulto
+  midia: "imagem"
+  handstand: false
+  pessoas: 0
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "ambiente"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["contexto-local"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  largura: 2268
+  altura: 4032
 
 - id: pxl_20261104_184620743
   arquivo: fotos/trapezio-voador/PXL_20261104_184620743.jpg
@@ -2340,6 +2365,18 @@
   resumo: sala de vidro vazia, forro de madeira, vidro dos três lados com a parede verde e o mural colorido lá fora, chão de madeira escuro
   destaque: 4
   problemas: chão um pouco escuro
+  midia: "imagem"
+  handstand: false
+  pessoas: 0
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "ambiente"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["contexto-local"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  largura: 4032
+  altura: 2268
 
 - id: pxl_20261104_184633596
   arquivo: fotos/trapezio-voador/PXL_20261104_184633596.jpg
@@ -2351,6 +2388,18 @@
   resumo: canto do palco com colchonetes encostados, tecidos, rig de luz, arandelas acesas na parede de madeira e o vidro à direita
   destaque: 4
   problemas: nenhum de vulto
+  midia: "imagem"
+  handstand: false
+  pessoas: 0
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "ambiente"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["contexto-local"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  largura: 4032
+  altura: 2268
 
 - id: pxl_20261104_184638210
   arquivo: fotos/trapezio-voador/PXL_20261104_184638210.jpg
@@ -2362,6 +2411,18 @@
   resumo: palco visto de baixo na vertical, rig de luz e refletores acesos, tecidos vermelho e branco, cortina e colchonetes
   destaque: 4
   problemas: refletores estourados no alto
+  midia: "imagem"
+  handstand: false
+  pessoas: 0
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "ambiente"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["contexto-local"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  largura: 2268
+  altura: 4032
 
 - id: pxl_20261104_192124844
   arquivo: fotos/trapezio-voador/PXL_20261104_192124844.jpg
@@ -2373,6 +2434,18 @@
   resumo: fachada do prédio com o palco redondo, a arquibancada, palmeiras e a parede verde; Gabriel caminha no palco, pequeno
   destaque: 4
   problemas: céu branco; grande-angular inclina a fachada
+  midia: "imagem"
+  handstand: false
+  pessoas: 1
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "ambiente"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["contexto-local"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  largura: 4032
+  altura: 2268
 
 - id: pxl_20261104_192125754
   arquivo: fotos/trapezio-voador/PXL_20261104_192125754.jpg
@@ -2384,3 +2457,4043 @@
   resumo: mesma fachada um segundo depois, Gabriel de pé no palco redondo perto da escada
   destaque: 3
   problemas: quase igual à anterior; céu branco
+  midia: "imagem"
+  handstand: false
+  pessoas: 1
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "ambiente"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["contexto-local"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  largura: 4032
+  altura: 2268
+
+
+# ---------------------------------------------------------------- Photo library: retreat references, visual review 12/11/2026
+# Approximate discovery labels, not technical pose measurements. Unavailable media has null fields.
+
+- id: photo-bali-yoga-barn
+  arquivo: "images/retreats/bali-yoga-barn.webp"
+  url: "https://media.balanceatlas.com/images/retreats/bali-yoga-barn.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "bali-yoga-barn"
+  resumo: "Arrozais em terraços com vegetação tropical."
+  handstand: false
+  pessoas: 0
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "paisagem"
+  corpo: "nao-aplicavel"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["contexto-local"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2025-bali-yuri-marmerstein.md"]
+  largura: 1920
+  altura: 1280
+  sha256: "f1ef5eedf79857e73cd96ea533123504dbf03ca4a811dfdd6f721c1a8ce83434"
+
+- id: photo-berlin-flowmotion
+  arquivo: "images/retreats/berlin-flowmotion.webp"
+  url: "https://media.balanceatlas.com/images/retreats/berlin-flowmotion.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "berlin-flowmotion"
+  resumo: "Grupo deitado de barriga para baixo com braços estendidos à frente e mãos apoiadas; foto P&B."
+  handstand: false
+  pessoas: 6
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "mobilidade-ombros"
+  corpo: "parcial"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-berlin-sainaa.md"]
+  largura: 1024
+  altura: 683
+  sha256: "ecc84b5053d51feced75a84af5944c00e2e5f80bda30d5c918ee1f7e196696a0"
+
+- id: photo-dallas-secondside
+  arquivo: "images/retreats/dallas-secondside.webp"
+  url: "https://media.balanceatlas.com/images/retreats/dallas-secondside.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "dallas-secondside"
+  resumo: "Praticante em uma mão sobre caixa, pernas assimétricas e fundo azul de palco."
+  handstand: true
+  pessoas: 1
+  pessoas_em_handstand: 1
+  forma: ["uma-mao", "stag"]
+  atividade: "demonstracao"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: true
+  uso_sugerido: ["post-shape", "ilustracao-exercicio", "recorte-gravura"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2025-dallas-andrii-bondarenko.md"]
+  largura: 1500
+  altura: 1273
+  sha256: "1235e6481b5f96c4da45fcfbfeca7dd7ec0ff8b3fb40d29b4c312357caec474d"
+
+- id: photo-denver-kyle
+  arquivo: "images/retreats/denver-kyle.webp"
+  url: "https://media.balanceatlas.com/images/retreats/denver-kyle.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "denver-kyle"
+  resumo: "Praticante invertido com pernas juntas; enquadramento corta pés e apoio das mãos."
+  handstand: true
+  pessoas: 1
+  pessoas_em_handstand: 1
+  forma: ["reta"]
+  atividade: "demonstracao"
+  corpo: "parcial"
+  grupo_em_handstand: false
+  todos_em_handstand: true
+  uso_sugerido: []
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-denver-kyle-weiger.md"]
+  largura: 2500
+  altura: 1406
+  sha256: "9b203325ef013cc8a965ad89e55091a2c3172ab04b9886734fc4011b7a8deb2f"
+
+- id: photo-greece-2025-01
+  arquivo: "images/retreats/greece-2025/01.webp"
+  url: "https://media.balanceatlas.com/images/retreats/greece-2025/01.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "greece-2025"
+  resumo: "Árvore junto ao mar e praia de água clara."
+  handstand: false
+  pessoas: 0
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "paisagem"
+  corpo: "nao-aplicavel"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["contexto-local"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2025-greece-nicolas-marie-eve.md"]
+  largura: 810
+  altura: 1080
+  sha256: "29b55c241d10ffaa538f260d3c9913c754b5625436fb9c4656edfdc5d9f76707"
+
+- id: photo-greece-2025-02
+  arquivo: "images/retreats/greece-2025/02.webp"
+  url: "https://media.balanceatlas.com/images/retreats/greece-2025/02.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "greece-2025"
+  resumo: "Estrutura geométrica de concreto em terreno seco."
+  handstand: false
+  pessoas: 0
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "ambiente"
+  corpo: "nao-aplicavel"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["contexto-local"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2025-greece-nicolas-marie-eve.md"]
+  largura: 608
+  altura: 1080
+  sha256: "b9598bedf1fa087d4127a8b69e906cdecd917af34ab16d044a6a5e41321a932d"
+
+- id: photo-greece-2025-03
+  arquivo: "images/retreats/greece-2025/03.webp"
+  url: "https://media.balanceatlas.com/images/retreats/greece-2025/03.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "greece-2025"
+  resumo: "Praticante em abertura de pernas com professor dando apoio; outras pessoas ao fundo."
+  handstand: true
+  pessoas: 4
+  pessoas_em_handstand: 1
+  forma: ["straddle"]
+  atividade: "assistencia"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2025-greece-nicolas-marie-eve.md"]
+  largura: 608
+  altura: 1080
+  sha256: "1c253818d44eddc3cdcb180b032151e29cb38acdc87b56da343234cd657238e5"
+
+- id: photo-greece-2025-04
+  arquivo: "images/retreats/greece-2025/04.webp"
+  url: "https://media.balanceatlas.com/images/retreats/greece-2025/04.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "greece-2025"
+  resumo: "Parada em straddle com assistência na cintura, filmada por celular em tripé."
+  handstand: true
+  pessoas: 2
+  pessoas_em_handstand: 1
+  forma: ["straddle"]
+  atividade: "assistencia"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2025-greece-nicolas-marie-eve.md"]
+  largura: 810
+  altura: 1080
+  sha256: "9aa8076a23b4451bfe272094cfd7f3a9870a8aaa0e1fb9814e0526240a7cdcce"
+
+- id: photo-greece-2025-05
+  arquivo: "images/retreats/greece-2025/05.webp"
+  url: "https://media.balanceatlas.com/images/retreats/greece-2025/05.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "greece-2025"
+  resumo: "Participantes organizam tapetes na sala de treino."
+  handstand: false
+  pessoas: 5
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "bastidores"
+  corpo: "parcial"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: []
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2025-greece-nicolas-marie-eve.md"]
+  largura: 810
+  altura: 1080
+  sha256: "38a6fc562aa32bef689b57c36a163fba7f6957ebbd8db1c433d581535b5db66a"
+
+- id: photo-greece-2025-06
+  arquivo: "images/retreats/greece-2025/06.webp"
+  url: "https://media.balanceatlas.com/images/retreats/greece-2025/06.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "greece-2025"
+  resumo: "Vista noturna do mar e das casas através de uma porta."
+  handstand: false
+  pessoas: 0
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "paisagem"
+  corpo: "nao-aplicavel"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["contexto-local"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2025-greece-nicolas-marie-eve.md"]
+  largura: 608
+  altura: 1080
+  sha256: "873e88c46ec0fca653f3465469b73dcdd1b7daa8e292f8419dc9d6a6626e5300"
+
+- id: photo-greece-2025-07
+  arquivo: "images/retreats/greece-2025/07.webp"
+  url: "https://media.balanceatlas.com/images/retreats/greece-2025/07.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "greece-2025"
+  resumo: "Pessoas ajoelhadas em avanço sobre tapetes na sala."
+  handstand: false
+  pessoas: 3
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "mobilidade"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: []
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2025-greece-nicolas-marie-eve.md"]
+  largura: 608
+  altura: 1080
+  sha256: "04b640a0014f721392f4eeb8fc070400aef370153cf66b336bf25f5eab0b37ef"
+
+- id: photo-greece-2025-08
+  arquivo: "images/retreats/greece-2025/08.webp"
+  url: "https://media.balanceatlas.com/images/retreats/greece-2025/08.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "greece-2025"
+  resumo: "Grupo em avanço ajoelhado sobre tapetes, visto em três-quartos."
+  handstand: false
+  pessoas: 4
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "mobilidade"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["treino-coletivo"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2025-greece-nicolas-marie-eve.md"]
+  largura: 608
+  altura: 1080
+  sha256: "7f8101448f8f27f4fac9bf60ddcedc536c018641bd26addc851fd60b2c6cced7"
+
+- id: photo-greece-2025-09
+  arquivo: "images/retreats/greece-2025/09.webp"
+  url: "https://media.balanceatlas.com/images/retreats/greece-2025/09.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "greece-2025"
+  resumo: "Professor explica para a turma reunida em roda, com participantes sentados e de pé."
+  handstand: false
+  pessoas: 18
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "aula"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["comunidade"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado", "observacao": "Contagem ou apoio parcialmente oculto; confirmar na seleção final."}
+  referencias: ["src/content/retreats/2025-greece-nicolas-marie-eve.md"]
+  largura: 1440
+  altura: 1080
+  sha256: "4f80c1a8e3e708dfcac4695b43c82f1a2ccf7140f1719a35865bcf05b789d9ff"
+
+- id: photo-greece-2025-10
+  arquivo: "images/retreats/greece-2025/10.webp"
+  url: "https://media.balanceatlas.com/images/retreats/greece-2025/10.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "greece-2025"
+  resumo: "Turma observa explicação em sala de madeira, com alunos no chão ao fundo."
+  handstand: false
+  pessoas: 18
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "aula"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["comunidade"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado", "observacao": "Contagem ou apoio parcialmente oculto; confirmar na seleção final."}
+  referencias: ["src/content/retreats/2025-greece-nicolas-marie-eve.md"]
+  largura: 1440
+  altura: 1080
+  sha256: "6067855bf5243e9797fb1e6131f775dcbc82ed5695362876a6808c04a593dde8"
+
+- id: photo-greece-2025-11
+  arquivo: "images/retreats/greece-2025/11.webp"
+  url: "https://media.balanceatlas.com/images/retreats/greece-2025/11.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "greece-2025"
+  resumo: "Uma pessoa sustenta parada reta vista de perfil em sala com janelas."
+  handstand: true
+  pessoas: 1
+  pessoas_em_handstand: 1
+  forma: ["reta"]
+  atividade: "demonstracao"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: true
+  uso_sugerido: ["post-shape", "ilustracao-exercicio", "recorte-gravura"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2025-greece-nicolas-marie-eve.md"]
+  largura: 608
+  altura: 1080
+  sha256: "b88650051618260eb2b699c26a3eafea76450e36f9307038cefafca92be61229"
+
+- id: photo-greece-2025-12
+  arquivo: "images/retreats/greece-2025/12.webp"
+  url: "https://media.balanceatlas.com/images/retreats/greece-2025/12.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "greece-2025"
+  resumo: "Turma inclinada à frente com mãos próximas ao chão em uma linha."
+  handstand: false
+  pessoas: 10
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "aquecimento"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["treino-coletivo"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2025-greece-nicolas-marie-eve.md"]
+  largura: 608
+  altura: 1080
+  sha256: "e003b7b2a1463de6256e9184b32a93f86988e9b61d7a7af3c5a9a3d17a26eb69"
+
+- id: photo-greece-2025-13
+  arquivo: "images/retreats/greece-2025/13.webp"
+  url: "https://media.balanceatlas.com/images/retreats/greece-2025/13.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "greece-2025"
+  resumo: "Duplas praticam paradas retas com assistência na sala."
+  handstand: true
+  pessoas: 10
+  pessoas_em_handstand: 5
+  forma: ["reta"]
+  atividade: "treino-grupo"
+  corpo: "inteiro"
+  grupo_em_handstand: true
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape", "grupo-handstand"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2025-greece-nicolas-marie-eve.md"]
+  largura: 608
+  altura: 1080
+  sha256: "8f56fc0cc2a386fca5388aa984e616b2606ce82e1aecbe22ec5e291484c84cc2"
+
+- id: photo-greece-2025-14
+  arquivo: "images/retreats/greece-2025/14.webp"
+  url: "https://media.balanceatlas.com/images/retreats/greece-2025/14.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "greece-2025"
+  resumo: "Turma pratica invertidas em duplas, com pessoas de pé auxiliando."
+  handstand: true
+  pessoas: 10
+  pessoas_em_handstand: 5
+  forma: ["reta"]
+  atividade: "treino-grupo"
+  corpo: "inteiro"
+  grupo_em_handstand: true
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape", "grupo-handstand"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2025-greece-nicolas-marie-eve.md"]
+  largura: 608
+  altura: 1080
+  sha256: "9fdbe17a97cb0ceffdbb63298967cef49c29bdf56a102d15b6089b50bae98015"
+
+- id: photo-greece-2025-15
+  arquivo: "images/retreats/greece-2025/15.webp"
+  url: "https://media.balanceatlas.com/images/retreats/greece-2025/15.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "greece-2025"
+  resumo: "Várias duplas em handstand com assistência; vista ampla da sala."
+  handstand: true
+  pessoas: 8
+  pessoas_em_handstand: 4
+  forma: ["reta"]
+  atividade: "treino-grupo"
+  corpo: "inteiro"
+  grupo_em_handstand: true
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape", "grupo-handstand"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2025-greece-nicolas-marie-eve.md"]
+  largura: 810
+  altura: 1080
+  sha256: "e709f8784fe6aec673d7f71518c6f192ebccc8c4587b113ac748837a64aa7427"
+
+- id: photo-greece-2025-16
+  arquivo: "images/retreats/greece-2025/16.webp"
+  url: "https://media.balanceatlas.com/images/retreats/greece-2025/16.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "greece-2025"
+  resumo: "Água transparente e areia na praia, sem pessoas visíveis."
+  handstand: false
+  pessoas: 0
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "paisagem"
+  corpo: "nao-aplicavel"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["contexto-local"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2025-greece-nicolas-marie-eve.md"]
+  largura: 810
+  altura: 1080
+  sha256: "0be697ef9e2b7ee41ae0ffd45c2cdca602c1dac84315eb00f42f19bbcce5df80"
+
+- id: photo-greece-2025-17
+  arquivo: "images/retreats/greece-2025/17.webp"
+  url: "https://media.balanceatlas.com/images/retreats/greece-2025/17.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "greece-2025"
+  resumo: "Sol sobre o mar, com pequeno píer em primeiro plano."
+  handstand: false
+  pessoas: 0
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "paisagem"
+  corpo: "nao-aplicavel"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["contexto-local"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2025-greece-nicolas-marie-eve.md"]
+  largura: 810
+  altura: 1080
+  sha256: "092f2660600dcf3966e012947eea70888a7109ddef8c47c9e89beafe0cc2f573"
+
+- id: photo-greece-2025-18
+  arquivo: "images/retreats/greece-2025/18.webp"
+  url: "https://media.balanceatlas.com/images/retreats/greece-2025/18.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "greece-2025"
+  resumo: "Pôr do sol alaranjado visto de um píer."
+  handstand: false
+  pessoas: 0
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "paisagem"
+  corpo: "nao-aplicavel"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["contexto-local"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2025-greece-nicolas-marie-eve.md"]
+  largura: 608
+  altura: 1080
+  sha256: "fc3e9299b0fffcfded609818564d34c8c7b377a172a8cf22c1dae675933e658c"
+
+- id: photo-greece-2025-19
+  arquivo: "images/retreats/greece-2025/19.webp"
+  url: "https://media.balanceatlas.com/images/retreats/greece-2025/19.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "greece-2025"
+  resumo: "Participantes reunidos em torno de uma mesa para refeição."
+  handstand: false
+  pessoas: 19
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "convivio"
+  corpo: "parcial"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["comunidade"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2025-greece-nicolas-marie-eve.md"]
+  largura: 1920
+  altura: 1080
+  sha256: "fee2f25a40ff0c217e70c91aebfaf600771bc72b20f4057c41d84e2b8c977f08"
+
+- id: photo-greece-2025-20
+  arquivo: "images/retreats/greece-2025/20.webp"
+  url: "https://media.balanceatlas.com/images/retreats/greece-2025/20.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "greece-2025"
+  resumo: "Foto da turma posando na sala de treino."
+  handstand: false
+  pessoas: 24
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "retrato-grupo"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["comunidade"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2025-greece-nicolas-marie-eve.md"]
+  largura: 1200
+  altura: 1600
+  sha256: "e198aa5e3e6d156f1d5fd41702691a226bf5823c58645d722cb7c3a5d0d4dbfa"
+
+- id: photo-greece-paros-taos
+  arquivo: "images/retreats/greece-paros-taos.webp"
+  url: "https://media.balanceatlas.com/images/retreats/greece-paros-taos.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "greece-paros-taos"
+  resumo: "Pessoas sentadas conversam em um encontro, com rostos parciais nas bordas."
+  handstand: false
+  pessoas: 6
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "convivio"
+  corpo: "parcial"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["comunidade"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-greece-yuval-ayalon.md"]
+  largura: 680
+  altura: 260
+  sha256: "a04b350ed3366c4ef4a146dcafa04a3cbf76dc025f1665004e580b8e2ced43e4"
+
+- id: photo-hamburg-hf
+  arquivo: "images/retreats/hamburg-hf.webp"
+  url: "https://media.balanceatlas.com/images/retreats/hamburg-hf.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "hamburg-hf"
+  resumo: "Cartaz tipográfico de seminário Handstand Factory em Hamburgo."
+  handstand: false
+  pessoas: 0
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "cartaz"
+  corpo: "nao-aplicavel"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: []
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2025-hamburg-handstand-factory.md"]
+  largura: 1000
+  altura: 1000
+  sha256: "0470f3d0b134372d04f77398fa52a66724884c27046d9e3617961af26143383e"
+
+- id: photo-london-mission
+  arquivo: "images/retreats/london-mission.webp"
+  url: "https://media.balanceatlas.com/images/retreats/london-mission.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "london-mission"
+  resumo: "Pessoa em equilíbrio baixo sobre um pé, com braços abertos, sobre tapete."
+  handstand: false
+  pessoas: 1
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "movimento"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["ilustracao-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-london-yuval-ayalon.md"]
+  largura: 2560
+  altura: 1442
+  sha256: "00aee9d570f1f66f60b6a1dd6deb6d27ce62bb394501d4ade54bafe0dc21fec5"
+
+- id: photo-saopaulo-2024-01
+  arquivo: "images/retreats/saopaulo-2024/01.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/01.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Turma sentada em roda acompanha demonstração de alongamento em dupla."
+  handstand: false
+  pessoas: 14
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "aula"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["comunidade"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 1620
+  altura: 1080
+  sha256: "26e337769bbbe19152f655e724249b3df421dad4f590e19860f13b8155a4879e"
+
+- id: photo-saopaulo-2024-02
+  arquivo: "images/retreats/saopaulo-2024/02.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/02.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Pessoa sentada em abertura lateral com professor auxiliando braços e ombros; outra observa."
+  handstand: false
+  pessoas: 3
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "alongamento"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "e6a7fcc553b57c6709dae9d84b310fd5c07a697688d4d5feb3fbcf40fe2311dc"
+
+- id: photo-saopaulo-2024-03
+  arquivo: "images/retreats/saopaulo-2024/03.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/03.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Abertura lateral sentada com braços elevados e assistência do professor."
+  handstand: false
+  pessoas: 3
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "alongamento"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "cff4c30ac712805675abd72eab694062fcd98a9f6cc750e15020671d7f982d5f"
+
+- id: photo-saopaulo-2024-04
+  arquivo: "images/retreats/saopaulo-2024/04.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/04.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Abertura lateral sentada com ajuda do professor nos braços."
+  handstand: false
+  pessoas: 2
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "alongamento"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "1c5f2b4fe3a203d63802c86d6e8ad373f32b07b8e300002c10c5cc40d3837e0b"
+
+- id: photo-saopaulo-2024-05
+  arquivo: "images/retreats/saopaulo-2024/05.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/05.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Detalhe de alongamento assistido dos braços atrás da cabeça."
+  handstand: false
+  pessoas: 2
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "mobilidade-ombros"
+  corpo: "parcial"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "121073cef19a59c0f17c55265b35f40d75e9a86d43d23bb2ec81137611031b0a"
+
+- id: photo-saopaulo-2024-06
+  arquivo: "images/retreats/saopaulo-2024/06.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/06.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Professor orienta abertura dos ombros de praticante sentada."
+  handstand: false
+  pessoas: 2
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "mobilidade-ombros"
+  corpo: "parcial"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "26d18beb84890428135093beb3239aee0537befc62b70660053eeaf363b006f8"
+
+- id: photo-saopaulo-2024-07
+  arquivo: "images/retreats/saopaulo-2024/07.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/07.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Alongamento assistido de ombros, professor olhando para a câmera."
+  handstand: false
+  pessoas: 2
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "mobilidade-ombros"
+  corpo: "parcial"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "b47b8e2aa23bcae7c5310523d6fe68e136f9a50c3d0256f7881c37777a93c3cc"
+
+- id: photo-saopaulo-2024-08
+  arquivo: "images/retreats/saopaulo-2024/08.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/08.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Variação próxima do mesmo alongamento de ombros em dupla."
+  handstand: false
+  pessoas: 2
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "mobilidade-ombros"
+  corpo: "parcial"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "280fbe7479d7687dbe4a795fe4299354adeddd68833c2f9c108d736d6ba221fc"
+
+- id: photo-saopaulo-2024-09
+  arquivo: "images/retreats/saopaulo-2024/09.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/09.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Praticante em abertura lateral sentada recebe assistência, com observadora ao lado."
+  handstand: false
+  pessoas: 3
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "alongamento"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "13a012e337901c050e2c18d7b578f05429a2d44fdeab79b0cfdca707b524bbbf"
+
+- id: photo-saopaulo-2024-10
+  arquivo: "images/retreats/saopaulo-2024/10.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/10.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Pessoa sentada de pernas cruzadas recebe alongamento de braços com professor atrás."
+  handstand: false
+  pessoas: 3
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "mobilidade-ombros"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "0f47e10d3afda05216afc712332f6e96d87674a1c9b664fa72826a9d7e07b28e"
+
+- id: photo-saopaulo-2024-100
+  arquivo: "images/retreats/saopaulo-2024/100.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/100.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Uma pessoa em parada straddle na grama ao lado da piscina."
+  handstand: true
+  pessoas: 1
+  pessoas_em_handstand: 1
+  forma: ["straddle"]
+  atividade: "demonstracao"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: true
+  uso_sugerido: ["post-shape", "ilustracao-exercicio", "recorte-gravura"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "a096798caacb415c9294a012ed73be28b9c58d07d23ef89c8efa8ec53963a7fd"
+
+- id: photo-saopaulo-2024-101
+  arquivo: "images/retreats/saopaulo-2024/101.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/101.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Turma em roda alongando em extensão do tronco, com mãos no chão."
+  handstand: false
+  pessoas: 12
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "mobilidade"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["treino-coletivo"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 1620
+  altura: 1080
+  sha256: "22880dc7961c6fb76e5818f0b7966062bcfcdaa624aabf592c39674863d1feef"
+
+- id: photo-saopaulo-2024-102
+  arquivo: "images/retreats/saopaulo-2024/102.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/102.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Pessoa em parada junto à borda da piscina, vista de perfil."
+  handstand: true
+  pessoas: 1
+  pessoas_em_handstand: 1
+  forma: ["reta"]
+  atividade: "demonstracao"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: true
+  uso_sugerido: ["post-shape", "ilustracao-exercicio", "recorte-gravura"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "d38df49018ea4047d0d60d80d5b9bc6d2bb28fb5ee0ef82f7bd1b8ee3de6c4ca"
+
+- id: photo-saopaulo-2024-103
+  arquivo: "images/retreats/saopaulo-2024/103.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/103.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Três praticantes invertidos na borda da piscina; outras pessoas dentro da água."
+  handstand: true
+  pessoas: 8
+  pessoas_em_handstand: 3
+  forma: ["reta", "straddle", "uma-mao"]
+  atividade: "treino-grupo"
+  corpo: "inteiro"
+  grupo_em_handstand: true
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape", "grupo-handstand"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 1620
+  altura: 1080
+  sha256: "9c44f0a855e00c63b53d012915b81cad8571aa9cfbae6962d8eb367dda9e69ed"
+
+- id: photo-saopaulo-2024-104
+  arquivo: "images/retreats/saopaulo-2024/104.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/104.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Praticante em uma mão com pernas abertas; outra pessoa na piscina ao fundo."
+  handstand: true
+  pessoas: 2
+  pessoas_em_handstand: 1
+  forma: ["uma-mao", "straddle"]
+  atividade: "demonstracao"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "faf1f331e6a04651655bf611c89530c89a5e1a50115c9a5ae00b4cab9e9e7d93"
+
+- id: photo-saopaulo-2024-105
+  arquivo: "images/retreats/saopaulo-2024/105.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/105.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Pessoa em straddle com inclinação lateral, diante de observadores na piscina."
+  handstand: true
+  pessoas: 5
+  pessoas_em_handstand: 1
+  forma: ["straddle"]
+  atividade: "demonstracao"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 1620
+  altura: 1080
+  sha256: "34a2f4b0293fb048a8740a284955a7c8a3574d587c247e7ba294b9cad7283478"
+
+- id: photo-saopaulo-2024-106
+  arquivo: "images/retreats/saopaulo-2024/106.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/106.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Foto P&B de cima: uma pessoa em straddle sobre chão liso."
+  handstand: true
+  pessoas: 1
+  pessoas_em_handstand: 1
+  forma: ["straddle"]
+  atividade: "demonstracao"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: true
+  uso_sugerido: ["post-shape", "ilustracao-exercicio", "recorte-gravura"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 1620
+  altura: 1080
+  sha256: "843380581d1c20d5fe97808999ab86cfde2363f2d21b624c1fff0e4a23b8dd5e"
+
+- id: photo-saopaulo-2024-107
+  arquivo: "images/retreats/saopaulo-2024/107.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/107.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Praticante em parada reta dentro da sala, com professor observando ao lado."
+  handstand: true
+  pessoas: 2
+  pessoas_em_handstand: 1
+  forma: ["reta"]
+  atividade: "assistencia"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "458ae9614018f2d3367e9c2e1fc59212dd387c9d7b804ade744c427e0630bb4e"
+
+- id: photo-saopaulo-2024-11
+  arquivo: "images/retreats/saopaulo-2024/11.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/11.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Pessoa sentada com braços abertos recebe assistência nos ombros."
+  handstand: false
+  pessoas: 3
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "mobilidade-ombros"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "c38160f6234b1d9adc8b1494e45b9a157632930992c88f6667baec90225f7a35"
+
+- id: photo-saopaulo-2024-12
+  arquivo: "images/retreats/saopaulo-2024/12.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/12.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Turma em roda com quadril elevado e mãos no chão."
+  handstand: false
+  pessoas: 13
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "aquecimento"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["treino-coletivo"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 1620
+  altura: 1080
+  sha256: "5de01b9ce11bd73f520cff2dcc6c1c9a8d78e428e6c762cad98800377e471151"
+
+- id: photo-saopaulo-2024-13
+  arquivo: "images/retreats/saopaulo-2024/13.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/13.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Vista de cima da turma em extensão do tronco apoiada nas mãos."
+  handstand: false
+  pessoas: 12
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "mobilidade"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["treino-coletivo"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 1620
+  altura: 1080
+  sha256: "22880dc7961c6fb76e5818f0b7966062bcfcdaa624aabf592c39674863d1feef"
+
+- id: photo-saopaulo-2024-14
+  arquivo: "images/retreats/saopaulo-2024/14.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/14.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Grupo alonga com peito elevado e braços estendidos no chão."
+  handstand: false
+  pessoas: 8
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "mobilidade"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["treino-coletivo"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 1620
+  altura: 1080
+  sha256: "d809aa6020afda3d84420b04b4199feeaac3f904aa99b100f7ae82f041ea17f8"
+
+- id: photo-saopaulo-2024-15
+  arquivo: "images/retreats/saopaulo-2024/15.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/15.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Grupo em apoios de mãos e pés, quadril elevado, visto de cima."
+  handstand: false
+  pessoas: 9
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "aquecimento"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["treino-coletivo"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 1620
+  altura: 1080
+  sha256: "7b1a0e727c591c8af0f80d2b738881d62863d25cd38b0bfc993649fd83d9e601"
+
+- id: photo-saopaulo-2024-16
+  arquivo: "images/retreats/saopaulo-2024/16.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/16.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Professor ajusta o tronco de praticante em prancha; pessoa parcial na borda."
+  handstand: false
+  pessoas: 3
+  pessoas_em_handstand: 0
+  forma: ["prancha"]
+  atividade: "prancha"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 1620
+  altura: 1080
+  sha256: "b7ade83742536520ab76438dc99acb2d62c5f4ebcb6114441eeb01dff4d75abf"
+
+- id: photo-saopaulo-2024-17
+  arquivo: "images/retreats/saopaulo-2024/17.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/17.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Professor demonstra apoio baixo com mãos no chão e pernas flexionadas."
+  handstand: false
+  pessoas: 2
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "apoio-baixo"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: []
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "b9878d471ffc74d4d0ecbc8ab39392f938bbf73f9eaba56eff7ff383c1f93468"
+
+- id: photo-saopaulo-2024-18
+  arquivo: "images/retreats/saopaulo-2024/18.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/18.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Duas pessoas em equilíbrio baixo nos braços, joelhos sobre os braços."
+  handstand: false
+  pessoas: 2
+  pessoas_em_handstand: 0
+  forma: ["sapinho"]
+  atividade: "sapinho"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "471f38a782b21baa4fe1a0f72e8e55d3f7cbe092a13072cdcdb9a1055a5df523"
+
+- id: photo-saopaulo-2024-19
+  arquivo: "images/retreats/saopaulo-2024/19.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/19.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Professor auxilia praticante em apoio baixo com cabeça próxima de uma almofada."
+  handstand: false
+  pessoas: 2
+  pessoas_em_handstand: 0
+  forma: ["apoio-cabeca"]
+  atividade: "apoio-cabeca"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "4d25917dd7724b0ea4882c083930c7a5def2f3c7376f9477e554d9af4268acfc"
+
+- id: photo-saopaulo-2024-20
+  arquivo: "images/retreats/saopaulo-2024/20.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/20.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Praticante tenta apoio baixo nas mãos com professor ao lado."
+  handstand: false
+  pessoas: 3
+  pessoas_em_handstand: 0
+  forma: ["sapinho"]
+  atividade: "sapinho"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "52e13227151a017cf899f4b8d02c28dedf5a5e72482af1ba76401e77e5b4fdba"
+
+- id: photo-saopaulo-2024-21
+  arquivo: "images/retreats/saopaulo-2024/21.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/21.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Apoio agrupado nas mãos com assistência atrás e almofada à frente."
+  handstand: false
+  pessoas: 2
+  pessoas_em_handstand: 0
+  forma: ["sapinho"]
+  atividade: "sapinho"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "37c80e419fda633e8a526d624502f7b3bd5e3a17b190b5aea858e4e0dbb0b944"
+
+- id: photo-saopaulo-2024-22
+  arquivo: "images/retreats/saopaulo-2024/22.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/22.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Praticante sorrindo durante equilíbrio baixo assistido nos braços."
+  handstand: false
+  pessoas: 2
+  pessoas_em_handstand: 0
+  forma: ["sapinho"]
+  atividade: "sapinho"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "85bff0fb70d289cb0af5c09090f6cb6ae936822dc7678ed7c9920d9f54238553"
+
+- id: photo-saopaulo-2024-23
+  arquivo: "images/retreats/saopaulo-2024/23.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/23.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Praticante em apoio baixo nas mãos, com professor auxiliando atrás."
+  handstand: false
+  pessoas: 2
+  pessoas_em_handstand: 0
+  forma: ["sapinho"]
+  atividade: "sapinho"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "6633ceaba03db332375d08d1eb28910c7b90c803783e6cd2b78020eeb5fb36d1"
+
+- id: photo-saopaulo-2024-24
+  arquivo: "images/retreats/saopaulo-2024/24.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/24.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Pessoa equilibrada nos braços com joelhos flexionados; observadora parcialmente oculta."
+  handstand: false
+  pessoas: 2
+  pessoas_em_handstand: 0
+  forma: ["sapinho"]
+  atividade: "sapinho"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "5139649e494a1868f66beddab86bc453ef4f6ae4797ab11915387d376291fa85"
+
+- id: photo-saopaulo-2024-25
+  arquivo: "images/retreats/saopaulo-2024/25.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/25.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Professor demonstra sapinho, com dois participantes observando ao fundo."
+  handstand: false
+  pessoas: 3
+  pessoas_em_handstand: 0
+  forma: ["sapinho"]
+  atividade: "sapinho"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "d95bb4691968fab65ee4833a32aa71b49dc4849884dafd8ebae1472cc7c602e0"
+
+- id: photo-saopaulo-2024-26
+  arquivo: "images/retreats/saopaulo-2024/26.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/26.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Demonstração de apoio agrupado nas mãos, com duas pessoas ao fundo."
+  handstand: false
+  pessoas: 3
+  pessoas_em_handstand: 0
+  forma: ["sapinho"]
+  atividade: "sapinho"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "26682e846900e4275f386594b8f1a6541b2c325743f539f65c5631b517c19e10"
+
+- id: photo-saopaulo-2024-27
+  arquivo: "images/retreats/saopaulo-2024/27.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/27.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Professor demonstra apoio na cabeça e mãos com pernas dobradas."
+  handstand: false
+  pessoas: 3
+  pessoas_em_handstand: 0
+  forma: ["apoio-cabeca"]
+  atividade: "apoio-cabeca"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "a133c2606dca8c33eb7ccb0dd69aa4d46421446be5d99587f6e54b2b377c2122"
+
+- id: photo-saopaulo-2024-28
+  arquivo: "images/retreats/saopaulo-2024/28.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/28.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Invertida reta com cabeça apoiada em almofada, braços flexionados."
+  handstand: false
+  pessoas: 3
+  pessoas_em_handstand: 0
+  forma: ["apoio-cabeca"]
+  atividade: "apoio-cabeca"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "4cb0390f4ae4508587c435f3809926a11c14f13d6cb894443753517f266406d4"
+
+- id: photo-saopaulo-2024-29
+  arquivo: "images/retreats/saopaulo-2024/29.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/29.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Variação da invertida reta sobre cabeça e mãos, com turma observando."
+  handstand: false
+  pessoas: 3
+  pessoas_em_handstand: 0
+  forma: ["apoio-cabeca"]
+  atividade: "apoio-cabeca"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "e9696fd6972de44f70c0d06c110476bb794440d8e5d93560299aa1c96a97cb18"
+
+- id: photo-saopaulo-2024-30
+  arquivo: "images/retreats/saopaulo-2024/30.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/30.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Pessoa em tripé de cabeça com pernas juntas, outras treinando ao fundo."
+  handstand: false
+  pessoas: 5
+  pessoas_em_handstand: 0
+  forma: ["apoio-cabeca"]
+  atividade: "apoio-cabeca"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["treino-coletivo", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "b4cfd23ddf6fa0e7a4d63a9edba6988e7807a29ed01c64fead59c5482a21b169"
+
+- id: photo-saopaulo-2024-31
+  arquivo: "images/retreats/saopaulo-2024/31.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/31.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Tripé de cabeça frontal, pernas estendidas e juntas."
+  handstand: false
+  pessoas: 5
+  pessoas_em_handstand: 0
+  forma: ["apoio-cabeca"]
+  atividade: "apoio-cabeca"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["treino-coletivo", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "f938a2a30522c129991f0d45e5b7795574cfd0646add16afe7cadd1da2653e31"
+
+- id: photo-saopaulo-2024-32
+  arquivo: "images/retreats/saopaulo-2024/32.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/32.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Praticante de blusa verde em invertida sobre cabeça e mãos."
+  handstand: false
+  pessoas: 5
+  pessoas_em_handstand: 0
+  forma: ["apoio-cabeca"]
+  atividade: "apoio-cabeca"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["treino-coletivo", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "cd1a8a80460d5366227db9a00ffff1ff866f452ffebd27b90d99863c1bbb5532"
+
+- id: photo-saopaulo-2024-33
+  arquivo: "images/retreats/saopaulo-2024/33.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/33.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Outra foto da mesma invertida de cabeça com observadores ao fundo."
+  handstand: false
+  pessoas: 5
+  pessoas_em_handstand: 0
+  forma: ["apoio-cabeca"]
+  atividade: "apoio-cabeca"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["treino-coletivo", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "f2db63df09507d3b7b040b15ef1202767d5ab2bde6ffc11344b16080be89f20a"
+
+- id: photo-saopaulo-2024-34
+  arquivo: "images/retreats/saopaulo-2024/34.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/34.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Professor auxilia praticante deitada com pernas elevadas junto à almofada."
+  handstand: false
+  pessoas: 4
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "assistencia"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "8a3d3dff8add8b28ce98e5778c5c9fc1cb55f76f2c8367c52bc5c9adb7966464"
+
+- id: photo-saopaulo-2024-35
+  arquivo: "images/retreats/saopaulo-2024/35.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/35.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Turma inteira ensaia tripés de cabeça e variações de pernas; professor circula."
+  handstand: false
+  pessoas: 13
+  pessoas_em_handstand: 0
+  forma: ["apoio-cabeca"]
+  atividade: "apoio-cabeca"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["treino-coletivo", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 1620
+  altura: 1080
+  sha256: "43dee5d02f27400ea8fac6884d7b98a7ec55a98ea0f9e77d0453fd70f9cff244"
+
+- id: photo-saopaulo-2024-36
+  arquivo: "images/retreats/saopaulo-2024/36.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/36.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Grupo em diferentes fases da invertida de cabeça, visto de cima."
+  handstand: false
+  pessoas: 13
+  pessoas_em_handstand: 0
+  forma: ["apoio-cabeca"]
+  atividade: "apoio-cabeca"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["treino-coletivo", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 1620
+  altura: 1080
+  sha256: "4cb5d4da2fa6b90d6bbcbd56503e297f1ae8f0af0fcb1cef4d5b11bf58bf180a"
+
+- id: photo-saopaulo-2024-37
+  arquivo: "images/retreats/saopaulo-2024/37.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/37.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Treino coletivo de apoio na cabeça e nas mãos, pernas retas ou dobradas."
+  handstand: false
+  pessoas: 13
+  pessoas_em_handstand: 0
+  forma: ["apoio-cabeca"]
+  atividade: "apoio-cabeca"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["treino-coletivo", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 1620
+  altura: 1080
+  sha256: "00070d24d3b8b11ae377bea395993a7e7dd82cb18bfc47960af7384511891b44"
+
+- id: photo-saopaulo-2024-38
+  arquivo: "images/retreats/saopaulo-2024/38.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/38.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Turma pratica invertidas de cabeça em roda na sala."
+  handstand: false
+  pessoas: 12
+  pessoas_em_handstand: 0
+  forma: ["apoio-cabeca"]
+  atividade: "apoio-cabeca"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["treino-coletivo", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 1620
+  altura: 1080
+  sha256: "a359c47c086050d2edd3f8b001c27057b62bc606786ec185c8b1aade05680aa4"
+
+- id: photo-saopaulo-2024-39
+  arquivo: "images/retreats/saopaulo-2024/39.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/39.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Variação próxima do treino coletivo em tripé de cabeça."
+  handstand: false
+  pessoas: 12
+  pessoas_em_handstand: 0
+  forma: ["apoio-cabeca"]
+  atividade: "apoio-cabeca"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["treino-coletivo", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 1620
+  altura: 1080
+  sha256: "aab17e5f30755b48ac294cd782b2b9e855940c24d58018d0cc02fb24534bc223"
+
+- id: photo-saopaulo-2024-40
+  arquivo: "images/retreats/saopaulo-2024/40.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/40.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Professor segura o quadril de praticante invertida com uma perna dobrada."
+  handstand: true
+  pessoas: 4
+  pessoas_em_handstand: 1
+  forma: ["stag"]
+  atividade: "assistencia"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "f721f9637abdaaf2c1cb7a9feb27e702a1d265488f8da1857563e8385acefdac"
+
+- id: photo-saopaulo-2024-41
+  arquivo: "images/retreats/saopaulo-2024/41.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/41.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Praticante em parada com professor sustentando quadril e pernas."
+  handstand: true
+  pessoas: 2
+  pessoas_em_handstand: 1
+  forma: ["reta"]
+  atividade: "assistencia"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "ce844ed67d42a24ca991aa82055b20d9282b4174dede596b2d935db986c8cc9c"
+
+- id: photo-saopaulo-2024-42
+  arquivo: "images/retreats/saopaulo-2024/42.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/42.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Parada reta assistida com professor ao lado e dois observadores."
+  handstand: true
+  pessoas: 4
+  pessoas_em_handstand: 1
+  forma: ["reta"]
+  atividade: "assistencia"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "aa17ed7642c2d9d32cc62d8ab6337e40207be76d6013d8d95e23597c7f2ee03e"
+
+- id: photo-saopaulo-2024-43
+  arquivo: "images/retreats/saopaulo-2024/43.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/43.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Praticante abre as pernas durante parada assistida; turma ao fundo."
+  handstand: true
+  pessoas: 4
+  pessoas_em_handstand: 1
+  forma: ["straddle"]
+  atividade: "assistencia"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "b831d31ef95019b2bc2c42a07e93ec79524af281ef81bc4044415dc3b939f908"
+
+- id: photo-saopaulo-2024-44
+  arquivo: "images/retreats/saopaulo-2024/44.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/44.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Duas paradas retas em treinamento; uma recebe assistência à frente."
+  handstand: true
+  pessoas: 5
+  pessoas_em_handstand: 2
+  forma: ["reta"]
+  atividade: "treino-grupo"
+  corpo: "inteiro"
+  grupo_em_handstand: true
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape", "grupo-handstand"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "a57148e5082e5332adecabb455549bc13e338a13c998ab5cb89c5963d81071da"
+
+- id: photo-saopaulo-2024-45
+  arquivo: "images/retreats/saopaulo-2024/45.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/45.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Praticante assistido à frente e outro invertido com pernas dobradas ao fundo."
+  handstand: true
+  pessoas: 4
+  pessoas_em_handstand: 2
+  forma: ["reta", "stag"]
+  atividade: "treino-grupo"
+  corpo: "inteiro"
+  grupo_em_handstand: true
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape", "grupo-handstand"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "4965f5518c2dca6462f18cb7c176e41d4d90a9e176d9f3df7cfdf99be14ad7f7"
+
+- id: photo-saopaulo-2024-46
+  arquivo: "images/retreats/saopaulo-2024/46.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/46.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Professor sustenta praticante em posição agrupada sobre as mãos."
+  handstand: true
+  pessoas: 2
+  pessoas_em_handstand: 1
+  forma: ["tuck"]
+  atividade: "assistencia"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "b359a12a520f339286056667aed90ab8a522f07eb879b6d94290703ac3c930d9"
+
+- id: photo-saopaulo-2024-47
+  arquivo: "images/retreats/saopaulo-2024/47.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/47.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Dois praticantes lado a lado, um reto e outro com pernas abertas; observadores atrás."
+  handstand: true
+  pessoas: 5
+  pessoas_em_handstand: 2
+  forma: ["reta", "straddle"]
+  atividade: "treino-grupo"
+  corpo: "inteiro"
+  grupo_em_handstand: true
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape", "grupo-handstand"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 1620
+  altura: 1080
+  sha256: "b8b00aa321dff3ca2a9108aaecef438d956f8d02f399eba90a12bc7eb5b66679"
+
+- id: photo-saopaulo-2024-48
+  arquivo: "images/retreats/saopaulo-2024/48.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/48.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Praticante sem camisa sustenta parada reta de costas; duas pessoas ao fundo."
+  handstand: true
+  pessoas: 3
+  pessoas_em_handstand: 1
+  forma: ["reta"]
+  atividade: "demonstracao"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "f62822b9758da54c538ef14e7e5f01fd84a5b4fe72f16ac01d0dd9b94af54732"
+
+- id: photo-saopaulo-2024-49
+  arquivo: "images/retreats/saopaulo-2024/49.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/49.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Outra tomada da parada reta de costas diante das janelas."
+  handstand: true
+  pessoas: 3
+  pessoas_em_handstand: 1
+  forma: ["reta"]
+  atividade: "demonstracao"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "b2999a667db56a488f0594f2afdf2be40ac7f318339e45272da63917b071721e"
+
+- id: photo-saopaulo-2024-50
+  arquivo: "images/retreats/saopaulo-2024/50.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/50.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Detalhe das mãos, braços e tronco em parada; pernas cortadas."
+  handstand: true
+  pessoas: 1
+  pessoas_em_handstand: 1
+  forma: ["reta"]
+  atividade: "detalhe"
+  corpo: "parcial"
+  grupo_em_handstand: false
+  todos_em_handstand: true
+  uso_sugerido: ["detalhe-tecnico"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "1684f664f1669d2c3e5deb91a4aac2a60f9b4a40a148b1a9ae550f7ef7a88f5e"
+
+- id: photo-saopaulo-2024-51
+  arquivo: "images/retreats/saopaulo-2024/51.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/51.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Versão P&B do detalhe de tronco, braços e mãos invertidos."
+  handstand: true
+  pessoas: 1
+  pessoas_em_handstand: 1
+  forma: ["reta"]
+  atividade: "detalhe"
+  corpo: "parcial"
+  grupo_em_handstand: false
+  todos_em_handstand: true
+  uso_sugerido: ["detalhe-tecnico"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "4c449a4afe1949fcf1a3ff83c7dd4562533d1dddf82997856df8f94937bcc696"
+
+- id: photo-saopaulo-2024-52
+  arquivo: "images/retreats/saopaulo-2024/52.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/52.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Praticante em parada reta com braços estendidos; observadora na borda direita."
+  handstand: true
+  pessoas: 2
+  pessoas_em_handstand: 1
+  forma: ["reta"]
+  atividade: "demonstracao"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "74ce2d0fd5eda54e50b888b366e27069be78c069d4aa3f92bc39516b330837cf"
+
+- id: photo-saopaulo-2024-53
+  arquivo: "images/retreats/saopaulo-2024/53.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/53.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Praticante invertido recebe assistência; professor observa à frente e turma atrás."
+  handstand: true
+  pessoas: 6
+  pessoas_em_handstand: 2
+  forma: ["straddle"]
+  atividade: "assistencia"
+  corpo: "inteiro"
+  grupo_em_handstand: true
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape", "grupo-handstand", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "969117f669cc58be43e3af0dc8bf302c978a369513fcbf6ebfc28ff9ed19ce51"
+
+- id: photo-saopaulo-2024-54
+  arquivo: "images/retreats/saopaulo-2024/54.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/54.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Parada reta auxiliada em dupla; outro praticante invertido ao fundo."
+  handstand: true
+  pessoas: 6
+  pessoas_em_handstand: 2
+  forma: ["reta"]
+  atividade: "assistencia"
+  corpo: "inteiro"
+  grupo_em_handstand: true
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape", "grupo-handstand", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "45018e4b906cf1b79106331075bfa44ffb6b1977bc794fd3cb0bc38a9845f229"
+
+- id: photo-saopaulo-2024-55
+  arquivo: "images/retreats/saopaulo-2024/55.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/55.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Pessoa de perfil em parada com pernas dobradas assimétricas; observadora atrás."
+  handstand: true
+  pessoas: 2
+  pessoas_em_handstand: 1
+  forma: ["stag"]
+  atividade: "demonstracao"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "7904785b797e79766ad111ae4b03c4f7c28f74c198ab4e445b70bb7bae6b71f4"
+
+- id: photo-saopaulo-2024-56
+  arquivo: "images/retreats/saopaulo-2024/56.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/56.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Parada de perfil com pernas assimétricas dobradas; três observadores atrás."
+  handstand: true
+  pessoas: 4
+  pessoas_em_handstand: 1
+  forma: ["stag"]
+  atividade: "demonstracao"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "26eef228d7ff2a8a6ab43999134fde881e975a4fce83619fdc31a48d917828b0"
+
+- id: photo-saopaulo-2024-57
+  arquivo: "images/retreats/saopaulo-2024/57.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/57.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Uma pessoa sobre cabeça e mãos com pernas em posição assimétrica."
+  handstand: false
+  pessoas: 1
+  pessoas_em_handstand: 0
+  forma: ["apoio-cabeca"]
+  atividade: "apoio-cabeca"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["ilustracao-exercicio", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "a8e82b4b90b8188f9424211446b00203e9ef6d9393b9d0d2b7907b67a2241cc5"
+
+- id: photo-saopaulo-2024-58
+  arquivo: "images/retreats/saopaulo-2024/58.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/58.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Variação assimétrica em tripé, um antebraço próximo ao chão."
+  handstand: false
+  pessoas: 1
+  pessoas_em_handstand: 0
+  forma: ["apoio-cabeca"]
+  atividade: "apoio-cabeca"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["ilustracao-exercicio", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "b03f2c77a9975cdb886c140a9d7077dc68af253186d2b217bbd603e304f9f7c2"
+
+- id: photo-saopaulo-2024-59
+  arquivo: "images/retreats/saopaulo-2024/59.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/59.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Tripé com pernas dobradas assimétricas e observador ao fundo."
+  handstand: false
+  pessoas: 2
+  pessoas_em_handstand: 0
+  forma: ["apoio-cabeca"]
+  atividade: "apoio-cabeca"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "4f9573355b83087f7f97ea98fa8b7ac874a69a4d09e2474a51cc350ce68d533e"
+
+- id: photo-saopaulo-2024-60
+  arquivo: "images/retreats/saopaulo-2024/60.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/60.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Praticante explora posição assimétrica das pernas em apoio de cabeça."
+  handstand: false
+  pessoas: 2
+  pessoas_em_handstand: 0
+  forma: ["apoio-cabeca"]
+  atividade: "apoio-cabeca"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "22b13eebc975676c1afef2de94f920e10200e3dc1e703cb087a1891b3c11082a"
+
+- id: photo-saopaulo-2024-61
+  arquivo: "images/retreats/saopaulo-2024/61.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/61.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Foto P&B de tripé de cabeça com pernas assimétricas."
+  handstand: false
+  pessoas: 1
+  pessoas_em_handstand: 0
+  forma: ["apoio-cabeca"]
+  atividade: "apoio-cabeca"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["ilustracao-exercicio", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "db607af3e13810f98979b574afcea725228f3600de7b7c7d3c9a2e7023fba0cd"
+
+- id: photo-saopaulo-2024-62
+  arquivo: "images/retreats/saopaulo-2024/62.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/62.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Tripé assimétrico sobre almofada, fundo de vegetação."
+  handstand: false
+  pessoas: 1
+  pessoas_em_handstand: 0
+  forma: ["apoio-cabeca"]
+  atividade: "apoio-cabeca"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["ilustracao-exercicio", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "cac9fecd92912b4f42472c14d7036863e1eff232284a378d864c257b0637f9b9"
+
+- id: photo-saopaulo-2024-63
+  arquivo: "images/retreats/saopaulo-2024/63.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/63.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Pessoa invertida sobre cabeça e mãos, pernas dobradas, com observadores."
+  handstand: false
+  pessoas: 3
+  pessoas_em_handstand: 0
+  forma: ["apoio-cabeca"]
+  atividade: "apoio-cabeca"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "47f5f226df5827ee7fb8b502bd7e4d3f6096a3f23444b4fceec347ead314b656"
+
+- id: photo-saopaulo-2024-64
+  arquivo: "images/retreats/saopaulo-2024/64.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/64.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Professor de perfil conversando, outras pessoas ao fundo."
+  handstand: false
+  pessoas: 3
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "retrato"
+  corpo: "parcial"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: []
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "53d874972bf2bbd00fbaac5adaa78e90ea2d24be511900f2a30103d677acfe21"
+
+- id: photo-saopaulo-2024-65
+  arquivo: "images/retreats/saopaulo-2024/65.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/65.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Retrato próximo do professor de perfil em aula."
+  handstand: false
+  pessoas: 3
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "retrato"
+  corpo: "parcial"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: []
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "a3456d684ffa5f3202131c2fb726f964c6b8730979ed744060aac06afe1c1ec0"
+
+- id: photo-saopaulo-2024-66
+  arquivo: "images/retreats/saopaulo-2024/66.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/66.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Três pessoas lado a lado em tripé de cabeça, em diferentes etapas."
+  handstand: false
+  pessoas: 3
+  pessoas_em_handstand: 0
+  forma: ["apoio-cabeca"]
+  atividade: "apoio-cabeca"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 1620
+  altura: 1080
+  sha256: "f23926a0656d02c4232b8fe8be7a5f12ad2fd1b3d199f67c90a50b2f562b28dc"
+
+- id: photo-saopaulo-2024-67
+  arquivo: "images/retreats/saopaulo-2024/67.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/67.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Três praticantes em tripé recebem assistência de duas pessoas."
+  handstand: false
+  pessoas: 5
+  pessoas_em_handstand: 0
+  forma: ["apoio-cabeca"]
+  atividade: "apoio-cabeca"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["treino-coletivo", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 1620
+  altura: 1080
+  sha256: "f1dea56cd35dd049364511d6f08f5710bb76e42450e6d627adfe7199923f6877"
+
+- id: photo-saopaulo-2024-68
+  arquivo: "images/retreats/saopaulo-2024/68.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/68.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Vários praticantes em apoio de cabeça com colegas auxiliando."
+  handstand: false
+  pessoas: 7
+  pessoas_em_handstand: 0
+  forma: ["apoio-cabeca"]
+  atividade: "apoio-cabeca"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["treino-coletivo", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 1620
+  altura: 1080
+  sha256: "835914074629109e1facdea3fe46b414839a6f25332a083188fda1b13705d9a5"
+
+- id: photo-saopaulo-2024-69
+  arquivo: "images/retreats/saopaulo-2024/69.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/69.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Duas invertidas de cabeça com uma assistente e uma observadora."
+  handstand: false
+  pessoas: 4
+  pessoas_em_handstand: 0
+  forma: ["apoio-cabeca"]
+  atividade: "apoio-cabeca"
+  corpo: "parcial"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["treino-coletivo", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "3cbd3b8be22509150caa8563d423aad03b5888269f48f68493d039b38c5ea987"
+
+- id: photo-saopaulo-2024-70
+  arquivo: "images/retreats/saopaulo-2024/70.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/70.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Quatro participantes sorrindo e comemorando após o exercício."
+  handstand: false
+  pessoas: 4
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "convivio"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["comunidade"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 1620
+  altura: 1080
+  sha256: "0c07cda2f745e1f5816fd5f4e791c2caf790b6da8de67f9b2eaa92237f790785"
+
+- id: photo-saopaulo-2024-71
+  arquivo: "images/retreats/saopaulo-2024/71.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/71.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Praticante de frente em straddle, com três observadores ao fundo."
+  handstand: true
+  pessoas: 4
+  pessoas_em_handstand: 1
+  forma: ["straddle"]
+  atividade: "demonstracao"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "24fe397413b72d5b60b25e9fa8464c114f8d1935f357c8abedd98fa98221212c"
+
+- id: photo-saopaulo-2024-72
+  arquivo: "images/retreats/saopaulo-2024/72.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/72.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Variação da parada straddle frontal diante das janelas."
+  handstand: true
+  pessoas: 4
+  pessoas_em_handstand: 1
+  forma: ["straddle"]
+  atividade: "demonstracao"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "abe82619bb2dca7aada9d9c82300d65657be082e07ee5dce7bec25e353911a66"
+
+- id: photo-saopaulo-2024-73
+  arquivo: "images/retreats/saopaulo-2024/73.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/73.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Duas pessoas invertidas em profundidades diferentes, com observadores."
+  handstand: true
+  pessoas: 4
+  pessoas_em_handstand: 2
+  forma: ["straddle", "stag"]
+  atividade: "treino-grupo"
+  corpo: "parcial"
+  grupo_em_handstand: true
+  todos_em_handstand: false
+  uso_sugerido: ["grupo-handstand"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "5d0da712620db7b826e0337788a9869006d11bbfc03d7f61186420745a3a1b55"
+
+- id: photo-saopaulo-2024-74
+  arquivo: "images/retreats/saopaulo-2024/74.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/74.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Praticante em straddle de costas, outras pessoas se preparando atrás."
+  handstand: true
+  pessoas: 4
+  pessoas_em_handstand: 1
+  forma: ["straddle"]
+  atividade: "demonstracao"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "5c852f14bff9b18a14a5a8cbd1d0cd1ac920cf4b630dca9d1f766a01952fb67c"
+
+- id: photo-saopaulo-2024-75
+  arquivo: "images/retreats/saopaulo-2024/75.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/75.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Foto P&B do professor explicando, com outro participante ao fundo."
+  handstand: false
+  pessoas: 2
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "retrato"
+  corpo: "parcial"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: []
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "d4f0d6efec83df955e4312bbf8734d0be6f1332b631afbd56bfcc54e3185dbb6"
+
+- id: photo-saopaulo-2024-76
+  arquivo: "images/retreats/saopaulo-2024/76.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/76.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Professor sustenta pernas de praticante em apoio baixo de cabeça."
+  handstand: false
+  pessoas: 4
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "assistencia"
+  corpo: "parcial"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "566becedf22a1bb2be740aee6965e19af6befced9ed67fc353b4bd1b87d6152a"
+
+- id: photo-saopaulo-2024-77
+  arquivo: "images/retreats/saopaulo-2024/77.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/77.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Tripé em straddle auxiliado pelo professor; participantes treinam atrás."
+  handstand: false
+  pessoas: 5
+  pessoas_em_handstand: 0
+  forma: ["apoio-cabeca"]
+  atividade: "apoio-cabeca"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["treino-coletivo", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "ebeddb4481a95751bb66b9886e10e1416fde52dc8aec2470559d4f84455fb51e"
+
+- id: photo-saopaulo-2024-78
+  arquivo: "images/retreats/saopaulo-2024/78.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/78.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Pessoa em apoio nas mãos sobre paralelas baixas, pernas elevadas juntas junto à piscina."
+  handstand: false
+  pessoas: 1
+  pessoas_em_handstand: 0
+  forma: ["v-sit"]
+  atividade: "v-sit"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["ilustracao-exercicio", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "5698a39992bea3bc74a68ce440fc0f2479e49d5c47951bc2688fafb31cb7c1d1"
+
+- id: photo-saopaulo-2024-79
+  arquivo: "images/retreats/saopaulo-2024/79.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/79.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "V-sit de perfil sobre paralelas no deck, pernas altas e tronco elevado."
+  handstand: false
+  pessoas: 1
+  pessoas_em_handstand: 0
+  forma: ["v-sit"]
+  atividade: "v-sit"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["ilustracao-exercicio", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "811d9ff324766def9374fe1e9daabf473076ac6b25e21e0037d85bd32283cb6e"
+
+- id: photo-saopaulo-2024-80
+  arquivo: "images/retreats/saopaulo-2024/80.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/80.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Plano mais aberto de V-sit sobre paralelas ao lado da piscina."
+  handstand: false
+  pessoas: 1
+  pessoas_em_handstand: 0
+  forma: ["v-sit"]
+  atividade: "v-sit"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["ilustracao-exercicio", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "cd9492b3e9df361544bb8cf6c8113509f8d064a7f2948b199a5fb03e4698476d"
+
+- id: photo-saopaulo-2024-81
+  arquivo: "images/retreats/saopaulo-2024/81.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/81.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Professor de frente em straddle com alunos ao fundo."
+  handstand: true
+  pessoas: 4
+  pessoas_em_handstand: 1
+  forma: ["straddle"]
+  atividade: "demonstracao"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "8fa81ec015938b8ab808ffa5227c98cf15bcb35e0c4f6a730d9331cd9bbff79b"
+
+- id: photo-saopaulo-2024-82
+  arquivo: "images/retreats/saopaulo-2024/82.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/82.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Parada com joelhos abertos e pés unidos em diamante, observador parcial à esquerda."
+  handstand: true
+  pessoas: 2
+  pessoas_em_handstand: 1
+  forma: ["diamond"]
+  atividade: "demonstracao"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "27ef302f6eed348cfbe5e891fc333ada9564a268e8b1037ef4b14e5fe791296c"
+
+- id: photo-saopaulo-2024-83
+  arquivo: "images/retreats/saopaulo-2024/83.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/83.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Praticante em diamond de perfil, outro invertido parcialmente visível atrás."
+  handstand: true
+  pessoas: 2
+  pessoas_em_handstand: 2
+  forma: ["diamond"]
+  atividade: "demonstracao"
+  corpo: "inteiro"
+  grupo_em_handstand: true
+  todos_em_handstand: true
+  uso_sugerido: ["post-shape", "grupo-handstand"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "13866d802b9b1f211c801b5c3a7833fadd755ae5998c2a6ea7f7841faca6e85d"
+
+- id: photo-saopaulo-2024-84
+  arquivo: "images/retreats/saopaulo-2024/84.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/84.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Versão P&B da parada diamond de perfil."
+  handstand: true
+  pessoas: 2
+  pessoas_em_handstand: 2
+  forma: ["diamond"]
+  atividade: "demonstracao"
+  corpo: "inteiro"
+  grupo_em_handstand: true
+  todos_em_handstand: true
+  uso_sugerido: ["post-shape", "grupo-handstand"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "2cebed8b2d494853801ec5aa3a985c94769e3718e6a98de898dd1788ef61d408"
+
+- id: photo-saopaulo-2024-85
+  arquivo: "images/retreats/saopaulo-2024/85.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/85.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Diamond em primeiro plano e outro praticante invertido ao fundo."
+  handstand: true
+  pessoas: 3
+  pessoas_em_handstand: 2
+  forma: ["diamond"]
+  atividade: "treino-grupo"
+  corpo: "inteiro"
+  grupo_em_handstand: true
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape", "grupo-handstand"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "7237dc0ce9e8b185e309a16f9522727d62fc00063922d5eda134c07dccbb6bc4"
+
+- id: photo-saopaulo-2024-86
+  arquivo: "images/retreats/saopaulo-2024/86.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/86.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Pessoa em tripé sobre blocos baixos, uma perna estendida e outra dobrada."
+  handstand: false
+  pessoas: 1
+  pessoas_em_handstand: 0
+  forma: ["apoio-cabeca"]
+  atividade: "apoio-cabeca"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["ilustracao-exercicio", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "09378e4850e0479e19685a594b0eafd7efa7601f2ce7cf62bf31e9f1ec504df2"
+
+- id: photo-saopaulo-2024-87
+  arquivo: "images/retreats/saopaulo-2024/87.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/87.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Versão P&B do tripé com pernas assimétricas sobre blocos."
+  handstand: false
+  pessoas: 1
+  pessoas_em_handstand: 0
+  forma: ["apoio-cabeca"]
+  atividade: "apoio-cabeca"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["ilustracao-exercicio", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "17f3221c1095b7ea39bd4bdcbb17e794ebee476ad92ca9f8967ec094e716d344"
+
+- id: photo-saopaulo-2024-88
+  arquivo: "images/retreats/saopaulo-2024/88.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/88.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Pequeno grupo prepara almofadas para praticar na grama; professor de pé."
+  handstand: false
+  pessoas: 6
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "aula"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["comunidade"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 1620
+  altura: 1080
+  sha256: "a5ac06937120471fa4171ddb0ce7ecfbb6a4355ba1f2d0256f17cbc671707655"
+
+- id: photo-saopaulo-2024-89
+  arquivo: "images/retreats/saopaulo-2024/89.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/89.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Grupo inicia apoios de cabeça na grama com assistência em duplas."
+  handstand: false
+  pessoas: 7
+  pessoas_em_handstand: 0
+  forma: ["apoio-cabeca"]
+  atividade: "apoio-cabeca"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["treino-coletivo", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 1620
+  altura: 1080
+  sha256: "e6f9272a97c30758e7eb93669ba8201f2fa7fe2ffe219bdf9eb2d7e0a82afc13"
+
+- id: photo-saopaulo-2024-90
+  arquivo: "images/retreats/saopaulo-2024/90.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/90.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Praticantes em tripé na grama com pernas em formas variadas e dois assistentes."
+  handstand: false
+  pessoas: 7
+  pessoas_em_handstand: 0
+  forma: ["apoio-cabeca"]
+  atividade: "apoio-cabeca"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["treino-coletivo", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 1620
+  altura: 1080
+  sha256: "316117ed03d3484cde49ea65f5297989807a83213cd65ef804ef8d2b612a0285"
+
+- id: photo-saopaulo-2024-91
+  arquivo: "images/retreats/saopaulo-2024/91.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/91.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Uma pessoa em tripé de cabeça na grama, pernas dobradas assimétricas."
+  handstand: false
+  pessoas: 1
+  pessoas_em_handstand: 0
+  forma: ["apoio-cabeca"]
+  atividade: "apoio-cabeca"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["ilustracao-exercicio", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "807f8cfee0fd99cb85d9f12279e8ee84793cbb98feab5c0e58883834fd63dbaf"
+
+- id: photo-saopaulo-2024-92
+  arquivo: "images/retreats/saopaulo-2024/92.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/92.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Cinco pessoas lado a lado em apoios de cabeça com pernas variadas na grama."
+  handstand: false
+  pessoas: 5
+  pessoas_em_handstand: 0
+  forma: ["apoio-cabeca"]
+  atividade: "apoio-cabeca"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["treino-coletivo", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 1620
+  altura: 1080
+  sha256: "e2804b54668c8dfd7d325431c52529422a1138cd2c183dd8befd609e2459a1b5"
+
+- id: photo-saopaulo-2024-93
+  arquivo: "images/retreats/saopaulo-2024/93.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/93.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Cinco praticantes em linha, invertidos sobre cabeça e mãos ao ar livre."
+  handstand: false
+  pessoas: 5
+  pessoas_em_handstand: 0
+  forma: ["apoio-cabeca"]
+  atividade: "apoio-cabeca"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["treino-coletivo", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 1620
+  altura: 1080
+  sha256: "7ac57c74ae6af9343af95fe1c934150db4c2c9e6f3909c85beada04367dc19f2"
+
+- id: photo-saopaulo-2024-94
+  arquivo: "images/retreats/saopaulo-2024/94.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/94.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Turma de cinco em tripés de cabeça, com variações de abertura e dobra de pernas."
+  handstand: false
+  pessoas: 5
+  pessoas_em_handstand: 0
+  forma: ["apoio-cabeca"]
+  atividade: "apoio-cabeca"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["treino-coletivo", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 1620
+  altura: 1080
+  sha256: "2e261f1e0a2d728eea1dcdd95d7427109eca7f05273f06c560889880f1b4664c"
+
+- id: photo-saopaulo-2024-95
+  arquivo: "images/retreats/saopaulo-2024/95.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/95.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Quatro invertidas de cabeça e uma participante sentada na grama."
+  handstand: false
+  pessoas: 5
+  pessoas_em_handstand: 0
+  forma: ["apoio-cabeca"]
+  atividade: "apoio-cabeca"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["treino-coletivo", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 1620
+  altura: 1080
+  sha256: "dcd386931bf9a7fa5b556eb2c36fa813c35d3460b4d07a9d3efe428e03662c03"
+
+- id: photo-saopaulo-2024-96
+  arquivo: "images/retreats/saopaulo-2024/96.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/96.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Três pessoas alinhadas em parada reta de costas, com jardim e piscina atrás."
+  handstand: true
+  pessoas: 3
+  pessoas_em_handstand: 3
+  forma: ["reta"]
+  atividade: "treino-grupo"
+  corpo: "inteiro"
+  grupo_em_handstand: true
+  todos_em_handstand: true
+  uso_sugerido: ["post-shape", "grupo-handstand"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 1620
+  altura: 1080
+  sha256: "d270e57f9fded1bdec367d39eeb67f9fa3012a489659ba63781f15fed0dfc336"
+
+- id: photo-saopaulo-2024-97
+  arquivo: "images/retreats/saopaulo-2024/97.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/97.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Quatro pessoas em parada reta lado a lado, duas observam ao fundo."
+  handstand: true
+  pessoas: 6
+  pessoas_em_handstand: 4
+  forma: ["reta"]
+  atividade: "treino-grupo"
+  corpo: "inteiro"
+  grupo_em_handstand: true
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape", "grupo-handstand"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 1620
+  altura: 1080
+  sha256: "70527fdbcaa181d1ba22a201cdc956c1d13c5351e5eb75a4b64fa1c267e23813"
+
+- id: photo-saopaulo-2024-98
+  arquivo: "images/retreats/saopaulo-2024/98.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/98.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Uma pessoa em parada reta na grama junto à piscina."
+  handstand: true
+  pessoas: 1
+  pessoas_em_handstand: 1
+  forma: ["reta"]
+  atividade: "demonstracao"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: true
+  uso_sugerido: ["post-shape", "ilustracao-exercicio", "recorte-gravura"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "2a2f1f590c343052d5c058f3ab5baeb014a603389991bf64c78875cf5213df60"
+
+- id: photo-saopaulo-2024-99
+  arquivo: "images/retreats/saopaulo-2024/99.webp"
+  url: "https://media.balanceatlas.com/images/retreats/saopaulo-2024/99.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "saopaulo-2024"
+  resumo: "Uma pessoa em straddle na grama, com piscina e árvores ao fundo."
+  handstand: true
+  pessoas: 1
+  pessoas_em_handstand: 1
+  forma: ["straddle"]
+  atividade: "demonstracao"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: true
+  uso_sugerido: ["post-shape", "ilustracao-exercicio", "recorte-gravura"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
+  largura: 720
+  altura: 1080
+  sha256: "dea976ba6b6d42ea9cfed33710a72b66c5d924c5529832322bb7ac71afd4d777"
+
+- id: photo-sicily-menfi
+  arquivo: "images/retreats/sicily-menfi.webp"
+  url: "https://media.balanceatlas.com/images/retreats/sicily-menfi.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "sicily-menfi"
+  resumo: "Grande roda de participantes sentados em espaço de evento."
+  handstand: false
+  pessoas: 60
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "aula"
+  corpo: "parcial"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["comunidade"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado", "observacao": "Contagem ou apoio parcialmente oculto; confirmar na seleção final."}
+  referencias: ["src/content/retreats/2026-sicily-sam-on-hands.md"]
+  largura: 1024
+  altura: 683
+  sha256: "9c971cba9782c956f0e14d41e03e4f1ff182715050087d590738092dc3b813da"
+
+- id: photo-slovenia-barefoot
+  arquivo: "images/retreats/slovenia-barefoot.webp"
+  url: "https://media.balanceatlas.com/images/retreats/slovenia-barefoot.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "slovenia-barefoot"
+  resumo: "Praticante em uma mão na grama, pernas abertas e paisagem montanhosa."
+  handstand: true
+  pessoas: 1
+  pessoas_em_handstand: 1
+  forma: ["uma-mao", "straddle"]
+  atividade: "demonstracao"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: true
+  uso_sugerido: ["post-shape", "ilustracao-exercicio", "recorte-gravura"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-slovenia-barefoot-yoga.md"]
+  largura: 1387
+  altura: 2000
+  sha256: "67bf85ad5f975625dcb9537cd66c68e57b3343d12825143e15a720c890770bc4"
+
+- id: photo-thailand-2026-01
+  arquivo: "images/retreats/thailand-2026/01.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/01.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Professor demonstra invertida agrupada diante de alunos; apoio das mãos cortado."
+  handstand: true
+  pessoas: 5
+  pessoas_em_handstand: 1
+  forma: ["tuck"]
+  atividade: "aula"
+  corpo: "parcial"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["comunidade"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 864
+  altura: 1080
+  sha256: "8dadd22ef1e31d04b7edd6d6adc108696b7ef44e7ea10d073bfa5d7ca3a12c8b"
+
+- id: photo-thailand-2026-02
+  arquivo: "images/retreats/thailand-2026/02.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/02.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Demonstração de invertida agrupada com alunos ao fundo e faixa em primeiro plano."
+  handstand: true
+  pessoas: 6
+  pessoas_em_handstand: 1
+  forma: ["tuck"]
+  atividade: "aula"
+  corpo: "parcial"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["comunidade"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 864
+  altura: 1080
+  sha256: "24617672e7ff0945b8a06631ac6f8ff503bd5df8a221a4b74351ad10964f63a7"
+
+- id: photo-thailand-2026-03
+  arquivo: "images/retreats/thailand-2026/03.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/03.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Praticante em tuck nas mãos, com professor ao lado e observadores sentados."
+  handstand: true
+  pessoas: 4
+  pessoas_em_handstand: 1
+  forma: ["tuck"]
+  atividade: "assistencia"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 864
+  altura: 1080
+  sha256: "ff07c526c7a7be550d431be305840ce290c52dd6609df4fc297fc128d9cbc13c"
+
+- id: photo-thailand-2026-05
+  arquivo: "images/retreats/thailand-2026/05.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/05.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Duas pessoas invertidas junto a uma coluna, com professor orientando."
+  handstand: true
+  pessoas: 5
+  pessoas_em_handstand: 2
+  forma: ["reta"]
+  atividade: "parede"
+  corpo: "inteiro"
+  grupo_em_handstand: true
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape", "grupo-handstand", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 864
+  altura: 1080
+  sha256: "3a2f9256fd7eff593fd08e0be5ee15b36d3c3a38d2078c0a9a864138710cedbd"
+
+- id: photo-thailand-2026-07
+  arquivo: "images/retreats/thailand-2026/07.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/07.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Praticante explora apoio em uma mão junto à parede, com colega ao lado."
+  handstand: true
+  pessoas: 2
+  pessoas_em_handstand: 1
+  forma: ["uma-mao", "straddle"]
+  atividade: "parede"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 864
+  altura: 1080
+  sha256: "ec118071c3e72cc947374e78bd1abb72ccc4ec54433d23d201ca70a27b64598b"
+
+- id: photo-thailand-2026-09
+  arquivo: "images/retreats/thailand-2026/09.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/09.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Parada em straddle em primeiro plano e outra invertida junto à parede ao fundo."
+  handstand: true
+  pessoas: 5
+  pessoas_em_handstand: 2
+  forma: ["straddle", "reta"]
+  atividade: "treino-grupo"
+  corpo: "parcial"
+  grupo_em_handstand: true
+  todos_em_handstand: false
+  uso_sugerido: ["grupo-handstand"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 864
+  altura: 1080
+  sha256: "4774cd00903a842c509de08ad6a2a08ecce132669f742aab4794715557719968"
+
+- id: photo-thailand-2026-11
+  arquivo: "images/retreats/thailand-2026/11.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/11.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Cinco pessoas fazem paradas de mão à noite diante de uma loja."
+  handstand: true
+  pessoas: 6
+  pessoas_em_handstand: 5
+  forma: ["reta", "stag"]
+  atividade: "treino-grupo"
+  corpo: "inteiro"
+  grupo_em_handstand: true
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape", "grupo-handstand"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 1920
+  altura: 1080
+  sha256: "acaab917f65d6f349730991ae864788fd7d279056e6cad189f4850b3280110ef"
+
+- id: photo-thailand-2026-12
+  arquivo: "images/retreats/thailand-2026/12.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/12.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Selfie de participantes reunidos à mesa para refeição."
+  handstand: false
+  pessoas: 12
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "convivio"
+  corpo: "parcial"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["comunidade"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 608
+  altura: 1080
+  sha256: "bb69789f441926199dbc26afa8b888c16a9b14e31f020f075f191afb7c1fc038"
+
+- id: photo-thailand-2026-14
+  arquivo: "images/retreats/thailand-2026/14.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/14.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Grupo sentado em roda na sala durante explicação."
+  handstand: false
+  pessoas: 12
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "aula"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["comunidade"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 1920
+  altura: 1080
+  sha256: "4ad77c269a0f86d55cfb77d06685c839399ba7ac34ea1c60db3b8927848c5285"
+
+- id: photo-thailand-2026-16
+  arquivo: "images/retreats/thailand-2026/16.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/16.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Pessoa se inclina sobre as mãos em plataforma baixa, com dois observadores atrás."
+  handstand: false
+  pessoas: 3
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "preparacao-press"
+  corpo: "parcial"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 810
+  altura: 1080
+  sha256: "f8731d342c81fed4e21fb7da213de5237d7fcbfb86d614d6d3a1fecbfca10b6b"
+
+- id: photo-thailand-2026-18
+  arquivo: "images/retreats/thailand-2026/18.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/18.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Uma pessoa em straddle na sala, com fundo relativamente simples."
+  handstand: true
+  pessoas: 1
+  pessoas_em_handstand: 1
+  forma: ["straddle"]
+  atividade: "demonstracao"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: true
+  uso_sugerido: ["post-shape", "ilustracao-exercicio", "recorte-gravura"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 864
+  altura: 1080
+  sha256: "afab4d9223d185dbfe80cd3080f3f77611bab7ca3eb127c8c6c034e5bbcfc239"
+
+- id: photo-thailand-2026-20
+  arquivo: "images/retreats/thailand-2026/20.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/20.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Parada em straddle assistida na cintura; outro praticante invertido atrás."
+  handstand: true
+  pessoas: 4
+  pessoas_em_handstand: 2
+  forma: ["straddle", "reta"]
+  atividade: "assistencia"
+  corpo: "parcial"
+  grupo_em_handstand: true
+  todos_em_handstand: false
+  uso_sugerido: ["grupo-handstand", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 864
+  altura: 1080
+  sha256: "d6291cb94c10c0bf1589fbfa8c3db940f374fc92aaea8843f58db58130981d1c"
+
+- id: photo-thailand-2026-22
+  arquivo: "images/retreats/thailand-2026/22.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/22.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Detalhe de praticante em parada junto a pilha de blocos, com professor agachado."
+  handstand: true
+  pessoas: 2
+  pessoas_em_handstand: 1
+  forma: ["reta"]
+  atividade: "assistencia"
+  corpo: "parcial"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 864
+  altura: 1080
+  sha256: "f09d638440bba63db1eb32e6cf85835333f4309a0dd2d847e1513581fda69a14"
+
+- id: photo-thailand-2026-24
+  arquivo: "images/retreats/thailand-2026/24.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/24.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Detalhe de mãos, braços e rosto em parada, com pernas fora do enquadramento."
+  handstand: true
+  pessoas: 1
+  pessoas_em_handstand: 1
+  forma: ["reta"]
+  atividade: "detalhe"
+  corpo: "parcial"
+  grupo_em_handstand: false
+  todos_em_handstand: true
+  uso_sugerido: ["detalhe-tecnico"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 864
+  altura: 1080
+  sha256: "074812d5ccc9d1aed9888d2784a268c90c1fc848a17196b4bb61b270ce26336d"
+
+- id: photo-thailand-2026-26
+  arquivo: "images/retreats/thailand-2026/26.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/26.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Close de praticante em apoio de mãos e pés, com punhos virados, olhando para a câmera."
+  handstand: false
+  pessoas: 1
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "mobilidade-punhos"
+  corpo: "parcial"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado", "observacao": "Contagem ou apoio parcialmente oculto; confirmar na seleção final."}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 864
+  altura: 1080
+  sha256: "d657113f86dd3411de150694976013b389a999b740f2341c2e94a411c23e4c44"
+
+- id: photo-thailand-2026-28
+  arquivo: "images/retreats/thailand-2026/28.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/28.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Professor orienta ombros e braços de praticante em pé; pessoa parcial ao lado."
+  handstand: false
+  pessoas: 3
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "mobilidade-ombros"
+  corpo: "parcial"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 864
+  altura: 1080
+  sha256: "5e0521aa02dd8f9f2cfeafa59877bd60fd3436f5e3f888ee12fb56810a316342"
+
+- id: photo-thailand-2026-29
+  arquivo: "images/retreats/thailand-2026/29.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/29.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Selfie noturna de participantes em restaurante, com pessoas ao fundo."
+  handstand: false
+  pessoas: 7
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "convivio"
+  corpo: "parcial"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["comunidade"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 810
+  altura: 1080
+  sha256: "cc8a27a63da51a6b8a172aace1039e734129be71091379802b4ba8a402b2dbe3"
+
+- id: photo-thailand-2026-30
+  arquivo: "images/retreats/thailand-2026/30.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/30.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Selfie da turma à mesa em refeição durante o dia."
+  handstand: false
+  pessoas: 12
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "convivio"
+  corpo: "parcial"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["comunidade"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 810
+  altura: 1080
+  sha256: "aad8ce905dde23bd9befd4b10e259b0405a48835f20dd6a40d7d715d37cad689"
+
+- id: photo-thailand-2026-32
+  arquivo: "images/retreats/thailand-2026/32.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/32.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Sala com vários praticantes invertidos, alguns na parede, e outros descansando."
+  handstand: true
+  pessoas: 8
+  pessoas_em_handstand: 3
+  forma: ["reta", "straddle", "stag"]
+  atividade: "treino-grupo"
+  corpo: "inteiro"
+  grupo_em_handstand: true
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape", "grupo-handstand"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 1920
+  altura: 1080
+  sha256: "29529ff39ac32fb1e617472a6c84707746eef34201814697ff67874cd300793d"
+
+- id: photo-thailand-2026-34
+  arquivo: "images/retreats/thailand-2026/34.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/34.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Selfie noturna de grupo em transporte aberto."
+  handstand: false
+  pessoas: 6
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "convivio"
+  corpo: "parcial"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["comunidade"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 1920
+  altura: 1080
+  sha256: "189051cbf82eb7a30775ba39ac127bac2e1c6fdf2410abec30eff1ecaa479e78"
+
+- id: photo-thailand-2026-35
+  arquivo: "images/retreats/thailand-2026/35.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/35.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Duas pessoas à mesa com hambúrgueres à noite."
+  handstand: false
+  pessoas: 2
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "convivio"
+  corpo: "parcial"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["comunidade"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 608
+  altura: 1080
+  sha256: "41fc85f8a44d2499df413d39a7c06ef4ccd76294a941326693bc2cd818a18e6c"
+
+- id: photo-thailand-2026-37
+  arquivo: "images/retreats/thailand-2026/37.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/37.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Piscina iluminada e espreguiçadeiras à noite, sem pessoas em destaque."
+  handstand: false
+  pessoas: 0
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "ambiente"
+  corpo: "nao-aplicavel"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["contexto-local"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 1920
+  altura: 1080
+  sha256: "264971918eac52c15d4489109ab6fc2403c92c0f4da8418130b3f6c366baaef2"
+
+- id: photo-thailand-2026-38
+  arquivo: "images/retreats/thailand-2026/38.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/38.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Seis participantes sentados em almofadas à mesa baixa de restaurante."
+  handstand: false
+  pessoas: 6
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "convivio"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["comunidade"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 1920
+  altura: 1080
+  sha256: "92d0dbad94a3fcc3f0dfdf72ba80dc6dfd6f4071a69c516a02097faa33b375c4"
+
+- id: photo-thailand-2026-39
+  arquivo: "images/retreats/thailand-2026/39.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/39.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Grupo em sala aberta, preparando alongamentos sobre tapetes."
+  handstand: false
+  pessoas: 8
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "mobilidade"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["treino-coletivo"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 1920
+  altura: 1080
+  sha256: "9924988763396abd09e3ac33d0081159fcab80a5a148ade5f8cce81bb5a90de8"
+
+- id: photo-thailand-2026-40
+  arquivo: "images/retreats/thailand-2026/40.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/40.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Pessoa em ponte de perfil, outros corpos parcialmente visíveis nas bordas."
+  handstand: false
+  pessoas: 3
+  pessoas_em_handstand: 0
+  forma: ["ponte"]
+  atividade: "ponte"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 1920
+  altura: 1080
+  sha256: "c439d68be51512409caee0524e7122c715946ced05c0f3e68e06897fbcb824e2"
+
+- id: photo-thailand-2026-42
+  arquivo: "images/retreats/thailand-2026/42.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/42.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Vista ampla de turma deitada em tapetes num pavilhão de madeira."
+  handstand: false
+  pessoas: 9
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "mobilidade"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["treino-coletivo"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 608
+  altura: 1080
+  sha256: "91efaa9e337014615ee9fb4271b4e24fdd13d17c965e39c290748abe87820005"
+
+- id: photo-thailand-2026-43
+  arquivo: "images/retreats/thailand-2026/43.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/43.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Outra vista do grupo deitado e alongando no pavilhão."
+  handstand: false
+  pessoas: 9
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "mobilidade"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["treino-coletivo"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 608
+  altura: 1080
+  sha256: "a84c8682c061956f28cd1795979c945a0d16c616fdb9af67e85833406dffd51a"
+
+- id: photo-thailand-2026-44
+  arquivo: "images/retreats/thailand-2026/44.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/44.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Praticante em parada muito arqueada com pernas assimétricas; professor e alunos observam."
+  handstand: true
+  pessoas: 6
+  pessoas_em_handstand: 1
+  forma: ["mexicano", "stag"]
+  atividade: "demonstracao"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 1920
+  altura: 1080
+  sha256: "c586aabd93641e49fa2c43f4e4e1cbb666a3b2df00b11bcc1211dfe01ad75022"
+
+- id: photo-thailand-2026-45
+  arquivo: "images/retreats/thailand-2026/45.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/45.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Duas pessoas sentadas junto a um cachorro; terceira pessoa parcial à direita."
+  handstand: false
+  pessoas: 3
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "convivio"
+  corpo: "parcial"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["comunidade"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 608
+  altura: 1080
+  sha256: "41a32e7c302455032e52f8c5f0fe3e08f0c6cba57d30c43170511822ce6c9b74"
+
+- id: photo-thailand-2026-46
+  arquivo: "images/retreats/thailand-2026/46.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/46.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Três praticantes em parada reta no pavilhão aberto."
+  handstand: true
+  pessoas: 3
+  pessoas_em_handstand: 3
+  forma: ["reta"]
+  atividade: "treino-grupo"
+  corpo: "inteiro"
+  grupo_em_handstand: true
+  todos_em_handstand: true
+  uso_sugerido: ["post-shape", "grupo-handstand"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 608
+  altura: 1080
+  sha256: "5ef307662fca6718d76f2c49ae4d8361fe5ebb89d8655c6074207acb3b057d4a"
+
+- id: photo-thailand-2026-47
+  arquivo: "images/retreats/thailand-2026/47.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/47.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Praticante demonstra parada agrupada à frente da turma sentada."
+  handstand: true
+  pessoas: 6
+  pessoas_em_handstand: 1
+  forma: ["tuck"]
+  atividade: "aula"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape", "comunidade"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 608
+  altura: 1080
+  sha256: "05e8afb8694e82fe4162acb4d71f38c120235e3e0e372efa45cc7166ec3da609"
+
+- id: photo-thailand-2026-48
+  arquivo: "images/retreats/thailand-2026/48.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/48.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Professor sentado de frente para participantes no pavilhão."
+  handstand: false
+  pessoas: 4
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "aula"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["comunidade"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 608
+  altura: 1080
+  sha256: "885a5d97aa0efa0faa315e8317de65d2a69057dc8843794c0ee6d968a1634fd9"
+
+- id: photo-thailand-2026-49
+  arquivo: "images/retreats/thailand-2026/49.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/49.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Turma sentada em roda e praticante inclinado à frente durante demonstração."
+  handstand: false
+  pessoas: 12
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "aula"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["comunidade"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado", "observacao": "Contagem ou apoio parcialmente oculto; confirmar na seleção final."}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 1920
+  altura: 1080
+  sha256: "29b360dc725f70c107ed9c093bcbc6ea43b71fd4ddc5647dc4f4cdc67013b32f"
+
+- id: photo-thailand-2026-50
+  arquivo: "images/retreats/thailand-2026/50.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/50.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Foto de mesa longa com participantes sorrindo em refeição."
+  handstand: false
+  pessoas: 14
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "convivio"
+  corpo: "parcial"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["comunidade"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 608
+  altura: 1080
+  sha256: "9c1d455f56746fccb9155c0324912e7e9c64bc6443c415094ce4053154026648"
+
+- id: photo-thailand-2026-51
+  arquivo: "images/retreats/thailand-2026/51.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/51.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Duas pessoas fazem equilíbrio invertido assistido na piscina à noite; apoios pouco nítidos."
+  handstand: true
+  pessoas: 2
+  pessoas_em_handstand: 1
+  forma: ["reta"]
+  atividade: "acro"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado", "observacao": "Contagem ou apoio parcialmente oculto; confirmar na seleção final."}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 608
+  altura: 1080
+  sha256: "26203d06c8a1052c436731b0b9cae7bef2d57e4dde819f36ea37988c4fcd8f3c"
+
+- id: photo-thailand-2026-52
+  arquivo: "images/retreats/thailand-2026/52.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/52.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Pessoa agrupada apoiada sobre parceiro na piscina, à noite."
+  handstand: false
+  pessoas: 2
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "acro"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: []
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 608
+  altura: 1080
+  sha256: "3a9d33bdf72fb7199f8b37c84da9b46f1fda29b8d6bbf422a9cfe96acf552eed"
+
+- id: photo-thailand-2026-53
+  arquivo: "images/retreats/thailand-2026/53.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/53.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Praticante em tuck na borda da piscina à noite, com duas pessoas ao fundo."
+  handstand: true
+  pessoas: 3
+  pessoas_em_handstand: 1
+  forma: ["tuck"]
+  atividade: "demonstracao"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 1920
+  altura: 1080
+  sha256: "3f20d776d3fb865780b161711a054d2d553ccde928eced8580bcdb83fc7b857c"
+
+- id: photo-thailand-2026-54
+  arquivo: "images/retreats/thailand-2026/54.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/54.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Duas pessoas em ponte lado a lado na borda da piscina à noite."
+  handstand: false
+  pessoas: 2
+  pessoas_em_handstand: 0
+  forma: ["ponte"]
+  atividade: "ponte"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 608
+  altura: 1080
+  sha256: "3e9f2cd46a8fa6899d05fe03cde78935046ba401507840cdc410754024e361b8"
+
+- id: photo-thailand-2026-55
+  arquivo: "images/retreats/thailand-2026/55.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/55.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Selfie noturna de cinco participantes."
+  handstand: false
+  pessoas: 5
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "convivio"
+  corpo: "parcial"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["comunidade"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 608
+  altura: 1080
+  sha256: "df96bbfe3c570ae7eae50bdb570160749e1c8539030f2f000b305a74c8736503"
+
+- id: photo-thailand-2026-56
+  arquivo: "images/retreats/thailand-2026/56.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/56.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Fila de praticantes em parada reta ao lado da piscina, vista em perspectiva."
+  handstand: true
+  pessoas: 9
+  pessoas_em_handstand: 9
+  forma: ["reta"]
+  atividade: "treino-grupo"
+  corpo: "inteiro"
+  grupo_em_handstand: true
+  todos_em_handstand: true
+  uso_sugerido: ["post-shape", "grupo-handstand"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado", "observacao": "Contagem ou apoio parcialmente oculto; confirmar na seleção final."}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 810
+  altura: 1080
+  sha256: "3b143e57461cf11990067fcd118de8fb6f3ace42b54ae8e9635e0d1f2aa16a2f"
+
+- id: photo-thailand-2026-57
+  arquivo: "images/retreats/thailand-2026/57.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/57.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Participantes sentados em roda e conversando num espaço aberto."
+  handstand: false
+  pessoas: 8
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "convivio"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["comunidade"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 1920
+  altura: 1080
+  sha256: "2a5450ee9bbc34be19a0d5edde958a9340368273e006872ee3a682fde098f67d"
+
+- id: photo-thailand-2026-58
+  arquivo: "images/retreats/thailand-2026/58.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/58.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Participantes descansam sobre almofadas e conversam junto à mesa."
+  handstand: false
+  pessoas: 7
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "convivio"
+  corpo: "parcial"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["comunidade"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 1920
+  altura: 1080
+  sha256: "4ff758e816da3e617e0199fb6373c3ecbeb014ce7955d23e7bc37bf298740637"
+
+- id: photo-thailand-2026-59
+  arquivo: "images/retreats/thailand-2026/59.webp"
+  url: "https://media.balanceatlas.com/images/retreats/thailand-2026/59.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "thailand-2026"
+  resumo: "Grupo reunido à mesa ao ar livre durante a noite."
+  handstand: false
+  pessoas: 9
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "convivio"
+  corpo: "parcial"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["comunidade"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-thailand-yuval-ayalon.md"]
+  largura: 1920
+  altura: 1080
+  sha256: "18eb6eb8b477c917b09dc4cffb3f28fbeac173fba155a7fdb810b3c5ee59cc63"
+
+- id: photo-tulum-kyle
+  arquivo: "images/retreats/tulum-kyle.webp"
+  url: "https://media.balanceatlas.com/images/retreats/tulum-kyle.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "tulum-kyle"
+  resumo: "Grande público sentado sob tenda iluminada à noite."
+  handstand: false
+  pessoas: 80
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "evento"
+  corpo: "parcial"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["comunidade"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado", "observacao": "Contagem ou apoio parcialmente oculto; confirmar na seleção final."}
+  referencias: ["src/content/retreats/2024-tulum-kyle-weiger.md"]
+  largura: 1024
+  altura: 511
+  sha256: "d61bc21aeb976760a64f27ef61497e391e0b80b490af16bcdd261ceb2b91ee18"
+
+- id: photo-turkey-antalya
+  arquivo: "images/retreats/turkey-antalya.webp"
+  url: "https://media.balanceatlas.com/images/retreats/turkey-antalya.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "turkey-antalya"
+  resumo: "Referência de imagem da Turquia indisponível: URL respondeu HTTP 404."
+  handstand: null
+  pessoas: null
+  pessoas_em_handstand: null
+  forma: []
+  atividade: "indisponivel"
+  corpo: "nao-verificado"
+  grupo_em_handstand: null
+  todos_em_handstand: null
+  uso_sugerido: []
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "indisponivel"}
+  referencias: ["src/content/retreats/2025-turkey-handstand-factory.md"]
+  problemas: "HTTP Error 404: Not Found"
+
+- id: photo-ulrik-tour
+  arquivo: "images/retreats/ulrik-tour.webp"
+  url: "https://media.balanceatlas.com/images/retreats/ulrik-tour.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "ulrik-tour"
+  resumo: "Praticante em tuck sobre blocos com professor e turma; outra invertida ao fundo."
+  handstand: true
+  pessoas: 7
+  pessoas_em_handstand: 2
+  forma: ["tuck"]
+  atividade: "assistencia"
+  corpo: "inteiro"
+  grupo_em_handstand: true
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape", "grupo-handstand", "post-exercicio"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-us-ulrik-on-hands.md"]
+  largura: 2500
+  altura: 1671
+  sha256: "fe8c272dfbe1b6351cc96119966066a70c9a13afddabcdd7d34859f7866e4fdd"
+
+- id: photo-wermelskirchen-brunnenhaus
+  arquivo: "images/retreats/wermelskirchen-brunnenhaus.webp"
+  url: "https://media.balanceatlas.com/images/retreats/wermelskirchen-brunnenhaus.webp"
+  camera: "foto"
+  midia: "imagem"
+  local: "wermelskirchen-brunnenhaus"
+  resumo: "Grupo posando ao ar livre em chão com neve."
+  handstand: false
+  pessoas: 20
+  pessoas_em_handstand: 0
+  forma: []
+  atividade: "retrato-grupo"
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["comunidade"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  referencias: ["src/content/retreats/2026-germany-handstand-revolution.md"]
+  largura: 452
+  altura: 602
+  sha256: "08175c6ce3f99f30e5b69534e780fea9b5166589be6549d339aa16852ee463b3"

@@ -152,3 +152,10 @@
 - Corrected stale contrast claims in `src/festival/MARCA.md`: A accent/stage = 4.493:1 (still below 4.5); D white/accent = 4.346:1 (fails normal text). B accent/stage = 5.685:1; C = 5.689:1, essentially equal.
 - Desktop 1400 px and mobile 390 px checks passed: no page overflow, missing images or JS errors; real fonts loaded. Applications inspected for body/text collisions.
 - No production CSS/component changes, commit, upload or publication. Existing untracked `acervo/vocabulario.yaml` was left untouched. Next: Paulo/Gabriel choose a logo direction and refine it; keep palette/logo status open until they decide.
+
+
+## 2026-11-12 — Visual photo catalogue
+
+- Extended `acervo/catalogo.yaml`, retaining the existing video records: 190 image references, 189 visually inspected, one unavailable (Turkey hero HTTP 404, unknown fields null).
+- Paulo wants approximate discovery labels: handstand boolean, total people, people in handstand, shapes, whole body, group/all practising and suggested uses. Headstand is separate. No automatic skeleton analysis or face identification.
+- `scripts/festival_image_index.py` prepares ignored contact sheets, validates the canonical YAML and filters/exports selections. Schema and examples in `acervo/README.md`. Retreat videos and vocabulary image cards remain pending.
