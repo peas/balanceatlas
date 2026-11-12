@@ -149,7 +149,7 @@ export const HERO_FRAMES = HERO.reduce((n, s) => n + s.frames, 0) - T * (HERO.le
 
 const SceneView = ({ s }: { s: Scene }) => (
   <AbsoluteFill style={{ background: INK }}>
-    <Html5Video src={s.src} muted playbackRate={s.rate ?? 1} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+    <Html5Video src={s.src} poster={s.src === '/festival/seg-1.mp4' ? '/festival/seg-1.webp' : undefined} playsInline muted playbackRate={s.rate ?? 1} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
     <Stamp text={s.stamp} dur={s.frames} />
   </AbsoluteFill>
 );
@@ -197,7 +197,7 @@ export const Teacher = () => {
   const fadeOut = interpolate(frame, [TEACHER_FRAMES - 12, TEACHER_FRAMES], [1, 0], { extrapolateLeft: 'clamp' });
   return (
     <AbsoluteFill style={{ background: INK, overflow: 'hidden' }}>
-      <Html5Video src="/festival/teacher.mp4" muted style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+      <Html5Video src="/festival/teacher.mp4" poster="/festival/teacher.webp" playsInline muted style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
       <AbsoluteFill style={{ background: ACCENT, transform: `translateX(${wipe}%)` }} />
       <div style={{ position: 'absolute', left: 32, bottom: 40, opacity: fadeOut }}>
         <Letters text="Agustin" delay={18} />

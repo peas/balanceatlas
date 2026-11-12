@@ -320,3 +320,13 @@ festival domain. Home copy changed the same day (Gabriel's notes): intro heading
 "Quatro blocos por dia" paragraph and "Perto do metrô" removed. `FestPlayer` now plays only while on screen
 (six players at once made old computers flicker). Friday's "Roda de abertura" (17h30–18h30) was removed from the schedule on Paulo's call (12/11/2026); Friday ends at 17h30. The adjustable engraving video filter lives at
 `/festival/gravura-lab/` (another agent, commit 18cf134).
+
+## Mobile media fallback — 12 November 2026
+
+Paulo reported Agustin showing only ochre and lineup cards only green on Chrome/Pixel 10, while desktop worked.
+These match the compositions' hidden entrance frame: `FestPlayer` skipped playback for reduced motion but still
+rendered frame zero over the HTML image. Reduced motion now renders the real static photo; other players start
+at visible frame 60 and have image posters for unplayed/buffering/error states. Media islands have real boxes,
+and the observed player wrapper uses absolute inset rather than percentage height through display:contents.
+Keep offscreen pause. Do not require autoplay for essential photographs to appear. Build and reduced-motion
+render checks passed; confirmation on Paulo's physical Pixel remains pending.

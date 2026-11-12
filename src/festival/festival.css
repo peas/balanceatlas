@@ -480,3 +480,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 /* Purchase is the primary action across festival pages; lot information is plain text. */
 .topnav .nav-cta, .stickybar .nav-cta { border-radius: 999px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; padding-inline: 18px; box-shadow: 0 3px 10px rgb(0 0 0 / .12); }
 .claro .topnav .nav-cta { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+
+/* Astro islands use display:contents by default. Give media islands a real containing
+   box for percentage sizing and IntersectionObserver, including WebKit/iOS. */
+.stage > astro-island, .story > astro-island, .venue-tour > astro-island { display: block; }

@@ -25,6 +25,9 @@ const COMPS = {
 
 export default function FestPlayer({ comp, props }: { comp: keyof typeof COMPS; props?: PosterProps }) {
   const { component, frames, w, h } = COMPS[comp];
+  const still = comp === 'poster' ? props?.img : comp === 'hero' ? '/festival/seg-1.webp'
+    : comp === 'teacher' ? '/festival/teacher.webp' : '/festival/ig/tv-sala-vidro.webp';
+  const stillImage = () => still ? <img src={still} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: props?.focus ?? 'center' }} /> : null;
   // inputProps must be stable: a new object each render restarts the clock
   const inputProps = useMemo(() => props ?? {}, [JSON.stringify(props)]);
   const reduced = useMemo(
@@ -40,8 +43,11 @@ export default function FestPlayer({ comp, props }: { comp: keyof typeof COMPS; 
     io.observe(box.current);
     return () => io.disconnect();
   }, [reduced]);
+  // Frame zero contains entrance masks/wipes. Never cover the HTML fallback with that
+  // frame when iOS Reduce Motion disables playback. Keep a real photograph instead.
+  if (reduced) return <div style={{ position: 'absolute', inset: 0 }}>{stillImage()}</div>;
   return (
-    <div ref={box} style={{ width: '100%', height: '100%' }}>
+    <div ref={box} style={{ position: 'absolute', inset: 0 }}>
     <Player
       ref={player}
       component={component as React.ComponentType<Record<string, unknown>>}
@@ -50,6 +56,11 @@ export default function FestPlayer({ comp, props }: { comp: keyof typeof COMPS; 
       fps={FPS}
       compositionWidth={w}
       compositionHeight={h}
+      initialFrame={60}
+      renderPoster={stillImage}
+      showPosterWhenUnplayed
+      showPosterWhenBuffering
+      errorFallback={stillImage}
       loop
       initiallyMuted
       controls={false}
