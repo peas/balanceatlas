@@ -50,7 +50,7 @@ type Dia = { rotulo: string; fio: string; foto: string; linhas: Linha[]; nome: s
 const DIAS: Dia[] = [
   {
     rotulo: 'Sex', fio: 'Base', foto: 'tv-sala-vidro.webp', nome: 'sexta',
-    linhas: [...MANHA, ['14h', `Acroyoga (básico) · ${PRESS}`], ['16h', 'Parada de mão'], ['17h30', 'Roda de abertura']],
+    linhas: [...MANHA, ['14h', `Acroyoga (básico) · ${PRESS}`], ['16h', 'Parada de mão']],
   },
   {
     rotulo: 'Sáb', fio: 'Construção', foto: 'tv-palco-luzes.webp', nome: 'sábado',

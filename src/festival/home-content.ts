@@ -38,7 +38,6 @@ const third = (basico: string, time = '14h — 15h30'): Row => ({
 export const days: { id: string; label: string; date: string; arc: string; rows: Row[] }[] = [
   { id: 'sex', label: 'Sex', date: String(FEST.dias[0]), arc: 'Base', rows: [
     yoga, prep(), handstand(), lunch, third('Acroyoga'), prep('15h45 — 16h'), handstand('16h — 17h30'),
-    { time: '17h30 — 18h30', all: 'Roda de abertura' },
   ] },
   { id: 'sab', label: 'Sáb', date: String(FEST.dias[1]), arc: 'Construção', rows: [
     yoga, prep(), handstand(), lunch, third('Acro handstand corpo a corpo'),

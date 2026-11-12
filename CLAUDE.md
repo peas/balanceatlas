@@ -321,6 +321,5 @@ Paulo asked for `balanceatlas.com/festival/` to be a 404: the festival answers o
 anywhere. The repo is public, so `/hf/` is unlisted, not secret. `/instagram2` on Balance Atlas redirects to the
 festival domain. Home copy changed the same day (Gabriel's notes): intro heading and paragraph rewritten, the
 "Quatro blocos por dia" paragraph and "Perto do metrô" removed. `FestPlayer` now plays only while on screen
-(six players at once made old computers flicker). Open: Friday's "Roda de abertura" sits at 17h30–18h30, after
-the last class; Paulo flagged it as wrong, new time not decided. The adjustable engraving video filter lives at
+(six players at once made old computers flicker). Friday's "Roda de abertura" (17h30–18h30) was removed from the schedule on Paulo's call (12/11/2026); Friday ends at 17h30. The adjustable engraving video filter lives at
 `/festival/gravura-lab/` (another agent, commit 18cf134).

@@ -198,7 +198,7 @@ tons [accent, chalk], where day = "Sex 16" etc. built from `FEST.dias`.
 3. `Foto src="tv-sala-vidro.webp" filter="brightness(.45)"`. Header ["Sex 16", "Base"]. Rows: 9h "Yoga e mobilidade,
    todo mundo junto" · 10h "Aquecimento de punhos e ombros" · 10h30 "Parada de mão" · 12h "Almoço" ·
    14h "Acroyoga (básico) · Flexibilidade e força para press (inter e avançado)" · 16h "Parada de mão" ·
-   17h30 "Roda de abertura".
+   (a roda de abertura das 17h30 saiu da grade em 12/11/2026).
 4. `Foto src="tv-palco-luzes.webp" filter="brightness(.45)"`. Header ["Sáb 17", "Construção"]. Rows: 9h, 10h, 10h30,
    12h as on Friday · 14h "Acro handstand corpo a corpo (básico) · Flexibilidade e força para press (inter e
    avançado)" · 16h "Jam: treino livre com os professores circulando".
