@@ -29,7 +29,9 @@ export default {
     const asset = isAsset(path);
     if (!asset && underPrefix(path)) return Response.redirect(`https://${APEX}${strip(path)}${url.search}`, 301);
 
-    const target = ORIGIN + (asset ? path : PAGES + path) + url.search;
+    // Root discovery files belong to this festival, not to the Balance Atlas site.
+    const discovery = path === '/robots.txt' || path === '/sitemap.xml';
+    const target = ORIGIN + (discovery ? PREFIX + path : asset ? path : PAGES + path) + url.search;
     const headers = new Headers(request.headers);
     headers.delete('host');
     let res = await fetch(target, { method: request.method, headers, redirect: 'manual' });

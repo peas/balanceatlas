@@ -1,5 +1,7 @@
 # Balance Atlas memory
 
+13 Nov 2026: Paulo enabled search indexing for official festival pages. Shared FestMeta adds canonical/OG/Twitter/JSON-LD; approved engraved straddle social card is default for future pages. Build validates all festival metadata and generates sitemap from indexable pages only; studies remain noindex. Worker routes root discovery files to festival assets. Contract in CLAUDE.md.
+
 13 Nov 2026: Paulo revised Handstand page lead to “O que é e por que está ganhando tanto espaço?” and journey punchline to “Parece difícil? É porque precisa de tempo!”. Removed the visible Balance Atlas photo attribution/link from that page at his request; media provenance stays in source/catalogue.
 
 13 Nov 2026: approved one persistent public menu (Início / O evento / Handstand), desktop ticket CTA and mobile links only, no hamburger. Centralized in FestLayout/FestNav, removed duplicated header/scroll menu. Shortened ticket footnote with link to Sobre as supplied by Paulo.

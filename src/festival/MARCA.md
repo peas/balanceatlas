@@ -418,3 +418,8 @@ Vídeo grande, ocupando tudo ou quase tudo, com corpo inteiro e enquadramento ma
 - **Hierarquia sem competição:** ação parece botão; preço, lote e informação editorial mantêm seus papéis. O selo e as gravuras são elementos de marca, não componentes que precisam virar retângulos.
 - **Movimento e pessoas em primeiro plano:** contornos delimitam a mídia, nunca cobrem o corpo; preservar os recortes e a linguagem de pincel já aprovados.
 - **Conferir no celular e no desktop:** verificar alinhamento, leitura, enquadramento e espaço do CTA na navegação fixa. Validar o build antes de publicar.
+
+
+## Compartilhamento — 13/11/2026
+
+Todas as páginas têm capa padrão 1200×630: fundo creme, nome em verde, pincel ocre, gravura straddle aprovada e selo HF. Sem data/preço na capa permanente. Não cortar mãos ou pés; manter texto legível em miniatura. Novas capas específicas podem variar a fotografia/gravura aprovada, preservando a identidade. URLs das imagens são absolutas e versionadas para evitar cache antigo. `FestMeta` aplica a capa automaticamente; o build impede páginas sem metadados ou imagem válida. Receita: `scripts/festival_social_image.mjs`.

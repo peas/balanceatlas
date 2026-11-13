@@ -3,12 +3,15 @@
 // Head, fonts, global stylesheet, footer and the small page scripts.
 import '../festival/festival.css';
 import { FEST, VENDA } from '../festival/data';
+import FestMeta from '../components/fest/FestMeta.astro';
 import FestNav from '../components/fest/FestNav.astro';
 import HFSelo from '../components/fest/HFSelo.astro';
 
-interface Props { title?: string; description?: string; stickyNav?: boolean }
+interface Props { title?: string; description?: string; stickyNav?: boolean; indexable?: boolean; ogImage?: string; ogImageAlt?: string }
 const {
   stickyNav = true,
+  indexable = stickyNav,
+  ogImage, ogImageAlt,
   title = '1º HandstandFest · São Paulo',
   description = `1º HandstandFest · 3 dias de parada de mão em São Paulo, ${FEST.dias[0]} a ${FEST.dias[2]} de ${FEST.mes} de ${FEST.ano}.`,
 } = Astro.props;
@@ -19,8 +22,7 @@ const {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex, nofollow" />
-    <meta name="description" content={description} />
+    <FestMeta {title} {description} {indexable} image={ogImage} imageAlt={ogImageAlt} />
     <title>{title}</title>
     <link rel="icon" type="image/svg+xml" href="/festival/brand/hf-green-ochre-v7.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />

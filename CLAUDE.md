@@ -412,3 +412,28 @@ Desktop also shows HF and the ticket CTA; mobile keeps only the three visible li
 The old header menu and scroll-triggered duplicate were removed; body padding and anchor offsets reserve space.
 Study/editorial pages retain their existing stickyNav=false opt-out. The ticket footnote now links to Sobre
 with Paulo's shorter copy, without repeating the batch progression.
+
+
+## Festival search indexing and sharing — 13 November 2026
+
+Paulo explicitly enabled search indexing: the official home, Sobre, Handstand and Mundo are now index/follow.
+This supersedes earlier “festival pages are noindex” instructions; the Balance Atlas site remains unchanged.
+`FestMeta.astro` owns description, canonical, Open Graph, Twitter large cards and JSON-LD (WebSite/WebPage;
+Event on the home with dates from FEST and confirmed venue; no ticket offers while Sympla is unpublished).
+`FestLayout` supplies it automatically: public pages default to indexable; stickyNav=false study/editorial
+pages default to noindex. Use explicit indexable when navigation and indexing differ. The standalone engraving
+lab also uses FestMeta with noindex. Never strip noindex from experiments just to grow the sitemap.
+
+Every future festival page must use FestLayout or FestMeta. Default social image is the approved straddle
+engraving on cream/ochre, a versioned 1200x630 JPEG under public/festival/social/. Per-page ogImage/ogImageAlt
+can override with another reviewed local 1200x630 JPEG. Page titles/descriptions remain specific. Regeneration:
+`node scripts/festival_social_image.mjs` (bundled fonts, original engraving, v07 stroke/seal; no regenerated art).
+
+After festival_hide, `scripts/festival_metadata.mjs` validates ALL non-redirect HTML (metadata, JSON-LD,
+canonical, local image existence/dimensions/size). Build fails if a future page bypasses the contract.
+It generates dist/festival/sitemap.xml from indexable pages only, plus robots.txt allowing crawling so
+crawlers can read noindex on studies. Worker routes root /robots.txt and /sitemap.xml to those festival
+assets, not the Balance Atlas root. Do not use blanket Disallow, which blocks social previews/noindex discovery.
+Canonical and OG URLs always use handstandfest.com.br without /festival or /hf; assets retain /festival.
+No invented lastmod, reviews, ratings, live ticket availability or organizer business identity.
+References: https://ogp.me/ and Google Search Central indexing/Event structured-data documentation.

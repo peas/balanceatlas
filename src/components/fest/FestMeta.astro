@@ -1,0 +1,52 @@
+---
+import { FEST } from '../../festival/data';
+interface Props { title: string; description: string; indexable?: boolean; image?: string; imageAlt?: string }
+const { title, description, indexable = true,
+  image = '/festival/social/handstandfest-engraving-v1.jpg',
+  imageAlt = 'HandstandFest: gravura de uma pessoa em parada de mão com pernas abertas, pincelada ocre e selo HF sobre fundo creme.',
+} = Astro.props;
+const origin = 'https://handstandfest.com.br';
+const path = Astro.url.pathname.replace(/^\/festival(?=\/|$)/, '') || '/';
+const canonical = new URL(path.endsWith('/') ? path : `${path}/`, origin).href;
+const imageUrl = new URL(image, origin).href;
+const eventId = `${origin}/#event`;
+const graph: Record<string, unknown>[] = [
+  { '@type': 'WebSite', '@id': `${origin}/#website`, url: `${origin}/`, name: 'HandstandFest', inLanguage: 'pt-BR' },
+  { '@type': 'WebPage', '@id': `${canonical}#webpage`, url: canonical, name: title, description,
+    inLanguage: 'pt-BR', isPartOf: { '@id': `${origin}/#website` },
+    primaryImageOfPage: { '@type': 'ImageObject', url: imageUrl, width: 1200, height: 630 },
+    ...(path === '/' ? { mainEntity: { '@id': eventId } } : {}),
+  },
+];
+if (path === '/') graph.push({
+  '@type': 'Event', '@id': eventId, name: '1º HandstandFest · festival de parada de mão',
+  description, url: canonical, image: [imageUrl],
+  startDate: `${FEST.ano}-${String(FEST.mesNumero).padStart(2, '0')}-${FEST.dias[0]}`,
+  endDate: `${FEST.ano}-${String(FEST.mesNumero).padStart(2, '0')}-${FEST.dias[2]}`,
+  eventStatus: 'https://schema.org/EventScheduled', eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+  location: { '@type': 'Place', name: 'Trapézio Voador', address: { '@type': 'PostalAddress',
+    streetAddress: 'Rua Alvarenga, 150 · Jardim Guedala', addressLocality: 'São Paulo', addressRegion: 'SP', addressCountry: 'BR' } },
+  // No offers until the ticketing URL is live. Do not imply tickets are on sale.
+});
+---
+<meta name="description" content={description} />
+<meta name="robots" content={indexable ? 'index, follow, max-image-preview:large' : 'noindex, nofollow'} />
+<link rel="canonical" href={canonical} />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="HandstandFest" />
+<meta property="og:locale" content="pt_BR" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical} />
+<meta property="og:image" content={imageUrl} />
+<meta property="og:image:secure_url" content={imageUrl} />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content={imageAlt} />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={imageUrl} />
+<meta name="twitter:image:alt" content={imageAlt} />
+<script type="application/ld+json" set:html={JSON.stringify({ '@context': 'https://schema.org', '@graph': graph }).replace(/</g, '\\u003c')} />

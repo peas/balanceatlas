@@ -15,7 +15,7 @@ export const TICKETS = SYMPLA_NO_AR ? SYMPLA : '/festival/#ingressos';
 export const TICKETS_ALVO = SYMPLA_NO_AR ? '_blank' : undefined; // target of the ticket links
 
 // The festival dates live here only (pages, FAQ and Remotion compositions read these)
-export const FEST = { dias: [16, 17, 18], mes: 'abril', mesCurto: 'abr', ano: 2027 } as const;
+export const FEST = { dias: [16, 17, 18], mes: 'abril', mesNumero: 4, mesCurto: 'abr', ano: 2027 } as const;
 export const QUANDO = `${FEST.dias[0]} — ${FEST.dias[2]} ${FEST.mesCurto} ${FEST.ano}`; // 16 — 18 abr 2027
 
 // Bento: photos and videos mixed. `video` cells play on hover (desktop) or when in view (touch).
