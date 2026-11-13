@@ -1,5 +1,7 @@
 # Balance Atlas memory
 
+13 Nov 2026: moved the detailed daily schedule from home to Sobre o evento (#grade), keeping a concise home link/old anchor and the existing shared data. Removed the Balance Atlas footer attribution across festival pages at Paulo’s request.
+
 13 Nov 2026: visual consistency published in 71ab2a0 (Pages succeeded). Follow-up venue copy supplied by Paulo: “Um espaço amplo, confortável, para as práticas do handstand e além.” without quotation marks; metro proximity unquoted; removed the explanatory photo/source/date paragraph at his request. Venue Instagram links remain on the photo cards.
 
 13 Nov 2026: applied Gabriel’s screenshot feedback to the official site: shared 3px content outlines / 10px corners, rectangular CTAs including nav, contrasting media frames, rounded ticket cards without faded outlines, edition above HAND aligned left. Tokens in festival.css; decision and future design principles in MARCA.md supersede 12 Nov pill CTAs/inline edition. Mobile (390px) and desktop (1366px) visually checked; build passed. Paulo requested publication via the existing main → GitHub Pages workflow.

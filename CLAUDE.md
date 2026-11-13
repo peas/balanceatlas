@@ -395,3 +395,11 @@ shared preview/export components: `natureza-pieces.tsx`; workflow: `ig2/NATUREZA
 freeze, photographic P&B, ochre text highlight and large painted HF seal. Solo water press has lower text
 to leave feet visible; indoor pike photo has the seal on the right. Selected pool/deck cuts and Gabriel transitions now use registered anatomical engraving over the intact colour still, with independent v07 ochre at 65%; see `design/handstandfest-arte/2026-11-13-freezes/README.md`. No music.
 Web derivatives live in `public/festival/ig/natureza-v1/`; the initial export batch was stopped at Paulo’s request; review is page-only, and partial local exports predate engraving. Catalogue backlinks record actual composition use.
+
+
+## Festival navigation and footer — 13 November 2026
+
+The detailed three-day schedule now lives on `/festival/sobre/#grade`, after the event introduction tabs.
+The home keeps `#grade` as a short link to that section, preserving existing anchors; level cards stay on the home.
+Schedule data remains in `src/festival/home-content.ts`; the existing scoped tab handler serves both sets of tabs
+on Sobre independently. Paulo removed the “um projeto Balance Atlas” footer link across festival pages.

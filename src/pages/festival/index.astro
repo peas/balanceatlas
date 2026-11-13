@@ -10,7 +10,7 @@ import HFSelo from '../../components/fest/HFSelo.astro';
 import ArtGesture from '../../components/fest/ArtGesture.astro';
 import { TICKETS, TICKETS_ALVO, FEST, VENDA } from '../../festival/data';
 
-import { LOTES, VAGAS, MAPS_Q, MAPS_PLACE, days, levelName, tracks, lineup, facts } from '../../festival/home-content';
+import { LOTES, VAGAS, MAPS_Q, MAPS_PLACE, lineup, facts } from '../../festival/home-content';
 
 ---
 
@@ -100,43 +100,11 @@ import { LOTES, VAGAS, MAPS_Q, MAPS_PLACE, days, levelName, tracks, lineup, fact
     </div>
   </section>
 
-  <!-- SCHEDULE -->
-  <section class="schedule wrap" id="grade" data-tabs>
-    <div class="section-head">
-      <h2 class="display" data-reveal>Grade</h2>
-      <p class="note"><span class="pill">Provisória</span> Ainda estamos ajustando as aulas e os professores de cada bloco. O que já vale: <strong>4 blocos por dia</strong>, parada de mão sempre na sua turma, com professor e professores assistentes, e um fio que começa na base da sexta e termina no jam de domingo.</p>
-    </div>
-    <div class="days" role="tablist">
-      {days.map((d, i) => (
-        <button role="tab" class="day" data-tab={d.id} aria-selected={i === 0 ? 'true' : 'false'}>
-          <span>{d.label}</span><b>{d.date}</b><em>{d.arc}</em>
-        </button>
-      ))}
-    </div>
-    <div class="legend">
-      {(Object.keys(levelName) as (keyof typeof levelName)[]).map((l) => <span class={`lvl lvl-${l}`}>{levelName[l]}</span>)}
-    </div>
-    {days.map((d, i) => (
-      <div class="grid-day" data-panel={d.id} hidden={i !== 0}>
-        <div class="grid-row grid-head">
-          <span></span>{tracks.map((r) => <span>{r}</span>)}
-        </div>
-        {d.rows.map((row) => (
-          <div class="grid-row">
-            <span class="time">{row.time}</span>
-            {'all' in row ? (
-              <span class:list={['cell', 'all', { pause: row.pause }]}>{row.all}</span>
-            ) : (
-              row.tracks.map((s) => (
-                <span class={`cell lvl-${s.level}`}>
-                  <small>{levelName[s.level]}</small>{s.t}
-                </span>
-              ))
-            )}
-          </div>
-        ))}
-      </div>
-    ))}
+  <!-- The detailed schedule lives on the event page; retain the old home anchor. -->
+  <section class="schedule wrap" id="grade">
+    <h2 class="display" data-reveal>Programação</h2>
+    <a class="cta cta-ink" href="/festival/sobre/#grade">Veja a grade dos três dias <span aria-hidden="true">→</span></a>
+    <p class="cta-note">Programação provisória, com aulas e professores em definição.</p>
   </section>
 
   <!-- LEVELS -->
