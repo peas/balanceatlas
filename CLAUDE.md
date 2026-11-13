@@ -340,3 +340,11 @@ slots; start date is editable/local-only. `editorial-pieces.tsx` adds four ochre
 Carousel slides are static and individually visible. Old Studio remains a secondary collapsed library.
 Paulo explicitly prioritizes niche community over virality. No automatic Instagram publishing; technical
 exercise copy/capture and professional portraits stay pending review. References are not festival guests.
+
+**Editorial image variety (12 November 2026):** Paulo found the fixed engraved straddle overused.
+`ig2/editorial-images.ts` now curates ten existing catalogue photos and maps candidates to calendar days.
+New static pieces/stories mix real group/class photos and varied single-person poses; the original engraving
+is a selective illustration, not a default story stamp. Pending exercise slots show contextual references
+and outstanding capture needs, never substitute a different movement as the demonstration. Future engraving
+candidates and exact catalogue IDs are recorded in `ig2/ESTRATEGIA.md`; no new AI engraving was generated
+in this pass. Preserve hands/feet and identify retreat imagery as archive, not future festival coverage.

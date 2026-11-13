@@ -20,7 +20,7 @@ conta e uma janela em que seja possível responder às pessoas.
 
 ## Linguagem
 
-- Ocre, papel quente e verde; quatro peças estáticas editoriais novas reaproveitam as gravuras aprovadas.
+- Ocre, papel quente e verde; peças estáticas alternam fotos do acervo com gravura pontual.
 - Carrosséis só de imagens/texto, com cada lâmina visível na página e sem controles de reprodução.
 - Alternar movimento real, freeze/P&B/pintura e gravura anatômica estática. Preservar cor em lugares e encontros.
 - O freeze `arte-freeze-ocre` já existe e usa recorte P&B: não o chamar de hachura anatômica.
@@ -65,3 +65,20 @@ oficial nem promessa de crescimento. Fontes primárias:
 
 Playbooks complementares: `~/.claude/skills/instagram-creation/SKILL.md` (editorial e composição) e
 `~/.claude/skills/videos-remotion/SKILL.md` (implementação/render). A página não envia nada ao Instagram.
+
+## Variedade de imagens — 12/11/2026
+
+Paulo considerou o straddle hachurado repetitivo. Ele é uma ilustração editorial, não um carimbo obrigatório
+da marca. `editorial-images.ts` seleciona dez fotos já catalogadas, com IDs, URLs, descrição e função;
+`DAY_IMAGE` associa referências aos dias. O catálogo continua sendo a fonte das anotações visuais.
+
+- Comunidade e encontros: fotografias naturais de grupos e aulas. Identificar como acervo de retiros,
+  sem sugerir que sejam registros do festival futuro.
+- Formas: reta de costas, perfil, straddle de cima e outras posições/enquadramentos. A gravura original
+  fica na abertura do carrossel de formas; não serve de fundo automático a todos os stories.
+- Candidatas a futuras gravuras: `photo-greece-2025-11` (perfil) e `photo-saopaulo-2024-106` (vista superior).
+  Nenhuma nova hachura foi gerada nesta rodada; conferir anatomia e preservação de dedos ao produzir.
+- Pautas pendentes mostram referências e o que ainda falta captar. Foto no chão não é canoinha;
+  close dos punhos não é caminhada do urso; extensão do tronco não é gato-vaca.
+- Manter mãos e pés no enquadramento (`object-fit: contain` nas novas peças), alternar pessoas,
+  ângulos e contextos entre publicações; repetir a identidade, não sempre a mesma figura.
