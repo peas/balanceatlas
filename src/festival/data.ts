@@ -1,18 +1,13 @@
 // 1º HandstandFest: data shared by /festival and its subpages.
 
 export const R2 ='https://media.balanceatlas.com/images/retreats';
-// Placeholder until the real ticketing link exists (Paulo, 29/10/2026: "link fake" for now)
-// Sales of the 1st lot open on Sympla on 18/11/2026 at 14:21 (Brasília). Pages show "abre 18/11" before that and
-// switch to "aberto" / "agora" in the browser after it (script in FestLayout, elements with data-venda).
-export const VENDA = { abre: '2026-11-18T14:21:00-03:00', dia: '18/11' } as const;
-// Sympla event (created by Gabriel and Paulo). On 10/11/2026 it fell back to DRAFT: Sympla only publishes paid
-// tickets after the payout registration (CPF/CNPJ), which Gabriel still has to fill; the public URL answers 404
-// until he does and clicks "Publicar". While SYMPLA_NO_AR is false the buttons scroll to the ticket section of
-// the home; flip it to true once the page is back.
-export const SYMPLA = 'https://www.sympla.com.br/evento/handstand-fest/3650651';
-export const SYMPLA_NO_AR = false;
+// Sympla publication verified 13/11/2026: event is public, but the ticket is “Não iniciado”.
+// Paulo confirmed R$450 + R$45 service fee. Sales are still scheduled for 18 November.
+export const VENDA = { abre: '2026-11-18T14:21:00-03:00', dia: '18/11', preco: 450, taxa: 45 } as const;
+export const SYMPLA = 'https://www.sympla.com.br/evento/1-handstandfest-festival-de-parada-de-mao/3650651';
+export const SYMPLA_NO_AR = true;
 export const TICKETS = SYMPLA_NO_AR ? SYMPLA : '/festival/#ingressos';
-export const TICKETS_ALVO = SYMPLA_NO_AR ? '_blank' : undefined; // target of the ticket links
+export const TICKETS_ALVO = SYMPLA_NO_AR ? '_blank' : undefined;
 
 // The festival dates live here only (pages, FAQ and Remotion compositions read these)
 export const FEST = { dias: [16, 17, 18], mes: 'abril', mesNumero: 4, mesCurto: 'abr', ano: 2027 } as const;
@@ -42,7 +37,7 @@ export const faqFest: { q: string; a: string }[] = [
   { q: 'Como é um dia do festival?', a: 'Yoga e mobilidade com todo mundo junto, aquecimento de punhos e ombros já na sua turma, parada de mão de manhã, almoço, uma aula de tema à tarde e, no fim do dia, parada de mão de novo ou jam com os professores circulando. Cada dia tem um fio: sexta é base, sábado é construção, domingo é integração, e termina mais cedo. A grade ainda está sendo ajustada com os professores.' },
   { q: 'Preciso já ficar em pé de mão?', a: 'Não. A turma de básico é para quem treina na parede e ainda não segura o livre. A turma de intermediário e avançado pede handstand livre por uns 10 segundos de forma consistente (30 é o ideal); é lá que entram press, one arm e formas.' },
   { q: 'Qual turma é a minha?', a: 'Se você ainda não segura o livre, básico. Se segura 10 segundos no livre com consistência, intermediário e avançado. Na dúvida, manda um vídeo curto quando se inscrever e a gente te ajuda a escolher.' },
-  { q: 'Quanto custa?', a: 'Passe completo para os 3 dias em três lotes: as primeiras 10 vagas a R$ 490, as 35 seguintes a R$ 590 e as últimas 15 a R$ 690. São 60 vagas no total. Por enquanto só vendemos o passe completo. A venda é pelo Sympla, que soma a taxa de serviço dele ao valor (R$ 49 no 1º lote) e parcela em até 12 vezes.' },
+  { q: 'Quanto custa?', a: `Passe completo para os 3 dias em três lotes: as primeiras 10 vagas a R$ ${VENDA.preco}, as 35 seguintes a R$ 590 e as últimas 15 a R$ 690. São 60 vagas no total. Por enquanto só vendemos o passe completo. A venda é pelo Sympla, que soma a taxa de serviço dele ao valor (R$ ${VENDA.taxa} no 1º lote) e parcela em até 12 vezes.` },
   { q: 'Como compro?', a: 'Pelo botão "Garanta sua vaga". Quando um lote esgota, o próximo abre sozinho.' },
   { q: 'Venho do yoga, do acroyoga ou da calistenia. É para mim?', a: 'Sim. O festival é para quem quer ampliar o repertório a partir da parada de mão, de qualquer prática: yoga, acroyoga, calistenia, circo, dança ou movimento.' },
   { q: 'Quem dá aula?', a: 'Agustin Melesi, com Rocío, Louisse Aldrigues e Dany García já confirmados. Cada turma tem também professores assistentes. Mais nomes em breve.' },

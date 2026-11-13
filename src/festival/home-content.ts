@@ -1,9 +1,9 @@
 // Shared event content for the original home and the art studies.
-import { FEST } from './data';
+import { FEST, VENDA } from './data';
 import type { PosterProps } from './compositions';
 
 export const LOTES = [
-  { n: '1º lote', price: 490, note: 'Primeiras 10 vagas', state: 'aberto' },
+  { n: '1º lote', price: VENDA.preco, note: 'Primeiras 10 vagas', state: 'aberto' },
   { n: '2º lote', price: 590, note: 'Próximas 35 vagas', state: 'proximo' },
   { n: '3º lote', price: 690, note: 'Últimas 15 vagas', state: 'proximo' },
 ] as const;
@@ -80,5 +80,5 @@ export const lineup: { poster: PosterProps; url?: string; quote?: string; source
   },
 ];
 
-export const facts = ['3 dias', '4 aulas por dia', 'Do básico ao avançado', 'Butantã', '1º lote R$ 490', `${VAGAS} vagas`, 'Handstand', 'Parada de mão'];
+export const facts = ['3 dias', '4 aulas por dia', 'Do básico ao avançado', 'Butantã', `1º lote R$ ${VENDA.preco} + taxa`, `${VAGAS} vagas`, 'Handstand', 'Parada de mão'];
 

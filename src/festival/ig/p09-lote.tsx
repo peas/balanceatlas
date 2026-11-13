@@ -3,12 +3,12 @@ import { useCurrentFrame, useVideoConfig, spring } from 'remotion';
 import {
   ACCENT, CHALK, Clip, Etiqueta, Foto, Gancho, INK, LIVE, MONO, Quadro, Selo, QUANDO_CURTO, REEL, STAGE, f, useIn, type PecaProps,
 } from './kit';
-import { FEST } from '../data';
+import { FEST, VENDA } from '../data';
 import type { Slide } from './tipos';
 
-// Lotes: first 10 at 490, next 35 at 590, last 15 at 690 (60 seats).
+// Lotes: first 10 at VENDA.preco, next 35 at 590, last 15 at 690 (60 seats).
 const LOTES = [
-  { preco: 490, vagas: 10 },
+  { preco: VENDA.preco, vagas: 10 },
   { preco: 590, vagas: 35 },
   { preco: 690, vagas: 15 },
 ];

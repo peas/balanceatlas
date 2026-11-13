@@ -26,7 +26,7 @@ if (path === '/') graph.push({
   eventStatus: 'https://schema.org/EventScheduled', eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
   location: { '@type': 'Place', name: 'Trapézio Voador', address: { '@type': 'PostalAddress',
     streetAddress: 'Rua Alvarenga, 150 · Jardim Guedala', addressLocality: 'São Paulo', addressRegion: 'SP', addressCountry: 'BR' } },
-  // No offers until the ticketing URL is live. Do not imply tickets are on sale.
+  // Sales still show “Não iniciado” on Sympla (13/11). No offers until purchases are enabled.
 });
 ---
 <meta name="description" content={description} />

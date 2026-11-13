@@ -437,3 +437,14 @@ assets, not the Balance Atlas root. Do not use blanket Disallow, which blocks so
 Canonical and OG URLs always use handstandfest.com.br without /festival or /hf; assets retain /festival.
 No invented lastmod, reviews, ratings, live ticket availability or organizer business identity.
 References: https://ogp.me/ and Google Search Central indexing/Event structured-data documentation.
+
+
+## Sympla live, sales scheduled — 13 November 2026
+
+Public canonical event URL verified in the browser: https://www.sympla.com.br/evento/1-handstandfest-festival-de-parada-de-mao/3650651.
+SYMPLA_NO_AR is now true, superseding draft/404 notes. The ticket widget still says “Não iniciado” and purchase
+is disabled; keep the scheduled 18 November opening, do not label tickets as already on sale. Paulo confirmed
+R$450 + R$45 fee for lot 1 after the live widget disagreed with the old R$490 copy. VENDA.preco/taxa are now
+shared by home, ticker, FAQ, studies and Instagram closing/lot templates. JSON-LD has no active offer yet.
+Sympla's event description itself still says R$490 and links the old balanceatlas.com/festival URL; that external
+copy needs an organizer edit (not modified by this site deployment).

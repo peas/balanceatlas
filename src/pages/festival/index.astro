@@ -31,7 +31,7 @@ import { LOTES, MAPS_Q, MAPS_PLACE, lineup, facts } from '../../festival/home-co
       </div>
       <div class="hero-actions">
         <a class="cta" href="#ingressos">Garantir vaga <span aria-hidden="true">→</span></a>
-        <p class="lote-info">1º lote <span data-venda="aberto">abre {VENDA.dia}</span> · R$ 490 · 10 vagas</p>
+        <p class="lote-info">1º lote <span data-venda="aberto">abre {VENDA.dia}</span> · R$ {VENDA.preco} + taxa · 10 vagas</p>
       </div>
     </div>
     <figure class="hero-media moldura">
@@ -184,6 +184,7 @@ import { LOTES, MAPS_Q, MAPS_PLACE, lineup, facts } from '../../festival/home-co
             <p class="lote-n">{l.n}{l.state === 'aberto' && <em><i aria-hidden="true"></i><span data-venda="agora">abre {VENDA.dia}</span></em>}</p>
             <p class="lote-price"><small>R$</small>{l.price}</p>
             <p class="lote-note">{l.note}</p>
+            {l.state === 'aberto' && <p class="lote-note">+ R$ {VENDA.taxa} de taxa Sympla</p>}
           </article>
         ))}
       </div>

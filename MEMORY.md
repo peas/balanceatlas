@@ -1,5 +1,7 @@
 # Balance Atlas memory
 
+13 Nov 2026: verified Sympla is published but ticket “Não iniciado”/purchase disabled. Enabled canonical Sympla link; retained 18 Nov scheduled opening. Paulo approved R$450 + R$45 fee (VENDA shared constants), replacing old R$490. External Sympla description still has old price/site URL; no external edit performed.
+
 13 Nov 2026: Paulo enabled search indexing for official festival pages. Shared FestMeta adds canonical/OG/Twitter/JSON-LD; approved engraved straddle social card is default for future pages. Build validates all festival metadata and generates sitemap from indexable pages only; studies remain noindex. Worker routes root discovery files to festival assets. Contract in CLAUDE.md.
 
 13 Nov 2026: Paulo revised Handstand page lead to “O que é e por que está ganhando tanto espaço?” and journey punchline to “Parece difícil? É porque precisa de tempo!”. Removed the visible Balance Atlas photo attribution/link from that page at his request; media provenance stays in source/catalogue.

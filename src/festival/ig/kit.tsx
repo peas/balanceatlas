@@ -1,3 +1,4 @@
+import { VENDA } from '../data';
 import { getRemotionEnvironment, staticFile } from 'remotion';
 // Shared kit for the HandstandFest Instagram pieces (/festival/instagram).
 // Pure Remotion, played by @remotion/player on the page: nothing is rendered to MP4 yet (the palette is still open),
@@ -357,7 +358,7 @@ export const Legenda = ({ words, from = 0, y = 1130, size = 66 }: { words: Palav
 export const QUANDO_CURTO = `${FEST.dias[0]} — ${FEST.dias[2]} ${FEST.mesCurto} ${FEST.ano}`;
 
 /** The only place where the logo appears. Full stage colour, lockup, date, place, one call to action. */
-export const Fecho = ({ cta = 'Link na bio', sub = '1º lote · R$ 490 · 10 vagas', formato = 'reel' }: { cta?: string; sub?: string; formato?: Formato }) => {
+export const Fecho = ({ cta = 'Link na bio', sub = `1º lote · R$ ${VENDA.preco} + taxa · 10 vagas`, formato = 'reel' }: { cta?: string; sub?: string; formato?: Formato }) => {
   const a = useIn(0, 18), b = useIn(6, 16), c = useIn(14, 16);
   const top = formato === 'card' ? 150 : SAFE[formato].y0 + 60;
   const line: CSSProperties = { ...WIDE, textTransform: 'uppercase', lineHeight: 0.86, fontSize: 194, letterSpacing: -3 };
