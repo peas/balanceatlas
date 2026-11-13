@@ -139,3 +139,14 @@ principalmente mãos/cabeça apoiadas, pessoas pequenas ao fundo e membros corta
 O detector opcional existente em `~/paulo.com.br-render/scripts/pose.py` pode apoiar um caso específico,
 mas não é pré-requisito para este índice. Consultar primeiro estes rótulos ao escolher imagens para Instagram,
 exercícios ou gravuras; confirmar visualmente a seleção final.
+
+## Lote Gabriel — 12/11/2026
+
+Adicionados ao mesmo `catalogo.yaml`: **9 vídeos e 11 imagens** recebidos pelo Paulo (IDs `gabriel-img-*`).
+Agora são 201 imagens no catálogo, das quais 200 revisadas e uma URL indisponível. Originais e metadados
+ficam em `local/festival/gabriel-2026-11-12/`; ingestão repetível via `scripts/festival_gabriel.py`.
+As formas e contagens são aproximadas; quem aparece em grupo não foi identificado automaticamente.
+Os vídeos foram inspecionados por folhas a cada 2 s; o som está marcado como não revisado.
+
+Selecionados: IMG_3372 e IMG_3377 (Reels com freeze), IMG_8751 (gravura) e IMG_7876 (foto em cor).
+Tempos, render e aplicações: `design/handstandfest-arte/2026-11-12-gabriel/README.md`.

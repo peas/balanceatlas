@@ -1,6 +1,7 @@
 // CLI-only entry: shared compositions, local fonts and the same CSS tokens as the website.
 import { Composition, continueRender, delayRender, registerRoot, staticFile, cancelRender } from 'remotion';
 import { PIECES } from './pieces';
+import { GABRIEL_PIECES } from './gabriel-pieces';
 import { EDITORIAL_PIECES } from './editorial-pieces';
 import '../../../local/festival/render.css';
 
@@ -12,7 +13,7 @@ Promise.all([
   .then(() => continueRender(fontsReady)).catch(cancelRender);
 
 function RenderRoot() {
-  return <>{[...PIECES, ...EDITORIAL_PIECES].flatMap(piece => piece.slides.map((slide, i) => ({piece,slide,i}))).map(({piece,slide,i}) => {
+  return <>{[...PIECES, ...EDITORIAL_PIECES, ...GABRIEL_PIECES].flatMap(piece => piece.slides.map((slide, i) => ({piece,slide,i}))).map(({piece,slide,i}) => {
     return <Composition key={`${piece.id}-${i}`} id={piece.slides.length === 1 ? piece.id : `${piece.id}-${i+1}`}  component={slide.component} durationInFrames={Math.round(slide.seconds * 30)} fps={30} width={1080} height={slide.height} defaultProps={{ guides: false, treatment: 'direction' as const }} />;
   })}</>;
 }

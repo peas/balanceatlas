@@ -355,3 +355,12 @@ existing overhead straddle now illustrate calendar day 3; days 2/16 stories use 
 Separate optional v07 paint uses arc/oval/sweep and ochre/light-ochre tones; community photos stay natural.
 Exact prompts, source hashes, PNG masters and regeneration: `design/handstandfest-arte/2026-11-12-editorial/`.
 This supersedes the previous no-new-engraving status. Not a procedural video filter or anatomy measurement.
+
+**Gabriel batch (12 November 2026):** Nine supplied MOVs + eleven photos now share `acervo/catalogo.yaml`
+(IDs `gabriel-img-*`; 201 image records total). Raw copies/proxies/contact sheets stay under
+`local/festival/gabriel-2026-11-12/`. Import/export scripts: `festival_gabriel.py`, `festival_gabriel_publish.py`.
+Four selected sources power `ig2/gabriel-pieces.tsx`: two exact-frame freeze/P&B/ochre Reels (IMG_3372 at
+6 s and IMG_3377 at 10 s), natural IMG_7876 and a new transparent engraving from IMG_8751. Calendar days
+2/7/17/21; stories reuse native posts rather than unrelated art. Prompts, hashes, render recipes and limits:
+`design/handstandfest-arte/2026-11-12-gabriel/README.md`. Video brush masks retain the scene, not segmentation
+or generated anatomical hatching. No source audio in exports, no automated Instagram posting.

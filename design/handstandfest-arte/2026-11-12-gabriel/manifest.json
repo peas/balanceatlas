@@ -1,0 +1,10 @@
+{
+  "catalogue_id": "gabriel-img-8751",
+  "source_sha256": "fe91ff6f45ecf0c4c7e450f78b30b42ff7f389e1616bf5409d252a18253775f2",
+  "generator": "built-in image_gen, transparent_background=true",
+  "generated_filename": "exec-6bec3ded-8c51-4755-9f80-abd9e10adbcd.png",
+  "prompt": "prompts/gabriel-arco.txt",
+  "output": "assets/gabriel-arco.png",
+  "output_sha256": "2815e88f7ba2366cc24f98aa567eaaf5116a880bd2c08b862473e4e71c791a9e",
+  "status": "reviewed for editorial composition; user review pending"
+}

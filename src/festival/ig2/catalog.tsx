@@ -1,5 +1,6 @@
 // Every Instagram piece of the festival on one page: the first ten (ig/) and the second study (ig2/), grouped by
 // named visual style so Paulo and Gabriel can compare and pick. A new piece needs one entry in STYLE_OF.
+import { GABRIEL_PIECES } from './gabriel-pieces';
 import { EDITORIAL_PIECES } from './editorial-pieces';
 import { Series } from 'remotion';
 import { PIECES, type Piece, type Slide } from './pieces';
@@ -18,6 +19,7 @@ export const STYLES: { id: StyleId; name: string; what: string }[] = [
 ];
 
 const STYLE_OF: Record<string, StyleId> = {
+  'gabriel-transicoes':'congela', 'gabriel-praia':'congela', 'gabriel-gravura':'gravura', 'gabriel-paisagem':'janela',
   'gravuras-aprovadas': 'gravura', 'arte-gravura': 'gravura',
   'arte-freeze-ocre': 'congela', 'arte-freeze-amarelo': 'congela',
   'fotos-ocre': 'foto-ocre', 'fotos-ocre-motion': 'foto-ocre',
@@ -31,7 +33,7 @@ const first: CatalogPiece[] = PECAS.map((p) => ({
   slides: (REGISTRO[p.id] ?? []).map((s, i) => ({ name: s.nome ?? (i ? `Quadro ${i + 1}` : p.titulo), component: s.comp, seconds: s.frames / FPS, height: s.h, cover: s.capa ?? 0, cues: [] })),
 })).filter((p) => p.slides.length);
 
-const second: CatalogPiece[] = [...PIECES, ...EDITORIAL_PIECES].map((p) => ({ ...p, style: p.id.startsWith('ed-') ? 'gravura' : STYLE_OF[p.id] ?? 'janela' }));
+const second: CatalogPiece[] = [...PIECES, ...EDITORIAL_PIECES, ...GABRIEL_PIECES].map((p) => ({ ...p, style: p.id.startsWith('ed-') ? 'gravura' : STYLE_OF[p.id] ?? 'janela' }));
 
 export const CATALOG: CatalogPiece[] = STYLES.flatMap((s) => [...first, ...second].filter((p) => p.style === s.id));
 

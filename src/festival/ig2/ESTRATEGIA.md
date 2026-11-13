@@ -91,3 +91,14 @@ As três entram no carrossel do dia 3; perfil e diagonal aparecem pontualmente n
 A tinta continua em SVG separado, com oval, arco aberto e faixa, respectivamente; grupos mantêm fotografia.
 Prompts executados, hashes, PNGs mestres, exportação e limites: `design/handstandfest-arte/2026-11-12-editorial/`.
 Isso substitui a indicação anterior de que nenhuma nova gravura havia sido gerada.
+
+### Acervo do Gabriel — quatro substituições no ciclo
+
+Em 12/11, o novo lote de 9 vídeos + 11 imagens trouxe quatro peças: tuck/reta no dia 2, prática na praia
+no dia 7, gravura de Gabriel no dia 17 e fotografia diante do mar no dia 21. Isso troca quatro materiais
+da proposta anterior; o ciclo continua com 21 dias. Stories dessas peças reaproveitam o post nativamente
+ou um trecho verdadeiro; não recebem a antiga figura genérica. As perguntas e pendências foram ajustadas.
+
+Dois Reels congelam exatamente o quadro da fonte, passam a P&B e recebem a mancha como janela da cena.
+A gravura anatômica gerada está somente no estático. Guia e renders: `design/handstandfest-arte/2026-11-12-gabriel/`.
+O slot do dia 17 agora é Gabriel; outras referências brasileiras podem entrar no ciclo seguinte.

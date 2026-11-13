@@ -6497,3 +6497,563 @@
   largura: 452
   altura: 602
   sha256: "08175c6ce3f99f30e5b69534e780fea9b5166589be6549d339aa16852ee463b3"
+
+# Gabriel — lote recebido em 12/11/2026: 9 vídeos e 11 imagens.
+
+- id: gabriel-img-3377
+  arquivo: "gabriel-2026-11-12/IMG_3377.MOV"
+  origem: "Enviado pelo Paulo: acervo do Gabriel"
+  recebido_em: "2026-11-12"
+  arquivo_local: "local/festival/gabriel-2026-11-12/originals/IMG_3377.MOV"
+  midia: "video"
+  camera: "celular"
+  quem: ["Gabriel"]
+  local: "não confirmado"
+  resumo: "Gabriel alterna abertura e flexão das pernas na areia, passa pela reta e desce até sentar."
+  handstand: true
+  pessoas: 3
+  pessoas_em_handstand: 1
+  forma: ["straddle", "tuck", "reta", "saida"]
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["reel", "freeze-ocre"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "folhas-de-contato-2s", "precisao": "aproximada", "estado": "revisado"}
+  largura: 1080
+  altura: 1920
+  sha256: "2c2465a8a4813281f04cf1947761d10fb72b051301fbe168f080bf2fba0e5814"
+  duracao: 27.958333
+  fps_original: "30/1"
+  transfer_original: "arib-std-b67"
+  rotacao_original: -90
+  audio_presente: true
+  som: "não revisado; renders propostos mudos"
+  cenas: [{"de": 0, "ate": 9, "o_que": "pernas abertas e flexionadas alternam, mãos permanecem na areia", "quadro": "vertical; inteiro"}, {"de": 9, "ate": 15, "o_que": "aproxima as pernas e sustenta uma reta", "quadro": "vertical; inteiro"}, {"de": 15, "ate": 27, "o_que": "abre as pernas e desce controladamente até o chão", "quadro": "vertical; inteiro"}]
+  problemas: "Praia; há pessoas distantes atravessando o fundo. Não há subida no início."
+  selecionado_para: "gabriel-praia"
+
+- id: gabriel-img-3376
+  arquivo: "gabriel-2026-11-12/IMG_3376.MOV"
+  origem: "Enviado pelo Paulo: acervo do Gabriel"
+  recebido_em: "2026-11-12"
+  arquivo_local: "local/festival/gabriel-2026-11-12/originals/IMG_3376.MOV"
+  midia: "video"
+  camera: "celular"
+  quem: ["Gabriel"]
+  local: "não confirmado"
+  resumo: "Sustentação de parada reta de perfil em sala com tatame colorido."
+  handstand: true
+  pessoas: 1
+  pessoas_em_handstand: 1
+  forma: ["reta"]
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: true
+  uso_sugerido: ["reel", "freeze-ocre"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "folhas-de-contato-2s", "precisao": "aproximada", "estado": "revisado"}
+  largura: 1080
+  altura: 1920
+  sha256: "e56a25004b8be5036a0ff01ea01c0609cd61247d615de8fcbf76cf321e82fb30"
+  duracao: 12.258333
+  fps_original: "30/1"
+  transfer_original: "arib-std-b67"
+  rotacao_original: -90
+  audio_presente: true
+  som: "não revisado; renders propostos mudos"
+  cenas: [{"de": 0, "ate": 12.2, "o_que": "mantém a reta com ajustes discretos", "quadro": "vertical; inteiro"}]
+  problemas: "Corpo inteiro, câmera afastada; pouco movimento. Sem medir alinhamento."
+
+- id: gabriel-img-3375
+  arquivo: "gabriel-2026-11-12/IMG_3375.MOV"
+  origem: "Enviado pelo Paulo: acervo do Gabriel"
+  recebido_em: "2026-11-12"
+  arquivo_local: "local/festival/gabriel-2026-11-12/originals/IMG_3375.MOV"
+  midia: "video"
+  camera: "celular"
+  quem: ["Gabriel"]
+  local: "não confirmado"
+  resumo: "Parada reta de perfil em enquadramento mais próximo, base das mãos muito rente ao corte."
+  handstand: true
+  pessoas: 1
+  pessoas_em_handstand: 1
+  forma: ["reta"]
+  corpo: "parcial"
+  grupo_em_handstand: false
+  todos_em_handstand: true
+  uso_sugerido: ["reel", "freeze-ocre"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "folhas-de-contato-2s", "precisao": "aproximada", "estado": "revisado"}
+  largura: 1080
+  altura: 1920
+  sha256: "587ae1065b3db287b76fa7df0a6f1e1388489ad76160829f7b4408294172df7e"
+  duracao: 19.35
+  fps_original: "30/1"
+  transfer_original: "arib-std-b67"
+  rotacao_original: -90
+  audio_presente: true
+  som: "não revisado; renders propostos mudos"
+  cenas: [{"de": 0, "ate": 19.3, "o_que": "sustenta parada reta; mãos na borda inferior", "quadro": "vertical; parcial"}]
+  problemas: "Evitar para análise de dedos/apoio; parte do contato com o piso fica cortada."
+
+- id: gabriel-img-3374
+  arquivo: "gabriel-2026-11-12/IMG_3374.MOV"
+  origem: "Enviado pelo Paulo: acervo do Gabriel"
+  recebido_em: "2026-11-12"
+  arquivo_local: "local/festival/gabriel-2026-11-12/originals/IMG_3374.MOV"
+  midia: "video"
+  camera: "celular"
+  quem: []
+  local: "não confirmado"
+  resumo: "Praticantes em fila variam as pernas em parada de mãos no gramado junto à praia."
+  handstand: true
+  pessoas: 20
+  pessoas_em_handstand: 3
+  forma: ["straddle", "stag", "reta"]
+  corpo: "inteiro"
+  grupo_em_handstand: true
+  todos_em_handstand: false
+  uso_sugerido: ["reel", "freeze-ocre"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "folhas-de-contato-2s", "precisao": "aproximada", "estado": "revisado"}
+  largura: 1080
+  altura: 1920
+  sha256: "34deffdf367ad9ffaf09d5d164779e88f0ecbcd864324e0b5276c03904e28706"
+  duracao: 13.64
+  fps_original: "60000/1001"
+  transfer_original: "arib-std-b67"
+  rotacao_original: -90
+  audio_presente: true
+  som: "não revisado; renders propostos mudos"
+  cenas: [{"de": 0, "ate": 13.6, "o_que": "grupo em fila alterna pernas dobradas, abertas e estendidas", "quadro": "vertical; inteiro"}]
+  problemas: "Três praticantes principais sobrepostos; fundo movimentado, várias pessoas distantes. Gabriel não individualizado nesta revisão."
+
+- id: gabriel-img-3373
+  arquivo: "gabriel-2026-11-12/IMG_3373.MOV"
+  origem: "Enviado pelo Paulo: acervo do Gabriel"
+  recebido_em: "2026-11-12"
+  arquivo_local: "local/festival/gabriel-2026-11-12/originals/IMG_3373.MOV"
+  midia: "video"
+  camera: "celular"
+  quem: ["Gabriel"]
+  local: "não confirmado"
+  resumo: "Gabriel sustenta parada reta de perfil em sala, com tatame colorido e parede clara."
+  handstand: true
+  pessoas: 1
+  pessoas_em_handstand: 1
+  forma: ["reta"]
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: true
+  uso_sugerido: ["reel", "freeze-ocre"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "folhas-de-contato-2s", "precisao": "aproximada", "estado": "revisado"}
+  largura: 1080
+  altura: 1920
+  sha256: "fc8899da7b69716ed918a0a26c91e97d959b31b6b5105ae81b908c53abcd2117"
+  duracao: 14.013333
+  fps_original: "30/1"
+  transfer_original: "arib-std-b67"
+  rotacao_original: -90
+  audio_presente: true
+  som: "não revisado; renders propostos mudos"
+  cenas: [{"de": 0, "ate": 14, "o_que": "mantém reta com pequenos ajustes", "quadro": "vertical; inteiro"}]
+  problemas: "Boa visão inteira, mas prática pequena no quadro."
+
+- id: gabriel-img-3372
+  arquivo: "gabriel-2026-11-12/IMG_3372.MOV"
+  origem: "Enviado pelo Paulo: acervo do Gabriel"
+  recebido_em: "2026-11-12"
+  arquivo_local: "local/festival/gabriel-2026-11-12/originals/IMG_3372.MOV"
+  midia: "video"
+  camera: "celular"
+  quem: ["Gabriel"]
+  local: "não confirmado"
+  resumo: "Gabriel alterna tuck e reta repetidamente, de perfil, em sala com tatame."
+  handstand: true
+  pessoas: 1
+  pessoas_em_handstand: 1
+  forma: ["tuck", "reta"]
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: true
+  uso_sugerido: ["reel", "freeze-ocre"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "folhas-de-contato-2s", "precisao": "aproximada", "estado": "revisado"}
+  largura: 1080
+  altura: 1920
+  sha256: "553d33a07a1cb43ea286d60f5ad1769354070d9e99b5d11de5e5f776553e5e37"
+  duracao: 11.648333
+  fps_original: "30/1"
+  transfer_original: "arib-std-b67"
+  rotacao_original: -90
+  audio_presente: true
+  som: "não revisado; renders propostos mudos"
+  cenas: [{"de": 0, "ate": 2.5, "o_que": "sai do tuck e estende as pernas até a reta", "quadro": "vertical; inteiro"}, {"de": 2.5, "ate": 6.5, "o_que": "volta ao tuck e retorna à reta", "quadro": "vertical; inteiro"}, {"de": 6.5, "ate": 11.6, "o_que": "repete tuck e extensão sem tirar as mãos do chão", "quadro": "vertical; inteiro"}]
+  problemas: "Boa transição para observar; não é uma entrada de press desde o chão."
+  selecionado_para: "gabriel-transicoes"
+
+- id: gabriel-img-3371
+  arquivo: "gabriel-2026-11-12/IMG_3371.MOV"
+  origem: "Enviado pelo Paulo: acervo do Gabriel"
+  recebido_em: "2026-11-12"
+  arquivo_local: "local/festival/gabriel-2026-11-12/originals/IMG_3371.MOV"
+  midia: "video"
+  camera: "celular"
+  quem: ["Gabriel"]
+  local: "não confirmado"
+  resumo: "Gabriel em flexão de tronco com pernas abertas no chão e mãos à frente."
+  handstand: false
+  pessoas: 1
+  pessoas_em_handstand: 0
+  forma: ["pancake"]
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["mobilidade"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "folhas-de-contato-2s", "precisao": "aproximada", "estado": "revisado"}
+  largura: 1080
+  altura: 1920
+  sha256: "0e92bc4d74755010d1a8bed76417dc1e5c7507451b3bac5554ae545b56ef02c1"
+  duracao: 19.118333
+  fps_original: "30000/1001"
+  transfer_original: "arib-std-b67"
+  rotacao_original: -90
+  audio_presente: true
+  som: "não revisado; renders propostos mudos"
+  cenas: [{"de": 0, "ate": 19.1, "o_que": "mantém flexão à frente no chão com pernas abertas", "quadro": "vertical; inteiro"}]
+  problemas: "Não está em handstand. Mobilidade; pouco movimento; não inferir dose/alongamento recomendado."
+
+- id: gabriel-img-2700
+  arquivo: "gabriel-2026-11-12/IMG_2700.MOV"
+  origem: "Enviado pelo Paulo: acervo do Gabriel"
+  recebido_em: "2026-11-12"
+  arquivo_local: "local/festival/gabriel-2026-11-12/originals/IMG_2700.MOV"
+  midia: "video"
+  camera: "celular"
+  quem: ["Gabriel"]
+  local: "não confirmado"
+  resumo: "Gabriel sobe num aparelho de apoio para as mãos, abre em straddle, fecha em reta e sai."
+  handstand: true
+  pessoas: 1
+  pessoas_em_handstand: 1
+  forma: ["subida", "straddle", "reta", "saida"]
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: true
+  uso_sugerido: ["reel", "freeze-ocre"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "folhas-de-contato-2s", "precisao": "aproximada", "estado": "revisado"}
+  largura: 720
+  altura: 1280
+  sha256: "be4cef35e41a6310772880262387b8d645e91dca0cd2dd56ecdfb4aad6e99df1"
+  duracao: 29.837007
+  fps_original: "30/1"
+  transfer_original: "arib-std-b67"
+  rotacao_original: 0
+  audio_presente: true
+  som: "não revisado; renders propostos mudos"
+  cenas: [{"de": 0, "ate": 3, "o_que": "aproxima-se e posiciona mãos no aparelho", "quadro": "vertical; inteiro"}, {"de": 3, "ate": 8, "o_que": "entra na inversão com pernas assimétricas e abre", "quadro": "vertical; inteiro"}, {"de": 8, "ate": 15, "o_que": "sustenta straddle no aparelho", "quadro": "vertical; inteiro"}, {"de": 15, "ate": 26, "o_que": "fecha e sustenta reta", "quadro": "vertical; inteiro"}, {"de": 26, "ate": 29.8, "o_que": "desce e sai do aparelho", "quadro": "vertical; inteiro"}]
+  problemas: "Pés muito próximos ao topo durante a entrada. Confirmar nome do aparelho e técnica; não chamar de press automaticamente."
+
+- id: gabriel-img-2745
+  arquivo: "gabriel-2026-11-12/IMG_2745.MOV"
+  origem: "Enviado pelo Paulo: acervo do Gabriel"
+  recebido_em: "2026-11-12"
+  arquivo_local: "local/festival/gabriel-2026-11-12/originals/IMG_2745.MOV"
+  midia: "video"
+  camera: "celular"
+  quem: ["Gabriel"]
+  local: "não confirmado"
+  resumo: "Gabriel entra e alterna pernas abertas/assimétricas, flexionadas e juntas em sala."
+  handstand: true
+  pessoas: 1
+  pessoas_em_handstand: 1
+  forma: ["chute", "straddle", "tuck", "reta"]
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: true
+  uso_sugerido: ["reel", "freeze-ocre"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "folhas-de-contato-2s", "precisao": "aproximada", "estado": "revisado"}
+  largura: 720
+  altura: 1280
+  sha256: "e7ddb798fd39de94a7e1a4494424c4bcda6292ec40e90fd26c34ff3bdb0d4f7d"
+  duracao: 14.566667
+  fps_original: "30/1"
+  transfer_original: "arib-std-b67"
+  rotacao_original: 0
+  audio_presente: true
+  som: "não revisado; renders propostos mudos"
+  cenas: [{"de": 0, "ate": 2, "o_que": "aproxima e entra na parada", "quadro": "vertical; inteiro"}, {"de": 2, "ate": 6, "o_que": "varia pernas abertas e flexionadas", "quadro": "vertical; inteiro"}, {"de": 6, "ate": 10, "o_que": "passa por reta e tuck", "quadro": "vertical; inteiro"}, {"de": 10, "ate": 14.5, "o_que": "retorna à abertura assimétrica", "quadro": "vertical; inteiro"}]
+  problemas: "Há artefatos coloridos na parede, já presentes na fonte; HDR de arquivo comprimido."
+
+- id: gabriel-img-7884
+  arquivo: "gabriel-2026-11-12/IMG_7884.JPEG"
+  origem: "Enviado pelo Paulo: acervo do Gabriel"
+  recebido_em: "2026-11-12"
+  arquivo_local: "local/festival/gabriel-2026-11-12/originals/IMG_7884.JPEG"
+  midia: "imagem"
+  camera: "foto"
+  quem: ["Gabriel"]
+  local: "não confirmado"
+  resumo: "Gabriel em parada com pernas assimétricas numa pedra, mar ao fundo e uma pessoa distante na praia."
+  handstand: true
+  pessoas: 2
+  pessoas_em_handstand: 1
+  forma: ["straddle"]
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape", "recorte-gravura"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  largura: 5263
+  altura: 3509
+  sha256: "f0c4e6953a632e70ddbc9112ff3d5af0f5004416c4df651dda1e48b927c17e5b"
+  atividade: "paisagem"
+  problemas: "Corpo inteiro; pose assimétrica. Local exato não confirmado."
+
+- id: gabriel-img-7876
+  arquivo: "gabriel-2026-11-12/IMG_7876.JPEG"
+  origem: "Enviado pelo Paulo: acervo do Gabriel"
+  recebido_em: "2026-11-12"
+  arquivo_local: "local/festival/gabriel-2026-11-12/originals/IMG_7876.JPEG"
+  midia: "imagem"
+  camera: "foto"
+  quem: ["Gabriel"]
+  local: "não confirmado"
+  resumo: "Gabriel em parada reta sobre rocha diante do mar, visto de costas."
+  handstand: true
+  pessoas: 1
+  pessoas_em_handstand: 1
+  forma: ["reta"]
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: true
+  uso_sugerido: ["post-shape", "recorte-gravura"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  largura: 3165
+  altura: 4748
+  sha256: "2d6208e0ba9c2d8d5dd31de4d3c3edcd01d5658c3429692f87133bafa4e098ab"
+  atividade: "paisagem"
+  problemas: "Boa foto vertical, mãos e pés visíveis; não apresentar a superfície rochosa como recomendação de treino."
+  selecionado_para: "gabriel-paisagem"
+
+- id: gabriel-img-7877
+  arquivo: "gabriel-2026-11-12/IMG_7877.JPEG"
+  origem: "Enviado pelo Paulo: acervo do Gabriel"
+  recebido_em: "2026-11-12"
+  arquivo_local: "local/festival/gabriel-2026-11-12/originals/IMG_7877.JPEG"
+  midia: "imagem"
+  camera: "foto"
+  quem: ["Gabriel"]
+  local: "não confirmado"
+  resumo: "Gabriel em parada com pernas levemente assimétricas, rochas e mar; banhistas pequenos ao fundo."
+  handstand: true
+  pessoas: 5
+  pessoas_em_handstand: 1
+  forma: ["reta", "pernas-assimetricas"]
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape", "recorte-gravura"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  largura: 4748
+  altura: 3165
+  sha256: "db78d36cda08a53f8f0c10645af64e5b9c72dd63478657a3ecd80a9ea387df45"
+  atividade: "paisagem"
+  problemas: "Variante horizontal da série de praia; contagem de fundo aproximada."
+
+- id: gabriel-img-7865
+  arquivo: "gabriel-2026-11-12/IMG_7865.JPEG"
+  origem: "Enviado pelo Paulo: acervo do Gabriel"
+  recebido_em: "2026-11-12"
+  arquivo_local: "local/festival/gabriel-2026-11-12/originals/IMG_7865.JPEG"
+  midia: "imagem"
+  camera: "foto"
+  quem: ["Gabriel"]
+  local: "não confirmado"
+  resumo: "Gabriel em parada na escadaria de madeira rumo à praia; pessoas passam ao fundo."
+  handstand: true
+  pessoas: 5
+  pessoas_em_handstand: 1
+  forma: ["reta"]
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape", "recorte-gravura"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  largura: 3648
+  altura: 5472
+  sha256: "0c3d0e86efa8144780572917ab3a5c35d50d460affb5e99c2c6d7f094ffd35d8"
+  atividade: "paisagem"
+  problemas: "Dedos e mãos visíveis; não é cenário indicado para demonstrar progressão de iniciante."
+
+- id: gabriel-img-8751
+  arquivo: "gabriel-2026-11-12/IMG_8751.PNG"
+  origem: "Enviado pelo Paulo: acervo do Gabriel"
+  recebido_em: "2026-11-12"
+  arquivo_local: "local/festival/gabriel-2026-11-12/originals/IMG_8751.PNG"
+  midia: "imagem"
+  camera: "foto"
+  quem: ["Gabriel"]
+  local: "não confirmado"
+  resumo: "Gabriel em parada muito arqueada com joelhos dobrados, na mata, olhando para a câmera."
+  handstand: true
+  pessoas: 1
+  pessoas_em_handstand: 1
+  forma: ["mexicano"]
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: true
+  uso_sugerido: ["post-shape", "recorte-gravura"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  largura: 750
+  altura: 1334
+  sha256: "fe91ff6f45ecf0c4c7e450f78b30b42ff7f389e1616bf5409d252a18253775f2"
+  atividade: "expressao-corporal"
+  problemas: "Barras pretas acima/abaixo; bom candidato a gravura. Nome da forma a confirmar."
+  selecionado_para: "gabriel-gravura"
+
+- id: gabriel-img-4209
+  arquivo: "gabriel-2026-11-12/IMG_4209.JPG"
+  origem: "Enviado pelo Paulo: acervo do Gabriel"
+  recebido_em: "2026-11-12"
+  arquivo_local: "local/festival/gabriel-2026-11-12/originals/IMG_4209.JPG"
+  midia: "imagem"
+  camera: "foto"
+  quem: ["Gabriel"]
+  local: "não confirmado"
+  resumo: "Gabriel sem camiseta em parada arqueada, uma perna dobrada e outra estendida, em sala."
+  handstand: true
+  pessoas: 1
+  pessoas_em_handstand: 1
+  forma: ["mexicano", "stag"]
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: true
+  uso_sugerido: ["post-shape", "recorte-gravura"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  largura: 2160
+  altura: 3840
+  sha256: "57f5b21aa085f457fa4de70735b430d4fc526fa77a03dd0b84ce75d5c75f7997"
+  atividade: "expressao-corporal"
+  problemas: "Vista lateral em três quartos; nomenclatura aproximada."
+
+- id: gabriel-img-9685
+  arquivo: "gabriel-2026-11-12/IMG_9685.JPG"
+  origem: "Enviado pelo Paulo: acervo do Gabriel"
+  recebido_em: "2026-11-12"
+  arquivo_local: "local/festival/gabriel-2026-11-12/originals/IMG_9685.JPG"
+  midia: "imagem"
+  camera: "foto"
+  quem: ["Gabriel"]
+  local: "não confirmado"
+  resumo: "Gabriel sorrindo em parada arqueada de pernas alongadas, camiseta cinza, sobre pequeno tapete vermelho."
+  handstand: true
+  pessoas: 1
+  pessoas_em_handstand: 1
+  forma: ["mexicano"]
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: true
+  uso_sugerido: ["post-shape", "recorte-gravura"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  largura: 1284
+  altura: 1712
+  sha256: "64c155eda6a360191ace122a51a79e3b0a2b48e04cbc9116c7efe63c1d2b7faf"
+  atividade: "expressao-corporal"
+  problemas: "Bons rosto e mãos; pose avançada, não demonstração básica."
+
+- id: gabriel-img-2225
+  arquivo: "gabriel-2026-11-12/IMG_2225.JPEG"
+  origem: "Enviado pelo Paulo: acervo do Gabriel"
+  recebido_em: "2026-11-12"
+  arquivo_local: "local/festival/gabriel-2026-11-12/originals/IMG_2225.JPEG"
+  midia: "imagem"
+  camera: "foto"
+  quem: ["Gabriel"]
+  local: "não confirmado"
+  resumo: "Gabriel em parada reta de perfil na praia, de blusa e tênis; assinatura La Revo no canto."
+  handstand: true
+  pessoas: 4
+  pessoas_em_handstand: 1
+  forma: ["reta"]
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  uso_sugerido: ["post-shape", "recorte-gravura"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  largura: 3456
+  altura: 5184
+  sha256: "a123709391e5f29892832ad2c4ab2406e0fd4f8796ecce2adb03acaae81e0169"
+  atividade: "paisagem"
+  problemas: "Preservar assinatura La Revo; confirmar crédito/autorização antes de reutilização editorial externa."
+
+- id: gabriel-img-9687
+  arquivo: "gabriel-2026-11-12/IMG_9687.JPG"
+  origem: "Enviado pelo Paulo: acervo do Gabriel"
+  recebido_em: "2026-11-12"
+  arquivo_local: "local/festival/gabriel-2026-11-12/originals/IMG_9687.JPG"
+  midia: "imagem"
+  camera: "foto"
+  quem: ["Gabriel"]
+  local: "não confirmado"
+  resumo: "Gabriel em parada arqueada de joelhos dobrados, camiseta verde, sala com parede azul."
+  handstand: true
+  pessoas: 1
+  pessoas_em_handstand: 1
+  forma: ["mexicano"]
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: true
+  uso_sugerido: ["post-shape", "recorte-gravura"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  largura: 750
+  altura: 1000
+  sha256: "96735be1c90e177a36dae68d12e1b901bcbe1ad81beacd85d08a23c89c54aa1f"
+  atividade: "expressao-corporal"
+  problemas: "Fotografia pequena; evitar ampliação agressiva."
+
+- id: gabriel-img-9684
+  arquivo: "gabriel-2026-11-12/IMG_9684.JPG"
+  origem: "Enviado pelo Paulo: acervo do Gabriel"
+  recebido_em: "2026-11-12"
+  arquivo_local: "local/festival/gabriel-2026-11-12/originals/IMG_9684.JPG"
+  midia: "imagem"
+  camera: "foto"
+  quem: ["Gabriel"]
+  local: "não confirmado"
+  resumo: "Gabriel em parada arqueada assimétrica, sem camiseta, sala clara e piso de madeira."
+  handstand: true
+  pessoas: 1
+  pessoas_em_handstand: 1
+  forma: ["mexicano", "stag"]
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: true
+  uso_sugerido: ["post-shape", "recorte-gravura"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  largura: 2160
+  altura: 2880
+  sha256: "24463e377bd1ef2abfae83113010fffd8ba685610394ccec96d6c0b8df495724"
+  atividade: "expressao-corporal"
+  problemas: "Muito próxima de IMG_4209, mas arquivo/enquadramento diferentes; não deduplicar por aparência."
+
+- id: gabriel-img-3370
+  arquivo: "gabriel-2026-11-12/IMG_3370.PNG"
+  origem: "Enviado pelo Paulo: acervo do Gabriel"
+  recebido_em: "2026-11-12"
+  arquivo_local: "local/festival/gabriel-2026-11-12/originals/IMG_3370.PNG"
+  midia: "imagem"
+  camera: "foto"
+  quem: ["Gabriel"]
+  local: "não confirmado"
+  resumo: "Gabriel de perfil em parada arqueada com joelhos dobrados, sobre tatame colorido."
+  handstand: true
+  pessoas: 1
+  pessoas_em_handstand: 1
+  forma: ["mexicano"]
+  corpo: "inteiro"
+  grupo_em_handstand: false
+  todos_em_handstand: true
+  uso_sugerido: ["post-shape", "recorte-gravura"]
+  revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
+  largura: 1284
+  altura: 2778
+  sha256: "e03ea003544994551fabb51b0ce9e99a6dc36be542d427cd5813aa195c3f6245"
+  atividade: "treino"
+  problemas: "Captura com barras pretas e bastante espaço acima; corpo pequeno no quadro."
