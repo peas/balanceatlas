@@ -180,3 +180,5 @@ Nature/pool batch (12 Nov 2026): 8 videos + 4 new photos catalogued; high-res so
 
 - Nine nature Reels + three photo Stories are actual compositions, now visible above the calendar. Pool solo, deck pike and Gabriel transitions use three independent layers: original colour still, v07 ochre 65%, registered transparent engraving. Full-frame footage and large HF seal retained.
 - Prompts/provenance: `design/handstandfest-arte/2026-11-13-freezes/README.md`; art index: `acervo/gravuras.json`; implementation: `ig2/EngravedFreeze.tsx`. Page-only review requested; stopped the earlier final export batch (partial local files are obsolete snapshots).
+
+13 Nov: temporary `/instagram-revisao/` lists the twelve nature pieces and Gabriel with current copy/timing, proposed objectives, optional order and per-piece comments. Drafts use versioned browser localStorage; copy/download Markdown is the explicit handoff, no server sync or automatic composition changes.
