@@ -62,3 +62,25 @@ IMG_4209 and IMG_9684 are similar compositions but distinct files. No blanket id
 Validation: schema/IDs, selected time bounds, source rotation/HDR metadata, static exports, freeze-transition
 frames and final encoded Reel playback/metadata. Existing unrelated TypeScript transition-union error in
 `compositions.tsx` remains separate; the Astro build succeeds.
+
+## Larger-media comparison and question-led openings
+
+Follow-up on 12 November: `gabriel-transicoes-tela` preserves the complete source in an almost full-frame
+1080×1920 canvas. Text overlays use a dark gradient; at frame 180 the exact still keeps the same geometry,
+turns P&B, and gains a short ochre underline. No brush window or body shrink at the freeze. The original
+window layout remains available for comparison. `gabriel-gravura-story` is a dedicated 9:16 green static
+with a larger transparent figure and independent paint. Most opening hooks are questions; explanatory
+follow-through and service posts may stay declarative.
+
+The new five-image `ed-consistencia` carousel combines questions about practice with natural archive photos.
+Its five slides export as separate 1080×1440 PNGs, never as a video carousel.
+
+```sh
+python3 scripts/festival_render.py gabriel-transicoes-tela
+python3 scripts/festival_render.py gabriel-gravura-story ed-consistencia --still
+```
+
+Final local review set: `~/Documents/Codex/2026-11-10/den/outputs/gabriel-instagram-ampliado/`.
+Checked all five carousel slides, the Story and full-Reel frame sequence; MP4 is H.264, BT.709,
+1080×1920, 30 fps, 11 seconds, silent. Player playback and console were checked in the browser.
+Filming brief and editorial decisions: `src/festival/ig2/PESQUISA-CAPTACAO.md` and `ESTRATEGIA.md`.

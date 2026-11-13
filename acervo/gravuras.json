@@ -1,0 +1,285 @@
+{
+  "versao": 1,
+  "atualizado": "2026-11-12",
+  "escopo": "Derivados artísticos; originais continuam em catalogo.yaml. Caminhos relativos à raiz do repositório.",
+  "tinta": {
+    "mestre": "public/festival/ig/arte/engraving-v1/brush-v7.svg",
+    "variantes": [
+      "oval",
+      "sweep",
+      "arc"
+    ],
+    "diretorio": "public/festival/ig/arte/engraving-v1/",
+    "opcional": true,
+    "opacidade_cenario": 0.65
+  },
+  "assets": [
+    {
+      "id": "arte-straddle",
+      "tipo": "figura-hachurada",
+      "descricao": "Extração da arte enviada: pernas abertas, apoio em uma mão.",
+      "fonte_catalogo_id": null,
+      "fonte_manifesto": "design/handstandfest-arte/README.md",
+      "handstand": true,
+      "pessoas": 1,
+      "forma": "straddle",
+      "arquivo_mestre": "design/handstandfest-arte/straddle-source.png",
+      "arquivo_web": "public/festival/ig/arte/straddle.webp",
+      "largura": 1122,
+      "altura": 1402,
+      "alpha": true,
+      "sha256": "a8ee6af44ddf21d967cbc2f10eab9d88cf406febddce85091a7e79cb2fe46119",
+      "prompt": "design/handstandfest-arte/PROMPT-straddle.txt",
+      "tinta_embutida": false,
+      "reutilizacao": [
+        "carrossel",
+        "site",
+        "story",
+        "camiseta (prova de impressão necessária)"
+      ],
+      "usado_em": [
+        "shapes",
+        "camisetas",
+        "home2"
+      ],
+      "estado": "referência artística; identidade não atribuída",
+      "limites": "Interpretação gerativa; revisar dedos, pose e proporções. Não usar como medição técnica."
+    },
+    {
+      "id": "arte-stag",
+      "tipo": "figura-hachurada",
+      "descricao": "Extração da arte enviada: pernas flexionadas, apoio em uma mão.",
+      "fonte_catalogo_id": null,
+      "fonte_manifesto": "design/handstandfest-arte/README.md",
+      "handstand": true,
+      "pessoas": 1,
+      "forma": "stag",
+      "arquivo_mestre": "design/handstandfest-arte/stag-source.png",
+      "arquivo_web": "public/festival/ig/arte/stag.webp",
+      "largura": 1122,
+      "altura": 1402,
+      "alpha": true,
+      "sha256": "3dee846f754b2c55879b48b957e62f2e2977ac037dc827ecf8427bc85587fdf3",
+      "prompt": "design/handstandfest-arte/PROMPT-stag.txt",
+      "tinta_embutida": false,
+      "reutilizacao": [
+        "carrossel",
+        "site",
+        "story",
+        "camiseta (prova de impressão necessária)"
+      ],
+      "usado_em": [
+        "camisetas",
+        "home2"
+      ],
+      "estado": "referência artística; identidade não atribuída",
+      "limites": "Interpretação gerativa; revisar dedos, pose e proporções. Não usar como medição técnica."
+    },
+    {
+      "id": "gravura-reta-costas",
+      "tipo": "figura-hachurada",
+      "descricao": "Parada reta de costas, sem camiseta, duas mãos.",
+      "fonte_catalogo_id": null,
+      "fonte_manifesto": "design/handstandfest-arte/2026-11-11-prompts/manifest.json",
+      "handstand": true,
+      "pessoas": 1,
+      "forma": "reta",
+      "arquivo_mestre": "design/handstandfest-arte/2026-11-11-prompts/assets/reta-costas.png",
+      "arquivo_web": "public/festival/ig/arte/engraving-v1/reta-costas.webp",
+      "largura": 941,
+      "altura": 1672,
+      "alpha": true,
+      "sha256": "41b87330e61c48816818961a90be5d03ed69a2bfc95ebf802338eea257ea649f",
+      "prompt": "design/handstandfest-arte/2026-11-11-prompts/prompts/test-reta-costas.txt",
+      "tinta_embutida": false,
+      "reutilizacao": [
+        "carrossel",
+        "site",
+        "story",
+        "camiseta (prova de impressão necessária)"
+      ],
+      "usado_em": [
+        "handstand",
+        "sobre"
+      ],
+      "estado": "aplicações aprovadas pelo usuário",
+      "limites": "Interpretação gerativa; revisar dedos, pose e proporções. Não usar como medição técnica."
+    },
+    {
+      "id": "gravura-straddle-montanha",
+      "tipo": "figura-hachurada",
+      "descricao": "Pernas abertas de frente, camiseta e boné; derivada da foto na montanha.",
+      "fonte_catalogo_id": null,
+      "fonte_manifesto": "design/handstandfest-arte/2026-11-11-prompts/manifest.json",
+      "handstand": true,
+      "pessoas": 1,
+      "forma": "straddle",
+      "arquivo_mestre": "design/handstandfest-arte/2026-11-11-prompts/assets/straddle-montanha.png",
+      "arquivo_web": "public/festival/ig/arte/engraving-v1/straddle-montanha.webp",
+      "largura": 1536,
+      "altura": 1024,
+      "alpha": true,
+      "sha256": "863c834a82ffe3f4577a85f10c7006a422e02bb9a38b7d41281189e66eb7474b",
+      "prompt": "design/handstandfest-arte/2026-11-11-prompts/prompts/test-straddle-montanha.txt",
+      "tinta_embutida": false,
+      "reutilizacao": [
+        "carrossel",
+        "site",
+        "story",
+        "camiseta (prova de impressão necessária)"
+      ],
+      "usado_em": [
+        "handstand",
+        "sobre"
+      ],
+      "estado": "aplicações aprovadas pelo usuário; evitar repetição excessiva",
+      "limites": "Interpretação gerativa; revisar dedos, pose e proporções. Não usar como medição técnica."
+    },
+    {
+      "id": "gravura-straddle-overhead",
+      "tipo": "figura-hachurada",
+      "descricao": "Vista superior, duas mãos; baixo ruído visual.",
+      "fonte_catalogo_id": "photo-saopaulo-2024-106",
+      "fonte_manifesto": "design/handstandfest-arte/2026-11-11-prompts/manifest.json",
+      "handstand": true,
+      "pessoas": 1,
+      "forma": "straddle",
+      "arquivo_mestre": "design/handstandfest-arte/2026-11-11-prompts/assets/straddle-overhead.png",
+      "arquivo_web": "public/festival/ig/arte/engraving-v1/straddle-overhead.webp",
+      "largura": 1536,
+      "altura": 1024,
+      "alpha": true,
+      "sha256": "b27b73b220dab3c966a8084c2c5e2241afdabd259803d262ded3fac81efc8fc3",
+      "prompt": "design/handstandfest-arte/2026-11-11-prompts/prompts/test-straddle-overhead.txt",
+      "tinta_embutida": false,
+      "reutilizacao": [
+        "carrossel",
+        "site",
+        "story",
+        "camiseta (prova de impressão necessária)"
+      ],
+      "usado_em": [
+        "ed-formas"
+      ],
+      "estado": "aplicação apreciada pelo usuário",
+      "limites": "Interpretação gerativa; revisar dedos, pose e proporções. Não usar como medição técnica."
+    },
+    {
+      "id": "gravura-perfil-grecia",
+      "tipo": "figura-hachurada",
+      "descricao": "Reta de perfil com camiseta e bermuda.",
+      "fonte_catalogo_id": "photo-greece-2025-11",
+      "fonte_manifesto": "design/handstandfest-arte/2026-11-12-editorial/manifest.json",
+      "handstand": true,
+      "pessoas": 1,
+      "forma": "reta",
+      "arquivo_mestre": "design/handstandfest-arte/2026-11-12-editorial/assets/profile.png",
+      "arquivo_web": "public/festival/ig/arte/engraving-v1/profile-greece.webp",
+      "largura": 887,
+      "altura": 1774,
+      "alpha": true,
+      "sha256": "360e221764e0561d4f4d517e75dc05f9f97b66abe2c0b82dae3792babbad18b2",
+      "prompt": "design/handstandfest-arte/2026-11-12-editorial/prompts/profile.txt",
+      "tinta_embutida": false,
+      "reutilizacao": [
+        "carrossel",
+        "site",
+        "story",
+        "camiseta (prova de impressão necessária)"
+      ],
+      "usado_em": [
+        "ed-formas",
+        "story dia16"
+      ],
+      "estado": "revisão visual técnica feita; aprovação individual pendente",
+      "limites": "Interpretação gerativa; revisar dedos, pose e proporções. Não usar como medição técnica."
+    },
+    {
+      "id": "gravura-diagonal-tailandia",
+      "tipo": "figura-hachurada",
+      "descricao": "Vista de costas com pernas em diagonais diferentes.",
+      "fonte_catalogo_id": "photo-thailand-2026-18",
+      "fonte_manifesto": "design/handstandfest-arte/2026-11-12-editorial/manifest.json",
+      "handstand": true,
+      "pessoas": 1,
+      "forma": "pernas-assimetricas",
+      "arquivo_mestre": "design/handstandfest-arte/2026-11-12-editorial/assets/diagonal.png",
+      "arquivo_web": "public/festival/ig/arte/engraving-v1/diagonal-thailand.webp",
+      "largura": 1122,
+      "altura": 1402,
+      "alpha": true,
+      "sha256": "f36615dbccee0b97df4e598fb251bb78953fa2003cb0ea062376a852602b0464",
+      "prompt": "design/handstandfest-arte/2026-11-12-editorial/prompts/diagonal.txt",
+      "tinta_embutida": false,
+      "reutilizacao": [
+        "carrossel",
+        "site",
+        "story",
+        "camiseta (prova de impressão necessária)"
+      ],
+      "usado_em": [
+        "ed-formas"
+      ],
+      "estado": "revisão visual técnica feita; aprovação individual pendente",
+      "limites": "Interpretação gerativa; revisar dedos, pose e proporções. Não usar como medição técnica."
+    },
+    {
+      "id": "gravura-gabriel-arco",
+      "tipo": "figura-hachurada",
+      "descricao": "Gabriel arqueado, joelhos flexionados, duas mãos.",
+      "fonte_catalogo_id": "gabriel-img-8751",
+      "fonte_manifesto": "design/handstandfest-arte/2026-11-12-gabriel/manifest.json",
+      "handstand": true,
+      "pessoas": 1,
+      "forma": "mexicano",
+      "arquivo_mestre": "design/handstandfest-arte/2026-11-12-gabriel/assets/gabriel-arco.png",
+      "arquivo_web": "public/festival/ig/gabriel/gabriel-arco.webp",
+      "largura": 1024,
+      "altura": 1536,
+      "alpha": true,
+      "sha256": "2815e88f7ba2366cc24f98aa567eaaf5116a880bd2c08b862473e4e71c791a9e",
+      "prompt": "design/handstandfest-arte/2026-11-12-gabriel/prompts/gabriel-arco.txt",
+      "tinta_embutida": false,
+      "reutilizacao": [
+        "carrossel",
+        "site",
+        "story",
+        "camiseta (prova de impressão necessária)"
+      ],
+      "usado_em": [
+        "gabriel-gravura",
+        "gabriel-gravura-story"
+      ],
+      "estado": "revisão visual técnica feita; aprovação individual pendente",
+      "limites": "Interpretação gerativa; revisar dedos, pose e proporções. Não usar como medição técnica."
+    },
+    {
+      "id": "cena-hibrida",
+      "tipo": "composicao",
+      "descricao": "Cenário fotográfico reinterpretado + pessoa hachurada; não é fundo pixel-idêntico.",
+      "arquivo_mestre": "design/handstandfest-arte/2026-11-11-prompts/assets/straddle-landscape-hybrid.png",
+      "arquivo_web": null,
+      "largura": 941,
+      "altura": 1672,
+      "tinta_embutida": false,
+      "camadas_editaveis": "design/handstandfest-arte/2026-11-11-prompts/compose-hybrid.mjs",
+      "figura_relacionada": "gravura-straddle-montanha",
+      "estado": "linguagem aprovada",
+      "limites": "Não confundir composição com recorte transparente reutilizável."
+    },
+    {
+      "id": "cena-hibrida-ocre65",
+      "tipo": "composicao",
+      "descricao": "Composição cenário + tinta a 65% + pessoa; figura avulsa existe acima.",
+      "arquivo_mestre": "design/handstandfest-arte/2026-11-11-prompts/previews/hybrid-paint.png",
+      "arquivo_web": "public/festival/ig/arte/engraving-v1/landscape-paint.webp",
+      "largura": 941,
+      "altura": 1672,
+      "tinta_embutida": true,
+      "camadas_editaveis": "design/handstandfest-arte/2026-11-11-prompts/compose-hybrid.mjs",
+      "figura_relacionada": "gravura-straddle-montanha",
+      "estado": "linguagem aprovada",
+      "limites": "Não confundir composição com recorte transparente reutilizável."
+    }
+  ]
+}

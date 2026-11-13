@@ -102,3 +102,59 @@ ou um trecho verdadeiro; não recebem a antiga figura genérica. As perguntas e 
 Dois Reels congelam exatamente o quadro da fonte, passam a P&B e recebem a mancha como janela da cena.
 A gravura anatômica gerada está somente no estático. Guia e renders: `design/handstandfest-arte/2026-11-12-gabriel/`.
 O slot do dia 17 agora é Gabriel; outras referências brasileiras podem entrar no ciclo seguinte.
+
+## Revisão após os renders — 12/11/2026
+
+Paulo achou o vídeo/corpo pequeno nas janelas do papel. O teste `gabriel-transicoes-tela` usa a mesma fonte,
+quase toda a tela 9:16, moldura discreta, título sobre degradê e grifo ocre pontual no freeze. O corpo mantém
+a escala ao congelar. `gabriel-transicoes` permanece para comparação; dia 2 aponta para o teste novo.
+`gabriel-gravura-story` é uma adaptação 9:16 com figura maior, não um card do feed reduzido dentro do Story.
+São testes para escolha do Paulo, não regra de que toda peça deve ser full bleed. Demonstração pede corpo
+legível; retrato/gravura pode ter respiro. Ajustar também a distância da câmera na captação: sapinho e
+canoinha ficam minúsculos se filmados do ponto usado para uma parada alta. Guias de texto não substituem
+revisar mãos/pés e o texto durante toda a execução. Confira o draft dentro do Instagram antes de publicar.
+
+**Perguntas como abertura (pedido posterior do Paulo nesta rodada):** a maioria dos títulos/gancho do
+calendário virou pergunta; os novos renders e os estáticos editoriais acompanham. Pergunta específica,
+respondível ou que convide a um relato real. A sequência desenvolve a ideia com afirmações; não transformar
+cada frase em pergunta nem prometer uma resposta ausente. Posts de serviço do festival podem ser diretos.
+Legados na biblioteca continuam estudos, não todos revisados com esta regra.
+
+### #handstandlife e comunidade
+
+Usar #handstandlife em prática, exercícios, repertório e convivência; #handstandfest quando o assunto é o
+evento. Não é renomeação da marca nem promessa de alcance. Frase aprovada como direção de convite:
+“Estamos criando e mapeando encontros e lugares para treinar.” Pedir cidade/bairro, nome do grupo/lugar,
+frequência e contato público; confirmar com organizadores, autorização de imagem e data de verificação
+antes de divulgar. Não chamar coleta inicial de mapa pronto. Dias 1 e 7 já usam esse convite.
+
+### Repetir o post nos Stories: decisão proposta
+
+Já estava na pesquisa/plano anterior como apoio nativo; esta rodada torna a seleção explícita. Compartilhar
+um Reel ou carrossel no dia quando ajuda a abrir conversa, responder dúvida ou divulgar informação útil.
+Adicionar uma pergunta, contexto ou bastidor. O compartilhamento nativo permite chegar ao post; uma imagem
+exportada de story não cria esse vínculo sozinha. Stickers e links entram no app, nunca como controles falsos.
+
+Retomar em 2–3 dias somente se houver nova resposta, dúvida recorrente, informação relevante ou material
+útil que vale revisitar. Esse intervalo é uma hipótese editorial nossa, não recomendação oficial. Não copiar
+a mesma chamada todos os dias. Sem contexto novo, publicar bastidor ou não publicar. Escolher por utilidade,
+conversas, salvamentos/compartilhamentos relativos ao alcance e necessidade real do evento; observar respostas,
+cliques disponíveis e saídas dos Stories em séries comparáveis. Uma saída isolada não prova rejeição.
+
+A [Meta descreve orientações personalizadas de frequência e engajamento no painel profissional](https://about.fb.com/news/2024/10/best-practices-education-hub-creators-instagram/).
+Não encontramos evidência primária nesta rodada de que republicar todo post nos Stories aumente alcance,
+nem uma quantidade universal de repetições. A página oficial de ranking retornou 429 e a ajuda de
+compartilhamento exigiu login; não atribuímos à Meta regras que não pudemos verificar.
+
+### Captação e novas pautas
+
+`production-plan.ts` alimenta a lista legível na página (#para-filmar), com 12 grupos de captação e usos.
+`PESQUISA-CAPTACAO.md` traz a mensagem ao Gabriel e pesquisa primária, inclusive observação real no Chrome
+na grade HSF: perguntas técnicas, relatos e encontros. Contagens datadas são exemplos, não ranking de
+viralidade. Dia 16 agora traz `ed-consistencia` (cinco PNGs); a peça de subida segue no Studio. Banco de
+pautas inclui atenção, tempo de aprendizado, parede, dias difíceis e mapa da comunidade. Preparar as
+variações básicas com Gabriel antes de transformar essas ideias em aulas.
+
+Figuras processadas estão em `acervo/gravuras.json`: oito recortes/gravuras e duas composições, vinculados
+às fontes/prompts. Reutilizar o PNG/WebP transparente e adicionar tinta em layer independente; não re-gerar
+a pessoa a cada post. Marcar aprovação pendente honestamente e conferir impressão para camisetas.

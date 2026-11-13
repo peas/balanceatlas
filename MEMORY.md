@@ -1,5 +1,12 @@
 # Balance Atlas memory
 
+## 2026-11-12 — Instagram post-export refinement
+
+- Larger-media comparison: day 2 full-frame Reel keeps body size through its exact freeze; dedicated green engraving Story enlarges the figure. Original window version remains for comparison, not a blanket layout replacement. New 5-slide consistency carousel occupies day 16. Exported and visually reviewed 1080p MP4/PNGs.
+- Most openings are now concrete questions, per Paulo; service posts and explanatory follow-through can remain statements. Practice/community use #handstandlife; event uses #handstandfest. Invite contributions to a developing meetup/place map.
+- Filming checklist and future carousels share `ig2/production-plan.ts`; research/brief in `ig2/PESQUISA-CAPTACAO.md`. Story reposts should add context, not mirror every post. Public view counts are dated examples, not comparable performance rankings.
+- Reusable art index: `acervo/gravuras.json` (8 transparent figures + 2 composites), referenced by IMAGERY.md and page. Provenance and separate paint retained.
+
 ## 2026-11-11 — Adjustable continuous-video engraving
 
 - Built `/festival/gravura-lab/`: two exercise clips containing Paulo, muted loops, independently adjustable contrast/tones/hatching/contours/colour, saved browser state and portable JSON. GPU preview reached ~30 fps versus ~8 fps with both CPU filters in this browser.

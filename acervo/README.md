@@ -150,3 +150,14 @@ Os vídeos foram inspecionados por folhas a cada 2 s; o som está marcado como n
 
 Selecionados: IMG_3372 e IMG_3377 (Reels com freeze), IMG_8751 (gravura) e IMG_7876 (foto em cor).
 Tempos, render e aplicações: `design/handstandfest-arte/2026-11-12-gabriel/README.md`.
+
+## Gravuras e imagens processadas
+
+[`gravuras.json`](gravuras.json) é o índice separado de derivados artísticos reutilizáveis: oito figuras
+hachuradas sem tinta embutida e duas composições de cenário. Inclui fonte do catálogo/manifesto, prompt,
+PNG mestre, WebP público, dimensões, alpha, hash, formas, usos e estado de revisão. Os originais seguem em
+`catalogo.yaml`; não duplicar a descrição do bruto em um segundo catálogo. Máscaras e filtros procedurais
+não são gravuras anatômicas; a cena híbrida não é um recorte transparente. Ao adicionar nova figura, manter
+os caminhos relativos à raiz do repo e conferir a existência/alpha do arquivo e o vínculo à fonte.
+A página de Instagram tem uma galeria do índice em `#gravuras`. Tinta separada é a opção preferida; para
+camisetas, verificar resolução na dimensão física e fazer prova, não chamar o PNG de arte vetorial.

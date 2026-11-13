@@ -19,8 +19,15 @@ function piece(id:string,title:string,variants:{title:string[];sub:string;dark?:
  return {id,title,format:variants.length>1?'Carrossel':'Estático',description:'Fotos selecionadas do catálogo alternadas com gravura pontual, ocre e texto grande.',look:'Acervo fotográfico / gravura pontual / ocre',movement:'Imagem estática; sem vídeo nas lâminas.',slides:variants.map((v,i)=>({name:`${title} · ${i+1}`,component:(p:PieceProps)=><EditorialArt {...p} {...v}/>,height:1440,seconds:1,cover:0,cues:[]}))};
 }
 export const EDITORIAL_PIECES = [
- piece('ed-comunidade','Gente para treinar junto',[{title:['GENTE PARA','TREINAR JUNTO.'],sub:'Onde você treina hoje?',dark:true,image:'group'}]),
- piece('ed-formas','Reta e straddle',[{title:['UMA PARADA.','MUITAS FORMAS.'],sub:'O corpo encontra outras formas.',image:'diagonal',engraving:'diagonal',paint:'arc'},{title:['RETA.'],sub:'Pernas juntas.',image:'profile',engraving:'profile',paint:'oval'},{title:['STRADDLE.'],sub:'Pernas abertas.',dark:true,image:'overhead',engraving:'overhead',paint:'sweep'}]),
+ piece('ed-consistencia','O treino não cabe no recorde',[
+ {title:['SEU TREINO É','SÓ RECORDE?'],sub:'O treino continua entre uma tentativa e outra. #handstandlife',image:'profile'},
+ {title:['PRÁTICA','É PROCESSO.'],sub:'Uma boa tentativa não conta a história inteira.',dark:true,image:'group'},
+ {title:['PAUSAR.','OBSERVAR.'],sub:'Rever um vídeo, conversar e perceber o apoio também fazem parte.',image:'class'},
+ {title:['TEMPO PARA','PERCEBER.'],sub:'Para algumas pessoas, praticar também é um momento de atenção. Como é para você?',dark:true,image:'tuck'},
+ {title:['O QUE FICOU','DO TREINO?'],sub:'Uma sensação, uma dúvida, uma pequena descoberta. Conta para a gente.',image:'diagonal'},
+ ]),
+ piece('ed-comunidade','Gente para treinar junto',[{title:['COM QUEM','VOCÊ TREINA?'],sub:'Onde você treina hoje?',dark:true,image:'group'}]),
+ piece('ed-formas','Reta e straddle',[{title:['QUE FORMAS','VOCÊ CONHECE?'],sub:'O corpo encontra outras formas.',image:'diagonal',engraving:'diagonal',paint:'arc'},{title:['RETA.'],sub:'Pernas juntas.',image:'profile',engraving:'profile',paint:'oval'},{title:['STRADDLE.'],sub:'Pernas abertas.',dark:true,image:'overhead',engraving:'overhead',paint:'sweep'}]),
  piece('ed-festival','Três dias. Um encontro.',[{title:['TRÊS DIAS.','UM ENCONTRO.'],sub:`${QUANDO} · São Paulo`,dark:true,image:'class'}]),
- piece('ed-mundo','Ninguém treina só',[{title:['NINGUÉM','TREINA SÓ.'],sub:'Que grupo ou encontro você indicaria?',image:'tuck'}]),
+ piece('ed-mundo','Ninguém treina só',[{title:['ONDE A GENTE','TREINA JUNTO?'],sub:'Que grupo ou encontro você indicaria?',image:'tuck'}]),
 ];

@@ -40,3 +40,16 @@ This continuous filter is procedural and geometry-preserving; it treats the back
 ## Site simplification — 12 November 2026
 
 Paulo removed decorative blocks, Ts and bars over site photos/videos, and paint behind teacher cards. Shared site compositions follow this rule (hero, teacher, lineup). Retain meaningful text highlights and approved engraved-person/paint compositions A/B; this is not a rejection of the engraving language. Avoid reintroducing floating geometry as filler.
+
+## Reusable processed-asset index — 12 November 2026
+
+`acervo/gravuras.json` indexes eight detached engraved figures and two scene composites with provenance,
+prompts, master/web paths, dimensions, alpha, review status and reuse notes. Originals stay in catalogo.yaml.
+Reuse the figure with optional independent v07 paint rather than regenerating it for each post. Keep approval
+states distinct; a generated figure is not a measurement or a substitute for an exercise demonstration.
+The Instagram production page exposes the same inventory. Print suitability still requires size/proof review.
+
+After export review, Paulo requested larger media on Reels/Stories. `gabriel-transicoes-tela` compares an
+almost full-frame native video with the earlier small brush window; freeze retains the body's scale, while
+paint highlights the text. `gabriel-gravura-story` enlarges the illustration in a dedicated story layout.
+These are comparison proposals, not a global replacement of every composition. Preserve whole-body motion.

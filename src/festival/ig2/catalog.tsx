@@ -19,6 +19,7 @@ export const STYLES: { id: StyleId; name: string; what: string }[] = [
 ];
 
 const STYLE_OF: Record<string, StyleId> = {
+  'gabriel-transicoes-tela':'congela', 'gabriel-gravura-story':'gravura',
   'gabriel-transicoes':'congela', 'gabriel-praia':'congela', 'gabriel-gravura':'gravura', 'gabriel-paisagem':'janela',
   'gravuras-aprovadas': 'gravura', 'arte-gravura': 'gravura',
   'arte-freeze-ocre': 'congela', 'arte-freeze-amarelo': 'congela',

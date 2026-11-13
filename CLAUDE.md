@@ -364,3 +364,17 @@ Four selected sources power `ig2/gabriel-pieces.tsx`: two exact-frame freeze/P&B
 2/7/17/21; stories reuse native posts rather than unrelated art. Prompts, hashes, render recipes and limits:
 `design/handstandfest-arte/2026-11-12-gabriel/README.md`. Video brush masks retain the scene, not segmentation
 or generated anatomical hatching. No source audio in exports, no automated Instagram posting.
+
+## Instagram post-export refinement — 12 November 2026
+
+Paulo requested larger bodies/media and mostly question-led openings. Day 2 now tests
+`gabriel-transicoes-tela` (almost full frame, readable overlay, exact freeze without shrinking the video),
+with the previous layout visible alongside it. `gabriel-gravura-story` is a dedicated larger 9:16 static.
+Do not assume approval of all-full-screen layouts. Day 16 is the five-static-slide `ed-consistencia` carousel.
+`production-plan.ts` powers the page's filming checklist and future topics; `PESQUISA-CAPTACAO.md` contains
+Gabriel's filming brief and primary-source/Chrome research with dated, non-comparable HSF view counts.
+Use #handstandlife for practice/community and #handstandfest for the event; community copy invites people
+to help create/map training meetups and places, not a claim that a complete map exists. Story reposts are
+selective and contextual; the 2–3-day follow-up is an editorial test, not a Meta rule (ESTRATEGIA.md).
+`acervo/gravuras.json` is the separate reusable derived-art index (eight figures, two composites); raw
+sources remain in catalogo.yaml. Reuse independent figures/paint and retain honest review/provenance states.

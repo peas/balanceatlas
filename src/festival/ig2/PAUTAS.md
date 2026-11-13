@@ -304,3 +304,13 @@ P1 = primeira leva. P2 = depois de uma filmagem dirigida ou entrevista. P3 = exi
 | 23 · P3 | **Aquecimento não precisa ser uma montagem apressada.** | Carrossel, 6 imagens | Um professor explica o propósito de três preparações que realmente usa; distinguir aquecimento de programa de ganho de flexibilidade. Sem promessa de prevenir toda lesão. | Sessão dirigida com fotos e texto do próprio professor, adaptação por nível. | [GMB — preparação](https://gmb.io/handstand/), [Natalie — cursos](https://teaching.nataliereckert.com/courses/) |
 | 24 · P3 | **O que existe além do handstand que você vê no feed?** | Reel documental, 30–45 s | Treino, criação, palco e vida cotidiana; entrevista com artista. Conectar esforço e expressão, não só habilidade espetacular. | Um dia acompanhado com consentimento; acervo próprio/cedido. | [Natalie — bastidores no YouTube](https://www.youtube.com/watch?v=zYFh2CFL76g) |
 
+
+## Atualização: primeira lista para Gabriel — 12/11/2026
+
+Lista curta com dez grupos de exercícios, fotos e bastidores em [PESQUISA-CAPTACAO.md](PESQUISA-CAPTACAO.md).
+A versão visível na página vem de `production-plan.ts`: sapinho, mãos/punhos, saída, parede, chute,
+afastar/retomar apoio, canoinhas, urso/escápulas, gato-vaca, formas e comunidade. Usar as duas listas como
+brief de captação; registrar arquivo/timecodes aqui conforme chegam. O dia 16 agora trata de consistência.
+Perguntas concretas são a abertura preferida da maioria dos posts; a explicação pode vir em afirmações.
+#handstandlife identifica prática/comunidade; #handstandfest identifica evento. Stories de reforço são
+seletivos, com contexto novo; critérios em ESTRATEGIA.md. Banco separado de gravuras: acervo/gravuras.json.
