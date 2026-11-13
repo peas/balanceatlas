@@ -403,3 +403,12 @@ The detailed three-day schedule now lives on `/festival/sobre/#grade`, after the
 The home keeps `#grade` as a short link to that section, preserving existing anchors; level cards stay on the home.
 Schedule data remains in `src/festival/home-content.ts`; the existing scoped tab handler serves both sets of tabs
 on Sobre independently. Paulo removed the “um projeto Balance Atlas” footer link across festival pages.
+
+
+## Persistent festival menu — 13 November 2026
+
+Public pages share one fixed FestNav rendered by FestLayout: Início / O evento / Handstand, active page underlined.
+Desktop also shows HF and the ticket CTA; mobile keeps only the three visible links, no hamburger.
+The old header menu and scroll-triggered duplicate were removed; body padding and anchor offsets reserve space.
+Study/editorial pages retain their existing stickyNav=false opt-out. The ticket footnote now links to Sobre
+with Paulo's shorter copy, without repeating the batch progression.

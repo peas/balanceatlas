@@ -508,3 +508,14 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 .stickybar .nav-cta { border-color: var(--white); }
 
 @media (max-width: 420px) { .stickybar .nav-cta { padding-inline: 10px; } }
+
+/* Persistent public navigation occupies its own space, including anchor targets. */
+.has-fest-nav { padding-top: 72px; }
+.has-fest-nav .page-head { padding-top: clamp(32px, 6vw, 64px); }
+.has-fest-nav [id] { scroll-margin-top: 88px; }
+.lote-foot a { text-decoration: underline; text-underline-offset: 3px; }
+@media (max-width: 860px) {
+  .has-fest-nav { padding-top: 60px; }
+  .has-fest-nav .hero { grid-template-areas: 'title' 'facts' 'media' 'actions'; }
+  .has-fest-nav [id] { scroll-margin-top: 76px; }
+}

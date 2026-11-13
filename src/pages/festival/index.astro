@@ -4,20 +4,18 @@
 // Festival media lives in public/festival/ (no R2 token for media-handstand on this machine yet);
 // retreat photos come straight from R2. Hero and teacher are Remotion compositions (src/festival/).
 import FestLayout from '../../layouts/FestLayout.astro';
-import FestNav from '../../components/fest/FestNav.astro';
 import FestPlayer from '../../festival/FestPlayer';
 import HFSelo from '../../components/fest/HFSelo.astro';
 import ArtGesture from '../../components/fest/ArtGesture.astro';
 import { TICKETS, TICKETS_ALVO, FEST, VENDA } from '../../festival/data';
 
-import { LOTES, VAGAS, MAPS_Q, MAPS_PLACE, lineup, facts } from '../../festival/home-content';
+import { LOTES, MAPS_Q, MAPS_PLACE, lineup, facts } from '../../festival/home-content';
 
 ---
 
 <FestLayout>
   <!-- HERO -->
   <header class="hero claro">
-    <FestNav home />
     <div class="hero-title">
       <p class="kicker">Festival de parada de mão · São Paulo</p>
       <h1 class="logo" aria-label="1º HandstandFest">
@@ -190,7 +188,7 @@ import { LOTES, VAGAS, MAPS_Q, MAPS_PLACE, lineup, facts } from '../../festival/
         ))}
       </div>
       <a class="cta cta-dark" href={TICKETS} target={TICKETS_ALVO} rel="noopener">Garantir vaga no 1º lote <span aria-hidden="true">→</span></a>
-      <p class="lote-foot">Passe completo para os 3 dias, {VAGAS} vagas no total. Quando as 10 do 1º lote acabarem, abre o 2º; depois das 35 do 2º, o 3º.</p>
+      <p class="lote-foot">Passe completo para os 3 dias, <a href="/festival/sobre/">conheça mais sobre o evento</a>.</p>
     </div>
   </section>
 </FestLayout>

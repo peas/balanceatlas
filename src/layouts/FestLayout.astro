@@ -2,7 +2,8 @@
 // Shared shell for /festival and its subpages (pt-BR, own identity; see CLAUDE.md "Hidden pages").
 // Head, fonts, global stylesheet, footer and the small page scripts.
 import '../festival/festival.css';
-import { TICKETS, TICKETS_ALVO, FEST, VENDA } from '../festival/data';
+import { FEST, VENDA } from '../festival/data';
+import FestNav from '../components/fest/FestNav.astro';
 import HFSelo from '../components/fest/HFSelo.astro';
 
 interface Props { title?: string; description?: string; stickyNav?: boolean }
@@ -29,14 +30,8 @@ const {
       rel="stylesheet"
     />
   </head>
-  <body data-venda-abre={VENDA.abre}>
-    <!-- Slim bar that slides in once the page header has scrolled away (inert while hidden) -->
-    {stickyNav && <div class="stickybar" data-sticky inert>
-      <a class="nav-logo" href="/festival/"><HFSelo tom="amarelo" simples class="selo-nav" /> HandstandFest</a>
-      <a class="sb-link" href="/festival/sobre/">Sobre o evento</a>
-      <a class="sb-link" href="/festival/handstand/">Sobre handstand</a>
-      <a class="nav-cta" href={TICKETS} target={TICKETS_ALVO} rel="noopener">Garanta sua vaga</a>
-    </div>}
+  <body class:list={{ 'has-fest-nav': stickyNav }} data-venda-abre={VENDA.abre}>
+    {stickyNav && <FestNav />}
 
     <slot />
 
@@ -67,16 +62,6 @@ const {
       // Ticket sales: before the opening time the page says "abre 18/11"; after it, the word in data-venda
       if (Date.now() >= Date.parse(document.body.dataset.vendaAbre!))
         document.querySelectorAll<HTMLElement>('[data-venda]').forEach((e) => (e.textContent = e.dataset.venda!));
-
-      // Sticky bar: shown after the page header (hero or subpage head) leaves the viewport
-      const bar = document.querySelector<HTMLElement>('[data-sticky]');
-      const head = document.querySelector('header');
-      if (bar && head) {
-        new IntersectionObserver(([e]) => {
-          bar.classList.toggle('on', !e.isIntersecting);
-          bar.inert = e.isIntersecting;
-        }).observe(head);
-      }
 
       // Reveal on scroll
       const reveal = new IntersectionObserver(

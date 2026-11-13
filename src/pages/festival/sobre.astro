@@ -2,7 +2,6 @@
 // "Sobre o evento": what the HandstandFest is (tabs), who makes it, and the FAQ about the festival.
 // "Quem faz" is Paulo's own text (04/11/2026), lightly edited; do not add biography that he did not give.
 import FestLayout from '../../layouts/FestLayout.astro';
-import FestNav from '../../components/fest/FestNav.astro';
 import SobreTabs from '../../components/fest/SobreTabs.astro';
 import { days, levelName, tracks } from '../../festival/home-content';
 import EngravingArtwork from '../../festival/EngravingArtwork';
@@ -11,7 +10,6 @@ import { TICKETS, TICKETS_ALVO, QUANDO, faqFest } from '../../festival/data';
 
 <FestLayout title="Sobre o evento · 1º HandstandFest" description="Quem faz o 1º HandstandFest, por que ele existe, para quem é e as perguntas mais comuns.">
   <header class="page-head claro">
-    <FestNav current="sobre" />
     <p class="kicker">1º HandstandFest · São Paulo · {QUANDO}</p>
     <h1>Sobre <span>o evento</span></h1>
     <p class="lead">O primeiro festival brasileiro dedicado à parada de mão. Três dias de aula, treino e gente que gosta de ficar de cabeça para baixo.</p>

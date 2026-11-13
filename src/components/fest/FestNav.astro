@@ -1,15 +1,34 @@
 ---
-// Top menu of the festival pages. `home`: sits over the hero (no logo); otherwise it opens a subpage header.
+// One persistent navigation for the public festival pages.
 import { TICKETS, TICKETS_ALVO } from '../../festival/data';
 import HFSelo from './HFSelo.astro';
-
-interface Props { home?: boolean; current?: 'sobre' | 'handstand' | 'mundo' }
-const { home = false, current } = Astro.props;
+const path = Astro.url.pathname.replace(/\/$/, '');
+const links = [
+  { href: '/festival/', label: 'Início', active: path === '/festival' },
+  { href: '/festival/sobre/', label: 'O evento', active: path === '/festival/sobre' },
+  { href: '/festival/handstand/', label: 'Handstand', active: path === '/festival/handstand' || path === '/festival/mundo' },
+];
 ---
-
-<nav class:list={['topnav', { 'topnav-page': !home }]} aria-label="Principal">
-  <a class="nav-logo" href="/festival/" aria-label="HandstandFest"><HFSelo simples class="selo-nav" />{!home && ' HandstandFest'}</a>
-  <a href="/festival/sobre/" aria-current={current === 'sobre' ? 'page' : undefined}>Sobre o evento</a>
-  <a href="/festival/handstand/" aria-current={current === 'handstand' || current === 'mundo' ? 'page' : undefined}>Sobre handstand</a>
-  <a class="nav-cta" href={TICKETS} target={TICKETS_ALVO} rel="noopener">Garanta sua vaga</a>
+<nav class="fest-nav" aria-label="Principal">
+  <a class="fest-brand" href="/festival/" aria-label="HandstandFest — início"><HFSelo simples class="selo-nav" /></a>
+  <div class="fest-links">
+    {links.map((link) => <a href={link.href} aria-current={link.active ? 'page' : undefined}>{link.label}</a>)}
+  </div>
+  <a class="fest-ticket" href={TICKETS} target={TICKETS_ALVO} rel="noopener">Garanta sua vaga</a>
 </nav>
+<style>
+  .fest-nav { position: fixed; inset: 0 0 auto; z-index: 40; min-height: 72px; display: flex; align-items: center; gap: 24px; padding: 10px max(var(--gutter), calc((100% - var(--max)) / 2)); background: var(--paper); color: var(--ink); border-bottom: var(--frame-width) solid var(--ink); font: 700 .8rem/1.2 var(--mono); text-transform: uppercase; }
+  .fest-nav a { text-decoration: none; white-space: nowrap; }
+  .fest-brand { margin-right: auto; }
+  .fest-links { display: flex; align-items: center; gap: 16px; }
+  .fest-links a { display: grid; place-items: center; min-height: 44px; padding: 8px 10px; border-bottom: 3px solid transparent; }
+  .fest-links a:hover, .fest-links a[aria-current='page'] { border-bottom-color: var(--ink); }
+  .fest-ticket { display: grid; place-items: center; min-height: 44px; padding: 10px 18px; background: var(--accent); color: var(--accent-ink); border: var(--frame-width) solid var(--ink); border-radius: var(--corner); }
+  .fest-ticket:hover { background: var(--ink); color: var(--paper); }
+  @media (max-width: 860px) {
+    .fest-nav { min-height: 60px; padding: 6px var(--gutter); }
+    .fest-brand, .fest-ticket { display: none; }
+    .fest-links { width: 100%; justify-content: space-between; gap: 4px; }
+    .fest-links a { padding-inline: 8px; }
+  }
+</style>

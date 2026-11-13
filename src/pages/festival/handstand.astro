@@ -4,7 +4,6 @@
 // Photos float left/right so the text snakes around them; bento strips sit between sections.
 // The five-step cards at the end are ours (a summary that maps his "jornada" onto the festival's two classes).
 import FestLayout from '../../layouts/FestLayout.astro';
-import FestNav from '../../components/fest/FestNav.astro';
 import Bento from '../../components/fest/Bento.astro';
 import EngravingArtwork from '../../festival/EngravingArtwork';
 import { R2, community, atlasPhotos, faqHandstand } from '../../festival/data';
@@ -24,7 +23,6 @@ const stripB = [...community.slice(6), ...atlasPhotos.filter((p) => !used.has(p.
 
 <FestLayout title="Sobre handstand · 1º HandstandFest" description="O que é handstand (parada de mão), por que praticar, como é a jornada e outros workshops e retiros pelo mundo.">
   <header class="page-head claro">
-    <FestNav current="handstand" />
     <p class="kicker">Handstand = parada de mão</p>
     <h1>Sobre <span>handstand</span></h1>
     <p class="lead">Ficar parado de ponta-cabeça. Parece difícil? É muito mais do que parece.</p>
