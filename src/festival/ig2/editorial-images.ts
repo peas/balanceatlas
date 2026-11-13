@@ -4,7 +4,7 @@ import type { EngravingFigure, PaintShape } from '../EngravingArtwork';
 const photo=(id:string,path:string,alt:string,note:string)=>({id,url:`https://media.balanceatlas.com/images/retreats/${path}.webp`,alt,note});
 export const EDITORIAL_IMAGES={
  gabrielTuck:{id:'gabriel-img-3372',url:'/festival/ig/gabriel/img-3372-freeze.webp',alt:'Gabriel em parada reta de perfil no quadro de congelamento',note:'Vídeo IMG_3372: trecho 0–6 s, freeze em 6 s. Movimento real antes da pintura.'},
- gabrielBeach:{id:'gabriel-img-3377',url:'/festival/ig/gabriel/img-3377-freeze.webp',alt:'Gabriel em parada na areia',note:'Vídeo IMG_3377: trecho 0–10 s, freeze em 10 s. Cenário preservado dentro da janela de pincel.'},
+ gabrielBeach:{id:'gabriel-img-3377',url:'/festival/ig/gabriel/img-3377-freeze.webp',alt:'Gabriel em parada na areia',note:'Vídeo IMG_3377: trecho 0–10 s, freeze em 10 s. Cenário preservado no enquadramento amplo, com assinatura ocre.'},
  gabrielArt:{id:'gabriel-img-8751',url:'/festival/ig/gabriel/gabriel-arco.webp',alt:'Gravura de Gabriel em parada arqueada',note:'Derivada de IMG_8751 por ImageGen; figura com alpha e mancha em camada separada.'},
  gabrielSea:{id:'gabriel-img-7876',url:'/festival/ig/gabriel/praia-reta.webp',alt:'Gabriel em parada diante do mar',note:'IMG_7876: fotografia em cor. Confirmar crédito fotográfico; local exato não inferido.'},
  group:photo('photo-saopaulo-2024-96','saopaulo-2024/96','Três pessoas em parada de mãos no jardim','Foto de retiro anterior; não é registro do festival futuro.'),

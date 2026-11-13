@@ -53,3 +53,18 @@ After export review, Paulo requested larger media on Reels/Stories. `gabriel-tra
 almost full-frame native video with the earlier small brush window; freeze retains the body's scale, while
 paint highlights the text. `gabriel-gravura-story` enlarges the illustration in a dedicated story layout.
 These are comparison proposals, not a global replacement of every composition. Preserve whole-body motion.
+
+## Approved Instagram signature and framing — 12 November 2026
+
+Paulo approved the larger-video test as the default for existing and future Instagram pieces.
+
+- Reels/video Stories: full or almost full frame; preserve complete hands/feet and the movement path. A 3:4 source uses a width-filling uncropped box. Text overlays use a controlled gradient or a free side column, never an automatic crop to fill 9:16. Freeze and live video retain identical geometry.
+- HF seal is visibly larger (220–230 px on a 1080 px canvas; larger on closing cards). Place it in available space, away from the body and platform controls. These sizes are working defaults, not platform requirements.
+- Static Stories and individual images carry the HF seal. **Carousel interiors do not:** reserve the logo/signature for an informative final slide with a useful takeaway/question and where to continue the conversation. Do not append an empty logo card.
+- Ochre is the recurring visual signature: one brush gesture/highlight when the piece has no ochre artwork. An engraved figure on an ochre disc/brush already supplies the gesture; avoid redundant marks. Preserve the authentic v07 bristles.
+- Remove internal labels such as “acervo de retiros · Balance Atlas” and “gravura a partir do acervo” from exported artwork. Keep provenance, original credits and permissions in catalogues, review notes and captions where needed. Do not remove a photographer’s actual signature from an image.
+- Most openings remain concrete questions. Development and event logistics may remain statements.
+
+Implementation: `ig2/kit.tsx` (`VideoScene`, `BrandSeal`, `PracticeClose`), individual art compositions and the legacy kit's closing seal. Scope is Instagram; this does not reintroduce decorative overlays behind teachers on the website. The former old/new framing comparison is now a description of the approved language. Historical exported files are snapshots; regenerate to obtain the current design.
+
+Research distinction: Meta's [Best Practices hub](https://about.fb.com/news/2024/10/best-practices-education-hub-creators-instagram/) describes general and personalized account guidance. It does not establish a rule that logos must be on the last carousel slide. That choice is Paulo's approved editorial/identity direction, not an algorithmic performance claim. A safe-zone help page required login during this check; no new universal margin percentage was inferred.

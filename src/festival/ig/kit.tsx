@@ -4,8 +4,8 @@
 //
 // Rules the pieces follow (research of 05/11/2026, Drive pesquisas/instagram-evento-formatos-playbook.md):
 //  - the hook text is ON SCREEN AT FRAME 0 (no fade-in from nothing); what/when/where before ~8 s
-//  - text and faces stay inside SAFE; nothing fixed for the whole video (no frame, no corner logo): bars and blocks
-//    come and go, the logo lives only on the end card
+//  - text and faces stay inside SAFE; bars and blocks come and go
+//  - the larger HF seal signs the closing card and Stories (current direction in ig2/README.md)
 //  - no music in the composition (it is added in the app at upload); voice and room sound only
 //  - overlays never cover the body of the person in the handstand (Paulo, 04/11/2026)
 import { useEffect, useId, useState, type CSSProperties, type ReactNode } from 'react';
@@ -359,12 +359,12 @@ export const QUANDO_CURTO = `${FEST.dias[0]} — ${FEST.dias[2]} ${FEST.mesCurto
 export const Fecho = ({ cta = 'Link na bio', sub = '1º lote · R$ 490 · 10 vagas', formato = 'reel' }: { cta?: string; sub?: string; formato?: Formato }) => {
   const a = useIn(0, 18), b = useIn(6, 16), c = useIn(14, 16);
   const top = formato === 'card' ? 150 : SAFE[formato].y0 + 60;
-  const line: CSSProperties = { ...WIDE, textTransform: 'uppercase', lineHeight: 0.86, fontSize: 208, letterSpacing: -3 };
+  const line: CSSProperties = { ...WIDE, textTransform: 'uppercase', lineHeight: 0.86, fontSize: 194, letterSpacing: -3 };
   return (
     <AbsoluteFill style={{ background: STAGE, color: CHALK }}>
       <div style={{ position: 'absolute', left: 65, top, transform: `translateY(${(1 - a) * 80}px)`, opacity: a }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 22, marginBottom: 26 }}>
-          <Selo size={170} />
+          <Selo size={220} />
           <div style={{ border: `6px solid ${ACCENT}`, color: ACCENT, ...WIDE, fontSize: 76, lineHeight: 1, padding: '14px 20px 6px' }}>1º</div>
         </div>
         <div style={line}>Hand</div>

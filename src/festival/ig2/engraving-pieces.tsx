@@ -1,6 +1,6 @@
 import { Img, getRemotionEnvironment, staticFile } from 'remotion';
 import EngravingArtwork, { type PaintShape } from '../EngravingArtwork';
-import { Canvas, type PieceProps } from './kit';
+import { Canvas, PracticeClose, type PieceProps } from './kit';
 import type { Piece } from './pieces';
 
 const resolveSource = (path: string) => getRemotionEnvironment().isPlayer ? path : staticFile(path.slice(1));
@@ -18,5 +18,5 @@ export const APPROVED_ENGRAVINGS: Piece[] = [{
   id: 'gravuras-aprovadas', title: 'Corpo e pincel', format: 'Carrossel',
   description: 'As três aplicações aprovadas: reta com oval ocre, pernas abertas com faixa sobre verde e arco aberto sobre creme.',
   look: 'Gravura / ocre / verde', movement: 'Três imagens estáticas. A figura e a mancha são independentes; a pintura pode ser omitida em outras aplicações.',
-  slides: [Oval, Sweep, Arc].map((component, i) => ({ name: ['Reta / oval', 'Pernas abertas / faixa', 'Pernas abertas / arco'][i], component, seconds: 1, height: 1440, cover: 0, cues: [] })),
+  slides: [Oval, Sweep, Arc, (p:PieceProps)=><PracticeClose {...p} body="Reta, pernas abertas, diferentes apoios. Aqui observamos as formas e trocamos experiências de prática. O que você gostaria de explorar?"/>].map((component, i) => ({ name: ['Reta / oval', 'Pernas abertas / faixa', 'Pernas abertas / arco', 'A conversa continua'][i], component, seconds: 1, height: 1440, cover: 0, cues: [] })),
 }];

@@ -378,3 +378,7 @@ to help create/map training meetups and places, not a claim that a complete map 
 selective and contextual; the 2–3-day follow-up is an editorial test, not a Meta rule (ESTRATEGIA.md).
 `acervo/gravuras.json` is the separate reusable derived-art index (eight figures, two composites); raw
 sources remain in catalogo.yaml. Reuse independent figures/paint and retain honest review/provenance states.
+
+## Instagram framing/signature approved — 12 November 2026
+
+The full-video comparison is now approved for all existing/future Instagram footage. Use full or near-full framing without cropping bodies; keep geometry through freezes. HF seals are larger (220–230 px baseline); static Stories and standalone images get the seal too. Carousel interiors have **no logo**: only the informative final slide carries the larger signature. Ochre brush/highlight is the recurring cue unless the engraved figure's ochre disc already provides it. Internal archive/Balance Atlas labels stay out of exported artwork, but provenance/required credits remain in catalogues and captions. Canonical rules and limits: `src/festival/ig2/README.md`, `IMAGERY.md`, `MARCA.md`. This supersedes the test-only/full-frame-not-yet-approved note above. Site teacher decoration restrictions remain unchanged.

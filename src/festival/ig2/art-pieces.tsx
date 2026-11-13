@@ -1,9 +1,9 @@
 import { useId } from 'react';
-import { AbsoluteFill, Freeze, Html5Video, Img, Sequence, getRemotionEnvironment, staticFile, useCurrentFrame } from 'remotion';
+import { AbsoluteFill, Freeze, Html5Video, OffthreadVideo, Img, Sequence, getRemotionEnvironment, staticFile, useCurrentFrame } from 'remotion';
 import { CIRCULO } from '../pincel';
 import { BrushStroke } from '../Brush';
-import { Selo, WIDE, MONO } from '../ig/kit';
-import { Canvas, move, type PieceProps } from './kit';
+import { WIDE, MONO } from '../ig/kit';
+import { Canvas, BrandSeal, Headline, Label, PracticeClose, move, type PieceProps } from './kit';
 import type { Piece } from './pieces';
 
 const PAPER = '#f3eddf', INK = '#202d26', GREEN = '#123d33';
@@ -44,7 +44,6 @@ export function ArtPoster({variant=0, ...p}:PieceProps & {variant?:number}) {
         <BrushStroke color={text} style={{position:'absolute',left:290,top:878,width:400,height:17,opacity:.75}}/>
       </div>
       <div style={{position:'absolute',left:65,top:1310,fontFamily:MONO,fontWeight:700,fontSize:38}}>handstandfest.com.br</div>
-      <div style={{position:'absolute',right:65,top:1285}}><Freeze frame={35}><Selo size={92}/></Freeze></div>
     </AbsoluteFill>
   </Canvas>;
 }
@@ -54,32 +53,23 @@ const PosterGreen=(p:PieceProps)=><Freeze frame={240}><ArtPoster {...p} variant=
 
 /** Freeze at exactly clip frame 150. No generated pose replaces the live footage. */
 function FreezeArt({bold=false,...p}:PieceProps & {bold?:boolean}) {
-  const frame=useCurrentFrame(), freezeAt=150;
-  const mono=move(frame,freezeAt,18), paint=move(frame,freezeAt+15,42);
-  const color=bold?'var(--ig2-art-paint, #ffd23f)':'#cb8b34', paper=bold?GREEN:PAPER, ink=bold?PAPER:INK;
-  const framing = {position:'absolute' as const,left:0,top:0,width:885,height:1030,transform:'translate(40px, -35px) scale(1.45)'};
-  const media=<Html5Video src={url('ig2-formas.mp4')} muted style={{width:'100%',height:'100%',objectFit:'contain'}}/>;
-  return <Canvas {...p} dark={bold}>
-    <AbsoluteFill style={{background:paper,color:ink}}>
-      <div style={{position:'absolute',left:65,top:285,...WIDE,fontSize:90,lineHeight:1.05,letterSpacing:-4}}>O MOVIMENTO<br/>{frame<freezeAt?'VIRA GESTO.':'DEIXA MARCA.'}</div>
-      <div style={{position:'absolute',left:65,top:570,width:885,height:900,overflow:'hidden'}}>
-        <div style={{...framing,filter:`grayscale(${mono}) contrast(${1+.15*mono})`,opacity:1-(bold?1:.88)*paint}}>
-          <Freeze frame={freezeAt} active={frame>=freezeAt}>{media}</Freeze>
-        </div>
-        <div style={{position:'absolute',left:bold?-85:70,top:bold?0:65,width:bold?1050:740,height:bold?850:740,transform:bold?'rotate(-18deg)':'rotate(12deg)'}}><InkDisc color={color} progress={paint}/></div>
-        <div style={{position:'absolute',inset:0,opacity:paint}}><Orbits color={ink} progress={paint}/></div>
-        <BrushStroke color={ink} style={{position:'absolute',left:75,top:613,width:155,height:10,opacity:.6*paint}}/>
-        <BrushStroke color={ink} style={{position:'absolute',left:625,top:527,width:120,height:8,opacity:.6*paint}}/>
-        <Img src={url('arte/freeze-cutout.webp')} style={{...framing,objectFit:'contain',filter:'grayscale(1) contrast(1.12)',opacity:paint}}/>
-      </div>
-      <div style={{position:'absolute',left:65,top:1480,fontFamily:MONO,fontWeight:700,fontSize:42}}>HANDSTAND É MOVIMENTO.</div>
-      {frame>=freezeAt && <Sequence from={freezeAt} layout="none"><div style={{position:'absolute',left:810,top:1370}}><Selo size={115} giro={32}/></div></Sequence>}
-    </AbsoluteFill>
-  </Canvas>;
+ const frame=useCurrentFrame(),at=150,mono=move(frame,at,18),paint=move(frame,at+15,42);
+ const Video=getRemotionEnvironment().isPlayer?Html5Video:OffthreadVideo;
+ const geometry={position:'absolute' as const,left:24,top:430,width:1032,height:1376,objectFit:'contain' as const};
+ return <Canvas {...p} dark signature={false}>
+  <div style={{position:'absolute',inset:24,borderRadius:28,overflow:'hidden',background:GREEN}}>
+   <div style={{...geometry,left:0,top:406,filter:`grayscale(${mono}) contrast(${1+.15*mono})`,opacity:1-(bold?1:.88)*paint}}><Freeze frame={at} active={frame>=at}><Video src={url('ig2-formas.mp4')} muted style={{width:'100%',height:'100%',objectFit:'contain'}}/></Freeze></div>
+   <div style={{position:'absolute',left:45,top:580,width:940,height:940,transform:bold?'rotate(-18deg)':'rotate(12deg)'}}><InkDisc color={bold?'#dfab5b':'#cb8b34'} progress={paint}/></div>
+   <Img src={url('arte/freeze-cutout.webp')} style={{...geometry,left:0,top:406,filter:'grayscale(1) contrast(1.12)',opacity:paint}}/>
+  </div>
+  <Label y={205} size={36} color={PAPER}>#HANDSTANDLIFE</Label>
+  <Headline lines={frame<at?['O MOVIMENTO','VIRA GESTO.']:['O MOVIMENTO','DEIXA MARCA.']} y={275} size={78} accentLine={-1} dark/>
+  <BrandSeal x={65} y={1450} size={230}/>
+ </Canvas>;
 }
 const FreezeOchre=(p:PieceProps)=><FreezeArt {...p}/>;
 const FreezeBold=(p:PieceProps)=><FreezeArt {...p} bold/>;
 export const ART_PIECES:Piece[]=[
-  {id:'arte-gravura',title:'Corpo, tinta e papel',format:'Carrossel',description:'Três estudos estáticos com as figuras das referências de vocês: papel claro e fundo verde. Gravura, cerdas e arcos em camadas independentes.',look:'Papel × gesto × verde',movement:'Imagens estáticas. A arte tem textura; a tipografia preserva a leitura no celular.',slides:[PosterYellow,PosterOchre,PosterGreen].map((component,i)=>({name:['Corpo / papel','Gesto / papel','Verde / ousado'][i],component,seconds:1,height:1440,cover:0,cues:[]}))},
-  ...[false,true].map((bold):Piece=>({id:bold?'arte-freeze-amarelo':'arte-freeze-ocre',title:bold?'O gesto ocupa o quadro':'Do vídeo à tinta',format:'Reel',description:bold?'Teste mais ousado: verde profundo, pincelada ampla e o corpo em P&B.':'O vídeo congela; o P&B chega primeiro, seguido da pintura ocre e de um traço de órbita.',look:bold?'Verde + tinta':'Papel + ocre',movement:'5 s de vídeo real → congelamento no mesmo quadro → P&B → tinta em 1,4 s. Selo entra junto.',slides:[{name:'Vídeo → quadro → pintura',component:bold?FreezeBold:FreezeOchre,seconds:10,height:1920,cover:0,cues:[{label:'Vídeo',frame:0},{label:'Congela',frame:150},{label:'Pintura',frame:180},{label:'Arte',frame:240}]}]})),
+  {id:'arte-gravura',title:'Corpo, tinta e papel',format:'Carrossel',description:'Três estudos estáticos e um fechamento com as figuras das referências de vocês: papel claro e fundo verde. Gravura, cerdas e arcos em camadas independentes.',look:'Papel × gesto × verde',movement:'Imagens estáticas. A arte tem textura; a tipografia preserva a leitura no celular.',slides:[PosterYellow,PosterOchre,PosterGreen,(p:PieceProps)=><PracticeClose {...p} body="O corpo desenha no espaço. Cada forma vem de uma prática, de uma tentativa, de uma pessoa. Qual gesto chama sua atenção?"/>].map((component,i)=>({name:['Corpo / papel','Gesto / papel','Verde / ousado','A conversa continua'][i],component,seconds:1,height:1440,cover:0,cues:[]}))},
+  ...[false,true].map((bold):Piece=>({id:bold?'arte-freeze-amarelo':'arte-freeze-ocre',title:bold?'O gesto ocupa o quadro':'Do vídeo à tinta',format:'Reel',description:bold?'Teste mais ousado: verde profundo, pincelada ampla e o corpo em P&B.':'O vídeo congela; o P&B chega primeiro, seguido da pintura ocre, com o mesmo enquadramento amplo.',look:bold?'Verde + tinta':'Papel + ocre',movement:'5 s de vídeo real → congelamento no mesmo quadro → P&B → tinta em 1,4 s. Selo entra junto.',slides:[{name:'Vídeo → quadro → pintura',component:bold?FreezeBold:FreezeOchre,seconds:10,height:1920,cover:0,cues:[{label:'Vídeo',frame:0},{label:'Congela',frame:150},{label:'Pintura',frame:180},{label:'Arte',frame:240}]}]})),
 ];

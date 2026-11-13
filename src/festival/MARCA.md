@@ -396,3 +396,7 @@ Paulo e Gabriel estão gostando da expressão "handstandlife", como hashtag e ta
 Paulo rejeitou os blocos, barras e Ts soltos sobre fotos/vídeos (exemplo: quadrado ocre sobre o card de Dany). Removidos das composições compartilhadas do site, inclusive hero e professor principal, e removidas as manchas atrás dos professores/escalação. Priorizar pessoa, movimento e informação. Isso não revoga as gravuras com mancha em camada separada aprovadas em IMAGERY.md nem os destaques de texto pincelados. Não reintroduzir geometria ornamental sobre o corpo.
 
 Botões de inscrição arredondados e destacados, inclusive navegação fixa e subpáginas. Informação do lote no hero é texto, sem fundo/borda de botão nem link concorrente. Título principal sem a linha vertical; edição “1º” ao lado de HAND. Aplicar a mesma hierarquia nas demais páginas: ação reconhecível; informação não deve imitar botão.
+
+## Instagram: assinatura aprovada (12/11/2026)
+
+Vídeo grande, ocupando tudo ou quase tudo, com corpo inteiro e enquadramento mantido no freeze. Selo HF maior nos Reels, Stories e imagens avulsas. **Carrosséis: logo somente no último slide, com fechamento informativo e assinatura**; as lâminas anteriores são reconhecidas por tipografia, ocre e tratamento das imagens. Uma pincelada ocre por composição quando não houver a gravura com sua mancha/disco ocre. Tirar rótulos internos de acervo/Balance Atlas da arte; conservar fontes e créditos nos registros/legendas. Padrão aprovado para as próximas peças, não apenas experimento. Receita: ig2/README.md.

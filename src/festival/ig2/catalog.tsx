@@ -11,7 +11,7 @@ import { FPS } from '../ig/kit';
 
 export type StyleId = 'tela-cheia' | 'janela' | 'gravura' | 'congela' | 'foto-ocre';
 export const STYLES: { id: StyleId; name: string; what: string }[] = [
-  { id: 'tela-cheia', name: 'Tela cheia', what: 'O vídeo ocupa o quadro inteiro. O texto vai por cima, em tarjas e com uma palavra pincelada; barras e blocos marcam o ritmo.' },
+  { id: 'tela-cheia', name: 'Tela cheia', what: 'O vídeo ocupa o quadro inteiro. O texto vai por cima, em tarjas e com uma palavra pincelada; selo HF e ocre assinam a peça.' },
   { id: 'janela', name: 'Janela no papel', what: 'Fundo creme. O texto tem um espaço só dele, em letras grandes, e o vídeo ou a foto aparece numa janela, sem nada por cima do corpo.' },
   { id: 'gravura', name: 'Gravura e mancha', what: 'Figura desenhada em traço de gravura sobre uma mancha de pincel, no creme ou no verde. Imagem parada, para carrossel e capa.' },
   { id: 'congela', name: 'Congela e pinta', what: 'O vídeo real roda, congela num quadro, vira preto e branco e recebe a pincelada com a mensagem.' },
@@ -19,6 +19,7 @@ export const STYLES: { id: StyleId; name: string; what: string }[] = [
 ];
 
 const STYLE_OF: Record<string, StyleId> = {
+  'junto':'tela-cheia', 'lugar':'tela-cheia', 'linha':'tela-cheia', 'futebol':'tela-cheia', 'encontro':'tela-cheia', 'formas':'tela-cheia', 'ritmo':'tela-cheia', 'subida':'tela-cheia', 'porta':'tela-cheia',
   'gabriel-transicoes-tela':'congela', 'gabriel-gravura-story':'gravura',
   'gabriel-transicoes':'congela', 'gabriel-praia':'congela', 'gabriel-gravura':'gravura', 'gabriel-paisagem':'janela',
   'gravuras-aprovadas': 'gravura', 'arte-gravura': 'gravura',
@@ -34,7 +35,7 @@ const first: CatalogPiece[] = PECAS.map((p) => ({
   slides: (REGISTRO[p.id] ?? []).map((s, i) => ({ name: s.nome ?? (i ? `Quadro ${i + 1}` : p.titulo), component: s.comp, seconds: s.frames / FPS, height: s.h, cover: s.capa ?? 0, cues: [] })),
 })).filter((p) => p.slides.length);
 
-const second: CatalogPiece[] = [...PIECES, ...EDITORIAL_PIECES, ...GABRIEL_PIECES].map((p) => ({ ...p, style: p.id.startsWith('ed-') ? 'gravura' : STYLE_OF[p.id] ?? 'janela' }));
+const second: CatalogPiece[] = [...PIECES, ...EDITORIAL_PIECES, ...GABRIEL_PIECES.filter(p=>p.id!=='gabriel-transicoes')].map((p) => ({ ...p, style: p.id.startsWith('ed-') ? 'gravura' : STYLE_OF[p.id] ?? 'janela' }));
 
 export const CATALOG: CatalogPiece[] = STYLES.flatMap((s) => [...first, ...second].filter((p) => p.style === s.id));
 

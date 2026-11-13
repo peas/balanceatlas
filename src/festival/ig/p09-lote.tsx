@@ -1,7 +1,7 @@
 // 09 · Stories "1º lote": 4 frames (REEL size, formato story). No BarrasStory: the app draws its own.
 import { useCurrentFrame, useVideoConfig, spring } from 'remotion';
 import {
-  ACCENT, CHALK, Clip, Etiqueta, Foto, Gancho, INK, LIVE, MONO, Quadro, QUANDO_CURTO, REEL, STAGE, f, useIn, type PecaProps,
+  ACCENT, CHALK, Clip, Etiqueta, Foto, Gancho, INK, LIVE, MONO, Quadro, Selo, QUANDO_CURTO, REEL, STAGE, f, useIn, type PecaProps,
 } from './kit';
 import { FEST } from '../data';
 import type { Slide } from './tipos';
@@ -78,6 +78,7 @@ const Abriu = ({ guides }: PecaProps) => (
     <AoVivo text="1º lote · agora" x={65} y={300} />
     <Gancho lines={['Abriu.']} y={400} size={184} tom="accent" />
     <Etiqueta text={`1º HandstandFest · ${QUANDO_CURTO}`} x={65} y={700} tom="chalk" size={34} delay={10} />
+  <div style={{position:"absolute",left:770,top:1450}}><Selo size={230}/></div>
   </Quadro>
 );
 
@@ -89,6 +90,7 @@ const Preco = ({ guides }: PecaProps) => (
     <Assentos x={65} y={700} />
     <Mono y={1260} size={32}>{LOTES.map((l) => `${l.vagas} a ${brl(l.preco)}`).join(' · ')}</Mono>
     <Mono y={1330} size={28}>{`passe completo, ${FEST.dias.length} dias`}</Mono>
+  <div style={{position:"absolute",left:770,top:1450}}><Selo size={230}/></div>
   </Quadro>
 );
 
@@ -104,6 +106,7 @@ const OQueTem = ({ guides }: PecaProps) => (
     <Foto src="tv-palco-luzes.webp" look="pb" filter="brightness(.45)" />
     <Etiqueta text="o que tem" x={65} y={290} tom="accent" size={40} />
     {ITENS.map((t, n) => <Etiqueta key={t} text={t} x={65} y={400 + 86 * n} tom="chalk" size={36} delay={6 + 8 * n} />)}
+  <div style={{position:"absolute",left:770,top:1450}}><Selo size={230}/></div>
   </Quadro>
 );
 
@@ -118,6 +121,7 @@ const Link = ({ guides }: PecaProps) => (
       position: 'absolute', left: 190, top: 1000, width: 700, height: 160, boxSizing: 'border-box', border: `4px dashed ${CHALK}`,
       display: 'flex', alignItems: 'center', justifyContent: 'center', color: CHALK, fontFamily: MONO, fontWeight: 700, fontSize: 30,
     }}>figurinha de link aqui</div>
+  <div style={{position:"absolute",left:770,top:1450}}><Selo size={230}/></div>
   </Quadro>
 );
 

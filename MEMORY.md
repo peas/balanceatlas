@@ -1,5 +1,10 @@
 # Balance Atlas memory
 
+## 2026-11-12 — Full-video and larger signature approved
+
+- Paulo approved full/near-full video across Instagram, with unchanged geometry at freeze and a larger HF seal. Added shared video/signature primitives and updated window-based pieces.
+- Static Stories and standalone images carry HF; carousel interiors do not. Only an informative closing slide is signed. Ochre gesture is the recurring cue; do not double it on already painted engravings. Internal archive labels removed from artwork; provenance retained. Rules in ig2/README.md, IMAGERY.md, MARCA.md and global playbooks.
+
 ## 2026-11-12 — Instagram post-export refinement
 
 - Larger-media comparison: day 2 full-frame Reel keeps body size through its exact freeze; dedicated green engraving Story enlarges the figure. Original window version remains for comparison, not a blanket layout replacement. New 5-slide consistency carousel occupies day 16. Exported and visually reviewed 1080p MP4/PNGs.

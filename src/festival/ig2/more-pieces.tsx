@@ -1,72 +1,23 @@
 // Observation-led drafts from catalogued, owned footage. No exercise prescription.
-import { Freeze, Sequence } from 'remotion';
+import { Freeze, Sequence, useCurrentFrame } from 'remotion';
 import type { Piece, Slide } from './pieces';
-import { Canvas, Facts, Headline, Label, Media, ACCENT, CHALK, f, type PieceProps } from './kit';
+import { Canvas, VideoScene, BrandSeal, Facts, Headline, Label, Media, ACCENT, CHALK, f, type PieceProps } from './kit';
 import { Selo } from '../ig/kit';
 
 function Signoff({ guides, palette, title, question }: PieceProps & { title: string[]; question: string }) {
-  return <Canvas guides={guides} palette={palette} dark>
-    <div style={{ position: 'absolute', left: 65, top: 280 }}><Selo size={240} giro={24} /></div>
+  return <Canvas guides={guides} palette={palette} dark signature={false}>
+    <div style={{ position: 'absolute', left: 65, top: 280 }}><Selo size={300} giro={24} /></div>
     <Headline lines={title} y={620} size={94} dark />
     <Label y={1020} size={44} color={CHALK} style={{ width: 850 }}>{question}</Label>
     <Label y={1260} size={36} color={ACCENT}>HANDSTANDFEST · ALÉM DO FESTIVAL</Label>
   </Canvas>;
 }
 
-function Shapes(p: PieceProps) {
-  return <>
-    <Sequence durationInFrames={f(13)}>
-      <Canvas {...p}>
-        <Sequence durationInFrames={f(6.5)} layout="none"><Headline lines={['Parada?', 'Só no nome.']} size={98} accentLine={1} /></Sequence>
-        <Sequence from={f(6.5)} layout="none"><Headline lines={['Muda a', 'forma.']} size={108} accentLine={1} /></Sequence>
-        <Label y={550} size={40}>FIGURAS EM DUPLA · SALA DE VIDRO</Label>
-        <Media src="ig2-formas" x={65} y={645} w={885} h={950} contain {...p} />
-      </Canvas>
-    </Sequence>
-    <Sequence from={f(13)} durationInFrames={f(3.5)}><Signoff {...p} title={['Um apoio.', 'Muitas', 'formas.']} question="Qual mudança você percebeu primeiro?" /></Sequence>
-  </>;
-}
-
-function Legs(p: PieceProps) {
-  return <>
-    <Sequence durationInFrames={f(12)}><Canvas {...p} dark>
-      <Sequence durationInFrames={f(6)} layout="none"><Headline lines={['No mesmo', 'ritmo.']} size={104} dark /></Sequence>
-      <Sequence from={f(6)} layout="none"><Headline lines={['Olha as', 'pernas.']} size={112} dark /></Sequence>
-      <Label y={555} size={40} color={ACCENT}>DOIS CORPOS · UMA SEQUÊNCIA</Label>
-      <Media src="ig2-pernas-l" x={65} y={645} w={885} h={950} contain look="pb" {...p} />
-    </Canvas></Sequence>
-    <Sequence from={f(12)} durationInFrames={f(3.5)}><Signoff {...p} title={['Treino', 'também', 'é jogo.']} question="Com quem você gostaria de treinar?" /></Sequence>
-  </>;
-}
-
-function Press(p: PieceProps) {
-  return <>
-    <Sequence durationInFrames={f(12)}><Canvas {...p}>
-      <Sequence durationInFrames={f(6)} layout="none"><Headline lines={['Antes de', 'ficar no ar.']} size={99} accentLine={1} /></Sequence>
-      <Sequence from={f(6)} layout="none"><Headline lines={['Subir', 'faz parte.']} size={108} /></Sequence>
-      <Label y={550} size={40}>PRESS EM DUPLA · TEMPO REAL</Label>
-      <Media src="ig2-press-parque" x={65} y={645} w={885} h={950} contain {...p} />
-    </Canvas></Sequence>
-    <Sequence from={f(12)} durationInFrames={f(3.5)}><Signoff {...p} title={['Do chão.', 'Para o alto.']} question="Que parte da subida você quer ver mais de perto?" /></Sequence>
-  </>;
-}
-
-function Door(p: PieceProps) {
-  return <Canvas {...p} format="story">
-    <Headline lines={['Pode', 'entrar.']} size={116} accentLine={1} />
-    <Facts y={575} />
-    <Media src="ig2-porta" x={65} y={685} w={800} h={800} contain {...p} />
-    <Label y={1510} size={40}>TRAPÉZIO VOADOR · BUTANTÃ</Label>
-  </Canvas>;
-}
-function Inside(p: PieceProps) {
-  return <Canvas {...p} format="story" dark>
-    <Headline lines={['Do outro', 'lado da porta.']} size={84} dark />
-    <Facts y={555} dark />
-    <Media src="ig2-porta" from={5.5} x={65} y={665} w={800} h={800} contain {...p} />
-    <Label y={1500} size={40} color={CHALK}>UM DOS ESPAÇOS DO FESTIVAL</Label>
-  </Canvas>;
-}
+function Shapes(p:PieceProps){const frame=useCurrentFrame();return <><Sequence durationInFrames={f(13)}><VideoScene {...p} src="ig2-formas" wide lines={frame<f(6.5)?['PARADA?','SÓ NO NOME.']:['MUDA A','FORMA.']}/></Sequence><Sequence from={f(13)} durationInFrames={f(3.5)}><Signoff {...p} title={['Um apoio.','Muitas formas.']} question="Qual mudança você percebeu primeiro?"/></Sequence></>;}
+function Legs(p:PieceProps){const frame=useCurrentFrame();return <><Sequence durationInFrames={f(12)}><VideoScene {...p} src="ig2-pernas-l" wide look="pb" lines={frame<f(6)?['NO MESMO','RITMO?']:['OLHA AS','PERNAS.']}/></Sequence><Sequence from={f(12)} durationInFrames={f(3.5)}><Signoff {...p} title={['Treino também','é jogo.']} question="Com quem você gostaria de treinar?"/></Sequence></>;}
+function Press(p:PieceProps){const frame=useCurrentFrame();return <><Sequence durationInFrames={f(12)}><VideoScene {...p} src="ig2-press-parque" wide lines={frame<f(6)?['COMO VOCÊ','SAI DO CHÃO?']:['SUBIR','FAZ PARTE.']}/></Sequence><Sequence from={f(12)} durationInFrames={f(3.5)}><Signoff {...p} title={['Do chão.','Para o alto.']} question="Que parte da subida você quer ver mais de perto?"/></Sequence></>;}
+function Door(p:PieceProps){return <VideoScene {...p} src="ig2-porta" lines={['PODE','ENTRAR.']} note="TRAPÉZIO VOADOR · BUTANTÃ"/>;}
+function Inside(p:PieceProps){return <VideoScene {...p} src="ig2-porta" from={5.5} lines={['DO OUTRO','LADO DA PORTA.']} note="UM DOS ESPAÇOS DO FESTIVAL"/>;}
 
 const photos = [
   { name: 'A pergunta', title: ['Uma parada.', 'Quantas', 'formas?'], src: 'ig2-estrela-aberta.webp', size: 82, note: 'UM TREINO, VÁRIOS INSTANTES', caption: 'O que muda quando as pernas se afastam?', look: 'cor' },
@@ -81,9 +32,9 @@ function PhotoCard({ index, ...p }: PieceProps & { index: number }) {
     <Label x={60} y={65} size={36}>{item.note}</Label>
     <Headline lines={[...item.title]} x={60} y={155} size={item.size} accentLine={index === 0 ? 1 : -1} />
     <Media photo contain src={item.src} x={60} y={450} w={960} h={650} look={item.look} {...p} />
-    <Label x={60} y={1150} size={44} style={{ width: 950 }}>{item.caption}</Label>
+    <Label x={60} y={1150} size={44} style={{ width: index === 4 ? 710 : 950 }}>{item.caption}</Label>
     <Label x={60} y={1330} size={36}>{String(index + 1).padStart(2, '0')} / 05</Label>
-    {index === 4 ? <div style={{ position: 'absolute', right: 60, top: 1305 }}><Selo size={78} giro={16} /></div> : <Label x={710} y={1330} size={36}>ARRASTA →</Label>}
+    {index === 4 ? <BrandSeal x={805} y={1190} size={200} still/> : <Label x={710} y={1330} size={36}>ARRASTA →</Label>}
   </Canvas>;
 }
 const stillSlides: Slide[] = photos.map((item, index) => ({ name: item.name, component: (p: PieceProps) => <Freeze frame={30}><PhotoCard {...p} index={index} /></Freeze>, seconds: 5, height: 1440, cover: 30, cues: [] }));
