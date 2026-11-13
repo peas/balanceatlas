@@ -1,0 +1,12 @@
+Use case: style-transfer + background-extraction.
+Inputs: Image 1 is the ORIGINAL PHOTO or exact video freeze frame to edit. No second reference image; follow the described established engraving language.
+Output: one isolated full-body PNG with real transparent alpha, generous padding around every fingertip and toe; no text or brand graphics.
+
+Turn the photographed person into a fine black-ink engraving. Use short curved contour hatches that wrap around the observed local volume of skin, muscles and clothing. Change stroke direction along shoulders, back, arms, legs and cloth folds. Use sparse hatching in light areas, denser cross-hatching in shadows, restrained outer contours and dark masses in hair/clothing. Keep warm ivory highlights (#f3eddf) opaque INSIDE the person. No coloured ink.
+
+Preserve this exact person's silhouette, proportions, limb lengths, joint angles, asymmetries, shoulder and hip tilt, palm contacts, visible fingers, toes, hair, face, clothing and perspective. Do not improve technique, mirror the image, invent hidden anatomy, exaggerate muscles, slim the body, or borrow the reference person's pose. Source description: One clothed person in a straight two-arm handstand, low three-quarter side view. Legs together vertically, dark shorts and a loose dark shirt fallen toward the shoulders, palms on floor at different apparent depths. Preserve original perspective, feet, head, clothing and all visible fingers. Remove the room, windows, floor and reflection..
+
+Remove ALL scenery, floor, cast shadow, props and background. Outside the body and between limbs must be alpha=0. No paper rectangle, black backdrop, checkerboard, coloured edge residue, halo, drop shadow, circle, brush, orbit or watermark. Narrow natural antialiasing only. Do not erase fingers/hair or make body highlights transparent.
+
+Avoid uniform diagonal screens, noisy grayscale filters, halftone dots, smudged pencil, cartoon anatomy and solid silhouettes. The effect is engraved volume, not just desaturation. One figure only. Render hands and feet carefully and keep all source-visible extremities.
+

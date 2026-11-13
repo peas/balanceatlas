@@ -1,9 +1,10 @@
+import type { EngravingFigure, PaintShape } from '../EngravingArtwork';
 // Curated from acervo/catalogo.yaml; reviewed at full size/contact sheet on 12 Nov 2026.
 // Photographic references are not automatically approved exercise demonstrations.
 const photo=(id:string,path:string,alt:string,note:string)=>({id,url:`https://media.balanceatlas.com/images/retreats/${path}.webp`,alt,note});
 export const EDITORIAL_IMAGES={
  group:photo('photo-saopaulo-2024-96','saopaulo-2024/96','Três pessoas em parada de mãos no jardim','Foto de retiro anterior; não é registro do festival futuro.'),
- profile:photo('photo-greece-2025-11','greece-2025/11','Uma pessoa em parada de mãos de perfil, em sala com janelas','Boa referência de perfil para futura gravura; não demonstra canoinha ou shrug.'),
+ profile:photo('photo-greece-2025-11','greece-2025/11','Uma pessoa em parada de mãos de perfil, em sala com janelas','Gravura editorial de perfil disponível; não demonstra canoinha ou shrug.'),
  diagonal:photo('photo-thailand-2026-18','thailand-2026/18','Praticante com pernas abertas numa sala','Variação de enquadramento e forma; conferir nomenclatura antes de ensinar.'),
  hands:photo('photo-thailand-2026-26','thailand-2026/26','Detalhe dos punhos e mãos apoiados no chão','Referência de proximidade da câmera; não demonstra caminhada do urso.'),
  class:photo('photo-greece-2025-09','greece-2025/09','Professor conversa com participantes em roda','Usar para conversa e comunidade; não atribuir identidade pelo catálogo.'),
@@ -11,8 +12,14 @@ export const EDITORIAL_IMAGES={
  tuck:photo('photo-thailand-2026-47','thailand-2026/47','Uma demonstração de parada agrupada diante da turma','Acervo para pauta sobre observar uma aula; confirmar professor antes de identificar.'),
  mobility:photo('photo-saopaulo-2024-101','saopaulo-2024/101','Grupo em extensão do tronco, apoiado nas mãos','Contexto de mobilidade; esta foto não é gato-vaca.'),
  straight:photo('photo-saopaulo-2024-98','saopaulo-2024/98','Parada reta de costas junto à piscina','Referência real de pernas juntas; preservar mãos e pés no enquadramento.'),
- overhead:photo('photo-saopaulo-2024-106','saopaulo-2024/106','Straddle fotografado de cima, em preto e branco','Nova referência de straddle: ângulo alto, mãos e pés visíveis; candidata a outra gravura.'),
+ overhead:photo('photo-saopaulo-2024-106','saopaulo-2024/106','Straddle fotografado de cima, em preto e branco','Nova referência de straddle: ângulo alto, mãos e pés visíveis; gravura própria disponível.'),
 };
 export type EditorialImageKey=keyof typeof EDITORIAL_IMAGES;
 // Day -> candidate. Unmapped technical/portrait slots intentionally still need new footage.
 export const DAY_IMAGE:Partial<Record<number,EditorialImageKey>>={1:'group',2:'diagonal',3:'overhead',4:'class',5:'floor',6:'straight',7:'tuck',9:'floor',11:'hands',12:'profile',14:'class',15:'hands',16:'profile',18:'profile',20:'mobility',21:'group'};
+
+// A few selected applications, rather than a universal photo treatment.
+export const DAY_ENGRAVING:Partial<Record<number,{figure:EngravingFigure;paint:PaintShape}>>={
+ 2:{figure:'diagonal',paint:'arc'},
+ 16:{figure:'profile',paint:'oval'},
+};

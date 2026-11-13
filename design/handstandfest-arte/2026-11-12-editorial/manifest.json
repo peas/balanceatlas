@@ -1,0 +1,26 @@
+[
+  {
+    "name": "profile",
+    "catalogue_id": "photo-greece-2025-11",
+    "source_url": "https://media.balanceatlas.com/images/retreats/greece-2025/11.webp",
+    "source_sha256": "b88650051618260eb2b699c26a3eafea76450e36f9307038cefafca92be61229",
+    "prompt": "prompts/profile.txt",
+    "output": "assets/profile.png",
+    "output_sha256": "360e221764e0561d4f4d517e75dc05f9f97b66abe2c0b82dae3792babbad18b2",
+    "generator": "Built-in image_gen; transparent_background=true",
+    "generation_filename": "exec-8555f811-f856-47ba-af45-3083d12cb5f8.png",
+    "status": "Visually checked for editorial use; user review pending"
+  },
+  {
+    "name": "diagonal",
+    "catalogue_id": "photo-thailand-2026-18",
+    "source_url": "https://media.balanceatlas.com/images/retreats/thailand-2026/18.webp",
+    "source_sha256": "afab4d9223d185dbfe80cd3080f3f77611bab7ca3eb127c8c6c034e5bbcfc239",
+    "prompt": "prompts/diagonal.txt",
+    "output": "assets/diagonal.png",
+    "output_sha256": "f36615dbccee0b97df4e598fb251bb78953fa2003cb0ea062376a852602b0464",
+    "generator": "Built-in image_gen; transparent_background=true",
+    "generation_filename": "exec-2cb57eae-482c-448d-a93c-5edb3c53c985.png",
+    "status": "Visually checked for editorial use; user review pending"
+  }
+]

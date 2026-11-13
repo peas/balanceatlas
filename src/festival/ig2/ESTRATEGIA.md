@@ -82,3 +82,12 @@ da marca. `editorial-images.ts` seleciona dez fotos já catalogadas, com IDs, UR
   close dos punhos não é caminhada do urso; extensão do tronco não é gato-vaca.
 - Manter mãos e pés no enquadramento (`object-fit: contain` nas novas peças), alternar pessoas,
   ângulos e contextos entre publicações; repetir a identidade, não sempre a mesma figura.
+
+### Hachuras selecionadas — aplicação posterior em 12/11
+
+A pedido do Paulo, duas candidatas receberam ImageGen + recorte transparente: perfil da Grécia (11) e
+pernas diagonais da Tailândia (18). A gravura vista de cima (São Paulo 106), que já existia, foi reaproveitada.
+As três entram no carrossel do dia 3; perfil e diagonal aparecem pontualmente nos stories dos dias 16 e 2.
+A tinta continua em SVG separado, com oval, arco aberto e faixa, respectivamente; grupos mantêm fotografia.
+Prompts executados, hashes, PNGs mestres, exportação e limites: `design/handstandfest-arte/2026-11-12-editorial/`.
+Isso substitui a indicação anterior de que nenhuma nova gravura havia sido gerada.

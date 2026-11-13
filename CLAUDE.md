@@ -348,3 +348,10 @@ is a selective illustration, not a default story stamp. Pending exercise slots s
 and outstanding capture needs, never substitute a different movement as the demonstration. Future engraving
 candidates and exact catalogue IDs are recorded in `ig2/ESTRATEGIA.md`; no new AI engraving was generated
 in this pass. Preserve hands/feet and identify retreat imagery as archive, not future festival coverage.
+
+**Selected editorial engravings (12 November 2026, follow-up):** Paulo requested the saved hatching/extraction
+prompts on selected new photos. Two new ImageGen cutouts (Greece profile 11, Thailand diagonal 18) and the
+existing overhead straddle now illustrate calendar day 3; days 2/16 stories use diagonal/profile selectively.
+Separate optional v07 paint uses arc/oval/sweep and ochre/light-ochre tones; community photos stay natural.
+Exact prompts, source hashes, PNG masters and regeneration: `design/handstandfest-arte/2026-11-12-editorial/`.
+This supersedes the previous no-new-engraving status. Not a procedural video filter or anatomy measurement.
