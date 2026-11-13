@@ -1,5 +1,6 @@
 // Every Instagram piece of the festival on one page: the first ten (ig/) and the second study (ig2/), grouped by
 // named visual style so Paulo and Gabriel can compare and pick. A new piece needs one entry in STYLE_OF.
+import { EDITORIAL_PIECES } from './editorial-pieces';
 import { Series } from 'remotion';
 import { PIECES, type Piece, type Slide } from './pieces';
 import { f, type PieceProps } from './kit';
@@ -26,11 +27,11 @@ export type CatalogPiece = Piece & { style: StyleId; caption?: string; material?
 
 const first: CatalogPiece[] = PECAS.map((p) => ({
   id: p.id, title: p.titulo, format: ROTULO[p.formato], description: p.ideia, look: 'Som', movement: p.som,
-  style: 'tela-cheia', caption: p.legenda, material: p.material.join(' · '),
+  style: 'tela-cheia' as const, caption: p.legenda, material: p.material.join(' · '),
   slides: (REGISTRO[p.id] ?? []).map((s, i) => ({ name: s.nome ?? (i ? `Quadro ${i + 1}` : p.titulo), component: s.comp, seconds: s.frames / FPS, height: s.h, cover: s.capa ?? 0, cues: [] })),
 })).filter((p) => p.slides.length);
 
-const second: CatalogPiece[] = PIECES.map((p) => ({ ...p, style: STYLE_OF[p.id] ?? 'janela' }));
+const second: CatalogPiece[] = [...PIECES, ...EDITORIAL_PIECES].map((p) => ({ ...p, style: p.id.startsWith('ed-') ? 'gravura' : STYLE_OF[p.id] ?? 'janela' }));
 
 export const CATALOG: CatalogPiece[] = STYLES.flatMap((s) => [...first, ...second].filter((p) => p.style === s.id));
 

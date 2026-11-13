@@ -330,3 +330,13 @@ at visible frame 60 and have image posters for unplayed/buffering/error states. 
 and the observed player wrapper uses absolute inset rather than percentage height through display:contents.
 Keep offscreen pause. Do not require autoplay for essential photographs to appear. Build and reduced-motion
 render checks passed; confirmation on Paulo's physical Pixel remains pending.
+
+## Instagram editorial calendar — 12 November 2026
+
+`/festival/instagram/` now leads with a proposed 21-day community sequence (one feed post + supporting story),
+not the style comparison gallery. Canonical plan: `src/festival/ig2/editorial.ts`; rationale, sources, capture
+priorities and measurement: `ig2/ESTRATEGIA.md`. `EditorialCalendar.tsx` lists previews and honest production
+slots; start date is editable/local-only. `editorial-pieces.tsx` adds four ochre/engraving static pieces.
+Carousel slides are static and individually visible. Old Studio remains a secondary collapsed library.
+Paulo explicitly prioritizes niche community over virality. No automatic Instagram publishing; technical
+exercise copy/capture and professional portraits stay pending review. References are not festival guests.

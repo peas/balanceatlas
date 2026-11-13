@@ -8,6 +8,39 @@ Em cada pauta, preencher **arquivo/trecho escolhido** com o nome original e os s
 
 Eu começaria por **1, 7, 3, 5 e 6**: formas, duas vistas, parede, treino real e comunidade. Para uma primeira gravação, priorizaria os closes de mãos, parede, ombros e quadril de perfil.
 
+## Handstand Life — exercícios de alinhamento para filmar
+
+Lista proposta pelo Paulo em **12/11/2026**, para gravar e ir publicando no futuro. “Handstand Life” continua como nome provisório. São pautas de demonstração com possível narração posterior, não roteiros técnicos finalizados nem uma sequência de treino prescrita. Manter as descrições abaixo como referência; confirmar nomes e detalhes da execução com quem demonstrar antes de escrever as legendas.
+
+| Gravação | Ideia descrita pelo Paulo | Sugestão de captação |
+|---|---|---|
+| ☐ 01 | **Canoinha — só as pernas:** deitado no chão, com as pernas um pouquinho para cima. | Plano de perfil, com o corpo inteiro e o contato com o chão visíveis. Registrar a entrada, a posição e a saída. |
+| ☐ 02 | **Canoinha — parte de cima.** | Mesmo enquadramento da anterior, para comparar as duas partes. Confirmar na demonstração a posição dos braços e o movimento pretendido. |
+| ☐ 03 | **Caminhar do urso:** com bastante apoio na mão para ativar os ombros. | Plano lateral ou três-quartos com espaço para caminhar, mantendo mãos e pés dentro do quadro; um segundo take mais próximo das mãos e dos ombros. |
+| ☐ 04 | **Escápulas — shrug.** | Mostrar a região dos ombros e escápulas, além de um plano inteiro. Confirmar qual apoio e variação Paulo pretende demonstrar; a posição inicial não foi especificada. |
+| ☐ 05 | **Gato-vaca.** | Perfil, câmera parada, deixando visíveis coluna, quadril, cabeça e apoios durante o movimento inteiro. |
+| ☐ 06 | **Do urso à posição alongada:** fazer o urso, estendendo o máximo possível para a frente e depois deslizando até ficar um pouco como uma prancha, mas com o braço mais à frente, firmando bastante o core. | Perfil, quadro amplo para mostrar todo o deslocamento e os apoios. Registrar a transição sem cortes; confirmar o nome e a execução na gravação, sem atribuir automaticamente um nome de exercício diferente. |
+
+### Exercícios básicos na parede
+
+Acrescentados pelo Paulo em **12/11/2026**. Continuam como pauta para demonstração e narração futura.
+
+- ☐ **07 — Barriga para a parede: progressão de inclinação.** Começar distante da parede, com as pernas a **45°**; quando estiver confortável nessa posição, passar para **60°** e só então para **90°**. Paulo quer destacar a prática frequente desse exercício, pensando em manter os **ombros abertos**, a **cabeça um pouco para dentro** e o olhar na **linha do meio das palmas**. Não foi definida uma frequência numérica nem tempo de sustentação.
+  - **Captação:** filmar as três etapas de perfil, mostrando o corpo inteiro, as mãos, os pés e a parede. Manter câmera e enquadramento comparáveis entre as etapas. Registrar também um detalhe da relação cabeça/ombros/mãos.
+  - **Antes de legendar:** confirmar na demonstração a referência dos ângulos descritos pelo Paulo; não desenhar linhas de medição com uma referência presumida.
+- ☐ **08 — Chute para a parede: chegada suave das pernas.** Tentar fazer a **primeira perna encostar devagar** e a **outra chegar mais devagar ainda**.
+  - **Captação:** plano de perfil com mãos e parede visíveis, mostrando a entrada completa e o contato de cada pé, sem cortar entre as pernas. Preservar uma tomada em velocidade real para comunicar o controle; se houver replay lento, identificá-lo.
+
+### Como transformar em peças
+
+- Gravar cada exercício separadamente, com uma pessoa em destaque e fundo simples. Guardar uma versão natural da filmagem, sem filtro, e anotar arquivo e timecodes.
+- Testar o filtro contínuo de hachura do [laboratório](../engraving/README.md), inclusive a variante colorida, preservando a leitura de mãos, ombros e quadril. Um ou dois padrões visuais ainda serão escolhidos pelo Paulo.
+- A explicação pode entrar depois como **voiceover**, com legendas. Anotar na gravação o que o professor deseja destacar; não inventar correções, benefícios ou dosagens na edição.
+- Alternativa pontual: congelar um instante para a mensagem e aplicar a linguagem de gravura/mancha de [IMAGERY.md](../IMAGERY.md). Não é obrigatório congelar todo exercício.
+- Publicar aos poucos como conteúdo sobre a prática, sem obrigar cada vídeo a divulgar o festival. Ordem, frequência e datas ainda em aberto.
+
+**Estado:** oito ideias registradas (seis de alinhamento e duas de parede); gravações, arquivos selecionados, narrações e calendário pendentes.
+
 ## Pautas com sugestão de foto e vídeo
 
 ### 01. Reta, tuck, straddle: você reconhece?

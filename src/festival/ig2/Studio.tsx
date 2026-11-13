@@ -6,7 +6,7 @@ import { f, type PieceProps, type Treatment, type Palette, OCHRE_TOKENS } from '
 import './studio.css';
 import { suggestedMusic } from './music';
 
-function Preview({ slide, still, ready, inputProps, label }: { slide: Slide; still: boolean; ready: boolean; inputProps: PieceProps; label: string }) {
+export function Preview({ slide, still, ready, inputProps, label }: { slide: Slide; still: boolean; ready: boolean; inputProps: PieceProps; label: string }) {
   const box = useRef<HTMLDivElement>(null);
   const player = useRef<PlayerRef>(null);
   const [near, setNear] = useState(false);

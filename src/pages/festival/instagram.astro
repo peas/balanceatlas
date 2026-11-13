@@ -1,16 +1,16 @@
 ---
 import FestLayout from '../../layouts/FestLayout.astro';
 import HFSelo from '../../components/fest/HFSelo.astro';
-import Studio from '../../festival/ig2/Studio';
+import EditorialCalendar from '../../festival/ig2/EditorialCalendar';
 ---
-<FestLayout stickyNav={false} title="Instagram · HandstandFest" description="Todas as peças de Instagram do HandstandFest, agrupadas por estilo.">
+<FestLayout stickyNav={false} title="Instagram · HandstandFest" description="Calendário editorial da comunidade HandstandFest: posts, stories e captação.">
   <main class="ig2-page wrap">
     <header class="ig2-header">
       <nav class="ig2-nav" aria-label="Estudo de Instagram"><a href="/festival/" class="ig2-brand"><HFSelo simples /> HandstandFest</a><a href="/festival/">Site do festival ↗</a></nav>
-      <div class="ig2-intro"><div><p>PÁGINA DE TRABALHO / @HANDSTANDFEST</p><h1>Insta<span>gram.</span></h1></div><p class="ig2-summary">Todas as peças numa página só, agrupadas por estilo, para comparar e escolher o que combina. Prévias ao vivo.</p></div>
+      <div class="ig2-intro"><div><p>PÁGINA DE TRABALHO / @HANDSTANDFEST</p><h1>Insta<span>gram.</span></h1></div><p class="ig2-summary">Uma sequência de 21 dias: prática, exercícios, referências e festival. Posts, stories de apoio e o que falta produzir.</p></div>
     </header>
-    <Studio client:only="react"><p slot="fallback">Carregando as composições…</p></Studio>
-    <p class="ig2-footnote">Página de trabalho · prévias ao vivo · sem música adicionada · o seletor de tratamento vale para os estilos 2 a 5</p>
+    <EditorialCalendar client:only="react"><p slot="fallback">Carregando as composições…</p></EditorialCalendar>
+    <p class="ig2-footnote">Planejamento da comunidade · rascunhos para revisão · nenhuma postagem automática</p>
   </main>
 </FestLayout>
 <style>
