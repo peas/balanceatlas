@@ -1,6 +1,6 @@
 {
   "versao": 1,
-  "atualizado": "2026-11-12",
+  "atualizado": "2026-11-13",
   "escopo": "Derivados artísticos; originais continuam em catalogo.yaml. Caminhos relativos à raiz do repositório.",
   "tinta": {
     "mestre": "public/festival/ig/arte/engraving-v1/brush-v7.svg",
@@ -280,6 +280,96 @@
       "figura_relacionada": "gravura-straddle-montanha",
       "estado": "linguagem aprovada",
       "limites": "Não confundir composição com recorte transparente reutilizável."
+    },
+    {
+      "id": "gravura-freeze-piscina-solo",
+      "tipo": "figura-hachurada",
+      "descricao": "Figura hachurada registrada sobre o frame de natureza-piscina-press-solo",
+      "fonte_catalogo_id": "natureza-pxl-20241201-151159837",
+      "fonte_manifesto": "design/handstandfest-arte/2026-11-13-freezes/manifest.json",
+      "handstand": true,
+      "pessoas": 1,
+      "forma": "reta",
+      "arquivo_mestre": "design/handstandfest-arte/2026-11-13-freezes/assets/piscina-solo.png",
+      "arquivo_web": "public/festival/ig/arte/freezes-v1/piscina-solo.webp",
+      "largura": 941,
+      "altura": 1672,
+      "alpha": true,
+      "sha256": "374e8942087754a395a971c33c8e6a2703e1df6ca640d0b6c0ca6fe4f52fa32c",
+      "prompt": "design/handstandfest-arte/2026-11-13-freezes/prompts/piscina-solo.txt",
+      "tinta_embutida": false,
+      "reutilizacao": [
+        "freeze",
+        "story",
+        "carrossel",
+        "site",
+        "camiseta (prova de impressão necessária)"
+      ],
+      "usado_em": [
+        "natureza-piscina-press-solo"
+      ],
+      "estado": "revisão de sobreposição feita; aprovação individual pendente",
+      "limites": "Gravura gerativa, não medição. Preservar canvas para alinhamento; mancha em layer independente a 65%."
+    },
+    {
+      "id": "gravura-freeze-deck-pike",
+      "tipo": "figura-hachurada",
+      "descricao": "Figura hachurada registrada sobre o frame de natureza-deck-pike-reta",
+      "fonte_catalogo_id": "natureza-pxl-20261011-132501430",
+      "fonte_manifesto": "design/handstandfest-arte/2026-11-13-freezes/manifest.json",
+      "handstand": true,
+      "pessoas": 1,
+      "forma": "pike",
+      "arquivo_mestre": "design/handstandfest-arte/2026-11-13-freezes/assets/deck-pike.png",
+      "arquivo_web": "public/festival/ig/arte/freezes-v1/deck-pike.webp",
+      "largura": 941,
+      "altura": 1672,
+      "alpha": true,
+      "sha256": "36e09c36d43726ac2846e7c3230192ea78ca791e7539797221456dda42f18919",
+      "prompt": "design/handstandfest-arte/2026-11-13-freezes/prompts/deck-pike.txt",
+      "tinta_embutida": false,
+      "reutilizacao": [
+        "freeze",
+        "story",
+        "carrossel",
+        "site",
+        "camiseta (prova de impressão necessária)"
+      ],
+      "usado_em": [
+        "natureza-deck-pike-reta"
+      ],
+      "estado": "revisão de sobreposição feita; aprovação individual pendente",
+      "limites": "Gravura gerativa, não medição. Preservar canvas para alinhamento; mancha em layer independente a 65%."
+    },
+    {
+      "id": "gravura-freeze-gabriel-reta",
+      "tipo": "figura-hachurada",
+      "descricao": "Figura hachurada registrada sobre o frame de gabriel-transicoes-tela",
+      "fonte_catalogo_id": "gabriel-img-3372",
+      "fonte_manifesto": "design/handstandfest-arte/2026-11-13-freezes/manifest.json",
+      "handstand": true,
+      "pessoas": 1,
+      "forma": "reta",
+      "arquivo_mestre": "design/handstandfest-arte/2026-11-13-freezes/assets/gabriel-reta.png",
+      "arquivo_web": "public/festival/ig/arte/freezes-v1/gabriel-reta.webp",
+      "largura": 941,
+      "altura": 1672,
+      "alpha": true,
+      "sha256": "a81c6621a07edcada257dec628649f6b08b743aacc611a34ea933f7c52c95440",
+      "prompt": "design/handstandfest-arte/2026-11-13-freezes/prompts/gabriel-reta.txt",
+      "tinta_embutida": false,
+      "reutilizacao": [
+        "freeze",
+        "story",
+        "carrossel",
+        "site",
+        "camiseta (prova de impressão necessária)"
+      ],
+      "usado_em": [
+        "gabriel-transicoes-tela"
+      ],
+      "estado": "revisão de sobreposição feita; aprovação individual pendente",
+      "limites": "Gravura gerativa, não medição. Preservar canvas para alinhamento; mancha em layer independente a 65%."
     }
   ]
 }

@@ -1,0 +1,53 @@
+[
+  {
+    "name": "piscina-solo",
+    "source": "public/festival/ig/natureza-v1/piscina-press-solo-freeze.webp",
+    "source_sha256": "0b69ab778966d6a0f81d319afc100206b565e1b95456483d11f3d51c0b928674",
+    "source_catalogue_id": "natureza-pxl-20241201-151159837",
+    "cut_freeze_frame": 378,
+    "fps": 30,
+    "original_freeze_seconds": 17,
+    "output": "design/handstandfest-arte/2026-11-13-freezes/assets/piscina-solo.png",
+    "output_sha256": "374e8942087754a395a971c33c8e6a2703e1df6ca640d0b6c0ca6fe4f52fa32c",
+    "web": "public/festival/ig/arte/freezes-v1/piscina-solo.webp",
+    "prompt": "design/handstandfest-arte/2026-11-13-freezes/prompts/piscina-solo.txt",
+    "consumer": "natureza-piscina-press-solo",
+    "shape": "reta",
+    "generator": "built-in image_gen, transparent_background=true",
+    "review": "overlay and phone-size review; individual user approval pending"
+  },
+  {
+    "name": "deck-pike",
+    "source": "public/festival/ig/natureza-v1/deck-pike-reta-freeze.webp",
+    "source_sha256": "b4e101ed7b835955b4ae4387a250ba88b24a90433a61b29dddd26b2446e69931",
+    "source_catalogue_id": "natureza-pxl-20261011-132501430",
+    "cut_freeze_frame": 480,
+    "fps": 30,
+    "original_freeze_seconds": 48,
+    "output": "design/handstandfest-arte/2026-11-13-freezes/assets/deck-pike.png",
+    "output_sha256": "36e09c36d43726ac2846e7c3230192ea78ca791e7539797221456dda42f18919",
+    "web": "public/festival/ig/arte/freezes-v1/deck-pike.webp",
+    "prompt": "design/handstandfest-arte/2026-11-13-freezes/prompts/deck-pike.txt",
+    "consumer": "natureza-deck-pike-reta",
+    "shape": "pike",
+    "generator": "built-in image_gen, transparent_background=true",
+    "review": "overlay and phone-size review; individual user approval pending"
+  },
+  {
+    "name": "gabriel-reta",
+    "source": "public/festival/ig/gabriel/img-3372-freeze.webp",
+    "source_sha256": "eef6de0e20093d261fa00cc2144acde8246382dd7daecec859cc6a3f484ff6ac",
+    "source_catalogue_id": "gabriel-img-3372",
+    "cut_freeze_frame": 180,
+    "fps": 30,
+    "original_freeze_seconds": 6,
+    "output": "design/handstandfest-arte/2026-11-13-freezes/assets/gabriel-reta.png",
+    "output_sha256": "a81c6621a07edcada257dec628649f6b08b743aacc611a34ea933f7c52c95440",
+    "web": "public/festival/ig/arte/freezes-v1/gabriel-reta.webp",
+    "prompt": "design/handstandfest-arte/2026-11-13-freezes/prompts/gabriel-reta.txt",
+    "consumer": "gabriel-transicoes-tela",
+    "shape": "reta",
+    "generator": "built-in image_gen, transparent_background=true",
+    "review": "overlay and phone-size review; individual user approval pending"
+  }
+]

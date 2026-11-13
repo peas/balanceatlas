@@ -1,6 +1,7 @@
 // Every Instagram piece of the festival on one page: the first ten (ig/) and the second study (ig2/), grouped by
 // named visual style so Paulo and Gabriel can compare and pick. A new piece needs one entry in STYLE_OF.
 import { GABRIEL_PIECES } from './gabriel-pieces';
+import { NATURE_PIECES } from './natureza-pieces';
 import { EDITORIAL_PIECES } from './editorial-pieces';
 import { Series } from 'remotion';
 import { PIECES, type Piece, type Slide } from './pieces';
@@ -37,7 +38,8 @@ const first: CatalogPiece[] = PECAS.map((p) => ({
 
 const second: CatalogPiece[] = [...PIECES, ...EDITORIAL_PIECES, ...GABRIEL_PIECES.filter(p=>p.id!=='gabriel-transicoes')].map((p) => ({ ...p, style: p.id.startsWith('ed-') ? 'gravura' : STYLE_OF[p.id] ?? 'janela' }));
 
-export const CATALOG: CatalogPiece[] = STYLES.flatMap((s) => [...first, ...second].filter((p) => p.style === s.id));
+const nature:CatalogPiece[]=NATURE_PIECES.map(p=>({...p,style:p.format==='Reel'?'congela':'tela-cheia'}));
+export const CATALOG: CatalogPiece[] = STYLES.flatMap((s) => [...first, ...second, ...nature].filter((p) => p.style === s.id));
 
 // One player per piece: a carousel or a story sequence plays as one composition, slide after slide, and the
 // slide names become jump buttons. Built once per piece (a new component on each render would restart the Player).

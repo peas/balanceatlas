@@ -386,3 +386,12 @@ The full-video comparison is now approved for all existing/future Instagram foot
 ## Nature/pool media curation — 12 November 2026
 
 Reviewed the two new Downloads folders and standalone pool video (24 files, 23 unique sources). `acervo/catalogo.yaml` adds eight videos and four images; a fifth photo is the higher-resolution original of existing `photo-thailand-2026-56`. `acervo/lotes/natureza-2026-11-12.md` records the shortlist, omissions and nine original-timeline cuts; its JSON is the ingestion/deduplication manifest. `scripts/festival_curated_media.py` preserves accepted originals and makes local SDR cuts, photo derivatives and a gallery. Prefer the two water presses, waterfall pike and eleven-person pool photo for future Instagram variety. These are prepared source assets, not newly published posts; audio remains unreviewed. Full sources/cuts stay out of Git, public-web derivatives require normal optimization.
+
+## Nature/water Instagram pieces — 13 November 2026
+
+The 12 November curation has now become nine actual Reels plus three photo Stories, visible at the top of
+`/instagram/#natureza` (local route `/festival/instagram/`). Registry/copy/source timing: `ig2/natureza.json`;
+shared preview/export components: `natureza-pieces.tsx`; workflow: `ig2/NATUREZA.md`. Near-full footage, exact
+freeze, photographic P&B, ochre text highlight and large painted HF seal. Solo water press has lower text
+to leave feet visible; indoor pike photo has the seal on the right. Selected pool/deck cuts and Gabriel transitions now use registered anatomical engraving over the intact colour still, with independent v07 ochre at 65%; see `design/handstandfest-arte/2026-11-13-freezes/README.md`. No music.
+Web derivatives live in `public/festival/ig/natureza-v1/`; the initial export batch was stopped at Paulo’s request; review is page-only, and partial local exports predate engraving. Catalogue backlinks record actual composition use.

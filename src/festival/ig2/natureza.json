@@ -1,0 +1,257 @@
+[
+  {
+    "id": "natureza-piscina-press-dupla",
+    "kind": "reel",
+    "file": "piscina-press-dupla",
+    "sourceId": "natureza-pxl-20260226-054213391-2",
+    "sourcePath": "selecionados/piscina-press-dupla.mp4",
+    "freezeFrame": 396,
+    "originalStart": 1.3,
+    "originalFreeze": 14.5,
+    "hook": [
+      "E SE A ENTRADA",
+      "VIER DA ÁGUA?"
+    ],
+    "close": [
+      "COM QUEM VOCÊ",
+      "TENTARIA?"
+    ],
+    "title": "Press em dupla",
+    "caption": "Uma entrada, duas pessoas. Com quem você gosta de explorar novas formas?\n\n#handstandlife #handstandfest",
+    "sealX": 65,
+    "sealY": 1410,
+    "lowerTitle": false
+  },
+  {
+    "id": "natureza-piscina-press-solo",
+    "kind": "reel",
+    "file": "piscina-press-solo",
+    "sourceId": "natureza-pxl-20241201-151159837",
+    "sourcePath": "selecionados/piscina-press-solo.mp4",
+    "freezeFrame": 378,
+    "originalStart": 4.4,
+    "originalFreeze": 17,
+    "hook": [
+      "JÁ VIU UM PRESS",
+      "SAINDO DA ÁGUA?"
+    ],
+    "close": [
+      "O QUE VOCÊ",
+      "NOTOU AQUI?"
+    ],
+    "title": "Press saindo da água",
+    "caption": "Uma entrada vista com calma. O que chamou sua atenção na subida? Registro de prática, não um passo a passo.\n\n#handstandlife #handstandfest",
+    "sealX": 65,
+    "sealY": 1410,
+    "lowerTitle": true
+  },
+  {
+    "id": "natureza-deck-pike-reta",
+    "kind": "reel",
+    "file": "deck-pike-reta",
+    "sourceId": "natureza-pxl-20261011-132501430",
+    "sourcePath": "selecionados/deck-pike-reta.mp4",
+    "freezeFrame": 480,
+    "originalStart": 32,
+    "originalFreeze": 48,
+    "hook": [
+      "O QUE MUDA",
+      "NO PIKE?"
+    ],
+    "close": [
+      "VOCÊ PREFERE",
+      "PIKE OU RETA?"
+    ],
+    "title": "Do pike à reta",
+    "caption": "Entre dobrar o quadril e estender o corpo, o movimento também faz parte da prática. Qual forma você gosta de explorar?\n\n#handstandlife #handstandfest",
+    "sealX": 65,
+    "sealY": 1410,
+    "lowerTitle": false
+  },
+  {
+    "id": "natureza-deck-tuck-reta",
+    "kind": "reel",
+    "file": "deck-tuck-reta",
+    "sourceId": "natureza-pxl-20261011-130549088",
+    "sourcePath": "selecionados/deck-tuck-reta.mp4",
+    "freezeFrame": 519,
+    "originalStart": 18.7,
+    "originalFreeze": 36,
+    "hook": [
+      "COMO VOCÊ",
+      "CHEGA À RETA?"
+    ],
+    "close": [
+      "QUAL TRANSIÇÃO",
+      "VOCÊ EXPLORA?"
+    ],
+    "title": "Do tuck à reta",
+    "caption": "Nem só a posição final: o caminho entre as formas também merece atenção. Qual transição está no seu treino?\n\n#handstandlife #handstandfest",
+    "sealX": 65,
+    "sealY": 1410,
+    "lowerTitle": false
+  },
+  {
+    "id": "natureza-deck-entrada-agrupada",
+    "kind": "reel",
+    "file": "deck-entrada-agrupada",
+    "sourceId": "natureza-pxl-20261011-133147658",
+    "sourcePath": "selecionados/deck-entrada-agrupada.mp4",
+    "freezeFrame": 315,
+    "originalStart": 37.5,
+    "originalFreeze": 48,
+    "hook": [
+      "E ANTES DE",
+      "FICAR NO AR?"
+    ],
+    "close": [
+      "COMO É A SUA",
+      "ENTRADA?"
+    ],
+    "title": "A entrada faz parte",
+    "caption": "Aqui, a entrada agrupada tem impulso. Como você costuma entrar na parada de mãos?\n\n#handstandlife #handstandfest",
+    "sealX": 65,
+    "sealY": 1410,
+    "lowerTitle": false
+  },
+  {
+    "id": "natureza-deck-preparacao",
+    "kind": "reel",
+    "file": "deck-preparacao",
+    "sourceId": "natureza-pxl-20261011-133147658",
+    "sourcePath": "selecionados/deck-preparacao.mp4",
+    "freezeFrame": 390,
+    "originalStart": 11,
+    "originalFreeze": 24,
+    "hook": [
+      "SEU TREINO",
+      "COMEÇA ONDE?"
+    ],
+    "close": [
+      "O QUE VOCÊ FAZ",
+      "ANTES DE SUBIR?"
+    ],
+    "title": "Antes da inversão",
+    "caption": "O treino também tem momentos com os pés no chão. O que faz parte da sua preparação?\n\n#handstandlife #handstandfest",
+    "sealX": 65,
+    "sealY": 1410,
+    "lowerTitle": false
+  },
+  {
+    "id": "natureza-deck-straddle-frente",
+    "kind": "reel",
+    "file": "deck-straddle-frente",
+    "sourceId": "natureza-pxl-20261011-134222238",
+    "sourcePath": "selecionados/deck-straddle-frente.mp4",
+    "freezeFrame": 960,
+    "originalStart": 4,
+    "originalFreeze": 36,
+    "hook": [
+      "QUANTAS FORMAS",
+      "VOCÊ EXPLORA?"
+    ],
+    "close": [
+      "QUAL VOCÊ QUER",
+      "EXPLORAR?"
+    ],
+    "title": "Formas no verde",
+    "caption": "Reta, straddle, mudanças de forma. Qual delas você quer observar mais de perto?\n\n#handstandlife #handstandfest",
+    "sealX": 65,
+    "sealY": 1410,
+    "lowerTitle": false
+  },
+  {
+    "id": "natureza-deck-straddle-baixo",
+    "kind": "reel",
+    "file": "deck-straddle-baixo",
+    "sourceId": "natureza-pxl-20261011-134732273",
+    "sourcePath": "selecionados/deck-straddle-baixo.mp4",
+    "freezeFrame": 630,
+    "originalStart": 21,
+    "originalFreeze": 42,
+    "hook": [
+      "COMO É O SEU",
+      "STRADDLE?"
+    ],
+    "close": [
+      "O QUE MUDA",
+      "NESSE CAMINHO?"
+    ],
+    "title": "Straddle em movimento",
+    "caption": "Um trecho para observar a mudança de forma. O take original termina ainda em inversão; não mostra a saída completa.\n\n#handstandlife #handstandfest",
+    "sealX": 65,
+    "sealY": 1410,
+    "lowerTitle": false
+  },
+  {
+    "id": "natureza-pavilhao-press-sequencia",
+    "kind": "reel",
+    "file": "pavilhao-press-sequencia",
+    "sourceId": "natureza-whatsapp-video-2026-02-26-at-11-56-14",
+    "sourcePath": "selecionados/pavilhao-press-sequencia.mp4",
+    "freezeFrame": 339,
+    "originalStart": 3.7,
+    "originalFreeze": 15,
+    "hook": [
+      "COMO ACONTECE",
+      "ESSA SUBIDA?"
+    ],
+    "close": [
+      "ONDE SUA",
+      "ATENÇÃO FICA?"
+    ],
+    "title": "Press no pavilhão",
+    "caption": "Ao acompanhar a subida, você olha primeiro para as mãos, os ombros ou o quadril? Uma conversa sobre observar o movimento, sem prescrever técnica.\n\n#handstandlife #handstandfest",
+    "sealX": 65,
+    "sealY": 1410,
+    "lowerTitle": false
+  },
+  {
+    "id": "natureza-cachoeira",
+    "kind": "photo",
+    "file": "cachoeira",
+    "sourceId": "natureza-pxl-20260427-144613209",
+    "sourcePath": "selecionados/natureza-pxl-20260427-144613209.webp",
+    "hook": [
+      "QUAL PAISAGEM",
+      "FICOU COM VOCÊ?"
+    ],
+    "title": "Pike e cachoeira",
+    "caption": "Tem uma paisagem que ficou ligada à sua prática? Este é um registro pessoal, não uma sugestão de treinar em pedras molhadas.\n\n#handstandlife #handstandfest",
+    "sealX": 65,
+    "sealY": 1410,
+    "lowerTitle": false
+  },
+  {
+    "id": "natureza-comunidade",
+    "kind": "photo",
+    "file": "comunidade",
+    "sourceId": "natureza-img-6271",
+    "sourcePath": "selecionados/natureza-img-6271.webp",
+    "hook": [
+      "COM QUEM VOCÊ",
+      "QUER TREINAR?"
+    ],
+    "title": "Uma prática, muita gente",
+    "caption": "Estamos criando e mapeando encontros e lugares para treinar. Conta sua cidade e os encontros que você conhece. Vamos confirmar os detalhes com quem organiza.\n\n#handstandlife #handstandfest",
+    "sealX": 65,
+    "sealY": 1410,
+    "lowerTitle": false
+  },
+  {
+    "id": "natureza-pike",
+    "kind": "photo",
+    "file": "pike",
+    "sourceId": "natureza-pxl-20260427-131533524",
+    "sourcePath": "selecionados/natureza-pxl-20260427-131533524.webp",
+    "hook": [
+      "O QUE MUDA",
+      "NESSA FORMA?"
+    ],
+    "title": "Uma pausa no pike",
+    "caption": "Uma foto para olhar com calma: o que chama sua atenção nessa forma?\n\n#handstandlife #handstandfest",
+    "sealX": 770,
+    "sealY": 1410,
+    "lowerTitle": false
+  }
+]

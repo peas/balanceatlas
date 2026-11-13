@@ -7060,6 +7060,7 @@
   problemas: "Captura com barras pretas e bastante espaço acima; corpo pequeno no quadro."
 
 - id: natureza-pxl-20261011-130549088
+  aplicacoes_instagram: [{"peca": "natureza-deck-tuck-reta", "pagina": "/instagram/#natureza-deck-tuck-reta", "tratamento": "freeze-pb-ocre", "registro": "2026-11-13"}]
   cenario: ["piscina", "mata", "deck", "ceu"]
   arquivo: "natureza-2026-11-12/PXL_20261011_130549088.mp4"
   arquivo_local: "local/festival/natureza-2026-11-12/originals/PXL_20261011_130549088.mp4"
@@ -7098,6 +7099,7 @@
   cenas: [{"de": 18.7, "ate": 65.5, "posicao": ["tuck", "reta"], "o_que": "Tuck e reta no deck", "quadro": "corpo inteiro; cenário preservado", "nota": 4}]
 
 - id: natureza-pxl-20261011-132501430
+  aplicacoes_instagram: [{"peca": "natureza-deck-pike-reta", "pagina": "/instagram/#natureza-deck-pike-reta", "tratamento": "freeze-hachura-cenario-ocre65", "registro": "2026-11-13"}]
   cenario: ["piscina", "mata", "deck", "ceu"]
   arquivo: "natureza-2026-11-12/PXL_20261011_132501430.mp4"
   arquivo_local: "local/festival/natureza-2026-11-12/originals/PXL_20261011_132501430.mp4"
@@ -7136,6 +7138,7 @@
   cenas: [{"de": 32, "ate": 61.5, "posicao": ["pike", "reta"], "o_que": "Pike e reta de perfil", "quadro": "corpo inteiro; cenário preservado", "nota": 4}]
 
 - id: natureza-pxl-20261011-133147658
+  aplicacoes_instagram: [{"peca": "natureza-deck-entrada-agrupada", "pagina": "/instagram/#natureza-deck-entrada-agrupada", "tratamento": "freeze-pb-ocre", "registro": "2026-11-13"}, {"peca": "natureza-deck-preparacao", "pagina": "/instagram/#natureza-deck-preparacao", "tratamento": "freeze-pb-ocre", "registro": "2026-11-13"}]
   cenario: ["piscina", "mata", "deck", "ceu"]
   arquivo: "natureza-2026-11-12/PXL_20261011_133147658.mp4"
   arquivo_local: "local/festival/natureza-2026-11-12/originals/PXL_20261011_133147658.mp4"
@@ -7174,6 +7177,7 @@
   cenas: [{"de": 11, "ate": 38.5, "posicao": ["aquecimento"], "o_que": "Preparação de apoios no deck", "quadro": "corpo inteiro; cenário preservado", "nota": 4}, {"de": 37.5, "ate": 64, "posicao": ["reta", "tuck", "pike"], "o_que": "Entrada agrupada e mudança de formas", "quadro": "corpo inteiro; cenário preservado", "nota": 4}]
 
 - id: natureza-pxl-20261011-134222238
+  aplicacoes_instagram: [{"peca": "natureza-deck-straddle-frente", "pagina": "/instagram/#natureza-deck-straddle-frente", "tratamento": "freeze-pb-ocre", "registro": "2026-11-13"}]
   cenario: ["piscina", "mata", "deck", "ceu"]
   arquivo: "natureza-2026-11-12/PXL_20261011_134222238.mp4"
   arquivo_local: "local/festival/natureza-2026-11-12/originals/PXL_20261011_134222238.mp4"
@@ -7212,6 +7216,7 @@
   cenas: [{"de": 4, "ate": 47.5, "posicao": ["reta", "straddle"], "o_que": "Reta e straddle entre piscina e mata", "quadro": "corpo inteiro; cenário preservado", "nota": 4}]
 
 - id: natureza-pxl-20261011-134732273
+  aplicacoes_instagram: [{"peca": "natureza-deck-straddle-baixo", "pagina": "/instagram/#natureza-deck-straddle-baixo", "tratamento": "freeze-pb-ocre", "registro": "2026-11-13"}]
   cenario: ["piscina", "mata", "deck", "ceu"]
   arquivo: "natureza-2026-11-12/PXL_20261011_134732273.mp4"
   arquivo_local: "local/festival/natureza-2026-11-12/originals/PXL_20261011_134732273.mp4"
@@ -7250,6 +7255,7 @@
   cenas: [{"de": 21, "ate": 65.9, "posicao": ["straddle", "reta"], "o_que": "Straddle baixo e extensão", "quadro": "corpo inteiro; cenário preservado", "nota": 4}]
 
 - id: natureza-pxl-20241201-151159837
+  aplicacoes_instagram: [{"peca": "natureza-piscina-press-solo", "pagina": "/instagram/#natureza-piscina-press-solo", "tratamento": "freeze-hachura-cenario-ocre65", "registro": "2026-11-13"}]
   cenario: ["piscina", "ceu", "predios"]
   arquivo: "natureza-2026-11-12/PXL_20241201_151159837.mp4"
   arquivo_local: "local/festival/natureza-2026-11-12/originals/PXL_20241201_151159837.mp4"
@@ -7289,6 +7295,7 @@
   problemas: "Áudio não revisado. Parte inferior do corpo fica na água na preparação e na volta; corpo inteiro na inversão."
 
 - id: natureza-pxl-20260226-054213391-2
+  aplicacoes_instagram: [{"peca": "natureza-piscina-press-dupla", "pagina": "/instagram/#natureza-piscina-press-dupla", "tratamento": "freeze-pb-ocre", "registro": "2026-11-13"}]
   cenario: ["piscina", "jardim", "pergola"]
   arquivo: "natureza-2026-11-12/PXL_20260226_054213391~2.mp4"
   arquivo_local: "local/festival/natureza-2026-11-12/originals/PXL_20260226_054213391~2.mp4"
@@ -7328,6 +7335,7 @@
   problemas: "Áudio não revisado. Pessoas ao fundo; contagem aproximada no momento da reta. Fonte HLG convertida para SDR."
 
 - id: natureza-whatsapp-video-2026-02-26-at-11-56-14
+  aplicacoes_instagram: [{"peca": "natureza-pavilhao-press-sequencia", "pagina": "/instagram/#natureza-pavilhao-press-sequencia", "tratamento": "freeze-pb-ocre", "registro": "2026-11-13"}]
   cenario: ["pavilhao", "madeira", "vegetacao"]
   arquivo: "natureza-2026-11-12/WhatsApp Video 2026-02-26 at 11.56.14.mp4"
   arquivo_local: "local/festival/natureza-2026-11-12/originals/WhatsApp Video 2026-02-26 at 11.56.14.mp4"
@@ -7367,6 +7375,7 @@
   problemas: "Áudio não revisado. Fonte WhatsApp de 464×832: não ampliar como se recuperasse detalhe; observadores parciais."
 
 - id: natureza-img-6271
+  aplicacoes_instagram: [{"peca": "natureza-comunidade", "pagina": "/instagram/#natureza-comunidade", "tratamento": "foto-natural-ocre", "registro": "2026-11-13"}]
   cenario: ["piscina", "arvores", "reflexos"]
   arquivo: "natureza-2026-11-12/IMG_6271.PNG"
   arquivo_local: "local/festival/natureza-2026-11-12/originals/IMG_6271.PNG"
@@ -7425,6 +7434,7 @@
   problemas: "segunda pessoa possivelmente visível parcialmente junto ao balcão"
 
 - id: natureza-pxl-20260427-131533524
+  aplicacoes_instagram: [{"peca": "natureza-pike", "pagina": "/instagram/#natureza-pike", "tratamento": "foto-natural-ocre", "registro": "2026-11-13"}]
   cenario: ["interior", "madeira", "janelas", "vegetacao"]
   arquivo: "natureza-2026-11-12/PXL_20260427_131533524.jpg"
   arquivo_local: "local/festival/natureza-2026-11-12/originals/PXL_20260427_131533524.jpg"
@@ -7454,6 +7464,7 @@
   problemas: "Contagens e nomes das formas aproximados; foto não comprova a entrada em press."
 
 - id: natureza-pxl-20260427-144613209
+  aplicacoes_instagram: [{"peca": "natureza-cachoeira", "pagina": "/instagram/#natureza-cachoeira", "tratamento": "foto-natural-ocre", "registro": "2026-11-13"}]
   cenario: ["cachoeira", "mata", "rochas"]
   arquivo: "natureza-2026-11-12/PXL_20260427_144613209.jpg"
   arquivo_local: "local/festival/natureza-2026-11-12/originals/PXL_20260427_144613209.jpg"

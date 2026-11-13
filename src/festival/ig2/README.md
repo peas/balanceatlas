@@ -153,3 +153,18 @@ Implementation: `ig2/kit.tsx` (`VideoScene`, `BrandSeal`, `PracticeClose`), indi
 Research distinction: Meta's [Best Practices hub](https://about.fb.com/news/2024/10/best-practices-education-hub-creators-instagram/) describes general and personalized account guidance. It does not establish a rule that logos must be on the last carousel slide. That choice is Paulo's approved editorial/identity direction, not an algorithmic performance claim. A safe-zone help page required login during this check; no new universal margin percentage was inferred.
 
 Validation for this rollout: production build and 21 composition/frame previews passed; the calendar Player played and reached its paint cue without browser errors. Representative H.264 exports are 1080×1920 (football and Gabriel beach), plus seven PNGs including the five-slide consistency carousel. `tsc --noEmit` still reports the pre-existing transition-union type error at `src/festival/compositions.tsx:165`; no new type errors were reported.
+
+## Nature and water — actual compositions (13 November 2026)
+
+The curated nature cuts now have nine Reel compositions and three photo Stories, listed directly at the
+top of `/instagram/#natureza` rather than hidden inside the old style library. Real-time footage freezes
+at a registered CFR frame; selected figures gain anatomical engraving over colour scenery, while the
+other clips use photographic P&B. Questions, ochre and the painted HF seal enter without reducing the body. Photos keep their scenery in colour. Source offsets, caption drafts, regeneration and
+export details: [NATUREZA.md](NATUREZA.md). See the selected engraved applications below.
+
+### Engraved freeze examples (13 November, follow-up)
+
+Pool solo, deck pike and Gabriel transitions now use the approved three-layer freeze: intact colour scenery,
+v07 ochre at 65%, generated black/ivory figure above. Shared `EngravedFreeze.tsx`; prompts and provenance:
+`design/handstandfest-arte/2026-11-13-freezes/README.md`. Gabriel also appears beside the nature examples for
+comparison, while retaining his calendar placement. Page-only delivery; the prior export batch was stopped.

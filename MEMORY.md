@@ -1,5 +1,7 @@
 # Balance Atlas memory
 
+13 Nov 2026: nature curation now has 9 Reels + 3 photo Stories at `/instagram/#natureza`, plus a Gabriel comparison. Selected freezes add registered engraving over original colour scenery and independent ochre at 65%. Source/copy registry `ig2/natureza.json`; recipe `ig2/NATUREZA.md`; prompts in `design/handstandfest-arte/2026-11-13-freezes/`. Page-only review requested; partial earlier exports are obsolete.
+
 Nature/pool batch (12 Nov 2026): 8 videos + 4 new photos catalogued; high-res source linked to existing Thailand photo. Nine local cuts and five photo derivatives via `scripts/festival_curated_media.py`; shortlist, source-time offsets and omissions in `acervo/lotes/natureza-2026-11-12.md`. Prioritize water presses, waterfall pike and group pool photo. No new posts published.
 
 ## 2026-11-12 — Full-video and larger signature approved
@@ -173,3 +175,8 @@ Nature/pool batch (12 Nov 2026): 8 videos + 4 new photos catalogued; high-res so
 - Extended `acervo/catalogo.yaml`, retaining the existing video records: 190 image references, 189 visually inspected, one unavailable (Turkey hero HTTP 404, unknown fields null).
 - Paulo wants approximate discovery labels: handstand boolean, total people, people in handstand, shapes, whole body, group/all practising and suggested uses. Headstand is separate. No automatic skeleton analysis or face identification.
 - `scripts/festival_image_index.py` prepares ignored contact sheets, validates the canonical YAML and filters/exports selections. Schema and examples in `acervo/README.md`. Retreat videos and vocabulary image cards remain pending.
+
+## 2026-11-13 — Engraved freezes on the Instagram page
+
+- Nine nature Reels + three photo Stories are actual compositions, now visible above the calendar. Pool solo, deck pike and Gabriel transitions use three independent layers: original colour still, v07 ochre 65%, registered transparent engraving. Full-frame footage and large HF seal retained.
+- Prompts/provenance: `design/handstandfest-arte/2026-11-13-freezes/README.md`; art index: `acervo/gravuras.json`; implementation: `ig2/EngravedFreeze.tsx`. Page-only review requested; stopped the earlier final export batch (partial local files are obsolete snapshots).

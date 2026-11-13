@@ -68,3 +68,14 @@ Paulo approved the larger-video test as the default for existing and future Inst
 Implementation: `ig2/kit.tsx` (`VideoScene`, `BrandSeal`, `PracticeClose`), individual art compositions and the legacy kit's closing seal. Scope is Instagram; this does not reintroduce decorative overlays behind teachers on the website. The former old/new framing comparison is now a description of the approved language. Historical exported files are snapshots; regenerate to obtain the current design.
 
 Research distinction: Meta's [Best Practices hub](https://about.fb.com/news/2024/10/best-practices-education-hub-creators-instagram/) describes general and personalized account guidance. It does not establish a rule that logos must be on the last carousel slide. That choice is Paulo's approved editorial/identity direction, not an algorithmic performance claim. A safe-zone help page required login during this check; no new universal margin percentage was inferred.
+
+## Implemented registered freezes — 13 November 2026
+
+Treatment A is now implemented for the pool-solo, deck-pike and Gabriel-transitions Reels on `/instagram/`.
+`ig2/EngravedFreeze.tsx` keeps the exact colour still, v07 paint (65%) and transparent generated figure
+independent; `showPaint`/`paintOpacity` change the middle layer only. Assets preload during playback.
+Source-frame prompts, hashes, timing and alignment review: `design/handstandfest-arte/2026-11-13-freezes/`.
+Unlike the older hybrid, this background is the original still. Generated contours remain an interpretation;
+check the overlay at hands/feet/hips, not just the isolated illustration. No final export was requested for
+this iteration: the user reviews the live compositions on the page. Keep whole-video procedural hatching
+separate from this static anatomical illustration technique.
