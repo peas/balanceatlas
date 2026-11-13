@@ -6325,6 +6325,7 @@
   sha256: "df96bbfe3c570ae7eae50bdb570160749e1c8539030f2f000b305a74c8736503"
 
 - id: photo-thailand-2026-56
+  originais_adicionais: [{"arquivo_local": "local/festival/natureza-2026-11-12/originals/IMG_20260228_100917.jpg", "sha256": "b807a34c1c1469dc667226d61ae054aa3254f3c32cf189ebe97dd37a028e2049", "largura": 3072, "altura": 4096, "recebido_em": "2026-11-12", "lote": "natureza-2026-11-12", "nota": "JPEG original em maior resolução, mesmo quadro do WebP existente; correspondência visual revisada."}]
   arquivo: "images/retreats/thailand-2026/56.webp"
   url: "https://media.balanceatlas.com/images/retreats/thailand-2026/56.webp"
   camera: "foto"
@@ -7057,3 +7058,426 @@
   sha256: "e03ea003544994551fabb51b0ce9e99a6dc36be542d427cd5813aa195c3f6245"
   atividade: "treino"
   problemas: "Captura com barras pretas e bastante espaço acima; corpo pequeno no quadro."
+
+- id: natureza-pxl-20261011-130549088
+  cenario: ["piscina", "mata", "deck", "ceu"]
+  arquivo: "natureza-2026-11-12/PXL_20261011_130549088.mp4"
+  arquivo_local: "local/festival/natureza-2026-11-12/originals/PXL_20261011_130549088.mp4"
+  lote: "natureza-2026-11-12"
+  origem: "Arquivos enviados pelo Paulo; identidade e local específico não confirmados"
+  recebido_em: "2026-11-12"
+  midia: "video"
+  camera: "pixel"
+  quem: ["praticante"]
+  handstand: true
+  corpo: "inteiro"
+  sha256: "b0864c98b37aea8d8cfef2540b7abe47082f207290eca47907b0916c67c0c68c"
+  revisao_visual: {"data": "2026-11-12", "metodo": "folhas de contato e quadros ampliados; limites de ação conferidos", "precisao": "aproximada", "estado": "revisado"}
+  duracao: 72.7851
+  largura: 1080
+  altura: 1920
+  fps_original: "60/1"
+  transfer_original: "arib-std-b67"
+  rotacao_original: -90
+  audio_presente: true
+  som: "não revisado; áudio original preservado no corte quando presente"
+  tipo: "treino"
+  resumo: "Alterna tuck e reta no deck junto à piscina, com árvores e vegetação ao fundo."
+  local: "deck externo junto à piscina e mata; local não confirmado"
+  pessoas: 1
+  pessoas_em_handstand: 1
+  forma: ["tuck", "reta"]
+  grupo_em_handstand: false
+  todos_em_handstand: true
+  atividade: "pratica-individual"
+  destaque: 4
+  uso_sugerido: ["reel-natureza", "freeze-ocre", "post-shape"]
+  cortes: [{"id": "deck-tuck-reta", "titulo": "Tuck e reta no deck", "de": 18.7, "ate": 65.5, "freeze": 36, "handstand": true, "forma": ["tuck", "reta"], "arquivo_local": "local/festival/natureza-2026-11-12/selecionados/deck-tuck-reta.mp4", "freeze_corte": 17.3}]
+  problemas: "Reflexo de mesa ocupa a base; corpo inteiro e sem obstrução no corte."
+  selecionado_para: "reserva-editorial-handstandlife"
+  cenas: [{"de": 18.7, "ate": 65.5, "posicao": ["tuck", "reta"], "o_que": "Tuck e reta no deck", "quadro": "corpo inteiro; cenário preservado", "nota": 4}]
+
+- id: natureza-pxl-20261011-132501430
+  cenario: ["piscina", "mata", "deck", "ceu"]
+  arquivo: "natureza-2026-11-12/PXL_20261011_132501430.mp4"
+  arquivo_local: "local/festival/natureza-2026-11-12/originals/PXL_20261011_132501430.mp4"
+  lote: "natureza-2026-11-12"
+  origem: "Arquivos enviados pelo Paulo; identidade e local específico não confirmados"
+  recebido_em: "2026-11-12"
+  midia: "video"
+  camera: "pixel"
+  quem: ["praticante"]
+  handstand: true
+  corpo: "inteiro"
+  sha256: "f73f87b161d9a62afc41d094565560ea5895ab6206660f6bb3e43b6bdda6f287"
+  revisao_visual: {"data": "2026-11-12", "metodo": "folhas de contato e quadros ampliados; limites de ação conferidos", "precisao": "aproximada", "estado": "revisado"}
+  duracao: 68.455563
+  largura: 1080
+  altura: 1920
+  fps_original: "60/1"
+  transfer_original: "arib-std-b67"
+  rotacao_original: -90
+  audio_presente: true
+  som: "não revisado; áudio original preservado no corte quando presente"
+  tipo: "treino"
+  resumo: "Entra com pernas alternadas, fecha na reta e alterna pike e reta de perfil no deck."
+  local: "deck externo junto à piscina e mata; local não confirmado"
+  pessoas: 1
+  pessoas_em_handstand: 1
+  forma: ["pike", "reta"]
+  grupo_em_handstand: false
+  todos_em_handstand: true
+  atividade: "pratica-individual"
+  destaque: 4
+  uso_sugerido: ["reel-natureza", "freeze-ocre", "post-shape"]
+  cortes: [{"id": "deck-pike-reta", "titulo": "Pike e reta de perfil", "de": 32, "ate": 61.5, "freeze": 48, "handstand": true, "forma": ["pike", "reta"], "arquivo_local": "local/festival/natureza-2026-11-12/selecionados/deck-pike-reta.mp4", "freeze_corte": 16}]
+  problemas: "Não rotular a entrada como press puro: a perna de trás ainda está no chão enquanto a outra sobe."
+  selecionado_para: "reserva-editorial-handstandlife"
+  cenas: [{"de": 32, "ate": 61.5, "posicao": ["pike", "reta"], "o_que": "Pike e reta de perfil", "quadro": "corpo inteiro; cenário preservado", "nota": 4}]
+
+- id: natureza-pxl-20261011-133147658
+  cenario: ["piscina", "mata", "deck", "ceu"]
+  arquivo: "natureza-2026-11-12/PXL_20261011_133147658.mp4"
+  arquivo_local: "local/festival/natureza-2026-11-12/originals/PXL_20261011_133147658.mp4"
+  lote: "natureza-2026-11-12"
+  origem: "Arquivos enviados pelo Paulo; identidade e local específico não confirmados"
+  recebido_em: "2026-11-12"
+  midia: "video"
+  camera: "pixel"
+  quem: ["praticante"]
+  handstand: true
+  corpo: "inteiro"
+  sha256: "80cb932c09620bfc0b8a8a1666b3418a2d9fc35cf9d16f860f5bd397d9241a28"
+  revisao_visual: {"data": "2026-11-12", "metodo": "folhas de contato e quadros ampliados; limites de ação conferidos", "precisao": "aproximada", "estado": "revisado"}
+  duracao: 71.440533
+  largura: 1080
+  altura: 1920
+  fps_original: "60000/1001"
+  transfer_original: "arib-std-b67"
+  rotacao_original: -90
+  audio_presente: true
+  som: "não revisado; áudio original preservado no corte quando presente"
+  tipo: "treino"
+  resumo: "Preparação com mãos no chão e quadril alto, seguida de entrada agrupada, reta, tuck e pike."
+  local: "deck externo junto à piscina e mata; local não confirmado"
+  pessoas: 1
+  pessoas_em_handstand: 1
+  forma: ["reta", "tuck", "pike"]
+  grupo_em_handstand: false
+  todos_em_handstand: true
+  atividade: "pratica-individual"
+  destaque: 4
+  uso_sugerido: ["reel-natureza", "freeze-ocre", "post-shape"]
+  cortes: [{"id": "deck-preparacao", "titulo": "Preparação de apoios no deck", "de": 11, "ate": 38.5, "freeze": 24, "handstand": false, "forma": [], "arquivo_local": "local/festival/natureza-2026-11-12/selecionados/deck-preparacao.mp4", "freeze_corte": 13}, {"id": "deck-entrada-agrupada", "titulo": "Entrada agrupada e mudança de formas", "de": 37.5, "ate": 64, "freeze": 48, "handstand": true, "forma": ["reta", "tuck", "pike"], "arquivo_local": "local/festival/natureza-2026-11-12/selecionados/deck-entrada-agrupada.mp4", "freeze_corte": 10.5}]
+  problemas: "Preparação separada para futura demonstração; não apresentar a entrada agrupada com impulso como press sem impulso."
+  selecionado_para: "reserva-editorial-handstandlife"
+  cenas: [{"de": 11, "ate": 38.5, "posicao": ["aquecimento"], "o_que": "Preparação de apoios no deck", "quadro": "corpo inteiro; cenário preservado", "nota": 4}, {"de": 37.5, "ate": 64, "posicao": ["reta", "tuck", "pike"], "o_que": "Entrada agrupada e mudança de formas", "quadro": "corpo inteiro; cenário preservado", "nota": 4}]
+
+- id: natureza-pxl-20261011-134222238
+  cenario: ["piscina", "mata", "deck", "ceu"]
+  arquivo: "natureza-2026-11-12/PXL_20261011_134222238.mp4"
+  arquivo_local: "local/festival/natureza-2026-11-12/originals/PXL_20261011_134222238.mp4"
+  lote: "natureza-2026-11-12"
+  origem: "Arquivos enviados pelo Paulo; identidade e local específico não confirmados"
+  recebido_em: "2026-11-12"
+  midia: "video"
+  camera: "pixel"
+  quem: ["praticante"]
+  handstand: true
+  corpo: "inteiro"
+  sha256: "4e0f3dad9c6bcceab712e413a699ec3b97a471e2b0b57bab89aa33c4b7eeece2"
+  revisao_visual: {"data": "2026-11-12", "metodo": "folhas de contato e quadros ampliados; limites de ação conferidos", "precisao": "aproximada", "estado": "revisado"}
+  duracao: 47.609333
+  largura: 1080
+  altura: 1920
+  fps_original: "60/1"
+  transfer_original: "arib-std-b67"
+  rotacao_original: -90
+  audio_presente: true
+  som: "não revisado; áudio original preservado no corte quando presente"
+  tipo: "treino"
+  resumo: "Parada vista de frente no deck junto à piscina; alterna pernas juntas e straddle com mata e céu ao fundo."
+  local: "deck externo junto à piscina e mata; local não confirmado"
+  pessoas: 1
+  pessoas_em_handstand: 1
+  forma: ["reta", "straddle"]
+  grupo_em_handstand: false
+  todos_em_handstand: true
+  atividade: "pratica-individual"
+  destaque: 4
+  uso_sugerido: ["reel-natureza", "freeze-ocre", "post-shape"]
+  cortes: [{"id": "deck-straddle-frente", "titulo": "Reta e straddle entre piscina e mata", "de": 4, "ate": 47.5, "freeze": 36, "handstand": true, "forma": ["reta", "straddle"], "arquivo_local": "local/festival/natureza-2026-11-12/selecionados/deck-straddle-frente.mp4", "freeze_corte": 32}]
+  problemas: "Câmera na mão; praticante menor no quadro. Boa cena de natureza, não close de detalhes técnicos."
+  selecionado_para: "reserva-editorial-handstandlife"
+  cenas: [{"de": 4, "ate": 47.5, "posicao": ["reta", "straddle"], "o_que": "Reta e straddle entre piscina e mata", "quadro": "corpo inteiro; cenário preservado", "nota": 4}]
+
+- id: natureza-pxl-20261011-134732273
+  cenario: ["piscina", "mata", "deck", "ceu"]
+  arquivo: "natureza-2026-11-12/PXL_20261011_134732273.mp4"
+  arquivo_local: "local/festival/natureza-2026-11-12/originals/PXL_20261011_134732273.mp4"
+  lote: "natureza-2026-11-12"
+  origem: "Arquivos enviados pelo Paulo; identidade e local específico não confirmados"
+  recebido_em: "2026-11-12"
+  midia: "video"
+  camera: "pixel"
+  quem: ["praticante"]
+  handstand: true
+  corpo: "inteiro"
+  sha256: "1a6eb1f349aa85052e46cd98bebe949f978be3ac1d30e5792501d3fa2ab8de3c"
+  revisao_visual: {"data": "2026-11-12", "metodo": "folhas de contato e quadros ampliados; limites de ação conferidos", "precisao": "aproximada", "estado": "revisado"}
+  duracao: 65.975438
+  largura: 1080
+  altura: 1920
+  fps_original: "60/1"
+  transfer_original: "arib-std-b67"
+  rotacao_original: -90
+  audio_presente: true
+  som: "não revisado; áudio original preservado no corte quando presente"
+  tipo: "treino"
+  resumo: "Variações de straddle baixo em vista frontal, terminando na reta; piscina, gramado e árvores ao redor."
+  local: "deck externo junto à piscina e mata; local não confirmado"
+  pessoas: 1
+  pessoas_em_handstand: 1
+  forma: ["straddle", "reta"]
+  grupo_em_handstand: false
+  todos_em_handstand: true
+  atividade: "pratica-individual"
+  destaque: 4
+  uso_sugerido: ["reel-natureza", "freeze-ocre", "post-shape"]
+  cortes: [{"id": "deck-straddle-baixo", "titulo": "Straddle baixo e extensão", "de": 21, "ate": 65.9, "freeze": 42, "handstand": true, "forma": ["straddle", "reta"], "arquivo_local": "local/festival/natureza-2026-11-12/selecionados/deck-straddle-baixo.mp4", "freeze_corte": 21}]
+  problemas: "O original termina com o praticante ainda invertido; não há saída completa. Câmera na mão e sujeito distante."
+  selecionado_para: "reserva-editorial-handstandlife"
+  cenas: [{"de": 21, "ate": 65.9, "posicao": ["straddle", "reta"], "o_que": "Straddle baixo e extensão", "quadro": "corpo inteiro; cenário preservado", "nota": 4}]
+
+- id: natureza-pxl-20241201-151159837
+  cenario: ["piscina", "ceu", "predios"]
+  arquivo: "natureza-2026-11-12/PXL_20241201_151159837.mp4"
+  arquivo_local: "local/festival/natureza-2026-11-12/originals/PXL_20241201_151159837.mp4"
+  lote: "natureza-2026-11-12"
+  origem: "Arquivos enviados pelo Paulo; identidade e local específico não confirmados"
+  recebido_em: "2026-11-12"
+  midia: "video"
+  camera: "pixel"
+  quem: ["praticante"]
+  handstand: true
+  corpo: "inteiro"
+  sha256: "06dce52877498e786871d8de2ee321b415a584e84f3f4e1e552842324ae7038e"
+  revisao_visual: {"data": "2026-11-12", "metodo": "folhas de contato e quadros ampliados; limites de ação conferidos", "precisao": "aproximada", "estado": "revisado"}
+  duracao: 31.778711
+  largura: 1080
+  altura: 1920
+  fps_original: "60/1"
+  transfer_original: "bt709"
+  rotacao_original: -90
+  audio_presente: true
+  som: "não revisado; áudio original preservado no corte quando presente"
+  tipo: "treino"
+  resumo: "Praticante de boné rosa sobe da piscina em press pela borda, sustenta a reta, abre as pernas e volta à água com respingo."
+  local: "piscina elevada, céu azul e construções ao fundo"
+  pessoas: 1
+  pessoas_em_handstand: 1
+  forma: ["straddle", "reta", "tuck"]
+  destaque: 5
+  grupo_em_handstand: false
+  todos_em_handstand: true
+  atividade: "press-e-transicoes"
+  uso_sugerido: ["reel", "freeze-ocre", "natureza"]
+  selecionado_para: "prioridade-press-na-agua"
+  cortes: [{"id": "piscina-press-solo", "titulo": "Press saindo da água · solo", "de": 4.4, "ate": 30.6, "freeze": 17, "handstand": true, "forma": ["straddle", "reta", "tuck"], "arquivo_local": "local/festival/natureza-2026-11-12/selecionados/piscina-press-solo.mp4", "freeze_corte": 12.6}]
+  freezes_originais: {"reta": 17.0, "straddle": 25.5}
+  cenas: [{"de": 4.4, "ate": 30.6, "posicao": ["press", "straddle", "reta", "tuck", "saida"], "o_que": "Praticante de boné rosa sobe da piscina em press pela borda, sustenta a reta, abre as pernas e volta à água com respingo.", "quadro": "corpo inteiro; cenário preservado", "nota": 5}]
+  problemas: "Áudio não revisado. Parte inferior do corpo fica na água na preparação e na volta; corpo inteiro na inversão."
+
+- id: natureza-pxl-20260226-054213391-2
+  cenario: ["piscina", "jardim", "pergola"]
+  arquivo: "natureza-2026-11-12/PXL_20260226_054213391~2.mp4"
+  arquivo_local: "local/festival/natureza-2026-11-12/originals/PXL_20260226_054213391~2.mp4"
+  lote: "natureza-2026-11-12"
+  origem: "Arquivos enviados pelo Paulo; identidade e local específico não confirmados"
+  recebido_em: "2026-11-12"
+  midia: "video"
+  camera: "pixel"
+  quem: ["praticante"]
+  handstand: true
+  corpo: "inteiro"
+  sha256: "0a5a47a66da19868f72f9818e4152ad49bbeb8e4ba453d918fc62d2da4440922"
+  revisao_visual: {"data": "2026-11-12", "metodo": "folhas de contato e quadros ampliados; limites de ação conferidos", "precisao": "aproximada", "estado": "revisado"}
+  duracao: 27.366667
+  largura: 1080
+  altura: 1920
+  fps_original: "30/1"
+  transfer_original: "arib-std-b67"
+  rotacao_original: -90
+  audio_presente: true
+  som: "não revisado; áudio original preservado no corte quando presente"
+  tipo: "treino"
+  resumo: "Dois praticantes saem da água, fazem presses simultâneos em straddle até a reta e voltam à piscina, com observadores ao fundo."
+  local: "piscina externa com pérgola e jardim"
+  pessoas: 10
+  pessoas_em_handstand: 2
+  forma: ["straddle", "reta", "pike"]
+  destaque: 4
+  grupo_em_handstand: true
+  todos_em_handstand: false
+  atividade: "press-e-transicoes"
+  uso_sugerido: ["reel", "freeze-ocre", "natureza"]
+  selecionado_para: "prioridade-press-na-agua"
+  cortes: [{"id": "piscina-press-dupla", "titulo": "Press saindo da água · dupla", "de": 1.3, "ate": 23.2, "freeze": 14.5, "handstand": true, "forma": ["straddle", "reta", "pike"], "arquivo_local": "local/festival/natureza-2026-11-12/selecionados/piscina-press-dupla.mp4", "freeze_corte": 13.2}]
+  freezes_originais: {"reta": 14.5, "straddle": 11.0}
+  cenas: [{"de": 1.3, "ate": 23.2, "posicao": ["dupla", "press", "straddle", "reta", "saida"], "o_que": "Dois praticantes saem da água, fazem presses simultâneos em straddle até a reta e voltam à piscina, com observadores ao fundo.", "quadro": "corpo inteiro; cenário preservado", "nota": 4}]
+  problemas: "Áudio não revisado. Pessoas ao fundo; contagem aproximada no momento da reta. Fonte HLG convertida para SDR."
+
+- id: natureza-whatsapp-video-2026-02-26-at-11-56-14
+  cenario: ["pavilhao", "madeira", "vegetacao"]
+  arquivo: "natureza-2026-11-12/WhatsApp Video 2026-02-26 at 11.56.14.mp4"
+  arquivo_local: "local/festival/natureza-2026-11-12/originals/WhatsApp Video 2026-02-26 at 11.56.14.mp4"
+  lote: "natureza-2026-11-12"
+  origem: "Arquivos enviados pelo Paulo; identidade e local específico não confirmados"
+  recebido_em: "2026-11-12"
+  midia: "video"
+  camera: "whatsapp"
+  quem: ["praticante"]
+  handstand: true
+  corpo: "inteiro"
+  sha256: "6130218621f331f2aec47b3543420462c8400fa90288b9735e6e308248d58915"
+  revisao_visual: {"data": "2026-11-12", "metodo": "folhas de contato e quadros ampliados; limites de ação conferidos", "precisao": "aproximada", "estado": "revisado"}
+  duracao: 68.289887
+  largura: 464
+  altura: 832
+  fps_original: "30/1"
+  transfer_original: "bt709"
+  rotacao_original: 0
+  audio_presente: true
+  som: "não revisado; áudio original preservado no corte quando presente"
+  tipo: "treino"
+  resumo: "Press controlado no chão, passando por straddle e reta, com nova elevação durante a sequência antes de pousar em straddle."
+  local: "pavilhão aberto de madeira, tecidos aéreos e vegetação"
+  pessoas: 3
+  pessoas_em_handstand: 1
+  forma: ["straddle", "reta", "tuck"]
+  destaque: 4
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  atividade: "press-e-transicoes"
+  uso_sugerido: ["reel", "freeze-ocre", "natureza"]
+  selecionado_para: "reserva-sequencia-pavilhao"
+  cortes: [{"id": "pavilhao-press-sequencia", "titulo": "Press e transições no pavilhão", "de": 3.7, "ate": 65.1, "freeze": 15, "handstand": true, "forma": ["straddle", "reta", "tuck"], "arquivo_local": "local/festival/natureza-2026-11-12/selecionados/pavilhao-press-sequencia.mp4", "freeze_corte": 11.3}]
+  freezes_originais: {"straddle": 8.5, "reta": 15.0, "straddle_alternativo": 43.0}
+  cenas: [{"de": 3.7, "ate": 65.1, "posicao": ["press", "straddle", "reta", "tuck", "saida"], "o_que": "Press controlado no chão, passando por straddle e reta, com nova elevação durante a sequência antes de pousar em straddle.", "quadro": "corpo inteiro; cenário preservado", "nota": 4}]
+  problemas: "Áudio não revisado. Fonte WhatsApp de 464×832: não ampliar como se recuperasse detalhe; observadores parciais."
+
+- id: natureza-img-6271
+  cenario: ["piscina", "arvores", "reflexos"]
+  arquivo: "natureza-2026-11-12/IMG_6271.PNG"
+  arquivo_local: "local/festival/natureza-2026-11-12/originals/IMG_6271.PNG"
+  lote: "natureza-2026-11-12"
+  origem: "Arquivos enviados pelo Paulo; identidade e local específico não confirmados"
+  recebido_em: "2026-11-12"
+  midia: "imagem"
+  camera: "foto"
+  quem: ["praticante"]
+  handstand: true
+  corpo: "inteiro"
+  sha256: "68d064716acfe322994ec6f71de77d0e537525e661bdceee3ee40ad9112bb697"
+  revisao_visual: {"data": "2026-11-12", "metodo": "folhas de contato e quadros ampliados; limites de ação conferidos", "precisao": "aproximada", "estado": "revisado"}
+  resumo: "Onze praticantes em linha, em vista frontal na borda da piscina, com reflexos na água, árvores e céu azul."
+  pessoas: 11
+  pessoas_em_handstand: 11
+  forma: ["reta", "pike"]
+  grupo_em_handstand: true
+  todos_em_handstand: true
+  largura: 1206
+  altura: 2110
+  destaque: 5
+  local: "não confirmado"
+  atividade: "pratica-coletiva"
+  uso_sugerido: ["post-comunidade", "carrossel"]
+  selecionado_para: "comunidade"
+  problemas: "Contagens e nomes das formas aproximados; foto não comprova a entrada em press."
+
+- id: natureza-pxl-20260227-145601851
+  cenario: ["piscina", "noite", "vegetacao"]
+  arquivo: "natureza-2026-11-12/PXL_20260227_145601851.jpg"
+  arquivo_local: "local/festival/natureza-2026-11-12/originals/PXL_20260227_145601851.jpg"
+  lote: "natureza-2026-11-12"
+  origem: "Arquivos enviados pelo Paulo; identidade e local específico não confirmados"
+  recebido_em: "2026-11-12"
+  midia: "imagem"
+  camera: "pixel"
+  quem: ["praticante"]
+  handstand: true
+  corpo: "inteiro"
+  sha256: "f8f7900c4d739b0d844d097e177fc5925c584be218ed9dd10053ada2d6429c5f"
+  revisao_visual: {"data": "2026-11-12", "metodo": "folhas de contato e quadros ampliados; limites de ação conferidos", "precisao": "aproximada", "estado": "revisado"}
+  resumo: "Praticante em parada reta à borda da piscina iluminada à noite, entre escada, vegetação e piso molhado."
+  pessoas: 2
+  pessoas_em_handstand: 1
+  forma: ["reta"]
+  grupo_em_handstand: false
+  todos_em_handstand: false
+  largura: 2268
+  altura: 4032
+  destaque: 4
+  local: "não confirmado"
+  atividade: "pratica-individual"
+  uso_sugerido: ["post-atmosfera"]
+  selecionado_para: "atmosfera"
+  problemas: "segunda pessoa possivelmente visível parcialmente junto ao balcão"
+
+- id: natureza-pxl-20260427-131533524
+  cenario: ["interior", "madeira", "janelas", "vegetacao"]
+  arquivo: "natureza-2026-11-12/PXL_20260427_131533524.jpg"
+  arquivo_local: "local/festival/natureza-2026-11-12/originals/PXL_20260427_131533524.jpg"
+  lote: "natureza-2026-11-12"
+  origem: "Arquivos enviados pelo Paulo; identidade e local específico não confirmados"
+  recebido_em: "2026-11-12"
+  midia: "imagem"
+  camera: "pixel"
+  quem: ["praticante"]
+  handstand: true
+  corpo: "inteiro"
+  sha256: "b6a6c187ab93eb00ac4271f17fbfe4a49010f189bf6b78ddad065bae7ad74860"
+  revisao_visual: {"data": "2026-11-12", "metodo": "folhas de contato e quadros ampliados; limites de ação conferidos", "precisao": "aproximada", "estado": "revisado"}
+  resumo: "Pike de perfil no piso de madeira diante de portas envidraçadas voltadas para a vegetação."
+  pessoas: 1
+  pessoas_em_handstand: 1
+  forma: ["pike"]
+  grupo_em_handstand: false
+  todos_em_handstand: true
+  largura: 2268
+  altura: 4032
+  destaque: 4
+  local: "não confirmado"
+  atividade: "pratica-individual"
+  uso_sugerido: ["post-natureza", "recorte-gravura"]
+  selecionado_para: "forma-gravura"
+  problemas: "Contagens e nomes das formas aproximados; foto não comprova a entrada em press."
+
+- id: natureza-pxl-20260427-144613209
+  cenario: ["cachoeira", "mata", "rochas"]
+  arquivo: "natureza-2026-11-12/PXL_20260427_144613209.jpg"
+  arquivo_local: "local/festival/natureza-2026-11-12/originals/PXL_20260427_144613209.jpg"
+  lote: "natureza-2026-11-12"
+  origem: "Arquivos enviados pelo Paulo; identidade e local específico não confirmados"
+  recebido_em: "2026-11-12"
+  midia: "imagem"
+  camera: "pixel"
+  quem: ["praticante"]
+  handstand: true
+  corpo: "inteiro"
+  sha256: "9e72f3f2722c04e2fd1b6c045346d316d879cdf4175d14f8c0a872c551c40d36"
+  revisao_visual: {"data": "2026-11-12", "metodo": "folhas de contato e quadros ampliados; limites de ação conferidos", "precisao": "aproximada", "estado": "revisado"}
+  resumo: "Pike de perfil sobre rocha à frente da cachoeira, com pernas juntas horizontais, pedras com musgo e mata."
+  pessoas: 1
+  pessoas_em_handstand: 1
+  forma: ["pike"]
+  grupo_em_handstand: false
+  todos_em_handstand: true
+  largura: 2268
+  altura: 4032
+  destaque: 5
+  local: "não confirmado"
+  atividade: "pratica-individual"
+  uso_sugerido: ["post-natureza", "recorte-gravura"]
+  selecionado_para: "principal-natureza"
+  problemas: "Contagens e nomes das formas aproximados; foto não comprova a entrada em press."

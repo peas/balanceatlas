@@ -1,0 +1,184 @@
+{
+  "id": "natureza-2026-11-12",
+  "output_dir": "local/festival/natureza-2026-11-12",
+  "date": "2026-11-12",
+  "files": [
+    {
+      "source": "Photos-1-001 (8)/IMG_20260228_100917.jpg",
+      "sha256": "b807a34c1c1469dc667226d61ae054aa3254f3c32cf189ebe97dd37a028e2049",
+      "bytes": 7317450,
+      "decision": "existing-original",
+      "catalog_id": "photo-thailand-2026-56",
+      "reason": "Original em alta resolução do mesmo quadro já catalogado."
+    },
+    {
+      "source": "Photos-1-001 (8)/IMG_6271.PNG",
+      "sha256": "68d064716acfe322994ec6f71de77d0e537525e661bdceee3ee40ad9112bb697",
+      "bytes": 633169,
+      "decision": "keep",
+      "catalog_id": "natureza-img-6271"
+    },
+    {
+      "source": "Photos-1-001 (8)/PXL_20260227_145601851.jpg",
+      "sha256": "f8f7900c4d739b0d844d097e177fc5925c584be218ed9dd10053ada2d6429c5f",
+      "bytes": 1904065,
+      "decision": "keep",
+      "catalog_id": "natureza-pxl-20260227-145601851"
+    },
+    {
+      "source": "Photos-1-001 (8)/PXL_20260427_131533524.jpg",
+      "sha256": "b6a6c187ab93eb00ac4271f17fbfe4a49010f189bf6b78ddad065bae7ad74860",
+      "bytes": 2109487,
+      "decision": "keep",
+      "catalog_id": "natureza-pxl-20260427-131533524"
+    },
+    {
+      "source": "Photos-1-001 (8)/PXL_20260427_144613209.jpg",
+      "sha256": "9e72f3f2722c04e2fd1b6c045346d316d879cdf4175d14f8c0a872c551c40d36",
+      "bytes": 3068657,
+      "decision": "keep",
+      "catalog_id": "natureza-pxl-20260427-144613209"
+    },
+    {
+      "source": "Photos-1-001 (8)/PXL_20261011_130549088.mp4",
+      "sha256": "b0864c98b37aea8d8cfef2540b7abe47082f207290eca47907b0916c67c0c68c",
+      "bytes": 274691788,
+      "decision": "keep",
+      "catalog_id": "natureza-pxl-20261011-130549088"
+    },
+    {
+      "source": "Photos-1-001 (8)/PXL_20261011_130909007.mp4",
+      "sha256": "41a2d9db8f6312068bde9821e011369c0c98084b1963fb19a7fcf29e34eb167e",
+      "bytes": 250098028,
+      "decision": "skip",
+      "reason": "Tomada repetida do mesmo cenário; selecionadas outras com formas e trechos mais úteis."
+    },
+    {
+      "source": "Photos-1-001 (8)/PXL_20261011_131457634.mp4",
+      "sha256": "b198f7f11e5b1f6177db8a2becd13e43e64b422b2b95065b8a06418e0c1f2d69",
+      "bytes": 335589465,
+      "decision": "skip",
+      "reason": "Tomada repetida do mesmo cenário; selecionadas outras com formas e trechos mais úteis."
+    },
+    {
+      "source": "Photos-1-001 (8)/PXL_20261011_131910023.mp4",
+      "sha256": "68098a5955d96a25f3c2d65513e06cfa50712e58a9e01b7461ae1ed19678674a",
+      "bytes": 302510276,
+      "decision": "skip",
+      "reason": "Tomada repetida do mesmo cenário; selecionadas outras com formas e trechos mais úteis."
+    },
+    {
+      "source": "Photos-1-001 (8)/PXL_20261011_132139150.mp4",
+      "sha256": "3387c923f47660ab0b9296dfe38fb00ee0fade6c21a3d579e6ff4a1865b755b7",
+      "bytes": 337892348,
+      "decision": "skip",
+      "reason": "Tomada repetida do mesmo cenário; selecionadas outras com formas e trechos mais úteis."
+    },
+    {
+      "source": "Photos-1-001 (8)/PXL_20261011_132501430.mp4",
+      "sha256": "f73f87b161d9a62afc41d094565560ea5895ab6206660f6bb3e43b6bdda6f287",
+      "bytes": 257674375,
+      "decision": "keep",
+      "catalog_id": "natureza-pxl-20261011-132501430"
+    },
+    {
+      "source": "Photos-1-001 (8)/PXL_20261011_132851123.mp4",
+      "sha256": "ead3cfb2deb6efbd14881fa8b00206e70de32460693a607965aca972466c88ae",
+      "bytes": 286809468,
+      "decision": "skip",
+      "reason": "Tomada repetida do mesmo cenário; selecionadas outras com formas e trechos mais úteis."
+    },
+    {
+      "source": "Photos-1-001 (8)/PXL_20261011_133147658.mp4",
+      "sha256": "80cb932c09620bfc0b8a8a1666b3418a2d9fc35cf9d16f860f5bd397d9241a28",
+      "bytes": 268417954,
+      "decision": "keep",
+      "catalog_id": "natureza-pxl-20261011-133147658"
+    },
+    {
+      "source": "Photos-1-001 (8)/PXL_20261011_133512205.mp4",
+      "sha256": "112e8a316c5df2fd3ce036f9fa1e8fdb0bf5ac589783864b3024699d3cb2049c",
+      "bytes": 593913542,
+      "decision": "skip",
+      "reason": "Tomada longa e repetida, outra pessoa cruza em primeiro plano; priorizadas tomadas mais limpas."
+    },
+    {
+      "source": "Photos-1-001 (8)/PXL_20261011_133921673.mp4",
+      "sha256": "8687c93e19003e324147f872a20f5cd2960e5fa0b403aed1850f4e372eada65d",
+      "bytes": 256273972,
+      "decision": "skip",
+      "reason": "Tomada repetida do mesmo cenário; selecionadas outras com formas e trechos mais úteis."
+    },
+    {
+      "source": "Photos-1-001 (8)/PXL_20261011_134222238.mp4",
+      "sha256": "4e0f3dad9c6bcceab712e413a699ec3b97a471e2b0b57bab89aa33c4b7eeece2",
+      "bytes": 179106817,
+      "decision": "keep",
+      "catalog_id": "natureza-pxl-20261011-134222238"
+    },
+    {
+      "source": "Photos-1-001 (8)/PXL_20261011_134732273.mp4",
+      "sha256": "1a6eb1f349aa85052e46cd98bebe949f978be3ac1d30e5792501d3fa2ab8de3c",
+      "bytes": 248098497,
+      "decision": "keep",
+      "catalog_id": "natureza-pxl-20261011-134732273"
+    },
+    {
+      "source": "Photos-1-001 (8)/WhatsApp Video 2026-02-26 at 11.56.14.mp4",
+      "sha256": "6130218621f331f2aec47b3543420462c8400fa90288b9735e6e308248d58915",
+      "bytes": 10527182,
+      "decision": "keep",
+      "catalog_id": "natureza-whatsapp-video-2026-02-26-at-11-56-14"
+    },
+    {
+      "source": "Photos-1-001 (8)/handstand-outubro.mp4",
+      "sha256": "fb5ff55f26921e1f3b6024023f8cd5ef15f879478ea3c191bd2675e95f3dbde7",
+      "bytes": 15609211,
+      "decision": "skip",
+      "reason": "Edição pronta com textos e análise de pose já embutidos; pouco flexível para nova identidade. Original mantido em Downloads."
+    },
+    {
+      "source": "Photos-1-001 (9)/PXL_20241201_151159837.mp4",
+      "sha256": "06dce52877498e786871d8de2ee321b415a584e84f3f4e1e552842324ae7038e",
+      "bytes": 118671561,
+      "decision": "keep",
+      "catalog_id": "natureza-pxl-20241201-151159837"
+    },
+    {
+      "source": "Photos-1-001 (9)/VID-20250510-WA0032.mp4",
+      "sha256": "e6557ae1bdc1651fb36352cbc6da5735ce6b1ecd4248c03392c795594bd0f489",
+      "bytes": 14852841,
+      "decision": "skip",
+      "reason": "Parede cinza, fora da prioridade natureza, e pés saem do quadro em parte do straddle."
+    },
+    {
+      "source": "Photos-1-001 (9)/VID-20260302-WA0038.mp4",
+      "sha256": "ed50dde44842e1bfcdbed4e09d0d2d3d7b6704804a60f2dcc1430d9c47e8e9fa",
+      "bytes": 12616160,
+      "decision": "skip",
+      "reason": "Já começa invertido e uma pessoa obstrui a saída; fragmento 0–11.3 s pode ser recuperado futuramente."
+    },
+    {
+      "source": "Photos-1-001 (9)/WhatsApp Video 2026-02-26 at 11.56.14.mp4",
+      "sha256": "6130218621f331f2aec47b3543420462c8400fa90288b9735e6e308248d58915",
+      "bytes": 10527182,
+      "decision": "duplicate",
+      "reason": "Cópia idêntica à fonte já listada; não arquivar duas vezes."
+    },
+    {
+      "source": "PXL_20260226_054213391~2.mp4",
+      "sha256": "0a5a47a66da19868f72f9818e4152ad49bbeb8e4ba453d918fc62d2da4440922",
+      "bytes": 69076925,
+      "decision": "keep",
+      "catalog_id": "natureza-pxl-20260226-054213391-2"
+    }
+  ],
+  "priority": [
+    "natureza-pxl-20260226-054213391-2",
+    "natureza-pxl-20260427-144613209",
+    "natureza-img-6271",
+    "natureza-pxl-20241201-151159837",
+    "natureza-pxl-20261011-132501430",
+    "natureza-pxl-20261011-134222238"
+  ]
+}

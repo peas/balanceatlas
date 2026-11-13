@@ -1,5 +1,7 @@
 # Balance Atlas memory
 
+Nature/pool batch (12 Nov 2026): 8 videos + 4 new photos catalogued; high-res source linked to existing Thailand photo. Nine local cuts and five photo derivatives via `scripts/festival_curated_media.py`; shortlist, source-time offsets and omissions in `acervo/lotes/natureza-2026-11-12.md`. Prioritize water presses, waterfall pike and group pool photo. No new posts published.
+
 ## 2026-11-12 — Full-video and larger signature approved
 
 - Paulo approved full/near-full video across Instagram, with unchanged geometry at freeze and a larger HF seal. Added shared video/signature primitives and updated window-based pieces.

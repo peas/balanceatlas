@@ -161,3 +161,7 @@ não são gravuras anatômicas; a cena híbrida não é um recorte transparente.
 os caminhos relativos à raiz do repo e conferir a existência/alpha do arquivo e o vínculo à fonte.
 A página de Instagram tem uma galeria do índice em `#gravuras`. Tinta separada é a opção preferida; para
 camisetas, verificar resolução na dimensão física e fazer prova, não chamar o PNG de arte vetorial.
+
+## Lote natureza e piscina — 12/11/2026
+
+Seleção de oito vídeos + quatro fotos novas, e um JPEG original de maior resolução ligado a `photo-thailand-2026-56`. Total de imagens: **205** (204 revisadas, uma URL indisponível). Nove cortes prontos + cinco WebPs na galeria local `local/festival/natureza-2026-11-12/index.html`. Receita, seleção prioritária e limites: [lotes/natureza-2026-11-12.md](lotes/natureza-2026-11-12.md). Classificação e tempos permanecem no catálogo; o JSON do lote registra ingestão/deduplicação e decisões sobre os descartados da seleção. `cortes` referencia derivados separados: tempos são do original, `freeze_corte` é relativo ao MP4 cortado. Nenhum original foi apagado ou publicado.
