@@ -395,8 +395,26 @@ Paulo e Gabriel estão gostando da expressão "handstandlife", como hashtag e ta
 
 Paulo rejeitou os blocos, barras e Ts soltos sobre fotos/vídeos (exemplo: quadrado ocre sobre o card de Dany). Removidos das composições compartilhadas do site, inclusive hero e professor principal, e removidas as manchas atrás dos professores/escalação. Priorizar pessoa, movimento e informação. Isso não revoga as gravuras com mancha em camada separada aprovadas em IMAGERY.md nem os destaques de texto pincelados. Não reintroduzir geometria ornamental sobre o corpo.
 
-Botões de inscrição arredondados e destacados, inclusive navegação fixa e subpáginas. Informação do lote no hero é texto, sem fundo/borda de botão nem link concorrente. Título principal sem a linha vertical; edição “1º” ao lado de HAND. Aplicar a mesma hierarquia nas demais páginas: ação reconhecível; informação não deve imitar botão.
+Botões de inscrição destacados, inclusive navegação fixa e subpáginas. O formato foi refinado em 13/11: retângulos com raio de 10 px e contorno de 3 px. Informação do lote no hero é texto, sem fundo/borda de botão nem link concorrente. Título principal sem a linha vertical; edição “1º” acima de HAND e alinhada à esquerda (posição revisada em 13/11). Aplicar a mesma hierarquia nas demais páginas: ação reconhecível; informação não deve imitar botão.
 
 ## Instagram: assinatura aprovada (12/11/2026)
 
 Vídeo grande, ocupando tudo ou quase tudo, com corpo inteiro e enquadramento mantido no freeze. Selo HF maior nos Reels, Stories e imagens avulsas. **Carrosséis: logo somente no último slide, com fechamento informativo e assinatura**; as lâminas anteriores são reconhecidas por tipografia, ocre e tratamento das imagens. Uma pincelada ocre por composição quando não houver a gravura com sua mancha/disco ocre. Tirar rótulos internos de acervo/Balance Atlas da arte; conservar fontes e créditos nos registros/legendas. Padrão aprovado para as próximas peças, não apenas experimento. Receita: ig2/README.md.
+
+
+## Consistência de molduras — feedback de Gabriel aplicado em 13/11/2026
+
+- Botões retangulares com cantos de 10 px e contorno de 3 px, tomando “Como chegar” como referência. O CTA do menu mantém tamanho menor, com a mesma linguagem; sem cápsulas ou sombra difusa.
+- Cards de lotes com o mesmo raio e espessura. Molduras de fotos, vídeos e cards de texto compartilham esses valores: verde escuro sobre claro; creme nos vídeos da seção verde e nos lotes futuros. O lote ocre recebe contorno escuro. Não reduzir a opacidade da moldura dos lotes futuros.
+- “1º” acima de HAND, com título e edição alinhados à esquerda. Substitui a posição ao lado aprovada em 12/11.
+- Selos HF, destaques circulares e gravuras soltas preservam suas formas próprias; não colocar caixas em cada parágrafo ou sobre a arte. Textos, paleta e fotos preservados.
+
+
+### Princípios para as próximas alterações
+
+- **Coerência antes de ornamento:** a linguagem neobrutalista vem da tipografia forte, dos planos de cor e dos contornos visíveis. Repetir a mesma geometria entre componentes, sem acrescentar decoração por obrigação.
+- **Um sistema, várias escalas:** usar `--frame-width` e `--corner` em `festival.css`. Botões menores mudam de tamanho, não de identidade; novos cards seguem o mesmo sistema.
+- **Contraste acompanha o fundo:** a espessura se mantém e a cor do contorno muda quando necessário. Molduras precisam continuar legíveis nos estados secundários.
+- **Hierarquia sem competição:** ação parece botão; preço, lote e informação editorial mantêm seus papéis. O selo e as gravuras são elementos de marca, não componentes que precisam virar retângulos.
+- **Movimento e pessoas em primeiro plano:** contornos delimitam a mídia, nunca cobrem o corpo; preservar os recortes e a linguagem de pincel já aprovados.
+- **Conferir no celular e no desktop:** verificar alinhamento, leitura, enquadramento e espaço do CTA na navegação fixa. Validar o build antes de publicar.

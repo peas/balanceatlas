@@ -5,6 +5,7 @@
   --accent: #cb8b34; --accent-light: #dfab5b; --accent-ink: #0f2a24; --muted: #dfab5b;
 }
 :root {
+  --frame-width: 3px; --corner: 10px;
   --max: 1120px; /* content width: wide screens get air instead of longer lines */
   --gutter: clamp(20px, 5vw, 72px); /* side margin, fluid from phone to desktop */
   /* Photo treatment (MARCA.md, 10/11/2026): softened natural colour is the base; moderate black and white is the
@@ -36,12 +37,12 @@ a { color: inherit; }
 .logo { font-family: var(--display); font-weight: 900; font-stretch: 125%; text-transform: uppercase; line-height: .82; font-size: clamp(3.2rem, 9.6vw, 8.2rem); position: relative; display: flex; flex-direction: column; }
 .logo .l1 { color: var(--accent); }
 .logo .l3 { display: inline-flex; align-items: flex-start; gap: .08em; }
-.hero-first-line { display: flex; align-items: center; gap: .14em; }
-.edition { font: 700 .23em/1 var(--mono); color: var(--stage); flex: none; }
+.hero-first-line { display: flex; flex-direction: column; align-items: flex-start; gap: .14em; }
+.edition { font: 700 .36em/1 var(--mono); color: var(--stage); flex: none; }
 .dates { font-family: var(--mono); font-size: clamp(.95rem, 1.8vw, 1.35rem); letter-spacing: .06em; text-transform: uppercase; margin-top: 28px; }
 .place { font-family: var(--mono); font-size: clamp(1.1rem, 2.4vw, 1.8rem); text-transform: uppercase; letter-spacing: .04em; line-height: 1.05; }
 .place span { color: var(--accent); display: block; }
-.cta { display: inline-flex; align-items: center; gap: 12px; margin-top: 32px; padding: 16px 28px; background: var(--white); color: var(--ink); font-family: var(--display); font-weight: 900; font-stretch: 125%; text-transform: uppercase; font-size: 1.05rem; letter-spacing: .02em; text-decoration: none; border-radius: 999px; transition: transform .2s, background .2s; }
+.cta { display: inline-flex; align-items: center; gap: 12px; margin-top: 32px; padding: 16px 28px; background: var(--white); color: var(--ink); font-family: var(--display); font-weight: 900; font-stretch: 125%; text-transform: uppercase; font-size: 1.05rem; letter-spacing: .02em; text-decoration: none; border: var(--frame-width) solid var(--ink); border-radius: var(--corner); transition: transform .2s, background .2s; }
 .cta:hover { background: var(--accent); color: var(--accent-ink); transform: translateY(-2px); }
 .cta-note { font-size: .85rem; opacity: .85; margin-top: 10px; }
 .hero-title { grid-area: title; }
@@ -198,7 +199,7 @@ a { color: inherit; }
 .lotes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 36px 0 32px; }
 .lote { position: relative; padding: 26px 20px 20px; background: rgba(255,255,255,.06); border: 2px solid currentColor; color: var(--white); }
 .lote.aberto { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
-.lote.proximo { opacity: .72; }
+.lote.proximo { background: rgb(255 255 255 / .06); }
 .lote-bar { position: absolute; top: 10px; left: 12px; right: 12px; height: 4px; background: rgba(127,127,127,.35); }
 .lote-bar b { display: block; height: 100%; width: 0; background: currentColor; }
 .lote.aberto .lote-bar b { animation: story 6s linear infinite; }
@@ -478,9 +479,32 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
 }
 
 /* Purchase is the primary action across festival pages; lot information is plain text. */
-.topnav .nav-cta, .stickybar .nav-cta { border-radius: 999px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; padding-inline: 18px; box-shadow: 0 3px 10px rgb(0 0 0 / .12); }
+.topnav .nav-cta, .stickybar .nav-cta { border-radius: var(--corner); min-height: 44px; display: inline-flex; align-items: center; justify-content: center; padding-inline: 18px; box-shadow: none; }
 .claro .topnav .nav-cta { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
 
 /* Astro islands use display:contents by default. Give media islands a real containing
    box for percentage sizing and IntersectionObserver, including WebKit/iOS. */
 .stage > astro-island, .story > astro-island, .venue-tour > astro-island { display: block; }
+
+/* Gabriel's review, 13/11/2026: one outline and modest corners for content frames.
+   Keep free-standing artwork and the circular HF/story identity outside this system. */
+.stage, .story, .venue-tour, .venue-photos img, .mini-story,
+.bento figure:not(.painted), .snake figure:not(.engraving), .quem-photo,
+.map, .lote, .level-card, .quem-card, .more-card, .publico article,
+.objetivos li, .caminho li, .cell, .day {
+  border: var(--frame-width) solid var(--ink);
+  border-radius: var(--corner);
+}
+.teacher .stage, .teacher .story, .signup .lote { border-color: var(--white); }
+.signup .lote.aberto { border-color: var(--accent-ink); }
+.cell.pause { border-style: dashed; }
+.cta, .map-link, .chip, .ev-link {
+  border: var(--frame-width) solid var(--ink);
+  border-radius: var(--corner);
+}
+.topnav .nav-cta, .claro .topnav .nav-cta, .stickybar .nav-cta {
+  border: var(--frame-width) solid var(--ink);
+}
+.stickybar .nav-cta { border-color: var(--white); }
+
+@media (max-width: 420px) { .stickybar .nav-cta { padding-inline: 10px; } }

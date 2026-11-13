@@ -1,5 +1,7 @@
 # Balance Atlas memory
 
+13 Nov 2026: applied Gabriel’s screenshot feedback to the official site: shared 3px content outlines / 10px corners, rectangular CTAs including nav, contrasting media frames, rounded ticket cards without faded outlines, edition above HAND aligned left. Tokens in festival.css; decision and future design principles in MARCA.md supersede 12 Nov pill CTAs/inline edition. Mobile (390px) and desktop (1366px) visually checked; build passed. Paulo requested publication via the existing main → GitHub Pages workflow.
+
 13 Nov 2026: nature curation now has 9 Reels + 3 photo Stories at `/instagram/#natureza`, plus a Gabriel comparison. Selected freezes add registered engraving over original colour scenery and independent ochre at 65%. Source/copy registry `ig2/natureza.json`; recipe `ig2/NATUREZA.md`; prompts in `design/handstandfest-arte/2026-11-13-freezes/`. Page-only review requested; partial earlier exports are obsolete.
 
 Nature/pool batch (12 Nov 2026): 8 videos + 4 new photos catalogued; high-res source linked to existing Thailand photo. Nine local cuts and five photo derivatives via `scripts/festival_curated_media.py`; shortlist, source-time offsets and omissions in `acervo/lotes/natureza-2026-11-12.md`. Prioritize water presses, waterfall pike and group pool photo. No new posts published.
