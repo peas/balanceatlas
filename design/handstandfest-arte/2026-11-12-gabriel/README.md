@@ -77,7 +77,8 @@ Its five slides export as separate 1080×1440 PNGs, never as a video carousel.
 
 ```sh
 python3 scripts/festival_render.py gabriel-transicoes-tela
-python3 scripts/festival_render.py gabriel-gravura-story ed-consistencia --still
+python3 scripts/festival_render.py gabriel-gravura-story --still
+python3 scripts/festival_render.py ed-consistencia-1 ed-consistencia-2 ed-consistencia-3 ed-consistencia-4 ed-consistencia-5 --still
 ```
 
 Final local review set: `~/Documents/Codex/2026-11-10/den/outputs/gabriel-instagram-ampliado/`.
