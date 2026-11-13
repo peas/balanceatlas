@@ -168,3 +168,13 @@ Pool solo, deck pike and Gabriel transitions now use the approved three-layer fr
 v07 ochre at 65%, generated black/ivory figure above. Shared `EngravedFreeze.tsx`; prompts and provenance:
 `design/handstandfest-arte/2026-11-13-freezes/README.md`. Gabriel also appears beside the nature examples for
 comparison, while retaining his calendar placement. Page-only delivery; the prior export batch was stopped.
+
+## Full script review and concrete voice — 13 November 2026
+
+`/instagram-revisao/` now covers all 49 catalogue compositions (128 real rendered WebP frames), plus unproduced calendar briefs. Calendar-first grouping and filters separate nature additions, library alternatives and pending capture. Videos show three moments, carousels up to three representative slides, static artwork one image. Regenerate with `review-render.tsx` and `scripts/festival_review_stills.mjs` after updating compositions; stills are snapshots, not live players.
+
+Paulo's direction: questions should name a recognisable practice situation or shape, e.g. “Como está o seu tuck?” followed by observing tuck-to-straight, rather than broad “Como você muda de forma?”. Tie the development to the actual visible movement. Keep the tone curious, specific and welcoming; avoid vague engagement bait, invented diagnoses, performance promises or pretending an advanced shape is a beginner drill. Event logistics and useful explanations can remain statements. Teaching prescriptions require Gabriel's review.
+
+`review-suggestions.ts` contains proposals only: they have NOT replaced artwork copy. After Paulo returns feedback, extract the reasons behind edits, document tone/teaching/provocation examples and apply the pattern to uncommented pieces where appropriate, preserving exceptions. Empty feedback is not approval of every suggestion.
+
+Comments retain `hf-script-review-2026-11-13-v1` localStorage keys and stable IDs. They belong to the browser AND origin, so localhost/public and Chrome/in-app browser have separate drafts. Copy/download Markdown is the explicit handoff; no automatic sync. The suggestion button appends without overwriting.

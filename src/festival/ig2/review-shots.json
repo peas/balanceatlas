@@ -1,0 +1,1590 @@
+[
+  {
+    "id": "p01-convite",
+    "title": "O convite",
+    "format": "Reel",
+    "description": "Os dois organizadores convidam, olhando para a câmera, com legenda queimada palavra por palavra. O quê, quando e onde aparecem antes dos 8 s. É a peça para fixar no topo do perfil.",
+    "movement": "Voz dos dois, sem música por baixo.",
+    "name": "O convite",
+    "cues": [],
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/p01-convite-0.webp",
+        "label": "1.0 s",
+        "frame": 30
+      },
+      {
+        "url": "/festival/ig/review-v1/p01-convite-1.webp",
+        "label": "15.4 s",
+        "frame": 462
+      },
+      {
+        "url": "/festival/ig/review-v1/p01-convite-2.webp",
+        "label": "30.0 s",
+        "frame": 899
+      }
+    ]
+  },
+  {
+    "id": "p02-palmeiras",
+    "title": "Duas câmeras nas palmeiras",
+    "format": "Reel",
+    "description": "O mesmo momento filmado por dois celulares, em cortes curtos e só com as figuras já montadas. Abre com um jogo: achar as duas pessoas de ponta-cabeça embaixo das palmeiras.",
+    "movement": "Mudo. Música escolhida no app na hora de postar.",
+    "name": "Duas câmeras nas palmeiras",
+    "cues": [],
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/p02-palmeiras-0.webp",
+        "label": "1.0 s",
+        "frame": 30
+      },
+      {
+        "url": "/festival/ig/review-v1/p02-palmeiras-1.webp",
+        "label": "10.1 s",
+        "frame": 303
+      },
+      {
+        "url": "/festival/ig/review-v1/p02-palmeiras-2.webp",
+        "label": "19.4 s",
+        "frame": 581
+      }
+    ]
+  },
+  {
+    "id": "p03-lugar",
+    "title": "O lugar",
+    "format": "Reel",
+    "description": "Tour de 17 s pelo Trapézio Voador em quatro planos: fachada, sala de vidro, palco e arena. Responde \"onde?\" antes de qualquer pergunta e serve de Collab com o perfil do local. O mesmo tour, sem o cartão final, está na seção \"Onde\" do site.",
+    "movement": "Mudo. Música escolhida no app na hora de postar.",
+    "name": "O lugar",
+    "cues": [],
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/p03-lugar-0.webp",
+        "label": "1.0 s",
+        "frame": 30
+      },
+      {
+        "url": "/festival/ig/review-v1/p03-lugar-1.webp",
+        "label": "8.8 s",
+        "frame": 264
+      },
+      {
+        "url": "/festival/ig/review-v1/p03-lugar-2.webp",
+        "label": "16.8 s",
+        "frame": 503
+      }
+    ]
+  },
+  {
+    "id": "p04-linha",
+    "title": "A linha",
+    "format": "Reel",
+    "description": "Uma parada de mão reta de 10,8 s em frente ao mural, com cronômetro, esqueleto e a linha de prumo. O texto é do Paulo (\"Parece difícil? É muito mais do que parece.\") e o fecho liga os 10 segundos à régua das turmas.",
+    "movement": "Mudo. Música escolhida no app na hora de postar.",
+    "name": "A linha",
+    "cues": [],
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/p04-linha-0.webp",
+        "label": "1.0 s",
+        "frame": 30
+      },
+      {
+        "url": "/festival/ig/review-v1/p04-linha-1.webp",
+        "label": "8.4 s",
+        "frame": 252
+      },
+      {
+        "url": "/festival/ig/review-v1/p04-linha-2.webp",
+        "label": "16.0 s",
+        "frame": 479
+      }
+    ]
+  },
+  {
+    "id": "p05-dupla",
+    "title": "Treinar junto",
+    "format": "Reel",
+    "description": "A dupla sincronizada no palco: primeiro com os dois esqueletos, depois o mesmo momento trocando entre o celular da frente e o de trás (que mostra o outro celular no tripé), e termina no cumprimento.",
+    "movement": "Mudo. Música escolhida no app na hora de postar.",
+    "name": "Treinar junto",
+    "cues": [],
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/p05-dupla-0.webp",
+        "label": "1.0 s",
+        "frame": 30
+      },
+      {
+        "url": "/festival/ig/review-v1/p05-dupla-1.webp",
+        "label": "11.5 s",
+        "frame": 345
+      },
+      {
+        "url": "/festival/ig/review-v1/p05-dupla-2.webp",
+        "label": "22.2 s",
+        "frame": 665
+      }
+    ]
+  },
+  {
+    "id": "p06-jornada",
+    "title": "A jornada em cinco passos",
+    "format": "Carrossel de vídeo",
+    "description": "Os cinco passos da página \"Sobre handstand\", um por lâmina, cada um com um trecho em loop: chão e parede, entradas, 10 segundos, formas e press, uma mão. A 2ª lâmina funciona sozinha, como segunda capa.",
+    "movement": "Mudo. Música escolhida no app na hora de postar.",
+    "name": "capa",
+    "cues": [],
+    "index": 0,
+    "count": 7,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/p06-jornada-1-0.webp",
+        "label": "Lâmina 1 · capa",
+        "frame": 83
+      },
+      {
+        "url": "/festival/ig/review-v1/p06-jornada-4-0.webp",
+        "label": "Lâmina 4 · 10 segundos",
+        "frame": 90
+      },
+      {
+        "url": "/festival/ig/review-v1/p06-jornada-7-0.webp",
+        "label": "Lâmina 7 · chamada",
+        "frame": 90
+      }
+    ]
+  },
+  {
+    "id": "p07-turma",
+    "title": "Qual é a sua turma?",
+    "format": "Carrossel de foto",
+    "description": "A régua de nível em cinco lâminas: a pergunta dos 10 segundos, básico, intermediário e avançado, e o que fazer na dúvida. Texto igual ao do site.",
+    "movement": "Sem som (carrossel de foto). Música escolhida no app na hora de postar.",
+    "name": "capa",
+    "cues": [],
+    "index": 0,
+    "count": 5,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/p07-turma-1-0.webp",
+        "label": "Lâmina 1 · capa",
+        "frame": 89
+      },
+      {
+        "url": "/festival/ig/review-v1/p07-turma-3-0.webp",
+        "label": "Lâmina 3 · básico",
+        "frame": 89
+      },
+      {
+        "url": "/festival/ig/review-v1/p07-turma-5-0.webp",
+        "label": "Lâmina 5 · chamada",
+        "frame": 89
+      }
+    ]
+  },
+  {
+    "id": "p08-tres-dias",
+    "title": "3 dias",
+    "format": "Carrossel de foto",
+    "description": "A programação em seis lâminas sobre as nossas fotos do Trapézio Voador: os 4 blocos do dia e depois sexta (base), sábado (construção) e domingo (integração). Marcada como grade provisória.",
+    "movement": "Sem som (carrossel de foto). Música escolhida no app na hora de postar.",
+    "name": "capa",
+    "cues": [],
+    "index": 0,
+    "count": 6,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/p08-tres-dias-1-0.webp",
+        "label": "Lâmina 1 · capa",
+        "frame": 89
+      },
+      {
+        "url": "/festival/ig/review-v1/p08-tres-dias-4-0.webp",
+        "label": "Lâmina 4 · sábado",
+        "frame": 89
+      },
+      {
+        "url": "/festival/ig/review-v1/p08-tres-dias-6-0.webp",
+        "label": "Lâmina 6 · chamada",
+        "frame": 89
+      }
+    ]
+  },
+  {
+    "id": "p09-lote",
+    "title": "1º lote",
+    "format": "Stories",
+    "description": "Sequência de quatro stories para o dia em que a venda abrir: \"Abriu.\", preço com as 60 vagas desenhadas, o que tem, e o lugar da figurinha de link. Serve de molde para a virada de cada lote.",
+    "movement": "Mudo. Figurinha de link e música entram no app.",
+    "name": "abriu",
+    "cues": [],
+    "index": 0,
+    "count": 4,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/p09-lote-1-0.webp",
+        "label": "Lâmina 1 · abriu",
+        "frame": 90
+      },
+      {
+        "url": "/festival/ig/review-v1/p09-lote-3-0.webp",
+        "label": "Lâmina 3 · o que tem",
+        "frame": 90
+      },
+      {
+        "url": "/festival/ig/review-v1/p09-lote-4-0.webp",
+        "label": "Lâmina 4 · link",
+        "frame": 90
+      }
+    ]
+  },
+  {
+    "id": "p10-pergunta",
+    "title": "Vou sair fazendo parada de mão?",
+    "format": "Reel",
+    "description": "A pergunta mais honesta do FAQ, com a resposta do site, palavra por palavra: depois de três dias, não. E a lista do que a pessoa leva.",
+    "movement": "Mudo. Música escolhida no app na hora de postar.",
+    "name": "Vou sair fazendo parada de mão?",
+    "cues": [],
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/p10-pergunta-0.webp",
+        "label": "1.0 s",
+        "frame": 30
+      },
+      {
+        "url": "/festival/ig/review-v1/p10-pergunta-1.webp",
+        "label": "8.3 s",
+        "frame": 249
+      },
+      {
+        "url": "/festival/ig/review-v1/p10-pergunta-2.webp",
+        "label": "15.8 s",
+        "frame": 473
+      }
+    ]
+  },
+  {
+    "id": "junto",
+    "title": "Gente para treinar junto",
+    "format": "Reel",
+    "description": "O treino ocupa a imagem. Texto sobreposto com contraste, fora dos corpos.",
+    "movement": "Uma pincelada revela a palavra. Cortes entre câmeras e selo no encerramento.",
+    "name": "Treinar junto",
+    "cues": [
+      {
+        "label": "Abertura",
+        "frame": 0
+      },
+      {
+        "label": "P&B",
+        "frame": 180
+      },
+      {
+        "label": "Encontro",
+        "frame": 330
+      },
+      {
+        "label": "Selo",
+        "frame": 465
+      }
+    ],
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/junto-0.webp",
+        "label": "1.5 s",
+        "frame": 45
+      },
+      {
+        "url": "/festival/ig/review-v1/junto-1.webp",
+        "label": "6.0 s",
+        "frame": 180
+      },
+      {
+        "url": "/festival/ig/review-v1/junto-2.webp",
+        "label": "15.5 s",
+        "frame": 465
+      }
+    ]
+  },
+  {
+    "id": "lugar",
+    "title": "É aqui",
+    "format": "Reel",
+    "description": "Um passeio pelo Trapézio Voador com espaço para olhar a arquitetura.",
+    "movement": "Títulos assentados na mesma linha. O pincel aparece na abertura e no selo final.",
+    "name": "O lugar",
+    "cues": [
+      {
+        "label": "Fachada",
+        "frame": 24
+      },
+      {
+        "label": "Vidro",
+        "frame": 150
+      },
+      {
+        "label": "Palco",
+        "frame": 255
+      },
+      {
+        "label": "Selo",
+        "frame": 375
+      }
+    ],
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/lugar-0.webp",
+        "label": "1.5 s",
+        "frame": 45
+      },
+      {
+        "url": "/festival/ig/review-v1/lugar-1.webp",
+        "label": "5.0 s",
+        "frame": 150
+      },
+      {
+        "url": "/festival/ig/review-v1/lugar-2.webp",
+        "label": "12.5 s",
+        "frame": 375
+      }
+    ]
+  },
+  {
+    "id": "linha",
+    "title": "É muito mais do que parece",
+    "format": "Reel",
+    "description": "Um plano sem corte para acompanhar o equilíbrio. Corpo inteiro em vídeo amplo; título em coluna lateral.",
+    "movement": "O gesto da pessoa faz o movimento. As frases ocupam a largura de leitura, fora do corpo.",
+    "name": "A linha",
+    "cues": [
+      {
+        "label": "Pergunta",
+        "frame": 24
+      },
+      {
+        "label": "Resposta",
+        "frame": 180
+      },
+      {
+        "label": "Selo",
+        "frame": 375
+      }
+    ],
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/linha-0.webp",
+        "label": "1.5 s",
+        "frame": 45
+      },
+      {
+        "url": "/festival/ig/review-v1/linha-1.webp",
+        "label": "6.0 s",
+        "frame": 180
+      },
+      {
+        "url": "/festival/ig/review-v1/linha-2.webp",
+        "label": "12.5 s",
+        "frame": 375
+      }
+    ]
+  },
+  {
+    "id": "futebol",
+    "title": "Gosta de futebol?",
+    "format": "Reel",
+    "description": "A bola entra no treino e vira a piada: “Aqui a mão não é falta.” Uma versão bem-humorada do vídeo do mural.",
+    "movement": "O plano segue sem corte até a descida. A resposta acompanha a entrada da bola; convite no fecho.",
+    "name": "Aqui a mão não é falta",
+    "cues": [
+      {
+        "label": "Pergunta",
+        "frame": 0
+      },
+      {
+        "label": "A bola",
+        "frame": 189
+      },
+      {
+        "label": "Convite",
+        "frame": 330
+      }
+    ],
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/futebol-0.webp",
+        "label": "1.5 s",
+        "frame": 45
+      },
+      {
+        "url": "/festival/ig/review-v1/futebol-1.webp",
+        "label": "6.3 s",
+        "frame": 189
+      },
+      {
+        "url": "/festival/ig/review-v1/futebol-2.webp",
+        "label": "11.0 s",
+        "frame": 330
+      }
+    ]
+  },
+  {
+    "id": "encontro",
+    "title": "Três dias em São Paulo",
+    "format": "Stories",
+    "description": "Data, lugar e convite em três quadros. Sem barras falsas de story nem música embutida.",
+    "movement": "A pintura entra uma vez. O selo resolve o último quadro.",
+    "name": "A data",
+    "cues": [
+      {
+        "label": "Abertura",
+        "frame": 0
+      },
+      {
+        "label": "Composição",
+        "frame": 30
+      }
+    ],
+    "index": 0,
+    "count": 3,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/encontro-1-0.webp",
+        "label": "Lâmina 1 · A data",
+        "frame": 90
+      },
+      {
+        "url": "/festival/ig/review-v1/encontro-2-0.webp",
+        "label": "Lâmina 2 · O lugar",
+        "frame": 90
+      },
+      {
+        "url": "/festival/ig/review-v1/encontro-3-0.webp",
+        "label": "Lâmina 3 · O convite",
+        "frame": 90
+      }
+    ]
+  },
+  {
+    "id": "formas",
+    "title": "Parada? Só no nome.",
+    "format": "Reel",
+    "description": "As figuras mudam num plano contínuo. Um novo corte do jogo de formas na sala de vidro.",
+    "movement": "Troca de frase, sem interromper o movimento. Sem data no fecho: conteúdo sobre a prática.",
+    "name": "Jogo de formas",
+    "cues": [
+      {
+        "label": "Abertura",
+        "frame": 24
+      },
+      {
+        "label": "Movimento",
+        "frame": 240
+      },
+      {
+        "label": "Fecho",
+        "frame": 450
+      }
+    ],
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/formas-0.webp",
+        "label": "1.5 s",
+        "frame": 45
+      },
+      {
+        "url": "/festival/ig/review-v1/formas-1.webp",
+        "label": "8.0 s",
+        "frame": 240
+      },
+      {
+        "url": "/festival/ig/review-v1/formas-2.webp",
+        "label": "15.0 s",
+        "frame": 450
+      }
+    ]
+  },
+  {
+    "id": "ritmo",
+    "title": "No mesmo ritmo",
+    "format": "Reel",
+    "description": "Uma sequência de pernas em L no parque, em tempo real. Preto e branco para concentrar o olhar nos dois corpos.",
+    "movement": "Plano contínuo e duas chamadas curtas. Nenhum desenho sobre mãos, pés ou pernas.",
+    "name": "Pernas em L",
+    "cues": [
+      {
+        "label": "Abertura",
+        "frame": 24
+      },
+      {
+        "label": "Movimento",
+        "frame": 210
+      },
+      {
+        "label": "Fecho",
+        "frame": 420
+      }
+    ],
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/ritmo-0.webp",
+        "label": "1.5 s",
+        "frame": 45
+      },
+      {
+        "url": "/festival/ig/review-v1/ritmo-1.webp",
+        "label": "7.0 s",
+        "frame": 210
+      },
+      {
+        "url": "/festival/ig/review-v1/ritmo-2.webp",
+        "label": "14.0 s",
+        "frame": 420
+      }
+    ]
+  },
+  {
+    "id": "subida",
+    "title": "Antes de ficar no ar",
+    "format": "Reel",
+    "description": "A subida em press faz parte da peça. Observação de um treino real, sem transformar o vídeo em uma prescrição de exercício.",
+    "movement": "Entrada e sustentação sem acelerar. A pincelada marca o gancho e sai com ele.",
+    "name": "Press no parque",
+    "cues": [
+      {
+        "label": "Abertura",
+        "frame": 24
+      },
+      {
+        "label": "Movimento",
+        "frame": 210
+      },
+      {
+        "label": "Fecho",
+        "frame": 420
+      }
+    ],
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/subida-0.webp",
+        "label": "1.5 s",
+        "frame": 45
+      },
+      {
+        "url": "/festival/ig/review-v1/subida-1.webp",
+        "label": "7.0 s",
+        "frame": 210
+      },
+      {
+        "url": "/festival/ig/review-v1/subida-2.webp",
+        "label": "14.0 s",
+        "frame": 420
+      }
+    ]
+  },
+  {
+    "id": "porta",
+    "title": "Pode entrar",
+    "format": "Stories",
+    "description": "Gabriel abre a porta e apresenta o palco em dois trechos contínuos de bastidor.",
+    "movement": "O movimento vem da câmera e da entrada no espaço. Sem fingir botões ou stickers interativos.",
+    "name": "A porta",
+    "cues": [
+      {
+        "label": "Entrada",
+        "frame": 24
+      },
+      {
+        "label": "Porta aberta",
+        "frame": 120
+      }
+    ],
+    "index": 0,
+    "count": 2,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/porta-1-0.webp",
+        "label": "Lâmina 1 · A porta",
+        "frame": 90
+      },
+      {
+        "url": "/festival/ig/review-v1/porta-2-0.webp",
+        "label": "Lâmina 2 · Lá dentro",
+        "frame": 90
+      }
+    ]
+  },
+  {
+    "id": "natureza-cachoeira",
+    "title": "Pike e cachoeira",
+    "format": "Estático",
+    "description": "Story estático: fotografia em cor, pergunta, pincelada ocre e selo HF.",
+    "movement": "Sem trilha incorporada. Música e interação são escolhidas no Instagram.",
+    "name": "Pike e cachoeira",
+    "cues": [],
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/natureza-cachoeira-0.webp",
+        "label": "Imagem completa",
+        "frame": 29
+      }
+    ]
+  },
+  {
+    "id": "natureza-comunidade",
+    "title": "Uma prática, muita gente",
+    "format": "Estático",
+    "description": "Story estático: fotografia em cor, pergunta, pincelada ocre e selo HF.",
+    "movement": "Sem trilha incorporada. Música e interação são escolhidas no Instagram.",
+    "name": "Uma prática, muita gente",
+    "cues": [],
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/natureza-comunidade-0.webp",
+        "label": "Imagem completa",
+        "frame": 29
+      }
+    ]
+  },
+  {
+    "id": "natureza-pike",
+    "title": "Uma pausa no pike",
+    "format": "Estático",
+    "description": "Story estático: fotografia em cor, pergunta, pincelada ocre e selo HF.",
+    "movement": "Sem trilha incorporada. Música e interação são escolhidas no Instagram.",
+    "name": "Uma pausa no pike",
+    "cues": [],
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/natureza-pike-0.webp",
+        "label": "Imagem completa",
+        "frame": 29
+      }
+    ]
+  },
+  {
+    "id": "turma",
+    "title": "Qual é a sua turma?",
+    "format": "Carrossel",
+    "description": "Cinco lâminas. A segunda também funciona como capa e a informação fica fora da foto.",
+    "movement": "Leitura calma, uma palavra marcada e fechamento com o círculo de pincel.",
+    "name": "Capa",
+    "cues": [],
+    "index": 0,
+    "count": 5,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/turma-1-0.webp",
+        "label": "Lâmina 1 · Capa",
+        "frame": 90
+      },
+      {
+        "url": "/festival/ig/review-v1/turma-3-0.webp",
+        "label": "Lâmina 3 · Básico",
+        "frame": 90
+      },
+      {
+        "url": "/festival/ig/review-v1/turma-5-0.webp",
+        "label": "Lâmina 5 · Encontro",
+        "frame": 90
+      }
+    ]
+  },
+  {
+    "id": "olhar",
+    "title": "Uma parada. Quantas formas?",
+    "format": "Carrossel",
+    "description": "Cinco imagens estáticas com texto. Quadros extraídos de outro vídeo do parque, sem reprodução de vídeo ou animação nas lâminas.",
+    "movement": "Sem movimento. A segunda lâmina funciona sozinha como outra capa.",
+    "name": "A pergunta",
+    "cues": [],
+    "index": 0,
+    "count": 5,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/olhar-1-0.webp",
+        "label": "Lâmina 1 · A pergunta",
+        "frame": 90
+      },
+      {
+        "url": "/festival/ig/review-v1/olhar-3-0.webp",
+        "label": "Lâmina 3 · Aberta",
+        "frame": 90
+      },
+      {
+        "url": "/festival/ig/review-v1/olhar-5-0.webp",
+        "label": "Lâmina 5 · A conversa",
+        "frame": 90
+      }
+    ]
+  },
+  {
+    "id": "gabriel-paisagem",
+    "title": "Outro jeito de ver o mar",
+    "format": "Estático",
+    "description": "IMG_7876: fotografia preservada em cor e corpo inteiro. Registro pessoal, não recomendação de treino em rochas.",
+    "movement": "PNG estático.",
+    "name": "Gabriel e o mar",
+    "cues": [],
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/gabriel-paisagem-0.webp",
+        "label": "Imagem completa",
+        "frame": 29
+      }
+    ]
+  },
+  {
+    "id": "gravuras-aprovadas",
+    "title": "Corpo e pincel",
+    "format": "Carrossel",
+    "description": "As três aplicações aprovadas: reta com oval ocre, pernas abertas com faixa sobre verde e arco aberto sobre creme.",
+    "movement": "Três imagens estáticas. A figura e a mancha são independentes; a pintura pode ser omitida em outras aplicações.",
+    "name": "Reta / oval",
+    "cues": [],
+    "index": 0,
+    "count": 4,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/gravuras-aprovadas-1-0.webp",
+        "label": "Lâmina 1 · Reta / oval",
+        "frame": 29
+      },
+      {
+        "url": "/festival/ig/review-v1/gravuras-aprovadas-3-0.webp",
+        "label": "Lâmina 3 · Pernas abertas / arco",
+        "frame": 29
+      },
+      {
+        "url": "/festival/ig/review-v1/gravuras-aprovadas-4-0.webp",
+        "label": "Lâmina 4 · A conversa continua",
+        "frame": 29
+      }
+    ]
+  },
+  {
+    "id": "arte-gravura",
+    "title": "Corpo, tinta e papel",
+    "format": "Carrossel",
+    "description": "Três estudos estáticos e um fechamento com as figuras das referências de vocês: papel claro e fundo verde. Gravura, cerdas e arcos em camadas independentes.",
+    "movement": "Imagens estáticas. A arte tem textura; a tipografia preserva a leitura no celular.",
+    "name": "Corpo / papel",
+    "cues": [],
+    "index": 0,
+    "count": 4,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/arte-gravura-1-0.webp",
+        "label": "Lâmina 1 · Corpo / papel",
+        "frame": 29
+      },
+      {
+        "url": "/festival/ig/review-v1/arte-gravura-3-0.webp",
+        "label": "Lâmina 3 · Verde / ousado",
+        "frame": 29
+      },
+      {
+        "url": "/festival/ig/review-v1/arte-gravura-4-0.webp",
+        "label": "Lâmina 4 · A conversa continua",
+        "frame": 29
+      }
+    ]
+  },
+  {
+    "id": "ed-consistencia",
+    "title": "O treino não cabe no recorde",
+    "format": "Carrossel",
+    "description": "Fotos selecionadas do catálogo alternadas com gravura pontual, ocre e texto grande.",
+    "movement": "Imagem estática; sem vídeo nas lâminas.",
+    "name": "O treino não cabe no recorde · 1",
+    "cues": [],
+    "index": 0,
+    "count": 5,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/ed-consistencia-1-0.webp",
+        "label": "Lâmina 1 · O treino não cabe no recorde · 1",
+        "frame": 29
+      },
+      {
+        "url": "/festival/ig/review-v1/ed-consistencia-3-0.webp",
+        "label": "Lâmina 3 · O treino não cabe no recorde · 3",
+        "frame": 29
+      },
+      {
+        "url": "/festival/ig/review-v1/ed-consistencia-5-0.webp",
+        "label": "Lâmina 5 · A conversa continua",
+        "frame": 29
+      }
+    ]
+  },
+  {
+    "id": "ed-comunidade",
+    "title": "Gente para treinar junto",
+    "format": "Estático",
+    "description": "Fotos selecionadas do catálogo alternadas com gravura pontual, ocre e texto grande.",
+    "movement": "Imagem estática; sem vídeo nas lâminas.",
+    "name": "Gente para treinar junto · 1",
+    "cues": [],
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/ed-comunidade-0.webp",
+        "label": "Imagem completa",
+        "frame": 29
+      }
+    ]
+  },
+  {
+    "id": "ed-formas",
+    "title": "Reta e straddle",
+    "format": "Carrossel",
+    "description": "Fotos selecionadas do catálogo alternadas com gravura pontual, ocre e texto grande.",
+    "movement": "Imagem estática; sem vídeo nas lâminas.",
+    "name": "Reta e straddle · 1",
+    "cues": [],
+    "index": 0,
+    "count": 4,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/ed-formas-1-0.webp",
+        "label": "Lâmina 1 · Reta e straddle · 1",
+        "frame": 29
+      },
+      {
+        "url": "/festival/ig/review-v1/ed-formas-3-0.webp",
+        "label": "Lâmina 3 · Reta e straddle · 3",
+        "frame": 29
+      },
+      {
+        "url": "/festival/ig/review-v1/ed-formas-4-0.webp",
+        "label": "Lâmina 4 · A conversa continua",
+        "frame": 29
+      }
+    ]
+  },
+  {
+    "id": "ed-festival",
+    "title": "Três dias. Um encontro.",
+    "format": "Estático",
+    "description": "Fotos selecionadas do catálogo alternadas com gravura pontual, ocre e texto grande.",
+    "movement": "Imagem estática; sem vídeo nas lâminas.",
+    "name": "Três dias. Um encontro. · 1",
+    "cues": [],
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/ed-festival-0.webp",
+        "label": "Imagem completa",
+        "frame": 29
+      }
+    ]
+  },
+  {
+    "id": "ed-mundo",
+    "title": "Ninguém treina só",
+    "format": "Estático",
+    "description": "Fotos selecionadas do catálogo alternadas com gravura pontual, ocre e texto grande.",
+    "movement": "Imagem estática; sem vídeo nas lâminas.",
+    "name": "Ninguém treina só · 1",
+    "cues": [],
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/ed-mundo-0.webp",
+        "label": "Imagem completa",
+        "frame": 29
+      }
+    ]
+  },
+  {
+    "id": "gabriel-gravura-story",
+    "title": "O corpo cria — story ampliado",
+    "format": "Estático",
+    "description": "Adaptação 9:16 própria: figura maior, título curto e espaço inferior para compartilhamento/sticker nativo.",
+    "movement": "PNG 1080×1920; não é o card do feed reduzido.",
+    "name": "Story / figura maior",
+    "cues": [],
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/gabriel-gravura-story-0.webp",
+        "label": "Imagem completa",
+        "frame": 29
+      }
+    ]
+  },
+  {
+    "id": "gabriel-gravura",
+    "title": "O corpo também cria",
+    "format": "Estático",
+    "description": "Gravura gerada a partir de IMG_8751: figura transparente e tinta independente. Interpretação editorial, não medição anatômica.",
+    "movement": "PNG estático; pessoa e pincel separados.",
+    "name": "Gabriel / gravura",
+    "cues": [],
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/gabriel-gravura-0.webp",
+        "label": "Imagem completa",
+        "frame": 29
+      }
+    ]
+  },
+  {
+    "id": "arte-freeze-ocre",
+    "title": "Do vídeo à tinta",
+    "format": "Reel",
+    "description": "O vídeo congela; o P&B chega primeiro, seguido da pintura ocre, com o mesmo enquadramento amplo.",
+    "movement": "5 s de vídeo real → congelamento no mesmo quadro → P&B → tinta em 1,4 s. Selo entra junto.",
+    "name": "Vídeo → quadro → pintura",
+    "cues": [
+      {
+        "label": "Vídeo",
+        "frame": 0
+      },
+      {
+        "label": "Congela",
+        "frame": 150
+      },
+      {
+        "label": "Pintura",
+        "frame": 180
+      },
+      {
+        "label": "Arte",
+        "frame": 240
+      }
+    ],
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/arte-freeze-ocre-0.webp",
+        "label": "1.5 s",
+        "frame": 45
+      },
+      {
+        "url": "/festival/ig/review-v1/arte-freeze-ocre-1.webp",
+        "label": "5.0 s",
+        "frame": 150
+      },
+      {
+        "url": "/festival/ig/review-v1/arte-freeze-ocre-2.webp",
+        "label": "8.0 s",
+        "frame": 240
+      }
+    ]
+  },
+  {
+    "id": "arte-freeze-amarelo",
+    "title": "O gesto ocupa o quadro",
+    "format": "Reel",
+    "description": "Teste mais ousado: verde profundo, pincelada ampla e o corpo em P&B.",
+    "movement": "5 s de vídeo real → congelamento no mesmo quadro → P&B → tinta em 1,4 s. Selo entra junto.",
+    "name": "Vídeo → quadro → pintura",
+    "cues": [
+      {
+        "label": "Vídeo",
+        "frame": 0
+      },
+      {
+        "label": "Congela",
+        "frame": 150
+      },
+      {
+        "label": "Pintura",
+        "frame": 180
+      },
+      {
+        "label": "Arte",
+        "frame": 240
+      }
+    ],
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/arte-freeze-amarelo-0.webp",
+        "label": "1.5 s",
+        "frame": 45
+      },
+      {
+        "url": "/festival/ig/review-v1/arte-freeze-amarelo-1.webp",
+        "label": "5.0 s",
+        "frame": 150
+      },
+      {
+        "url": "/festival/ig/review-v1/arte-freeze-amarelo-2.webp",
+        "label": "8.0 s",
+        "frame": 240
+      }
+    ]
+  },
+  {
+    "id": "gabriel-transicoes-tela",
+    "title": "Entre formas — tela cheia",
+    "format": "Reel",
+    "description": "Enquadramento aprovado com IMG_3372: vídeo ocupa quase toda a tela; texto sobre degradê, sem cobrir mãos e pés. Em 6 s, o mesmo frame ganha figura hachurada e tinta ocre intermediária a 65%, sobre o cenário original colorido.",
+    "movement": "6 s de vídeo + 5 s de freeze. Padrão aprovado: corpo amplo, ocre e selo HF.",
+    "name": "Vídeo maior",
+    "cues": [
+      {
+        "label": "Movimento",
+        "frame": 0
+      },
+      {
+        "label": "Congela",
+        "frame": 180
+      },
+      {
+        "label": "Pintura",
+        "frame": 220
+      }
+    ],
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/gabriel-transicoes-tela-0.webp",
+        "label": "1.5 s",
+        "frame": 45
+      },
+      {
+        "url": "/festival/ig/review-v1/gabriel-transicoes-tela-1.webp",
+        "label": "6.0 s",
+        "frame": 180
+      },
+      {
+        "url": "/festival/ig/review-v1/gabriel-transicoes-tela-2.webp",
+        "label": "7.3 s",
+        "frame": 220
+      }
+    ]
+  },
+  {
+    "id": "gabriel-praia",
+    "title": "A prática muda de cenário",
+    "format": "Reel",
+    "description": "Gabriel muda as formas na areia. Fonte IMG_3377: 0–10 s; congelamento exato em 10 s. Mantém todo o cenário no freeze.",
+    "movement": "10 s em velocidade real + 5 s de freeze P&B/ocre. Áudio original não incluído.",
+    "name": "Praia → freeze → ocre",
+    "cues": [
+      {
+        "label": "Movimento",
+        "frame": 0
+      },
+      {
+        "label": "Congela",
+        "frame": 300
+      },
+      {
+        "label": "Pintura",
+        "frame": 340
+      }
+    ],
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/gabriel-praia-0.webp",
+        "label": "1.5 s",
+        "frame": 45
+      },
+      {
+        "url": "/festival/ig/review-v1/gabriel-praia-1.webp",
+        "label": "10.0 s",
+        "frame": 300
+      },
+      {
+        "url": "/festival/ig/review-v1/gabriel-praia-2.webp",
+        "label": "11.3 s",
+        "frame": 340
+      }
+    ]
+  },
+  {
+    "id": "natureza-piscina-press-dupla",
+    "title": "Press em dupla",
+    "format": "Reel",
+    "description": "Cor natural → congelamento em 13,2 s → P&B, pergunta e pintura ocre. Enquadramento preservado.",
+    "movement": "Sem trilha incorporada. Música e interação são escolhidas no Instagram.",
+    "name": "Press em dupla",
+    "cues": [
+      {
+        "label": "Movimento",
+        "frame": 0
+      },
+      {
+        "label": "Congela",
+        "frame": 396
+      },
+      {
+        "label": "Ocre + selo",
+        "frame": 441
+      }
+    ],
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/natureza-piscina-press-dupla-0.webp",
+        "label": "1.5 s",
+        "frame": 45
+      },
+      {
+        "url": "/festival/ig/review-v1/natureza-piscina-press-dupla-1.webp",
+        "label": "13.2 s",
+        "frame": 396
+      },
+      {
+        "url": "/festival/ig/review-v1/natureza-piscina-press-dupla-2.webp",
+        "label": "14.7 s",
+        "frame": 441
+      }
+    ]
+  },
+  {
+    "id": "natureza-piscina-press-solo",
+    "title": "Press saindo da água",
+    "format": "Reel",
+    "description": "Cor natural → congelamento em 12,6 s → pessoa hachurada, cenário colorido e tinta intermediária a 65%. Enquadramento preservado.",
+    "movement": "Sem trilha incorporada. Música e interação são escolhidas no Instagram.",
+    "name": "Press saindo da água",
+    "cues": [
+      {
+        "label": "Movimento",
+        "frame": 0
+      },
+      {
+        "label": "Congela",
+        "frame": 378
+      },
+      {
+        "label": "Hachura + ocre",
+        "frame": 423
+      }
+    ],
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/natureza-piscina-press-solo-0.webp",
+        "label": "1.5 s",
+        "frame": 45
+      },
+      {
+        "url": "/festival/ig/review-v1/natureza-piscina-press-solo-1.webp",
+        "label": "12.6 s",
+        "frame": 378
+      },
+      {
+        "url": "/festival/ig/review-v1/natureza-piscina-press-solo-2.webp",
+        "label": "14.1 s",
+        "frame": 423
+      }
+    ]
+  },
+  {
+    "id": "natureza-deck-pike-reta",
+    "title": "Do pike à reta",
+    "format": "Reel",
+    "description": "Cor natural → congelamento em 16 s → pessoa hachurada, cenário colorido e tinta intermediária a 65%. Enquadramento preservado.",
+    "movement": "Sem trilha incorporada. Música e interação são escolhidas no Instagram.",
+    "name": "Do pike à reta",
+    "cues": [
+      {
+        "label": "Movimento",
+        "frame": 0
+      },
+      {
+        "label": "Congela",
+        "frame": 480
+      },
+      {
+        "label": "Hachura + ocre",
+        "frame": 525
+      }
+    ],
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/natureza-deck-pike-reta-0.webp",
+        "label": "1.5 s",
+        "frame": 45
+      },
+      {
+        "url": "/festival/ig/review-v1/natureza-deck-pike-reta-1.webp",
+        "label": "16.0 s",
+        "frame": 480
+      },
+      {
+        "url": "/festival/ig/review-v1/natureza-deck-pike-reta-2.webp",
+        "label": "17.5 s",
+        "frame": 525
+      }
+    ]
+  },
+  {
+    "id": "natureza-deck-tuck-reta",
+    "title": "Do tuck à reta",
+    "format": "Reel",
+    "description": "Cor natural → congelamento em 17,3 s → P&B, pergunta e pintura ocre. Enquadramento preservado.",
+    "movement": "Sem trilha incorporada. Música e interação são escolhidas no Instagram.",
+    "name": "Do tuck à reta",
+    "cues": [
+      {
+        "label": "Movimento",
+        "frame": 0
+      },
+      {
+        "label": "Congela",
+        "frame": 519
+      },
+      {
+        "label": "Ocre + selo",
+        "frame": 564
+      }
+    ],
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/natureza-deck-tuck-reta-0.webp",
+        "label": "1.5 s",
+        "frame": 45
+      },
+      {
+        "url": "/festival/ig/review-v1/natureza-deck-tuck-reta-1.webp",
+        "label": "17.3 s",
+        "frame": 519
+      },
+      {
+        "url": "/festival/ig/review-v1/natureza-deck-tuck-reta-2.webp",
+        "label": "18.8 s",
+        "frame": 564
+      }
+    ]
+  },
+  {
+    "id": "natureza-deck-entrada-agrupada",
+    "title": "A entrada faz parte",
+    "format": "Reel",
+    "description": "Cor natural → congelamento em 10,5 s → P&B, pergunta e pintura ocre. Enquadramento preservado.",
+    "movement": "Sem trilha incorporada. Música e interação são escolhidas no Instagram.",
+    "name": "A entrada faz parte",
+    "cues": [
+      {
+        "label": "Movimento",
+        "frame": 0
+      },
+      {
+        "label": "Congela",
+        "frame": 315
+      },
+      {
+        "label": "Ocre + selo",
+        "frame": 360
+      }
+    ],
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/natureza-deck-entrada-agrupada-0.webp",
+        "label": "1.5 s",
+        "frame": 45
+      },
+      {
+        "url": "/festival/ig/review-v1/natureza-deck-entrada-agrupada-1.webp",
+        "label": "10.5 s",
+        "frame": 315
+      },
+      {
+        "url": "/festival/ig/review-v1/natureza-deck-entrada-agrupada-2.webp",
+        "label": "12.0 s",
+        "frame": 360
+      }
+    ]
+  },
+  {
+    "id": "natureza-deck-preparacao",
+    "title": "Antes da inversão",
+    "format": "Reel",
+    "description": "Cor natural → congelamento em 13 s → P&B, pergunta e pintura ocre. Enquadramento preservado.",
+    "movement": "Sem trilha incorporada. Música e interação são escolhidas no Instagram.",
+    "name": "Antes da inversão",
+    "cues": [
+      {
+        "label": "Movimento",
+        "frame": 0
+      },
+      {
+        "label": "Congela",
+        "frame": 390
+      },
+      {
+        "label": "Ocre + selo",
+        "frame": 435
+      }
+    ],
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/natureza-deck-preparacao-0.webp",
+        "label": "1.5 s",
+        "frame": 45
+      },
+      {
+        "url": "/festival/ig/review-v1/natureza-deck-preparacao-1.webp",
+        "label": "13.0 s",
+        "frame": 390
+      },
+      {
+        "url": "/festival/ig/review-v1/natureza-deck-preparacao-2.webp",
+        "label": "14.5 s",
+        "frame": 435
+      }
+    ]
+  },
+  {
+    "id": "natureza-deck-straddle-frente",
+    "title": "Formas no verde",
+    "format": "Reel",
+    "description": "Cor natural → congelamento em 32 s → P&B, pergunta e pintura ocre. Enquadramento preservado.",
+    "movement": "Sem trilha incorporada. Música e interação são escolhidas no Instagram.",
+    "name": "Formas no verde",
+    "cues": [
+      {
+        "label": "Movimento",
+        "frame": 0
+      },
+      {
+        "label": "Congela",
+        "frame": 960
+      },
+      {
+        "label": "Ocre + selo",
+        "frame": 1005
+      }
+    ],
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/natureza-deck-straddle-frente-0.webp",
+        "label": "1.5 s",
+        "frame": 45
+      },
+      {
+        "url": "/festival/ig/review-v1/natureza-deck-straddle-frente-1.webp",
+        "label": "32.0 s",
+        "frame": 960
+      },
+      {
+        "url": "/festival/ig/review-v1/natureza-deck-straddle-frente-2.webp",
+        "label": "33.5 s",
+        "frame": 1005
+      }
+    ]
+  },
+  {
+    "id": "natureza-deck-straddle-baixo",
+    "title": "Straddle em movimento",
+    "format": "Reel",
+    "description": "Cor natural → congelamento em 21 s → P&B, pergunta e pintura ocre. Enquadramento preservado.",
+    "movement": "Sem trilha incorporada. Música e interação são escolhidas no Instagram.",
+    "name": "Straddle em movimento",
+    "cues": [
+      {
+        "label": "Movimento",
+        "frame": 0
+      },
+      {
+        "label": "Congela",
+        "frame": 630
+      },
+      {
+        "label": "Ocre + selo",
+        "frame": 675
+      }
+    ],
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/natureza-deck-straddle-baixo-0.webp",
+        "label": "1.5 s",
+        "frame": 45
+      },
+      {
+        "url": "/festival/ig/review-v1/natureza-deck-straddle-baixo-1.webp",
+        "label": "21.0 s",
+        "frame": 630
+      },
+      {
+        "url": "/festival/ig/review-v1/natureza-deck-straddle-baixo-2.webp",
+        "label": "22.5 s",
+        "frame": 675
+      }
+    ]
+  },
+  {
+    "id": "natureza-pavilhao-press-sequencia",
+    "title": "Press no pavilhão",
+    "format": "Reel",
+    "description": "Cor natural → congelamento em 11,3 s → P&B, pergunta e pintura ocre. Enquadramento preservado.",
+    "movement": "Sem trilha incorporada. Música e interação são escolhidas no Instagram.",
+    "name": "Press no pavilhão",
+    "cues": [
+      {
+        "label": "Movimento",
+        "frame": 0
+      },
+      {
+        "label": "Congela",
+        "frame": 339
+      },
+      {
+        "label": "Ocre + selo",
+        "frame": 384
+      }
+    ],
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/natureza-pavilhao-press-sequencia-0.webp",
+        "label": "1.5 s",
+        "frame": 45
+      },
+      {
+        "url": "/festival/ig/review-v1/natureza-pavilhao-press-sequencia-1.webp",
+        "label": "11.3 s",
+        "frame": 339
+      },
+      {
+        "url": "/festival/ig/review-v1/natureza-pavilhao-press-sequencia-2.webp",
+        "label": "12.8 s",
+        "frame": 384
+      }
+    ]
+  },
+  {
+    "id": "fotos-ocre",
+    "title": "Fotos, P&B e pincel ocre",
+    "format": "Carrossel",
+    "description": "Três fotos do carrossel do parque, com os corpos inteiros em preto e branco. A tinta atravessa as árvores e escapa pelas bordas.",
+    "movement": "Três PNGs estáticos. A pincelada não passa por mãos, pés ou rostos.",
+    "name": "Uma parada, muitas formas",
+    "cues": [],
+    "index": 0,
+    "count": 4,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/fotos-ocre-1-0.webp",
+        "label": "Lâmina 1 · Uma parada, muitas formas",
+        "frame": 29
+      },
+      {
+        "url": "/festival/ig/review-v1/fotos-ocre-3-0.webp",
+        "label": "Lâmina 3 · A transição",
+        "frame": 29
+      },
+      {
+        "url": "/festival/ig/review-v1/fotos-ocre-4-0.webp",
+        "label": "Lâmina 4 · A conversa continua",
+        "frame": 29
+      }
+    ]
+  },
+  {
+    "id": "fotos-ocre-motion",
+    "title": "A fotografia recebe a tinta",
+    "format": "Reel",
+    "description": "As mesmas três fotos em uma peça separada: a cor cede ao P&B e o pincel entra nas árvores. O corpo fotografado permanece imóvel.",
+    "movement": "3 s por foto, cortes diretos e pintura de 1,3 s. Sem zoom, música ou movimento artificial do corpo.",
+    "name": "Fotografia → P&B → tinta",
+    "cues": [
+      {
+        "label": "Cor",
+        "frame": 0
+      },
+      {
+        "label": "Pincel",
+        "frame": 42
+      },
+      {
+        "label": "Foto 2",
+        "frame": 150
+      },
+      {
+        "label": "Foto 3",
+        "frame": 240
+      }
+    ],
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/fotos-ocre-motion-1.webp",
+        "label": "1.4 s",
+        "frame": 42
+      },
+      {
+        "url": "/festival/ig/review-v1/fotos-ocre-motion-0.webp",
+        "label": "1.5 s",
+        "frame": 45
+      },
+      {
+        "url": "/festival/ig/review-v1/fotos-ocre-motion-2.webp",
+        "label": "8.0 s",
+        "frame": 240
+      }
+    ]
+  }
+]

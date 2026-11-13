@@ -1,3 +1,4 @@
+import { getRemotionEnvironment, staticFile } from 'remotion';
 // Shared kit for the HandstandFest Instagram pieces (/festival/instagram).
 // Pure Remotion, played by @remotion/player on the page: nothing is rendered to MP4 yet (the palette is still open),
 // so every colour is a CSS variable of the page. Sizes here are for a 1080-wide canvas.
@@ -32,7 +33,7 @@ export const LIVE = 'var(--live, var(--accent, #ffd23f))';
 export const FPS = 30;
 export const REEL = { w: 1080, h: 1920 }; // reels and stories
 export const CARD = { w: 1080, h: 1440 }; // carousel slide, 3:4 (what the profile grid shows)
-export const MEDIA = '/festival/ig'; // web clips (540x960), photos and pose files: see scripts/festival_ig_midia.py
+export const MEDIA = getRemotionEnvironment().isRendering ? staticFile('festival/ig') : '/festival/ig'; // web clips (540x960), photos and pose files: see scripts/festival_ig_midia.py
 export const f = (seconds: number) => Math.round(seconds * FPS);
 
 export type Formato = 'reel' | 'story' | 'card';

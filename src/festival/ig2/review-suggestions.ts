@@ -1,0 +1,47 @@
+// Proposed copy only. Do not change compositions until Paulo reviews the wording.
+export const suggestions:Record<string,string>={
+ 'natureza-piscina-press-dupla':'Já tentou subir da água em dupla?\nObserve o tempo de subida de cada pessoa.\nObjetivo: mostrar a entrada e a coordenação, sem apresentar a cena como tutorial.',
+ 'natureza-piscina-press-solo':'Como é um press saindo da água?\nAcompanhe a passagem da água para o apoio nas mãos.\nObjetivo: convidar a observar a entrada completa.',
+ 'natureza-deck-pike-reta':'Como está o seu pike?\nVeja a passagem do quadril dobrado para a reta.\nObjetivo: dar nome à forma e destacar a transição mostrada.',
+ 'natureza-deck-tuck-reta':'Como está o seu tuck?\nObserve a abertura do tuck até a reta.\nObjetivo: conversar sobre uma transição específica, não sobre formas em geral.',
+ 'natureza-deck-entrada-agrupada':'Como você entra no tuck?\nAqui, a entrada acontece com impulso.\nObjetivo: separar entrada e sustentação; não chamar esta subida de press.',
+ 'natureza-deck-preparacao':'O que você prepara antes de tirar os pés do chão?\nObserve os apoios antes da entrada.\nObjetivo: mostrar a preparação que aparece neste corte.',
+ 'natureza-deck-straddle-frente':'Como está o seu straddle?\nAcompanhe a abertura e o fechamento das pernas.\nObjetivo: observar a forma em movimento.',
+ 'natureza-deck-straddle-baixo':'Você já explorou um straddle mais baixo?\nVeja o caminho até estender o corpo.\nObjetivo: mostrar essa variação, sem prescrever uma correção universal.',
+ 'natureza-pavilhao-press-sequencia':'O que acontece antes de os pés saírem do chão?\nObserve o início deste press.\nObjetivo: concentrar a atenção na subida, não só na posição final.',
+ 'natureza-cachoeira':'Você lembra onde fez esta parada?\nUma foto também guarda a memória do lugar.\nObjetivo: abrir histórias concretas da comunidade, não ensinar técnica com esta foto.',
+ 'natureza-comunidade':'Na sua cidade tem encontro de handstand?\nEstamos mapeando grupos e lugares para treinar.\nObjetivo: receber cidade, nome do encontro e contato para confirmar os dados.',
+ 'natureza-pike':'Você reconhece o pike nesta foto?\nRepare na dobra do quadril.\nObjetivo: apresentar o nome e a característica visível da forma.',
+ 'gabriel-transicoes-tela':'Como está o seu tuck?\nDo tuck à reta: acompanhe a transição do Gabriel.\nObjetivo: trocar a pergunta genérica por uma forma e um movimento reconhecíveis.',
+ 'gabriel-praia':'Seu equilíbrio muda quando o chão muda?\nAqui, Gabriel explora as formas na areia.\nObjetivo: conversar sobre contexto de prática; não recomendar terreno instável para iniciantes.',
+ 'gabriel-gravura':'Você já viu esta forma arqueada?\nUma imagem do Gabriel para observar com calma.\nObjetivo: apresentar repertório; uma futura explicação técnica deve ser dele.',
+ 'gabriel-gravura-story':'Você já viu esta forma arqueada?\nObserve o desenho do corpo do Gabriel.\nObjetivo: apoiar o post sobre repertório.',
+ 'gabriel-paisagem':'Qual lugar ficou ligado a uma lembrança de treino?\nGabriel e o mar.\nObjetivo: recolher uma história concreta; a foto não é sugestão de local seguro para treinar.',
+ 'junto':'Quem acompanha suas tentativas?\nTreinar junto também é observar e conversar.\nObjetivo: valorizar companhia na prática.',
+ 'lugar':'Onde vai acontecer o HandstandFest?\nConheça o Trapézio Voador, no Butantã.\nObjetivo: apresentar o espaço e orientar quem vai participar.',
+ 'linha':'Você percebe os ajustes enquanto mantém a reta?\nAcompanhe uma tentativa sem cortes.\nObjetivo: mostrar que sustentar a posição envolve movimento.',
+ 'futebol':'Gosta de futebol?\nAqui a mão não é falta.\nObjetivo: manter a piada ligada à bola que aparece na cena; esta pergunta já é específica.',
+ 'turma':'Ainda está na parede? Tem turma para você.\nVeja como os níveis estão organizados.\nObjetivo: ajudar a pessoa a reconhecer sua turma, conferindo os critérios oficiais.',
+ 'encontro':'Três dias para treinar handstand em São Paulo.\nVeja data, lugar e como participar.\nObjetivo: informar, sem forçar uma pergunta em todo anúncio.',
+ 'formas':'Você reconhece as formas desta sequência?\nVamos observar uma transição de cada vez.\nObjetivo: nomear as formas após revisão do Gabriel, em vez de usar só frases sobre movimento.',
+ 'ritmo':'Dá para manter o mesmo ritmo em dupla?\nObserve a sequência de pernas em L.\nObjetivo: direcionar o olhar para a coordenação entre os dois.',
+ 'subida':'Como começa este press?\nObserve a subida antes da parada.\nObjetivo: chamar atenção para a entrada em tempo real.',
+ 'porta':'Quer conhecer o espaço do festival?\nGabriel abre a porta do Trapézio Voador.\nObjetivo: mostrar o bastidor e situar o encontro.',
+ 'olhar':'Reta, pernas abertas: o que mudou entre as fotos?\nCompare uma forma por lâmina.\nObjetivo: usar o carrossel para observar diferenças concretas.',
+ 'ed-consistencia':'Seu treino conta só quando bate um recorde?\nTentativa, pausa e repetição também fazem parte.\nObjetivo: conversar sobre consistência sem prometer evolução linear.',
+ 'ed-comunidade':'Tem alguém treinando handstand perto de você?\nEstamos mapeando encontros e lugares para treinar.\nObjetivo: colher indicações verificáveis da comunidade.',
+ 'ed-mundo':'Onde acontece o encontro de handstand da sua cidade?\nConte o nome, o lugar e quem organiza.\nObjetivo: construir um mapa que possa ser confirmado com os organizadores.',
+ 'ed-formas':'Reta e straddle: você reconhece a diferença?\nCompare pernas juntas e pernas abertas.\nObjetivo: introduzir vocabulário visual, com uma forma claramente identificada por lâmina.',
+ 'ed-festival':'Quer passar três dias treinando com essa comunidade?\nConheça o HandstandFest.\nObjetivo: conectar o encontro à prática, com informações verificadas.',
+ 'arte-gravura':'O que muda no desenho do corpo entre estas posições?\nCompare os apoios e a posição das pernas.\nObjetivo: observar a arte sem apresentá-la como medição técnica.',
+ 'gravuras-aprovadas':'Reta ou pernas abertas: qual forma você reconhece aqui?\nUma forma por imagem, com nome revisado.\nObjetivo: transformar o estudo visual em repertório legível.',
+ 'arte-freeze-ocre':'Você reparou na posição das pernas antes da pausa?\nCongele o olhar nesse instante.\nObjetivo: usar a pintura para destacar um detalhe da cena.',
+ 'arte-freeze-amarelo':'Que posição as pernas desenham neste instante?\nCompare o movimento com o quadro congelado.\nObjetivo: dar função à transformação visual.',
+ 'fotos-ocre':'O que mudou entre um apoio e o próximo?\nCompare os três instantes.\nObjetivo: conduzir uma leitura concreta das fotos.',
+ 'fotos-ocre-motion':'Você percebe a mudança entre estes três instantes?\nObserve a posição das pernas em cada foto.\nObjetivo: substituir uma chamada genérica sobre pintura por observação da prática.',
+};
+const aliases:Record<string,string>={'p01-convite':'ed-festival','p02-palmeiras':'futebol','p03-lugar':'lugar','p04-linha':'linha','p05-dupla':'junto','p06-jornada':'ed-consistencia','p07-turma':'turma','p08-tres-dias':'encontro','p09-lote':'ed-festival','p10-pergunta':'ed-comunidade'};
+for(const [id,source] of Object.entries(aliases))suggestions[id]=suggestions[source];
+suggestions['p09-lote']='Está pensando em participar do HandstandFest?\nConfira o lote e as condições atuais no site.\nObjetivo: informar a inscrição; revisar valores, abertura e disponibilidade antes de publicar.';
+suggestions['p02-palmeiras']='O que você percebe ao ver a mesma parada de outro ângulo?\nCompare as duas câmeras.\nObjetivo: mostrar a mesma prática por perspectivas diferentes.';
+suggestions['p10-pergunta']='Vou sair do festival fazendo parada de mão?\nVamos falar de prática, ferramentas e continuidade.\nObjetivo: alinhar expectativas sem prometer uma conquista em três dias.';
