@@ -18,3 +18,12 @@ Photo/video and filter layers now share the same player geometry; rounded clippi
 Option 02 selected for further use; its HF is now the exact connected path from the original brand asset.
 The previous separate-letter construction is superseded. Image-led editorial and biography covers have been
 expanded to the frame; the grid is regenerated from the updated Remotion thumbnails.
+
+## Variant 05 — figure outside the paint
+Requested alternative: ochre brush sits only behind the original connected HF; Gabriel's approved
+engraving stands beside it on cream, with a clear gap. Independent SVG groups preserve all three layers.
+`05-gabriel-fora-mancha-hf.png` is the square upload; `-circular.png` previews the profile crop.
+Regenerate with `node scripts/festival_avatar_outside_brush.mjs`. Does not supersede option 02 pending selection.
+
+Final selection: Paulo prefers option 02 with the shared ochre brush (14 November).
+Option 05 remains an unselected alternative. The approved 02 PNG/SVG is available in `/divulgacao/`.

@@ -475,3 +475,10 @@ Avatar option 02 is preferred, but MUST use the original connected HF path, neve
 Paulo's 14 exercise samples now have explicitly provisional Remotion previews: complete sample, mild tonal
 correction, ochre titles, then exact-frame freeze. They are not Gabriel footage or final validated lessons.
 See `exercise-preview-pieces.tsx`; filming briefs remain outstanding until Gabriel refilms/reviews them.
+
+## Divulgação kit — 14 November 2026
+`/divulgacao/` is the compact, shareable single-page brand kit (not in the public nav, noindex):
+chosen avatar, official SVG/PNG logos, sample applications, typography/colors, canonical engraving
+and layered-paint prompts, and copyable event invitations. Paulo confirmed avatar option 02 with
+Gabriel and the connected HF on ONE shared ochre brush; outside-brush option 05 is only an unselected study.
+Public downloads live in `public/festival/divulgacao/`; master study remains in `design/instagram-profile-2026-11-14/`.

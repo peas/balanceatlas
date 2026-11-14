@@ -1,0 +1,13 @@
+Use case: style-transfer + background-extraction.
+Inputs: Image 1 is the ORIGINAL PHOTO or exact video freeze frame to edit. Image 2 is an approved isolated engraving used ONLY for stroke language, not its pose or body. If there is no style reference, follow the description below.
+Output: one isolated full-body PNG with real transparent alpha, generous padding around every fingertip and toe; no text or brand graphics.
+
+Turn the photographed person into a fine black-ink engraving. Use short curved contour hatches that wrap around the observed local volume of skin, muscles and clothing. Change stroke direction along shoulders, back, arms, legs and cloth folds. Use sparse hatching in light areas, denser cross-hatching in shadows, restrained outer contours and dark masses in hair/clothing. Keep warm ivory highlights (#f3eddf) opaque INSIDE the person. No coloured ink.
+
+Preserve this exact person's silhouette, proportions, limb lengths, joint angles, asymmetries, shoulder and hip tilt, palm contacts, visible fingers, toes, hair, face, clothing and perspective. Do not improve technique, mirror the image, invent hidden anatomy, exaggerate muscles, slim the body, or borrow the reference person's pose. Source description: [briefly describe the actual pose, clothing, view and visible details].
+
+Remove ALL scenery, floor, cast shadow, props and background. Outside the body and between limbs must be alpha=0. No paper rectangle, black backdrop, checkerboard, coloured edge residue, halo, drop shadow, circle, brush, orbit or watermark. Narrow natural antialiasing only. Do not erase fingers/hair or make body highlights transparent.
+
+Avoid uniform diagonal screens, noisy grayscale filters, halftone dots, smudged pencil, cartoon anatomy and solid silhouettes. The effect is engraved volume, not just desaturation. One figure only. Render hands and feet carefully and keep all source-visible extremities.
+
+Operator note: the prompt is a target, not an anatomical guarantee. Compare the output to the original at matching pose scale. Save the original, exact prompt, style reference, output and any correction prompt. Inspect transparency on cream AND dark green. Reuse only after visual approval; do not present an AI interpretation as a measured technique diagram.

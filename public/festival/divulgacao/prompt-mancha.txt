@@ -1,0 +1,17 @@
+Create a layered HandstandFest composition from the supplied approved transparent engraving and the current v07 brush assets.
+
+Keep the engraving's pixels, alpha, pose, proportions and details unchanged. Put paint BEHIND it on a separate layer; leave hands, feet, face and body contours unobscured. Use cream #f3eddf with ochre #cb8b34, or deep green #153d32 with lighter ochre #dfab5b. Preserve ink contrast. Never stretch or mirror the person to fit a graphic.
+
+The HF SEAL is a fixed mark: reuse the original master exactly when a logo is required. The DECORATIVE PAINT is a family, not a mandatory repeat of that seal's circular silhouette. Match its visible bristles, transparent dry gaps, uneven coverage and broken edges. Prefer native SVG derivatives of the existing assets; do not regenerate the logo.
+
+Choose ONE dominant paint gesture appropriate to the body and surrounding composition:
+- vertical oval mass for a narrow straight handstand;
+- inclined broad sweep for a wide straddle;
+- open broken arc to suggest a trajectory while keeping air around the body.
+Vary aspect, orientation, opening and placement purposefully. Avoid repeating precisely the same circle in every section, random decorative noise, neat geometric discs, extra splatter, multiple competing strokes, or a brush under every interface element. A study may compare variants; a final piece needs hierarchy.
+
+Deliver independent layers: figure PNG/WebP with alpha, paint SVG (or alpha PNG), optional simple orbit/ground, and typography added separately. Include one cream and one green preview. Do not bake text, dates or the logo into the body asset.
+
+For a code-capable agent: compose with SVG/HTML/Remotion and the supplied figure; preserve its pixels rather than asking ImageGen to redraw the whole layout. This is the tested route in compose.mjs. If a genuinely new painted silhouette is needed, generate ONLY the isolated brush asset using the v07 mark as material/style reference, then composite it separately; that generative-brush route has not been tested in this round.
+
+For video: use the exact frozen frame as the photo input and record its source time. Keep the original motion, freeze it, transition to the reviewed illustration, then reveal paint; title and seal may enter concurrently. Match the source-to-illustration transform before fading. If the pose shifts, do not hide that with morphing: use an explicit editorial cut, revise the art, or keep the photographic freeze. Respect reduced motion. If person extraction fails, use the brush as a window containing the scene instead.
