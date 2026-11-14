@@ -200,3 +200,8 @@ Nature/pool batch (12 Nov 2026): 8 videos + 4 new photos catalogued; high-res so
 13 Nov: temporary `/instagram-revisao/` lists all 49 catalogue compositions with 128 real previews, plus pending briefs, current copy/timing, proposed objectives, optional order and per-piece comments. Drafts use versioned browser localStorage; copy/download Markdown is the explicit handoff, no server sync or automatic composition changes.
 
 13 Nov voice: concrete shape/situation questions (“Como está o seu tuck?” + tuck→straight observation), not generic engagement prompts. Review-only proposals in `ig2/review-suggestions.ts`; after returned feedback, document rationale and extrapolate to uncommented pieces with judgment. See `ig2/README.md`.
+
+14 Nov: pulled Nordeste Nerd to 96b538b and compared its real crop/cover publishing incidents with HF.
+Notes: `docs/instagram/2026-11-14-nordestenerd-publication-lessons.md`. Adopt explicit crop verification,
+separate action covers and purpose-driven Story reposts; do not copy old UI selectors or universalize
+NN duration/loudness claims. Publication packages and UI overlays remain proposed, not implemented.

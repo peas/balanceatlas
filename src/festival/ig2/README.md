@@ -178,3 +178,9 @@ Paulo's direction: questions should name a recognisable practice situation or sh
 `review-suggestions.ts` contains proposals only: they have NOT replaced artwork copy. After Paulo returns feedback, extract the reasons behind edits, document tone/teaching/provocation examples and apply the pattern to uncommented pieces where appropriate, preserving exceptions. Empty feedback is not approval of every suggestion.
 
 Comments retain `hf-script-review-2026-11-13-v1` localStorage keys and stable IDs. They belong to the browser AND origin, so localhost/public and Chrome/in-app browser have separate drafts. Copy/download Markdown is the explicit handoff; no automatic sync. The suggestion button appends without overwriting.
+
+## Publication handoff — lessons from Nordeste Nerd (14 November 2026)
+See `docs/instagram/2026-11-14-nordestenerd-publication-lessons.md`: explicit portrait-crop check,
+separate image-led Reel covers, phone-scale typography, native Story reposts with purpose, and confirmation
+before recording publication. NN's historical web UI behavior is not a current platform guarantee.
+Export packages and UI-safe overlays are proposed next steps, not implemented by this documentation update.

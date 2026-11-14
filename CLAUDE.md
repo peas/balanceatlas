@@ -482,3 +482,14 @@ chosen avatar, official SVG/PNG logos, sample applications, typography/colors, c
 and layered-paint prompts, and copyable event invitations. Paulo confirmed avatar option 02 with
 Gabriel and the connected HF on ONE shared ochre brush; outside-brush option 05 is only an unselected study.
 Public downloads live in `public/festival/divulgacao/`; master study remains in `design/instagram-profile-2026-11-14/`.
+
+## YouTube channel — 14 November 2026
+Paulo asked for the channel: **Handstand Fest**, https://www.youtube.com/@handstandfest (channel id `UC6wCJz01qLvkyFsWfsMEbvA`),
+a Brand Account managed by Paulo's Google account. Picture = `public/festival/divulgacao/avatar-hf.png`; banner source and
+render recipe in `design/youtube-channel-2026-11-14/` (`node shot.mjs`, 2560x1440, text inside the 1546x423 safe area).
+Description from the site copy, one link (handstandfest.com.br). No videos yet. Plan (Drive `pesquisas/handstandfest-youtube-shorts.md`):
+only the exercise series goes to Shorts, same Remotion MP4, search-style titles. Gabriel is not a manager yet (needs his Google email).
+
+Publication comparison (14 November 2026): `docs/instagram/2026-11-14-nordestenerd-publication-lessons.md`
+records NN's real crop/cover incidents and adaptations for HF. Use separate action-led covers and verify
+portrait crops in the actual uploader. Don't inherit NN duration/reach/loudness claims as platform rules.
