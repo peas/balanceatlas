@@ -26,3 +26,12 @@ Preview: `/instagram/press-estudo/` (noindex, experimental). Both share the exac
 3. Render `press-calmo` / `press-pulso`, H.264 CRF24. Current files under `local/festival/press-study/`; generated MP4s stay out of git.
 
 This experiment does not authorize replacing the full-motion exercise library. Confirm aesthetic direction first; before teaching from it, review poses with Gabriel and preserve access to the real-speed source.
+
+
+## Paulo’s review — 14 November 2026
+
+The sparse-pose animation technique is approved for reuse, but this pool clip is NOT a good final source: the body is occluded at the beginning. Select a source with the complete body visible throughout the chosen action; reject hidden/cropped entry poses rather than inventing anatomy. Keep this study as provenance, not a publish-ready lesson.
+
+Use ONE coordinated paint + camera accent per short sequence. Repeating it on three holds was too much information. The current preview now accents pose 6 only; other poses remain at constant camera scale. Next experiment: about 12 semantically selected poses rather than evenly spaced samples — denser during the transition, longer holds at readable milestones. Twelve is a hypothesis to compare, not a universal requirement; do not add redundant frames solely to reach a number.
+
+Continue generating a single contact sheet for consistency, preserving equal cells, camera scale and hand baseline. Inspect occlusion and motion continuity BEFORE generation. This review supersedes the three-accent initial recipe above.

@@ -8,7 +8,7 @@ const hold=[45,30,35,80,30,95,35,35,40,175];
 export function poseAt(frame:number){let start=0;for(let i=0;i<hold.length;i++){if(frame<start+hold[i])return {index:i,local:frame-start,duration:hold[i]};start+=hold[i];}return {index:9,local:174,duration:175};}
 const clamp={extrapolateLeft:'clamp',extrapolateRight:'clamp'} as const;
 export const PressStudy=({mode='calmo'}:{mode?:'calmo'|'pulso'})=>{
- const frame=useCurrentFrame(),{index,local,duration}=poseAt(frame),accent=[3,5,9].includes(index),pulse=mode==='pulso';
+ const frame=useCurrentFrame(),{index,local,duration}=poseAt(frame),accent=index===5,pulse=mode==='pulso';
  const zoom=accent?(pulse?interpolate(local,[0,8,19,duration-1],[1,1.30,1.20,1.03],clamp):interpolate(local,[0,duration-1],[1,1.075],clamp)):1;
  const paint=accent?interpolate(local,[4,14,Math.min(40,duration-22),Math.min(54,duration-5)],[0,1,1,0],clamp):0;
  const url=`/festival/ig/press-study-v1/pose-${index+1}.webp`;

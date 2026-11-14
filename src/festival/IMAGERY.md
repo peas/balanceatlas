@@ -84,3 +84,12 @@ separate from this static anatomical illustration technique.
 ## Stepped press engraving experiment — 14 November 2026
 
 At Paulo's request, one 5x2 contact sheet from his pool press was transformed into ten illustrated poses together to encourage consistent hatching. See `design/handstandfest-arte/2026-11-14-press-sequence/README.md` and `/instagram/press-estudo/`. Remotion cuts between poses with variable holds; gentle zoom or +30% impulse / 10-point retreat; independent ochre briefly enters/exits behind the figure on three holds. This is an explicitly requested sparse-pose animation experiment, not frame-by-frame full-video generation or a new default. The generator exaggerates some musculature and may shift contours; no morph/interpolation, technical posture assessment or claim of pixel registration. Review before reuse.
+
+
+## Paulo’s review — 14 November 2026
+
+The sparse-pose animation technique is approved for reuse, but this pool clip is NOT a good final source: the body is occluded at the beginning. Select a source with the complete body visible throughout the chosen action; reject hidden/cropped entry poses rather than inventing anatomy. Keep this study as provenance, not a publish-ready lesson.
+
+Use ONE coordinated paint + camera accent per short sequence. Repeating it on three holds was too much information. The current preview now accents pose 6 only; other poses remain at constant camera scale. Next experiment: about 12 semantically selected poses rather than evenly spaced samples — denser during the transition, longer holds at readable milestones. Twelve is a hypothesis to compare, not a universal requirement; do not add redundant frames solely to reach a number.
+
+Continue generating a single contact sheet for consistency, preserving equal cells, camera scale and hand baseline. Inspect occlusion and motion continuity BEFORE generation. This review supersedes the three-accent initial recipe above.

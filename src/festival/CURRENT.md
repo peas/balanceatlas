@@ -41,7 +41,7 @@ Approved by Paulo; external Sympla configuration is NOT verified by this code ch
 3. Gabriel filming batch: silent demonstrations, voiceover later. Prioritize hollow-body legs/upper body, scapular shrug/bear, belly-to-wall progression, one-foot release, controlled kick-up and safe star exit. Film full-body plus useful shoulder/hand close-ups. Technical review before instructional narration.
 4. Publishing package: final MP4/PNG, separate action-led cover, caption, credits, Story plan and upload QA. Add music natively where chosen. Preview remains separate from final render and published status.
 5. First-week review: useful conversations, questions and saves; refine topics and pacing. Build Handstand Life from reviewed lessons, not the whole experimental library.
-6. Keep new visual tests isolated until chosen: stepped press engraving animation requested 14 November (ten poses, variable holds, camera accents, quick independent ochre entrance/exit on held poses).
+6. Keep new visual tests isolated until chosen: stepped press engraving animation requested 14 November (ten poses, variable holds, camera accents, ONE quick independent ochre entrance/exit + zoom on a selected hold; technique approved, pool clip rejected as final source due to initial occlusion; next test ~12 semantically selected full-body poses).
 
 ## Where to read or edit
 
