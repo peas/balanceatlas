@@ -2,10 +2,10 @@
 import FestLayout from '../../../layouts/FestLayout.astro';
 import { EXERCISE_SHOOTS, SHOOT_NOTES } from '../../../festival/ig2/gabriel-filming';
 ---
-<FestLayout stickyNav={false} title="Gabriel · lista de gravação | Handstand Life" description="Plano de captação de exercícios e referências para o fim de semana.">
+<FestLayout stickyNav={false} title="Gabriel e Paulo · lista de gravação | Handstand Life" description="Plano de captação de exercícios e referências para o fim de semana.">
 <main class="shoots wrap">
   <a href="/festival/instagram/">← Calendário e peças</a>
-  <header class="intro"><p class="eyebrow">HANDSTAND LIFE · GUIA DE SOBREVIVÊNCIA</p><h1>Gabriel, vamos filmar?</h1><p class="lead">Uma ideia por vídeo. Entrada, demonstração e saída completas.</p><p class="voice"><strong>Você não precisa falar nada durante a gravação.</strong> Faremos a narração depois, em voiceover. Aqui precisamos das imagens — e da sua revisão do que vale ensinar.</p></header>
+  <header class="intro"><p class="eyebrow">HANDSTAND LIFE · GUIA DE SOBREVIVÊNCIA</p><h1>Gabriel e Paulo, vamos filmar?</h1><p class="lead">Uma ideia por vídeo. Entrada, demonstração e saída completas.</p><p class="voice"><strong>Vocês não precisam falar durante a gravação.</strong> Faremos a narração depois, em voiceover. Aqui precisamos das imagens — e da revisão técnica do Gabriel.</p></header>
   <section class="notes" aria-labelledby="capture"><h2 id="capture">Como gravar esta leva</h2><ul>{SHOOT_NOTES.map(note=><li>{note}</li>)}</ul><p>Os samples abaixo são referências do Paulo para combinar a captação, não aulas finalizadas. O áudio original foi mantido; aperte play para ouvir. Os subtítulos dos cartões descrevem a pauta, não são transcrições literais. Alguns samples cortam mãos ou pés: na nova gravação, manter as extremidades e a saída inteiras.</p></section>
   <div class="filter"><label for="shoot-priority">Mostrar</label><select id="shoot-priority"><option value="all">Tudo</option><option value="weekend">Prioridade neste fim de semana</option><option value="extra">Se der tempo / próxima leva</option></select><span id="shoot-status" role="status"></span></div>
   <nav aria-label="Lista de gravação">{EXERCISE_SHOOTS.map((item,i)=><a href={`#${item.id}`}>{String(i+1).padStart(2,'0')} · {item.title}</a>)}</nav>
@@ -15,11 +15,13 @@ import { EXERCISE_SHOOTS, SHOOT_NOTES } from '../../../festival/ig2/gabriel-film
     {item.sample&&<figure><video controls playsinline preload="none" poster={`/festival/ig/gabriel-filming-v1/${item.id}.webp`}><source src={`/festival/ig/gabriel-filming-v1/${item.id}.mp4`} type="video/mp4"/></video><figcaption>Referência do Paulo · vídeo {item.sample.source} · {item.sample.start}–{item.sample.end} s do original. Áudio preservado.</figcaption></figure>}
     {!item.sample&&<p class="no-sample">Sem sample novo: pauta da lista de captação.</p>}
     <h3>O que filmar</h3><p>{item.shot}</p>
+    <h3>Os dois pontos de vista</h3><p>{item.paired}</p>
     <h3>Fotos que também precisamos</h3><p>{item.photo}</p>
     <h3>Assunto do futuro post</h3><p>{item.post}</p>
-    <label class="done"><input type="checkbox" data-shot={item.id}/> Já gravei esta pauta</label>
+    <label class="done"><input type="checkbox" data-shot={item.id}/> Gabriel · gravado</label>
+    <label class="done"><input type="checkbox" data-shot={`${item.id}:paulo`}/> Paulo · gravado</label>
   </article>)}</div>
-  <section class="notes"><h2>Depois da gravação</h2><p>Mande os originais em qualidade máxima pelo Drive, sem filtro, legenda ou música. Nomeie cada take pelo exercício. Vamos selecionar, editar, escrever a narração e enviar a explicação técnica para você revisar antes de publicar.</p><p>Esta série vai alimentar o <strong>Handstand Life: Guia de Sobrevivência</strong> — vídeos e posts organizados por assunto, para consultar além do feed.</p><p class="small">As marcações “já gravei” ficam apenas neste navegador. Esta página de produção não aparece no menu público nem nos buscadores.</p></section>
+  <section class="notes"><h2>Depois da gravação</h2><p>Mande os originais em qualidade máxima pelo Drive, sem filtro, legenda ou música. Nomeie cada take: pessoa-exercicio-variacao-angulo-tentativa. Vamos selecionar, editar, escrever a narração e enviar a explicação técnica para Gabriel revisar antes de publicar.</p><p>Esta série vai alimentar o <strong>Handstand Life: Guia de Sobrevivência</strong> — vídeos e posts organizados por assunto, para consultar além do feed.</p><p class="small">As marcações “já gravei” ficam apenas neste navegador. Esta página de produção não aparece no menu público nem nos buscadores.</p></section>
 </main>
 </FestLayout>
 <script>

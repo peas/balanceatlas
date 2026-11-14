@@ -164,3 +164,15 @@ variações básicas com Gabriel antes de transformar essas ideias em aulas.
 Figuras processadas estão em `acervo/gravuras.json`: oito recortes/gravuras e duas composições, vinculados
 às fontes/prompts. Reutilizar o PNG/WebP transparente e adicionar tinta em layer independente; não re-gerar
 a pessoa a cada post. Marcar aprovação pendente honestamente e conferir impressão para camisetas.
+
+## Ordem revista + captação em dupla — 14/11/2026
+
+35 dias, começando em 18/11. Não é um curso linear: alternar utilidade, pessoas, natureza e evento, preservando a ordem de assuntos relacionados (saída antes de explorar livre; entrada na parede antes de retirar os apoios).
+
+1. Semana 1: convite; punhos; treinar junto; sapinho; Gabriel; saída lateral; paisagem.
+2. Semana 2: entrar e sair da parede; ombros; local; canoinha; tentativas reais; tirar um pé; níveis do festival.
+3. Semana 3: formas; compressão; encontros; costelas; pike/tuck; mãos; futebol.
+4. Semana 4: chute controlado; rever o treino; dúvidas do evento; urso/prancha; press na natureza; um exercício em dois pontos de vista; cultura do movimento.
+5. Semana 5: urso; tuck/reta; comunidade; press no deck; tour; press em dupla; pergunta real da comunidade.
+
+Gabriel **e Paulo** gravam os exercícios. Um take comparável de cada um e outro ângulo complementar; manter também a tentativa inteira em velocidade real. Não confundir pessoas com certo/errado, nem montagem de tentativas diferentes com multicâmera simultânea. Revisão técnica com Gabriel; voz depois. Aproveitar as prévias de Paulo quando aprovadas. A página de captação conserva a URL `/instagram/gabriel/`, agora com dois checkboxes por pauta. Compressão e a comparação de ângulos são pautas a produzir, não renders prontos. Se a gravação atrasar, mover a pauta e usar uma peça própria pronta, preservando a alternância.

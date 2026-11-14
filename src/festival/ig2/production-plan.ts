@@ -1,5 +1,7 @@
 // Shared production brief: displayed on the working page; no publishing automation.
 export const FILMING = [
+ {title:'Compressão para o press · Gabriel e Paulo',shot:'Perfil comparável + três-quartos; apoio escolhido com Gabriel, preparação, tentativa de tirar os pés e retorno.',use:'Semana 3 · um detalhe concreto, sem promessa de resultado'},
+ {title:'Um exercício, dois pontos de vista',shot:'Um take completo de cada pessoa e outro ângulo dos ombros. Identificar variações e tentativas; não simular certo/errado.',use:'Semana 4 · observar o que cada ângulo revela'},
  {title:'Sapinho',shot:'Vídeo de perfil e três-quartos: preparação, entrada, breve equilíbrio e saída; foto nítida e narração depois.',use:'Próximo ciclo · primeiro contato com equilíbrio nas mãos'},
  {title:'Mãos e punhos',shot:'Preparação que Gabriel usa + close real dos dedos durante o apoio, junto de um plano inteiro.',use:'Próximo ciclo · “Parece parado. Olha as mãos.”'},
  {title:'Saída do handstand',shot:'Gabriel demonstra a progressão que ensina, com espaço lateral livre e entrada/saída completas.',use:'Próximo ciclo · publicar antes de incentivar tentativas livres'},
@@ -13,7 +15,7 @@ export const FILMING = [
  {title:'Treino real: tentativas e pausas',shot:'Preparar as mãos, tentar, descansar, rever o vídeo e conversar. Relato curto: o que percebeu hoje?',use:'Processo · filmar, rever, conversar'},
  {title:'Pessoas, lugares e convites',shot:'Foto do grupo, treino junto, vista e entrada do lugar; retrato do Gabriel/Agustin e bastidores. Não precisa falar para a câmera.',use:'Comunidade, professores e dúvidas reais'},
 ];
-export const CAPTURE_BRIEF = 'Filmar na vertical, câmera fixa, boa luz, fundo simples e corpo grande no quadro, deixando folga para mãos, pés e saída. Fazer 2–3 takes curtos completos e fotos separadas. Guardar o original sem texto/filtro/música. Gabriel não precisa falar durante a captação: faremos voiceover depois, com execução e legenda revisadas por ele. Lista atualizada e samples em /festival/instagram/gabriel/.';
+export const CAPTURE_BRIEF = 'Filmar na vertical, câmera fixa, boa luz, fundo simples e corpo grande no quadro, deixando folga para mãos, pés e saída. Fazer 2–3 takes curtos completos e fotos separadas. Guardar o original sem texto/filtro/música. Gabriel e Paulo gravam os mesmos temas em variações adequadas: um plano comparável e outro ângulo complementar. Os dois não precisam falar durante a captação: faremos voiceover depois, com execução e legenda revisadas por ele. Lista atualizada e samples em /festival/instagram/gabriel/.';
 export const NEXT_TOPICS = [
  {title:'Seu treino cabe num recorde?',slides:['Seu melhor tempo não resume a prática.','Uma tentativa boa e uma difícil podem acontecer no mesmo dia.','Observar e ajustar também faz parte.','O que você percebeu hoje?'],asset:'Fotos de tentativa, pausa e revisão; relato verdadeiro. Sem inventar evolução.'},
  {title:'Onde você coloca a atenção?',slides:['Pode ser intenso e também contemplativo.','Onde você coloca a atenção?','Mãos, respiração, tentativa, intervalo.','Como é isso para você?'],asset:'Plano real mais longo + pausa e fala do Gabriel; experiência pessoal, sem promessa terapêutica.'},

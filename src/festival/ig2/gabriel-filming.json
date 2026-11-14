@@ -12,7 +12,8 @@
       "start": 9,
       "end": 22,
       "poster": 6
-    }
+    },
+    "paired": "Gabriel e Paulo: um take inteiro no mesmo tipo de ângulo, mais um ângulo complementar. Cada um usa a variação adequada ao próprio nível; Gabriel revisa a explicação."
   },
   {
     "id": "escapulas",
@@ -27,7 +28,8 @@
       "start": 23,
       "end": 38,
       "poster": 7
-    }
+    },
+    "paired": "Gabriel e Paulo: um take inteiro no mesmo tipo de ângulo, mais um ângulo complementar. Cada um usa a variação adequada ao próprio nível; Gabriel revisa a explicação. Priorizar perfil comparável para enxergar ombros, costelas e pelve; depois três-quartos."
   },
   {
     "id": "punhos",
@@ -42,7 +44,8 @@
       "start": 39,
       "end": 50,
       "poster": 5
-    }
+    },
+    "paired": "Gabriel e Paulo: um take inteiro no mesmo tipo de ângulo, mais um ângulo complementar. Cada um usa a variação adequada ao próprio nível; Gabriel revisa a explicação. Acrescentar close das mãos sem substituir o plano inteiro."
   },
   {
     "id": "urso-prancha",
@@ -57,7 +60,8 @@
       "start": 51,
       "end": 70,
       "poster": 12
-    }
+    },
+    "paired": "Gabriel e Paulo: um take inteiro no mesmo tipo de ângulo, mais um ângulo complementar. Cada um usa a variação adequada ao próprio nível; Gabriel revisa a explicação."
   },
   {
     "id": "canoinha",
@@ -72,7 +76,8 @@
       "start": 71,
       "end": 88,
       "poster": 11
-    }
+    },
+    "paired": "Gabriel e Paulo: um take inteiro no mesmo tipo de ângulo, mais um ângulo complementar. Cada um usa a variação adequada ao próprio nível; Gabriel revisa a explicação. Priorizar perfil comparável para enxergar ombros, costelas e pelve; depois três-quartos."
   },
   {
     "id": "sapinho",
@@ -87,7 +92,8 @@
       "start": 92,
       "end": 116,
       "poster": 12
-    }
+    },
+    "paired": "Gabriel e Paulo: um take inteiro no mesmo tipo de ângulo, mais um ângulo complementar. Cada um usa a variação adequada ao próprio nível; Gabriel revisa a explicação. Acrescentar close das mãos sem substituir o plano inteiro."
   },
   {
     "id": "ombros-cadeira",
@@ -102,7 +108,8 @@
       "start": 118,
       "end": 138,
       "poster": 10
-    }
+    },
+    "paired": "Gabriel e Paulo: um take inteiro no mesmo tipo de ângulo, mais um ângulo complementar. Cada um usa a variação adequada ao próprio nível; Gabriel revisa a explicação."
   },
   {
     "id": "parede",
@@ -117,7 +124,8 @@
       "start": 140,
       "end": 173,
       "poster": 18
-    }
+    },
+    "paired": "Gabriel e Paulo: um take inteiro no mesmo tipo de ângulo, mais um ângulo complementar. Cada um usa a variação adequada ao próprio nível; Gabriel revisa a explicação. Priorizar perfil comparável para enxergar ombros, costelas e pelve; depois três-quartos."
   },
   {
     "id": "saida-estrela",
@@ -132,7 +140,8 @@
       "start": 174,
       "end": 188,
       "poster": 3
-    }
+    },
+    "paired": "Gabriel e Paulo: um take inteiro no mesmo tipo de ângulo, mais um ângulo complementar. Cada um usa a variação adequada ao próprio nível; Gabriel revisa a explicação. Gravar cada saída inteira com espaço lateral livre; não forçar uma variação ainda não dominada."
   },
   {
     "id": "chute-parede",
@@ -147,7 +156,8 @@
       "start": 190,
       "end": 219,
       "poster": 11
-    }
+    },
+    "paired": "Gabriel e Paulo: um take inteiro no mesmo tipo de ângulo, mais um ângulo complementar. Cada um usa a variação adequada ao próprio nível; Gabriel revisa a explicação."
   },
   {
     "id": "costelas",
@@ -162,7 +172,8 @@
       "start": 239,
       "end": 252,
       "poster": 7
-    }
+    },
+    "paired": "Gabriel e Paulo: um take inteiro no mesmo tipo de ângulo, mais um ângulo complementar. Cada um usa a variação adequada ao próprio nível; Gabriel revisa a explicação. Priorizar perfil comparável para enxergar ombros, costelas e pelve; depois três-quartos."
   },
   {
     "id": "ombros-box",
@@ -177,7 +188,8 @@
       "start": 3,
       "end": 30,
       "poster": 15
-    }
+    },
+    "paired": "Gabriel e Paulo: um take inteiro no mesmo tipo de ângulo, mais um ângulo complementar. Cada um usa a variação adequada ao próprio nível; Gabriel revisa a explicação."
   },
   {
     "id": "pike-box",
@@ -192,7 +204,8 @@
       "start": 36,
       "end": 59,
       "poster": 10
-    }
+    },
+    "paired": "Gabriel e Paulo: um take inteiro no mesmo tipo de ângulo, mais um ângulo complementar. Cada um usa a variação adequada ao próprio nível; Gabriel revisa a explicação."
   },
   {
     "id": "abertura-chao",
@@ -207,7 +220,8 @@
       "start": 68,
       "end": 86,
       "poster": 9
-    }
+    },
+    "paired": "Gabriel e Paulo: um take inteiro no mesmo tipo de ângulo, mais um ângulo complementar. Cada um usa a variação adequada ao próprio nível; Gabriel revisa a explicação."
   },
   {
     "id": "parede-um-pe",
@@ -216,7 +230,8 @@
     "shot": "Plano lateral com mãos, parede e ambos os pés. Mostrar um pé afastando e voltando, depois o outro; gravar separadamente a variação que você considera adequada.",
     "photo": "Uma foto de cada etapa.",
     "post": "Da parede ao equilíbrio: o que muda ao retirar um apoio?",
-    "priority": "weekend"
+    "priority": "weekend",
+    "paired": "Gabriel e Paulo: um take inteiro no mesmo tipo de ângulo, mais um ângulo complementar. Cada um usa a variação adequada ao próprio nível; Gabriel revisa a explicação."
   },
   {
     "id": "maos-proximas",
@@ -225,7 +240,8 @@
     "shot": "Gravar vista de frente e de cima com as mãos mais próximas e com a posição que você costuma orientar. Acrescentar um plano inteiro no apoio. Explicar depois para qual contexto vale cada ajuste.",
     "photo": "Foto de cima dos dois posicionamentos.",
     "post": "Onde colocar as mãos? Uma comparação concreta.",
-    "priority": "weekend"
+    "priority": "weekend",
+    "paired": "Gabriel e Paulo: um take inteiro no mesmo tipo de ângulo, mais um ângulo complementar. Cada um usa a variação adequada ao próprio nível; Gabriel revisa a explicação. Acrescentar close das mãos sem substituir o plano inteiro."
   },
   {
     "id": "formas",
@@ -234,7 +250,8 @@
     "shot": "Filmar de perfil e de frente, corpo inteiro. Uma sustentação de cada forma e uma transição contínua, sem acelerar. Priorizar pike → tuck e retorno.",
     "photo": "Uma foto nítida de cada forma e de cada ângulo.",
     "post": "Reconhecer as formas e observar transições.",
-    "priority": "extra"
+    "priority": "extra",
+    "paired": "Gabriel e Paulo: um take inteiro no mesmo tipo de ângulo, mais um ângulo complementar. Cada um usa a variação adequada ao próprio nível; Gabriel revisa a explicação."
   },
   {
     "id": "rever-treino",
@@ -243,7 +260,8 @@
     "shot": "Registrar uma tentativa, pausa, revisão do vídeo no celular e troca com alguém. Pode ser espontâneo, sem fala necessária para a câmera.",
     "photo": "Treinando, olhando o vídeo e conversando.",
     "post": "Filme, reveja, converse: os detalhes da prática.",
-    "priority": "extra"
+    "priority": "extra",
+    "paired": "Gabriel e Paulo: um take inteiro no mesmo tipo de ângulo, mais um ângulo complementar. Cada um usa a variação adequada ao próprio nível; Gabriel revisa a explicação."
   },
   {
     "id": "convite-grupo",
@@ -252,6 +270,17 @@
     "shot": "Um plano com várias pessoas em handstand, outro de ajuda/conversa e uma vista do espaço. Registrar apenas quem concordar em aparecer.",
     "photo": "Grupo praticando e retrato simples do Gabriel.",
     "post": "Fortalecer a comunidade e apresentar quem ensina.",
-    "priority": "extra"
+    "priority": "extra",
+    "paired": "Gabriel e Paulo: um take inteiro no mesmo tipo de ângulo, mais um ângulo complementar. Cada um usa a variação adequada ao próprio nível; Gabriel revisa a explicação."
+  },
+  {
+    "id": "compressao",
+    "title": "Compressão para o press",
+    "subtitle": "Uma variação acessível, um detalhe observável.",
+    "shot": "Gabriel escolhe apoio e variação; ambos filmam de perfil e três-quartos a preparação, tentativa de tirar os pés e retorno. Registrar também uma variação com apoio diferente, se adequada, sem prometer que isso leva diretamente ao press.",
+    "photo": "Foto lateral da posição inicial e do momento de tirar os pés.",
+    "post": "Seu pé sai do apoio?",
+    "priority": "weekend",
+    "paired": "Gabriel e Paulo: um take inteiro no mesmo tipo de ângulo, mais um ângulo complementar. Cada um usa a variação adequada ao próprio nível; Gabriel revisa a explicação. Priorizar perfil comparável para enxergar ombros, costelas e pelve; depois três-quartos."
   }
 ]

@@ -111,6 +111,7 @@ Canonical event/ticket facts: `src/festival/data.ts` (`FEST`, `VENDA`, `LOTES`, 
 Three full passes: 450 + 45 / 550 + 55 / 650 + 65 BRL; quantities 10 / 35 / 15.
 This records approved site pricing, not proof that Sympla's external lots are configured.
 Famous-balancer “Em foco” posts are paused; research and observations: `docs/instagram/2026-11-14-handstand-references.md` (raw sample beside it). Use references for original lessons, not third-party media reuse.
+Paulo and Gabriel both film the exercise briefs (comparable + complementary angles); `/instagram/gabriel/` keeps its URL and now tracks each person separately. Explicit 35-day order in `ig2/editorial.ts` leads with accessible supports and interleaves practice, people and event.
 Older initial setup notes were moved to `docs/festival-direction-history.md` rather than deleted.
 
 ## Festival footage archive and Instagram (Nov 2026)
