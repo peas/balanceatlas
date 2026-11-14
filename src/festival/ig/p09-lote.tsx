@@ -3,15 +3,11 @@ import { useCurrentFrame, useVideoConfig, spring } from 'remotion';
 import {
   ACCENT, CHALK, Etiqueta, Foto, Gancho, MONO, Quadro, Selo, QUANDO_CURTO, REEL, STAGE, f, useIn, type PecaProps,
 } from './kit';
-import { FEST, VENDA } from '../data';
+import { FEST, VENDA, LOTES as TICKET_LOTS } from '../data';
 import type { Slide } from './tipos';
 
-// Lotes: first 10 at VENDA.preco, next 35 at 590, last 15 at 690 (60 seats).
-const LOTES = [
-  { preco: VENDA.preco, vagas: 10 },
-  { preco: 590, vagas: 35 },
-  { preco: 690, vagas: 15 },
-];
+// Prices and quantities share the site's source of truth.
+const LOTES = TICKET_LOTS.map(lot => ({ preco: lot.price, vagas: lot.vagas }));
 const brl = (n: number) => `R$ ${n}`;
 
 // ---------- local pieces ----------

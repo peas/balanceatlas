@@ -1,0 +1,120 @@
+{
+  "source": "public/festival/ig/natureza-v1/piscina-press-solo.mp4",
+  "catalogueId": "natureza-pxl-20241201-151159837",
+  "sourceOffsetSeconds": 4.4,
+  "selection": "ffmpeg -ss 0.8, fps=1/1.2; approximate sampled times include half-period sampling",
+  "generator": "built-in image_gen, one transparent 5x2 sheet",
+  "review": "Experimental artistic interpretation; not biomechanically exact. First pose includes source occlusion. No interpolation of anatomy.",
+  "frames": [
+    {
+      "pose": 1,
+      "approximateCutSeconds": 1.4,
+      "cell": {
+        "left": 0,
+        "top": 0,
+        "width": 385,
+        "height": 409
+      },
+      "url": "/festival/ig/press-study-v1/pose-1.webp"
+    },
+    {
+      "pose": 2,
+      "approximateCutSeconds": 2.5999999999999996,
+      "cell": {
+        "left": 385,
+        "top": 0,
+        "width": 384,
+        "height": 409
+      },
+      "url": "/festival/ig/press-study-v1/pose-2.webp"
+    },
+    {
+      "pose": 3,
+      "approximateCutSeconds": 3.8,
+      "cell": {
+        "left": 769,
+        "top": 0,
+        "width": 385,
+        "height": 409
+      },
+      "url": "/festival/ig/press-study-v1/pose-3.webp"
+    },
+    {
+      "pose": 4,
+      "approximateCutSeconds": 5,
+      "cell": {
+        "left": 1154,
+        "top": 0,
+        "width": 384,
+        "height": 409
+      },
+      "url": "/festival/ig/press-study-v1/pose-4.webp"
+    },
+    {
+      "pose": 5,
+      "approximateCutSeconds": 6.199999999999999,
+      "cell": {
+        "left": 1538,
+        "top": 0,
+        "width": 385,
+        "height": 409
+      },
+      "url": "/festival/ig/press-study-v1/pose-5.webp"
+    },
+    {
+      "pose": 6,
+      "approximateCutSeconds": 7.4,
+      "cell": {
+        "left": 0,
+        "top": 409,
+        "width": 385,
+        "height": 408
+      },
+      "url": "/festival/ig/press-study-v1/pose-6.webp"
+    },
+    {
+      "pose": 7,
+      "approximateCutSeconds": 8.6,
+      "cell": {
+        "left": 385,
+        "top": 409,
+        "width": 384,
+        "height": 408
+      },
+      "url": "/festival/ig/press-study-v1/pose-7.webp"
+    },
+    {
+      "pose": 8,
+      "approximateCutSeconds": 9.8,
+      "cell": {
+        "left": 769,
+        "top": 409,
+        "width": 385,
+        "height": 408
+      },
+      "url": "/festival/ig/press-study-v1/pose-8.webp"
+    },
+    {
+      "pose": 9,
+      "approximateCutSeconds": 11,
+      "cell": {
+        "left": 1154,
+        "top": 409,
+        "width": 384,
+        "height": 408
+      },
+      "url": "/festival/ig/press-study-v1/pose-9.webp"
+    },
+    {
+      "pose": 10,
+      "approximateCutSeconds": 12.2,
+      "cell": {
+        "left": 1538,
+        "top": 409,
+        "width": 385,
+        "height": 408
+      },
+      "url": "/festival/ig/press-study-v1/pose-10.webp"
+    }
+  ]
+}

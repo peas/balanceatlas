@@ -1,5 +1,7 @@
 # Marca do HandstandFest: decisões, dúvidas abertas e brief para design
 
+Estado vigente consolidado em [CURRENT.md](CURRENT.md), revisado em 14/11/2026. As rodadas datadas abaixo preservam o histórico; não reabrem paleta, avatar ou layouts já escolhidos.
+
 ## Linguagem aprovada de imagens e vídeos — 11/11/2026
 
 Paulo aprovou **as duas aplicações**, para reutilizar no site oficial, Instagram e outros assets:
@@ -86,7 +88,7 @@ Regra de uso: **uma textura só, grande e rara.**
 - Grade, ingressos, botões, etiquetas e abas seguem com a geometria reta: é o contraste que faz a tinta aparecer.
 - Se o Gabriel mandar o arquivo original da pincelada, troca-se a forma no script e tudo acompanha.
 
-## Palheta fechada e fotos tratadas — 10/11/2026 (decisão mais recente)
+## Palheta fechada e fotos tratadas — 10/11/2026 (histórico, substituído pelo ocre)
 
 - **Palheta fechada pelo Paulo: verde + amarelo** (a antiga E): paper `#f6f1e4`, ink `#0f2a24`, stage `#0f3d33`,
   accent `#ffd23f`, accent-ink `#0f2a24`, muted `#ffb86b`. A verde + rosa (C) saiu do site junto com o seletor de

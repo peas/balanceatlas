@@ -79,3 +79,8 @@ Unlike the older hybrid, this background is the original still. Generated contou
 check the overlay at hands/feet/hips, not just the isolated illustration. No final export was requested for
 this iteration: the user reviews the live compositions on the page. Keep whole-video procedural hatching
 separate from this static anatomical illustration technique.
+
+
+## Stepped press engraving experiment — 14 November 2026
+
+At Paulo's request, one 5x2 contact sheet from his pool press was transformed into ten illustrated poses together to encourage consistent hatching. See `design/handstandfest-arte/2026-11-14-press-sequence/README.md` and `/instagram/press-estudo/`. Remotion cuts between poses with variable holds; gentle zoom or +30% impulse / 10-point retreat; independent ochre briefly enters/exits behind the figure on three holds. This is an explicitly requested sparse-pose animation experiment, not frame-by-frame full-video generation or a new default. The generator exaggerates some musculature and may shift contours; no morph/interpolation, technical posture assessment or claim of pixel registration. Review before reuse.

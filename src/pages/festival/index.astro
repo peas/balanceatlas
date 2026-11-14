@@ -168,7 +168,7 @@ import { LOTES, MAPS_Q, MAPS_PLACE, lineup, facts } from '../../festival/home-co
             <p class="lote-n">{l.n}{l.state === 'aberto' && <em><i aria-hidden="true"></i><span data-venda="agora">abre {VENDA.dia}</span></em>}</p>
             <p class="lote-price"><small>R$</small>{l.price}</p>
             <p class="lote-note">{l.note}</p>
-            {l.state === 'aberto' && <p class="lote-note">+ R$ {VENDA.taxa} de taxa Sympla</p>}
+            <p class="lote-note">+ R$ {l.fee} de taxa Sympla (10%)</p>
           </article>
         ))}
       </div>

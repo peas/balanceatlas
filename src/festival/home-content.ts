@@ -2,11 +2,7 @@
 import { FEST, VENDA } from './data';
 import type { PosterProps } from './compositions';
 
-export const LOTES = [
-  { n: '1º lote', price: VENDA.preco, note: 'Primeiras 10 vagas', state: 'aberto' },
-  { n: '2º lote', price: 590, note: 'Próximas 35 vagas', state: 'proximo' },
-  { n: '3º lote', price: 690, note: 'Últimas 15 vagas', state: 'proximo' },
-] as const;
+export { LOTES } from './data';
 export const VAGAS = 60;
 export const MAPS_Q = encodeURIComponent('Trapézio Voador, R. Alvarenga, 150, Jardim Guedala, São Paulo');
 // The venue's own Google Maps link (footer of trapeziovoador.com.br, 04/11/2026)

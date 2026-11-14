@@ -2,8 +2,10 @@
 
 Proposta de 12/11/2026. Paulo pediu comunidade de nicho, não viralização. A página de trabalho é
 https://handstandfest.com.br/instagram/; dados canônicos do calendário em `editorial.ts`, peças novas em
-`editorial-pieces.tsx`. Não é agendamento na conta. O início sugerido é 13/11, editável no navegador;
+`editorial-pieces.tsx`. Não é agendamento na conta. O início aprovado é quarta-feira, 18/11/2026, editável no navegador;
 verificar a abertura de vendas em 18/11 antes de publicar e reposicionar o item se mudar a data inicial.
+
+Direção consolidada: [CURRENT.md](../CURRENT.md). A revisão de 13–14/11 prevalece sobre os relatos datados abaixo.
 
 ## Cadência e intenção
 
@@ -109,7 +111,7 @@ Paulo achou o vídeo/corpo pequeno nas janelas do papel. O teste `gabriel-transi
 quase toda a tela 9:16, moldura discreta, título sobre degradê e grifo ocre pontual no freeze. O corpo mantém
 a escala ao congelar. `gabriel-transicoes` permanece para comparação; dia 2 aponta para o teste novo.
 `gabriel-gravura-story` é uma adaptação 9:16 com figura maior, não um card do feed reduzido dentro do Story.
-São testes para escolha do Paulo, não regra de que toda peça deve ser full bleed. Demonstração pede corpo
+O teste foi aprovado por Paulo: tela inteira ou quase inteira é o padrão; exceções precisam preservar a presença da imagem. Demonstração pede corpo
 legível; retrato/gravura pode ter respiro. Ajustar também a distância da câmera na captação: sapinho e
 canoinha ficam minúsculos se filmados do ponto usado para uma parada alta. Guias de texto não substituem
 revisar mãos/pés e o texto durante toda a execução. Confira o draft dentro do Instagram antes de publicar.

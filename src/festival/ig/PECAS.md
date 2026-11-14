@@ -37,9 +37,9 @@ A piece file imports only from `./kit`, `./tipos`, `../data` (dates, lotes), `re
 8. Carousel: slide 1 is the cover, **slide 2 works as a second cover** (it must make sense alone), the last slide
    has one call to action. `Lamina` draws the `n/total` counter and the swipe hint.
 9. Colours only through the kit tokens (`ACCENT`, `STAGE`, `CHALK`, `INK`, `LIVE`) and the `tom` props.
-   Type: `WIDE` (Archivo 900, 125% width, upper-case) for display, `MONO` for facts. Minimum text size 30 px.
-10. Dates and prices come from `../data` (`FEST`) and the kit (`QUANDO_CURTO`); lotes: 1º R$ 490 (10 vagas),
-    2º R$ 590 (35), 3º R$ 690 (15); 60 vagas. Never hard-code a date.
+   Type: `WIDE` (Archivo 900, 125% width, upper-case) for display, `MONO` for facts. Secondary labels may be 30 px; essential support text follows the current 48–60 px HF guidance.
+10. Dates and prices come from `../data` (`FEST`) and the kit (`QUANDO_CURTO`); lotes: 1º R$ 450 (10 vagas),
+    2º R$ 550 (35), 3º R$ 650 (15); 60 vagas. Never hard-code a date.
 11. Nothing invented: only the copy written in the spec.
 
 ## How to check your piece
@@ -78,7 +78,7 @@ He found the pieces excellent. Two things to do when the palette closes and befo
 Notation: `S1 0.0 +2.6` = scene 1 starts at second 0.0 and lasts 2.6 s. `clip@1.2` = `<Clip src="clip" from={1.2}>`.
 Positions are canvas pixels (1080 wide). "Body" areas are % of the canvas. Copy between quotes is final: use it as is.
 `QUANDO_CURTO` = "16 — 18 abr 2027"; "16 a 18 de abril" must be built from `FEST`.
-Lotes (constants at the top of the piece that needs them): 490 / 590 / 690, vagas 10 / 35 / 15, total 60.
+Lotes (shared `LOTES` in `../data.ts`, with 10% Sympla fee added): 450 / 550 / 650, vagas 10 / 35 / 15, total 60.
 Chip "câmera N": an `Etiqueta` (tom ink, size 30) at x 65, y 290 with a small `LIVE`-coloured square before the text
 (write a tiny local component), entering at the first frame of its scene.
 Every hard cut between two shots of footage gets a 3-frame white flash (opacity 0.5 → 0) on the incoming shot.
@@ -213,17 +213,17 @@ Slide `nome`: "capa", "4 blocos", "sexta", "sábado", "domingo", "chamada".
 1. f(4) · `tour-fachada@0`, filter "brightness(.8)". `Etiqueta` "1º lote · agora" with a `LIVE` square that blinks
    (opacity 1 ↔ 0.3 every 15 frames) x 65 y 300. Frame 0: `Gancho` ["Abriu."], size 200, y 400, tom accent.
    `Etiqueta` "1º HandstandFest · " + QUANDO_CURTO (chalk, size 34) x 65 y 700, delay 10.
-2. f(5) · `STAGE`. `Gancho` ["R$ 490"], size 190, y 300, tom accent. `Etiqueta` "primeiras 10 vagas" (chalk, size 40)
+2. f(5) · `STAGE`. `Gancho` ["R$ 450"], size 190, y 300, tom accent. `Etiqueta` "primeiras 10 vagas" (chalk, size 40)
    x 65 y 560. Seat grid at x 65, y 700: 60 squares, 10 columns × 6 rows, 78 px with 12 px gap; the first 10 are
    `ACCENT` and pop in one by one (2 frames apart, from frame 8), the next 35 `CHALK` at opacity 0.35, the last 15
-   `CHALK` at 0.15. Under the grid (y 1260), mono size 32, chalk: "10 a R$ 490 · 35 a R$ 590 · 15 a R$ 690".
+   `CHALK` at 0.15. Under the grid (y 1260), mono size 32, chalk: "10 a R$ 450 · 35 a R$ 550 · 15 a R$ 650".
    At y 1330, mono size 28: "passe completo, 3 dias".
 3. f(5) · `Foto src="tv-palco-luzes.webp" filter="brightness(.45)"`. `Etiqueta` "o que tem" (accent, size 40) x 65
    y 290. Five `Etiqueta` (chalk, size 36) at x 65, y 400 + 86·n, delays 6 + 8·n: "3 dias · 16 a 18 de abril" ·
    "4 blocos por dia" · "turmas: básico · inter e avançado" · "professor e assistentes em cada turma" ·
    "Trapézio Voador · metrô Butantã".
 4. f(5) · `STAGE`. `Gancho` ["Garanta", "sua vaga"], size 150, y 320, tons [chalk, accent]. `Etiqueta`
-   "1º lote · R$ 490 · 10 vagas" (chalk, size 38) x 65 y 740. A dashed chalk box (x 190–890, y 1000–1160, 4 px,
+   "1º lote · R$ 450 · 10 vagas" (chalk, size 38) x 65 y 740. A dashed chalk box (x 190–890, y 1000–1160, 4 px,
    dash) with the mono label "figurinha de link aqui" (size 30) centred, and above it an `ACCENT` arrow (a 26 px
    wide bar 110 px tall ending in a triangle) bobbing 14 px up and down every second.
 Slide `nome`: "abriu", "preço e vagas", "o que tem", "link".
