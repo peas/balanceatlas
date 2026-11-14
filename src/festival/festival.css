@@ -327,6 +327,8 @@ a { color: inherit; }
 .ev.ours { background: var(--accent); color: var(--accent-ink); margin-inline: -14px; padding-inline: 14px; border-bottom-color: transparent; }
 .mundo-note { margin-top: 36px; max-width: 70ch; }
 .foot-nav { display: flex; gap: 14px; flex-wrap: wrap; }
+.foot-ig { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; text-decoration: none; }
+.foot-ig:hover { text-decoration: underline; }
 
 @media (max-width: 860px) {
   .page-head { padding-top: 20px; }

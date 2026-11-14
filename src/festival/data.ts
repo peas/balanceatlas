@@ -12,7 +12,7 @@ export const TICKETS_ALVO = SYMPLA_NO_AR ? '_blank' : undefined;
 // The festival dates live here only (pages, FAQ and Remotion compositions read these)
 export const FEST = { dias: [16, 17, 18], mes: 'abril', mesNumero: 4, mesCurto: 'abr', ano: 2027 } as const;
 export const QUANDO = `${FEST.dias[0]} — ${FEST.dias[2]} ${FEST.mesCurto} ${FEST.ano}`; // 16 — 18 abr 2027
-// Official channels (footer). YouTube exists (@handstandfest) but stays off the site for now (Paulo, 14/11/2026).
+// Official channels. Only Instagram is linked (footer); the WhatsApp channel and YouTube (@handstandfest) exist but stay off the site for now (Paulo, 14/11/2026).
 export const SOCIAL = {
   instagram: 'https://www.instagram.com/handstandfest/',
   whatsapp: 'https://whatsapp.com/channel/0029Vb9UELMI1rcb0UX16B3N',
