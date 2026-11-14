@@ -1,6 +1,6 @@
 {
   "versao": 1,
-  "atualizado": "2026-11-13",
+  "atualizado": "2026-11-14",
   "escopo": "Derivados artísticos; originais continuam em catalogo.yaml. Caminhos relativos à raiz do repositório.",
   "tinta": {
     "mestre": "public/festival/ig/arte/engraving-v1/brush-v7.svg",
@@ -306,7 +306,17 @@
         "natureza-piscina-press-solo"
       ],
       "estado": "revisão de sobreposição feita; aprovação individual pendente",
-      "limites": "Gravura gerativa, não medição. Preservar canvas para alinhamento; mancha em layer independente a 65%."
+      "limites": "Gravura gerativa, não medição. Preservar canvas para alinhamento; mancha em layer independente a 65%.",
+      "recorte_previa": {
+        "x": 458,
+        "y": 242,
+        "largura": 295,
+        "altura": 816
+      },
+      "canvas_web": {
+        "largura": 1080,
+        "altura": 1920
+      }
     },
     {
       "id": "gravura-freeze-deck-pike",
@@ -336,7 +346,17 @@
         "natureza-deck-pike-reta"
       ],
       "estado": "revisão de sobreposição feita; aprovação individual pendente",
-      "limites": "Gravura gerativa, não medição. Preservar canvas para alinhamento; mancha em layer independente a 65%."
+      "limites": "Gravura gerativa, não medição. Preservar canvas para alinhamento; mancha em layer independente a 65%.",
+      "recorte_previa": {
+        "x": 488,
+        "y": 1104,
+        "largura": 442,
+        "altura": 517
+      },
+      "canvas_web": {
+        "largura": 1080,
+        "altura": 1920
+      }
     },
     {
       "id": "gravura-freeze-gabriel-reta",
@@ -366,7 +386,12 @@
         "gabriel-transicoes-tela"
       ],
       "estado": "revisão de sobreposição feita; aprovação individual pendente",
-      "limites": "Gravura gerativa, não medição. Preservar canvas para alinhamento; mancha em layer independente a 65%."
+      "limites": "Gravura gerativa, não medição. Preservar canvas para alinhamento; mancha em layer independente a 65%.",
+      "canvas_web": {
+        "largura": 1080,
+        "altura": 1920
+      },
+      "variante_preferida": "gravura-gabriel-reta-profile"
     },
     {
       "id": "gravura-gabriel-reta-profile",
@@ -398,8 +423,8 @@
         "gabriel-gravura-story",
         "agustin-apresentacao"
       ],
-      "estado": "Selected replacement for rejected scorpion; awaiting visual feedback",
-      "limites": "Gravura gerativa, não medição. Preservar canvas para alinhamento; mancha em layer independente a 65%."
+      "estado": "Preferred standalone version confirmed by Paulo 2026-11-14",
+      "limites": "Tight standalone crop. For registered video overlays use gravura-freeze-gabriel-reta with its original canvas, not this crop."
     }
   ]
 }

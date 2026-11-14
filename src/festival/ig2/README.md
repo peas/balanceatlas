@@ -191,3 +191,7 @@ full-resolution cover (local PNG, public WebP + frame manifest). Calendar suppor
 render defaults keep them off. `festival_instagram_profile.mjs` uses the covers for its fixed nine-post grid;
 `festival_grid_comparison.mjs` compares against the preserved pre-change grid. See
 `docs/instagram/2026-11-14-nordestenerd-publication-lessons.md` for implemented changes and manual uploader checks.
+
+Typography source check: `docs/instagram/2026-11-14-meta-typography.md` distinguishes Meta's qualitative
+ad guidance from our pixel-size choices. Reusable engraving previews use catalogue `recorte_previa` bounds
+without altering registered video canvases; Gabriel profile is the preferred standalone derivative.

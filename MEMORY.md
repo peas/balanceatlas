@@ -210,3 +210,6 @@ Publication handoff (14 Nov): dotclaude shared Instagram/Remotion playbooks comm
 HF now exports separate covers for 63 active pieces; approximate UI guides in calendar; exercise seal/text
 and editorial support copy adjusted. Same-nine grid before/after at `/instagram/#antes-depois`;
 recipe/provenance in `docs/instagram/2026-11-14-nordestenerd-publication-lessons.md`. No Instagram posting.
+Typography/engraving follow-up (14 Nov): Meta official article checked in Chrome; no numeric font size
+mandate there. Evidence: docs/instagram/2026-11-14-meta-typography.md. Pool/deck gallery previews now use
+alpha bounds without changing freeze alignment; Gabriel profile is preferred and duplicate freeze hidden.
