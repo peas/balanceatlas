@@ -57,6 +57,6 @@ export const NATURE_PIECES:Piece[]=batch.map(item=>({
  look:artFor(item.file)?'Gravura / cenário / ocre':item.kind==='reel'?'Congela e pinta':'Fotografia / ocre',
  movement:'Sem trilha incorporada. Música e interação são escolhidas no Instagram.',
  slides:[{name:item.title,component:(p:PieceProps)=>item.kind==='reel'?<NatureReel {...p} item={item}/>:<NaturePhoto {...p} item={item}/>,
- seconds:item.kind==='reel'?item.freezeFrame!/30+5:1,height:1920,cover:0,
+ seconds:item.kind==='reel'?item.freezeFrame!/30+5:1,height:1920,cover:item.kind==='reel'?Math.max(0,item.freezeFrame!-1):0,
  cues:item.kind==='reel'?[{label:'Movimento',frame:0},{label:'Congela',frame:item.freezeFrame!},{label:artFor(item.file)?'Hachura + ocre':'Ocre + selo',frame:item.freezeFrame!+45}]:[]}],
 }));

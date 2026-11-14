@@ -634,8 +634,8 @@
     "shots": [
       {
         "url": "/festival/ig/review-v1/natureza-cachoeira-0.webp",
-        "label": "Imagem completa",
-        "frame": 29
+        "label": "0.0 s",
+        "frame": 0
       }
     ]
   },
@@ -653,8 +653,8 @@
     "shots": [
       {
         "url": "/festival/ig/review-v1/natureza-comunidade-0.webp",
-        "label": "Imagem completa",
-        "frame": 29
+        "label": "0.0 s",
+        "frame": 0
       }
     ]
   },
@@ -672,8 +672,8 @@
     "shots": [
       {
         "url": "/festival/ig/review-v1/natureza-pike-0.webp",
-        "label": "Imagem completa",
-        "frame": 29
+        "label": "0.0 s",
+        "frame": 0
       }
     ]
   },
@@ -1853,8 +1853,8 @@
     "shots": [
       {
         "url": "/festival/ig/review-v1/natureza-piscina-press-dupla-0.webp",
-        "label": "0.0 s",
-        "frame": 0
+        "label": "13.2 s",
+        "frame": 395
       },
       {
         "url": "/festival/ig/review-v1/natureza-piscina-press-dupla-1.webp",
@@ -1895,8 +1895,8 @@
     "shots": [
       {
         "url": "/festival/ig/review-v1/natureza-piscina-press-solo-0.webp",
-        "label": "0.0 s",
-        "frame": 0
+        "label": "12.6 s",
+        "frame": 377
       },
       {
         "url": "/festival/ig/review-v1/natureza-piscina-press-solo-1.webp",
@@ -1937,8 +1937,8 @@
     "shots": [
       {
         "url": "/festival/ig/review-v1/natureza-deck-pike-reta-0.webp",
-        "label": "0.0 s",
-        "frame": 0
+        "label": "16.0 s",
+        "frame": 479
       },
       {
         "url": "/festival/ig/review-v1/natureza-deck-pike-reta-1.webp",
@@ -1979,8 +1979,8 @@
     "shots": [
       {
         "url": "/festival/ig/review-v1/natureza-deck-tuck-reta-0.webp",
-        "label": "0.0 s",
-        "frame": 0
+        "label": "17.3 s",
+        "frame": 518
       },
       {
         "url": "/festival/ig/review-v1/natureza-deck-tuck-reta-1.webp",
@@ -2021,8 +2021,8 @@
     "shots": [
       {
         "url": "/festival/ig/review-v1/natureza-deck-entrada-agrupada-0.webp",
-        "label": "0.0 s",
-        "frame": 0
+        "label": "10.5 s",
+        "frame": 314
       },
       {
         "url": "/festival/ig/review-v1/natureza-deck-entrada-agrupada-1.webp",
@@ -2063,8 +2063,8 @@
     "shots": [
       {
         "url": "/festival/ig/review-v1/natureza-deck-straddle-frente-0.webp",
-        "label": "0.0 s",
-        "frame": 0
+        "label": "32.0 s",
+        "frame": 959
       },
       {
         "url": "/festival/ig/review-v1/natureza-deck-straddle-frente-1.webp",
@@ -2105,8 +2105,8 @@
     "shots": [
       {
         "url": "/festival/ig/review-v1/natureza-deck-straddle-baixo-0.webp",
-        "label": "0.0 s",
-        "frame": 0
+        "label": "21.0 s",
+        "frame": 629
       },
       {
         "url": "/festival/ig/review-v1/natureza-deck-straddle-baixo-1.webp",
@@ -2147,8 +2147,8 @@
     "shots": [
       {
         "url": "/festival/ig/review-v1/natureza-pavilhao-press-sequencia-0.webp",
-        "label": "0.0 s",
-        "frame": 0
+        "label": "11.3 s",
+        "frame": 338
       },
       {
         "url": "/festival/ig/review-v1/natureza-pavilhao-press-sequencia-1.webp",
