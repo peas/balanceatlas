@@ -24,7 +24,8 @@ const Texto = ({ children, y, delay = 6 }: { children: ReactNode; y: number; del
 const Capa = ({ guides }: PecaProps) => (
   <Lamina n={1} total={TOTAL} guides={guides}>
     <Foto src="still-dupla.webp" />
-    <Gancho lines={['Qual é', 'a sua turma?']} x={60} y={70} size={84} tom="accent" />
+    <Gancho lines={['Ainda está', 'na parede?']} x={60} y={70} size={84} tom="accent" />
+    <Texto y={1080}>Tem turma para você.</Texto>
   </Lamina>
 );
 

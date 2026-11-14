@@ -5,9 +5,9 @@ const photo=(id:string,path:string,alt:string,note:string)=>({id,url:`https://me
 export const EDITORIAL_IMAGES={
  gabrielTuck:{id:'gabriel-img-3372',url:'/festival/ig/gabriel/img-3372-freeze.webp',alt:'Gabriel em parada reta de perfil no quadro de congelamento',note:'Vídeo IMG_3372: trecho 0–6 s, freeze em 6 s. Movimento real antes da pintura.'},
  gabrielBeach:{id:'gabriel-img-3377',url:'/festival/ig/gabriel/img-3377-freeze.webp',alt:'Gabriel em parada na areia',note:'Vídeo IMG_3377: trecho 0–10 s, freeze em 10 s. Cenário preservado no enquadramento amplo, com assinatura ocre.'},
- gabrielArt:{id:'gabriel-img-8751',url:'/festival/ig/gabriel/gabriel-arco.webp',alt:'Gravura de Gabriel em parada arqueada',note:'Derivada de IMG_8751 por ImageGen; figura com alpha e mancha em camada separada.'},
+ gabrielArt:{id:'gabriel-img-3372',url:'/festival/ig/arte/engraving-v1/gabriel-reta-profile.webp',alt:'Gravura de Gabriel Agustin em parada reta de perfil',note:'Derivado independente da gravura do freeze de IMG_3372; substitui a versão escorpião rejeitada.'},
  gabrielSea:{id:'gabriel-img-7876',url:'/festival/ig/gabriel/praia-reta.webp',alt:'Gabriel em parada diante do mar',note:'IMG_7876: fotografia em cor. Confirmar crédito fotográfico; local exato não inferido.'},
- group:photo('photo-saopaulo-2024-96','saopaulo-2024/96','Três pessoas em parada de mãos no jardim','Foto de retiro anterior; não é registro do festival futuro.'),
+ group:{id:'natureza-img-6271',url:'/festival/ig/natureza-v1/comunidade.webp',alt:'Grupo praticando parada de mãos junto à piscina',note:'Registro de prática coletiva anterior; não é cobertura do festival futuro.'},
  profile:photo('photo-greece-2025-11','greece-2025/11','Uma pessoa em parada de mãos de perfil, em sala com janelas','Gravura editorial de perfil disponível; não demonstra canoinha ou shrug.'),
  diagonal:photo('photo-thailand-2026-18','thailand-2026/18','Praticante com pernas abertas numa sala','Variação de enquadramento e forma; conferir nomenclatura antes de ensinar.'),
  hands:photo('photo-thailand-2026-26','thailand-2026/26','Detalhe dos punhos e mãos apoiados no chão','Referência de proximidade da câmera; não demonstra caminhada do urso.'),

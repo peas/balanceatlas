@@ -1,3 +1,5 @@
+import { SPOTLIGHT_PIECES } from './spotlight-pieces';
+import { AGUSTIN_PIECES } from './agustin-pieces';
 // Every Instagram piece of the festival on one page: the first ten (ig/) and the second study (ig2/), grouped by
 // named visual style so Paulo and Gabriel can compare and pick. A new piece needs one entry in STYLE_OF.
 import { GABRIEL_PIECES } from './gabriel-pieces';
@@ -36,10 +38,12 @@ const first: CatalogPiece[] = PECAS.map((p) => ({
   slides: (REGISTRO[p.id] ?? []).map((s, i) => ({ name: s.nome ?? (i ? `Quadro ${i + 1}` : p.titulo), component: s.comp, seconds: s.frames / FPS, height: s.h, cover: s.capa ?? 0, cues: [] })),
 })).filter((p) => p.slides.length);
 
-const second: CatalogPiece[] = [...PIECES, ...EDITORIAL_PIECES, ...GABRIEL_PIECES.filter(p=>p.id!=='gabriel-transicoes')].map((p) => ({ ...p, style: p.id.startsWith('ed-') ? 'gravura' : STYLE_OF[p.id] ?? 'janela' }));
+const second: CatalogPiece[] = [...SPOTLIGHT_PIECES, ...AGUSTIN_PIECES, ...PIECES, ...EDITORIAL_PIECES, ...GABRIEL_PIECES.filter(p=>p.id!=='gabriel-transicoes')].map((p) => ({ ...p, style: p.id.startsWith('ed-') ? 'gravura' : STYLE_OF[p.id] ?? 'janela' }));
 
 const nature:CatalogPiece[]=NATURE_PIECES.map(p=>({...p,style:p.format==='Reel'?'congela':'tela-cheia'}));
-export const CATALOG: CatalogPiece[] = STYLES.flatMap((s) => [...first, ...second, ...nature].filter((p) => p.style === s.id));
+// Superseded visual experiments stay in source/history, not in the active publishing queue.
+export const RETIRED_PIECES = new Set(['linha','arte-freeze-amarelo','fotos-ocre','fotos-ocre-motion','olhar']);
+export const CATALOG: CatalogPiece[] = STYLES.flatMap((s) => [...first, ...second, ...nature].filter((p) => p.style === s.id && !RETIRED_PIECES.has(p.id)));
 
 // One player per piece: a carousel or a story sequence plays as one composition, slide after slide, and the
 // slide names become jump buttons. Built once per piece (a new component on each render would restart the Player).

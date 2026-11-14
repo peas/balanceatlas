@@ -3,7 +3,7 @@
 // "Quem faz" is Paulo's own text (04/11/2026), lightly edited; do not add biography that he did not give.
 import FestLayout from '../../layouts/FestLayout.astro';
 import SobreTabs from '../../components/fest/SobreTabs.astro';
-import { days, levelName, tracks } from '../../festival/home-content';
+import { AGUSTIN_BIO, AGUSTIN_ORIGIN, days, levelName, tracks } from '../../festival/home-content';
 import EngravingArtwork from '../../festival/EngravingArtwork';
 import { TICKETS, TICKETS_ALVO, QUANDO, faqFest } from '../../festival/data';
 ---
@@ -65,13 +65,15 @@ import { TICKETS, TICKETS_ALVO, QUANDO, faqFest } from '../../festival/data';
       <p class="note"><strong>O festival nasceu de duas pessoas que treinam juntas.</strong></p>
     </div>
     <div class="quem">
-      <div class="moldura"><figure class="quem-photo" data-reveal>
-        <img src="/festival/seg-1.webp" alt="Dois praticantes em parada de mão num parque" loading="lazy" />
-      </figure></div>
+      <figure class="quem-engraving" data-reveal>
+        <EngravingArtwork figure="gabriel" paint="oval" background="cream" />
+        <figcaption>Gabriel Agustin · parada de mãos</figcaption>
+      </figure>
       <div class="quem-cards">
         <article class="quem-card" data-reveal>
           <h3>Gabriel Agustin</h3>
-          <p>A ideia veio dele, depois de uma experiência incrível na Argentina. <strong>É artista de acro, yoga e parada de mão.</strong></p>
+          <p>{AGUSTIN_BIO}</p>
+          <p>{AGUSTIN_ORIGIN}</p>
           <a class="chip" href="https://www.instagram.com/agustin_melesi/" target="_blank" rel="noopener">@agustin_melesi</a>
         </article>
         <article class="quem-card" data-reveal>

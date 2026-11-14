@@ -14,8 +14,15 @@ export const move = (frame: number, start = 0, length = 18) => interpolate(frame
 export function Canvas({ children, guides, format = 'reel', dark = false, palette = 'ocre', signature = format !== 'card' }: PieceProps & { children: ReactNode; format?: Formato; dark?: boolean; signature?: boolean }) {
   return <Quadro formato={format} guides={guides} grain={false}><AbsoluteFill data-ig2-canvas style={{ ...(palette === 'ocre' ? {...OCHRE_TOKENS, '--accent': dark ? '#dfab5b' : '#cb8b34', '--ig2-art-paint': dark ? '#dfab5b' : '#cb8b34'} : {'--accent':'#ffd23f','--stage':'#0f3d33','--white':'#f6f1e4','--ig2-art-paint':'#ffd23f'}), background: dark ? STAGE : CHALK, color: dark ? CHALK : STAGE }}>{children}{signature && <BrandSeal y={format === 'card' ? 1160 : format === 'story' ? 1450 : 1410} />}</AbsoluteFill></Quadro>;
 }
+/** One restrained ochre mark for the technical term, not italics or an extra badge. */
+export function TermHighlight({text}:{text:string}) {
+ const match=/\b(straddle|balancing|pancake|one arm|tuck|pike|press|flow|drills?)\b/i.exec(text);
+ if(!match)return <>{text}</>;
+ const i=match.index;
+ return <>{text.slice(0,i)}<span data-term-highlight style={{background:'linear-gradient(transparent 80%, #cb8b34 80%, #cb8b34 94%, transparent 94%)',paddingBottom:'.04em'}}>{match[0]}</span>{text.slice(i+match[0].length)}</>;
+}
 export function Label({ children, x = 65, y, color = STAGE, size = 42, style }: { children: ReactNode; x?: number; y: number; color?: string; size?: number; style?: CSSProperties }) {
-  return <div data-ig2-text style={{ position: 'absolute', left: x, top: y, color, fontFamily: MONO, fontSize: size, lineHeight: 1.4, fontWeight: 700, ...style }}>{children}</div>;
+  return <div data-ig2-text style={{ position: 'absolute', left: x, top: y, color, fontFamily: MONO, fontSize: size, lineHeight: 1.4, fontWeight: 700, ...style }}>{typeof children==='string'?<TermHighlight text={children}/>:children}</div>;
 }
 // The letters are visible from frame zero. Only the stroke reveals; one gesture per scene.
 export function Headline({ lines, x = 65, y = 290, size = 80, accentLine = 0, dark = false, width = 885 }: { lines: string[]; x?: number; y?: number; size?: number; accentLine?: number; dark?: boolean; width?: number }) {
@@ -23,7 +30,7 @@ export function Headline({ lines, x = 65, y = 290, size = 80, accentLine = 0, da
   return <div style={{ position: 'absolute', left: x, top: y, width, ...WIDE, fontSize: size, lineHeight: 1.02, letterSpacing: '-.035em', textTransform: 'uppercase', color: dark ? CHALK : STAGE }}>
     {lines.map((line, i) => <div key={i} style={{ position: 'relative', width: 'fit-content', maxWidth: '100%', whiteSpace: 'nowrap', padding: '4px 0' }}>
       {i === accentLine && <BrushStroke color={ACCENT} style={{ position: 'absolute', left: -15, top: -4, width: 'calc(100% + 30px)', height: 'calc(100% + 10px)', clipPath: `inset(0 ${(1 - move(frame, 5, 18)) * 100}% 0 0)` }} />}
-      <span data-ig2-text style={{ position: 'relative', display:'inline-block', color: i === accentLine && !dark ? STAGE : undefined }}>{line}{i === accentLine && dark && <span aria-hidden style={{position:'absolute',inset:0,color:STAGE,clipPath:`inset(0 ${(1-move(frame,5,18))*100}% 0 0)`}}>{line}</span>}</span>
+      <span data-ig2-text style={{ position: 'relative', display:'inline-block', color: i === accentLine && !dark ? STAGE : undefined }}>{i===accentLine?line:<TermHighlight text={line}/ >}{i === accentLine && dark && <span aria-hidden style={{position:'absolute',inset:0,color:STAGE,clipPath:`inset(0 ${(1-move(frame,5,18))*100}% 0 0)`}}>{line}</span>}</span>
     </div>)}
   </div>;
 }

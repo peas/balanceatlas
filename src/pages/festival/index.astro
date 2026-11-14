@@ -37,7 +37,7 @@ import { LOTES, MAPS_Q, MAPS_PLACE, lineup, facts } from '../../festival/home-co
     <figure class="hero-media moldura">
       <HFSelo class="hero-selo" />
       <div class="stage">
-        <img src="/festival/seg-1.webp" alt="Agustin Melesi em parada de mão" />
+        <img src="/festival/seg-1.webp" alt="Gabriel Agustin em parada de mão" />
         <FestPlayer client:only="react" comp="hero" />
       </div>
     </figure>
@@ -62,33 +62,17 @@ import { LOTES, MAPS_Q, MAPS_PLACE, lineup, facts } from '../../festival/home-co
 
   <!-- TEACHER -->
   <section class="teacher grain" id="professores">
-    <div class="wrap teacher-grid">
-      <div class="poster">
-        <div class="stage">
-          <img src="/festival/teacher.webp" alt="Agustin Melesi" loading="lazy" />
-          <FestPlayer client:visible comp="teacher" />
-        </div>
-      </div>
-      <div class="teacher-info" data-reveal>
-        <p class="kicker">Professor convidado</p>
-        <h2 class="teacher-name"><span>Agustin</span> Melesi</h2>
-        <a class="chip" href="https://www.instagram.com/agustin_melesi/" target="_blank" rel="noopener">@agustin_melesi</a>
-        <ul class="tags">
-          <li>Handstand</li><li>Acompanhamento 1:1</li><li>Acroyoga</li><li>Portês acrobáticos</li>
-        </ul>
-        <p class="source">Áreas segundo o perfil dele no <a href="https://www.instagram.com/agustin_melesi/" target="_blank" rel="noopener">Instagram</a>.</p>
-      </div>
-    </div>
     <div class="wrap lineup">
-      <h3 class="lineup-title" data-reveal>Também na escalação</h3>
+      <h2 class="lineup-title" data-reveal>Professores</h2>
       <div class="lineup-grid">
         {lineup.map((t) => (
           <article class="story-card" data-reveal>
             <div class="story">
               {t.poster.img && <img src={t.poster.img} alt={`${t.poster.first} ${t.poster.last}`} loading="lazy" style={`object-position: ${t.poster.focus ?? 'center'}`} />}
-              <FestPlayer client:visible comp="poster" props={t.poster} />
+              {t.teacher ? <FestPlayer client:visible comp="teacher" /> : <FestPlayer client:visible comp="poster" props={t.poster} />}
             </div>
             {t.url ? <a class="chip" href={t.url} target="_blank" rel="noopener">{t.poster.handle}</a> : <span class="chip">{t.poster.first} {t.poster.last}</span>}
+            {t.bio && <p class="teacher-bio">{t.bio}</p>}
             {t.quote && <blockquote>“{t.quote}”</blockquote>}
             <p class="source">{t.where}{t.quote && <> · <a href={t.source} target="_blank" rel="noopener">fonte</a></>}</p>
           </article>

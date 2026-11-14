@@ -31,9 +31,9 @@ const CENAS: Cena[] = [
   {
     start: 0, dur: 2.6, src: 'palm-largo', zoom: [1, 1.06],
     // size 63 (spec 74): "TEM DUAS PESSOAS" would pass x 950
-    extra: <Gancho lines={['Tem duas pessoas', 'de ponta-cabeça', 'nesta imagem.']} size={63} y={300} tom="accent" outAt={f(2.2)} />,
+    extra: <Gancho lines={['1º HandstandFest', 'Brasil']} size={72} y={300} tom="accent" outAt={f(2.2)} />,
   },
-  { start: 2.6, dur: 1.8, src: 'palm-zoom', extra: <Etiqueta text="achou." tom="accent" size={44} x={65} y={300} delay={2} /> },
+  { start: 2.6, dur: 1.8, src: 'palm-zoom', extra: <Etiqueta text={QUANDO_CURTO} tom="accent" size={38} x={65} y={300} delay={2} /> },
   { start: 4.4, dur: 2.0, src: 'palm-px1', cam: 2 },
   { start: 6.4, dur: 2.2, src: 'palm-perto', from: 0.2, cam: 1, extra: <Etiqueta text={`${QUANDO_CURTO} · São Paulo`} tom="accent" size={36} x={65} y={370} delay={4} /> },
   { start: 8.6, dur: 1.8, src: 'palm-px2', cam: 2 },
@@ -42,7 +42,7 @@ const CENAS: Cena[] = [
   {
     start: 14.6, dur: 2.4, src: 'palm-mural', from: 0.2, zoom: [1, 1.08],
     // size 91 (spec 110): "3 DIAS ASSIM." would pass x 950
-    extra: <Gancho lines={['3 dias assim.']} size={91} y={300} tom="accent" delay={4} />,
+    extra: <Gancho lines={['Vem treinar', 'com a gente.']} size={80} y={300} tom="accent" delay={4} />,
   },
 ];
 const FIM = f(17.0);

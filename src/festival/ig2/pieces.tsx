@@ -20,7 +20,7 @@ function Together(p:PieceProps) {
  </>;
 }
 const rooms=[
- {src:'tour-fachada',title:['É AQUI.'],note:'TRAPÉZIO VOADOR · BUTANTÃ',start:0,duration:3.8,look:'cor'},
+ {src:'tour-fachada',title:['ONDE VAI','ACONTECER?'],note:'TRAPÉZIO VOADOR · BUTANTÃ',start:0,duration:3.8,look:'cor'},
  {src:'tour-vidro',title:['SALA DE VIDRO'],note:'PISO DE MADEIRA, LUZ NATURAL',start:3.8,duration:3.6,look:'cor'},
  {src:'tour-palco',title:['PALCO'],note:'PÉ-DIREITO DE 10 M',start:7.4,duration:3.6,look:'pb'},
 ] as const;
@@ -28,7 +28,7 @@ function Venue(p:PieceProps){return <>{rooms.map(room=><Sequence key={room.src} 
 function Line(p:PieceProps){const frame=useCurrentFrame();return <><Sequence durationInFrames={f(11)}><VideoScene {...p} src="mural-reta" side look="pb" lines={frame<f(5)?['PARECE','DIFÍCIL?']:['É MUITO MAIS','DO QUE','PARECE.']}/></Sequence><Sequence from={f(11)} durationInFrames={f(3.5)}><EndCard {...p} cta="Básico · intermediário · avançado"/></Sequence></>;}
 function Football(p:PieceProps){const frame=useCurrentFrame();return <><Sequence durationInFrames={f(10)}><VideoScene {...p} src="mural-reta" from={3.4} side lines={frame<f(5.5)?['GOSTA DE','FUTEBOL?']:['AQUI A MÃO','NÃO É FALTA.']}/></Sequence><Sequence from={f(10)} durationInFrames={f(3.5)}><EndCard {...p} cta="Vem fazer handstand!"/></Sequence></>;}
 function ClassCover(p: PieceProps) {
-  return <Canvas {...p} format="card"><Headline lines={['Qual é', 'a sua turma?']} y={105} size={91} accentLine={1} />
+  return <Canvas {...p} format="card"><Headline lines={['Ainda está', 'na parede?']} y={105} size={88} accentLine={1} />
     <Label y={340} size={40}>{QUANDO.toUpperCase()} · SÃO PAULO</Label>
     <Media src="still-dupla.webp" photo x={60} y={430} w={960} h={870} {...p} />
     <Label x={60} y={1330} size={36}>01 / 05 <span style={{ marginLeft: 560 }}>ARRASTA →</span></Label>
@@ -38,7 +38,7 @@ function ClassQuestion(p: PieceProps) {
   return <Canvas {...p} format="card" dark>
     <Label x={60} y={80} size={36} color={CHALK}>HANDSTANDFEST · {QUANDO.toUpperCase()}</Label>
     <Headline lines={['Você segura', '10 segundos', 'longe da', 'parede?']} x={60} y={305} size={93} dark />
-    <Label x={60} y={1010} size={42} color={ACCENT}>QUAL É A SUA TURMA?</Label>
+    <Label x={60} y={1010} size={42} color={ACCENT}>TEM TURMA PARA VOCÊ.</Label>
     <Label x={60} y={1330} size={36} color={CHALK}>02 / 05</Label>
   </Canvas>;
 }
@@ -46,7 +46,7 @@ function Basic(p: PieceProps) {
   return <Canvas {...p} format="card">
     <Label x={60} y={75} size={40}>AINDA NÃO</Label>
     <Headline lines={['Básico']} x={60} y={170} size={125} accentLine={0} />
-    <Label x={60} y={380} size={44} style={{ width: 925 }}>Você treina na parede e ainda não segura o livre.</Label>
+    <Label x={60} y={380} size={44} style={{ width: 925 }}>Tem turma para quem treina na parede e ainda não sustenta o livre.</Label>
     <Media photo src="tv-sala-vidro.webp" x={60} y={595} w={960} h={520} {...p} />
     <Label x={60} y={1160} size={40} style={{ width: 930 }}>Linha, chute, saída segura e os primeiros segundos sem a parede.</Label>
     <Label x={60} y={1330} size={36}>03 / 05</Label>

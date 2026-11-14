@@ -51,19 +51,15 @@ const PosterYellow=(p:PieceProps)=><Freeze frame={240}><ArtPoster {...p}/></Free
 const PosterOchre=(p:PieceProps)=><Freeze frame={240}><ArtPoster {...p} variant={1}/></Freeze>;
 const PosterGreen=(p:PieceProps)=><Freeze frame={240}><ArtPoster {...p} variant={2}/></Freeze>;
 
-/** Freeze at exactly clip frame 150. No generated pose replaces the live footage. */
+/** Keep the full transition before freezing its actual frame at 18 s. */
 function FreezeArt({bold=false,...p}:PieceProps & {bold?:boolean}) {
- const frame=useCurrentFrame(),at=150,mono=move(frame,at,18),paint=move(frame,at+15,42);
+ const frame=useCurrentFrame(),at=540,mono=move(frame,at,18);
  const Video=getRemotionEnvironment().isPlayer?Html5Video:OffthreadVideo;
  const geometry={position:'absolute' as const,left:24,top:430,width:1032,height:1376,objectFit:'contain' as const};
  return <Canvas {...p} dark signature={false}>
-  <div style={{position:'absolute',inset:24,borderRadius:28,overflow:'hidden',background:GREEN}}>
-   <div style={{...geometry,left:0,top:406,filter:`grayscale(${mono}) contrast(${1+.15*mono})`,opacity:1-(bold?1:.88)*paint}}><Freeze frame={at} active={frame>=at}><Video src={url('ig2-formas.mp4')} muted style={{width:'100%',height:'100%',objectFit:'contain'}}/></Freeze></div>
-   <div style={{position:'absolute',left:45,top:580,width:940,height:940,transform:bold?'rotate(-18deg)':'rotate(12deg)'}}><InkDisc color={bold?'#dfab5b':'#cb8b34'} progress={paint}/></div>
-   <Img src={url('arte/freeze-cutout.webp')} style={{...geometry,left:0,top:406,filter:'grayscale(1) contrast(1.12)',opacity:paint}}/>
-  </div>
+  {frame<at?<Video src={url('ig2-formas.mp4')} muted style={geometry}/>:<Img src={url('arte/formas-freeze-18.webp')} style={{...geometry,filter:`grayscale(${mono}) contrast(${1+.12*mono})`}}/>}
   <Label y={205} size={36} color={PAPER}>#HANDSTANDLIFE</Label>
-  <Headline lines={frame<at?['O MOVIMENTO','VIRA GESTO.']:['O MOVIMENTO','DEIXA MARCA.']} y={275} size={78} accentLine={-1} dark/>
+  <Headline lines={frame<at?['PARADA?','SÓ NO NOME.']:['BALANCING:','AJUSTES CONTÍNUOS.']} y={275} size={72} accentLine={frame<at?-1:0} dark/>
   <BrandSeal x={65} y={1450} size={230}/>
  </Canvas>;
 }
@@ -71,5 +67,5 @@ const FreezeOchre=(p:PieceProps)=><FreezeArt {...p}/>;
 const FreezeBold=(p:PieceProps)=><FreezeArt {...p} bold/>;
 export const ART_PIECES:Piece[]=[
   {id:'arte-gravura',title:'Corpo, tinta e papel',format:'Carrossel',description:'Três estudos estáticos e um fechamento com as figuras das referências de vocês: papel claro e fundo verde. Gravura, cerdas e arcos em camadas independentes.',look:'Papel × gesto × verde',movement:'Imagens estáticas. A arte tem textura; a tipografia preserva a leitura no celular.',slides:[PosterYellow,PosterOchre,PosterGreen,(p:PieceProps)=><PracticeClose {...p} body="O corpo desenha no espaço. Cada forma vem de uma prática, de uma tentativa, de uma pessoa. Qual gesto chama sua atenção?"/>].map((component,i)=>({name:['Corpo / papel','Gesto / papel','Verde / ousado','A conversa continua'][i],component,seconds:1,height:1440,cover:0,cues:[]}))},
-  ...[false,true].map((bold):Piece=>({id:bold?'arte-freeze-amarelo':'arte-freeze-ocre',title:bold?'O gesto ocupa o quadro':'Do vídeo à tinta',format:'Reel',description:bold?'Teste mais ousado: verde profundo, pincelada ampla e o corpo em P&B.':'O vídeo congela; o P&B chega primeiro, seguido da pintura ocre, com o mesmo enquadramento amplo.',look:bold?'Verde + tinta':'Papel + ocre',movement:'5 s de vídeo real → congelamento no mesmo quadro → P&B → tinta em 1,4 s. Selo entra junto.',slides:[{name:'Vídeo → quadro → pintura',component:bold?FreezeBold:FreezeOchre,seconds:10,height:1920,cover:0,cues:[{label:'Vídeo',frame:0},{label:'Congela',frame:150},{label:'Pintura',frame:180},{label:'Arte',frame:240}]}]})),
+  ...[false,true].map((bold):Piece=>({id:bold?'arte-freeze-amarelo':'arte-freeze-ocre',title:bold?'O gesto ocupa o quadro':'Do vídeo à tinta',format:'Reel',description:bold?'Teste mais ousado: verde profundo, pincelada ampla e o corpo em P&B.':'O vídeo congela; o P&B chega primeiro, seguido da pintura ocre, com o mesmo enquadramento amplo.',look:bold?'Verde + tinta':'Papel + ocre',movement:'18 s de movimento sem interromper a sequência → freeze exato → P&B e destaque ocre. Sem recorte de outra pose.',slides:[{name:'Vídeo → quadro → pintura',component:bold?FreezeBold:FreezeOchre,seconds:23,height:1920,cover:0,cues:[{label:'Vídeo',frame:0},{label:'Congela',frame:540},{label:'Pintura',frame:570},{label:'Arte',frame:600}]}]})),
 ];

@@ -1,0 +1,257 @@
+[
+  {
+    "id": "gato-vaca",
+    "title": "Gato-vaca",
+    "subtitle": "Mobilidade da coluna, com os apoios visíveis.",
+    "shot": "Filmar de perfil, próximo o bastante para enxergar coluna e pelve. Fazer algumas passagens completas, sem cortar no meio.",
+    "photo": "Uma foto em cada extremo do movimento.",
+    "post": "Como você prepara a coluna antes da inversão?",
+    "priority": "weekend",
+    "sample": {
+      "source": 1,
+      "start": 9,
+      "end": 22,
+      "poster": 6
+    }
+  },
+  {
+    "id": "escapulas",
+    "title": "Ombros e escápulas",
+    "subtitle": "O que muda quando você empurra o chão?",
+    "shot": "Um take em quatro apoios e outro no apoio que você escolher. Mostrar a diferença no movimento das escápulas, de perfil e de cima.",
+    "photo": "Duas fotos no mesmo ângulo, em momentos diferentes.",
+    "post": "Empurrar o chão: uma demonstração, um detalhe para observar.",
+    "priority": "weekend",
+    "sample": {
+      "source": 1,
+      "start": 23,
+      "end": 38,
+      "poster": 7
+    }
+  },
+  {
+    "id": "punhos",
+    "title": "Mãos, dedos e punhos",
+    "subtitle": "O peso chega às mãos antes de os pés saírem.",
+    "shot": "Recriar a preparação com transferência de peso. Gravar plano inteiro e close do apoio das palmas e dedos; mostrar sua preparação habitual.",
+    "photo": "Close lateral e superior das mãos.",
+    "post": "Como você prepara e percebe o apoio das mãos?",
+    "priority": "weekend",
+    "sample": {
+      "source": 1,
+      "start": 39,
+      "end": 50,
+      "poster": 5
+    }
+  },
+  {
+    "id": "urso-prancha",
+    "title": "Urso → prancha alongada",
+    "subtitle": "Da posição agrupada ao corpo mais estendido.",
+    "shot": "Filmar a transição inteira de perfil, incluindo o retorno. Deixar mãos e pés no quadro. Gravar também uma caminhada do urso em take separado.",
+    "photo": "Foto no urso e no apoio alongado.",
+    "post": "Como o apoio muda quando você alonga o corpo?",
+    "priority": "weekend",
+    "sample": {
+      "source": 1,
+      "start": 51,
+      "end": 70,
+      "poster": 12
+    }
+  },
+  {
+    "id": "canoinha",
+    "title": "Canoinha e posição da pelve",
+    "subtitle": "Ajustar a pelve sem esconder o que o corpo faz.",
+    "shot": "Três takes separados de perfil: canoinha só das pernas, só da parte de cima e combinação que você ensina. Mostrar entrada, ajuste e saída; usar roupa que deixe visível a região do quadril.",
+    "photo": "Perfil das duas variações; enquadrar o corpo mais de perto que numa parada alta.",
+    "post": "Canoinha: perceber a posição da pelve e das costelas.",
+    "priority": "weekend",
+    "sample": {
+      "source": 1,
+      "start": 71,
+      "end": 88,
+      "poster": 11
+    }
+  },
+  {
+    "id": "sapinho",
+    "title": "Sapinho: tirar um pé, depois o outro",
+    "subtitle": "Um apoio baixo para explorar o equilíbrio.",
+    "shot": "Filmar de perfil e três-quartos: preparação, transferência de peso, um pé, o outro e retorno. Acrescentar a progressão que você usa com iniciantes.",
+    "photo": "Uma foto com cada apoio e uma do equilíbrio completo.",
+    "post": "Como começar a perceber o equilíbrio nas mãos?",
+    "priority": "weekend",
+    "sample": {
+      "source": 1,
+      "start": 92,
+      "end": 116,
+      "poster": 12
+    }
+  },
+  {
+    "id": "ombros-cadeira",
+    "title": "Abertura de ombros com apoio",
+    "subtitle": "Mostrar a abertura sem transformar tudo em arco nas costas.",
+    "shot": "Usar cadeira ou box estável. Filmar de perfil o ajuste dos ombros e do tronco; demonstrar a diferença que você quer explicar, sem forçar amplitude para a câmera.",
+    "photo": "Perfil com braços, ombros e costelas visíveis.",
+    "post": "Ombros abertos, costelas organizadas: o que observar?",
+    "priority": "weekend",
+    "sample": {
+      "source": 1,
+      "start": 118,
+      "end": 138,
+      "poster": 10
+    }
+  },
+  {
+    "id": "parede",
+    "title": "Barriga para a parede",
+    "subtitle": "Distância, aproximação e apoio: uma etapa de cada vez.",
+    "shot": "Filmar entrada e saída completas, de perfil. Separar as etapas mais distante, intermediária e próxima. Confirmar como você quer nomear os ângulos 45°, 60° e 90° antes de desenharmos guias.",
+    "photo": "Uma foto de cada etapa, câmera na mesma posição.",
+    "post": "A parede como ferramenta de alinhamento.",
+    "priority": "weekend",
+    "sample": {
+      "source": 1,
+      "start": 140,
+      "end": 173,
+      "poster": 18
+    }
+  },
+  {
+    "id": "saida-estrela",
+    "title": "Saída lateral em estrela",
+    "subtitle": "Aprender a sair também faz parte da prática.",
+    "shot": "A saída fica parcialmente fora do quadro na referência do Paulo. Regravar centralizado, com espaço lateral livre e a progressão que você ensina. Mostrar a saída completa e o retorno ao chão de frente/três-quartos e perfil.",
+    "photo": "Sequência de fotos da saída, sem cortar mãos ou pés.",
+    "post": "Como sair para o lado em vez de cair de costas?",
+    "priority": "weekend",
+    "sample": {
+      "source": 1,
+      "start": 174,
+      "end": 188,
+      "poster": 3
+    }
+  },
+  {
+    "id": "chute-parede",
+    "title": "Chute controlado para a parede",
+    "subtitle": "Primeira perna suave; a outra chega depois.",
+    "shot": "Filmar de perfil mãos, parede e pés no mesmo plano. Mostrar tentativas completas com chegada controlada; câmera mais afastada para não cortar os pés.",
+    "photo": "Foto da preparação e do primeiro contato.",
+    "post": "Como chega o seu pé à parede?",
+    "priority": "weekend",
+    "sample": {
+      "source": 1,
+      "start": 190,
+      "end": 219,
+      "poster": 11
+    }
+  },
+  {
+    "id": "costelas",
+    "title": "Costelas, peito e pelve",
+    "subtitle": "Peito e costelas para dentro: mostrar o ajuste, não só o comando.",
+    "shot": "Filmar em pé de perfil e, depois, numa posição de apoio adequada. Mostrar o contraste entre as posições e como você orienta o ajuste. Precisamos enxergar tronco, quadril e braços juntos.",
+    "photo": "Duas fotos comparáveis de perfil.",
+    "post": "O que significa organizar costelas e pelve no handstand?",
+    "priority": "weekend",
+    "sample": {
+      "source": 1,
+      "start": 239,
+      "end": 252,
+      "poster": 7
+    }
+  },
+  {
+    "id": "ombros-box",
+    "title": "Abertura de ombros no box",
+    "subtitle": "Uma segunda referência para o trabalho de ombros.",
+    "shot": "Filmar de perfil com apoio estável. Mostrar o exercício em pé e/ou ajoelhado, conforme a variação que você ensina. Manter a coluna e a pelve visíveis.",
+    "photo": "Foto lateral com mãos e apoio no quadro.",
+    "post": "Abrir os ombros sem perder a organização do tronco.",
+    "priority": "extra",
+    "sample": {
+      "source": 2,
+      "start": 3,
+      "end": 30,
+      "poster": 15
+    }
+  },
+  {
+    "id": "pike-box",
+    "title": "Pike com pés apoiados",
+    "subtitle": "Quadril alto e ombros: observar o apoio de perfil.",
+    "shot": "Usar box estável e filmar o corpo inteiro. Demonstrar entrada, posição e saída, além do ajuste de quadril e ombros. Confirmar a altura/variação antes da narração.",
+    "photo": "Perfil com apoio dos pés e das mãos visíveis.",
+    "post": "O que você percebe no pike com pés apoiados?",
+    "priority": "weekend",
+    "sample": {
+      "source": 2,
+      "start": 36,
+      "end": 59,
+      "poster": 10
+    }
+  },
+  {
+    "id": "abertura-chao",
+    "title": "Braços à frente no chão",
+    "subtitle": "Outra forma de mostrar a relação entre ombros e tronco.",
+    "shot": "Refazer a demonstração no chão de perfil, com a câmera mais próxima e sem cortar os braços. Gabriel define a variação e o objetivo antes de virarem instrução.",
+    "photo": "Perfil completo em uma foto clara.",
+    "post": "Uma preparação de ombros para explicar com calma.",
+    "priority": "extra",
+    "sample": {
+      "source": 2,
+      "start": 68,
+      "end": 86,
+      "poster": 9
+    }
+  },
+  {
+    "id": "parede-um-pe",
+    "title": "Parede: um pé, depois o outro",
+    "subtitle": "Retirar e devolver o apoio com controle.",
+    "shot": "Plano lateral com mãos, parede e ambos os pés. Mostrar um pé afastando e voltando, depois o outro; gravar separadamente a variação que você considera adequada.",
+    "photo": "Uma foto de cada etapa.",
+    "post": "Da parede ao equilíbrio: o que muda ao retirar um apoio?",
+    "priority": "weekend"
+  },
+  {
+    "id": "maos-proximas",
+    "title": "Distância entre as mãos",
+    "subtitle": "Comparar o posicionamento sem esconder o corpo.",
+    "shot": "Gravar vista de frente e de cima com as mãos mais próximas e com a posição que você costuma orientar. Acrescentar um plano inteiro no apoio. Explicar depois para qual contexto vale cada ajuste.",
+    "photo": "Foto de cima dos dois posicionamentos.",
+    "post": "Onde colocar as mãos? Uma comparação concreta.",
+    "priority": "weekend"
+  },
+  {
+    "id": "formas",
+    "title": "Reta, tuck, pike e straddle",
+    "subtitle": "Vocabulário com imagem real, uma forma por vez.",
+    "shot": "Filmar de perfil e de frente, corpo inteiro. Uma sustentação de cada forma e uma transição contínua, sem acelerar. Priorizar pike → tuck e retorno.",
+    "photo": "Uma foto nítida de cada forma e de cada ângulo.",
+    "post": "Reconhecer as formas e observar transições.",
+    "priority": "extra"
+  },
+  {
+    "id": "rever-treino",
+    "title": "Filmar e rever o treino",
+    "subtitle": "A atenção continua depois da tentativa.",
+    "shot": "Registrar uma tentativa, pausa, revisão do vídeo no celular e troca com alguém. Pode ser espontâneo, sem fala necessária para a câmera.",
+    "photo": "Treinando, olhando o vídeo e conversando.",
+    "post": "Filme, reveja, converse: os detalhes da prática.",
+    "priority": "extra"
+  },
+  {
+    "id": "convite-grupo",
+    "title": "Grupo e espaço de treino",
+    "subtitle": "Gente de verdade praticando junto.",
+    "shot": "Um plano com várias pessoas em handstand, outro de ajuda/conversa e uma vista do espaço. Registrar apenas quem concordar em aparecer.",
+    "photo": "Grupo praticando e retrato simples do Gabriel.",
+    "post": "Fortalecer a comunidade e apresentar quem ensina.",
+    "priority": "extra"
+  }
+]

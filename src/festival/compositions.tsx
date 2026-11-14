@@ -167,7 +167,7 @@ export const Hero = () => (
       ])}
     </TransitionSeries>
     <StoryBars starts={HERO_STARTS} total={HERO_FRAMES} />
-    <Chip text="Agustin Melesi" delay={6} style={{ top: 48, left: 24 }} />
+    <Chip text="Gabriel Agustin" delay={6} style={{ top: 48, left: 24 }} />
   </AbsoluteFill>
 );
 
@@ -200,7 +200,8 @@ export const Teacher = () => {
       <Html5Video src="/festival/teacher.mp4" poster="/festival/teacher.webp" playsInline muted style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
       <AbsoluteFill style={{ background: ACCENT, transform: `translateX(${wipe}%)` }} />
       <div style={{ position: 'absolute', left: 32, bottom: 40, opacity: fadeOut }}>
-        <Letters text="Agustin" delay={18} />
+        <Letters text="Gabriel" delay={18} size={78} />
+        <Letters text="Agustin" delay={24} size={78} />
       </div>
     </AbsoluteFill>
   );

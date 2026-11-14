@@ -448,3 +448,19 @@ R$450 + R$45 fee for lot 1 after the live widget disagreed with the old R$490 co
 shared by home, ticker, FAQ, studies and Instagram closing/lot templates. JSON-LD has no active offer yet.
 Sympla's event description itself still says R$490 and links the old balanceatlas.com/festival URL; that external
 copy needs an organizer edit (not modified by this site deployment).
+
+## Instagram editorial revision — 13 November 2026
+
+Use `src/festival/ig2/EDITORIAL-REVISION-2026-11-13.md` and the source feedback
+`docs/instagram/2026-11-13-user-review.md` for this revision. Concrete observations and named
+skills beat generic questions; do not force every headline into question form. Interleave practice,
+exercises, community and event posts. The weekly calendar is a proposal, not an automatic queue.
+Public teacher name: Gabriel Agustin. The festival idea came from him after an Argentina experience;
+shared biography lives in `home-content.ts`. All confirmed teachers use the same grid, no guest tier.
+The camera-facing scorpion engraving is rejected for reuse. Prefer the straight-profile derivative
+registered in `acervo/gravuras.json`; preserve the registered freeze canvas and independent paint layer.
+English movement terms may receive a restrained ochre highlight, not mandatory italics. Famous-balancer
+spotlights are independent references, without HF endorsement/guest implications or imported unapproved footage.
+`/instagram/gabriel/` is the filming brief: silent demonstrations, voiceover later; reference samples retain
+Paulo's original audio and have editorial labels, not claimed literal subtitles. The future educational archive
+is “Handstand Life: Guia de Sobrevivência”. Keep pending lessons visibly pending until filmed and reviewed.

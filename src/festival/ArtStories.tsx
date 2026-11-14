@@ -11,13 +11,12 @@ export const STORY_STEP = 168;
 export const STORIES:Record<StoryMode,Story[]> = {
   event:[
     {label:'O encontro',title:['3 DIAS.', 'UM ENCONTRO.'],note:QUANDO.toUpperCase()+' · SÃO PAULO',src:'/festival/seg-1.mp4',freeze:true},
-    {label:'O professor',title:['AGUSTIN', 'MELESI.'],note:'PROFESSOR CONVIDADO',src:'/festival/teacher.mp4',freeze:true,dark:true},
+    {label:'O professor',title:['GABRIEL', 'AGUSTIN.'],note:'PROFESSOR · PARADA DE MÃOS',src:'/festival/teacher.mp4',freeze:true,dark:true},
     {label:'A prática',title:['DO BÁSICO', 'AO AVANÇADO.'],note:'PARADA DE MÃO NA SUA TURMA',src:'/festival/ig/ig2-formas.mp4'},
     {label:'O lugar',title:['TRAPÉZIO', 'VOADOR.'],note:'BUTANTÃ · SÃO PAULO',src:'/festival/ig/tour-vidro.mp4',dark:true},
   ],
   teachers:[
-    {label:'Agustin Melesi',title:['AGUSTIN','MELESI.'],note:'@AGUSTIN_MELESI',src:'/festival/teacher.mp4',freeze:true},
-    ...lineup.map((t,i)=>({label:`${t.poster.first} ${t.poster.last}`.trim(),title:[t.poster.first.toUpperCase(),t.poster.last.toUpperCase()].filter(Boolean),note:t.poster.handle,src:t.poster.img!,photo:true,dark:i%2===0})),
+    ...lineup.map((t,i)=>({label:`${t.poster.first} ${t.poster.last}`.trim(),title:[t.poster.first.toUpperCase(),t.poster.last.toUpperCase()].filter(Boolean),note:t.poster.handle,src:t.teacher?'/festival/teacher.mp4':t.poster.img!,photo:!t.teacher,freeze:!!t.teacher,dark:i%2===0})),
   ],
 };
 export const storyDuration = (mode:StoryMode) => (STORIES[mode].length-1)*STORY_STEP+STORY_LENGTH;

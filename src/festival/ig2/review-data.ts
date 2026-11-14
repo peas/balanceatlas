@@ -3,8 +3,8 @@ import { EDITORIAL } from './editorial';
 import { suggestions } from './review-suggestions';
 import batch from './natureza.json';
 const goals=['Conversar sobre explorar movimentos em dupla.','Despertar curiosidade sobre a entrada saindo da água.','Comparar formas e observar a transição do pike.','Observar a passagem entre tuck e reta.','Valorizar a entrada como parte da prática.','Dar espaço à preparação antes da inversão.','Conversar sobre o repertório de formas.','Observar o straddle em movimento.','Observar a sequência de subida sem transformar o registro em tutorial.','Relacionar prática e memória de uma paisagem.','Mostrar a dimensão coletiva da prática.','Convidar a observar uma forma com calma.'];
-const initialRows=batch.map((p,i)=>({id:p.id,title:p.title,kind:p.kind==='reel'?'Reel':'Story estático',goal:goals[i],hook:p.hook.join('\n'),close:p.close?.join('\n'),caption:p.caption,freeze:p.freezeFrame? p.freezeFrame/30:0,art:['piscina-press-solo','deck-pike-reta'].includes(p.file),url:`/festival/instagram/#${p.id}`}));
-initialRows.push({id:'gabriel-transicoes-tela',title:'Gabriel · entre formas',kind:'Reel',goal:'Valorizar o percurso entre formas, além da posição final.',hook:'COMO VOCÊ\nMUDA DE FORMA?',close:'O CAMINHO\nTAMBÉM CONTA.',caption:'Legenda a revisar no calendário; este painel registra os textos efetivos da composição.',freeze:6,art:true,url:'/festival/instagram/#gabriel-hachura'});
+const initialRows=batch.map((p,i)=>({id:p.id,title:p.title,kind:p.kind==='reel'?'Reel':'Story estático',goal:p.title,hook:p.hook.join('\n'),close:p.close?.join('\n'),caption:p.caption,freeze:p.freezeFrame? p.freezeFrame/30:0,art:['piscina-press-solo','deck-pike-reta'].includes(p.file),url:`/festival/instagram/#${p.id}`}));
+initialRows.push({id:'gabriel-transicoes-tela',title:'Gabriel · entre formas',kind:'Reel',goal:'Valorizar o percurso entre formas, além da posição final.',hook:'TRANSIÇÕES:\nPIKE E TUCK.',close:'PRATIQUE ATÉ\nFICAR SUAVE.',caption:'Legenda a revisar no calendário; este painel registra os textos efetivos da composição.',freeze:6,art:true,url:'/festival/instagram/#gabriel-hachura'});
 
 
 const rows=shots.map(p=>{
@@ -24,5 +24,5 @@ const pending:Record<number,string>={
 19:'Ainda está na parede: dá para participar do festival?\nResponder com os critérios oficiais das turmas e as dúvidas reais de inscrição.',
 20:'Você usa gato-vaca antes do treino?\nDemonstrar o movimento de perfil e narrar o objetivo dessa preparação.'
 };
-for(const [i,d] of EDITORIAL.entries())if(!d.piece)rows.push({id:'pauta-dia-'+(i+1),title:d.title,kind:d.format,goal:d.hook,hook:d.hook,close:'',caption:d.caption,freeze:0,art:false,url:'/festival/instagram/#dia-'+(i+1),description:d.missing,movement:d.story,group:'Pautas a produzir',shots:[],suggestion:pending[i+1]+'\nFalta preparar: '+d.missing,day:i+1});
+for(const [i,d] of EDITORIAL.entries())if(!d.piece)rows.push({id:'pauta-'+d.title.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-'),title:d.title,kind:d.format,goal:d.hook,hook:d.hook,close:'',caption:d.caption,freeze:0,art:false,url:'/festival/instagram/#dia-'+(i+1),description:d.missing,movement:d.story,group:'Pautas a produzir',shots:[],suggestion:d.hook+'\nFalta preparar: '+d.missing,day:i+1});
 export { rows };

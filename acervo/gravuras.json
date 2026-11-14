@@ -246,11 +246,8 @@
         "story",
         "camiseta (prova de impressão necessária)"
       ],
-      "usado_em": [
-        "gabriel-gravura",
-        "gabriel-gravura-story"
-      ],
-      "estado": "revisão visual técnica feita; aprovação individual pendente",
+      "usado_em": [],
+      "estado": "rejected by Paulo 2026-11-13; historical asset only; do not reuse",
       "limites": "Interpretação gerativa; revisar dedos, pose e proporções. Não usar como medição técnica."
     },
     {
@@ -369,6 +366,39 @@
         "gabriel-transicoes-tela"
       ],
       "estado": "revisão de sobreposição feita; aprovação individual pendente",
+      "limites": "Gravura gerativa, não medição. Preservar canvas para alinhamento; mancha em layer independente a 65%."
+    },
+    {
+      "id": "gravura-gabriel-reta-profile",
+      "tipo": "figura-hachurada",
+      "descricao": "Tightly cropped derivative of the registered straight handstand freeze; paint remains independent.",
+      "fonte_catalogo_id": "gabriel-img-3372",
+      "fonte_manifesto": "design/handstandfest-arte/2026-11-13-freezes/manifest.json",
+      "handstand": true,
+      "pessoas": 1,
+      "forma": "reta",
+      "arquivo_mestre": "design/handstandfest-arte/2026-11-13-freezes/assets/gabriel-reta.png",
+      "arquivo_web": "public/festival/ig/arte/engraving-v1/gabriel-reta-profile.webp",
+      "largura": 207,
+      "altura": 1077,
+      "alpha": true,
+      "sha256": "aafb86051b5378dba271bc313a282da13953507d5eda11abe6a0f78e6283629f",
+      "prompt": "design/handstandfest-arte/2026-11-13-freezes/prompts/gabriel-reta.txt",
+      "tinta_embutida": false,
+      "reutilizacao": [
+        "freeze",
+        "story",
+        "carrossel",
+        "site",
+        "camiseta (prova de impressão necessária)"
+      ],
+      "usado_em": [
+        "sobre",
+        "gabriel-gravura",
+        "gabriel-gravura-story",
+        "agustin-apresentacao"
+      ],
+      "estado": "Selected replacement for rejected scorpion; awaiting visual feedback",
       "limites": "Gravura gerativa, não medição. Preservar canvas para alinhamento; mancha em layer independente a 65%."
     }
   ]

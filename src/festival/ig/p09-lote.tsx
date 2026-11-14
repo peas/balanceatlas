@@ -1,7 +1,7 @@
 // 09 · Stories "1º lote": 4 frames (REEL size, formato story). No BarrasStory: the app draws its own.
 import { useCurrentFrame, useVideoConfig, spring } from 'remotion';
 import {
-  ACCENT, CHALK, Clip, Etiqueta, Foto, Gancho, INK, LIVE, MONO, Quadro, Selo, QUANDO_CURTO, REEL, STAGE, f, useIn, type PecaProps,
+  ACCENT, CHALK, Etiqueta, Foto, Gancho, MONO, Quadro, Selo, QUANDO_CURTO, REEL, STAGE, f, useIn, type PecaProps,
 } from './kit';
 import { FEST, VENDA } from '../data';
 import type { Slide } from './tipos';
@@ -15,23 +15,6 @@ const LOTES = [
 const brl = (n: number) => `R$ ${n}`;
 
 // ---------- local pieces ----------
-/** "1º lote · agora" chip with a blinking LIVE square (1 ↔ 0.3 every 15 frames). */
-const AoVivo = ({ text, x, y }: { text: string; x: number; y: number }) => {
-  const frame = useCurrentFrame();
-  const e = useIn(0);
-  const size = 34;
-  return (
-    <div style={{
-      position: 'absolute', left: x, top: y, display: 'flex', alignItems: 'center', gap: 16, background: INK, color: CHALK,
-      fontFamily: MONO, fontWeight: 700, fontSize: size, lineHeight: 1.1, padding: `${size * 0.28}px ${size * 0.5}px`,
-      textTransform: 'uppercase', whiteSpace: 'nowrap', transform: `translateX(${(1 - e) * -700}px)`,
-    }}>
-      <span style={{ width: 22, height: 22, background: LIVE, opacity: Math.floor(frame / 15) % 2 === 0 ? 1 : 0.3 }} />
-      {text}
-    </div>
-  );
-};
-
 /** 60 seats, 10 × 6, 78 px with 12 px gap; the first lote pops in one by one. */
 const Assentos = ({ x, y }: { x: number; y: number }) => {
   const frame = useCurrentFrame();
@@ -71,12 +54,12 @@ const Seta = ({ cx, bottom }: { cx: number; bottom: number }) => {
 };
 
 // ---------- frames ----------
-// Hook shrunk from 200 to 184: at 200 "ABRIU." is 1006 px wide, past x 1015.
+// Pre-opening edition: deliberately deterministic; regenerate copy when sales actually open.
 const Abriu = ({ guides }: PecaProps) => (
   <Quadro formato="story" guides={guides}>
-    <Clip src="tour-fachada" from={0} look="pb" filter="brightness(.8)" />
-    <AoVivo text="1º lote · agora" x={65} y={300} />
-    <Gancho lines={['Abriu.']} y={400} size={184} tom="accent" />
+    <Foto src="still-dupla.webp" zoom={[1,1]} filter="brightness(.72)" />
+    <Etiqueta text="1º lote" x={65} y={300} tom="chalk" size={40}/>
+    <Gancho lines={['Abre', VENDA.dia]} y={400} size={130} tom="accent" />
     <Etiqueta text={`1º HandstandFest · ${QUANDO_CURTO}`} x={65} y={700} tom="chalk" size={34} delay={10} />
   <div style={{position:"absolute",left:770,top:1450}}><Selo size={230}/></div>
   </Quadro>
@@ -89,7 +72,7 @@ const Preco = ({ guides }: PecaProps) => (
     <Etiqueta text={`primeiras ${LOTES[0].vagas} vagas`} x={65} y={560} tom="chalk" size={40} />
     <Assentos x={65} y={700} />
     <Mono y={1260} size={32}>{LOTES.map((l) => `${l.vagas} a ${brl(l.preco)}`).join(' · ')}</Mono>
-    <Mono y={1330} size={28}>{`passe completo, ${FEST.dias.length} dias`}</Mono>
+    <Mono y={1330} size={32}>{`+ R$ ${VENDA.taxa} de taxa · passe de ${FEST.dias.length} dias`}</Mono>
   <div style={{position:"absolute",left:770,top:1450}}><Selo size={230}/></div>
   </Quadro>
 );
@@ -114,8 +97,8 @@ const OQueTem = ({ guides }: PecaProps) => (
 const Link = ({ guides }: PecaProps) => (
   <Quadro formato="story" guides={guides}>
     <div style={{ position: 'absolute', inset: 0, background: STAGE }} />
-    <Gancho lines={['Garanta', 'sua vaga']} y={320} size={128} tons={['chalk', 'accent']} />
-    <Etiqueta text={`1º lote · ${brl(LOTES[0].preco)} · ${LOTES[0].vagas} vagas`} x={65} y={740} tom="chalk" size={38} />
+    <Gancho lines={['Prepare-se', 'para vir.']} y={320} size={105} tons={['chalk', 'accent']} />
+    <Etiqueta text={`1º lote · ${brl(LOTES[0].preco)} + taxa`} x={65} y={740} tom="chalk" size={38} />
     <Seta cx={540} bottom={985} />
     <div style={{
       position: 'absolute', left: 190, top: 1000, width: 700, height: 160, boxSizing: 'border-box', border: `4px dashed ${CHALK}`,
@@ -126,7 +109,7 @@ const Link = ({ guides }: PecaProps) => (
 );
 
 export const slides: Slide[] = [
-  { comp: Abriu, frames: f(4), ...REEL, capa: 30, nome: 'abriu' },
+  { comp: Abriu, frames: f(4), ...REEL, capa: 30, nome: 'abre em '+VENDA.dia },
   { comp: Preco, frames: f(5), ...REEL, capa: 50, nome: 'preço e vagas' },
   { comp: OQueTem, frames: f(5), ...REEL, capa: 60, nome: 'o que tem' },
   { comp: Link, frames: f(5), ...REEL, capa: 30, nome: 'link' },

@@ -241,3 +241,18 @@ The answer is the site's FAQ, word for word.
   "direção para os próximos meses" · "equilíbrio na parede e com assistência" · "gente para treinar junto".
 - S4 13.2 +3.4 `Fecho` cta "Link na bio", default sub.
 - `capa`: 20.
+
+## Editorial revision — 13 November 2026
+
+Paulo's returned review supersedes the original scripts above. `pecas.ts` and each composition are the current source.
+
+- p02 is a direct festival invitation (date/place), preserving its two-camera cuts.
+- p03 opens with the venue question.
+- p04 is about the palito's continuous balance adjustments, without the old event-level/record closing.
+- p06 is now one event invitation Reel, not a video carousel or five-step achievement ladder. Its wall/entry/press/straight clips remain; duration 19 s.
+- p07 opens with inclusion for people still training at the wall; level information stays factual.
+- p09 uses a real duo-handstand image and the scheduled 18 November opening; price and fee use VENDA. This pre-opening edition must be deliberately revised when sales open; no time-dependent renderer state.
+- p10 explains practice, tools and continuity without promising the free handstand in a weekend or claiming nobody can learn it then.
+- p05 and p08 retain their approved text.
+
+English terminology is not automatically italicized: Paulo's later preference is a tasteful paint/highlight where helpful. Source IDs remain in `pecas.ts`; video source edits were not required for this pass.

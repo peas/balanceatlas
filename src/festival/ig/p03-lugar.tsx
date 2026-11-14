@@ -9,7 +9,7 @@ import type { Slide } from './tipos';
 type Cena = { clip: string; dur: number; titulo: string; nota?: string; zoom: [number, number]; lado: 'left' | 'right' };
 // Room names are plain descriptions; "pé-direito de 10 m" is the venue's own wording (trapeziovoador.com.br).
 const CENAS: Cena[] = [
-  { clip: 'tour-fachada', dur: 3.8, titulo: 'É aqui.', nota: 'Trapézio Voador · Butantã', zoom: [1.0, 1.08], lado: 'left' },
+  { clip: 'tour-fachada', dur: 3.8, titulo: 'Onde vai ser?', nota: 'Trapézio Voador · São Paulo', zoom: [1.0, 1.08], lado: 'left' },
   { clip: 'tour-vidro', dur: 3.6, titulo: 'Sala de vidro', nota: 'piso de madeira, luz natural', zoom: [1.06, 1.0], lado: 'right' },
   { clip: 'tour-palco', dur: 3.6, titulo: 'Palco', nota: 'pé-direito de 10 m', zoom: [1.0, 1.08], lado: 'left' },
   { clip: 'tour-arena', dur: 3.2, titulo: 'Arena externa', nota: 'palco redondo ao ar livre', zoom: [1.05, 1.0], lado: 'right' },
@@ -25,7 +25,7 @@ const CenaView = ({ c, primeira }: { c: Cena; primeira: boolean }) => {
       <Clip src={c.clip} zoom={c.zoom} />
       <Barras side={c.lado} outAt={dur - 14} v={520} h={300} y={1560} />
       {/* the first title is the hook: already on screen at frame 0 */}
-      <Gancho lines={[c.titulo]} y={primeira ? 330 : 300} size={primeira ? 150 : 96} delay={primeira ? undefined : 3} outAt={dur - 12} tom={primeira ? 'accent' : 'chalk'} />
+      <Gancho lines={[c.titulo]} y={primeira ? 330 : 300} size={primeira ? 90 : 96} delay={primeira ? undefined : 3} outAt={dur - 12} tom={primeira ? 'accent' : 'chalk'} />
       {c.nota && <Etiqueta text={c.nota} x={65} y={primeira ? 540 : 440} delay={primeira ? 0 : 8} outAt={dur - 10} tom={primeira ? 'chalk' : 'ink'} />}
     </>
   );

@@ -29,11 +29,11 @@
   },
   {
     "id": "p02-palmeiras",
-    "title": "Duas câmeras nas palmeiras",
+    "title": "1º HandstandFest Brasil",
     "format": "Reel",
-    "description": "O mesmo momento filmado por dois celulares, em cortes curtos e só com as figuras já montadas. Abre com um jogo: achar as duas pessoas de ponta-cabeça embaixo das palmeiras.",
+    "description": "Convite ao festival com duas câmeras do mesmo treino no Trapézio Voador. Data, local e convite aparecem entre os cortes.",
     "movement": "Mudo. Música escolhida no app na hora de postar.",
-    "name": "Duas câmeras nas palmeiras",
+    "name": "1º HandstandFest Brasil",
     "cues": [],
     "index": 0,
     "count": 1,
@@ -59,7 +59,7 @@
     "id": "p03-lugar",
     "title": "O lugar",
     "format": "Reel",
-    "description": "Tour de 17 s pelo Trapézio Voador em quatro planos: fachada, sala de vidro, palco e arena. Responde \"onde?\" antes de qualquer pergunta e serve de Collab com o perfil do local. O mesmo tour, sem o cartão final, está na seção \"Onde\" do site.",
+    "description": "Onde vai acontecer o HandstandFest? Um tour pela fachada, sala de vidro, palco e arena do Trapézio Voador, em São Paulo. A versão sem fechamento também aparece no site.",
     "movement": "Mudo. Música escolhida no app na hora de postar.",
     "name": "O lugar",
     "cues": [],
@@ -87,7 +87,7 @@
     "id": "p04-linha",
     "title": "A linha",
     "format": "Reel",
-    "description": "Uma parada de mão reta de 10,8 s em frente ao mural, com cronômetro, esqueleto e a linha de prumo. O texto é do Paulo (\"Parece difícil? É muito mais do que parece.\") e o fecho liga os 10 segundos à régua das turmas.",
+    "description": "Um plano contínuo do palito para observar pequenos ajustes de equilíbrio. Não é mais anúncio de nível ou recorde; o encerramento é sobre a prática.",
     "movement": "Mudo. Música escolhida no app na hora de postar.",
     "name": "A linha",
     "cues": [],
@@ -141,29 +141,29 @@
   },
   {
     "id": "p06-jornada",
-    "title": "A jornada em cinco passos",
-    "format": "Carrossel de vídeo",
-    "description": "Os cinco passos da página \"Sobre handstand\", um por lâmina, cada um com um trecho em loop: chão e parede, entradas, 10 segundos, formas e press, uma mão. A 2ª lâmina funciona sozinha, como segunda capa.",
+    "title": "Tem turma para você",
+    "format": "Reel",
+    "description": "Um único Reel de convite ao festival, com cortes de parede, entradas, press e reta. Reaproveita os vídeos da antiga jornada; não é carrossel de vídeos nem escala de recordes.",
     "movement": "Mudo. Música escolhida no app na hora de postar.",
-    "name": "capa",
+    "name": "convite para todos os níveis",
     "cues": [],
     "index": 0,
-    "count": 7,
+    "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/p06-jornada-1-0.webp",
-        "label": "Lâmina 1 · capa",
-        "frame": 83
+        "url": "/festival/ig/review-v1/p06-jornada-0.webp",
+        "label": "1.0 s",
+        "frame": 30
       },
       {
-        "url": "/festival/ig/review-v1/p06-jornada-4-0.webp",
-        "label": "Lâmina 4 · 10 segundos",
-        "frame": 90
+        "url": "/festival/ig/review-v1/p06-jornada-1.webp",
+        "label": "9.5 s",
+        "frame": 285
       },
       {
-        "url": "/festival/ig/review-v1/p06-jornada-7-0.webp",
-        "label": "Lâmina 7 · chamada",
-        "frame": 90
+        "url": "/festival/ig/review-v1/p06-jornada-2.webp",
+        "label": "18.2 s",
+        "frame": 545
       }
     ]
   },
@@ -171,7 +171,7 @@
     "id": "p07-turma",
     "title": "Qual é a sua turma?",
     "format": "Carrossel de foto",
-    "description": "A régua de nível em cinco lâminas: a pergunta dos 10 segundos, básico, intermediário e avançado, e o que fazer na dúvida. Texto igual ao do site.",
+    "description": "Cinco imagens estáticas: a parede como porta de entrada, a pergunta dos dez segundos, básico, intermediário/avançado e como escolher sua turma.",
     "movement": "Sem som (carrossel de foto). Música escolhida no app na hora de postar.",
     "name": "capa",
     "cues": [],
@@ -227,16 +227,16 @@
     "id": "p09-lote",
     "title": "1º lote",
     "format": "Stories",
-    "description": "Sequência de quatro stories para o dia em que a venda abrir: \"Abriu.\", preço com as 60 vagas desenhadas, o que tem, e o lugar da figurinha de link. Serve de molde para a virada de cada lote.",
+    "description": "Quatro Stories de pré-abertura: treino real em dupla, abertura em 18/11, preço/quantidades, programação e espaço para link nativo. Atualizar a versão explicitamente quando as vendas abrirem; não anuncia venda aberta antes da hora.",
     "movement": "Mudo. Figurinha de link e música entram no app.",
-    "name": "abriu",
+    "name": "abre em 18/11",
     "cues": [],
     "index": 0,
     "count": 4,
     "shots": [
       {
         "url": "/festival/ig/review-v1/p09-lote-1-0.webp",
-        "label": "Lâmina 1 · abriu",
+        "label": "Lâmina 1 · abre em 18/11",
         "frame": 90
       },
       {
@@ -255,7 +255,7 @@
     "id": "p10-pergunta",
     "title": "Vou sair fazendo parada de mão?",
     "format": "Reel",
-    "description": "A pergunta mais honesta do FAQ, com a resposta do site, palavra por palavra: depois de três dias, não. E a lista do que a pessoa leva.",
+    "description": "A pergunta sobre sair fazendo parada de mão abre uma resposta sobre prática, ferramentas e continuidade, sem prometer um prazo para conquistar o livre.",
     "movement": "Mudo. Música escolhida no app na hora de postar.",
     "name": "Vou sair fazendo parada de mão?",
     "cues": [],
@@ -269,13 +269,13 @@
       },
       {
         "url": "/festival/ig/review-v1/p10-pergunta-1.webp",
-        "label": "8.3 s",
-        "frame": 249
+        "label": "8.8 s",
+        "frame": 264
       },
       {
         "url": "/festival/ig/review-v1/p10-pergunta-2.webp",
-        "label": "15.8 s",
-        "frame": 473
+        "label": "16.8 s",
+        "frame": 503
       }
     ]
   },
@@ -364,47 +364,6 @@
       },
       {
         "url": "/festival/ig/review-v1/lugar-2.webp",
-        "label": "12.5 s",
-        "frame": 375
-      }
-    ]
-  },
-  {
-    "id": "linha",
-    "title": "É muito mais do que parece",
-    "format": "Reel",
-    "description": "Um plano sem corte para acompanhar o equilíbrio. Corpo inteiro em vídeo amplo; título em coluna lateral.",
-    "movement": "O gesto da pessoa faz o movimento. As frases ocupam a largura de leitura, fora do corpo.",
-    "name": "A linha",
-    "cues": [
-      {
-        "label": "Pergunta",
-        "frame": 24
-      },
-      {
-        "label": "Resposta",
-        "frame": 180
-      },
-      {
-        "label": "Selo",
-        "frame": 375
-      }
-    ],
-    "index": 0,
-    "count": 1,
-    "shots": [
-      {
-        "url": "/festival/ig/review-v1/linha-0.webp",
-        "label": "1.5 s",
-        "frame": 45
-      },
-      {
-        "url": "/festival/ig/review-v1/linha-1.webp",
-        "label": "6.0 s",
-        "frame": 180
-      },
-      {
-        "url": "/festival/ig/review-v1/linha-2.webp",
         "label": "12.5 s",
         "frame": 375
       }
@@ -502,11 +461,11 @@
       },
       {
         "label": "Movimento",
-        "frame": 240
+        "frame": 300
       },
       {
         "label": "Fecho",
-        "frame": 450
+        "frame": 600
       }
     ],
     "index": 0,
@@ -519,13 +478,13 @@
       },
       {
         "url": "/festival/ig/review-v1/formas-1.webp",
-        "label": "8.0 s",
-        "frame": 240
+        "label": "10.0 s",
+        "frame": 300
       },
       {
         "url": "/festival/ig/review-v1/formas-2.webp",
-        "label": "15.0 s",
-        "frame": 450
+        "label": "20.0 s",
+        "frame": 600
       }
     ]
   },
@@ -645,11 +604,11 @@
   },
   {
     "id": "natureza-cachoeira",
-    "title": "Pike e cachoeira",
+    "title": "Pike: o sete, o L",
     "format": "Estático",
     "description": "Story estático: fotografia em cor, pergunta, pincelada ocre e selo HF.",
     "movement": "Sem trilha incorporada. Música e interação são escolhidas no Instagram.",
-    "name": "Pike e cachoeira",
+    "name": "Pike: o sete, o L",
     "cues": [],
     "index": 0,
     "count": 1,
@@ -663,11 +622,11 @@
   },
   {
     "id": "natureza-comunidade",
-    "title": "Uma prática, muita gente",
+    "title": "Encontros para treinar",
     "format": "Estático",
     "description": "Story estático: fotografia em cor, pergunta, pincelada ocre e selo HF.",
     "movement": "Sem trilha incorporada. Música e interação são escolhidas no Instagram.",
-    "name": "Uma prática, muita gente",
+    "name": "Encontros para treinar",
     "cues": [],
     "index": 0,
     "count": 1,
@@ -681,11 +640,11 @@
   },
   {
     "id": "natureza-pike",
-    "title": "Uma pausa no pike",
+    "title": "Pike com atenção aos ombros",
     "format": "Estático",
     "description": "Story estático: fotografia em cor, pergunta, pincelada ocre e selo HF.",
     "movement": "Sem trilha incorporada. Música e interação são escolhidas no Instagram.",
-    "name": "Uma pausa no pike",
+    "name": "Pike com atenção aos ombros",
     "cues": [],
     "index": 0,
     "count": 1,
@@ -694,6 +653,187 @@
         "url": "/festival/ig/review-v1/natureza-pike-0.webp",
         "label": "Imagem completa",
         "frame": 29
+      }
+    ]
+  },
+  {
+    "id": "em-foco-marie-eve",
+    "title": "Em foco: Marie-Ève Dicaire",
+    "format": "Carrossel",
+    "description": "Protótipo tipográfico original. Fonte: https://balancenotion.com/. Referência editorial, sem selo HF e sem implicar participação no festival. Vídeo e hachura futuros dependem de material autorizado.",
+    "movement": "Três cartões estáticos. A moldura destaca a pessoa; não há assinatura de evento.",
+    "name": "Conheça",
+    "cues": [],
+    "index": 0,
+    "count": 3,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/em-foco-marie-eve-1-0.webp",
+        "label": "Lâmina 1 · Conheça",
+        "frame": 29
+      },
+      {
+        "url": "/festival/ig/review-v1/em-foco-marie-eve-2-0.webp",
+        "label": "Lâmina 2 · O que observar",
+        "frame": 29
+      },
+      {
+        "url": "/festival/ig/review-v1/em-foco-marie-eve-3-0.webp",
+        "label": "Lâmina 3 · Fonte original",
+        "frame": 29
+      }
+    ]
+  },
+  {
+    "id": "em-foco-nicolas",
+    "title": "Em foco: Nicolas Montes de Oca",
+    "format": "Carrossel",
+    "description": "Protótipo tipográfico original. Fonte: https://balancenotion.com/. Referência editorial, sem selo HF e sem implicar participação no festival. Vídeo e hachura futuros dependem de material autorizado.",
+    "movement": "Três cartões estáticos. A moldura destaca a pessoa; não há assinatura de evento.",
+    "name": "Conheça",
+    "cues": [],
+    "index": 0,
+    "count": 3,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/em-foco-nicolas-1-0.webp",
+        "label": "Lâmina 1 · Conheça",
+        "frame": 29
+      },
+      {
+        "url": "/festival/ig/review-v1/em-foco-nicolas-2-0.webp",
+        "label": "Lâmina 2 · O que observar",
+        "frame": 29
+      },
+      {
+        "url": "/festival/ig/review-v1/em-foco-nicolas-3-0.webp",
+        "label": "Lâmina 3 · Fonte original",
+        "frame": 29
+      }
+    ]
+  },
+  {
+    "id": "em-foco-yuval",
+    "title": "Em foco: Yuval Ayalon",
+    "format": "Carrossel",
+    "description": "Protótipo tipográfico original. Fonte: https://www.yuvalonhands.com/. Referência editorial, sem selo HF e sem implicar participação no festival. Vídeo e hachura futuros dependem de material autorizado.",
+    "movement": "Três cartões estáticos. A moldura destaca a pessoa; não há assinatura de evento.",
+    "name": "Conheça",
+    "cues": [],
+    "index": 0,
+    "count": 3,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/em-foco-yuval-1-0.webp",
+        "label": "Lâmina 1 · Conheça",
+        "frame": 29
+      },
+      {
+        "url": "/festival/ig/review-v1/em-foco-yuval-2-0.webp",
+        "label": "Lâmina 2 · O que observar",
+        "frame": 29
+      },
+      {
+        "url": "/festival/ig/review-v1/em-foco-yuval-3-0.webp",
+        "label": "Lâmina 3 · Fonte original",
+        "frame": 29
+      }
+    ]
+  },
+  {
+    "id": "em-foco-emmet",
+    "title": "Em foco: Emmet Louis",
+    "format": "Carrossel",
+    "description": "Protótipo tipográfico original. Fonte: https://emmetlouis.com/. Referência editorial, sem selo HF e sem implicar participação no festival. Vídeo e hachura futuros dependem de material autorizado.",
+    "movement": "Três cartões estáticos. A moldura destaca a pessoa; não há assinatura de evento.",
+    "name": "Conheça",
+    "cues": [],
+    "index": 0,
+    "count": 3,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/em-foco-emmet-1-0.webp",
+        "label": "Lâmina 1 · Conheça",
+        "frame": 29
+      },
+      {
+        "url": "/festival/ig/review-v1/em-foco-emmet-2-0.webp",
+        "label": "Lâmina 2 · O que observar",
+        "frame": 29
+      },
+      {
+        "url": "/festival/ig/review-v1/em-foco-emmet-3-0.webp",
+        "label": "Lâmina 3 · Fonte original",
+        "frame": 29
+      }
+    ]
+  },
+  {
+    "id": "agustin-apresentacao",
+    "title": "Conheça Gabriel Agustin",
+    "format": "Carrossel",
+    "description": "Artista circense, acrobata e professor de movimento, argentino radicado no Brasil. Com mais de 10 anos nas artes do movimento, encontrou na parada de mãos um caminho de investigação, expressão e transformação. A ideia do festival veio de Gabriel, após uma experiência marcante na Argentina: reunir pessoas, professores e diferentes perspectivas em torno da parada de mãos.",
+    "movement": "Três lâminas estáticas; assinatura apenas na última. Bio fornecida por Paulo.",
+    "name": "Gabriel Agustin",
+    "cues": [],
+    "index": 0,
+    "count": 3,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/agustin-apresentacao-1-0.webp",
+        "label": "Lâmina 1 · Gabriel Agustin",
+        "frame": 29
+      },
+      {
+        "url": "/festival/ig/review-v1/agustin-apresentacao-2-0.webp",
+        "label": "Lâmina 2 · A trajetória",
+        "frame": 29
+      },
+      {
+        "url": "/festival/ig/review-v1/agustin-apresentacao-3-0.webp",
+        "label": "Lâmina 3 · A origem do festival",
+        "frame": 29
+      }
+    ]
+  },
+  {
+    "id": "agustin-movimento",
+    "title": "Gabriel Agustin em movimento",
+    "format": "Reel",
+    "description": "Dois trechos reais de Gabriel: treino em casa e sequência na praia. A apresentação usa a biografia fornecida, sem áudio ou narração inventada.",
+    "movement": "Dois planos de 6 s + convite de 4 s.",
+    "name": "Gabriel em movimento",
+    "cues": [
+      {
+        "label": "Gabriel",
+        "frame": 30
+      },
+      {
+        "label": "Movimento",
+        "frame": 210
+      },
+      {
+        "label": "Festival",
+        "frame": 400
+      }
+    ],
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/agustin-movimento-0.webp",
+        "label": "1.5 s",
+        "frame": 45
+      },
+      {
+        "url": "/festival/ig/review-v1/agustin-movimento-1.webp",
+        "label": "7.0 s",
+        "frame": 210
+      },
+      {
+        "url": "/festival/ig/review-v1/agustin-movimento-2.webp",
+        "label": "13.3 s",
+        "frame": 400
       }
     ]
   },
@@ -721,34 +861,6 @@
       {
         "url": "/festival/ig/review-v1/turma-5-0.webp",
         "label": "Lâmina 5 · Encontro",
-        "frame": 90
-      }
-    ]
-  },
-  {
-    "id": "olhar",
-    "title": "Uma parada. Quantas formas?",
-    "format": "Carrossel",
-    "description": "Cinco imagens estáticas com texto. Quadros extraídos de outro vídeo do parque, sem reprodução de vídeo ou animação nas lâminas.",
-    "movement": "Sem movimento. A segunda lâmina funciona sozinha como outra capa.",
-    "name": "A pergunta",
-    "cues": [],
-    "index": 0,
-    "count": 5,
-    "shots": [
-      {
-        "url": "/festival/ig/review-v1/olhar-1-0.webp",
-        "label": "Lâmina 1 · A pergunta",
-        "frame": 90
-      },
-      {
-        "url": "/festival/ig/review-v1/olhar-3-0.webp",
-        "label": "Lâmina 3 · Aberta",
-        "frame": 90
-      },
-      {
-        "url": "/festival/ig/review-v1/olhar-5-0.webp",
-        "label": "Lâmina 5 · A conversa",
         "frame": 90
       }
     ]
@@ -829,23 +941,23 @@
   },
   {
     "id": "ed-consistencia",
-    "title": "O treino não cabe no recorde",
+    "title": "Filme e reveja seu treino",
     "format": "Carrossel",
     "description": "Fotos selecionadas do catálogo alternadas com gravura pontual, ocre e texto grande.",
     "movement": "Imagem estática; sem vídeo nas lâminas.",
-    "name": "O treino não cabe no recorde · 1",
+    "name": "Filme e reveja seu treino · 1",
     "cues": [],
     "index": 0,
     "count": 5,
     "shots": [
       {
         "url": "/festival/ig/review-v1/ed-consistencia-1-0.webp",
-        "label": "Lâmina 1 · O treino não cabe no recorde · 1",
+        "label": "Lâmina 1 · Filme e reveja seu treino · 1",
         "frame": 29
       },
       {
         "url": "/festival/ig/review-v1/ed-consistencia-3-0.webp",
-        "label": "Lâmina 3 · O treino não cabe no recorde · 3",
+        "label": "Lâmina 3 · Filme e reveja seu treino · 3",
         "frame": 29
       },
       {
@@ -875,23 +987,23 @@
   },
   {
     "id": "ed-formas",
-    "title": "Reta e straddle",
+    "title": "Palito e afastado",
     "format": "Carrossel",
     "description": "Fotos selecionadas do catálogo alternadas com gravura pontual, ocre e texto grande.",
     "movement": "Imagem estática; sem vídeo nas lâminas.",
-    "name": "Reta e straddle · 1",
+    "name": "Palito e afastado · 1",
     "cues": [],
     "index": 0,
     "count": 4,
     "shots": [
       {
         "url": "/festival/ig/review-v1/ed-formas-1-0.webp",
-        "label": "Lâmina 1 · Reta e straddle · 1",
+        "label": "Lâmina 1 · Palito e afastado · 1",
         "frame": 29
       },
       {
         "url": "/festival/ig/review-v1/ed-formas-3-0.webp",
-        "label": "Lâmina 3 · Reta e straddle · 3",
+        "label": "Lâmina 3 · Palito e afastado · 3",
         "frame": 29
       },
       {
@@ -959,7 +1071,7 @@
     "id": "gabriel-gravura",
     "title": "O corpo também cria",
     "format": "Estático",
-    "description": "Gravura gerada a partir de IMG_8751: figura transparente e tinta independente. Interpretação editorial, não medição anatômica.",
+    "description": "Gravura de Gabriel Agustin em parada reta de perfil, derivada do freeze de IMG_3372: figura transparente e tinta independente. Interpretação editorial, não medição anatômica.",
     "movement": "PNG estático; pessoa e pincel separados.",
     "name": "Gabriel / gravura",
     "cues": [],
@@ -978,7 +1090,7 @@
     "title": "Do vídeo à tinta",
     "format": "Reel",
     "description": "O vídeo congela; o P&B chega primeiro, seguido da pintura ocre, com o mesmo enquadramento amplo.",
-    "movement": "5 s de vídeo real → congelamento no mesmo quadro → P&B → tinta em 1,4 s. Selo entra junto.",
+    "movement": "18 s de movimento sem interromper a sequência → freeze exato → P&B e destaque ocre. Sem recorte de outra pose.",
     "name": "Vídeo → quadro → pintura",
     "cues": [
       {
@@ -987,15 +1099,15 @@
       },
       {
         "label": "Congela",
-        "frame": 150
+        "frame": 540
       },
       {
         "label": "Pintura",
-        "frame": 180
+        "frame": 570
       },
       {
         "label": "Arte",
-        "frame": 240
+        "frame": 600
       }
     ],
     "index": 0,
@@ -1008,58 +1120,13 @@
       },
       {
         "url": "/festival/ig/review-v1/arte-freeze-ocre-1.webp",
-        "label": "5.0 s",
-        "frame": 150
+        "label": "18.0 s",
+        "frame": 540
       },
       {
         "url": "/festival/ig/review-v1/arte-freeze-ocre-2.webp",
-        "label": "8.0 s",
-        "frame": 240
-      }
-    ]
-  },
-  {
-    "id": "arte-freeze-amarelo",
-    "title": "O gesto ocupa o quadro",
-    "format": "Reel",
-    "description": "Teste mais ousado: verde profundo, pincelada ampla e o corpo em P&B.",
-    "movement": "5 s de vídeo real → congelamento no mesmo quadro → P&B → tinta em 1,4 s. Selo entra junto.",
-    "name": "Vídeo → quadro → pintura",
-    "cues": [
-      {
-        "label": "Vídeo",
-        "frame": 0
-      },
-      {
-        "label": "Congela",
-        "frame": 150
-      },
-      {
-        "label": "Pintura",
-        "frame": 180
-      },
-      {
-        "label": "Arte",
-        "frame": 240
-      }
-    ],
-    "index": 0,
-    "count": 1,
-    "shots": [
-      {
-        "url": "/festival/ig/review-v1/arte-freeze-amarelo-0.webp",
-        "label": "1.5 s",
-        "frame": 45
-      },
-      {
-        "url": "/festival/ig/review-v1/arte-freeze-amarelo-1.webp",
-        "label": "5.0 s",
-        "frame": 150
-      },
-      {
-        "url": "/festival/ig/review-v1/arte-freeze-amarelo-2.webp",
-        "label": "8.0 s",
-        "frame": 240
+        "label": "20.0 s",
+        "frame": 600
       }
     ]
   },
@@ -1147,11 +1214,11 @@
   },
   {
     "id": "natureza-piscina-press-dupla",
-    "title": "Press em dupla",
+    "title": "Press saindo de baixo",
     "format": "Reel",
     "description": "Cor natural → congelamento em 13,2 s → P&B, pergunta e pintura ocre. Enquadramento preservado.",
     "movement": "Sem trilha incorporada. Música e interação são escolhidas no Instagram.",
-    "name": "Press em dupla",
+    "name": "Press saindo de baixo",
     "cues": [
       {
         "label": "Movimento",
@@ -1188,11 +1255,11 @@
   },
   {
     "id": "natureza-piscina-press-solo",
-    "title": "Press saindo da água",
+    "title": "Ombros depois do press",
     "format": "Reel",
     "description": "Cor natural → congelamento em 12,6 s → pessoa hachurada, cenário colorido e tinta intermediária a 65%. Enquadramento preservado.",
     "movement": "Sem trilha incorporada. Música e interação são escolhidas no Instagram.",
-    "name": "Press saindo da água",
+    "name": "Ombros depois do press",
     "cues": [
       {
         "label": "Movimento",
@@ -1229,11 +1296,11 @@
   },
   {
     "id": "natureza-deck-pike-reta",
-    "title": "Do pike à reta",
+    "title": "Pike press: avanço e retomada",
     "format": "Reel",
     "description": "Cor natural → congelamento em 16 s → pessoa hachurada, cenário colorido e tinta intermediária a 65%. Enquadramento preservado.",
     "movement": "Sem trilha incorporada. Música e interação são escolhidas no Instagram.",
-    "name": "Do pike à reta",
+    "name": "Pike press: avanço e retomada",
     "cues": [
       {
         "label": "Movimento",
@@ -1270,11 +1337,11 @@
   },
   {
     "id": "natureza-deck-tuck-reta",
-    "title": "Do tuck à reta",
+    "title": "Transições com controle",
     "format": "Reel",
     "description": "Cor natural → congelamento em 17,3 s → P&B, pergunta e pintura ocre. Enquadramento preservado.",
     "movement": "Sem trilha incorporada. Música e interação são escolhidas no Instagram.",
-    "name": "Do tuck à reta",
+    "name": "Transições com controle",
     "cues": [
       {
         "label": "Movimento",
@@ -1311,11 +1378,11 @@
   },
   {
     "id": "natureza-deck-entrada-agrupada",
-    "title": "A entrada faz parte",
+    "title": "Entrada agrupada",
     "format": "Reel",
     "description": "Cor natural → congelamento em 10,5 s → P&B, pergunta e pintura ocre. Enquadramento preservado.",
     "movement": "Sem trilha incorporada. Música e interação são escolhidas no Instagram.",
-    "name": "A entrada faz parte",
+    "name": "Entrada agrupada",
     "cues": [
       {
         "label": "Movimento",
@@ -1351,53 +1418,12 @@
     ]
   },
   {
-    "id": "natureza-deck-preparacao",
-    "title": "Antes da inversão",
-    "format": "Reel",
-    "description": "Cor natural → congelamento em 13 s → P&B, pergunta e pintura ocre. Enquadramento preservado.",
-    "movement": "Sem trilha incorporada. Música e interação são escolhidas no Instagram.",
-    "name": "Antes da inversão",
-    "cues": [
-      {
-        "label": "Movimento",
-        "frame": 0
-      },
-      {
-        "label": "Congela",
-        "frame": 390
-      },
-      {
-        "label": "Ocre + selo",
-        "frame": 435
-      }
-    ],
-    "index": 0,
-    "count": 1,
-    "shots": [
-      {
-        "url": "/festival/ig/review-v1/natureza-deck-preparacao-0.webp",
-        "label": "1.5 s",
-        "frame": 45
-      },
-      {
-        "url": "/festival/ig/review-v1/natureza-deck-preparacao-1.webp",
-        "label": "13.0 s",
-        "frame": 390
-      },
-      {
-        "url": "/festival/ig/review-v1/natureza-deck-preparacao-2.webp",
-        "label": "14.5 s",
-        "frame": 435
-      }
-    ]
-  },
-  {
     "id": "natureza-deck-straddle-frente",
-    "title": "Formas no verde",
+    "title": "Repetição com atenção",
     "format": "Reel",
     "description": "Cor natural → congelamento em 32 s → P&B, pergunta e pintura ocre. Enquadramento preservado.",
     "movement": "Sem trilha incorporada. Música e interação são escolhidas no Instagram.",
-    "name": "Formas no verde",
+    "name": "Repetição com atenção",
     "cues": [
       {
         "label": "Movimento",
@@ -1434,11 +1460,11 @@
   },
   {
     "id": "natureza-deck-straddle-baixo",
-    "title": "Straddle em movimento",
+    "title": "Press: força e mobilidade",
     "format": "Reel",
     "description": "Cor natural → congelamento em 21 s → P&B, pergunta e pintura ocre. Enquadramento preservado.",
     "movement": "Sem trilha incorporada. Música e interação são escolhidas no Instagram.",
-    "name": "Straddle em movimento",
+    "name": "Press: força e mobilidade",
     "cues": [
       {
         "label": "Movimento",
@@ -1475,11 +1501,11 @@
   },
   {
     "id": "natureza-pavilhao-press-sequencia",
-    "title": "Press no pavilhão",
+    "title": "Press: a volta dos ombros",
     "format": "Reel",
     "description": "Cor natural → congelamento em 11,3 s → P&B, pergunta e pintura ocre. Enquadramento preservado.",
     "movement": "Sem trilha incorporada. Música e interação são escolhidas no Instagram.",
-    "name": "Press no pavilhão",
+    "name": "Press: a volta dos ombros",
     "cues": [
       {
         "label": "Movimento",
@@ -1511,79 +1537,6 @@
         "url": "/festival/ig/review-v1/natureza-pavilhao-press-sequencia-2.webp",
         "label": "12.8 s",
         "frame": 384
-      }
-    ]
-  },
-  {
-    "id": "fotos-ocre",
-    "title": "Fotos, P&B e pincel ocre",
-    "format": "Carrossel",
-    "description": "Três fotos do carrossel do parque, com os corpos inteiros em preto e branco. A tinta atravessa as árvores e escapa pelas bordas.",
-    "movement": "Três PNGs estáticos. A pincelada não passa por mãos, pés ou rostos.",
-    "name": "Uma parada, muitas formas",
-    "cues": [],
-    "index": 0,
-    "count": 4,
-    "shots": [
-      {
-        "url": "/festival/ig/review-v1/fotos-ocre-1-0.webp",
-        "label": "Lâmina 1 · Uma parada, muitas formas",
-        "frame": 29
-      },
-      {
-        "url": "/festival/ig/review-v1/fotos-ocre-3-0.webp",
-        "label": "Lâmina 3 · A transição",
-        "frame": 29
-      },
-      {
-        "url": "/festival/ig/review-v1/fotos-ocre-4-0.webp",
-        "label": "Lâmina 4 · A conversa continua",
-        "frame": 29
-      }
-    ]
-  },
-  {
-    "id": "fotos-ocre-motion",
-    "title": "A fotografia recebe a tinta",
-    "format": "Reel",
-    "description": "As mesmas três fotos em uma peça separada: a cor cede ao P&B e o pincel entra nas árvores. O corpo fotografado permanece imóvel.",
-    "movement": "3 s por foto, cortes diretos e pintura de 1,3 s. Sem zoom, música ou movimento artificial do corpo.",
-    "name": "Fotografia → P&B → tinta",
-    "cues": [
-      {
-        "label": "Cor",
-        "frame": 0
-      },
-      {
-        "label": "Pincel",
-        "frame": 42
-      },
-      {
-        "label": "Foto 2",
-        "frame": 150
-      },
-      {
-        "label": "Foto 3",
-        "frame": 240
-      }
-    ],
-    "index": 0,
-    "count": 1,
-    "shots": [
-      {
-        "url": "/festival/ig/review-v1/fotos-ocre-motion-1.webp",
-        "label": "1.4 s",
-        "frame": 42
-      },
-      {
-        "url": "/festival/ig/review-v1/fotos-ocre-motion-0.webp",
-        "label": "1.5 s",
-        "frame": 45
-      },
-      {
-        "url": "/festival/ig/review-v1/fotos-ocre-motion-2.webp",
-        "label": "8.0 s",
-        "frame": 240
       }
     ]
   }

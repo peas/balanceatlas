@@ -101,12 +101,14 @@ a { color: inherit; }
 .tags { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
 .tags li { border: 2px solid var(--white); border-radius: 999px; padding: 4px 14px; font-weight: 500; }
 .teacher .source { margin-top: 12px; }
-.lineup { margin-top: clamp(56px, 8vw, 96px); }
+.lineup { margin-top: 0; }
 .lineup-title { font-family: var(--display); font-weight: 900; font-stretch: 125%; text-transform: uppercase; font-size: clamp(1.5rem, 3.2vw, 2.4rem); line-height: 1; margin-bottom: 24px; }
-.lineup-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.lineup-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px 24px; }
 .story { position: relative; aspect-ratio: 9 / 16; border-radius: 12px; overflow: hidden; background: var(--ink); box-shadow: 0 24px 50px -24px rgba(0,0,0,.5); }
 .story > img, .story > astro-island { position: absolute !important; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .story-card .chip { margin-top: 14px; font-size: 1.05rem; }
+.story-card { min-width: 0; }
+.story-card .teacher-bio { margin-top: 12px; font-size: 1rem; line-height: 1.45; }
 .story-card blockquote { margin-top: 12px; font-size: 1rem; line-height: 1.45; }
 .story-card .source { margin-top: 6px; }
 .lineup-more { margin-top: 28px; font-family: var(--mono); text-transform: uppercase; font-size: 1rem; }
@@ -258,8 +260,8 @@ a { color: inherit; }
   .ring { width: 72px; height: 72px; }
   .poster { max-width: none; margin-right: 24px; }
   .lotes { grid-template-columns: 1fr; }
-  .lineup-grid { grid-auto-flow: column; grid-template-columns: none; grid-auto-columns: 78%; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-inline: var(--gutter); padding-bottom: 10px; margin-inline: calc(-1 * var(--gutter)); padding-inline: var(--gutter); }
-  .story-card { scroll-snap-align: start; }
+  .lineup-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
   .grid-head { display: none; }
   .grid-row { grid-template-columns: 1fr; gap: 6px; margin-bottom: 18px; }
   .time { padding-top: 0; }
@@ -519,3 +521,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px soli
   .has-fest-nav .hero { grid-template-areas: 'title' 'facts' 'media' 'actions'; }
   .has-fest-nav [id] { scroll-margin-top: 76px; }
 }
+
+@media (max-width: 600px) { .lineup-grid { grid-template-columns: 1fr; gap: 44px; } }
+
+.quem-engraving { max-width: 440px; margin: 0; }
+.quem-engraving figcaption { font-family: var(--mono); font-size: .8rem; margin-top: 12px; }

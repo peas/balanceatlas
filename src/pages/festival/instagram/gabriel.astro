@@ -1,0 +1,37 @@
+---
+import FestLayout from '../../../layouts/FestLayout.astro';
+import { EXERCISE_SHOOTS, SHOOT_NOTES } from '../../../festival/ig2/gabriel-filming';
+---
+<FestLayout stickyNav={false} title="Gabriel · lista de gravação | Handstand Life" description="Plano de captação de exercícios e referências para o fim de semana.">
+<main class="shoots wrap">
+  <a href="/festival/instagram/">← Calendário e peças</a>
+  <header class="intro"><p class="eyebrow">HANDSTAND LIFE · GUIA DE SOBREVIVÊNCIA</p><h1>Gabriel, vamos filmar?</h1><p class="lead">Uma ideia por vídeo. Entrada, demonstração e saída completas.</p><p class="voice"><strong>Você não precisa falar nada durante a gravação.</strong> Faremos a narração depois, em voiceover. Aqui precisamos das imagens — e da sua revisão do que vale ensinar.</p></header>
+  <section class="notes" aria-labelledby="capture"><h2 id="capture">Como gravar esta leva</h2><ul>{SHOOT_NOTES.map(note=><li>{note}</li>)}</ul><p>Os samples abaixo são referências do Paulo para combinar a captação, não aulas finalizadas. O áudio original foi mantido; aperte play para ouvir. Os subtítulos dos cartões descrevem a pauta, não são transcrições literais. Alguns samples cortam mãos ou pés: na nova gravação, manter as extremidades e a saída inteiras.</p></section>
+  <div class="filter"><label for="shoot-priority">Mostrar</label><select id="shoot-priority"><option value="all">Tudo</option><option value="weekend">Prioridade neste fim de semana</option><option value="extra">Se der tempo / próxima leva</option></select><span id="shoot-status" role="status"></span></div>
+  <nav aria-label="Lista de gravação">{EXERCISE_SHOOTS.map((item,i)=><a href={`#${item.id}`}>{String(i+1).padStart(2,'0')} · {item.title}</a>)}</nav>
+  <div class="shoot-grid">{EXERCISE_SHOOTS.map((item,i)=><article id={item.id} data-priority={item.priority}>
+    <div class="card-heading"><span class="number">{String(i+1).padStart(2,'0')}</span><div><small>{item.priority==='weekend'?'PRIORIDADE · FIM DE SEMANA':'SE DER TEMPO / PRÓXIMA LEVA'}</small><h2>{item.title}</h2></div></div>
+    <p class="subtitle">{item.subtitle}</p>
+    {item.sample&&<figure><video controls playsinline preload="none" poster={`/festival/ig/gabriel-filming-v1/${item.id}.webp`}><source src={`/festival/ig/gabriel-filming-v1/${item.id}.mp4`} type="video/mp4"/></video><figcaption>Referência do Paulo · vídeo {item.sample.source} · {item.sample.start}–{item.sample.end} s do original. Áudio preservado.</figcaption></figure>}
+    {!item.sample&&<p class="no-sample">Sem sample novo: pauta da lista de captação.</p>}
+    <h3>O que filmar</h3><p>{item.shot}</p>
+    <h3>Fotos que também precisamos</h3><p>{item.photo}</p>
+    <h3>Assunto do futuro post</h3><p>{item.post}</p>
+    <label class="done"><input type="checkbox" data-shot={item.id}/> Já gravei esta pauta</label>
+  </article>)}</div>
+  <section class="notes"><h2>Depois da gravação</h2><p>Mande os originais em qualidade máxima pelo Drive, sem filtro, legenda ou música. Nomeie cada take pelo exercício. Vamos selecionar, editar, escrever a narração e enviar a explicação técnica para você revisar antes de publicar.</p><p>Esta série vai alimentar o <strong>Handstand Life: Guia de Sobrevivência</strong> — vídeos e posts organizados por assunto, para consultar além do feed.</p><p class="small">As marcações “já gravei” ficam apenas neste navegador. Esta página de produção não aparece no menu público nem nos buscadores.</p></section>
+</main>
+</FestLayout>
+<script>
+const storageKey='hf-gabriel-filming-2026-11-13';
+let completed:Record<string,boolean>={};
+try{completed=JSON.parse(localStorage.getItem(storageKey)||'{}');}catch{}
+const boxes=[...document.querySelectorAll<HTMLInputElement>('[data-shot]')];
+function updateStatus(){document.querySelector('#shoot-status')!.textContent=`${boxes.filter(b=>b.checked).length} de ${boxes.length} pautas marcadas`}
+for(const box of boxes){box.checked=completed[box.dataset.shot!]===true;box.addEventListener('change',()=>{completed[box.dataset.shot!]=box.checked;try{localStorage.setItem(storageKey,JSON.stringify(completed));}catch{}updateStatus();});}updateStatus();
+document.querySelector('#shoot-priority')!.addEventListener('change',e=>{const value=(e.target as HTMLSelectElement).value;for(const card of document.querySelectorAll<HTMLElement>('[data-priority]'))card.hidden=value!=='all'&&card.dataset.priority!==value;});
+for(const video of document.querySelectorAll('video'))video.addEventListener('play',()=>{for(const other of document.querySelectorAll('video'))if(other!==video)other.pause();});
+</script>
+<style>
+.shoots{max-width:1160px;padding:40px 24px 80px;line-height:1.6}.shoots a{color:inherit}.intro{max-width:850px;margin:40px 0}.eyebrow,small,.number{font-family:'Space Mono',monospace}.eyebrow{font-size:13px;letter-spacing:.08em}.intro h1{font-size:clamp(36px,6vw,68px);line-height:1.06;margin:16px 0}.lead{font-size:24px}.voice{padding:22px;border-left:5px solid #cb8b34;background:#e9dec4;font-size:20px}.notes{background:#e8e3d6;padding:26px;border-radius:18px;margin:30px 0}.notes h2{font-size:25px;margin:0 0 12px}.notes ul{padding-left:22px}.notes li{margin:8px 0}.filter{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:30px 0}.filter select{padding:12px;border-radius:10px;font:inherit;background:#fffdf7;color:#123d33;border:1px solid #8b9b8e}.filter span,.small{font-size:14px}.shoots nav{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:30px}.shoots nav a{border:1px solid #aeb5a9;padding:6px 12px;border-radius:20px;font-size:13px;text-decoration:none}.shoot-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;align-items:start}.shoot-grid article{background:#fffdf7;border:1px solid #d6d4c6;border-radius:18px;padding:24px;scroll-margin-top:25px}.card-heading{display:flex;gap:16px;align-items:start}.number{background:#123d33;color:#f3eddf;padding:7px 10px;border-radius:50%;font-size:17px}.card-heading h2{font-size:25px;line-height:1.2;margin:9px 0}.card-heading small{font-size:10px;letter-spacing:.04em}.subtitle{font-size:19px;font-weight:600}.shoots figure{margin:20px 0}.shoots video{width:100%;height:auto;max-height:520px;display:block;background:#193d33;border-radius:12px}.shoots figcaption{font-size:12px;margin-top:8px}.shoots h3{font-size:16px;margin:22px 0 5px}.shoots p{margin-top:8px}.done{display:flex;gap:10px;align-items:center;border-top:1px solid #d6d4c6;padding-top:16px;margin-top:22px}.done input{width:20px;height:20px;accent-color:#123d33}.no-sample{font-size:14px;padding:14px;background:#f3eddf;border-radius:8px}.shoots [hidden]{display:none!important}@media(max-width:720px){.shoot-grid{grid-template-columns:1fr}.shoots{padding:24px 16px}.shoot-grid article{padding:19px}.voice{font-size:18px}.intro{margin:24px 0}}
+</style>

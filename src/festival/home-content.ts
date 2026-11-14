@@ -55,14 +55,18 @@ export const tracks = ['Básico', 'Intermediário e avançado'];
 
 
 
-// Invited teachers. Bios are quoted from their Instagram profiles (checked 28/10/2026), never written by us.
-export const lineup: { poster: PosterProps; url?: string; quote?: string; source?: string; where: string }[] = [
+// Confirmed teachers share one list. Louisse/Dany quotations come from their Instagram profiles (checked 28/10/2026).
+// Supplied by Paulo/Gabriel on 13 November 2026, edited for length.
+export const AGUSTIN_BIO = 'Artista circense, acrobata e professor de movimento, argentino radicado no Brasil. Com mais de 10 anos nas artes do movimento, encontrou na parada de mãos um caminho de investigação, expressão e transformação.';
+export const AGUSTIN_ORIGIN = 'A ideia do festival veio de Gabriel, após uma experiência marcante na Argentina: reunir pessoas, professores e diferentes perspectivas em torno da parada de mãos.';
+
+export const lineup: { poster: PosterProps; teacher?: boolean; bio?: string; url?: string; quote?: string; source?: string; where: string }[] = [
   {
-    poster: { img: '/festival/teacher-rocio.webp', first: 'Rocío', last: '', handle: '@unapotaloka', shape: 'bar', focus: '50% 30%' },
-    url: 'https://www.instagram.com/unapotaloka/',
-    quote: 'Handstand performer · Escola Nacional de Circo 25/27 · Río de Janeiro',
-    source: 'https://www.instagram.com/unapotaloka/',
-    where: 'Rio de Janeiro',
+    poster: { img: '/festival/teacher.webp', first: 'Gabriel', last: 'Agustin', handle: '@agustin_melesi', shape: 'bar', focus: '50% 40%' },
+    teacher: true,
+    url: 'https://www.instagram.com/agustin_melesi/',
+    bio: AGUSTIN_BIO,
+    where: 'Parada de mãos, acrobacia e movimento',
   },
   {
     poster: { img: '/festival/teacher-lou.webp', first: 'Louisse', last: 'Aldrigues', handle: '@lou.handstand', shape: 'tee', focus: '50% 40%' },

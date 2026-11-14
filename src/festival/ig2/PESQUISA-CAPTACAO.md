@@ -1,6 +1,8 @@
 # O que pedir ao Gabriel para filmar
 
-Pesquisa e pauta de captação · **12/11/2026** · proposta para revisão do Gabriel.
+Pesquisa e pauta de captação · **12/11/2026**, atualizada em **13/11/2026**.
+
+**Lista atual para o fim de semana:** [/instagram/gabriel/](https://handstandfest.com.br/instagram/gabriel/), com 19 pautas e samples dos dois vídeos do Paulo. Gabriel **não precisa falar**: faremos voiceover depois. Os pedidos antigos de explicação gravada abaixo são históricos; a captação atual prioriza imagem, fotos e revisão técnica posterior. Dados: `gabriel-filming.json`; procedência: `GABRIEL-FILMING.md`.
 
 Esta é uma lista de imagens a produzir, não uma série/repetição de treino. O professor escolhe a variação e confirma o objetivo, os nomes e a explicação. As pautas anteriores permanecem em [PAUTAS.md](PAUTAS.md); a ordem de publicação está em `editorial.ts`.
 

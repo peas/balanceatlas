@@ -9,15 +9,15 @@
     "originalStart": 1.3,
     "originalFreeze": 14.5,
     "hook": [
-      "E SE A ENTRADA",
-      "VIER DA ÁGUA?"
+      "PRESS: SUBIDA",
+      "A FORÇA."
     ],
     "close": [
-      "COM QUEM VOCÊ",
-      "TENTARIA?"
+      "DA ÁGUA",
+      "PARA O APOIO."
     ],
-    "title": "Press em dupla",
-    "caption": "Uma entrada, duas pessoas. Com quem você gosta de explorar novas formas?\n\n#handstandlife #handstandfest",
+    "title": "Press saindo de baixo",
+    "caption": "O press é a subida a força. Aqui, a entrada começa abaixo do apoio das mãos. Observe o caminho completo da subida. Na série de exercícios, vamos mostrar progressões em apoio baixo e estável, com Gabriel.\n\n#handstandlife",
     "sealX": 65,
     "sealY": 1410,
     "lowerTitle": false
@@ -32,15 +32,15 @@
     "originalStart": 4.4,
     "originalFreeze": 17,
     "hook": [
-      "JÁ VIU UM PRESS",
-      "SAINDO DA ÁGUA?"
+      "NO PRESS,",
+      "OLHE OS OMBROS."
     ],
     "close": [
-      "O QUE VOCÊ",
-      "NOTOU AQUI?"
+      "SUBIU. E OS",
+      "OMBROS FICARAM?"
     ],
-    "title": "Press saindo da água",
-    "caption": "Uma entrada vista com calma. O que chamou sua atenção na subida? Registro de prática, não um passo a passo.\n\n#handstandlife #handstandfest",
+    "title": "Ombros depois do press",
+    "caption": "Neste registro, os ombros continuam à frente das mãos depois da subida. Compare a entrada com a posição final: a passagem do peso e a retomada do alinhamento são partes diferentes do movimento. Não existe uma posição que garanta não passar do ponto.\n\n#handstandlife",
     "sealX": 65,
     "sealY": 1410,
     "lowerTitle": true
@@ -55,15 +55,15 @@
     "originalStart": 32,
     "originalFreeze": 48,
     "hook": [
-      "O QUE MUDA",
-      "NO PIKE?"
+      "PIKE PRESS:",
+      "OLHE OS OMBROS."
     ],
     "close": [
-      "VOCÊ PREFERE",
-      "PIKE OU RETA?"
+      "AVANÇAR.",
+      "DEPOIS RETOMAR."
     ],
-    "title": "Do pike à reta",
-    "caption": "Entre dobrar o quadril e estender o corpo, o movimento também faz parte da prática. Qual forma você gosta de explorar?\n\n#handstandlife #handstandfest",
+    "title": "Pike press: avanço e retomada",
+    "caption": "No pike press, acompanhe o avanço dos ombros e o retorno em direção à linha. A quantidade de avanço depende da forma, da mobilidade e das proporções de cada pessoa. O foco aqui é perceber quando cada etapa acontece.\n\n#handstandlife",
     "sealX": 65,
     "sealY": 1410,
     "lowerTitle": false
@@ -78,15 +78,15 @@
     "originalStart": 18.7,
     "originalFreeze": 36,
     "hook": [
-      "COMO VOCÊ",
-      "CHEGA À RETA?"
+      "TUCK E RETA:",
+      "TREINE O CAMINHO."
     ],
     "close": [
-      "QUAL TRANSIÇÃO",
-      "VOCÊ EXPLORA?"
+      "CONTROLE ENTRE",
+      "AS FIGURAS."
     ],
-    "title": "Do tuck à reta",
-    "caption": "Nem só a posição final: o caminho entre as formas também merece atenção. Qual transição está no seu treino?\n\n#handstandlife #handstandfest",
+    "title": "Transições com controle",
+    "caption": "Mudar de figura também é treino. Observe a transição entre tuck e reta e a posição da cabeça ao longo do caminho. Na próxima captação, Gabriel vai mostrar drills para explorar isso com controle.\n\n#handstandlife",
     "sealX": 65,
     "sealY": 1410,
     "lowerTitle": false
@@ -101,38 +101,15 @@
     "originalStart": 37.5,
     "originalFreeze": 48,
     "hook": [
-      "E ANTES DE",
-      "FICAR NO AR?"
+      "ENTRAR DIRETO",
+      "NO TUCK?"
     ],
     "close": [
-      "COMO É A SUA",
-      "ENTRADA?"
+      "UMA ENTRADA",
+      "MAIS AGRUPADA."
     ],
-    "title": "A entrada faz parte",
-    "caption": "Aqui, a entrada agrupada tem impulso. Como você costuma entrar na parada de mãos?\n\n#handstandlife #handstandfest",
-    "sealX": 65,
-    "sealY": 1410,
-    "lowerTitle": false
-  },
-  {
-    "id": "natureza-deck-preparacao",
-    "kind": "reel",
-    "file": "deck-preparacao",
-    "sourceId": "natureza-pxl-20261011-133147658",
-    "sourcePath": "selecionados/deck-preparacao.mp4",
-    "freezeFrame": 390,
-    "originalStart": 11,
-    "originalFreeze": 24,
-    "hook": [
-      "SEU TREINO",
-      "COMEÇA ONDE?"
-    ],
-    "close": [
-      "O QUE VOCÊ FAZ",
-      "ANTES DE SUBIR?"
-    ],
-    "title": "Antes da inversão",
-    "caption": "O treino também tem momentos com os pés no chão. O que faz parte da sua preparação?\n\n#handstandlife #handstandfest",
+    "title": "Entrada agrupada",
+    "caption": "A entrada não precisa terminar sempre no palito. Neste trecho, há impulso para chegar à forma agrupada. Repare como o corpo ocupa menos altura no tuck. A preparação e a saída segura serão demonstradas por Gabriel.\n\n#handstandlife",
     "sealX": 65,
     "sealY": 1410,
     "lowerTitle": false
@@ -147,15 +124,15 @@
     "originalStart": 4,
     "originalFreeze": 36,
     "hook": [
-      "QUANTAS FORMAS",
-      "VOCÊ EXPLORA?"
+      "REPETIR FORMAS.",
+      "GANHAR CONTROLE."
     ],
     "close": [
-      "QUAL VOCÊ QUER",
-      "EXPLORAR?"
+      "CONSISTÊNCIA",
+      "SE CONSTRÓI."
     ],
-    "title": "Formas no verde",
-    "caption": "Reta, straddle, mudanças de forma. Qual delas você quer observar mais de perto?\n\n#handstandlife #handstandfest",
+    "title": "Repetição com atenção",
+    "caption": "Repetir figuras com atenção ajuda a perceber os ajustes entre elas. Controle, pausa e continuidade também fazem parte da prática. Venha treinar com essa comunidade.\n\n#handstandlife",
     "sealX": 65,
     "sealY": 1410,
     "lowerTitle": false
@@ -170,15 +147,15 @@
     "originalStart": 21,
     "originalFreeze": 42,
     "hook": [
-      "COMO É O SEU",
-      "STRADDLE?"
+      "PRESS: SUBIR",
+      "SEM IMPULSO."
     ],
     "close": [
-      "O QUE MUDA",
-      "NESSE CAMINHO?"
+      "FORÇA E",
+      "MOBILIDADE."
     ],
-    "title": "Straddle em movimento",
-    "caption": "Um trecho para observar a mudança de forma. O take original termina ainda em inversão; não mostra a saída completa.\n\n#handstandlife #handstandfest",
+    "title": "Press: força e mobilidade",
+    "caption": "A subida lenta deixa o trabalho mais visível. No straddle press, a mobilidade em pancake pode facilitar a aproximação das pernas do tronco. Observe a sequência; vamos desenvolver as preparações em uma demonstração própria.\n\n#handstandlife",
     "sealX": 65,
     "sealY": 1410,
     "lowerTitle": false
@@ -193,15 +170,15 @@
     "originalStart": 3.7,
     "originalFreeze": 15,
     "hook": [
-      "COMO ACONTECE",
-      "ESSA SUBIDA?"
+      "NO PRESS,",
+      "O OMBRO AVANÇA."
     ],
     "close": [
-      "ONDE SUA",
-      "ATENÇÃO FICA?"
+      "COMO ELE VOLTA",
+      "PARA A LINHA?"
     ],
-    "title": "Press no pavilhão",
-    "caption": "Ao acompanhar a subida, você olha primeiro para as mãos, os ombros ou o quadril? Uma conversa sobre observar o movimento, sem prescrever técnica.\n\n#handstandlife #handstandfest",
+    "title": "Press: a volta dos ombros",
+    "caption": "Olhe para os ombros no início e no final desta subida. O press envolve passagem de peso e retomada da linha, não apenas levantar as pernas. Vamos comparar essas etapas com calma.\n\n#handstandlife",
     "sealX": 65,
     "sealY": 1410,
     "lowerTitle": false
@@ -213,11 +190,11 @@
     "sourceId": "natureza-pxl-20260427-144613209",
     "sourcePath": "selecionados/natureza-pxl-20260427-144613209.webp",
     "hook": [
-      "QUAL PAISAGEM",
-      "FICOU COM VOCÊ?"
+      "PIKE.",
+      "O SETE. O L."
     ],
-    "title": "Pike e cachoeira",
-    "caption": "Tem uma paisagem que ficou ligada à sua prática? Este é um registro pessoal, não uma sugestão de treinar em pedras molhadas.\n\n#handstandlife #handstandfest",
+    "title": "Pike: o sete, o L",
+    "caption": "O pike combina força, coordenação e flexibilidade. Nesta foto, vale observar a dobra do quadril e a extensão dos joelhos. O cenário é um registro de viagem, não a proposta de local para praticar.\n\n#handstandlife",
     "sealX": 65,
     "sealY": 1410,
     "lowerTitle": false
@@ -229,11 +206,11 @@
     "sourceId": "natureza-img-6271",
     "sourcePath": "selecionados/natureza-img-6271.webp",
     "hook": [
-      "COM QUEM VOCÊ",
-      "QUER TREINAR?"
+      "TEM HANDSTAND",
+      "NA SUA CIDADE?"
     ],
-    "title": "Uma prática, muita gente",
-    "caption": "Estamos criando e mapeando encontros e lugares para treinar. Conta sua cidade e os encontros que você conhece. Vamos confirmar os detalhes com quem organiza.\n\n#handstandlife #handstandfest",
+    "title": "Encontros para treinar",
+    "caption": "Estamos fortalecendo a comunidade de handstand do Brasil e mapeando encontros e lugares para treinar. Conte sua cidade, o grupo e quem organiza. Vamos confirmar os detalhes com essas pessoas.\n\n#handstandlife",
     "sealX": 65,
     "sealY": 1410,
     "lowerTitle": false
@@ -245,11 +222,11 @@
     "sourceId": "natureza-pxl-20260427-131533524",
     "sourcePath": "selecionados/natureza-pxl-20260427-131533524.webp",
     "hook": [
-      "O QUE MUDA",
-      "NESSA FORMA?"
+      "PIKE: FORÇA",
+      "E FLEXIBILIDADE."
     ],
-    "title": "Uma pausa no pike",
-    "caption": "Uma foto para olhar com calma: o que chama sua atenção nessa forma?\n\n#handstandlife #handstandfest",
+    "title": "Pike com atenção aos ombros",
+    "caption": "O pike — o sete, o L — pede paciência, força e flexibilidade. Observe a relação entre os ombros abertos e a dobra do quadril. Em uma demonstração própria, Gabriel vai explicar esses ajustes.\n\n#handstandlife",
     "sealX": 770,
     "sealY": 1410,
     "lowerTitle": false

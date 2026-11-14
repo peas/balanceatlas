@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-13",
+  "sources": [
+    {
+      "filename": "PXL_20261113_203328513.mp4",
+      "bytes": 951800483,
+      "sha256": "abf5b748031e36219f9bd6a33026978a3049868f2155f8f5d77a4b5d9d7d3793",
+      "local_source": "local/festival/gabriel-filming-2026-11-13/sources/PXL_20261113_203328513.mp4",
+      "use": "reference for Gabriel reshoot; narration by Paulo",
+      "public_source": false
+    },
+    {
+      "filename": "PXL_20261113_204644378.mp4",
+      "bytes": 354149357,
+      "sha256": "460b72f8d58803978e172a13ac900a94dc7e287eb385ea55b9b56359a6dd325b",
+      "local_source": "local/festival/gabriel-filming-2026-11-13/sources/PXL_20261113_204644378.mp4",
+      "use": "reference for Gabriel reshoot; narration by Paulo",
+      "public_source": false
+    }
+  ],
+  "briefs": "src/festival/ig2/gabriel-filming.json",
+  "page": "/instagram/gabriel/",
+  "status": "reference cuts; future lessons not yet filmed"
+}

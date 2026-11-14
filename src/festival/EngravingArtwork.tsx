@@ -1,6 +1,6 @@
 import type { CSSProperties, ElementType } from 'react';
 
-export type EngravingFigure = 'straight' | 'straddle' | 'profile' | 'diagonal' | 'overhead';
+export type EngravingFigure = 'straight' | 'straddle' | 'profile' | 'diagonal' | 'overhead' | 'gabriel';
 export type PaintShape = 'oval' | 'sweep' | 'arc';
 type Props = {
   figure?: EngravingFigure;
@@ -16,6 +16,7 @@ type Props = {
 };
 const BASE = '/festival/ig/arte/engraving-v1';
 const FIGURES = {
+  gabriel: { file: 'gabriel-reta-profile.webp', width: 207, height: 1077, alt: 'Gravura de Gabriel Agustin em parada reta, vista de perfil' },
   straight: { file: 'reta-costas.webp', width: 941, height: 1672, alt: 'Ilustração de uma parada de mão com pernas juntas, vista de costas' },
   straddle: { file: 'straddle-montanha.webp', width: 1536, height: 1024, alt: 'Ilustração de uma parada de mão com pernas abertas e apoio nas duas mãos' },
   profile: { file: 'profile-greece.webp', width: 887, height: 1774, alt: 'Gravura de uma parada reta vista de perfil, com camiseta e bermuda' },
