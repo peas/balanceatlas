@@ -34,3 +34,11 @@ The pool and deck figures use registered 1080×1920 web canvases, with considera
 with padding. No bitmap regeneration, resampling or changed video registration. `canvas_web` distinguishes
 web dimensions from the original master's dimensions. Gabriel's tight profile crop is preferred for
 standalone reuse; its registered freeze is linked as a technical variant and no longer duplicated in the gallery.
+
+## Applied after Paulo's approval
+Essential supporting copy now starts at 48 px in the shared kit, editorial cards/stories, Gabriel biography,
+practice statements, spotlight explanation slides and level descriptions. Secondary labels/counters keep
+smaller sizes. Long biography copy was shortened and footer positions adjusted instead of reducing the font.
+Headlines already in the 72–90 px range remain; longer headlines retain scene-specific line breaks/sizing.
+`festival_instagram_profile.mjs` also generates `grid-3x3-final.png`: the same nine covers, a clean
+1080×1440 three-by-three preview without the comparison-sheet header. All covers/review stills are refreshed.

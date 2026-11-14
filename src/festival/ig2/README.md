@@ -195,3 +195,7 @@ render defaults keep them off. `festival_instagram_profile.mjs` uses the covers 
 Typography source check: `docs/instagram/2026-11-14-meta-typography.md` distinguishes Meta's qualitative
 ad guidance from our pixel-size choices. Reusable engraving previews use catalogue `recorte_previa` bounds
 without altering registered video canvases; Gabriel profile is the preferred standalone derivative.
+
+Typography implementation (14 November, approved): essential support copy uses 48 px as the starting
+size; small labels/counters remain secondary. Shorten copy/reposition rather than shrinking explanations.
+`festival_instagram_profile.mjs` writes the clean `grid-3x3-final.png` alongside the annotated grid study.

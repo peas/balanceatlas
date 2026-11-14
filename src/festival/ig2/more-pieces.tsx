@@ -8,7 +8,7 @@ function Signoff({ guides, palette, title, question }: PieceProps & { title: str
   return <Canvas guides={guides} palette={palette} dark signature={false}>
     <div style={{ position: 'absolute', left: 65, top: 280 }}><Selo size={300} giro={24} /></div>
     <Headline lines={title} y={620} size={94} dark />
-    <Label y={1020} size={44} color={CHALK} style={{ width: 850 }}>{question}</Label>
+    <Label y={1020} size={48} color={CHALK} style={{ width: 850 }}>{question}</Label>
     <Label y={1260} size={36} color={ACCENT}>HANDSTANDFEST · ALÉM DO FESTIVAL</Label>
   </Canvas>;
 }
@@ -32,7 +32,7 @@ function PhotoCard({ index, ...p }: PieceProps & { index: number }) {
     <Label x={60} y={65} size={36}>{item.note}</Label>
     <Headline lines={[...item.title]} x={60} y={155} size={item.size} accentLine={index === 0 ? 1 : -1} />
     <Media photo contain src={item.src} x={60} y={450} w={960} h={650} look={item.look} {...p} />
-    <Label x={60} y={1150} size={44} style={{ width: index === 4 ? 710 : 950 }}>{item.caption}</Label>
+    <Label x={60} y={1150} size={48} style={{ width: index === 4 ? 710 : 950 }}>{item.caption}</Label>
     <Label x={60} y={1330} size={36}>{String(index + 1).padStart(2, '0')} / 05</Label>
     {index === 4 ? <BrandSeal x={805} y={1190} size={200} still/> : <Label x={710} y={1330} size={36}>ARRASTA →</Label>}
   </Canvas>;

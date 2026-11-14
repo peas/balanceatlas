@@ -38,7 +38,7 @@ function ClassQuestion(p: PieceProps) {
   return <Canvas {...p} format="card" dark>
     <Label x={60} y={80} size={36} color={CHALK}>HANDSTANDFEST · {QUANDO.toUpperCase()}</Label>
     <Headline lines={['Você segura', '10 segundos', 'longe da', 'parede?']} x={60} y={305} size={93} dark />
-    <Label x={60} y={1010} size={42} color={ACCENT}>TEM TURMA PARA VOCÊ.</Label>
+    <Label x={60} y={1010} size={48} color={ACCENT}>TEM TURMA PARA VOCÊ.</Label>
     <Label x={60} y={1330} size={36} color={CHALK}>02 / 05</Label>
   </Canvas>;
 }
@@ -46,9 +46,9 @@ function Basic(p: PieceProps) {
   return <Canvas {...p} format="card">
     <Label x={60} y={75} size={40}>AINDA NÃO</Label>
     <Headline lines={['Básico']} x={60} y={170} size={125} accentLine={0} />
-    <Label x={60} y={380} size={44} style={{ width: 925 }}>Tem turma para quem treina na parede e ainda não sustenta o livre.</Label>
+    <Label x={60} y={380} size={48} style={{ width: 925 }}>Tem turma para quem treina na parede e ainda não sustenta o livre.</Label>
     <Media photo src="tv-sala-vidro.webp" x={60} y={595} w={960} h={520} {...p} />
-    <Label x={60} y={1160} size={40} style={{ width: 930 }}>Linha, chute, saída segura e os primeiros segundos sem a parede.</Label>
+    <Label x={60} y={1160} size={48} style={{ width: 930 }}>Linha, chute, saída segura e equilíbrio sem a parede.</Label>
     <Label x={60} y={1330} size={36}>03 / 05</Label>
   </Canvas>;
 }
@@ -56,9 +56,9 @@ function Advanced(p: PieceProps) {
   return <Canvas {...p} format="card">
     <Label x={60} y={75} size={40}>SIM, COM CONSISTÊNCIA</Label>
     <Headline lines={['Intermediário', 'e avançado']} x={60} y={165} size={80} />
-    <Label x={60} y={380} size={44} style={{ width: 925 }}>Você segura uns 10 segundos no livre, de forma consistente (30 é o ideal).</Label>
+    <Label x={60} y={380} size={48} style={{ width: 925 }}>Você segura uns 10 segundos no livre, de forma consistente (30 é o ideal).</Label>
     <Media photo src="tv-palco-luzes.webp" x={60} y={595} w={960} h={520} look="pb" {...p} />
-    <Label x={60} y={1160} size={40} style={{ width: 930 }}>Equilíbrio, formas, entradas, press e one arm.</Label>
+    <Label x={60} y={1160} size={48} style={{ width: 930 }}>Equilíbrio, formas, entradas, press e one arm.</Label>
     <Label x={60} y={1330} size={36}>04 / 05</Label>
   </Canvas>;
 }

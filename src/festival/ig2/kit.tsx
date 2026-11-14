@@ -21,7 +21,7 @@ export function TermHighlight({text}:{text:string}) {
  const i=match.index;
  return <>{text.slice(0,i)}<span data-term-highlight style={{background:'linear-gradient(transparent 80%, #cb8b34 80%, #cb8b34 94%, transparent 94%)',paddingBottom:'.04em'}}>{match[0]}</span>{text.slice(i+match[0].length)}</>;
 }
-export function Label({ children, x = 65, y, color = STAGE, size = 42, style }: { children: ReactNode; x?: number; y: number; color?: string; size?: number; style?: CSSProperties }) {
+export function Label({ children, x = 65, y, color = STAGE, size = 48, style }: { children: ReactNode; x?: number; y: number; color?: string; size?: number; style?: CSSProperties }) {
   return <div data-ig2-text style={{ position: 'absolute', left: x, top: y, color, fontFamily: MONO, fontSize: size, lineHeight: 1.4, fontWeight: 700, ...style }}>{typeof children==='string'?<TermHighlight text={children}/>:children}</div>;
 }
 // The letters are visible from frame zero. Only the stroke reveals; one gesture per scene.
@@ -47,7 +47,7 @@ export function Media({ src, photo = false, x = 65, y = 600, w = 885, h = 950, f
   </div>;
 }
 export function Facts({ y = 505, dark = false }: { y?: number; dark?: boolean }) {
-  return <Label y={y} size={42} color={dark ? CHALK : STAGE}>{QUANDO.toUpperCase()} · SÃO PAULO</Label>;
+  return <Label y={y} size={48} color={dark ? CHALK : STAGE}>{QUANDO.toUpperCase()} · SÃO PAULO</Label>;
 }
 export function EndCard({ guides, format = 'reel', palette, cta = 'Vem junto.' }: PieceProps & { format?: Formato; cta?: string }) {
   const card = format === 'card';
@@ -56,7 +56,7 @@ export function EndCard({ guides, format = 'reel', palette, cta = 'Vem junto.' }
     <div style={{ position: 'absolute', left: 340, top: card ? 100 : 275, transform: `rotate(${interpolate(move(frame, 0, 26), [0, 1], [-12, 0])}deg)` }}><Selo size={340} giro={24} /></div>
     <Headline lines={['HANDSTAND', 'FEST']} y={card ? 510 : 720} size={97} dark />
     <Label y={card ? 775 : 990} size={48} color={ACCENT}>{QUANDO.toUpperCase()}</Label>
-    <Label y={card ? 850 : 1065} size={42} color={CHALK}>TRAPÉZIO VOADOR<br />SÃO PAULO</Label>
+    <Label y={card ? 850 : 1065} size={48} color={CHALK}>TRAPÉZIO VOADOR<br />SÃO PAULO</Label>
     <Label y={card ? 1070 : 1240} size={48} color={CHALK} style={{ borderTop: `3px solid ${ACCENT}`, width: 885, paddingTop: 28 }}>{cta}</Label>
   </Canvas>;
 }
@@ -90,7 +90,7 @@ export function PracticeClose({title=['O QUE VOCÊ','QUER EXPLORAR?'],body='Form
  return <Freeze frame={90}><Canvas {...p} format="card" dark signature={false}>
   <Label y={90} size={36} color={CHALK}>#HANDSTANDLIFE</Label>
   <Headline lines={title} y={250} size={85} dark/>
-  <Label y={600} size={46} color={CHALK} style={{width:880}}>{body}</Label>
+  <Label y={600} size={48} color={CHALK} style={{width:880}}>{body}</Label>
   <BrandSeal x={65} y={1020} size={260} still/>
   <Label x={365} y={1100} size={38} color={CHALK}>HANDSTANDFEST<br/>handstandfest.com.br</Label>
  </Canvas></Freeze>;

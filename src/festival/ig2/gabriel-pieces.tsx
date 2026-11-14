@@ -42,7 +42,7 @@ function Landscape(p:PieceProps) {
   <div style={{position:'absolute',inset:0,background:'linear-gradient(180deg,rgba(10,35,28,.8),transparent 30%,transparent 70%,rgba(10,35,28,.9))'}}/>
   <Label y={65} size={28} color={CHALK}>GABRIEL AGUSTIN · #HANDSTANDLIFE</Label>
   <Headline lines={['OUTRO CHÃO.','OUTRO EQUILÍBRIO.']} y={145} size={78} dark/>
-  <Label y={1230} size={36} color={CHALK} style={{width:680}}>O apoio muda. A atenção também.</Label>
+  <Label y={1200} size={48} color={CHALK} style={{width:680}}>O apoio muda. A atenção também.</Label>
  </Canvas></Freeze>;
 }
 function Engraving(p:PieceProps) {
@@ -51,7 +51,7 @@ function Engraving(p:PieceProps) {
   <Headline lines={['A PRÁTICA','GANHA FORMA.']} y={145} size={77} accentLine={-1} dark/>
   <div style={{position:'absolute',left:160,top:455,width:730,height:730,transform:'rotate(17deg)'}}><InkDisc color="#dfab5b"/></div>
   <Img src={(getRemotionEnvironment().isPlayer?'/festival/ig/arte/engraving-v1/gabriel-reta-profile.webp':staticFile('festival/ig/arte/engraving-v1/gabriel-reta-profile.webp'))} style={{position:'absolute',left:150,top:355,width:780,height:850,objectFit:'contain'}}/>
-  <Label y={1260} size={42} color={CHALK} style={{width:680}}>Praticar. Perceber. Repetir.</Label>
+  <Label y={1200} size={48} color={CHALK} style={{width:680}}>Praticar. Perceber. Repetir.</Label>
  </Canvas></Freeze>;
 }
 export const GABRIEL_PIECES:Piece[]=[

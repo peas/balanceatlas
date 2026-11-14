@@ -22,10 +22,10 @@ function FocusCard({profile,index,...props}:PieceProps & {profile:typeof SPOTLIG
    <div style={{position:'absolute',left:65,top:65,fontFamily:MONO,fontSize:30,color:ochre}}>EM FOCO</div>
    <div style={{position:'absolute',left:105,right:95,top:1080,...WIDE,fontSize:profile.id==='em-foco-nicolas'?70:86,lineHeight:1.12,whiteSpace:'pre-line',color:CHALK}}>{profile.name}</div>
    <div style={{position:'absolute',left:65,top:1040,width:140,height:9,background:ochre}}/>
-   <div style={{position:'absolute',left:105,right:105,top:760,display:'none',fontSize:43,lineHeight:1.38,color:CHALK}}>{profile.fact}</div>
+   <div style={{position:'absolute',left:105,right:105,top:760,display:'none',fontSize:48,lineHeight:1.38,color:CHALK}}>{profile.fact}</div>
   </>:<>
    <div style={{position:'absolute',left:105,right:105,top:340,...WIDE,fontSize:65,lineHeight:1.13,color:CHALK}}>{index===1?profile.observe:'CONHEÇA O TRABALHO NA FONTE.'}</div>
-   <div style={{position:'absolute',left:105,right:105,top:720,fontSize:43,lineHeight:1.4,color:CHALK}}>{index===1?profile.detail:<>Visite o perfil e os projetos de {profile.short}.<br/><br/>Referências para ampliar o olhar sobre o handstand.</>}</div>
+   <div style={{position:'absolute',left:105,right:105,top:720,fontSize:48,lineHeight:1.4,color:CHALK}}>{index===1?profile.detail:<>Visite o perfil e os projetos de {profile.short}.<br/><br/>Referências para ampliar o olhar sobre o handstand.</>}</div>
   </>}
   <div style={{position:'absolute',left:105,right:105,bottom:index===0?50:145,fontFamily:MONO,fontSize:28,lineHeight:1.6,color:ochre}}>{profile.source}<br/>#handstandlife</div>
  </Canvas>;
