@@ -28,6 +28,6 @@ export const EDITORIAL_PIECES = [
  ]),
  piece('ed-comunidade','Gente para treinar junto',[{title:['TREINAR JUNTO','LEVA MAIS LONGE.'],sub:'Estamos fortalecendo a comunidade de handstand do Brasil.',dark:true,image:'group'}]),
  piece('ed-formas','Palito e afastado',[{title:['PALITO E','AFASTADO.'],sub:'Reta e straddle: dois nomes para reconhecer na prática.',image:'diagonal',engraving:'diagonal',paint:'arc'},{title:['RETA.'],sub:'Pernas juntas.',image:'profile',engraving:'profile',paint:'oval'},{title:['STRADDLE.'],sub:'Pernas abertas.',dark:true,image:'overhead',engraving:'overhead',paint:'sweep'}]),
- piece('ed-festival','Três dias. Um encontro.',[{title:['3 DIAS COM QUEM','GOSTA DE HANDSTAND.'],sub:`${QUANDO} · São Paulo`,dark:true,image:'straight'}]),
+ piece('ed-festival','Três dias. Um encontro.',[{title:['3 DIAS COM QUEM','GOSTA DE HANDSTAND.'],sub:`${QUANDO} · São Paulo`,dark:true,image:'gabrielSea'}]),
  piece('ed-mundo','Ninguém treina só',[{title:['ONDE A GENTE','TREINA JUNTO?'],sub:'Que grupo ou encontro você indicaria?',image:'tuck'}]),
 ];

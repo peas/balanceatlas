@@ -165,3 +165,8 @@ camisetas, verificar resolução na dimensão física e fazer prova, não chamar
 ## Lote natureza e piscina — 12/11/2026
 
 Seleção de oito vídeos + quatro fotos novas, e um JPEG original de maior resolução ligado a `photo-thailand-2026-56`. Total de imagens: **205** (204 revisadas, uma URL indisponível). Nove cortes prontos + cinco WebPs na galeria local `local/festival/natureza-2026-11-12/index.html`. Receita, seleção prioritária e limites: [lotes/natureza-2026-11-12.md](lotes/natureza-2026-11-12.md). Classificação e tempos permanecem no catálogo; o JSON do lote registra ingestão/deduplicação e decisões sobre os descartados da seleção. `cortes` referencia derivados separados: tempos são do original, `freeze_corte` é relativo ao MP4 cortado. Nenhum original foi apagado ou publicado.
+
+### Exclusões solicitadas
+Entradas com `nao_usar: true` ficam no histórico, mas não podem ser selecionadas para novas peças.
+Respeitar `restricao_uso`, inclusive ao regenerar sugestões. `photo-saopaulo-2024-98` foi identificado
+por Paulo como André, seu antigo professor, e excluído do uso em 14/11/2026; convite substituído por Gabriel no mar.

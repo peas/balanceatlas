@@ -5393,7 +5393,10 @@
   corpo: "inteiro"
   grupo_em_handstand: false
   todos_em_handstand: true
-  uso_sugerido: ["post-shape", "ilustracao-exercicio", "recorte-gravura"]
+  uso_sugerido: []
+  nao_usar: true
+  quem: ["André"]
+  restricao_uso: "Não reutilizar esta foto no site, Instagram ou novas peças. Identificada por Paulo como seu antigo professor André; pediu substituição em 2026-11-14."
   revisao_visual: {"data": "2026-11-12", "metodo": "inspecao-visual", "precisao": "aproximada", "estado": "revisado"}
   referencias: ["src/content/retreats/2024-saopaulo-andre-juda.md"]
   largura: 720
