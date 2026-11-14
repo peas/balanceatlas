@@ -499,3 +499,11 @@ Paulo asked for the announcements channel: **HandstandFest**, public WhatsApp Ch
 https://whatsapp.com/channel/0029Vb9UELMI1rcb0UX16B3N (same avatar; description: event, community and "Handstand Life:
 Guia de Sobrevivência"). Not linked on the site or anywhere yet; Gabriel is not an admin yet. The buyers-only Community
 recommended in Drive `pesquisas/handstandfest-whatsapp-comunidade.md` is not created.
+
+## Instagram publication QA — 14 November 2026
+Separate full-resolution covers now accompany all 63 active catalogue pieces (`public/festival/ig/covers-v1/manifest.json`;
+PNG masters local). Calendar previews have approximate UI guides; exports keep them disabled. Fourteen exercise
+previews have safer text/seal placement and no internal production note burned into the artwork; their page
+still identifies Paulo's provisional demonstration. Editorial/biography support text is larger. Compare the
+same nine posts before/after at `/instagram/#antes-depois`; recipe `scripts/festival_grid_comparison.mjs`.
+This updates preview compositions and publishing assets, not actual Instagram posts or all previous MP4 exports.

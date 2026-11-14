@@ -13,7 +13,7 @@ function BioCard({index,...p}:PieceProps & {index:number}){const item=cards[inde
  <div style={{position:'absolute',inset:0,background:'linear-gradient(180deg,rgba(10,35,28,.85),transparent 32%,transparent 65%,rgba(10,35,28,.94))'}}/>
  <Label y={65} size={28} color={CHALK}>{item.label}</Label>
  <Headline lines={item.title} y={140} size={index===2?65:88} dark/>
- <Label y={1100} size={35} color={CHALK} style={{width:index===2?670:920}}>{item.body}</Label>
+ <Label y={1020} size={42} color={CHALK} style={{width:index===2?670:920}}>{item.body}</Label>
  {index===2&&<BrandSeal x={790} y={1130} size={220} still/>}
  </Canvas></Freeze>}
 function Introduction(p:PieceProps){return <>

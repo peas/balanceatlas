@@ -9,11 +9,18 @@ import EditorialCalendar from '../../festival/ig2/EditorialCalendar';
       <nav class="ig2-nav" aria-label="Estudo de Instagram"><a href="/festival/" class="ig2-brand"><HFSelo simples /> HandstandFest</a><a href="/festival/instagram/gabriel/">Gravações do Gabriel ↗</a><a href="/festival/">Site do festival ↗</a></nav>
       <div class="ig2-intro"><div><p>PÁGINA DE TRABALHO / @HANDSTANDFEST</p><h1>Insta<span>gram.</span></h1></div><p class="ig2-summary">Uma sequência de prática, exercícios, comunidade e festival. Calendário semanal, peças em revisão e pedidos de gravação.</p></div>
     </header>
+    <details class="publication-comparison" id="antes-depois">
+      <summary>Antes e depois · o mesmo grid 3×3</summary>
+      <p>Os mesmos nove posts, na mesma ordem e com recorte central 3:4. As capas agora têm arquivos separados em resolução final; os exercícios ganharam texto dentro das guias e selo reposicionado. Outras capas foram preservadas quando o enquadramento já funcionava.</p>
+      <div class="comparison-grids"><figure><figcaption>Antes</figcaption><a href="/festival/ig/publication-comparison/grid-before.webp"><img src="/festival/ig/publication-comparison/grid-before.webp" alt="Grid anterior dos mesmos nove posts" loading="lazy"/></a></figure><figure><figcaption>Depois</figcaption><a href="/festival/ig/publication-comparison/grid-after.webp"><img src="/festival/ig/publication-comparison/grid-after.webp" alt="Grid atualizado dos mesmos nove posts" loading="lazy"/></a></figure></div>
+      <p>As guias são aproximações para revisão. Antes de postar, conferir o recorte no Instagram e adicionar música, marcações e links no próprio app. Peças educativas ainda aguardam revisão técnica.</p>
+    </details>
     <EditorialCalendar client:only="react"><p slot="fallback">Carregando as composições…</p></EditorialCalendar>
     <p class="ig2-footnote">Planejamento da comunidade · rascunhos para revisão · nenhuma postagem automática</p>
   </main>
 </FestLayout>
 <style>
+ .publication-comparison{padding:24px 0}.publication-comparison summary{cursor:pointer;font-weight:700}.publication-comparison p{max-width:80ch;line-height:1.6}.comparison-grids{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.comparison-grids figure{margin:0}.comparison-grids img{display:block;width:100%;height:auto}.comparison-grids figcaption{font-weight:700;margin-bottom:12px}@media(max-width:650px){.comparison-grids{grid-template-columns:1fr}}
   .ig2-page{max-width:1200px}.ig2-page:has([data-palette="ocre"]){--accent:#cb8b34;--stage:#22332a;--paper:#f3eddf;--white:#f3eddf}.ig2-header{padding-top:25px;border-bottom:2px solid var(--stage)}
   .ig2-nav{display:flex;justify-content:space-between;align-items:center;gap:25px;padding-bottom:35px;font:11px var(--mono)}
   .ig2-nav a{color:var(--stage);text-decoration:none}.ig2-nav a:hover{text-decoration:underline}.ig2-brand{display:flex;align-items:center;gap:10px;font-weight:700}.ig2-brand :global(.selo){width:45px;height:45px}

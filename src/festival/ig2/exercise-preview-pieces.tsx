@@ -11,10 +11,9 @@ function ExercisePreview({id,seconds,...props}:PieceProps&{id:string;seconds:num
  return <Canvas {...props} dark signature={false}>
   <Freeze active={frame>=freezeAt} frame={freezeAt}><Video src={`${MEDIA}/gabriel-filming-v1/${id}.mp4`} muted style={{position:'absolute',inset:0,width:'100%',height:'100%',objectFit:'cover',filter:'saturate(.65) contrast(1.08) brightness(1.08)'}}/></Freeze>
   <div style={{position:'absolute',inset:0,background:'linear-gradient(180deg,rgba(10,35,28,.8),transparent 28%,transparent 70%,rgba(10,35,28,.75))'}}/>
-  <Label y={180} color={CHALK} size={28}>HANDSTAND LIFE · ESTUDO COM PAULO</Label>
-  <Headline lines={titles[id]} y={245} size={72} dark/>
-  <Label y={1520} color={CHALK} size={30} style={{width:650}}>Prévia de edição. Gabriel vai refazer e revisar a demonstração.</Label>
-  <BrandSeal x={800} y={1480} size={215}/>
+  <Label y={275} color={CHALK} size={34}>HANDSTAND LIFE</Label>
+  <Headline lines={titles[id]} y={340} size={72} dark/>
+  <BrandSeal x={700} y={580} size={230}/>
  </Canvas>;
 }
 export const EXERCISE_PREVIEW_PIECES:Piece[]=available.map(b=>{const seconds=b.sample!.end-b.sample!.start;return {id:`exercicio-${b.id}`,title:`${b.title} · prévia com Paulo`,format:'Reel',description:`Gravação provisória do Paulo. ${b.subtitle} Correção leve de brilho, contraste e saturação; não é hachura gerada. Falta refilmagem e revisão técnica do Gabriel, texto e narração finais.`,look:'Imagem ampla / contraste suave / ocre',movement:'Demonstração completa do sample, seguida por 3 s de quadro congelado. Sem áudio original na peça.',slides:[{name:b.title,component:(p:PieceProps)=><ExercisePreview {...p} id={b.id} seconds={seconds}/>,height:1920,seconds:seconds+3,cover:Math.round(b.sample!.poster*30),cues:[{label:'Demonstração',frame:Math.round(b.sample!.poster*30)},{label:'Movimento',frame:Math.round(seconds*15)},{label:'Congela',frame:Math.round(seconds*30)+30}]}]}});

@@ -634,8 +634,8 @@
     "shots": [
       {
         "url": "/festival/ig/review-v1/natureza-cachoeira-0.webp",
-        "label": "0.0 s",
-        "frame": 0
+        "label": "Imagem completa",
+        "frame": 29
       }
     ]
   },
@@ -653,8 +653,8 @@
     "shots": [
       {
         "url": "/festival/ig/review-v1/natureza-comunidade-0.webp",
-        "label": "0.0 s",
-        "frame": 0
+        "label": "Imagem completa",
+        "frame": 29
       }
     ]
   },
@@ -672,8 +672,8 @@
     "shots": [
       {
         "url": "/festival/ig/review-v1/natureza-pike-0.webp",
-        "label": "0.0 s",
-        "frame": 0
+        "label": "Imagem completa",
+        "frame": 29
       }
     ]
   },
@@ -830,13 +830,13 @@
     "shots": [
       {
         "url": "/festival/ig/review-v1/exercicio-urso-prancha-0.webp",
-        "label": "9.5 s",
-        "frame": 285
+        "label": "12.0 s",
+        "frame": 360
       },
       {
         "url": "/festival/ig/review-v1/exercicio-urso-prancha-1.webp",
-        "label": "12.0 s",
-        "frame": 360
+        "label": "9.5 s",
+        "frame": 285
       },
       {
         "url": "/festival/ig/review-v1/exercicio-urso-prancha-2.webp",
@@ -872,13 +872,13 @@
     "shots": [
       {
         "url": "/festival/ig/review-v1/exercicio-canoinha-0.webp",
-        "label": "8.5 s",
-        "frame": 255
+        "label": "11.0 s",
+        "frame": 330
       },
       {
         "url": "/festival/ig/review-v1/exercicio-canoinha-1.webp",
-        "label": "11.0 s",
-        "frame": 330
+        "label": "8.5 s",
+        "frame": 255
       },
       {
         "url": "/festival/ig/review-v1/exercicio-canoinha-2.webp",
@@ -988,13 +988,13 @@
     "shots": [
       {
         "url": "/festival/ig/review-v1/exercicio-parede-0.webp",
-        "label": "16.5 s",
-        "frame": 495
+        "label": "18.0 s",
+        "frame": 540
       },
       {
         "url": "/festival/ig/review-v1/exercicio-parede-1.webp",
-        "label": "18.0 s",
-        "frame": 540
+        "label": "16.5 s",
+        "frame": 495
       },
       {
         "url": "/festival/ig/review-v1/exercicio-parede-2.webp",
@@ -1114,13 +1114,13 @@
     "shots": [
       {
         "url": "/festival/ig/review-v1/exercicio-costelas-0.webp",
-        "label": "6.5 s",
-        "frame": 195
+        "label": "7.0 s",
+        "frame": 210
       },
       {
         "url": "/festival/ig/review-v1/exercicio-costelas-1.webp",
-        "label": "7.0 s",
-        "frame": 210
+        "label": "6.5 s",
+        "frame": 195
       },
       {
         "url": "/festival/ig/review-v1/exercicio-costelas-2.webp",
@@ -1156,13 +1156,13 @@
     "shots": [
       {
         "url": "/festival/ig/review-v1/exercicio-ombros-box-0.webp",
-        "label": "13.5 s",
-        "frame": 405
+        "label": "15.0 s",
+        "frame": 450
       },
       {
         "url": "/festival/ig/review-v1/exercicio-ombros-box-1.webp",
-        "label": "15.0 s",
-        "frame": 450
+        "label": "13.5 s",
+        "frame": 405
       },
       {
         "url": "/festival/ig/review-v1/exercicio-ombros-box-2.webp",
@@ -1312,7 +1312,7 @@
     "id": "em-foco-yuval",
     "title": "Em foco: Yuval Ayalon",
     "format": "Carrossel",
-    "description": "Estudo com foto do acervo de professores. Conferir crédito e permissão para publicação. Fonte: https://www.yuvalonhands.com/. Referência editorial, sem selo HF e sem implicar participação no festival. Vídeo e hachura futuros dependem de material autorizado.",
+    "description": "CAPA PROVISÓRIA: substituir retrato por foto de handstand/exercício antes de publicar. Estudo com foto do acervo de professores. Conferir crédito e permissão para publicação. Fonte: https://www.yuvalonhands.com/. Referência editorial, sem selo HF e sem implicar participação no festival. Vídeo e hachura futuros dependem de material autorizado.",
     "movement": "Três cartões estáticos. A moldura destaca a pessoa; não há assinatura de evento.",
     "name": "Conheça",
     "cues": [],
@@ -1341,7 +1341,7 @@
     "id": "em-foco-emmet",
     "title": "Em foco: Emmet Louis",
     "format": "Carrossel",
-    "description": "Estudo com foto do acervo de professores. Conferir crédito e permissão para publicação. Fonte: https://emmetlouis.com/. Referência editorial, sem selo HF e sem implicar participação no festival. Vídeo e hachura futuros dependem de material autorizado.",
+    "description": "CAPA PROVISÓRIA: substituir retrato por foto de handstand/exercício antes de publicar. Estudo com foto do acervo de professores. Conferir crédito e permissão para publicação. Fonte: https://emmetlouis.com/. Referência editorial, sem selo HF e sem implicar participação no festival. Vídeo e hachura futuros dependem de material autorizado.",
     "movement": "Três cartões estáticos. A moldura destaca a pessoa; não há assinatura de evento.",
     "name": "Conheça",
     "cues": [],
@@ -1847,7 +1847,7 @@
         "frame": 441
       }
     ],
-    "cover": 0,
+    "cover": 395,
     "index": 0,
     "count": 1,
     "shots": [
@@ -1889,7 +1889,7 @@
         "frame": 423
       }
     ],
-    "cover": 0,
+    "cover": 377,
     "index": 0,
     "count": 1,
     "shots": [
@@ -1931,7 +1931,7 @@
         "frame": 525
       }
     ],
-    "cover": 0,
+    "cover": 479,
     "index": 0,
     "count": 1,
     "shots": [
@@ -1973,7 +1973,7 @@
         "frame": 564
       }
     ],
-    "cover": 0,
+    "cover": 518,
     "index": 0,
     "count": 1,
     "shots": [
@@ -2015,7 +2015,7 @@
         "frame": 360
       }
     ],
-    "cover": 0,
+    "cover": 314,
     "index": 0,
     "count": 1,
     "shots": [
@@ -2057,7 +2057,7 @@
         "frame": 1005
       }
     ],
-    "cover": 0,
+    "cover": 959,
     "index": 0,
     "count": 1,
     "shots": [
@@ -2099,7 +2099,7 @@
         "frame": 675
       }
     ],
-    "cover": 0,
+    "cover": 629,
     "index": 0,
     "count": 1,
     "shots": [
@@ -2141,7 +2141,7 @@
         "frame": 384
       }
     ],
-    "cover": 0,
+    "cover": 338,
     "index": 0,
     "count": 1,
     "shots": [

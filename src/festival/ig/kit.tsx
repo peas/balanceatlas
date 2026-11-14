@@ -38,8 +38,8 @@ export const MEDIA = getRemotionEnvironment().isRendering ? staticFile('festival
 export const f = (seconds: number) => Math.round(seconds * FPS);
 
 export type Formato = 'reel' | 'story' | 'card';
-// Where text and faces may sit. `y1` is the conservative limit (Meta's 35% bottom margin); `yMax` is the hard one
-// (caption and audio row of the app). Right margin leaves room for the like/comment/share column.
+// Working review margins, not platform specifications. UI varies by device and placement.
+// y1 is conservative; yMax and the right column require checking in the actual uploader.
 export const SAFE: Record<Formato, { x0: number; x1: number; y0: number; y1: number; yMax: number }> = {
   reel: { x0: 65, x1: 950, y0: 269, y1: 1248, yMax: 1500 },
   story: { x0: 65, x1: 1015, y0: 250, y1: 1580, yMax: 1580 },
@@ -77,7 +77,13 @@ const Guias = ({ formato }: { formato: Formato }) => {
     position: 'absolute', left: z.x0, top: z.y0, width: z.x1 - z.x0, height: y1 - z.y0, border: `3px ${dash} ${color}`, boxSizing: 'border-box',
   });
   return (
-    <AbsoluteFill style={{ pointerEvents: 'none' }}>
+    <AbsoluteFill style={{ pointerEvents: 'none', zIndex: 1000 }}>
+      {formato !== 'card' && <>
+        <div style={{position:'absolute',inset:'0 0 auto',height:250,background:'rgba(230,40,70,.25)'}} />
+        <div style={{position:'absolute',inset:'auto 0 0',height:formato==='reel'?400:340,background:'rgba(230,40,70,.25)'}} />
+        {formato==='reel'&&<div style={{position:'absolute',right:0,top:550,bottom:400,width:150,background:'rgba(230,40,70,.25)'}}/>}
+        <div style={{position:'absolute',top:90,left:65,color:'white',background:'#123d33',padding:14,font:'30px monospace'}}>GUIA APROXIMADA · CONFERIR NO APP</div>
+      </>}
       <div style={box(z.yMax, 'rgba(255,255,255,.55)', 'dashed')} />
       <div style={box(z.y1, '#00e5ff', 'solid')} />
       {formato === 'reel' && (

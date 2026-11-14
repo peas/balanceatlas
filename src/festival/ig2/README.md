@@ -184,3 +184,10 @@ See `docs/instagram/2026-11-14-nordestenerd-publication-lessons.md`: explicit po
 separate image-led Reel covers, phone-scale typography, native Story reposts with purpose, and confirmation
 before recording publication. NN's historical web UI behavior is not a current platform guarantee.
 Export packages and UI-safe overlays are proposed next steps, not implemented by this documentation update.
+
+### Publication handoff and grid comparison (14 November 2026)
+Run `festival_review_stills.mjs` after bundling to refresh every active piece's review frames and independent
+full-resolution cover (local PNG, public WebP + frame manifest). Calendar supports approximate UI guides;
+render defaults keep them off. `festival_instagram_profile.mjs` uses the covers for its fixed nine-post grid;
+`festival_grid_comparison.mjs` compares against the preserved pre-change grid. See
+`docs/instagram/2026-11-14-nordestenerd-publication-lessons.md` for implemented changes and manual uploader checks.

@@ -1,6 +1,7 @@
 // Repo-native layout study. Reuses approved engraving/brush; no regenerated anatomy.
 import fs from 'node:fs/promises';
 import sharp from 'sharp';
+if(process.argv.includes('--help')){console.log('Usage: node scripts/festival_instagram_profile.mjs\nRegenerates avatar studies and the fixed nine-post grid from current full-resolution covers, with thumbnail fallback.');process.exit(0);}
 const out='design/instagram-profile-2026-11-14';
 await fs.mkdir(out,{recursive:true});
 const data=async(p,m)=>`data:${m};base64,${(await fs.readFile(p)).toString('base64')}`;
@@ -25,7 +26,7 @@ await sharp({create:{width:1280,height:1440,channels:4,background:cream}}).compo
 const shots=JSON.parse(await fs.readFile('src/festival/ig2/review-shots.json','utf8'));
 // Nine available pieces, newest first in profile order. Editorial preview, not a live account screenshot.
 const ids=['agustin-apresentacao','lugar','gabriel-transicoes-tela','exercicio-canoinha','em-foco-marie-eve','natureza-piscina-press-solo','ed-festival','ed-formas','ed-comunidade'];
-const layers=[];for(let i=0;i<ids.length;i++){const p=shots.find(p=>p.id===ids[i]);if(!p)throw Error(ids[i]);const image=p.shots[0].url;layers.push({input:await sharp('public'+image).resize(360,480,{fit:'cover',position:'centre'}).png().toBuffer(),left:32+(i%3)*366,top:200+Math.floor(i/3)*486});}
+const layers=[];for(let i=0;i<ids.length;i++){const p=shots.find(p=>p.id===ids[i]);if(!p)throw Error(ids[i]);const candidate=`public/festival/ig/covers-v1/${ids[i]}.webp`;const image=await fs.access(candidate).then(()=>candidate.slice(6)).catch(()=>p.shots[0].url);layers.push({input:await sharp('public'+image).resize(360,480,{fit:'cover',position:'centre'}).png().toBuffer(),left:32+(i%3)*366,top:200+Math.floor(i/3)*486});}
 const heading=`<svg width="1156" height="1730"><style>text{font-family:Arial,sans-serif;fill:${green}}</style><text x="32" y="65" font-size="36" font-weight="bold">HANDSTANDFEST</text><text x="32" y="108" font-size="25">Estudo de grid 3×3 · capas das peças atuais</text><text x="32" y="149" font-size="21">Mais recentes no alto · alternância de foto, gravura e informação</text><text x="32" y="1700" font-size="20">Prévia visual: recorte central 3:4. Capas finais podem receber ajustes próprios.</text></svg>`;
 await sharp({create:{width:1156,height:1730,channels:4,background:cream}}).composite([...layers,{input:Buffer.from(heading)}]).png().toFile(`${out}/grid-3x3.png`);
 await fs.writeFile(`${out}/manifest.json`,JSON.stringify({figure:'gravura-gabriel-reta-profile',variants:variants.map(v=>v.name),gridNewestFirst:ids,note:'Separate layout studies; no change to official logo.'},null,2));

@@ -13,7 +13,7 @@ export function EditorialArt({title,sub,dark=false,straight=false,story=false,im
   {photographic ? <><Img src={EDITORIAL_IMAGES[image!].url.startsWith('/')?resolveSource(EDITORIAL_IMAGES[image!].url):EDITORIAL_IMAGES[image!].url} alt={EDITORIAL_IMAGES[image!].alt} style={{position:'absolute',inset:0,width:'100%',height:'100%',objectFit:'cover'}}/><div style={{position:'absolute',inset:0,background:'linear-gradient(180deg,rgba(10,35,28,.8),transparent 32%,transparent 65%,rgba(10,35,28,.88))'}}/></> : <EngravingArtwork figure={engraving ?? (straight?'straight':'straddle')} paint={paint ?? (straight?'oval':'sweep')} paintTone={dark?'light':'ochre'} background="none" imageComponent={Img} resolveSource={resolveSource} style={{position:'absolute',left:30,top:260,width:1020,height:height-410}}/>}
   <Label y={story?200:65} size={28} color={photographic||dark?CHALK:STAGE}>HANDSTANDFEST · COMUNIDADE</Label>
   <Headline lines={title} y={story?275:135} size={title.some(line=>line.length>17)?64:80} dark={photographic||dark} accentLine={photographic?0:-1}/>
-  <Label y={story?1510:1210} size={35} color={photographic||dark?CHALK:STAGE} style={{width:story||signed?680:920}}>{sub}</Label>
+  <Label y={story?1290:1210} size={42} color={photographic||dark?CHALK:STAGE} style={{width:story||signed?680:920}}>{sub}</Label>
  </Canvas></Freeze>;
 }
 function piece(id:string,title:string,variants:{title:string[];sub:string;dark?:boolean;straight?:boolean;image?:EditorialImageKey;engraving?:EngravingFigure;paint?:PaintShape}[]):Piece {

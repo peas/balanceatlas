@@ -205,3 +205,8 @@ Nature/pool batch (12 Nov 2026): 8 videos + 4 new photos catalogued; high-res so
 Notes: `docs/instagram/2026-11-14-nordestenerd-publication-lessons.md`. Adopt explicit crop verification,
 separate action covers and purpose-driven Story reposts; do not copy old UI selectors or universalize
 NN duration/loudness claims. Publication packages and UI overlays remain proposed, not implemented.
+
+Publication handoff (14 Nov): dotclaude shared Instagram/Remotion playbooks committed/pushed (`1b60a12`).
+HF now exports separate covers for 63 active pieces; approximate UI guides in calendar; exercise seal/text
+and editorial support copy adjusted. Same-nine grid before/after at `/instagram/#antes-depois`;
+recipe/provenance in `docs/instagram/2026-11-14-nordestenerd-publication-lessons.md`. No Instagram posting.

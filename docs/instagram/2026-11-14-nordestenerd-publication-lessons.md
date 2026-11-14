@@ -69,3 +69,13 @@ Instagram UI, platform limits, reach or music licensing. No Instagram publicatio
 
 Existing source records: `src/festival/ig2/README.md`, shared `instagram-creation` and `videos-remotion`
 playbooks. Keep platform mechanics dated and reverify in the actual publishing UI before use.
+
+## Applied in HF — 14 November 2026
+
+- Every active catalogue piece receives a separate full-resolution action cover, with composition/frame/dimensions in `public/festival/ig/covers-v1/manifest.json`. PNG masters stay in `local/festival/covers`; web downloads are high-quality WebP. The still script continues rendering all review frames.
+- Shared review guides now show approximate top/bottom/right UI occlusion, including legacy compositions. Calendar previews expose a toggle; exports default to guides off. These are not platform specifications.
+- Fourteen provisional exercise layouts move headline/label below the top UI reserve and their larger seal away from the lower-right controls. Production notes remain visible in the page description, not burned into the image.
+- Editorial and Gabriel biography supporting copy increases from 35 to 42 px at 1080 width. Existing full-frame media and scene-specific framing remain intact; no universal zoom or speed-up.
+- Calendar entries link to their separate covers. Publication remains manual: verify original crop, native mentions/music/links and actual confirmation. No queue item has been marked published merely because the site was deployed.
+- `design/instagram-publication-2026-11-14/` preserves the original grid and updated grid with identical nine IDs/order/3:4 crop. `scripts/festival_grid_comparison.mjs` produces the comparison shown at `/instagram/#antes-depois`. Expect localized changes, not nine redesigned covers.
+- Shared playbooks live in dotclaude (`skills/instagram-creation/SKILL.md`, `skills/videos-remotion/SKILL.md`), referenced by its global CLAUDE.md.
