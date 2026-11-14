@@ -2,7 +2,7 @@
 // Shared shell for /festival and its subpages (pt-BR, own identity; see CLAUDE.md "Hidden pages").
 // Head, fonts, global stylesheet, footer and the small page scripts.
 import '../festival/festival.css';
-import { FEST, VENDA } from '../festival/data';
+import { FEST, SOCIAL, VENDA } from '../festival/data';
 import FestMeta from '../components/fest/FestMeta.astro';
 import FestNav from '../components/fest/FestNav.astro';
 import HFSelo from '../components/fest/HFSelo.astro';
@@ -45,6 +45,10 @@ const {
         <a href="/festival/sobre/">Sobre o evento</a>
         <a href="/festival/handstand/">Sobre handstand</a>
         <a href="/festival/mundo/">Pelo mundo</a>
+      </nav>
+      <nav class="foot-nav" aria-label="Redes">
+        <a href={SOCIAL.instagram} target="_blank" rel="noopener">Instagram</a>
+        <a href={SOCIAL.whatsapp} target="_blank" rel="noopener">Canal no WhatsApp</a>
       </nav>
     </footer>
 

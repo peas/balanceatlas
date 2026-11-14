@@ -493,3 +493,9 @@ only the exercise series goes to Shorts, same Remotion MP4, search-style titles.
 Publication comparison (14 November 2026): `docs/instagram/2026-11-14-nordestenerd-publication-lessons.md`
 records NN's real crop/cover incidents and adaptations for HF. Use separate action-led covers and verify
 portrait crops in the actual uploader. Don't inherit NN duration/reach/loudness claims as platform rules.
+
+## WhatsApp channel — 14 November 2026
+Paulo asked for the announcements channel: **HandstandFest**, public WhatsApp Channel created from his own WhatsApp,
+https://whatsapp.com/channel/0029Vb9UELMI1rcb0UX16B3N (same avatar; description: event, community and "Handstand Life:
+Guia de Sobrevivência"). Not linked on the site or anywhere yet; Gabriel is not an admin yet. The buyers-only Community
+recommended in Drive `pesquisas/handstandfest-whatsapp-comunidade.md` is not created.
