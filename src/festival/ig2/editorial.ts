@@ -30,15 +30,13 @@ const ORIGINAL: EditorialDay[] = [
 const old=(index:number, changes:Partial<EditorialDay>={}):EditorialDay=>({...ORIGINAL[index-1],referenceDay:index,...changes});
 const exercise=(title:string,hook:string,missing:string):EditorialDay=>({title,hook,pillar:'Exercício',format:'Reel',story:'Compartilhar a demonstração + uma dúvida específica. Gabriel grava sem falar; narração entra depois.',missing,caption:'Handstand Life · Guia de Sobrevivência. Uma demonstração, um detalhe para observar. Texto final após a captação e revisão do Gabriel.',asset:'/festival/instagram/gabriel/'});
 const nature=(piece:string,title:string,hook:string,caption:string):EditorialDay=>({piece,title,hook,caption,pillar:'Prática',format:'Reel',story:'Compartilhar o Reel e destacar o detalhe observado, sem acrescentar uma segunda aula.',missing:'Conferir nomes das formas e texto com Gabriel; manter a ação completa antes do congelamento.'});
-const spotlightIds:Record<string,string>={'Marie-Ève Dicaire':'em-foco-marie-eve','Nicolas Montes de Oca':'em-foco-nicolas','Yuval Ayalon':'em-foco-yuval','Emmet Louis':'em-foco-emmet'};
-const spotlight=(name:string,source:string,angle:string):EditorialDay=>({piece:spotlightIds[name],title:`Em foco: ${name}`,hook:`Você conhece ${name}?`,pillar:'Repertório',format:'Carrossel',story:'Compartilhar a fonte original e o que chamou atenção no trabalho dessa pessoa.',missing:'Selecionar imagem da pessoa praticando; capa tipográfica isolada não é mais aprovada. Sem selo HF e sem sugerir participação no festival. Vídeo/hachura aguardam fonte e autorização.',caption:angle,asset:source});
 const PLAN: EditorialDay[]=[
 // Week 1: community, foundation, invitation, real movement, repertoire.
 old(1,{title:'Treinar sozinho ou junto?',hook:'Treinar junto pode levar você mais longe.',caption:'Estamos fortalecendo a comunidade de handstand do Brasil. Treinar junto é observar, conversar e trocar experiências. Que grupo ou lugar da sua cidade devemos conhecer?'}),
 exercise('Canoinha: pernas e pelve','Como está sua canoinha?','Filmar de perfil as pernas e a posição da pelve, com variação acessível. Entrada, sustentação e saída; voz depois.'),
 old(4,{title:'Três dias com quem gosta de handstand',hook:'Conheça o 1º HandstandFest!'}),
 nature('natureza-piscina-press-solo','Press saindo da água','Observe o caminho dos ombros.','A subida a força não termina quando os pés chegam ao alto. Neste trecho, vamos observar o avanço dos ombros e o retorno após a subida.'),
-spotlight('Marie-Ève Dicaire','https://linktr.ee/dicairemarieeve','Uma referência que aproxima parada de mãos e expressão artística. Apresentar o trabalho a partir de suas próprias fontes.'),
+exercise('Press: por onde começar a compressão?','Seu pé sai do apoio?','Filmar Gabriel demonstrando compressão com apoio e uma variação acessível. Definir a progressão com ele; não copiar a aula de uma referência.'),
 old(6,{title:'Ainda está na parede? Tem turma para você.',hook:'HandstandFest é para todos os níveis.',caption:'Ainda está treinando na parede? Tem turma para você. O festival reúne quem está começando e quem já pratica. Confira os critérios das turmas e as condições de inscrição no site.'}),
 old(2,{title:'Transições: do pike ao tuck',hook:'Do pike ao tuck.',caption:'Mudar de forma também ensina. Acompanhe a transição do Gabriel e observe o caminho entre uma posição e outra.'}),
 // Week 2: shoulders and exits, venue, references and a light moment.
@@ -47,7 +45,7 @@ old(13,{title:'Nosso encontro no Trapézio Voador',hook:'Onde vai acontecer o Ha
 old(3,{title:'Reta, straddle e pike',hook:'Dê nome às formas.',caption:'Reta ou palito: pernas juntas e corpo estendido. Straddle ou afastado: pernas abertas. Pike ou sete: dobra no quadril. Compare cada imagem e reconheça o que mudou.'}),
 exercise('Saída em estrela','Como sair sem cair de costas?','Gabriel demonstra progressão de saída lateral em estrela, com espaço livre e câmera de frente e de perfil. Definir versão para iniciantes antes de filmar.'),
 old(11,{hook:'Aqui mão não é falta!'}),
-spotlight('Nicolas Montes de Oca','https://balancenotion.com/','Conheça o trabalho de Nicolas no equilíbrio sobre as mãos. Foco em uma apresentação ou contribuição, sem ranking e sem chamada para o festival.'),
+exercise('Punhos: preparar os apoios','Como você prepara os punhos?','Filmar preparação dos punhos e distribuição do apoio escolhidas por Gabriel. Corpo e mãos visíveis; voz depois.'),
 nature('natureza-deck-pike-reta','Pike press: ombros na subida','O caminho dos ombros no press.','Observe o avanço dos ombros durante a subida e sua retomada. O vídeo abre uma conversa sobre uma execução específica, não uma regra para todos os corpos.'),
 // Week 3: coordination, teacher story and wall confidence.
 exercise('Costelas, peito e canoinha','O que quer dizer costelas para dentro?','Filmar de perfil no chão e em apoio: costelas e peito recolhidos, posição da pelve e respiração. Gabriel escolhe a demonstração e os limites da comparação.'),
@@ -55,7 +53,7 @@ old(10,{piece:'agustin-apresentacao',format:'Carrossel',title:'Conheça Gabriel 
 old(16,{title:'Filme e reveja seu treino',hook:'Filme. Reveja. Troque.',caption:'O handstand pede atenção aos detalhes. Filme, reveja e converse sobre o que percebeu. Estamos preparando Handstand Life: Guia de Sobrevivência, para reunir demonstrações e aprendizados.'}),
 exercise('Parede: tirar um pé, depois o outro','Como sair do apoio da parede?','Filmar barriga para a parede, retirando um pé e depois o outro sem impulso. Mostrar entrada e saída escolhidas por Gabriel; câmera lateral, apoios visíveis.'),
 old(7,{title:'Handstand e cultura do movimento',hook:'Encontre seu próprio fluxo.',caption:'O handstand também aparece na cultura do movimento. Música, corpo e mudanças de forma podem se encontrar numa sequência. Um trecho do Gabriel para observar esse fluxo.'}),
-spotlight('Yuval Ayalon','https://www.yuvalonhands.com/','Da ginástica e dos palcos à prática e ao ensino de handstand. Conheça a trajetória contada por Yuval e uma demonstração no canal original.'),
+{...old(16),title:'Uma tentativa não conta o treino inteiro',hook:'O que aconteceu antes desse acerto?',piece:undefined,missing:'Filmar tentativas, pausa e repetição do mesmo exercício. Selecionar fotos reais para um carrossel; não fabricar evolução.'},
 nature('natureza-piscina-press-dupla','Press em dupla','Subir a força, lado a lado.','Dois corpos, dois tempos de subida. Observe a entrada saindo da água e como cada um organiza os apoios. É um registro de prática, não uma indicação para treinar na borda da piscina.'),
 // Week 4: foundations return alongside community and invitations.
 exercise('Mãos: distância e apoio','Onde você coloca suas mãos?','Plano frontal e detalhe dos dedos. Comparar distâncias de apoio escolhidas por Gabriel e explicar o contexto; evitar uma largura universal.'),
@@ -63,7 +61,7 @@ old(19,{title:'O que você leva do festival?',hook:'Prática, ferramentas e cont
 nature('natureza-deck-tuck-reta','Tuck, reta e posição da cabeça','Transições para ganhar confiança.','Mudanças de forma e posição da cabeça fazem parte dos exercícios de controle. Veja a demonstração; a progressão precisa acompanhar o nível de cada pessoa.'),
 old(15,{title:'Caminhada do urso: mãos e ombros',hook:'Sinta os apoios no urso.'}),
 {...old(1),piece:'natureza-comunidade',title:'Tem encontro na sua cidade?',hook:'Estamos mapeando lugares para treinar.',format:'Estático',referenceDay:undefined},
-spotlight('Emmet Louis','https://emmetlouis.com/','Flexibilidade, prática e ensino: conheça o trabalho de Emmet Louis e sua participação na Handstand Factory.'),
+{...old(1),title:'Quem treina perto de você?',hook:'Onde a gente se encontra para treinar?',piece:undefined,missing:'Confirmar um encontro real com organizadores e autorização das fotos. Informar cidade, frequência e contato público.'},
 old(21,{title:'Handstand em outro chão',hook:'O apoio muda a experiência.',caption:'Areia, blocos e paralelas oferecem experiências diferentes. Esta foto do Gabriel é um registro pessoal: observar o cenário não significa recomendar rochas ou desníveis como local de treino.'}),
 // Week 5: accessible drills, repetition and the next conversation.
 exercise('Sapinho: primeiro contato com o equilíbrio','Como está o seu sapinho?','Filmar a progressão que Gabriel usa com iniciantes, apoio das mãos, transferência de peso e saída. Corpo inteiro + close; narração posterior.'),

@@ -4,10 +4,10 @@ photo: "/images/coaches/yuval-ayalon.webp"
 location:
   city: "Los Angeles"
   country: "USA"
-instagram: "yuvalayalon"
+instagram: "yuval_on_hands"
 featured: true
 ---
 
 Hand balancer and movement artist. Teaches workshops and intensives worldwide.
 
-Source: [instagram.com/yuvalayalon](https://instagram.com/yuvalayalon)
+Source: [instagram.com/yuval_on_hands](https://instagram.com/yuval_on_hands)

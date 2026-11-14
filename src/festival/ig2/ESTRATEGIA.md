@@ -7,6 +7,10 @@ verificar a abertura de vendas em 18/11 antes de publicar e reposicionar o item 
 
 Direção consolidada: [CURRENT.md](../CURRENT.md). A revisão de 13–14/11 prevalece sobre os relatos datados abaixo.
 
+## Atualização de 14/11: referências e pausa de “Em foco”
+
+As quatro apresentações de handbalancers famosos saem do calendário e biblioteca ativos por decisão do Paulo. Estudos antigos ficam arquivados. Entram pautas próprias de compressão, punhos, tentativas reais e encontros. A pesquisa de 80 posts, hashtag e Shorts está em [Referências observadas](../../../docs/instagram/2026-11-14-handstand-references.md), com dados em JSON ao lado. Priorizar dúvidas específicas e ação visível; alternar ensino, prática, paisagem e comunidade. Compartilhamentos não disponíveis não significam zero, e popularidade não valida execução técnica.
+
 ## Cadência e intenção
 
 21 dias como piloto: um post + um story de apoio por dia, se houver material bom e tempo para responder.

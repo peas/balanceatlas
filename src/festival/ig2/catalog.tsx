@@ -43,7 +43,7 @@ const second: CatalogPiece[] = [...EXERCISE_PREVIEW_PIECES, ...SPOTLIGHT_PIECES,
 
 const nature:CatalogPiece[]=NATURE_PIECES.map(p=>({...p,style:p.format==='Reel'?'congela':'tela-cheia'}));
 // Superseded visual experiments stay in source/history, not in the active publishing queue.
-export const RETIRED_PIECES = new Set(['linha','arte-freeze-amarelo','fotos-ocre','fotos-ocre-motion','olhar']);
+export const RETIRED_PIECES = new Set(['linha','arte-freeze-amarelo','fotos-ocre','fotos-ocre-motion','olhar', ...SPOTLIGHT_PIECES.map(p => p.id)]);
 export const CATALOG: CatalogPiece[] = STYLES.flatMap((s) => [...first, ...second, ...nature].filter((p) => p.style === s.id && !RETIRED_PIECES.has(p.id)));
 
 // One player per piece: a carousel or a story sequence plays as one composition, slide after slide, and the

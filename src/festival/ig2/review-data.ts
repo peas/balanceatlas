@@ -1,4 +1,5 @@
 import shots from './review-shots.json';
+import { RETIRED_PIECES } from './catalog';
 import { EDITORIAL } from './editorial';
 import { suggestions } from './review-suggestions';
 import batch from './natureza.json';
@@ -7,7 +8,7 @@ const initialRows=batch.map((p,i)=>({id:p.id,title:p.title,kind:p.kind==='reel'?
 initialRows.push({id:'gabriel-transicoes-tela',title:'Gabriel · entre formas',kind:'Reel',goal:'Valorizar o percurso entre formas, além da posição final.',hook:'TRANSIÇÕES:\nPIKE E TUCK.',close:'PRATIQUE ATÉ\nFICAR SUAVE.',caption:'Legenda a revisar no calendário; este painel registra os textos efetivos da composição.',freeze:6,art:true,url:'/festival/instagram/#gabriel-hachura'});
 
 
-const rows=shots.map(p=>{
+const rows=shots.filter(p=>!RETIRED_PIECES.has(p.id)).map(p=>{
  const original=initialRows.find(r=>r.id===p.id),day=EDITORIAL.find(d=>d.piece===p.id);
  const group=day?'Calendário':p.id.startsWith('natureza-')?'Natureza e água':'Biblioteca e alternativas';
  return {...original,id:p.id,title:p.title,kind:p.format,goal:original?.goal||day?.hook||p.description,hook:original?.hook||'',close:original?.close||'',caption:original?.caption||day?.caption||'Legenda ainda não registrada para esta versão.',freeze:original?.freeze||0,art:original?.art||false,url:original?.url||'/festival/instagram/',description:p.description,movement:p.movement,group,shots:p.shots,suggestion:suggestions[p.id]||('Proposta: '+p.title+'\nDefinir um detalhe visível como foco, em vez de perguntar genericamente sobre a prática.'),day:day?EDITORIAL.indexOf(day)+1:0};

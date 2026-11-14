@@ -110,6 +110,7 @@ engraving with independent paint. Home2 and old window/palette studies are histo
 Canonical event/ticket facts: `src/festival/data.ts` (`FEST`, `VENDA`, `LOTES`, `SYMPLA`).
 Three full passes: 450 + 45 / 550 + 55 / 650 + 65 BRL; quantities 10 / 35 / 15.
 This records approved site pricing, not proof that Sympla's external lots are configured.
+Famous-balancer “Em foco” posts are paused; research and observations: `docs/instagram/2026-11-14-handstand-references.md` (raw sample beside it). Use references for original lessons, not third-party media reuse.
 Older initial setup notes were moved to `docs/festival-direction-history.md` rather than deleted.
 
 ## Festival footage archive and Instagram (Nov 2026)

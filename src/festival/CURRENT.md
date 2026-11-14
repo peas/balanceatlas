@@ -6,7 +6,7 @@ Reviewed with Paulo on 14 November 2026. This is the current decision summary; d
 
 - One brand, HandstandFest. Ochre #cb8b34, light ochre #dfab5b, cream #f3eddf, deep green #123d33. Archivo display and Space Mono support; follow existing font tokens.
 - Use the original connected HF and v07 brush paths. Approved social avatar: Gabriel's straight profile beside connected HF on ONE shared ochre brush. `/divulgacao/` is the public download kit.
-- Photography/action dominates. Full or near-full video, legible body, hands and feet retained. No small media window beneath oversized copy as the default. Covers show a real action/exercise, including athlete spotlights.
+- Photography/action dominates. Full or near-full video, legible body, hands and feet retained. No small media window beneath oversized copy as the default. Covers show a real action/exercise, including future authorized profiles.
 - Larger HF seal on Reels, static Stories and standalone images. Carousel interior slides stay unsigned; final useful/informative slide can carry the signature. Ochre gesture is recurring, not duplicated on already painted artwork.
 - Site: no random decorative bars/blocks over athletes and no paint behind teacher cards. Keep meaningful highlights. Current shared frame/CTA tokens take precedence over historic shape experiments.
 - Generated anatomical engraving is selective, not ordinary grayscale: preserve real pose, inspect hands, clothes and silhouette. Keep person, paint, scene, logo and text independent. Approved variants: natural scenery + 65% intermediate ochre + engraved foreground; or engraved figure + ochre on deep green/cream.
@@ -20,7 +20,7 @@ Community and useful practice, not a viral-content product. Alternate concrete t
 
 Proposed start: Wednesday 18 November 2026. Roughly one post and a supporting Story per day when useful and ready, not a rigid quota. Use native reposts with context/question/link rather than producing a duplicate every day. Review after the first week. #handstandlife for practice/community; #handstandfest for the event. Mapping places/meetups is work in progress, never claim a completed map.
 
-`/instagram/` is the editorial calendar and production/review library. `/instagram2/` is an alias. Preview and exported assets are not proof of publication. Keep provisional Paulo demos labelled until Gabriel records/reviews them. Future teaching archive: “Handstand Life: Guia de Sobrevivência”. Famous-balancer spotlights are independent references, not guests or endorsers; approval/credits remain prerequisites.
+`/instagram/` is the editorial calendar and production/review library. `/instagram2/` is an alias. Preview and exported assets are not proof of publication. Keep provisional Paulo demos labelled until Gabriel records/reviews them. Future teaching archive: “Handstand Life: Guia de Sobrevivência”. Famous-balancer spotlights are PAUSED by Paulo (14 November): exclude all four from the active calendar, library and current grid. Keep historical studies only. External accounts are research references, not media to reuse. Replacement slots cover compression, wrists, real attempts and local community.
 
 ## Event facts and pricing
 
@@ -50,3 +50,7 @@ Approved by Paulo; external Sympla configuration is NOT verified by this code ch
 - Rendering/composition: `ig2/README.md`; Meta source and HF typography judgement: `docs/instagram/2026-11-14-meta-typography.md`.
 - Shared global playbooks: `~/.claude/skills/instagram-creation/SKILL.md` and `videos-remotion/SKILL.md`.
 - Old initial configuration only: `docs/festival-direction-history.md`. Do not copy stale prices, old palette or placeholder URLs from it.
+
+## Reference research — 14 November 2026
+
+See `docs/instagram/2026-11-14-handstand-references.md` and the adjacent `2026-11-14-handstand-sample.json`: 20 non-pinned grid entries each from Darin, Miguel, Yuval and Handstand Vinyasa Brasil, plus exploratory hashtag/Shorts searches. Specific drills, visible progress and real community suggest owned-content hypotheses. Missing shares are unknown, not zero; Share counts do not identify DM forwards. No popularity claim across accounts and no automatic technique endorsement.
