@@ -4,7 +4,7 @@ import { AGUSTIN_BIO, AGUSTIN_ORIGIN } from '../home-content';
 import type { Piece } from './pieces';
 const url=(path:string)=>getRemotionEnvironment().isPlayer?'/festival/ig/'+path:staticFile('festival/ig/'+path);
 const cards=[
- {title:['GABRIEL','AGUSTIN'],label:'QUEM FAZ O HANDSTANDFEST',body:'Artista circense, acrobata e professor de movimento. Argentino radicado no Brasil.',image:'gabriel/praia-reta.webp'},
+ {title:['GABRIEL','AGUSTIN'],label:'QUEM FAZ O HANDSTANDFEST',body:'Artista circense, acrobata e professor de movimento. Argentino radicado no Brasil.',image:'gabriel/img-3372-freeze.webp'},
  {title:['MOVIMENTO','COMO PESQUISA.'],label:'MAIS DE 10 ANOS DE TRAJETÓRIA',body:'Acrobacia, parada de mãos e práticas corporais. Um caminho de investigação, expressão e transformação.',image:'arte/engraving-v1/gabriel-reta-profile.webp'},
  {title:['DE UMA VIVÊNCIA','A UM ENCONTRO.'],label:'A IDEIA DO FESTIVAL',body:'Uma experiência na Argentina inspirou Gabriel a criar este encontro de prática e troca.',image:'gabriel/img-3377-freeze.webp'},
 ];

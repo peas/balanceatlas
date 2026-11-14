@@ -58,3 +58,7 @@ See `docs/instagram/2026-11-14-handstand-references.md` and the adjacent `2026-1
 ## Editorial order refinement — 14 November 2026
 
 The explicit 35-day plan now opens with event invitation, wrists, training together, frog stand, Gabriel, lateral exit and nature. Week 2 introduces the wall before foot releases, interleaving venue, hollow body and real attempts. Week 3 adds compression; week 4 compares two filmed perspectives; week 5 revisits practice and collects real questions. See `ig2/editorial.ts`. Both participants use `instagram/gabriel/` (stable URL), with separate completion boxes; capture briefs live in `ig2/gabriel-filming.json`. New slots remain pending footage, not finished pieces.
+
+## Cover review correction — 14 November 2026
+
+The opening week uses distinct hero photos: invitation = Gabriel on sand (IMG_3377); Gabriel introduction = indoor profile (IMG_3372); landscape = Gabriel on rocks (IMG_7876). André photo-saopaulo-2024-98 remains excluded. When changing a composition, rebuild its actual thumbnail and downloadable cover, inspect both, and check neighbouring calendar items by source image, not only piece ID. The still-render script now creates a fresh bundle and content-hashed URLs to prevent stale generated assets/cache from surviving a source correction.

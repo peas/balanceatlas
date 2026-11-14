@@ -19,7 +19,7 @@ export const EDITORIAL_IMAGES={
 };
 export type EditorialImageKey=keyof typeof EDITORIAL_IMAGES;
 // Day -> candidate. Unmapped technical/portrait slots intentionally still need new footage.
-export const DAY_IMAGE:Partial<Record<number,EditorialImageKey>>={1:'group',2:'gabrielTuck',3:'overhead',4:'class',5:'floor',6:'gabrielSea',7:'gabrielBeach',9:'floor',11:'hands',12:'profile',14:'class',15:'hands',16:'profile',18:'profile',20:'mobility',17:'gabrielArt',21:'gabrielSea'};
+export const DAY_IMAGE:Partial<Record<number,EditorialImageKey>>={1:'group',2:'gabrielTuck',3:'overhead',4:'gabrielBeach',5:'floor',6:'gabrielSea',7:'gabrielBeach',9:'floor',11:'hands',12:'profile',14:'gabrielBeach',15:'hands',16:'profile',18:'profile',20:'mobility',17:'gabrielArt',21:'gabrielSea'};
 
 // A few selected applications, rather than a universal photo treatment.
 export const DAY_ENGRAVING:Partial<Record<number,{figure:EngravingFigure;paint:PaintShape}>>={

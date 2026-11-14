@@ -390,16 +390,6 @@
     "note": "Confirm crop in uploader; cover does not imply publication approval."
   },
   {
-    "id": "agustin-apresentacao",
-    "composition": "agustin-apresentacao-1",
-    "frame": 0,
-    "width": 1080,
-    "height": 1440,
-    "url": "/festival/ig/covers-v1/agustin-apresentacao.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
     "id": "agustin-movimento",
     "composition": "agustin-movimento",
     "frame": 30,
@@ -456,16 +446,6 @@
     "width": 1080,
     "height": 1440,
     "url": "/festival/ig/covers-v1/ed-comunidade.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
-    "id": "ed-festival",
-    "composition": "ed-festival",
-    "frame": 0,
-    "width": 1080,
-    "height": 1440,
-    "url": "/festival/ig/covers-v1/ed-festival.webp",
     "status": "review",
     "note": "Confirm crop in uploader; cover does not imply publication approval."
   },
@@ -626,6 +606,26 @@
     "width": 1080,
     "height": 1440,
     "url": "/festival/ig/covers-v1/turma.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "ed-festival",
+    "composition": "ed-festival",
+    "frame": 0,
+    "width": 1080,
+    "height": 1440,
+    "url": "/festival/ig/covers-v1/ed-festival-e8d7dc30ff.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "agustin-apresentacao",
+    "composition": "agustin-apresentacao-1",
+    "frame": 0,
+    "width": 1080,
+    "height": 1440,
+    "url": "/festival/ig/covers-v1/agustin-apresentacao-77e6e6dec1.webp",
     "status": "review",
     "note": "Confirm crop in uploader; cover does not imply publication approval."
   }

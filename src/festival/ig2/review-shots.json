@@ -1251,122 +1251,6 @@
     ]
   },
   {
-    "id": "em-foco-marie-eve",
-    "title": "Em foco: Marie-Ève Dicaire",
-    "format": "Carrossel",
-    "description": "Estudo com foto do acervo de professores. Conferir crédito e permissão para publicação. Fonte: https://balancenotion.com/. Referência editorial, sem selo HF e sem implicar participação no festival. Vídeo e hachura futuros dependem de material autorizado.",
-    "movement": "Três cartões estáticos. A moldura destaca a pessoa; não há assinatura de evento.",
-    "name": "Conheça",
-    "cues": [],
-    "cover": 0,
-    "index": 0,
-    "count": 3,
-    "shots": [
-      {
-        "url": "/festival/ig/review-v1/em-foco-marie-eve-1-0.webp",
-        "label": "Lâmina 1 · Conheça",
-        "frame": 29
-      },
-      {
-        "url": "/festival/ig/review-v1/em-foco-marie-eve-2-0.webp",
-        "label": "Lâmina 2 · O que observar",
-        "frame": 29
-      },
-      {
-        "url": "/festival/ig/review-v1/em-foco-marie-eve-3-0.webp",
-        "label": "Lâmina 3 · Fonte original",
-        "frame": 29
-      }
-    ]
-  },
-  {
-    "id": "em-foco-nicolas",
-    "title": "Em foco: Nicolas Montes de Oca",
-    "format": "Carrossel",
-    "description": "Estudo com foto do acervo de professores. Conferir crédito e permissão para publicação. Fonte: https://balancenotion.com/. Referência editorial, sem selo HF e sem implicar participação no festival. Vídeo e hachura futuros dependem de material autorizado.",
-    "movement": "Três cartões estáticos. A moldura destaca a pessoa; não há assinatura de evento.",
-    "name": "Conheça",
-    "cues": [],
-    "cover": 0,
-    "index": 0,
-    "count": 3,
-    "shots": [
-      {
-        "url": "/festival/ig/review-v1/em-foco-nicolas-1-0.webp",
-        "label": "Lâmina 1 · Conheça",
-        "frame": 29
-      },
-      {
-        "url": "/festival/ig/review-v1/em-foco-nicolas-2-0.webp",
-        "label": "Lâmina 2 · O que observar",
-        "frame": 29
-      },
-      {
-        "url": "/festival/ig/review-v1/em-foco-nicolas-3-0.webp",
-        "label": "Lâmina 3 · Fonte original",
-        "frame": 29
-      }
-    ]
-  },
-  {
-    "id": "em-foco-yuval",
-    "title": "Em foco: Yuval Ayalon",
-    "format": "Carrossel",
-    "description": "CAPA PROVISÓRIA: substituir retrato por foto de handstand/exercício antes de publicar. Estudo com foto do acervo de professores. Conferir crédito e permissão para publicação. Fonte: https://www.yuvalonhands.com/. Referência editorial, sem selo HF e sem implicar participação no festival. Vídeo e hachura futuros dependem de material autorizado.",
-    "movement": "Três cartões estáticos. A moldura destaca a pessoa; não há assinatura de evento.",
-    "name": "Conheça",
-    "cues": [],
-    "cover": 0,
-    "index": 0,
-    "count": 3,
-    "shots": [
-      {
-        "url": "/festival/ig/review-v1/em-foco-yuval-1-0.webp",
-        "label": "Lâmina 1 · Conheça",
-        "frame": 29
-      },
-      {
-        "url": "/festival/ig/review-v1/em-foco-yuval-2-0.webp",
-        "label": "Lâmina 2 · O que observar",
-        "frame": 29
-      },
-      {
-        "url": "/festival/ig/review-v1/em-foco-yuval-3-0.webp",
-        "label": "Lâmina 3 · Fonte original",
-        "frame": 29
-      }
-    ]
-  },
-  {
-    "id": "em-foco-emmet",
-    "title": "Em foco: Emmet Louis",
-    "format": "Carrossel",
-    "description": "CAPA PROVISÓRIA: substituir retrato por foto de handstand/exercício antes de publicar. Estudo com foto do acervo de professores. Conferir crédito e permissão para publicação. Fonte: https://emmetlouis.com/. Referência editorial, sem selo HF e sem implicar participação no festival. Vídeo e hachura futuros dependem de material autorizado.",
-    "movement": "Três cartões estáticos. A moldura destaca a pessoa; não há assinatura de evento.",
-    "name": "Conheça",
-    "cues": [],
-    "cover": 0,
-    "index": 0,
-    "count": 3,
-    "shots": [
-      {
-        "url": "/festival/ig/review-v1/em-foco-emmet-1-0.webp",
-        "label": "Lâmina 1 · Conheça",
-        "frame": 29
-      },
-      {
-        "url": "/festival/ig/review-v1/em-foco-emmet-2-0.webp",
-        "label": "Lâmina 2 · O que observar",
-        "frame": 29
-      },
-      {
-        "url": "/festival/ig/review-v1/em-foco-emmet-3-0.webp",
-        "label": "Lâmina 3 · Fonte original",
-        "frame": 29
-      }
-    ]
-  },
-  {
     "id": "agustin-apresentacao",
     "title": "Conheça Gabriel Agustin",
     "format": "Carrossel",
@@ -1379,17 +1263,17 @@
     "count": 3,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/agustin-apresentacao-1-0.webp",
+        "url": "/festival/ig/review-v1/agustin-apresentacao-1-0-9edf508818.webp",
         "label": "Lâmina 1 · Gabriel Agustin",
         "frame": 29
       },
       {
-        "url": "/festival/ig/review-v1/agustin-apresentacao-2-0.webp",
+        "url": "/festival/ig/review-v1/agustin-apresentacao-2-0-a78a84ebde.webp",
         "label": "Lâmina 2 · A trajetória",
         "frame": 29
       },
       {
-        "url": "/festival/ig/review-v1/agustin-apresentacao-3-0.webp",
+        "url": "/festival/ig/review-v1/agustin-apresentacao-3-0-4fb4ed43ed.webp",
         "label": "Lâmina 3 · A origem do festival",
         "frame": 29
       }
@@ -1633,7 +1517,7 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/ed-festival-0.webp",
+        "url": "/festival/ig/review-v1/ed-festival-0-4ae53d8c1c.webp",
         "label": "Imagem completa",
         "frame": 29
       }
