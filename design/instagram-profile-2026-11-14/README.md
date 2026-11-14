@@ -13,3 +13,8 @@ Rebuild with `node scripts/festival_instagram_profile.mjs`; inputs/order are in 
 Frame fix: `FestPlayer.tsx` sizes the player to cover the inner container via ResizeObserver, with two pixels
 of bleed. The old contain behavior could expose fallback strips when rounded borders changed inner aspect.
 Photo/video and filter layers now share the same player geometry; rounded clipping remains on the parent.
+
+## Feedback revision
+Option 02 selected for further use; its HF is now the exact connected path from the original brand asset.
+The previous separate-letter construction is superseded. Image-led editorial and biography covers have been
+expanded to the frame; the grid is regenerated from the updated Remotion thumbnails.

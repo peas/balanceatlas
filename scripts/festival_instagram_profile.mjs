@@ -14,7 +14,7 @@ const letter=(d,x,y,scale,color)=>`<path d="${d}" transform="translate(${x} ${y}
 const img=(href,x,y,w,h)=>`<image href="${href}" x="${x}" y="${y}" width="${w}" height="${h}"/>`;
 const variants=[
  {name:'01-h-corpo-f',bg:green,body:img(paint,40,40,1000,1000)+letter(H,180,405,.8,cream)+letter(F,710,405,.8,cream)+img(figure,440,110,165,860)},
- {name:'02-corpo-hf',bg:cream,body:img(paint,30,50,1010,1010)+img(figure,250,125,165,860)+letter(H,495,420,.8,green)+letter(F,705,420,.8,green)},
+ {name:'02-corpo-hf',bg:cream,body:img(paint,30,50,1010,1010)+img(figure,250,125,165,860)+`<path fill="${green}" transform="translate(485 420) scale(.68) translate(-491 -520)" d="M491 520 H585 V686 H690 V520 H783 V686 H865 V520 H1174 V618 H958 V686 H1109 V785 H958 V965 H865 V785 H783 V965 H690 V785 H585 V965 H491 Z"/>`},
  {name:'03-corpo-selo',bg:green,body:img(paint,30,30,1020,1020)+img(figure,385,100,175,910)+letter(H,655,660,.38,cream)+letter(F,755,660,.38,cream)},
  {name:'04-hf-corpo-ocre',bg:ochre,body:letter(H,165,400,.9,green)+letter(F,725,400,.9,green)+img(figure,443,105,170,885)},
 ];
@@ -24,7 +24,7 @@ const labels=`<svg width="1280" height="1440"><style>text{font-family:Arial,sans
 await sharp({create:{width:1280,height:1440,channels:4,background:cream}}).composite([...comps,{input:Buffer.from(labels)}]).png().toFile(`${out}/avatars-comparacao.png`);
 const shots=JSON.parse(await fs.readFile('src/festival/ig2/review-shots.json','utf8'));
 // Nine available pieces, newest first in profile order. Editorial preview, not a live account screenshot.
-const ids=['agustin-apresentacao','lugar','gabriel-transicoes-tela','p07-turma','em-foco-marie-eve','natureza-piscina-press-solo','ed-festival','ed-formas','ed-comunidade'];
+const ids=['agustin-apresentacao','lugar','gabriel-transicoes-tela','exercicio-canoinha','em-foco-marie-eve','natureza-piscina-press-solo','ed-festival','ed-formas','ed-comunidade'];
 const layers=[];for(let i=0;i<ids.length;i++){const p=shots.find(p=>p.id===ids[i]);if(!p)throw Error(ids[i]);const image=p.shots[0].url;layers.push({input:await sharp('public'+image).resize(360,480,{fit:'cover',position:'centre'}).png().toBuffer(),left:32+(i%3)*366,top:200+Math.floor(i/3)*486});}
 const heading=`<svg width="1156" height="1730"><style>text{font-family:Arial,sans-serif;fill:${green}}</style><text x="32" y="65" font-size="36" font-weight="bold">HANDSTANDFEST</text><text x="32" y="108" font-size="25">Estudo de grid 3×3 · capas das peças atuais</text><text x="32" y="149" font-size="21">Mais recentes no alto · alternância de foto, gravura e informação</text><text x="32" y="1700" font-size="20">Prévia visual: recorte central 3:4. Capas finais podem receber ajustes próprios.</text></svg>`;
 await sharp({create:{width:1156,height:1730,channels:4,background:cream}}).composite([...layers,{input:Buffer.from(heading)}]).png().toFile(`${out}/grid-3x3.png`);

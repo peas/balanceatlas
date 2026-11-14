@@ -1,3 +1,4 @@
+import { EXERCISE_PREVIEW_PIECES } from './exercise-preview-pieces';
 import { SPOTLIGHT_PIECES } from './spotlight-pieces';
 import { AGUSTIN_PIECES } from './agustin-pieces';
 // Every Instagram piece of the festival on one page: the first ten (ig/) and the second study (ig2/), grouped by
@@ -38,7 +39,7 @@ const first: CatalogPiece[] = PECAS.map((p) => ({
   slides: (REGISTRO[p.id] ?? []).map((s, i) => ({ name: s.nome ?? (i ? `Quadro ${i + 1}` : p.titulo), component: s.comp, seconds: s.frames / FPS, height: s.h, cover: s.capa ?? 0, cues: [] })),
 })).filter((p) => p.slides.length);
 
-const second: CatalogPiece[] = [...SPOTLIGHT_PIECES, ...AGUSTIN_PIECES, ...PIECES, ...EDITORIAL_PIECES, ...GABRIEL_PIECES.filter(p=>p.id!=='gabriel-transicoes')].map((p) => ({ ...p, style: p.id.startsWith('ed-') ? 'gravura' : STYLE_OF[p.id] ?? 'janela' }));
+const second: CatalogPiece[] = [...EXERCISE_PREVIEW_PIECES, ...SPOTLIGHT_PIECES, ...AGUSTIN_PIECES, ...PIECES, ...EDITORIAL_PIECES, ...GABRIEL_PIECES.filter(p=>p.id!=='gabriel-transicoes')].map((p) => ({ ...p, style: p.id.startsWith('ed-') ? 'gravura' : STYLE_OF[p.id] ?? 'janela' }));
 
 const nature:CatalogPiece[]=NATURE_PIECES.map(p=>({...p,style:p.format==='Reel'?'congela':'tela-cheia'}));
 // Superseded visual experiments stay in source/history, not in the active publishing queue.

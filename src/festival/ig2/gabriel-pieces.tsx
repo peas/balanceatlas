@@ -37,11 +37,12 @@ const Transitions=(p:PieceProps)=><GabrielReel {...p}/>;
 const Beach=(p:PieceProps)=><GabrielReel {...p} beach/>;
 
 function Landscape(p:PieceProps) {
- return <Freeze frame={90}><Canvas {...p} format="card" signature>
-  <Label y={65} size={32}>GABRIEL AGUSTIN · #HANDSTANDLIFE</Label>
-  <Headline lines={['OUTRO CHÃO.','OUTRO EQUILÍBRIO.']} y={145} size={83}/>
-  <Img src={source('praia-reta.webp')} style={{position:'absolute',left:200,top:370,width:680,height:900,objectFit:'contain'}}/>
-  <Label y={1280} size={40} style={{width:680}}>O apoio muda. A atenção também.</Label>
+ return <Freeze frame={90}><Canvas {...p} format="card" dark signature>
+  <Img src={source('praia-reta.webp')} style={{position:'absolute',inset:0,width:1080,height:1440,objectFit:'cover'}}/>
+  <div style={{position:'absolute',inset:0,background:'linear-gradient(180deg,rgba(10,35,28,.8),transparent 30%,transparent 70%,rgba(10,35,28,.9))'}}/>
+  <Label y={65} size={28} color={CHALK}>GABRIEL AGUSTIN · #HANDSTANDLIFE</Label>
+  <Headline lines={['OUTRO CHÃO.','OUTRO EQUILÍBRIO.']} y={145} size={78} dark/>
+  <Label y={1230} size={36} color={CHALK} style={{width:680}}>O apoio muda. A atenção também.</Label>
  </Canvas></Freeze>;
 }
 function Engraving(p:PieceProps) {

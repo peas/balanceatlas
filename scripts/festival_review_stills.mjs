@@ -10,8 +10,8 @@ try {
  for(const c of comps){const r=c.props.review; if(!pieces.has(r.id))pieces.set(r.id,{...r,shots:[]});
  const indices=r.count>3?[0,Math.floor(r.count/2),r.count-1]:Array.from({length:r.count},(_,i)=>i);
  if(!indices.includes(r.index))continue;
- let frames=r.count>1||r.format==='Estático'?[Math.min(90,c.durationInFrames-1)]:[30,Math.round(c.durationInFrames*.5),c.durationInFrames-25];
- if(r.count===1&&r.cues.length>=3)frames=[Math.min(45,c.durationInFrames-1),r.cues[1].frame,r.cues.at(-1).frame];
+ let frames=r.count>1||r.format==='Estático'?[Math.min(90,c.durationInFrames-1)]:[r.cover??30,Math.round(c.durationInFrames*.5),c.durationInFrames-25];
+ if(r.count===1&&r.cues.length>=3)frames=[Math.min(r.cover??45,c.durationInFrames-1),r.cues[1].frame,r.cues.at(-1).frame];
  frames=[...new Set(frames.map(f=>Math.max(0,Math.min(f,c.durationInFrames-1))))].sort((a,b)=>a-b);
  for(const [n,frame] of frames.entries()){
  const filename=`${c.id}-${n}.webp`,tmp=`local/festival/review-${c.id}-${n}.png`;

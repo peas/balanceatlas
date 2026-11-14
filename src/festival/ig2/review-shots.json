@@ -7,13 +7,14 @@
     "movement": "Voz dos dois, sem música por baixo.",
     "name": "O convite",
     "cues": [],
+    "cover": 20,
     "index": 0,
     "count": 1,
     "shots": [
       {
         "url": "/festival/ig/review-v1/p01-convite-0.webp",
-        "label": "1.0 s",
-        "frame": 30
+        "label": "0.7 s",
+        "frame": 20
       },
       {
         "url": "/festival/ig/review-v1/p01-convite-1.webp",
@@ -35,13 +36,14 @@
     "movement": "Mudo. Música escolhida no app na hora de postar.",
     "name": "1º HandstandFest Brasil",
     "cues": [],
+    "cover": 15,
     "index": 0,
     "count": 1,
     "shots": [
       {
         "url": "/festival/ig/review-v1/p02-palmeiras-0.webp",
-        "label": "1.0 s",
-        "frame": 30
+        "label": "0.5 s",
+        "frame": 15
       },
       {
         "url": "/festival/ig/review-v1/p02-palmeiras-1.webp",
@@ -63,13 +65,14 @@
     "movement": "Mudo. Música escolhida no app na hora de postar.",
     "name": "O lugar",
     "cues": [],
+    "cover": 12,
     "index": 0,
     "count": 1,
     "shots": [
       {
         "url": "/festival/ig/review-v1/p03-lugar-0.webp",
-        "label": "1.0 s",
-        "frame": 30
+        "label": "0.4 s",
+        "frame": 12
       },
       {
         "url": "/festival/ig/review-v1/p03-lugar-1.webp",
@@ -91,6 +94,7 @@
     "movement": "Mudo. Música escolhida no app na hora de postar.",
     "name": "A linha",
     "cues": [],
+    "cover": 30,
     "index": 0,
     "count": 1,
     "shots": [
@@ -119,13 +123,14 @@
     "movement": "Mudo. Música escolhida no app na hora de postar.",
     "name": "Treinar junto",
     "cues": [],
+    "cover": 24,
     "index": 0,
     "count": 1,
     "shots": [
       {
         "url": "/festival/ig/review-v1/p05-dupla-0.webp",
-        "label": "1.0 s",
-        "frame": 30
+        "label": "0.8 s",
+        "frame": 24
       },
       {
         "url": "/festival/ig/review-v1/p05-dupla-1.webp",
@@ -147,6 +152,7 @@
     "movement": "Mudo. Música escolhida no app na hora de postar.",
     "name": "convite para todos os níveis",
     "cues": [],
+    "cover": 30,
     "index": 0,
     "count": 1,
     "shots": [
@@ -175,6 +181,7 @@
     "movement": "Sem som (carrossel de foto). Música escolhida no app na hora de postar.",
     "name": "capa",
     "cues": [],
+    "cover": 45,
     "index": 0,
     "count": 5,
     "shots": [
@@ -203,6 +210,7 @@
     "movement": "Sem som (carrossel de foto). Música escolhida no app na hora de postar.",
     "name": "capa",
     "cues": [],
+    "cover": 45,
     "index": 0,
     "count": 6,
     "shots": [
@@ -231,6 +239,7 @@
     "movement": "Mudo. Figurinha de link e música entram no app.",
     "name": "abre em 18/11",
     "cues": [],
+    "cover": 30,
     "index": 0,
     "count": 4,
     "shots": [
@@ -259,13 +268,14 @@
     "movement": "Mudo. Música escolhida no app na hora de postar.",
     "name": "Vou sair fazendo parada de mão?",
     "cues": [],
+    "cover": 20,
     "index": 0,
     "count": 1,
     "shots": [
       {
         "url": "/festival/ig/review-v1/p10-pergunta-0.webp",
-        "label": "1.0 s",
-        "frame": 30
+        "label": "0.7 s",
+        "frame": 20
       },
       {
         "url": "/festival/ig/review-v1/p10-pergunta-1.webp",
@@ -304,13 +314,14 @@
         "frame": 465
       }
     ],
+    "cover": 24,
     "index": 0,
     "count": 1,
     "shots": [
       {
         "url": "/festival/ig/review-v1/junto-0.webp",
-        "label": "1.5 s",
-        "frame": 45
+        "label": "0.8 s",
+        "frame": 24
       },
       {
         "url": "/festival/ig/review-v1/junto-1.webp",
@@ -349,13 +360,14 @@
         "frame": 375
       }
     ],
+    "cover": 24,
     "index": 0,
     "count": 1,
     "shots": [
       {
         "url": "/festival/ig/review-v1/lugar-0.webp",
-        "label": "1.5 s",
-        "frame": 45
+        "label": "0.8 s",
+        "frame": 24
       },
       {
         "url": "/festival/ig/review-v1/lugar-1.webp",
@@ -390,13 +402,14 @@
         "frame": 330
       }
     ],
+    "cover": 24,
     "index": 0,
     "count": 1,
     "shots": [
       {
         "url": "/festival/ig/review-v1/futebol-0.webp",
-        "label": "1.5 s",
-        "frame": 45
+        "label": "0.8 s",
+        "frame": 24
       },
       {
         "url": "/festival/ig/review-v1/futebol-1.webp",
@@ -427,6 +440,7 @@
         "frame": 30
       }
     ],
+    "cover": 24,
     "index": 0,
     "count": 3,
     "shots": [
@@ -468,13 +482,14 @@
         "frame": 600
       }
     ],
+    "cover": 24,
     "index": 0,
     "count": 1,
     "shots": [
       {
         "url": "/festival/ig/review-v1/formas-0.webp",
-        "label": "1.5 s",
-        "frame": 45
+        "label": "0.8 s",
+        "frame": 24
       },
       {
         "url": "/festival/ig/review-v1/formas-1.webp",
@@ -509,13 +524,14 @@
         "frame": 420
       }
     ],
+    "cover": 24,
     "index": 0,
     "count": 1,
     "shots": [
       {
         "url": "/festival/ig/review-v1/ritmo-0.webp",
-        "label": "1.5 s",
-        "frame": 45
+        "label": "0.8 s",
+        "frame": 24
       },
       {
         "url": "/festival/ig/review-v1/ritmo-1.webp",
@@ -550,13 +566,14 @@
         "frame": 420
       }
     ],
+    "cover": 24,
     "index": 0,
     "count": 1,
     "shots": [
       {
         "url": "/festival/ig/review-v1/subida-0.webp",
-        "label": "1.5 s",
-        "frame": 45
+        "label": "0.8 s",
+        "frame": 24
       },
       {
         "url": "/festival/ig/review-v1/subida-1.webp",
@@ -587,6 +604,7 @@
         "frame": 120
       }
     ],
+    "cover": 24,
     "index": 0,
     "count": 2,
     "shots": [
@@ -610,6 +628,7 @@
     "movement": "Sem trilha incorporada. Música e interação são escolhidas no Instagram.",
     "name": "Pike: o sete, o L",
     "cues": [],
+    "cover": 0,
     "index": 0,
     "count": 1,
     "shots": [
@@ -628,6 +647,7 @@
     "movement": "Sem trilha incorporada. Música e interação são escolhidas no Instagram.",
     "name": "Encontros para treinar",
     "cues": [],
+    "cover": 0,
     "index": 0,
     "count": 1,
     "shots": [
@@ -646,6 +666,7 @@
     "movement": "Sem trilha incorporada. Música e interação são escolhidas no Instagram.",
     "name": "Pike com atenção aos ombros",
     "cues": [],
+    "cover": 0,
     "index": 0,
     "count": 1,
     "shots": [
@@ -657,13 +678,587 @@
     ]
   },
   {
+    "id": "exercicio-gato-vaca",
+    "title": "Gato-vaca · prévia com Paulo",
+    "format": "Reel",
+    "description": "Gravação provisória do Paulo. Mobilidade da coluna, com os apoios visíveis. Correção leve de brilho, contraste e saturação; não é hachura gerada. Falta refilmagem e revisão técnica do Gabriel, texto e narração finais.",
+    "movement": "Demonstração completa do sample, seguida por 3 s de quadro congelado. Sem áudio original na peça.",
+    "name": "Gato-vaca",
+    "cues": [
+      {
+        "label": "Demonstração",
+        "frame": 180
+      },
+      {
+        "label": "Movimento",
+        "frame": 195
+      },
+      {
+        "label": "Congela",
+        "frame": 420
+      }
+    ],
+    "cover": 180,
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/exercicio-gato-vaca-0.webp",
+        "label": "6.0 s",
+        "frame": 180
+      },
+      {
+        "url": "/festival/ig/review-v1/exercicio-gato-vaca-1.webp",
+        "label": "6.5 s",
+        "frame": 195
+      },
+      {
+        "url": "/festival/ig/review-v1/exercicio-gato-vaca-2.webp",
+        "label": "14.0 s",
+        "frame": 420
+      }
+    ]
+  },
+  {
+    "id": "exercicio-escapulas",
+    "title": "Ombros e escápulas · prévia com Paulo",
+    "format": "Reel",
+    "description": "Gravação provisória do Paulo. O que muda quando você empurra o chão? Correção leve de brilho, contraste e saturação; não é hachura gerada. Falta refilmagem e revisão técnica do Gabriel, texto e narração finais.",
+    "movement": "Demonstração completa do sample, seguida por 3 s de quadro congelado. Sem áudio original na peça.",
+    "name": "Ombros e escápulas",
+    "cues": [
+      {
+        "label": "Demonstração",
+        "frame": 210
+      },
+      {
+        "label": "Movimento",
+        "frame": 225
+      },
+      {
+        "label": "Congela",
+        "frame": 480
+      }
+    ],
+    "cover": 210,
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/exercicio-escapulas-0.webp",
+        "label": "7.0 s",
+        "frame": 210
+      },
+      {
+        "url": "/festival/ig/review-v1/exercicio-escapulas-1.webp",
+        "label": "7.5 s",
+        "frame": 225
+      },
+      {
+        "url": "/festival/ig/review-v1/exercicio-escapulas-2.webp",
+        "label": "16.0 s",
+        "frame": 480
+      }
+    ]
+  },
+  {
+    "id": "exercicio-punhos",
+    "title": "Mãos, dedos e punhos · prévia com Paulo",
+    "format": "Reel",
+    "description": "Gravação provisória do Paulo. O peso chega às mãos antes de os pés saírem. Correção leve de brilho, contraste e saturação; não é hachura gerada. Falta refilmagem e revisão técnica do Gabriel, texto e narração finais.",
+    "movement": "Demonstração completa do sample, seguida por 3 s de quadro congelado. Sem áudio original na peça.",
+    "name": "Mãos, dedos e punhos",
+    "cues": [
+      {
+        "label": "Demonstração",
+        "frame": 150
+      },
+      {
+        "label": "Movimento",
+        "frame": 165
+      },
+      {
+        "label": "Congela",
+        "frame": 360
+      }
+    ],
+    "cover": 150,
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/exercicio-punhos-0.webp",
+        "label": "5.0 s",
+        "frame": 150
+      },
+      {
+        "url": "/festival/ig/review-v1/exercicio-punhos-1.webp",
+        "label": "5.5 s",
+        "frame": 165
+      },
+      {
+        "url": "/festival/ig/review-v1/exercicio-punhos-2.webp",
+        "label": "12.0 s",
+        "frame": 360
+      }
+    ]
+  },
+  {
+    "id": "exercicio-urso-prancha",
+    "title": "Urso → prancha alongada · prévia com Paulo",
+    "format": "Reel",
+    "description": "Gravação provisória do Paulo. Da posição agrupada ao corpo mais estendido. Correção leve de brilho, contraste e saturação; não é hachura gerada. Falta refilmagem e revisão técnica do Gabriel, texto e narração finais.",
+    "movement": "Demonstração completa do sample, seguida por 3 s de quadro congelado. Sem áudio original na peça.",
+    "name": "Urso → prancha alongada",
+    "cues": [
+      {
+        "label": "Demonstração",
+        "frame": 360
+      },
+      {
+        "label": "Movimento",
+        "frame": 285
+      },
+      {
+        "label": "Congela",
+        "frame": 600
+      }
+    ],
+    "cover": 360,
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/exercicio-urso-prancha-0.webp",
+        "label": "9.5 s",
+        "frame": 285
+      },
+      {
+        "url": "/festival/ig/review-v1/exercicio-urso-prancha-1.webp",
+        "label": "12.0 s",
+        "frame": 360
+      },
+      {
+        "url": "/festival/ig/review-v1/exercicio-urso-prancha-2.webp",
+        "label": "20.0 s",
+        "frame": 600
+      }
+    ]
+  },
+  {
+    "id": "exercicio-canoinha",
+    "title": "Canoinha e posição da pelve · prévia com Paulo",
+    "format": "Reel",
+    "description": "Gravação provisória do Paulo. Ajustar a pelve sem esconder o que o corpo faz. Correção leve de brilho, contraste e saturação; não é hachura gerada. Falta refilmagem e revisão técnica do Gabriel, texto e narração finais.",
+    "movement": "Demonstração completa do sample, seguida por 3 s de quadro congelado. Sem áudio original na peça.",
+    "name": "Canoinha e posição da pelve",
+    "cues": [
+      {
+        "label": "Demonstração",
+        "frame": 330
+      },
+      {
+        "label": "Movimento",
+        "frame": 255
+      },
+      {
+        "label": "Congela",
+        "frame": 540
+      }
+    ],
+    "cover": 330,
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/exercicio-canoinha-0.webp",
+        "label": "8.5 s",
+        "frame": 255
+      },
+      {
+        "url": "/festival/ig/review-v1/exercicio-canoinha-1.webp",
+        "label": "11.0 s",
+        "frame": 330
+      },
+      {
+        "url": "/festival/ig/review-v1/exercicio-canoinha-2.webp",
+        "label": "18.0 s",
+        "frame": 540
+      }
+    ]
+  },
+  {
+    "id": "exercicio-sapinho",
+    "title": "Sapinho: tirar um pé, depois o outro · prévia com Paulo",
+    "format": "Reel",
+    "description": "Gravação provisória do Paulo. Um apoio baixo para explorar o equilíbrio. Correção leve de brilho, contraste e saturação; não é hachura gerada. Falta refilmagem e revisão técnica do Gabriel, texto e narração finais.",
+    "movement": "Demonstração completa do sample, seguida por 3 s de quadro congelado. Sem áudio original na peça.",
+    "name": "Sapinho: tirar um pé, depois o outro",
+    "cues": [
+      {
+        "label": "Demonstração",
+        "frame": 360
+      },
+      {
+        "label": "Movimento",
+        "frame": 360
+      },
+      {
+        "label": "Congela",
+        "frame": 750
+      }
+    ],
+    "cover": 360,
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/exercicio-sapinho-0.webp",
+        "label": "12.0 s",
+        "frame": 360
+      },
+      {
+        "url": "/festival/ig/review-v1/exercicio-sapinho-1.webp",
+        "label": "25.0 s",
+        "frame": 750
+      }
+    ]
+  },
+  {
+    "id": "exercicio-ombros-cadeira",
+    "title": "Abertura de ombros com apoio · prévia com Paulo",
+    "format": "Reel",
+    "description": "Gravação provisória do Paulo. Mostrar a abertura sem transformar tudo em arco nas costas. Correção leve de brilho, contraste e saturação; não é hachura gerada. Falta refilmagem e revisão técnica do Gabriel, texto e narração finais.",
+    "movement": "Demonstração completa do sample, seguida por 3 s de quadro congelado. Sem áudio original na peça.",
+    "name": "Abertura de ombros com apoio",
+    "cues": [
+      {
+        "label": "Demonstração",
+        "frame": 300
+      },
+      {
+        "label": "Movimento",
+        "frame": 300
+      },
+      {
+        "label": "Congela",
+        "frame": 630
+      }
+    ],
+    "cover": 300,
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/exercicio-ombros-cadeira-0.webp",
+        "label": "10.0 s",
+        "frame": 300
+      },
+      {
+        "url": "/festival/ig/review-v1/exercicio-ombros-cadeira-1.webp",
+        "label": "21.0 s",
+        "frame": 630
+      }
+    ]
+  },
+  {
+    "id": "exercicio-parede",
+    "title": "Barriga para a parede · prévia com Paulo",
+    "format": "Reel",
+    "description": "Gravação provisória do Paulo. Distância, aproximação e apoio: uma etapa de cada vez. Correção leve de brilho, contraste e saturação; não é hachura gerada. Falta refilmagem e revisão técnica do Gabriel, texto e narração finais.",
+    "movement": "Demonstração completa do sample, seguida por 3 s de quadro congelado. Sem áudio original na peça.",
+    "name": "Barriga para a parede",
+    "cues": [
+      {
+        "label": "Demonstração",
+        "frame": 540
+      },
+      {
+        "label": "Movimento",
+        "frame": 495
+      },
+      {
+        "label": "Congela",
+        "frame": 1020
+      }
+    ],
+    "cover": 540,
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/exercicio-parede-0.webp",
+        "label": "16.5 s",
+        "frame": 495
+      },
+      {
+        "url": "/festival/ig/review-v1/exercicio-parede-1.webp",
+        "label": "18.0 s",
+        "frame": 540
+      },
+      {
+        "url": "/festival/ig/review-v1/exercicio-parede-2.webp",
+        "label": "34.0 s",
+        "frame": 1020
+      }
+    ]
+  },
+  {
+    "id": "exercicio-saida-estrela",
+    "title": "Saída lateral em estrela · prévia com Paulo",
+    "format": "Reel",
+    "description": "Gravação provisória do Paulo. Aprender a sair também faz parte da prática. Correção leve de brilho, contraste e saturação; não é hachura gerada. Falta refilmagem e revisão técnica do Gabriel, texto e narração finais.",
+    "movement": "Demonstração completa do sample, seguida por 3 s de quadro congelado. Sem áudio original na peça.",
+    "name": "Saída lateral em estrela",
+    "cues": [
+      {
+        "label": "Demonstração",
+        "frame": 90
+      },
+      {
+        "label": "Movimento",
+        "frame": 210
+      },
+      {
+        "label": "Congela",
+        "frame": 450
+      }
+    ],
+    "cover": 90,
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/exercicio-saida-estrela-0.webp",
+        "label": "3.0 s",
+        "frame": 90
+      },
+      {
+        "url": "/festival/ig/review-v1/exercicio-saida-estrela-1.webp",
+        "label": "7.0 s",
+        "frame": 210
+      },
+      {
+        "url": "/festival/ig/review-v1/exercicio-saida-estrela-2.webp",
+        "label": "15.0 s",
+        "frame": 450
+      }
+    ]
+  },
+  {
+    "id": "exercicio-chute-parede",
+    "title": "Chute controlado para a parede · prévia com Paulo",
+    "format": "Reel",
+    "description": "Gravação provisória do Paulo. Primeira perna suave; a outra chega depois. Correção leve de brilho, contraste e saturação; não é hachura gerada. Falta refilmagem e revisão técnica do Gabriel, texto e narração finais.",
+    "movement": "Demonstração completa do sample, seguida por 3 s de quadro congelado. Sem áudio original na peça.",
+    "name": "Chute controlado para a parede",
+    "cues": [
+      {
+        "label": "Demonstração",
+        "frame": 330
+      },
+      {
+        "label": "Movimento",
+        "frame": 435
+      },
+      {
+        "label": "Congela",
+        "frame": 900
+      }
+    ],
+    "cover": 330,
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/exercicio-chute-parede-0.webp",
+        "label": "11.0 s",
+        "frame": 330
+      },
+      {
+        "url": "/festival/ig/review-v1/exercicio-chute-parede-1.webp",
+        "label": "14.5 s",
+        "frame": 435
+      },
+      {
+        "url": "/festival/ig/review-v1/exercicio-chute-parede-2.webp",
+        "label": "30.0 s",
+        "frame": 900
+      }
+    ]
+  },
+  {
+    "id": "exercicio-costelas",
+    "title": "Costelas, peito e pelve · prévia com Paulo",
+    "format": "Reel",
+    "description": "Gravação provisória do Paulo. Peito e costelas para dentro: mostrar o ajuste, não só o comando. Correção leve de brilho, contraste e saturação; não é hachura gerada. Falta refilmagem e revisão técnica do Gabriel, texto e narração finais.",
+    "movement": "Demonstração completa do sample, seguida por 3 s de quadro congelado. Sem áudio original na peça.",
+    "name": "Costelas, peito e pelve",
+    "cues": [
+      {
+        "label": "Demonstração",
+        "frame": 210
+      },
+      {
+        "label": "Movimento",
+        "frame": 195
+      },
+      {
+        "label": "Congela",
+        "frame": 420
+      }
+    ],
+    "cover": 210,
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/exercicio-costelas-0.webp",
+        "label": "6.5 s",
+        "frame": 195
+      },
+      {
+        "url": "/festival/ig/review-v1/exercicio-costelas-1.webp",
+        "label": "7.0 s",
+        "frame": 210
+      },
+      {
+        "url": "/festival/ig/review-v1/exercicio-costelas-2.webp",
+        "label": "14.0 s",
+        "frame": 420
+      }
+    ]
+  },
+  {
+    "id": "exercicio-ombros-box",
+    "title": "Abertura de ombros no box · prévia com Paulo",
+    "format": "Reel",
+    "description": "Gravação provisória do Paulo. Uma segunda referência para o trabalho de ombros. Correção leve de brilho, contraste e saturação; não é hachura gerada. Falta refilmagem e revisão técnica do Gabriel, texto e narração finais.",
+    "movement": "Demonstração completa do sample, seguida por 3 s de quadro congelado. Sem áudio original na peça.",
+    "name": "Abertura de ombros no box",
+    "cues": [
+      {
+        "label": "Demonstração",
+        "frame": 450
+      },
+      {
+        "label": "Movimento",
+        "frame": 405
+      },
+      {
+        "label": "Congela",
+        "frame": 840
+      }
+    ],
+    "cover": 450,
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/exercicio-ombros-box-0.webp",
+        "label": "13.5 s",
+        "frame": 405
+      },
+      {
+        "url": "/festival/ig/review-v1/exercicio-ombros-box-1.webp",
+        "label": "15.0 s",
+        "frame": 450
+      },
+      {
+        "url": "/festival/ig/review-v1/exercicio-ombros-box-2.webp",
+        "label": "28.0 s",
+        "frame": 840
+      }
+    ]
+  },
+  {
+    "id": "exercicio-pike-box",
+    "title": "Pike com pés apoiados · prévia com Paulo",
+    "format": "Reel",
+    "description": "Gravação provisória do Paulo. Quadril alto e ombros: observar o apoio de perfil. Correção leve de brilho, contraste e saturação; não é hachura gerada. Falta refilmagem e revisão técnica do Gabriel, texto e narração finais.",
+    "movement": "Demonstração completa do sample, seguida por 3 s de quadro congelado. Sem áudio original na peça.",
+    "name": "Pike com pés apoiados",
+    "cues": [
+      {
+        "label": "Demonstração",
+        "frame": 300
+      },
+      {
+        "label": "Movimento",
+        "frame": 345
+      },
+      {
+        "label": "Congela",
+        "frame": 720
+      }
+    ],
+    "cover": 300,
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/exercicio-pike-box-0.webp",
+        "label": "10.0 s",
+        "frame": 300
+      },
+      {
+        "url": "/festival/ig/review-v1/exercicio-pike-box-1.webp",
+        "label": "11.5 s",
+        "frame": 345
+      },
+      {
+        "url": "/festival/ig/review-v1/exercicio-pike-box-2.webp",
+        "label": "24.0 s",
+        "frame": 720
+      }
+    ]
+  },
+  {
+    "id": "exercicio-abertura-chao",
+    "title": "Braços à frente no chão · prévia com Paulo",
+    "format": "Reel",
+    "description": "Gravação provisória do Paulo. Outra forma de mostrar a relação entre ombros e tronco. Correção leve de brilho, contraste e saturação; não é hachura gerada. Falta refilmagem e revisão técnica do Gabriel, texto e narração finais.",
+    "movement": "Demonstração completa do sample, seguida por 3 s de quadro congelado. Sem áudio original na peça.",
+    "name": "Braços à frente no chão",
+    "cues": [
+      {
+        "label": "Demonstração",
+        "frame": 270
+      },
+      {
+        "label": "Movimento",
+        "frame": 270
+      },
+      {
+        "label": "Congela",
+        "frame": 570
+      }
+    ],
+    "cover": 270,
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/exercicio-abertura-chao-0.webp",
+        "label": "9.0 s",
+        "frame": 270
+      },
+      {
+        "url": "/festival/ig/review-v1/exercicio-abertura-chao-1.webp",
+        "label": "19.0 s",
+        "frame": 570
+      }
+    ]
+  },
+  {
     "id": "em-foco-marie-eve",
     "title": "Em foco: Marie-Ève Dicaire",
     "format": "Carrossel",
-    "description": "Protótipo tipográfico original. Fonte: https://balancenotion.com/. Referência editorial, sem selo HF e sem implicar participação no festival. Vídeo e hachura futuros dependem de material autorizado.",
+    "description": "Estudo com foto do acervo de professores. Conferir crédito e permissão para publicação. Fonte: https://balancenotion.com/. Referência editorial, sem selo HF e sem implicar participação no festival. Vídeo e hachura futuros dependem de material autorizado.",
     "movement": "Três cartões estáticos. A moldura destaca a pessoa; não há assinatura de evento.",
     "name": "Conheça",
     "cues": [],
+    "cover": 0,
     "index": 0,
     "count": 3,
     "shots": [
@@ -688,10 +1283,11 @@
     "id": "em-foco-nicolas",
     "title": "Em foco: Nicolas Montes de Oca",
     "format": "Carrossel",
-    "description": "Protótipo tipográfico original. Fonte: https://balancenotion.com/. Referência editorial, sem selo HF e sem implicar participação no festival. Vídeo e hachura futuros dependem de material autorizado.",
+    "description": "Estudo com foto do acervo de professores. Conferir crédito e permissão para publicação. Fonte: https://balancenotion.com/. Referência editorial, sem selo HF e sem implicar participação no festival. Vídeo e hachura futuros dependem de material autorizado.",
     "movement": "Três cartões estáticos. A moldura destaca a pessoa; não há assinatura de evento.",
     "name": "Conheça",
     "cues": [],
+    "cover": 0,
     "index": 0,
     "count": 3,
     "shots": [
@@ -716,10 +1312,11 @@
     "id": "em-foco-yuval",
     "title": "Em foco: Yuval Ayalon",
     "format": "Carrossel",
-    "description": "Protótipo tipográfico original. Fonte: https://www.yuvalonhands.com/. Referência editorial, sem selo HF e sem implicar participação no festival. Vídeo e hachura futuros dependem de material autorizado.",
+    "description": "Estudo com foto do acervo de professores. Conferir crédito e permissão para publicação. Fonte: https://www.yuvalonhands.com/. Referência editorial, sem selo HF e sem implicar participação no festival. Vídeo e hachura futuros dependem de material autorizado.",
     "movement": "Três cartões estáticos. A moldura destaca a pessoa; não há assinatura de evento.",
     "name": "Conheça",
     "cues": [],
+    "cover": 0,
     "index": 0,
     "count": 3,
     "shots": [
@@ -744,10 +1341,11 @@
     "id": "em-foco-emmet",
     "title": "Em foco: Emmet Louis",
     "format": "Carrossel",
-    "description": "Protótipo tipográfico original. Fonte: https://emmetlouis.com/. Referência editorial, sem selo HF e sem implicar participação no festival. Vídeo e hachura futuros dependem de material autorizado.",
+    "description": "Estudo com foto do acervo de professores. Conferir crédito e permissão para publicação. Fonte: https://emmetlouis.com/. Referência editorial, sem selo HF e sem implicar participação no festival. Vídeo e hachura futuros dependem de material autorizado.",
     "movement": "Três cartões estáticos. A moldura destaca a pessoa; não há assinatura de evento.",
     "name": "Conheça",
     "cues": [],
+    "cover": 0,
     "index": 0,
     "count": 3,
     "shots": [
@@ -776,6 +1374,7 @@
     "movement": "Três lâminas estáticas; assinatura apenas na última. Bio fornecida por Paulo.",
     "name": "Gabriel Agustin",
     "cues": [],
+    "cover": 0,
     "index": 0,
     "count": 3,
     "shots": [
@@ -817,13 +1416,14 @@
         "frame": 400
       }
     ],
+    "cover": 30,
     "index": 0,
     "count": 1,
     "shots": [
       {
         "url": "/festival/ig/review-v1/agustin-movimento-0.webp",
-        "label": "1.5 s",
-        "frame": 45
+        "label": "1.0 s",
+        "frame": 30
       },
       {
         "url": "/festival/ig/review-v1/agustin-movimento-1.webp",
@@ -845,6 +1445,7 @@
     "movement": "Leitura calma, uma palavra marcada e fechamento com o círculo de pincel.",
     "name": "Capa",
     "cues": [],
+    "cover": 24,
     "index": 0,
     "count": 5,
     "shots": [
@@ -873,6 +1474,7 @@
     "movement": "PNG estático.",
     "name": "Gabriel e o mar",
     "cues": [],
+    "cover": 0,
     "index": 0,
     "count": 1,
     "shots": [
@@ -891,6 +1493,7 @@
     "movement": "Três imagens estáticas. A figura e a mancha são independentes; a pintura pode ser omitida em outras aplicações.",
     "name": "Reta / oval",
     "cues": [],
+    "cover": 0,
     "index": 0,
     "count": 4,
     "shots": [
@@ -919,6 +1522,7 @@
     "movement": "Imagens estáticas. A arte tem textura; a tipografia preserva a leitura no celular.",
     "name": "Corpo / papel",
     "cues": [],
+    "cover": 0,
     "index": 0,
     "count": 4,
     "shots": [
@@ -947,6 +1551,7 @@
     "movement": "Imagem estática; sem vídeo nas lâminas.",
     "name": "Filme e reveja seu treino · 1",
     "cues": [],
+    "cover": 0,
     "index": 0,
     "count": 5,
     "shots": [
@@ -975,6 +1580,7 @@
     "movement": "Imagem estática; sem vídeo nas lâminas.",
     "name": "Gente para treinar junto · 1",
     "cues": [],
+    "cover": 0,
     "index": 0,
     "count": 1,
     "shots": [
@@ -993,6 +1599,7 @@
     "movement": "Imagem estática; sem vídeo nas lâminas.",
     "name": "Palito e afastado · 1",
     "cues": [],
+    "cover": 0,
     "index": 0,
     "count": 4,
     "shots": [
@@ -1021,6 +1628,7 @@
     "movement": "Imagem estática; sem vídeo nas lâminas.",
     "name": "Três dias. Um encontro. · 1",
     "cues": [],
+    "cover": 0,
     "index": 0,
     "count": 1,
     "shots": [
@@ -1039,6 +1647,7 @@
     "movement": "Imagem estática; sem vídeo nas lâminas.",
     "name": "Ninguém treina só · 1",
     "cues": [],
+    "cover": 0,
     "index": 0,
     "count": 1,
     "shots": [
@@ -1057,6 +1666,7 @@
     "movement": "PNG 1080×1920; não é o card do feed reduzido.",
     "name": "Story / figura maior",
     "cues": [],
+    "cover": 0,
     "index": 0,
     "count": 1,
     "shots": [
@@ -1075,6 +1685,7 @@
     "movement": "PNG estático; pessoa e pincel separados.",
     "name": "Gabriel / gravura",
     "cues": [],
+    "cover": 0,
     "index": 0,
     "count": 1,
     "shots": [
@@ -1110,13 +1721,14 @@
         "frame": 600
       }
     ],
+    "cover": 0,
     "index": 0,
     "count": 1,
     "shots": [
       {
         "url": "/festival/ig/review-v1/arte-freeze-ocre-0.webp",
-        "label": "1.5 s",
-        "frame": 45
+        "label": "0.0 s",
+        "frame": 0
       },
       {
         "url": "/festival/ig/review-v1/arte-freeze-ocre-1.webp",
@@ -1151,13 +1763,14 @@
         "frame": 220
       }
     ],
+    "cover": 0,
     "index": 0,
     "count": 1,
     "shots": [
       {
         "url": "/festival/ig/review-v1/gabriel-transicoes-tela-0.webp",
-        "label": "1.5 s",
-        "frame": 45
+        "label": "0.0 s",
+        "frame": 0
       },
       {
         "url": "/festival/ig/review-v1/gabriel-transicoes-tela-1.webp",
@@ -1192,13 +1805,14 @@
         "frame": 340
       }
     ],
+    "cover": 0,
     "index": 0,
     "count": 1,
     "shots": [
       {
         "url": "/festival/ig/review-v1/gabriel-praia-0.webp",
-        "label": "1.5 s",
-        "frame": 45
+        "label": "0.0 s",
+        "frame": 0
       },
       {
         "url": "/festival/ig/review-v1/gabriel-praia-1.webp",
@@ -1233,13 +1847,14 @@
         "frame": 441
       }
     ],
+    "cover": 0,
     "index": 0,
     "count": 1,
     "shots": [
       {
         "url": "/festival/ig/review-v1/natureza-piscina-press-dupla-0.webp",
-        "label": "1.5 s",
-        "frame": 45
+        "label": "0.0 s",
+        "frame": 0
       },
       {
         "url": "/festival/ig/review-v1/natureza-piscina-press-dupla-1.webp",
@@ -1274,13 +1889,14 @@
         "frame": 423
       }
     ],
+    "cover": 0,
     "index": 0,
     "count": 1,
     "shots": [
       {
         "url": "/festival/ig/review-v1/natureza-piscina-press-solo-0.webp",
-        "label": "1.5 s",
-        "frame": 45
+        "label": "0.0 s",
+        "frame": 0
       },
       {
         "url": "/festival/ig/review-v1/natureza-piscina-press-solo-1.webp",
@@ -1315,13 +1931,14 @@
         "frame": 525
       }
     ],
+    "cover": 0,
     "index": 0,
     "count": 1,
     "shots": [
       {
         "url": "/festival/ig/review-v1/natureza-deck-pike-reta-0.webp",
-        "label": "1.5 s",
-        "frame": 45
+        "label": "0.0 s",
+        "frame": 0
       },
       {
         "url": "/festival/ig/review-v1/natureza-deck-pike-reta-1.webp",
@@ -1356,13 +1973,14 @@
         "frame": 564
       }
     ],
+    "cover": 0,
     "index": 0,
     "count": 1,
     "shots": [
       {
         "url": "/festival/ig/review-v1/natureza-deck-tuck-reta-0.webp",
-        "label": "1.5 s",
-        "frame": 45
+        "label": "0.0 s",
+        "frame": 0
       },
       {
         "url": "/festival/ig/review-v1/natureza-deck-tuck-reta-1.webp",
@@ -1397,13 +2015,14 @@
         "frame": 360
       }
     ],
+    "cover": 0,
     "index": 0,
     "count": 1,
     "shots": [
       {
         "url": "/festival/ig/review-v1/natureza-deck-entrada-agrupada-0.webp",
-        "label": "1.5 s",
-        "frame": 45
+        "label": "0.0 s",
+        "frame": 0
       },
       {
         "url": "/festival/ig/review-v1/natureza-deck-entrada-agrupada-1.webp",
@@ -1438,13 +2057,14 @@
         "frame": 1005
       }
     ],
+    "cover": 0,
     "index": 0,
     "count": 1,
     "shots": [
       {
         "url": "/festival/ig/review-v1/natureza-deck-straddle-frente-0.webp",
-        "label": "1.5 s",
-        "frame": 45
+        "label": "0.0 s",
+        "frame": 0
       },
       {
         "url": "/festival/ig/review-v1/natureza-deck-straddle-frente-1.webp",
@@ -1479,13 +2099,14 @@
         "frame": 675
       }
     ],
+    "cover": 0,
     "index": 0,
     "count": 1,
     "shots": [
       {
         "url": "/festival/ig/review-v1/natureza-deck-straddle-baixo-0.webp",
-        "label": "1.5 s",
-        "frame": 45
+        "label": "0.0 s",
+        "frame": 0
       },
       {
         "url": "/festival/ig/review-v1/natureza-deck-straddle-baixo-1.webp",
@@ -1520,13 +2141,14 @@
         "frame": 384
       }
     ],
+    "cover": 0,
     "index": 0,
     "count": 1,
     "shots": [
       {
         "url": "/festival/ig/review-v1/natureza-pavilhao-press-sequencia-0.webp",
-        "label": "1.5 s",
-        "frame": 45
+        "label": "0.0 s",
+        "frame": 0
       },
       {
         "url": "/festival/ig/review-v1/natureza-pavilhao-press-sequencia-1.webp",

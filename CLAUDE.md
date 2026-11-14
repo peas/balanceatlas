@@ -464,3 +464,14 @@ spotlights are independent references, without HF endorsement/guest implications
 `/instagram/gabriel/` is the filming brief: silent demonstrations, voiceover later; reference samples retain
 Paulo's original audio and have editorial labels, not claimed literal subtitles. The future educational archive
 is “Handstand Life: Guia de Sobrevivência”. Keep pending lessons visibly pending until filmed and reviewed.
+
+## Image-led covers and provisional exercises — 14 November 2026
+
+Start the proposed Instagram cycle on Wednesday 18 November 2026 (new date preference storage key;
+old browser defaults must not silently retain 13 November). Images of actual handstand/exercise dominate
+covers; tiny photos beneath large text and text-only athlete covers are rejected. Scale or replace the photo,
+preserve relevant hands/feet, and put readable copy over a restrained gradient. Text-only closing slides remain valid.
+Avatar option 02 is preferred, but MUST use the original connected HF path, never separate reconstructed letters.
+Paulo's 14 exercise samples now have explicitly provisional Remotion previews: complete sample, mild tonal
+correction, ochre titles, then exact-frame freeze. They are not Gabriel footage or final validated lessons.
+See `exercise-preview-pieces.tsx`; filming briefs remain outstanding until Gabriel refilms/reviews them.

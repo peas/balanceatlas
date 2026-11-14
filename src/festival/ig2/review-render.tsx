@@ -14,7 +14,7 @@ Promise.all([
 
 function RenderRoot() {
   return <>{CATALOG.flatMap(piece => piece.slides.map((slide, i) => ({piece,slide,i}))).map(({piece,slide,i}) => {
-    return <Composition key={`${piece.id}-${i}`} id={piece.slides.length === 1 ? piece.id : `${piece.id}-${i+1}`}  component={slide.component} durationInFrames={Math.round(slide.seconds * 30)} fps={30} width={1080} height={slide.height} defaultProps={{ guides: false, palette:'ocre', treatment: 'direction' as const, review:{id:piece.id,title:piece.title,format:piece.format,description:piece.description,movement:piece.movement,name:slide.name,cues:slide.cues,index:i,count:piece.slides.length} }} />;
+    return <Composition key={`${piece.id}-${i}`} id={piece.slides.length === 1 ? piece.id : `${piece.id}-${i+1}`}  component={slide.component} durationInFrames={Math.round(slide.seconds * 30)} fps={30} width={1080} height={slide.height} defaultProps={{ guides: false, palette:'ocre', treatment: 'direction' as const, review:{id:piece.id,title:piece.title,format:piece.format,description:piece.description,movement:piece.movement,name:slide.name,cues:slide.cues,cover:slide.cover,index:i,count:piece.slides.length} }} />;
   })}</>;
 }
 registerRoot(RenderRoot);
