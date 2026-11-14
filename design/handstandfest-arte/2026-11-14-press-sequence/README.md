@@ -12,7 +12,7 @@ The result is an artistic interpretation: enhanced muscles, possible contour/fac
 
 ## Motion and layers
 
-`src/festival/press-study/PressStudy.tsx`: 1080x1920, 60 fps, 600 frames (10s). Pose durations [45,30,35,80,30,95,35,35,40,175]. Hard pose cuts, no anatomical interpolation. Camera anchor stays near hand contact. Accents only on poses 4, 6 and 10. Paint is a separate v07 BrushStroke behind the person, quickly revealed and hidden before movement resumes. Text and HF remain separate.
+`src/festival/press-study/PressStudy.tsx`: 1080x1920, 60 fps, 600 frames (10s). Pose durations [45,30,35,80,30,95,35,35,40,175]. Hard pose cuts, no anatomical interpolation. The initial implementation uses an approximate canvas-relative camera anchor; hand registration still needs refinement (see review below). Current preview accents pose 6 only; the original three-accent renders are historical. Paint is a separate v07 BrushStroke behind the person, quickly revealed and hidden before movement resumes. Text and HF remain separate.
 
 - Calm: cream, up to +7.5% slow zoom during holds.
 - Pulse: deep green, +30% in 8 frames, down to +20% by frame 19, settles to +3%; quick ochre gesture.
@@ -35,3 +35,12 @@ The sparse-pose animation technique is approved for reuse, but this pool clip is
 Use ONE coordinated paint + camera accent per short sequence. Repeating it on three holds was too much information. The current preview now accents pose 6 only; other poses remain at constant camera scale. Next experiment: about 12 semantically selected poses rather than evenly spaced samples — denser during the transition, longer holds at readable milestones. Twelve is a hypothesis to compare, not a universal requirement; do not add redundant frames solely to reach a number.
 
 Continue generating a single contact sheet for consistency, preserving equal cells, camera scale and hand baseline. Inspect occlusion and motion continuity BEFORE generation. This review supersedes the three-accent initial recipe above.
+
+
+### Zoom and hand-contact stability — Paulo, 14 November 2026
+
+Paulo prefers the +30% zoom impulse to the subtle zoom. He dislikes the apparent lateral camera/figure drift: hands seem to slide between poses. Per-cell recentering or inconsistent generated registration is a suspected cause, not a confirmed diagnosis. A shared contact sheet alone does not guarantee stable anchors.
+
+For the next iteration, register each pose against the original hand contact points and a common floor baseline; preserve a shared scale/canvas rather than centering each silhouette by its bounding box. Keep real movement from the source, correcting only artificial drift. Check the sequence with camera motion disabled first. Then use the registered support midpoint as the zoom origin, with no lateral pan, and preserve camera-transform continuity across pose changes (avoid a sudden scale reset). Retain the single paint+zoom accent. Review hands at every cut and zoom peak before accepting the sequence.
+
+This is a recorded requirement for the next iteration; the current preview has not been realigned or rerendered in this notes-only pass.
