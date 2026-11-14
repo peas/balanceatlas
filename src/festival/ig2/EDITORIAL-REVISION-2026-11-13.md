@@ -48,3 +48,16 @@ The web fetch was throttled and a Chrome tool attempt timed out. Its slides/capt
 - `spotlight-pieces.tsx`: original “Em foco” prototypes; catalogue registration handled with the other composition changes.
 - `review-shots.json`: thumbnail snapshots must be regenerated after composition/copy changes; an old image is not evidence that the current player has old copy.
 - Review exports previously identified pending slots by `pauta-dia-N`; those IDs were positional. Reconcile old comments against titles/content after reordering rather than blindly applying the previous day number.
+
+## Reference inspected in logged-in Chrome (supersedes access limitation above)
+
+Paulo requested his logged-in Chrome for all Instagram references. The eight-slide carousel
+https://www.instagram.com/p/Dfr2AKsEfoN/ by matheus_keil and calispoa was then inspected directly.
+It presents a tiered progression: introductory strength, frog balance, elevated pike,
+wall-supported handstand, freestanding balance and one-arm work, ending in a commercial CTA.
+Useful structure: one recognisable demonstration, one concise observation and visible progress per slide.
+Our adaptation should be a map of practice tools rather than a universal rank or mandatory linear ladder.
+Possible original posts: “Ferramentas para começar nas mãos” (hands, frog, supported pike, wall),
+“Da parede ao equilíbrio” (one foot, the other, return, lateral exit), and “O treino continua depois da reta”
+(shapes, transitions, repeated attempts). Use Gabriel's requested footage/photos and original artwork.
+Do not copy third-party illustrations or promise mastery from a fixed sequence; Gabriel reviews technique.

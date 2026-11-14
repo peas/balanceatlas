@@ -46,3 +46,9 @@ These captures feed **Handstand Life: Guia de Sobrevivência**, a future subject
 ## Validation
 
 All 14 outputs checked with ffprobe: H.264 + AAC audio, durations within 0.15 s of the specified window (13.24 MB combined). Selected posters visually reviewed after SDR mapping. Sources sometimes cut extremities, especially the lateral-exit demonstration; the page explicitly requests a better complete-body reshoot. This is not a claim that these references are publication-ready instructional videos. No final Instagram exports were produced.
+
+## Carousel reference connection
+The Instagram reference https://www.instagram.com/p/Dfr2AKsEfoN/ was inspected in Paulo's logged-in Chrome.
+The existing frog, supported-pike, wall and foot-release briefs can supply an original carousel of practice tools.
+Capture a clear still at each support stage, not only moving takes. Avoid portraying these exercises as a
+mandatory ranking ladder; choose teaching sequence and explanations with Gabriel.
