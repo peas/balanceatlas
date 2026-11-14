@@ -1,5 +1,5 @@
 import { Player, type PlayerRef } from '@remotion/player';
-import { useEffect, useMemo, useRef } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import {
   FPS,
   H,
@@ -37,6 +37,18 @@ export default function FestPlayer({ comp, props }: { comp: keyof typeof COMPS; 
   // Only the players on screen run: six of them decoding video at once made old computers stutter and flicker.
   const box = useRef<HTMLDivElement>(null);
   const player = useRef<PlayerRef>(null);
+  const [cover, setCover] = useState<{width:number;height:number}>();
+  // Match the inner content box, not the border-box aspect ratio. Player defaults
+  // to contain, which exposed a thin duplicate fallback strip inside rounded frames.
+  useEffect(() => {
+    if (!box.current) return;
+    const observer = new ResizeObserver(([entry]) => {
+      const scale = Math.max(entry.contentRect.width / w, entry.contentRect.height / h);
+      setCover({width: Math.ceil(w * scale) + 2, height: Math.ceil(h * scale) + 2});
+    });
+    observer.observe(box.current);
+    return () => observer.disconnect();
+  }, [w, h, reduced]);
   useEffect(() => {
     if (reduced || !box.current) return;
     const io = new IntersectionObserver(([e]) => (e.isIntersecting ? player.current?.play() : player.current?.pause()), { threshold: 0.15 });
@@ -47,7 +59,7 @@ export default function FestPlayer({ comp, props }: { comp: keyof typeof COMPS; 
   // frame when iOS Reduce Motion disables playback. Keep a real photograph instead.
   if (reduced) return <div style={{ position: 'absolute', inset: 0 }}>{stillImage()}</div>;
   return (
-    <div ref={box} style={{ position: 'absolute', inset: 0 }}>
+    <div ref={box} style={{ position: 'absolute', inset: 0, overflow: 'hidden', borderRadius: 'inherit' }}>
     <Player
       ref={player}
       component={component as React.ComponentType<Record<string, unknown>>}
@@ -67,7 +79,7 @@ export default function FestPlayer({ comp, props }: { comp: keyof typeof COMPS; 
       clickToPlay={false}
       doubleClickToFullscreen={false}
       acknowledgeRemotionLicense
-      style={{ width: '100%', height: '100%' }}
+      style={{ position: 'absolute', left: '50%', top: '50%', transform: 'translate(-50%, -50%)', width: cover?.width ?? '100%', height: cover?.height ?? '100%' }}
     />
     </div>
   );
