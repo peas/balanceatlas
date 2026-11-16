@@ -418,3 +418,7 @@ previews have safer text/seal placement and no internal production note burned i
 still identifies Paulo's provisional demonstration. Editorial/biography support text is larger. Compare the
 same nine posts before/after at `/instagram/#antes-depois`; recipe `scripts/festival_grid_comparison.mjs`.
 This updates preview compositions and publishing assets, not actual Instagram posts or all previous MP4 exports.
+
+## Handstand Life training library (16 November 2026)
+
+While producing drills, retain clean full demonstrations and separate narration/graphics for a future training app. Stable exercise IDs link to the media catalogue; record variation, person, angle, source timing and Gabriel review. See `docs/handstand-life/TRAINING-APP.md` for the reuse map and proposed record contract. HF already invokes paulo.com.br-render pose extraction; its angle/skeleton overlays and specialized alignment analysis remain in the source project, not yet integrated into HF. No batch analysis or app launch implied.

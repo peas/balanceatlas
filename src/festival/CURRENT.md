@@ -62,3 +62,7 @@ The explicit 35-day plan now opens with event invitation, wrists, training toget
 ## Cover review correction — 14 November 2026
 
 The opening week uses distinct hero photos: invitation = Gabriel on sand (IMG_3377); Gabriel introduction = indoor profile (IMG_3372); landscape = Gabriel on rocks (IMG_7876). André photo-saopaulo-2024-98 remains excluded. When changing a composition, rebuild its actual thumbnail and downloadable cover, inspect both, and check neighbouring calendar items by source image, not only piece ID. The still-render script now creates a fresh bundle and content-hashed URLs to prevent stale generated assets/cache from surviving a source correction.
+
+## Future training app — 16 November 2026
+
+Prepare reusable exercise-library material while producing social drills: clean full takes, stable IDs, separate voiceover/graphics, person/angle/variation and technical review. Decision and verified pose-analysis reuse map: `docs/handstand-life/TRAINING-APP.md`. Existing Python extraction is reused; browser inference and HF skeleton/angle overlays are future work.

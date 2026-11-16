@@ -170,3 +170,7 @@ Seleção de oito vídeos + quatro fotos novas, e um JPEG original de maior reso
 Entradas com `nao_usar: true` ficam no histórico, mas não podem ser selecionadas para novas peças.
 Respeitar `restricao_uso`, inclusive ao regenerar sugestões. `photo-saopaulo-2024-98` foi identificado
 por Paulo como André, seu antigo professor, e excluído do uso em 14/11/2026; convite substituído por Gabriel no mar.
+
+## Biblioteca de exercícios e futuro app (16/11/2026)
+
+Ao produzir drills, guardar demonstração limpa e completa, pessoa, variação, ângulo, take, tempos da fonte e revisão técnica. Vincular os IDs dos exercícios ao catálogo de mídia existente; Reel, gravura e aula são derivados separados. O detector do `paulo.com.br-render` já é chamado pelo HF; os overlays de esqueleto/ângulos ainda não foram portados. Mapa de código, limitações e plano: [TRAINING-APP.md](../docs/handstand-life/TRAINING-APP.md).

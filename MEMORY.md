@@ -11,3 +11,5 @@ Public previews updated in 11ae0c0: support text increased, copy shortened, clea
 14 November 2026 follow-up: Paulo approved stepped engraving animation for reuse, not the occluded pool source. Full body visible throughout; one paint+zoom accent, not three. Next test ~12 poses selected at meaningful movement phases, with variable holds. Recorded in IMAGERY.md and the press study README; current preview reduced to one accent.
 
 14 November 2026: Paulo prefers the +30% zoom but rejects hand-sliding/lateral drift between engraved poses. Next iteration must register the hand supports/common baseline, avoid per-silhouette recentering and keep the zoom anchor/transform continuous. Cause not yet diagnosed; notes only, no render change. Details in IMAGERY.md and the press study README.
+
+16 November 2026: prepare exercise/drill assets for a future Handstand Life training app alongside social production. Preserve clean demonstrations and separate layers, link exercise/media IDs and technical reviews. `docs/handstand-life/TRAINING-APP.md` maps existing paulo.com.br-render extraction reuse and pending angle/skeleton/analysis integration.
