@@ -1791,6 +1791,132 @@
     ]
   },
   {
+    "id": "gabriel-drill-gato-vaca-perfil",
+    "title": "Gato-vaca · perfil · Gabriel",
+    "format": "Reel",
+    "description": "Demonstração de Gabriel, vinculada à pauta gato-vaca. Corte em velocidade real; falta revisão técnica da orientação e narração. O fecho usa fotografia em preto e branco, não gravura anatômica.",
+    "movement": "Corte completo de 10.4 s, seguido de 3 s do quadro da fonte em 10.36 s. Pintura independente e sem deslocar o corpo. Áudio original não incluído.",
+    "name": "Gato-vaca · perfil",
+    "cues": [
+      {
+        "label": "Demonstração",
+        "frame": 120
+      },
+      {
+        "label": "Movimento",
+        "frame": 156
+      },
+      {
+        "label": "Congela e observa",
+        "frame": 342
+      }
+    ],
+    "cover": 120,
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/gabriel-drill-gato-vaca-perfil-0-964fae2b0a.webp",
+        "label": "4.0 s",
+        "frame": 120
+      },
+      {
+        "url": "/festival/ig/review-v1/gabriel-drill-gato-vaca-perfil-1-4d2debb387.webp",
+        "label": "5.2 s",
+        "frame": 156
+      },
+      {
+        "url": "/festival/ig/review-v1/gabriel-drill-gato-vaca-perfil-2-605e915821.webp",
+        "label": "11.4 s",
+        "frame": 342
+      }
+    ]
+  },
+  {
+    "id": "gabriel-drill-escapulas-perfil",
+    "title": "Escápulas · perfil · Gabriel",
+    "format": "Reel",
+    "description": "Demonstração de Gabriel, vinculada à pauta escapulas. Corte em velocidade real; falta revisão técnica da orientação e narração. O fecho usa fotografia em preto e branco, não gravura anatômica.",
+    "movement": "Corte completo de 8.3 s, seguido de 3 s do quadro da fonte em 8.26 s. Pintura independente e sem deslocar o corpo. Áudio original não incluído.",
+    "name": "Escápulas · perfil",
+    "cues": [
+      {
+        "label": "Demonstração",
+        "frame": 120
+      },
+      {
+        "label": "Movimento",
+        "frame": 124
+      },
+      {
+        "label": "Congela e observa",
+        "frame": 279
+      }
+    ],
+    "cover": 120,
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/gabriel-drill-escapulas-perfil-0-90612197e6.webp",
+        "label": "4.0 s",
+        "frame": 120
+      },
+      {
+        "url": "/festival/ig/review-v1/gabriel-drill-escapulas-perfil-1-23c0836ca7.webp",
+        "label": "4.1 s",
+        "frame": 124
+      },
+      {
+        "url": "/festival/ig/review-v1/gabriel-drill-escapulas-perfil-2-523d3b5909.webp",
+        "label": "9.3 s",
+        "frame": 279
+      }
+    ]
+  },
+  {
+    "id": "gabriel-drill-saida-cadeira",
+    "title": "Saída lateral com apoio · Gabriel",
+    "format": "Reel",
+    "description": "Demonstração de Gabriel, vinculada à pauta saida-estrela. Corte em velocidade real; falta revisão técnica da orientação e narração. O fecho usa fotografia em preto e branco, não gravura anatômica.",
+    "movement": "Corte completo de 22.6 s, seguido de 3 s do quadro da fonte em 22.58 s. Pintura independente e sem deslocar o corpo. Áudio original não incluído.",
+    "name": "Saída lateral com apoio",
+    "cues": [
+      {
+        "label": "Demonstração",
+        "frame": 120
+      },
+      {
+        "label": "Movimento",
+        "frame": 339
+      },
+      {
+        "label": "Congela e observa",
+        "frame": 708
+      }
+    ],
+    "cover": 120,
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/gabriel-drill-saida-cadeira-0-104349f37a.webp",
+        "label": "4.0 s",
+        "frame": 120
+      },
+      {
+        "url": "/festival/ig/review-v1/gabriel-drill-saida-cadeira-1-15fd55eeeb.webp",
+        "label": "11.3 s",
+        "frame": 339
+      },
+      {
+        "url": "/festival/ig/review-v1/gabriel-drill-saida-cadeira-2-a6328d764f.webp",
+        "label": "23.6 s",
+        "frame": 708
+      }
+    ]
+  },
+  {
     "id": "arte-freeze-ocre",
     "title": "Do vídeo à tinta",
     "format": "Reel",

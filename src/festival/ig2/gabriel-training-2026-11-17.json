@@ -93,5 +93,62 @@
     "src": "/festival/ig/gabriel-training-v1/saida-parede.mp4",
     "poster": "/festival/ig/gabriel-training-v1/saida-parede-freeze.webp",
     "review": "pending_technical_review"
+  },
+  {
+    "id": "gato-vaca-perfil",
+    "title": "Gato-vaca · perfil",
+    "exercise_id": "gato-vaca",
+    "source_id": "gabriel-20261117-img_3529-1",
+    "source_start": 0,
+    "source_end": 10.39,
+    "seconds": 10.39,
+    "freeze": 10.356666666666667,
+    "cover": 4,
+    "hook": [
+      "GATO-VACA.",
+      "VISTA DE PERFIL."
+    ],
+    "note": "Outro ângulo da mesma passagem.",
+    "src": "/festival/ig/gabriel-training-v1/gato-vaca-perfil.mp4",
+    "poster": "/festival/ig/gabriel-training-v1/gato-vaca-perfil-freeze.webp",
+    "review": "pending_technical_review"
+  },
+  {
+    "id": "escapulas-perfil",
+    "title": "Escápulas · perfil",
+    "exercise_id": "escapulas",
+    "source_id": "gabriel-20261117-img_3529-2",
+    "source_start": 0,
+    "source_end": 8.29,
+    "seconds": 8.29,
+    "freeze": 8.256666666666666,
+    "cover": 4,
+    "hook": [
+      "ESCÁPULAS.",
+      "VISTA DE PERFIL."
+    ],
+    "note": "Observe a passagem entre os apoios.",
+    "src": "/festival/ig/gabriel-training-v1/escapulas-perfil.mp4",
+    "poster": "/festival/ig/gabriel-training-v1/escapulas-perfil-freeze.webp",
+    "review": "pending_technical_review"
+  },
+  {
+    "id": "saida-cadeira",
+    "title": "Saída lateral com apoio",
+    "exercise_id": "saida-estrela",
+    "source_id": "gabriel-20261117-img_3544",
+    "source_start": 0,
+    "source_end": 22.61,
+    "seconds": 22.61,
+    "freeze": 22.576666666666664,
+    "cover": 4,
+    "hook": [
+      "SAÍDA LATERAL.",
+      "COM APOIO."
+    ],
+    "note": "Uma preparação para observar a saída.",
+    "src": "/festival/ig/gabriel-training-v1/saida-cadeira.mp4",
+    "poster": "/festival/ig/gabriel-training-v1/saida-cadeira-freeze.webp",
+    "review": "pending_technical_review"
   }
 ]

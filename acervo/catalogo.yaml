@@ -7625,7 +7625,7 @@
   exercicio_id: "gato-vaca"
   triagem: "use"
   revisao: "triagem por quadros; revisão técnica pendente"
-  cortes: []
+  cortes: ["gato-vaca-perfil"]
   observacoes: "Triagem visual por 6 quadros; técnica e áudio ainda não revisados."
 - id: "gabriel-20261117-img_3529-2"
   arquivo: "local/festival/gabriel-2026-11-17/originals/IMG_3529(2).mov"
@@ -7638,7 +7638,7 @@
   exercicio_id: "escapulas"
   triagem: "use"
   revisao: "triagem por quadros; revisão técnica pendente"
-  cortes: []
+  cortes: ["escapulas-perfil"]
   observacoes: "Triagem visual por 6 quadros; técnica e áudio ainda não revisados."
 - id: "gabriel-20261117-img_3531-1"
   arquivo: "local/festival/gabriel-2026-11-17/originals/IMG_3531(1).mov"
@@ -7703,7 +7703,7 @@
   exercicio_id: "saida-estrela"
   triagem: "use"
   revisao: "triagem por quadros; revisão técnica pendente"
-  cortes: []
+  cortes: ["saida-cadeira"]
   observacoes: "Triagem visual por 6 quadros; técnica e áudio ainda não revisados."
 - id: "gabriel-20261117-img_3545-1"
   arquivo: "local/festival/gabriel-2026-11-17/originals/IMG_3545(1).mov"

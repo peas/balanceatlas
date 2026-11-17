@@ -630,6 +630,16 @@
     "note": "Confirm crop in uploader; cover does not imply publication approval."
   },
   {
+    "id": "gabriel-drill-gato-vaca",
+    "composition": "gabriel-drill-gato-vaca",
+    "frame": 120,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/gabriel-drill-gato-vaca-e76d1204cc.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
     "id": "gabriel-drill-escapulas",
     "composition": "gabriel-drill-escapulas",
     "frame": 120,
@@ -670,12 +680,32 @@
     "note": "Confirm crop in uploader; cover does not imply publication approval."
   },
   {
-    "id": "gabriel-drill-gato-vaca",
-    "composition": "gabriel-drill-gato-vaca",
+    "id": "gabriel-drill-gato-vaca-perfil",
+    "composition": "gabriel-drill-gato-vaca-perfil",
     "frame": 120,
     "width": 1080,
     "height": 1920,
-    "url": "/festival/ig/covers-v1/gabriel-drill-gato-vaca-e76d1204cc.webp",
+    "url": "/festival/ig/covers-v1/gabriel-drill-gato-vaca-perfil-eaa16b3432.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "gabriel-drill-escapulas-perfil",
+    "composition": "gabriel-drill-escapulas-perfil",
+    "frame": 120,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/gabriel-drill-escapulas-perfil-d6fdfa6365.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "gabriel-drill-saida-cadeira",
+    "composition": "gabriel-drill-saida-cadeira",
+    "frame": 120,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/gabriel-drill-saida-cadeira-21df52fbdd.webp",
     "status": "review",
     "note": "Confirm crop in uploader; cover does not imply publication approval."
   }

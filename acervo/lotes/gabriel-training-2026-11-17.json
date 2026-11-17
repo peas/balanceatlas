@@ -237,7 +237,9 @@
       "priority": "use",
       "count_people": 1,
       "notes": "Triagem visual por 6 quadros; técnica e áudio ainda não revisados.",
-      "cuts": [],
+      "cuts": [
+        "gato-vaca-perfil"
+      ],
       "status": "captured_review_pending",
       "sheet": "/festival/ig/gabriel-training-v1/gabriel-20261117-img_3529-1.jpg"
     },
@@ -261,7 +263,9 @@
       "priority": "use",
       "count_people": 1,
       "notes": "Triagem visual por 6 quadros; técnica e áudio ainda não revisados.",
-      "cuts": [],
+      "cuts": [
+        "escapulas-perfil"
+      ],
       "status": "captured_review_pending",
       "sheet": "/festival/ig/gabriel-training-v1/gabriel-20261117-img_3529-2.jpg"
     },
@@ -385,7 +389,9 @@
       "priority": "use",
       "count_people": 1,
       "notes": "Triagem visual por 6 quadros; técnica e áudio ainda não revisados.",
-      "cuts": [],
+      "cuts": [
+        "saida-cadeira"
+      ],
       "status": "captured_review_pending",
       "sheet": "/festival/ig/gabriel-training-v1/gabriel-20261117-img_3544.jpg"
     },
