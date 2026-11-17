@@ -1584,8 +1584,8 @@
     "id": "gabriel-drill-gato-vaca",
     "title": "Gato-vaca · Gabriel",
     "format": "Reel",
-    "description": "Demonstração de Gabriel, vinculada à pauta gato-vaca. Corte em velocidade real; falta revisão técnica da orientação e narração. O fecho usa fotografia em preto e branco, não gravura anatômica.",
-    "movement": "Corte completo de 13.4 s, seguido de 3 s do quadro da fonte em 13.40 s. Pintura independente e sem deslocar o corpo. Áudio original não incluído.",
+    "description": "Demonstração de Gabriel, vinculada à pauta gato-vaca. Corte em velocidade real; falta revisão técnica da orientação e narração. O fecho usa fotografia, alternando cor natural e preto e branco; não é gravura anatômica.",
+    "movement": "Corte completo de 13.4 s, seguido de 3 s do quadro da fonte em 13.40 s. Pintura independente e sem deslocar o corpo. Áudio original não incluído. Aproximação fixa de 30%: retirar céu e gramado, preservando mãos, joelhos e pés.",
     "name": "Gato-vaca",
     "cues": [
       {
@@ -1606,17 +1606,17 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/gabriel-drill-gato-vaca-0-e045865f8f.webp",
+        "url": "/festival/ig/review-v1/gabriel-drill-gato-vaca-0-0cb273ffc9.webp",
         "label": "4.0 s",
         "frame": 120
       },
       {
-        "url": "/festival/ig/review-v1/gabriel-drill-gato-vaca-1-b8a23e7bbc.webp",
+        "url": "/festival/ig/review-v1/gabriel-drill-gato-vaca-1-3daf5dd33f.webp",
         "label": "6.7 s",
         "frame": 201
       },
       {
-        "url": "/festival/ig/review-v1/gabriel-drill-gato-vaca-2-61c18363d4.webp",
+        "url": "/festival/ig/review-v1/gabriel-drill-gato-vaca-2-c8f49ac5d4.webp",
         "label": "14.4 s",
         "frame": 433
       }
@@ -1626,8 +1626,8 @@
     "id": "gabriel-drill-escapulas",
     "title": "Escápulas em prancha · Gabriel",
     "format": "Reel",
-    "description": "Demonstração de Gabriel, vinculada à pauta escapulas. Corte em velocidade real; falta revisão técnica da orientação e narração. O fecho usa fotografia em preto e branco, não gravura anatômica.",
-    "movement": "Corte completo de 11.3 s, seguido de 3 s do quadro da fonte em 11.32 s. Pintura independente e sem deslocar o corpo. Áudio original não incluído.",
+    "description": "Demonstração de Gabriel, vinculada à pauta escapulas. Corte em velocidade real; falta revisão técnica da orientação e narração. O fecho usa fotografia, alternando cor natural e preto e branco; não é gravura anatômica.",
+    "movement": "Corte completo de 11.3 s, seguido de 3 s do quadro da fonte em 11.32 s. Pintura independente e sem deslocar o corpo. Áudio original não incluído. A prancha já ocupa boa parte da largura; ampliar cortaria cabeça ou pés.",
     "name": "Escápulas em prancha",
     "cues": [
       {
@@ -1648,17 +1648,17 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/gabriel-drill-escapulas-0-51f18f9067.webp",
+        "url": "/festival/ig/review-v1/gabriel-drill-escapulas-0-3060cfb93f.webp",
         "label": "4.0 s",
         "frame": 120
       },
       {
-        "url": "/festival/ig/review-v1/gabriel-drill-escapulas-1-c8b2a1bbe6.webp",
+        "url": "/festival/ig/review-v1/gabriel-drill-escapulas-1-d910aabfe1.webp",
         "label": "5.7 s",
         "frame": 170
       },
       {
-        "url": "/festival/ig/review-v1/gabriel-drill-escapulas-2-ed63a7dbe8.webp",
+        "url": "/festival/ig/review-v1/gabriel-drill-escapulas-2-a168dfa04d.webp",
         "label": "12.4 s",
         "frame": 371
       }
@@ -1668,8 +1668,8 @@
     "id": "gabriel-drill-ombros-apoio",
     "title": "Abertura de ombros com apoio · Gabriel",
     "format": "Reel",
-    "description": "Demonstração de Gabriel, vinculada à pauta ombros-cadeira. Corte em velocidade real; falta revisão técnica da orientação e narração. O fecho usa fotografia em preto e branco, não gravura anatômica.",
-    "movement": "Corte completo de 17.0 s, seguido de 3 s do quadro da fonte em 16.97 s. Pintura independente e sem deslocar o corpo. Áudio original não incluído.",
+    "description": "Demonstração de Gabriel, vinculada à pauta ombros-cadeira. Corte em velocidade real; falta revisão técnica da orientação e narração. O fecho usa fotografia, alternando cor natural e preto e branco; não é gravura anatômica.",
+    "movement": "Corte completo de 17.0 s, seguido de 3 s do quadro da fonte em 16.97 s. Pintura independente e sem deslocar o corpo. Áudio original não incluído. O apoio à direita é parte da explicação; não cortá-lo para dar zoom.",
     "name": "Abertura de ombros com apoio",
     "cues": [
       {
@@ -1690,17 +1690,17 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/gabriel-drill-ombros-apoio-0-7e1417ba32.webp",
+        "url": "/festival/ig/review-v1/gabriel-drill-ombros-apoio-0-c34aa6eea0.webp",
         "label": "4.0 s",
         "frame": 120
       },
       {
-        "url": "/festival/ig/review-v1/gabriel-drill-ombros-apoio-1-60fb22d48a.webp",
+        "url": "/festival/ig/review-v1/gabriel-drill-ombros-apoio-1-418b1c8f7f.webp",
         "label": "8.5 s",
         "frame": 255
       },
       {
-        "url": "/festival/ig/review-v1/gabriel-drill-ombros-apoio-2-c1a5e8a028.webp",
+        "url": "/festival/ig/review-v1/gabriel-drill-ombros-apoio-2-856f20994b.webp",
         "label": "18.0 s",
         "frame": 540
       }
@@ -1710,8 +1710,8 @@
     "id": "gabriel-drill-chute-parede",
     "title": "Entrada na parede · Gabriel",
     "format": "Reel",
-    "description": "Demonstração de Gabriel, vinculada à pauta chute-parede. Corte em velocidade real; falta revisão técnica da orientação e narração. O fecho usa fotografia em preto e branco, não gravura anatômica.",
-    "movement": "Corte completo de 40.5 s, seguido de 3 s do quadro da fonte em 40.47 s. Pintura independente e sem deslocar o corpo. Áudio original não incluído.",
+    "description": "Demonstração de Gabriel, vinculada à pauta chute-parede. Corte em velocidade real; falta revisão técnica da orientação e narração. O fecho usa fotografia, alternando cor natural e preto e branco; não é gravura anatômica.",
+    "movement": "Corte completo de 40.5 s, seguido de 3 s do quadro da fonte em 40.47 s. Pintura independente e sem deslocar o corpo. Áudio original não incluído. Preservar toda a entrada e retorno; no fecho a observação fica à esquerda do corpo.",
     "name": "Entrada na parede",
     "cues": [
       {
@@ -1732,17 +1732,17 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/gabriel-drill-chute-parede-0-09febea7ec.webp",
+        "url": "/festival/ig/review-v1/gabriel-drill-chute-parede-0-6b339a143f.webp",
         "label": "4.0 s",
         "frame": 120
       },
       {
-        "url": "/festival/ig/review-v1/gabriel-drill-chute-parede-1-8e9e63a4ad.webp",
+        "url": "/festival/ig/review-v1/gabriel-drill-chute-parede-1-a46ffcb591.webp",
         "label": "20.3 s",
         "frame": 608
       },
       {
-        "url": "/festival/ig/review-v1/gabriel-drill-chute-parede-2-58ccf524a4.webp",
+        "url": "/festival/ig/review-v1/gabriel-drill-chute-parede-2-2e1197e5bb.webp",
         "label": "41.5 s",
         "frame": 1245
       }
@@ -1752,8 +1752,8 @@
     "id": "gabriel-drill-saida-parede",
     "title": "Saída lateral da parede · Gabriel",
     "format": "Reel",
-    "description": "Demonstração de Gabriel, vinculada à pauta saida-estrela. Corte em velocidade real; falta revisão técnica da orientação e narração. O fecho usa fotografia em preto e branco, não gravura anatômica.",
-    "movement": "Corte completo de 22.3 s, seguido de 3 s do quadro da fonte em 22.27 s. Pintura independente e sem deslocar o corpo. Áudio original não incluído.",
+    "description": "Demonstração de Gabriel, vinculada à pauta saida-estrela. Corte em velocidade real; falta revisão técnica da orientação e narração. O fecho usa fotografia, alternando cor natural e preto e branco; não é gravura anatômica.",
+    "movement": "Corte completo de 22.3 s, seguido de 3 s do quadro da fonte em 22.27 s. Pintura independente e sem deslocar o corpo. Áudio original não incluído. A saída percorre o quadro; manter escala fixa e observação no espaço livre à direita.",
     "name": "Saída lateral da parede",
     "cues": [
       {
@@ -1774,17 +1774,17 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/gabriel-drill-saida-parede-0-03c4f0eda6.webp",
+        "url": "/festival/ig/review-v1/gabriel-drill-saida-parede-0-0e136eb135.webp",
         "label": "4.0 s",
         "frame": 120
       },
       {
-        "url": "/festival/ig/review-v1/gabriel-drill-saida-parede-1-ba1a9b23c3.webp",
+        "url": "/festival/ig/review-v1/gabriel-drill-saida-parede-1-057ea4185f.webp",
         "label": "11.2 s",
         "frame": 335
       },
       {
-        "url": "/festival/ig/review-v1/gabriel-drill-saida-parede-2-66689e994c.webp",
+        "url": "/festival/ig/review-v1/gabriel-drill-saida-parede-2-181878cf59.webp",
         "label": "23.3 s",
         "frame": 699
       }
@@ -1794,8 +1794,8 @@
     "id": "gabriel-drill-gato-vaca-perfil",
     "title": "Gato-vaca · perfil · Gabriel",
     "format": "Reel",
-    "description": "Demonstração de Gabriel, vinculada à pauta gato-vaca. Corte em velocidade real; falta revisão técnica da orientação e narração. O fecho usa fotografia em preto e branco, não gravura anatômica.",
-    "movement": "Corte completo de 10.4 s, seguido de 3 s do quadro da fonte em 10.36 s. Pintura independente e sem deslocar o corpo. Áudio original não incluído.",
+    "description": "Demonstração de Gabriel, vinculada à pauta gato-vaca. Corte em velocidade real; falta revisão técnica da orientação e narração. O fecho usa fotografia, alternando cor natural e preto e branco; não é gravura anatômica.",
+    "movement": "Corte completo de 10.4 s, seguido de 3 s do quadro da fonte em 10.36 s. Pintura independente e sem deslocar o corpo. Áudio original não incluído. Aproximação de 15%, ancorada à direita para manter os pés; ângulo complementar.",
     "name": "Gato-vaca · perfil",
     "cues": [
       {
@@ -1816,17 +1816,17 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/gabriel-drill-gato-vaca-perfil-0-964fae2b0a.webp",
+        "url": "/festival/ig/review-v1/gabriel-drill-gato-vaca-perfil-0-ecd5944dca.webp",
         "label": "4.0 s",
         "frame": 120
       },
       {
-        "url": "/festival/ig/review-v1/gabriel-drill-gato-vaca-perfil-1-4d2debb387.webp",
+        "url": "/festival/ig/review-v1/gabriel-drill-gato-vaca-perfil-1-15ba65f0db.webp",
         "label": "5.2 s",
         "frame": 156
       },
       {
-        "url": "/festival/ig/review-v1/gabriel-drill-gato-vaca-perfil-2-605e915821.webp",
+        "url": "/festival/ig/review-v1/gabriel-drill-gato-vaca-perfil-2-bb35c05b06.webp",
         "label": "11.4 s",
         "frame": 342
       }
@@ -1836,8 +1836,8 @@
     "id": "gabriel-drill-escapulas-perfil",
     "title": "Escápulas · perfil · Gabriel",
     "format": "Reel",
-    "description": "Demonstração de Gabriel, vinculada à pauta escapulas. Corte em velocidade real; falta revisão técnica da orientação e narração. O fecho usa fotografia em preto e branco, não gravura anatômica.",
-    "movement": "Corte completo de 8.3 s, seguido de 3 s do quadro da fonte em 8.26 s. Pintura independente e sem deslocar o corpo. Áudio original não incluído.",
+    "description": "Demonstração de Gabriel, vinculada à pauta escapulas. Corte em velocidade real; falta revisão técnica da orientação e narração. O fecho usa fotografia, alternando cor natural e preto e branco; não é gravura anatômica.",
+    "movement": "Corte completo de 8.3 s, seguido de 3 s do quadro da fonte em 8.26 s. Pintura independente e sem deslocar o corpo. Áudio original não incluído. Pés próximos à borda: manter escala, aproveitar como vista lateral complementar.",
     "name": "Escápulas · perfil",
     "cues": [
       {
@@ -1858,17 +1858,17 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/gabriel-drill-escapulas-perfil-0-90612197e6.webp",
+        "url": "/festival/ig/review-v1/gabriel-drill-escapulas-perfil-0-179abfc51f.webp",
         "label": "4.0 s",
         "frame": 120
       },
       {
-        "url": "/festival/ig/review-v1/gabriel-drill-escapulas-perfil-1-23c0836ca7.webp",
+        "url": "/festival/ig/review-v1/gabriel-drill-escapulas-perfil-1-30661a0b7a.webp",
         "label": "4.1 s",
         "frame": 124
       },
       {
-        "url": "/festival/ig/review-v1/gabriel-drill-escapulas-perfil-2-523d3b5909.webp",
+        "url": "/festival/ig/review-v1/gabriel-drill-escapulas-perfil-2-eb1d43094c.webp",
         "label": "9.3 s",
         "frame": 279
       }
@@ -1878,8 +1878,8 @@
     "id": "gabriel-drill-saida-cadeira",
     "title": "Saída lateral com apoio · Gabriel",
     "format": "Reel",
-    "description": "Demonstração de Gabriel, vinculada à pauta saida-estrela. Corte em velocidade real; falta revisão técnica da orientação e narração. O fecho usa fotografia em preto e branco, não gravura anatômica.",
-    "movement": "Corte completo de 22.6 s, seguido de 3 s do quadro da fonte em 22.58 s. Pintura independente e sem deslocar o corpo. Áudio original não incluído.",
+    "description": "Demonstração de Gabriel, vinculada à pauta saida-estrela. Corte em velocidade real; falta revisão técnica da orientação e narração. O fecho usa fotografia, alternando cor natural e preto e branco; não é gravura anatômica.",
+    "movement": "Corte completo de 22.6 s, seguido de 3 s do quadro da fonte em 22.58 s. Pintura independente e sem deslocar o corpo. Áudio original não incluído. Preservar mãos, perna e cadeira. Usar como preparação, sem zoom que elimine o apoio.",
     "name": "Saída lateral com apoio",
     "cues": [
       {
@@ -1891,8 +1891,8 @@
         "frame": 339
       },
       {
-        "label": "Congela e observa",
-        "frame": 708
+        "label": "Saída completa",
+        "frame": 648
       }
     ],
     "cover": 120,
@@ -1900,19 +1900,19 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/gabriel-drill-saida-cadeira-0-104349f37a.webp",
+        "url": "/festival/ig/review-v1/gabriel-drill-saida-cadeira-0-95059bc4d7.webp",
         "label": "4.0 s",
         "frame": 120
       },
       {
-        "url": "/festival/ig/review-v1/gabriel-drill-saida-cadeira-1-15fd55eeeb.webp",
+        "url": "/festival/ig/review-v1/gabriel-drill-saida-cadeira-1-396bb1505c.webp",
         "label": "11.3 s",
         "frame": 339
       },
       {
-        "url": "/festival/ig/review-v1/gabriel-drill-saida-cadeira-2-a6328d764f.webp",
-        "label": "23.6 s",
-        "frame": 708
+        "url": "/festival/ig/review-v1/gabriel-drill-saida-cadeira-2-dfea2886e7.webp",
+        "label": "21.6 s",
+        "frame": 648
       }
     ]
   },

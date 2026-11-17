@@ -635,7 +635,7 @@
     "frame": 120,
     "width": 1080,
     "height": 1920,
-    "url": "/festival/ig/covers-v1/gabriel-drill-gato-vaca-e76d1204cc.webp",
+    "url": "/festival/ig/covers-v1/gabriel-drill-gato-vaca-e968cb4323.webp",
     "status": "review",
     "note": "Confirm crop in uploader; cover does not imply publication approval."
   },
@@ -645,7 +645,7 @@
     "frame": 120,
     "width": 1080,
     "height": 1920,
-    "url": "/festival/ig/covers-v1/gabriel-drill-escapulas-ebb500e9d6.webp",
+    "url": "/festival/ig/covers-v1/gabriel-drill-escapulas-a2c8f5f5c5.webp",
     "status": "review",
     "note": "Confirm crop in uploader; cover does not imply publication approval."
   },
@@ -655,17 +655,7 @@
     "frame": 120,
     "width": 1080,
     "height": 1920,
-    "url": "/festival/ig/covers-v1/gabriel-drill-ombros-apoio-4aaa66196e.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
-    "id": "gabriel-drill-chute-parede",
-    "composition": "gabriel-drill-chute-parede",
-    "frame": 120,
-    "width": 1080,
-    "height": 1920,
-    "url": "/festival/ig/covers-v1/gabriel-drill-chute-parede-fbf95a79c9.webp",
+    "url": "/festival/ig/covers-v1/gabriel-drill-ombros-apoio-ade5307cb3.webp",
     "status": "review",
     "note": "Confirm crop in uploader; cover does not imply publication approval."
   },
@@ -675,7 +665,7 @@
     "frame": 120,
     "width": 1080,
     "height": 1920,
-    "url": "/festival/ig/covers-v1/gabriel-drill-saida-parede-250b6e993c.webp",
+    "url": "/festival/ig/covers-v1/gabriel-drill-saida-parede-c14b099458.webp",
     "status": "review",
     "note": "Confirm crop in uploader; cover does not imply publication approval."
   },
@@ -685,7 +675,7 @@
     "frame": 120,
     "width": 1080,
     "height": 1920,
-    "url": "/festival/ig/covers-v1/gabriel-drill-gato-vaca-perfil-eaa16b3432.webp",
+    "url": "/festival/ig/covers-v1/gabriel-drill-gato-vaca-perfil-a95c604568.webp",
     "status": "review",
     "note": "Confirm crop in uploader; cover does not imply publication approval."
   },
@@ -695,7 +685,7 @@
     "frame": 120,
     "width": 1080,
     "height": 1920,
-    "url": "/festival/ig/covers-v1/gabriel-drill-escapulas-perfil-d6fdfa6365.webp",
+    "url": "/festival/ig/covers-v1/gabriel-drill-escapulas-perfil-34ece2b7b7.webp",
     "status": "review",
     "note": "Confirm crop in uploader; cover does not imply publication approval."
   },
@@ -705,7 +695,17 @@
     "frame": 120,
     "width": 1080,
     "height": 1920,
-    "url": "/festival/ig/covers-v1/gabriel-drill-saida-cadeira-21df52fbdd.webp",
+    "url": "/festival/ig/covers-v1/gabriel-drill-saida-cadeira-401870545d.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "gabriel-drill-chute-parede",
+    "composition": "gabriel-drill-chute-parede",
+    "frame": 120,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/gabriel-drill-chute-parede-c08585a292.webp",
     "status": "review",
     "note": "Confirm crop in uploader; cover does not imply publication approval."
   }

@@ -1,5 +1,7 @@
+import { PINNED_POSTS } from './pinned-plan';
+export { PINNED_POSTS } from './pinned-plan';
 // Proposed sequence, not a publishing queue. Assets/technical copy still need human review.
-export type EditorialDay = { title:string; pillar:string; piece?:string; hook:string; story:string; missing:string; caption:string; format:string; asset?:string; referenceDay?:number };
+export type EditorialDay = { title:string; pillar:string; piece?:string; hook:string; story:string; missing:string; caption:string; format:string; asset?:string; referenceDay?:number; pinned?:number; briefId?:string };
 const ORIGINAL: EditorialDay[] = [
 {title:'O que nos reúne?',pillar:'Comunidade',piece:'ed-comunidade',hook:'Com quem você treina?',story:'Repost + caixa: cidade, bairro e lugar/grupo para treinar. Confirmar com organizadores antes de divulgar.',missing:'Revisar legenda e escolher a foto de capa.',caption:'Tem quem esteja começando na parede. Tem quem já esteja explorando novas formas. Este espaço é para trocar experiências de parada de mão. Estamos criando e mapeando encontros e lugares para treinar. Em que cidade você está e que espaço ou grupo indica?',format:'Estático'},
 {title:'Como você muda de forma?',pillar:'Prática',piece:'gabriel-transicoes-tela',hook:'Como você muda de forma?',story:'Compartilhar o Reel + enquete: qual transição você quer explorar?',missing:'Revisar com Gabriel os nomes tuck/reta e a legenda. Observação do movimento, não tutorial.',caption:'Gabriel passa de uma forma à outra sem tirar as mãos do chão. A transição também faz parte da prática. Qual passagem você gostaria de ver explicada?',format:'Reel'},
@@ -31,8 +33,9 @@ const old=(index:number, changes:Partial<EditorialDay>={}):EditorialDay=>({...OR
 const exercise=(title:string,hook:string,missing:string):EditorialDay=>({title,hook,pillar:'Exercício',format:'Reel',story:'Compartilhar a demonstração + uma dúvida específica. Gabriel e Paulo gravam sem falar; narração entra depois.',missing:missing+' Captação dos dois: Gabriel e Paulo fazem um plano comparável e outro ângulo complementar, cada um na variação adequada. Guardar entrada e saída; revisão técnica do Gabriel.',caption:'Handstand Life · Guia de Sobrevivência. Uma demonstração, um detalhe para observar. Texto final após a captação e revisão do Gabriel.',asset:'/festival/instagram/gabriel/'});
 const nature=(piece:string,title:string,hook:string,caption:string):EditorialDay=>({piece,title,hook,caption,pillar:'Prática',format:'Reel',story:'Compartilhar o Reel e destacar o detalhe observado, sem acrescentar uma segunda aula.',missing:'Conferir nomes das formas e texto com Gabriel; manter a ação completa antes do congelamento.'});
 const PLAN: EditorialDay[]=[
-// Week 1: Invitation, accessible supports, people and exit before free practice.
-old(4,{title:'Três dias com quem gosta de handstand',hook:'Conheça o 1º HandstandFest!'}),
+// Open on 18–20 November with the three profile-entry posts; then resume practice.
+...PINNED_POSTS.map(post=>({title:post.title,pillar:post.pillar,format:post.format,hook:post.hook,caption:post.caption,story:post.story,missing:post.missing,pinned:post.order,briefId:post.id,asset:'/festival/instagram/#fixados'})),
+// Accessible supports, people and exit before free practice; no duplicate opening invitation.
 exercise('Punhos: preparar os apoios','Como você prepara os punhos?','Filmar preparação dos punhos e distribuição do apoio escolhidas por Gabriel. Corpo e mãos visíveis; voz depois.'),
 old(1,{title:'Treinar sozinho ou junto?',hook:'Treinar junto pode levar você mais longe.',caption:'Estamos fortalecendo a comunidade de handstand do Brasil. Treinar junto é observar, conversar e trocar experiências. Que grupo ou lugar da sua cidade devemos conhecer?'}),
 exercise('Sapinho: primeiro contato com o equilíbrio','Como está o seu sapinho?','Filmar a progressão que Gabriel usa com iniciantes, apoio das mãos, transferência de peso e saída. Corpo inteiro + close; narração posterior.'),

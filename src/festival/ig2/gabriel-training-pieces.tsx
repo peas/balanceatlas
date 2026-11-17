@@ -4,6 +4,7 @@ import { BrushStroke } from '../Brush';
 import { ACCENT, BrandSeal, Canvas, CHALK, Headline, Label, STAGE, move, type PieceProps } from './kit';
 import type { Piece } from './pieces';
 import entries from './gabriel-training-2026-11-17.json';
+import {trainingArtDirection, type TrainingArtDirection} from './training-art-direction';
 
 type TrainingCut = {
   id: string;
@@ -29,35 +30,42 @@ const mediaStyle: CSSProperties = {
   objectFit: 'contain', objectPosition: '50% 50%',
 };
 
-function FreezeObservation({note}: {note: string}) {
+function FreezeObservation({note, direction}: {note: string; direction:TrainingArtDirection}) {
   const frame = useCurrentFrame();
-  return <div style={{position: 'absolute', left: 65, top: 1540, width: 810}}>
-    <BrushStroke color={ACCENT} style={{
-      position: 'absolute', left: -18, top: -10, width: 845, height: 154,
-      clipPath: `inset(0 ${(1 - move(frame, 0, 14)) * 100}% 0 0)`,
-    }}/>
-    <Label x={0} y={0} size={48} color={STAGE} style={{position: 'relative', width: 790, lineHeight: 1.25}}>{note}</Label>
+  const {x,y,width}=direction.note;
+  const compact=width<600;
+  return <div style={{position:'absolute',left:x,top:y,width}}>
+    <div style={{position:'absolute',inset:-20,background:'rgba(18,61,51,.88)',borderRadius:18}}/>
+    <Label x={0} y={0} size={48} color={CHALK} style={{position:'relative',width,lineHeight:1.25}}>{note}</Label>
+    <BrushStroke color={ACCENT} style={{position:'relative',display:'block',marginTop:18,width:compact?width-20:width*.78,height:20,clipPath:`inset(0 ${(1-move(frame,0,14))*100}% 0 0)`}}/>
   </div>;
 }
 
 function GabrielTraining({cut, ...props}: PieceProps & {cut: TrainingCut}) {
   const {fps} = useVideoConfig();
+  const frame=useCurrentFrame();
+  const direction=trainingArtDirection(cut.id);
+  const framedMedia={...mediaStyle,transform:`scale(${direction.zoom})`,transformOrigin:direction.origin};
+  const hasFreeze=cut.id!=='saida-cadeira';
   const playFrames = Math.max(1, Math.round(cut.seconds * fps));
   const Video = getRemotionEnvironment().isRendering ? OffthreadVideo : Html5Video;
   return <Canvas {...props} dark signature={false}>
     <Sequence durationInFrames={playFrames} layout="none">
-      <Video src={resolveMedia(cut.src)} muted style={{...mediaStyle, filter: 'saturate(.9) contrast(1.03)'}}/>
+      <Video src={resolveMedia(cut.src)} muted style={{...framedMedia, filter: 'saturate(.9) contrast(1.03)'}}/>
     </Sequence>
-    <Sequence from={playFrames} durationInFrames={Math.round(3 * fps)} layout="none">
-      <Img src={resolveMedia(cut.poster)} style={{...mediaStyle, filter: 'grayscale(1) contrast(1.08)'}}/>
-    </Sequence>
+    {hasFreeze&&<Sequence from={playFrames} durationInFrames={Math.round(3 * fps)} layout="none">
+      <Img src={resolveMedia(cut.poster)} style={{...framedMedia, filter: direction.hold==='mono'?'grayscale(1) contrast(1.08)':'saturate(.88) contrast(1.04)'}}/>
+    </Sequence>}
     <div style={{position: 'absolute', inset: 0, pointerEvents: 'none', background: 'linear-gradient(180deg,rgba(10,35,28,.78),rgba(10,35,28,.36) 27%,transparent 40%,transparent 79%,rgba(10,35,28,.7))'}}/>
+    <div style={{opacity:frame<playFrames?1-move(frame,150,15):1}}>
     <Label y={225} color={CHALK} size={34}>HANDSTAND LIFE</Label>
-    <Headline lines={cut.hook} y={285} size={76} width={885} dark accentLine={-1}/>
-    <BrandSeal x={740} y={535} size={230}/>
-    <Sequence from={playFrames} durationInFrames={Math.round(3 * fps)} layout="none">
-      <FreezeObservation note={cut.note}/>
-    </Sequence>
+    <Headline lines={cut.id==='chute-parede'?['COMO CHEGA','O PRIMEIRO','PÉ?']:cut.hook} x={cut.id==='chute-parede'?500:65} y={285} size={cut.id==='chute-parede'?56:76} width={cut.id==='chute-parede'?500:885} dark accentLine={direction.paint==='highlight'?0:-1}/>
+    {direction.paint==='underline'&&<BrushStroke color={ACCENT} style={{position:'absolute',left:65,top:470,width:640,height:20,clipPath:`inset(0 ${(1-move(frame,0,16)) * 100}% 0 0)`}}/>}
+    </div>
+    <BrandSeal x={cut.id==='chute-parede'&&frame>=playFrames?65:740} y={535} size={230}/>
+    {hasFreeze&&<Sequence from={playFrames} durationInFrames={Math.round(3 * fps)} layout="none">
+      <FreezeObservation note={cut.note} direction={direction}/>
+    </Sequence>}
   </Canvas>;
 }
 
@@ -65,19 +73,19 @@ export const GABRIEL_TRAINING_PIECES: Piece[] = (entries as TrainingCut[]).map(c
   id: `gabriel-drill-${cut.id}`,
   title: `${cut.title} · Gabriel`,
   format: 'Reel',
-  description: `Demonstração de Gabriel, vinculada à pauta ${cut.exercise_id}. Corte em velocidade real; falta revisão técnica da orientação e narração. O fecho usa fotografia em preto e branco, não gravura anatômica.`,
-  look: 'Vídeo amplo / cor natural / freeze fotográfico P&B / ocre',
-  movement: `Corte completo de ${cut.seconds.toFixed(1)} s, seguido de 3 s do quadro da fonte em ${cut.freeze.toFixed(2)} s. Pintura independente e sem deslocar o corpo. Áudio original não incluído.`,
+  description: `Demonstração de Gabriel, vinculada à pauta ${cut.exercise_id}. Corte em velocidade real; falta revisão técnica da orientação e narração. O fecho usa fotografia, alternando cor natural e preto e branco; não é gravura anatômica.`,
+  look: `Vídeo amplo / ${cut.id==='saida-cadeira'?'movimento sem freeze':trainingArtDirection(cut.id).hold==='mono'?'freeze P&B':'pausa em cor natural'} / ${trainingArtDirection(cut.id).paint==='highlight'?'título pincelado':'sublinhado ocre'}`,
+  movement: `Corte completo de ${cut.seconds.toFixed(1)} s, ${cut.id==='saida-cadeira'?'sem congelamento adicional':`seguido de 3 s do quadro da fonte em ${cut.freeze.toFixed(2)} s` }. Pintura independente e sem deslocar o corpo. Áudio original não incluído. ${trainingArtDirection(cut.id).rationale}`,
   slides: [{
     name: cut.title,
     component: (props: PieceProps) => <GabrielTraining {...props} cut={cut}/>,
     height: 1920,
-    seconds: cut.seconds + 3,
+    seconds: cut.seconds + (cut.id==='saida-cadeira'?0:3),
     cover: Math.max(0, Math.min(Math.round(cut.cover * 30), Math.round(cut.seconds * 30) - 1)),
     cues: [
       {label: 'Demonstração', frame: Math.round(cut.cover * 30)},
       {label: 'Movimento', frame: Math.round(cut.seconds * 15)},
-      {label: 'Congela e observa', frame: Math.round(cut.seconds * 30) + 30},
+      {label: cut.id==='saida-cadeira'?'Saída completa':'Congela e observa', frame: cut.id==='saida-cadeira'?Math.round(cut.seconds*30)-30:Math.round(cut.seconds * 30) + 30},
     ],
   }],
 }));

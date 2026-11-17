@@ -1,0 +1,362 @@
+[
+  {
+    "id": "gabriel-20261117-img_3469-1",
+    "decision": "Guardar",
+    "format": "Story de paisagem",
+    "hook": "A prática também tem cenário.",
+    "reason": "O corpo está distante. Usaria como respiro de 2–3 s, não como aula.",
+    "zoom": 1.35,
+    "origin": "50% 65%"
+  },
+  {
+    "id": "gabriel-20261117-img_3470-1",
+    "decision": "Selecionar",
+    "format": "Reel de repertório",
+    "hook": "O que muda no apoio elevado?",
+    "reason": "Corpo e apoio precisam permanecer juntos; corte fixo moderado, sem fingir progressão para iniciantes.",
+    "zoom": 1.2,
+    "origin": "50% 65%"
+  },
+  {
+    "id": "gabriel-20261117-img_3472-1",
+    "decision": "Selecionar",
+    "format": "Reel de formas",
+    "hook": "Da reta ao afastado.",
+    "reason": "Aproximar o corpo; manter pés na abertura e mãos no apoio durante toda a passagem.",
+    "zoom": 1.3,
+    "origin": "50% 65%"
+  },
+  {
+    "id": "gabriel-20261117-img_3473-1",
+    "decision": "Selecionar",
+    "format": "Reel de observação",
+    "hook": "Como está sua linha?",
+    "reason": "A reta de costas complementa os perfis. Ocre só na palavra linha; pausa curta na sustentação.",
+    "zoom": 1.15,
+    "origin": "50% 65%"
+  },
+  {
+    "id": "gabriel-20261117-img_3475-1",
+    "decision": "Selecionar",
+    "format": "Reel de transição",
+    "hook": "O caminho do press.",
+    "reason": "Boa sequência para repertório. Evitar acelerar o esforço e congelar apenas em um ponto.",
+    "zoom": 1.2,
+    "origin": "50% 65%"
+  },
+  {
+    "id": "gabriel-20261117-img_3477-1",
+    "decision": "Guardar",
+    "format": "Story de ambiente",
+    "hook": "O treino e seu reflexo.",
+    "reason": "O reflexo é interessante, mas a pessoa pequena perde leitura como demonstração.",
+    "zoom": 1.15,
+    "origin": "50% 65%"
+  },
+  {
+    "id": "gabriel-20261117-img_3478-1",
+    "decision": "Guardar",
+    "format": "Plano complementar",
+    "hook": "Outro ponto de vista.",
+    "reason": "Vista alta e distante: curta passagem entre tomadas, não peça educativa isolada.",
+    "zoom": 1.2,
+    "origin": "50% 65%"
+  },
+  {
+    "id": "gabriel-20261117-img_3481",
+    "decision": "Alternativa",
+    "format": "Reel de entrada e saída",
+    "hook": "Entrar é só uma parte.",
+    "reason": "Comparar com a tomada mais próxima antes de escolher; não usar duas peças quase iguais na mesma semana.",
+    "zoom": 1.3,
+    "origin": "50% 65%"
+  },
+  {
+    "id": "gabriel-20261117-img_3483",
+    "decision": "Selecionar",
+    "format": "Reel de prática",
+    "hook": "Uma tentativa não conta o treino.",
+    "reason": "Usar preparação, tentativa e retorno. Preservar a velocidade real, com voz sobre processo.",
+    "zoom": 1.2,
+    "origin": "50% 65%"
+  },
+  {
+    "id": "gabriel-20261117-img_3529-1",
+    "decision": "Complemento",
+    "format": "Segundo ângulo de gato-vaca",
+    "hook": "Coluna em movimento, de perfil.",
+    "reason": "Apoia o mesmo assunto da tomada três-quartos; publicar junto, não como nova aula repetida.",
+    "zoom": 1.12,
+    "origin": "50% 70%"
+  },
+  {
+    "id": "gabriel-20261117-img_3529-2",
+    "decision": "Complemento",
+    "format": "Segundo ângulo de escápulas",
+    "hook": "Ombros vistos de perfil.",
+    "reason": "Bom para observar escápulas. Escolher o ângulo mais legível ou montar comparação identificada.",
+    "zoom": 1.08,
+    "origin": "50% 70%"
+  },
+  {
+    "id": "gabriel-20261117-img_3531-1",
+    "decision": "Em composição",
+    "format": "Reel de mobilidade",
+    "hook": "Gato-vaca. Coluna em ação.",
+    "reason": "Demonstração contínua, capa com gesto visível e pincel curto. Voz técnica ainda a revisar.",
+    "zoom": 1.12,
+    "origin": "50% 70%"
+  },
+  {
+    "id": "gabriel-20261117-img_3531-2",
+    "decision": "Em composição",
+    "format": "Reel de apoio",
+    "hook": "O que muda quando empurra o chão?",
+    "reason": "Destaque ao apoio e movimento escapular. Não confundir com repetição de flexão de braços.",
+    "zoom": 1.08,
+    "origin": "50% 70%"
+  },
+  {
+    "id": "gabriel-20261117-img_3540-1",
+    "decision": "Em composição",
+    "format": "Reel de ombros",
+    "hook": "Ombros com apoio.",
+    "reason": "Bom perfil. Manter a superfície de apoio visível; não esconder pés para ampliar o tronco.",
+    "zoom": 1,
+    "origin": "50% 60%"
+  },
+  {
+    "id": "gabriel-20261117-img_3541",
+    "decision": "Em composição",
+    "format": "Reel de parede",
+    "hook": "Como chega o primeiro pé?",
+    "reason": "Selecionar uma entrada completa para a versão curta; guardar a sequência inteira para biblioteca.",
+    "zoom": 1,
+    "origin": "50% 60%"
+  },
+  {
+    "id": "gabriel-20261117-img_3544",
+    "decision": "Em composição",
+    "format": "Reel de saída com apoio",
+    "hook": "Como você prepara a saída lateral?",
+    "reason": "Variação distinta da parede. Gabriel deve explicar o propósito do apoio; não chamar de tutorial pronto.",
+    "zoom": 1,
+    "origin": "50% 60%"
+  },
+  {
+    "id": "gabriel-20261117-img_3545-1",
+    "decision": "Em composição",
+    "format": "Reel de saída da parede",
+    "hook": "Sair também é praticar.",
+    "reason": "Entrada e saída inteiras. Freeze curto após a ação, sem interromper o momento de segurança.",
+    "zoom": 1,
+    "origin": "50% 60%"
+  },
+  {
+    "id": "gabriel-20261117-img_3549-1",
+    "decision": "Selecionar",
+    "format": "Reel de processo",
+    "hook": "Quantas tentativas cabem num treino?",
+    "reason": "Escolher 2–3 tentativas completas com cortes assumidos; guardar os 68 s para análise.",
+    "zoom": 1.15,
+    "origin": "50% 65%"
+  },
+  {
+    "id": "gabriel-20261117-img_3552-1",
+    "decision": "Alternativa",
+    "format": "Reel avançado",
+    "hook": "Press em apoios.",
+    "reason": "Contraluz reduz detalhe. Preferir 3554 ou 3574 para ensinar; aqui funciona silhueta e repertório.",
+    "zoom": 1.2,
+    "origin": "50% 60%"
+  },
+  {
+    "id": "gabriel-20261117-img_3554",
+    "decision": "Selecionar",
+    "format": "Reel de press",
+    "hook": "Do apoio à parada.",
+    "reason": "Frente complementa o perfil. Capa no meio do press; observar sem prometer progressão rápida.",
+    "zoom": 1.25,
+    "origin": "50% 65%"
+  },
+  {
+    "id": "gabriel-20261117-img_3557",
+    "decision": "Selecionar",
+    "format": "Reel de formas",
+    "hook": "Reta e afastado nos apoios.",
+    "reason": "Bom candidato para o fixado O que é handstand. Uma pausa ocre, não transformar cada troca em efeito.",
+    "zoom": 1.2,
+    "origin": "50% 60%"
+  },
+  {
+    "id": "gabriel-20261117-img_3572",
+    "decision": "Guardar",
+    "format": "Trecho inicial apenas",
+    "hook": "O corpo precisa caber.",
+    "reason": "A câmera aproxima e corta os pés. Só aproveitar se o trecho inicial preservar toda a ação necessária.",
+    "zoom": 1,
+    "origin": "50% 50%"
+  },
+  {
+    "id": "gabriel-20261117-img_3574",
+    "decision": "Selecionar",
+    "format": "Reel de press de perfil",
+    "hook": "Press: observe a passagem.",
+    "reason": "Bom candidato ao fixado; aproximação moderada com apoio e pés inteiros. Não é drill básico.",
+    "zoom": 1.3,
+    "origin": "50% 60%"
+  },
+  {
+    "id": "gabriel-20261117-img_3580-1",
+    "decision": "Selecionar",
+    "format": "Reel de comunidade",
+    "hook": "O que você aprende treinando junto?",
+    "reason": "Dupla real, com conversa no final. Manter contexto e nomes corretos, sem comparar certo e errado.",
+    "zoom": 1.1,
+    "origin": "50% 60%"
+  },
+  {
+    "id": "gabriel-20261117-img_3587",
+    "decision": "Selecionar",
+    "format": "Reel de repertório na natureza",
+    "hook": "Uma base, outras formas.",
+    "reason": "Cenário forte e corpo inteiro. Bom respiro entre aulas; não chamar transferência de um braço de hold confirmado.",
+    "zoom": 1.12,
+    "origin": "50% 55%"
+  },
+  {
+    "id": "gabriel-20261117-img_3639",
+    "decision": "Selecionar",
+    "format": "Reel ou Story de aula",
+    "hook": "Como está seu sapinho?",
+    "reason": "Bom contexto coletivo. Escolher uma execução legível; para instrução, completar com demonstração dirigida.",
+    "zoom": 1,
+    "origin": "50% 50%"
+  },
+  {
+    "id": "gabriel-20261117-img_3640",
+    "decision": "Selecionar",
+    "format": "Carrossel de mobilidade",
+    "hook": "Ombros na parede.",
+    "reason": "Foto de grupo para contexto ou capa; revisar o que a legenda ensina e não confundir com apoio de cadeira.",
+    "zoom": 1,
+    "origin": "50% 50%"
+  },
+  {
+    "id": "gabriel-20261117-img_3641",
+    "decision": "Complemento",
+    "format": "Story de aula",
+    "hook": "Preparando os ombros juntos.",
+    "reason": "Pan curto. Melhor como contexto do vídeo 3642 do que uma peça isolada.",
+    "zoom": 1,
+    "origin": "50% 50%"
+  },
+  {
+    "id": "gabriel-20261117-img_3642",
+    "decision": "Selecionar",
+    "format": "Reel curto de mobilidade",
+    "hook": "O que observar nos ombros?",
+    "reason": "Melhor leitura lateral do grupo; complementar com close dirigido e explicação revisada.",
+    "zoom": 1,
+    "origin": "50% 50%"
+  },
+  {
+    "id": "gabriel-20261117-img_3643",
+    "decision": "Revisar",
+    "format": "Reel de preparação",
+    "hook": "Mobilidade antes da inversão.",
+    "reason": "Confirmar nome e objetivo da rotação com Gabriel. Não rotular como gato-vaca ou canoinha.",
+    "zoom": 1,
+    "origin": "50% 50%"
+  },
+  {
+    "id": "gabriel-20261117-img_3644",
+    "decision": "Selecionar",
+    "format": "Detalhe para Reel de punhos",
+    "hook": "Como você prepara os apoios?",
+    "reason": "Close útil para montagem com plano inteiro; não inventar amplitude, dose ou recomendação médica.",
+    "zoom": 1,
+    "origin": "50% 50%"
+  },
+  {
+    "id": "gabriel-20261117-img_3645",
+    "decision": "Complemento",
+    "format": "Detalhe de mãos",
+    "hook": "As mãos também entram no treino.",
+    "reason": "Usar só um dos closes de punhos na mesma peça para evitar redundância.",
+    "zoom": 1,
+    "origin": "50% 50%"
+  },
+  {
+    "id": "gabriel-20261117-img_3646",
+    "decision": "Selecionar",
+    "format": "Story de comunidade",
+    "hook": "O treino começa antes da parada.",
+    "reason": "Sorrisos e preparação combinam com bastidor; manter cor natural e selo discreto.",
+    "zoom": 1,
+    "origin": "50% 50%"
+  },
+  {
+    "id": "gabriel-20261117-img_3647",
+    "decision": "Revisar",
+    "format": "Reel de transferência de peso",
+    "hook": "Como você leva peso às mãos?",
+    "reason": "Confirmar exercício com Gabriel; não afirmar que é urso→prancha apenas pelos quadros.",
+    "zoom": 1,
+    "origin": "50% 50%"
+  },
+  {
+    "id": "gabriel-20261117-img_3648",
+    "decision": "Revisar",
+    "format": "Complemento de saída lateral",
+    "hook": "Preparando uma saída.",
+    "reason": "Rever vídeo contínuo para saber se mostra entrada ou saída; não rotular pela foto isolada.",
+    "zoom": 1,
+    "origin": "50% 50%"
+  },
+  {
+    "id": "gabriel-20261117-img_3649-1",
+    "decision": "Complemento",
+    "format": "Story de aula na parede",
+    "hook": "Cada pessoa no seu momento.",
+    "reason": "Registro curto de turma; ótimo contexto, insuficiente como demonstração completa.",
+    "zoom": 1,
+    "origin": "50% 50%"
+  },
+  {
+    "id": "gabriel-20261117-dji_fly_20261114_193502_0050_1794747479925_video",
+    "decision": "Revisar",
+    "format": "Bastidor noturno",
+    "hook": "Uma aula, vários caminhos.",
+    "reason": "Corrigir orientação e confirmar tipo de inversão antes de qualquer texto técnico.",
+    "zoom": 1,
+    "origin": "50% 50%"
+  },
+  {
+    "id": "gabriel-20261117-dji_fly_20261115_100342_0054_1794748107230_video",
+    "decision": "Guardar",
+    "format": "B-roll de encontro",
+    "hook": "O lugar também faz parte.",
+    "reason": "Plano aéreo como abertura breve. Identificar local e não apresentar como sede do festival.",
+    "zoom": 1,
+    "origin": "50% 50%"
+  },
+  {
+    "id": "gabriel-20261117-dji_fly_20261115_121712_0061_1794756470825_video",
+    "decision": "Complemento",
+    "format": "Transição de comunidade",
+    "hook": "Do lado de fora para o treino.",
+    "reason": "Contexto da aula, sem valor de demonstração; funciona antes de um close de mãos.",
+    "zoom": 1,
+    "origin": "50% 50%"
+  },
+  {
+    "id": "gabriel-20261117-dji_fly_20261115_121744_0062_1794756454917_video",
+    "decision": "Selecionar",
+    "format": "Reel de comunidade",
+    "hook": "Quem está do outro lado do treino?",
+    "reason": "Alternar aula e conversa, com cortes curtos e cor natural. Confirmar contexto do encontro.",
+    "zoom": 1,
+    "origin": "50% 50%"
+  }
+]
