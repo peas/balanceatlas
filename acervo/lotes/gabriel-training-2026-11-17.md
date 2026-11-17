@@ -12,3 +12,6 @@ Reproduce inventory/contact sheets with scripts/festival_training_ingest.py. Cut
 
 ## Expanded selection after user feedback
 The initial five were a first pass, not all usable footage. Added profile views of cat-cow and scapular movement plus the supported-chair lateral exit: eight cuts covering six distinct demonstration/variation families, not eight different exercises. Next solo candidates are IMG_3574 (press sequence on canes) and IMG_3587 (nature/deck forms); use as advanced repertoire rather than beginner drills. Group footage adds wrists, low balance and mobility but needs participant/context confirmation.
+
+## Participant-use confirmation
+On 17 November Paulo explicitly confirmed that students/groups in this batch may be used in Instagram pieces. This supersedes the pending participant-use notes above and in the initial visual review; technical/context review remains pending. Prioritize wrists, low balance/sapinho and shoulder mobility next. Do not describe these students as Gabriel or claim their technique has been validated.
