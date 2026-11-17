@@ -66,3 +66,6 @@ The opening week uses distinct hero photos: invitation = Gabriel on sand (IMG_33
 ## Future training app — 16 November 2026
 
 Prepare reusable exercise-library material while producing social drills: clean full takes, stable IDs, separate voiceover/graphics, person/angle/variation and technical review. Decision and verified pose-analysis reuse map: `docs/handstand-life/TRAINING-APP.md`. Existing Python extraction is reused; browser inference and HF skeleton/angle overlays are future work.
+
+## Gabriel training intake — 17 November 2026
+See `acervo/lotes/gabriel-training-2026-11-17.md`: 40 unique assets, five clean drills and Remotion previews, technical review pending. `/instagram/recebidos/` collects review notes. Keep original, clean demonstration and social render separate for Handstand Life. Student/group media remains pending confirmation.

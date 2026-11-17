@@ -1,5 +1,6 @@
 ---
 import FestLayout from '../../../layouts/FestLayout.astro';
+import received from '../../../festival/ig2/gabriel-training-2026-11-17.json';
 import { EXERCISE_SHOOTS, SHOOT_NOTES } from '../../../festival/ig2/gabriel-filming';
 ---
 <FestLayout stickyNav={false} title="Gabriel e Paulo · lista de gravação | Handstand Life" description="Plano de captação de exercícios e referências para o fim de semana.">
@@ -14,6 +15,7 @@ import { EXERCISE_SHOOTS, SHOOT_NOTES } from '../../../festival/ig2/gabriel-film
     <p class="subtitle">{item.subtitle}</p>
     {item.sample&&<figure><video controls playsinline preload="none" poster={`/festival/ig/gabriel-filming-v1/${item.id}.webp`}><source src={`/festival/ig/gabriel-filming-v1/${item.id}.mp4`} type="video/mp4"/></video><figcaption>Referência do Paulo · vídeo {item.sample.source} · {item.sample.start}–{item.sample.end} s do original. Áudio preservado.</figcaption></figure>}
     {!item.sample&&<p class="no-sample">Sem sample novo: pauta da lista de captação.</p>}
+    {received.filter(c=>c.exercise_id===item.id).map(c=><section><h3>Gabriel · recebido em 17/11</h3><video controls playsinline preload="none" poster={c.poster}><source src={c.src} type="video/mp4"/></video><p>Corte limpo · {c.source_start}–{c.source_end}s da fonte. Revisão técnica e narração pendentes.</p><a href={`/festival/instagram/#gabriel-drill-${c.id}`}>Ver peça de Instagram</a></section>)}
     <h3>O que filmar</h3><p>{item.shot}</p>
     <h3>Os dois pontos de vista</h3><p>{item.paired}</p>
     <h3>Fotos que também precisamos</h3><p>{item.photo}</p>

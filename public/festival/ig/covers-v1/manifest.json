@@ -628,5 +628,55 @@
     "url": "/festival/ig/covers-v1/agustin-apresentacao-77e6e6dec1.webp",
     "status": "review",
     "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "gabriel-drill-escapulas",
+    "composition": "gabriel-drill-escapulas",
+    "frame": 120,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/gabriel-drill-escapulas-ebb500e9d6.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "gabriel-drill-ombros-apoio",
+    "composition": "gabriel-drill-ombros-apoio",
+    "frame": 120,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/gabriel-drill-ombros-apoio-4aaa66196e.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "gabriel-drill-chute-parede",
+    "composition": "gabriel-drill-chute-parede",
+    "frame": 120,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/gabriel-drill-chute-parede-fbf95a79c9.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "gabriel-drill-saida-parede",
+    "composition": "gabriel-drill-saida-parede",
+    "frame": 120,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/gabriel-drill-saida-parede-250b6e993c.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "gabriel-drill-gato-vaca",
+    "composition": "gabriel-drill-gato-vaca",
+    "frame": 120,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/gabriel-drill-gato-vaca-e76d1204cc.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
   }
 ]

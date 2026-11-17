@@ -422,3 +422,6 @@ This updates preview compositions and publishing assets, not actual Instagram po
 ## Handstand Life training library (16 November 2026)
 
 While producing drills, retain clean full demonstrations and separate narration/graphics for a future training app. Stable exercise IDs link to the media catalogue; record variation, person, angle, source timing and Gabriel review. See `docs/handstand-life/TRAINING-APP.md` for the reuse map and proposed record contract. HF already invokes paulo.com.br-render pose extraction; its angle/skeleton overlays and specialized alignment analysis remain in the source project, not yet integrated into HF. No batch analysis or app launch implied.
+
+## Gabriel training intake — 17 November 2026
+See `acervo/lotes/gabriel-training-2026-11-17.md`: 40 unique assets, five clean drills and Remotion previews, technical review pending. `/instagram/recebidos/` collects review notes. Keep original, clean demonstration and social render separate for Handstand Life. Student/group media remains pending confirmation.

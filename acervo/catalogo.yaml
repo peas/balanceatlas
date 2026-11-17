@@ -7495,3 +7495,525 @@
   uso_sugerido: ["post-natureza", "recorte-gravura"]
   selecionado_para: "principal-natureza"
   problemas: "Contagens e nomes das formas aproximados; foto não comprova a entrada em press."
+
+# Gabriel training batch · 17 November 2026. Originals preserved locally; review pending.
+- id: "gabriel-20261117-img_3469-1"
+  arquivo: "local/festival/gabriel-2026-11-17/originals/IMG_3469(1).mov"
+  sha256: "4a258107bb473d7893ac875adb1dfc0b3f6270eb1a4efdb945796aed76fab9dd"
+  aliases: ["IMG_3469.mov"]
+  midia: "video"
+  duracao: 27.393333
+  resumo: "Parada e transições junto à piscina; pessoa distante."
+  pessoas: 1
+  exercicio_id: null
+  triagem: "archive"
+  revisao: "triagem por quadros; revisão técnica pendente"
+  cortes: []
+  observacoes: "Triagem visual por 6 quadros; técnica e áudio ainda não revisados."
+- id: "gabriel-20261117-img_3470-1"
+  arquivo: "local/festival/gabriel-2026-11-17/originals/IMG_3470(1).mov"
+  sha256: "a7d6fdf1ecfa7f7e62121358d4a7db9ba589cd895073e2a8087bb9c81dd8ef5c"
+  aliases: ["IMG_3470.mov"]
+  midia: "video"
+  duracao: 24.503333
+  resumo: "Parada em apoio elevado no deck, mudanças de pernas."
+  pessoas: 1
+  exercicio_id: null
+  triagem: "review"
+  revisao: "triagem por quadros; revisão técnica pendente"
+  cortes: []
+  observacoes: "Triagem visual por 6 quadros; técnica e áudio ainda não revisados."
+- id: "gabriel-20261117-img_3472-1"
+  arquivo: "local/festival/gabriel-2026-11-17/originals/IMG_3472(1).mov"
+  sha256: "72fffc58e3bdb8f0e4c9d5bf4086544390e9057e866bd35a92b31eb6e0767054"
+  aliases: ["IMG_3472.mov"]
+  midia: "video"
+  duracao: 24.2767
+  resumo: "Sequência de pernas abertas junto à borda da piscina."
+  pessoas: 1
+  exercicio_id: null
+  triagem: "review"
+  revisao: "triagem por quadros; revisão técnica pendente"
+  cortes: []
+  observacoes: "Triagem visual por 6 quadros; técnica e áudio ainda não revisados."
+- id: "gabriel-20261117-img_3473-1"
+  arquivo: "local/festival/gabriel-2026-11-17/originals/IMG_3473(1).mov"
+  sha256: "dc62004ce97c7b1ec87bf9d9f19e5059dc2a457c99bff67148750f992f2f4caa"
+  aliases: ["IMG_3473.mov"]
+  midia: "video"
+  duracao: 30.94
+  resumo: "Entrada e sustentação reta na varanda, de costas."
+  pessoas: 1
+  exercicio_id: null
+  triagem: "review"
+  revisao: "triagem por quadros; revisão técnica pendente"
+  cortes: []
+  observacoes: "Triagem visual por 6 quadros; técnica e áudio ainda não revisados."
+- id: "gabriel-20261117-img_3475-1"
+  arquivo: "local/festival/gabriel-2026-11-17/originals/IMG_3475(1).mov"
+  sha256: "99b40ff5eae0f1e8023e2ed5988ea5b8a20bb63f6e39de7ffc4d17c2dcf05ce4"
+  aliases: ["IMG_3475.mov"]
+  midia: "video"
+  duracao: 33.643333
+  resumo: "Press e transições em apoio elevado, varanda."
+  pessoas: 1
+  exercicio_id: null
+  triagem: "review"
+  revisao: "triagem por quadros; revisão técnica pendente"
+  cortes: []
+  observacoes: "Triagem visual por 6 quadros; técnica e áudio ainda não revisados."
+- id: "gabriel-20261117-img_3477-1"
+  arquivo: "local/festival/gabriel-2026-11-17/originals/IMG_3477(1).mov"
+  sha256: "37bb04cb63741e1b66fc70d7e62750bfd8c44411ef622eda36fe410a0a60e60e"
+  aliases: ["IMG_3477.mov"]
+  midia: "video"
+  duracao: 39.1267
+  resumo: "Parada em apoio elevado vista frontal, reflexo no primeiro plano."
+  pessoas: 1
+  exercicio_id: null
+  triagem: "archive"
+  revisao: "triagem por quadros; revisão técnica pendente"
+  cortes: []
+  observacoes: "Triagem visual por 6 quadros; técnica e áudio ainda não revisados."
+- id: "gabriel-20261117-img_3478-1"
+  arquivo: "local/festival/gabriel-2026-11-17/originals/IMG_3478(1).mov"
+  sha256: "8980dfaa6ed674b05d91a58f7cd845e3b7d70c3e262ab06a4a03e80d1cded24e"
+  aliases: ["IMG_3478.mov"]
+  midia: "video"
+  duracao: 31.5417
+  resumo: "Transições em apoio elevado vistas de cima, corpo pequeno."
+  pessoas: 1
+  exercicio_id: null
+  triagem: "archive"
+  revisao: "triagem por quadros; revisão técnica pendente"
+  cortes: []
+  observacoes: "Triagem visual por 6 quadros; técnica e áudio ainda não revisados."
+- id: "gabriel-20261117-img_3481"
+  arquivo: "local/festival/gabriel-2026-11-17/originals/IMG_3481.mov"
+  sha256: "2da1b1ba6b821c30f23f92c07794942e8d91256b1d460832241bcb8e7948f667"
+  aliases: []
+  midia: "video"
+  duracao: 28.113333
+  resumo: "Entrada e saída da parada na varanda, vista lateral distante."
+  pessoas: 1
+  exercicio_id: null
+  triagem: "review"
+  revisao: "triagem por quadros; revisão técnica pendente"
+  cortes: []
+  observacoes: "Triagem visual por 6 quadros; técnica e áudio ainda não revisados."
+- id: "gabriel-20261117-img_3483"
+  arquivo: "local/festival/gabriel-2026-11-17/originals/IMG_3483.mov"
+  sha256: "2eba4db62d4cdd402bb2c65ea7daaf9d1815abe70ba575edb45768671e9b0d55"
+  aliases: []
+  midia: "video"
+  duracao: 29.3617
+  resumo: "Tentativas e transições na varanda, mãos no piso."
+  pessoas: 1
+  exercicio_id: null
+  triagem: "review"
+  revisao: "triagem por quadros; revisão técnica pendente"
+  cortes: []
+  observacoes: "Triagem visual por 6 quadros; técnica e áudio ainda não revisados."
+- id: "gabriel-20261117-img_3529-1"
+  arquivo: "local/festival/gabriel-2026-11-17/originals/IMG_3529(1).mov"
+  sha256: "af7ea518ae09a560693651ba9003d28f094afdee88f5f846797922b1da38ce7c"
+  aliases: ["IMG_3529.mov"]
+  midia: "video"
+  duracao: 10.4917
+  resumo: "Mobilização da coluna em quatro apoios; perfil próximo."
+  pessoas: 1
+  exercicio_id: "gato-vaca"
+  triagem: "use"
+  revisao: "triagem por quadros; revisão técnica pendente"
+  cortes: []
+  observacoes: "Triagem visual por 6 quadros; técnica e áudio ainda não revisados."
+- id: "gabriel-20261117-img_3529-2"
+  arquivo: "local/festival/gabriel-2026-11-17/originals/IMG_3529(2).mov"
+  sha256: "b6fb2f5a1ce9cf7483546ddbfee283dd53a4a1a92ac79bf0cd30284ee36446c2"
+  aliases: ["IMG_3529(3).mov"]
+  midia: "video"
+  duracao: 8.388333
+  resumo: "Movimento de escápulas em prancha, perfil próximo."
+  pessoas: 1
+  exercicio_id: "escapulas"
+  triagem: "use"
+  revisao: "triagem por quadros; revisão técnica pendente"
+  cortes: []
+  observacoes: "Triagem visual por 6 quadros; técnica e áudio ainda não revisados."
+- id: "gabriel-20261117-img_3531-1"
+  arquivo: "local/festival/gabriel-2026-11-17/originals/IMG_3531(1).mov"
+  sha256: "471579caea5d3a217ca23fb466577936c993e2457aa42210384e2f83356a1b49"
+  aliases: ["IMG_3531.mov"]
+  midia: "video"
+  duracao: 13.46
+  resumo: "Gato-vaca em quatro apoios, ângulo três-quartos."
+  pessoas: 1
+  exercicio_id: "gato-vaca"
+  triagem: "use"
+  revisao: "triagem por quadros; revisão técnica pendente"
+  cortes: ["gato-vaca"]
+  observacoes: "Triagem visual por 6 quadros; técnica e áudio ainda não revisados."
+- id: "gabriel-20261117-img_3531-2"
+  arquivo: "local/festival/gabriel-2026-11-17/originals/IMG_3531(2).mov"
+  sha256: "ee89ba396e6069619df124c39b2b007bc0cdc49ff5a4a46fc07750f92a6f9abe"
+  aliases: ["IMG_3531(3).mov"]
+  midia: "video"
+  duracao: 11.408333
+  resumo: "Movimento de escápulas em prancha, ângulo três-quartos."
+  pessoas: 1
+  exercicio_id: "escapulas"
+  triagem: "use"
+  revisao: "triagem por quadros; revisão técnica pendente"
+  cortes: ["escapulas"]
+  observacoes: "Triagem visual por 6 quadros; técnica e áudio ainda não revisados."
+- id: "gabriel-20261117-img_3540-1"
+  arquivo: "local/festival/gabriel-2026-11-17/originals/IMG_3540(1).mov"
+  sha256: "79381bc51659a0b60899128cd8c6351f6aab72db8fd01cc7d507db3007b3d085"
+  aliases: ["IMG_3540.mov"]
+  midia: "video"
+  duracao: 40.62
+  resumo: "Abertura de ombros com mãos apoiadas em janela, perfil."
+  pessoas: 1
+  exercicio_id: "ombros-cadeira"
+  triagem: "use"
+  revisao: "triagem por quadros; revisão técnica pendente"
+  cortes: ["ombros-apoio"]
+  observacoes: "Triagem visual por 6 quadros; técnica e áudio ainda não revisados."
+- id: "gabriel-20261117-img_3541"
+  arquivo: "local/festival/gabriel-2026-11-17/originals/IMG_3541.mov"
+  sha256: "a297d6b8b8bf324f17f316327680f496a70d3b2e8fba8082853fd93a94cf9178"
+  aliases: []
+  midia: "video"
+  duracao: 40.605
+  resumo: "Entradas com chute e apoio dos pés na parede."
+  pessoas: 1
+  exercicio_id: "chute-parede"
+  triagem: "use"
+  revisao: "triagem por quadros; revisão técnica pendente"
+  cortes: ["chute-parede"]
+  observacoes: "Triagem visual por 6 quadros; técnica e áudio ainda não revisados."
+- id: "gabriel-20261117-img_3544"
+  arquivo: "local/festival/gabriel-2026-11-17/originals/IMG_3544.mov"
+  sha256: "b73f83316fb3de4f464c67cec02823ddd13c4f7d8b9b5d81cd0c70175ca68712"
+  aliases: []
+  midia: "video"
+  duracao: 22.708333
+  resumo: "Saída lateral com perna apoiada em cadeira; várias repetições."
+  pessoas: 1
+  exercicio_id: "saida-estrela"
+  triagem: "use"
+  revisao: "triagem por quadros; revisão técnica pendente"
+  cortes: []
+  observacoes: "Triagem visual por 6 quadros; técnica e áudio ainda não revisados."
+- id: "gabriel-20261117-img_3545-1"
+  arquivo: "local/festival/gabriel-2026-11-17/originals/IMG_3545(1).mov"
+  sha256: "0355e0b3344a8bff66aca0098a56b1815214922bd27e00aece98193acc72a34a"
+  aliases: ["IMG_3545.mov"]
+  midia: "video"
+  duracao: 22.3617
+  resumo: "Saída lateral partindo do apoio na parede; repetições."
+  pessoas: 1
+  exercicio_id: "saida-estrela"
+  triagem: "use"
+  revisao: "triagem por quadros; revisão técnica pendente"
+  cortes: ["saida-parede"]
+  observacoes: "Triagem visual por 6 quadros; técnica e áudio ainda não revisados."
+- id: "gabriel-20261117-img_3549-1"
+  arquivo: "local/festival/gabriel-2026-11-17/originals/IMG_3549(1).mov"
+  sha256: "ac0064a23dbc1ffce0a85edfa5fedbdee01aead9482d6526a07b6af716e33a70"
+  aliases: ["IMG_3549.mov"]
+  midia: "video"
+  duracao: 68.0767
+  resumo: "Entradas e saídas laterais repetidas na varanda."
+  pessoas: 1
+  exercicio_id: "saida-estrela"
+  triagem: "review"
+  revisao: "triagem por quadros; revisão técnica pendente"
+  cortes: []
+  observacoes: "Triagem visual por 6 quadros; técnica e áudio ainda não revisados."
+- id: "gabriel-20261117-img_3552-1"
+  arquivo: "local/festival/gabriel-2026-11-17/originals/IMG_3552(1).mov"
+  sha256: "54107342c1e07269a0a2c138489217d17ab02d79fcab0386faa6e833d8c39b4c"
+  aliases: ["IMG_3552.mov"]
+  midia: "video"
+  duracao: 13.345
+  resumo: "Press e mudanças de forma em canes, contraluz."
+  pessoas: 1
+  exercicio_id: null
+  triagem: "review"
+  revisao: "triagem por quadros; revisão técnica pendente"
+  cortes: []
+  observacoes: "Triagem visual por 6 quadros; técnica e áudio ainda não revisados."
+- id: "gabriel-20261117-img_3554"
+  arquivo: "local/festival/gabriel-2026-11-17/originals/IMG_3554.mov"
+  sha256: "f2b1677352b972fdfe5d019e3d22ae1ea7d586fe8fe258ea34ad2fe54fe51e02"
+  aliases: []
+  midia: "video"
+  duracao: 12.978333
+  resumo: "Press em canes no gramado, vista frontal."
+  pessoas: 1
+  exercicio_id: null
+  triagem: "review"
+  revisao: "triagem por quadros; revisão técnica pendente"
+  cortes: []
+  observacoes: "Triagem visual por 6 quadros; técnica e áudio ainda não revisados."
+- id: "gabriel-20261117-img_3557"
+  arquivo: "local/festival/gabriel-2026-11-17/originals/IMG_3557.mov"
+  sha256: "bb7a661b5303b2fbdde1e9419bb2d10dbb03322bce7f7754483dd309d103046c"
+  aliases: []
+  midia: "video"
+  duracao: 20.306667
+  resumo: "Parada sobre canes no gramado junto à piscina, passando de reta a pernas afastadas e transferência de apoio."
+  pessoas: 1
+  exercicio_id: "formas"
+  triagem: "use"
+  revisao: "triagem por quadros; revisão técnica pendente"
+  cortes: []
+  observacoes: "Boa leitura de corpo e natureza; técnica avançada. Preferir repertório/controle, não substituir drill básico. Conferir início e saída no vídeo contínuo. Revisão por 6 quadros amostrados (foto: 1), não por playback integral; contagem aproximada, cortes ainda não definidos."
+- id: "gabriel-20261117-img_3572"
+  arquivo: "local/festival/gabriel-2026-11-17/originals/IMG_3572.mov"
+  sha256: "ab8ba5cf238ed3480ca84b50be83c55a733b9f7f6ebf17579390d40a3acef3e0"
+  aliases: []
+  midia: "video"
+  duracao: 14.318333
+  resumo: "Parada e passagem de pernas afastadas para reta sobre canes, com câmera se aproximando."
+  pessoas: 2
+  exercicio_id: "formas"
+  triagem: "review"
+  revisao: "triagem por quadros; revisão técnica pendente"
+  cortes: []
+  observacoes: "Pessoa ao fundo; pés ficam cortados quando a câmera aproxima. Priorizar trecho inicial completo se houver entrada/saída utilizáveis; não escolher como principal exemplo. Revisão por 6 quadros amostrados (foto: 1), não por playback integral; contagem aproximada, cortes ainda não definidos."
+- id: "gabriel-20261117-img_3574"
+  arquivo: "local/festival/gabriel-2026-11-17/originals/IMG_3574.mov"
+  sha256: "2e062fd17c7cca3990603e764374f884bafb9b9d1afa929f214cdee5f97e4af4"
+  aliases: []
+  midia: "video"
+  duracao: 29.415
+  resumo: "Sequência de press/descida em pike e reta sobre canes ao lado da piscina, em perfil distante."
+  pessoas: 1
+  exercicio_id: "formas"
+  triagem: "use"
+  revisao: "triagem por quadros; revisão técnica pendente"
+  cortes: []
+  observacoes: "Corpo inteiro nos quadros amostrados, cenário bonito, câmera mais distante que 3572. Boa candidata de transição avançada; precisa observar vídeo contínuo para nomear entrada e definir corte. Revisão por 6 quadros amostrados (foto: 1), não por playback integral; contagem aproximada, cortes ainda não definidos."
+- id: "gabriel-20261117-img_3580-1"
+  arquivo: "local/festival/gabriel-2026-11-17/originals/IMG_3580(1).mov"
+  sha256: "cfdd235176ccdb0078043e7ead6f3de646c0400e85bc2357df77041091bb92e1"
+  aliases: ["IMG_3580(2).mov", "IMG_3580.mov"]
+  midia: "video"
+  duracao: 29.466667
+  resumo: "Duas pessoas em canes, mudando de formas lado a lado e terminando em conversa."
+  pessoas: 2
+  exercicio_id: null
+  triagem: "review"
+  revisao: "triagem por quadros; revisão técnica pendente"
+  cortes: []
+  observacoes: "Boa pauta de treino junto/comunidade. Confirmar quem aparece e autorização antes de uso público; não tratar como comparação técnica padronizada. Revisão por 6 quadros amostrados (foto: 1), não por playback integral; contagem aproximada, cortes ainda não definidos."
+- id: "gabriel-20261117-img_3587"
+  arquivo: "local/festival/gabriel-2026-11-17/originals/IMG_3587.MOV"
+  sha256: "14f51bd7c07191d47ad7ec5990d32622779bac92a02caf24850923fbbdf2aee8"
+  aliases: []
+  midia: "video"
+  duracao: 27.636667
+  resumo: "Uma pessoa em canes sobre deck na mata, passando de reta para afastado e transferência para um braço."
+  pessoas: 1
+  exercicio_id: "formas"
+  triagem: "use"
+  revisao: "triagem por quadros; revisão técnica pendente"
+  cortes: []
+  observacoes: "Cenário de natureza e corpo inteiro. Boa alternativa para repertório e freeze, sem confundir com demonstração básica de exercício. Não afirmar hold de um braço pela folha esparsa. Revisão por 6 quadros amostrados (foto: 1), não por playback integral; contagem aproximada, cortes ainda não definidos."
+- id: "gabriel-20261117-img_3639"
+  arquivo: "local/festival/gabriel-2026-11-17/originals/IMG_3639.MOV"
+  sha256: "04e58ad405926b3fa8e0826685b6b3fd76e55cbacb0455347f897159d283b020"
+  aliases: []
+  midia: "video"
+  duracao: 11.77
+  resumo: "Grupo pratica apoio baixo nas mãos, com joelhos dobrados, semelhante a sapinho/corvo."
+  pessoas: 4
+  exercicio_id: "sapinho"
+  triagem: "review"
+  revisao: "triagem por quadros; revisão técnica pendente"
+  cortes: []
+  observacoes: "Associação visual clara à família sapinho, mas câmera percorre a turma e corta partes dos corpos. Útil como comunidade/bastidor; confirmar participantes e revisar movimento contínuo antes de ensinar. Revisão por 6 quadros amostrados (foto: 1), não por playback integral; contagem aproximada, cortes ainda não definidos."
+- id: "gabriel-20261117-img_3640"
+  arquivo: "local/festival/gabriel-2026-11-17/originals/IMG_3640.JPG"
+  sha256: "a3b029bb6148821657591f4953166a5a51fe82f6d1252bf957baead53f22b003"
+  aliases: []
+  midia: "imagem"
+  duracao: 0
+  resumo: "Foto de três pessoas inclinadas com mãos apoiadas na parede de vidro, trabalhando abertura de ombros."
+  pessoas: 3
+  exercicio_id: null
+  triagem: "review"
+  revisao: "triagem por quadros; revisão técnica pendente"
+  cortes: []
+  observacoes: "Foto contextual de mobilidade de ombros na parede; não é o mesmo apoio de cadeira/box. Precisa confirmar participantes para uso. Revisão por 6 quadros amostrados (foto: 1), não por playback integral; contagem aproximada, cortes ainda não definidos."
+- id: "gabriel-20261117-img_3641"
+  arquivo: "local/festival/gabriel-2026-11-17/originals/IMG_3641.MOV"
+  sha256: "62a8b2cf1ea05c0420ce224913c9a7f48853f9c0d1ff3f4a364003c947779640"
+  aliases: []
+  midia: "video"
+  duracao: 5.968333
+  resumo: "Câmera percorre pessoas em flexão de quadril com braços apoiados à frente na parede de vidro."
+  pessoas: 4
+  exercicio_id: null
+  triagem: "review"
+  revisao: "triagem por quadros; revisão técnica pendente"
+  cortes: []
+  observacoes: "Abertura de ombros com parede. Não mapear diretamente ao exercício cadeira sem nota de variação. Pan curto e partes de pessoas fora do quadro. Revisão por 6 quadros amostrados (foto: 1), não por playback integral; contagem aproximada, cortes ainda não definidos."
+- id: "gabriel-20261117-img_3642"
+  arquivo: "local/festival/gabriel-2026-11-17/originals/IMG_3642.MOV"
+  sha256: "b7a6ec5fd2513ab0f7e3ef661dfac424ff65db7c9487d654aa163b3541614a7c"
+  aliases: []
+  midia: "video"
+  duracao: 9.136667
+  resumo: "Grupo mantém mãos na parede, tronco inclinado e braços estendidos em preparação dos ombros."
+  pessoas: 4
+  exercicio_id: null
+  triagem: "review"
+  revisao: "triagem por quadros; revisão técnica pendente"
+  cortes: []
+  observacoes: "Melhor leitura lateral da variação com parede que 3641. Registro de aula e ambiente, com outras pessoas; confirmar uso. Demonstração dirigida ainda recomendável. Revisão por 6 quadros amostrados (foto: 1), não por playback integral; contagem aproximada, cortes ainda não definidos."
+- id: "gabriel-20261117-img_3643"
+  arquivo: "local/festival/gabriel-2026-11-17/originals/IMG_3643.MOV"
+  sha256: "d7ab3355c4a5ac08d734ba61d1ac929f1ccb525543ebd51ec73450059dfc2438"
+  aliases: []
+  midia: "video"
+  duracao: 8.435
+  resumo: "Grupo faz mobilidade/rotação do tronco em base de pernas afastadas, uma mão no chão e outra junto da cabeça."
+  pessoas: 4
+  exercicio_id: null
+  triagem: "review"
+  revisao: "triagem por quadros; revisão técnica pendente"
+  cortes: []
+  observacoes: "Não é gato-vaca nem canoinha. Guardar como preparação/mobilidade; nome e objetivo devem ser confirmados pelo Gabriel. Revisão por 6 quadros amostrados (foto: 1), não por playback integral; contagem aproximada, cortes ainda não definidos."
+- id: "gabriel-20261117-img_3644"
+  arquivo: "local/festival/gabriel-2026-11-17/originals/IMG_3644.MOV"
+  sha256: "6a792702f5b07b3f309ec94e97b248772f145ad8cff6c0ef4bb35045188d13d7"
+  aliases: []
+  midia: "video"
+  duracao: 4.9667
+  resumo: "Close e panorâmica de pessoas ajoelhadas apoiando as mãos em diferentes orientações para preparar punhos."
+  pessoas: 4
+  exercicio_id: "punhos"
+  triagem: "review"
+  revisao: "triagem por quadros; revisão técnica pendente"
+  cortes: []
+  observacoes: "Bom detalhe dos apoios; não assumir dose nem recomendar amplitude. Cortes curtos com várias pessoas: confirmar uso e revisar a demonstração antes de virar instrução. Revisão por 6 quadros amostrados (foto: 1), não por playback integral; contagem aproximada, cortes ainda não definidos."
+- id: "gabriel-20261117-img_3645"
+  arquivo: "local/festival/gabriel-2026-11-17/originals/IMG_3645.MOV"
+  sha256: "ef25cf17c35b809bf39fa2b767b2408bce080a14763d1ce9d1ec73c224dfae15"
+  aliases: []
+  midia: "video"
+  duracao: 9.606667
+  resumo: "Detalhes das mãos e punhos em apoio ajoelhado, câmera percorrendo participantes."
+  pessoas: 4
+  exercicio_id: "punhos"
+  triagem: "review"
+  revisao: "triagem por quadros; revisão técnica pendente"
+  cortes: []
+  observacoes: "Complemento de close para uma explicação de punhos; não contém uma demonstração inteira de uma só pessoa. Há enquadramentos muito próximos e movimento de câmera. Revisão por 6 quadros amostrados (foto: 1), não por playback integral; contagem aproximada, cortes ainda não definidos."
+- id: "gabriel-20261117-img_3646"
+  arquivo: "local/festival/gabriel-2026-11-17/originals/IMG_3646.MOV"
+  sha256: "42b0c935a04c8ba330490bea95060d9bee2f78366bf8894875f4709a4abecfc2"
+  aliases: []
+  midia: "video"
+  duracao: 7.238333
+  resumo: "Participantes ajoelhados movimentam mãos entrelaçadas diante do peito, sorrindo."
+  pessoas: 4
+  exercicio_id: "punhos"
+  triagem: "review"
+  revisao: "triagem por quadros; revisão técnica pendente"
+  cortes: []
+  observacoes: "Preparação de punhos/mãos e convivência. Nenhuma inversão observada; manter como bastidor se autorizado. Revisão por 6 quadros amostrados (foto: 1), não por playback integral; contagem aproximada, cortes ainda não definidos."
+- id: "gabriel-20261117-img_3647"
+  arquivo: "local/festival/gabriel-2026-11-17/originals/IMG_3647.MOV"
+  sha256: "1254649af920a8099ab211c6fc86d205fd795f35a389d86454ca81df238eb411"
+  aliases: []
+  midia: "video"
+  duracao: 5.968333
+  resumo: "Grupo em apoio nas mãos alterna posições agrupadas e deslocamentos/pequenos impulsos com pés."
+  pessoas: 3
+  exercicio_id: null
+  triagem: "review"
+  revisao: "triagem por quadros; revisão técnica pendente"
+  cortes: []
+  observacoes: "Pode apoiar assunto urso/transferência de peso, mas não demonstra inequivocamente urso→prancha. Conferir vídeo e nome com Gabriel, sem encaixar à força no exercício existente. Revisão por 6 quadros amostrados (foto: 1), não por playback integral; contagem aproximada, cortes ainda não definidos."
+- id: "gabriel-20261117-img_3648"
+  arquivo: "local/festival/gabriel-2026-11-17/originals/IMG_3648.MOV"
+  sha256: "cb232d2020186db667d2e594ca2e100923687285d9ed04416d174f9fbb0b285b"
+  aliases: []
+  midia: "video"
+  duracao: 8.4
+  resumo: "Participantes fazem entradas laterais com elevação de uma perna e apoio das mãos no chão."
+  pessoas: 3
+  exercicio_id: null
+  triagem: "review"
+  revisao: "triagem por quadros; revisão técnica pendente"
+  cortes: []
+  observacoes: "Possível preparação de entrada/saída lateral; a folha não comprova sequência de saída em estrela inteira. Revisar ação contínua antes de associar ao exercício. Revisão por 6 quadros amostrados (foto: 1), não por playback integral; contagem aproximada, cortes ainda não definidos."
+- id: "gabriel-20261117-img_3649-1"
+  arquivo: "local/festival/gabriel-2026-11-17/originals/IMG_3649(1).MOV"
+  sha256: "9eb377af53a5e7cd4bc2ae472ce112cfc6ef7813bbd765f7c8e8f0c84a3ec7f1"
+  aliases: ["IMG_3649.MOV"]
+  midia: "video"
+  duracao: 3.933333
+  resumo: "Grupo pratica inversões e entradas junto à parede de vidro, com uma perna elevada."
+  pessoas: 4
+  exercicio_id: null
+  triagem: "review"
+  revisao: "triagem por quadros; revisão técnica pendente"
+  cortes: []
+  observacoes: "Pode ilustrar aula na parede; apenas ~4s, câmera percorre o grupo e não acompanha entrada/saída completa de ninguém. Revisão por 6 quadros amostrados (foto: 1), não por playback integral; contagem aproximada, cortes ainda não definidos."
+- id: "gabriel-20261117-dji_fly_20261114_193502_0050_1794747479925_video"
+  arquivo: "local/festival/gabriel-2026-11-17/originals/dji_fly_20261114_193502_0050_1794747479925_video.mov"
+  sha256: "adb86b8fcf4c49df789a73f124046ea41f03a75211b3103de655d75a6ff326cf"
+  aliases: []
+  midia: "video"
+  duracao: 37.086667
+  resumo: "Filmagem noturna de grupo fazendo inversões em colchonetes e depois descendo."
+  pessoas: 4
+  exercicio_id: null
+  triagem: "review"
+  revisao: "triagem por quadros; revisão técnica pendente"
+  cortes: []
+  observacoes: "Vídeo aparece girado 90 graus na extração; corrigir orientação antes da análise. Apoio da cabeça versus mãos não é seguro de concluir nesta folha. Confirmar participantes e áudio. Revisão por 6 quadros amostrados (foto: 1), não por playback integral; contagem aproximada, cortes ainda não definidos."
+- id: "gabriel-20261117-dji_fly_20261115_100342_0054_1794748107230_video"
+  arquivo: "local/festival/gabriel-2026-11-17/originals/dji_fly_20261115_100342_0054_1794748107230_video.mov"
+  sha256: "9724a2d597e5255b7663184ab3def5040ddf50066a3709c98f2aefbab7b15856"
+  aliases: []
+  midia: "video"
+  duracao: 63.403333
+  resumo: "Plano aéreo da casa, piscina e jardim, aproximando-se da área de aula."
+  pessoas: 3
+  exercicio_id: null
+  triagem: "review"
+  revisao: "triagem por quadros; revisão técnica pendente"
+  cortes: []
+  observacoes: "B-roll de ambiente/natureza, não exercício. Quantidade de pessoas aproximada e pouco legível; identificar local corretamente, não apresentar como espaço do festival sem confirmação. Revisão por 6 quadros amostrados (foto: 1), não por playback integral; contagem aproximada, cortes ainda não definidos."
+- id: "gabriel-20261117-dji_fly_20261115_121712_0061_1794756470825_video"
+  arquivo: "local/festival/gabriel-2026-11-17/originals/dji_fly_20261115_121712_0061_1794756470825_video.mp4"
+  sha256: "cb0fd3cc30dd5f9f894a89c9da3907a5c8febeb866a52dc629d5cd55f73975cd"
+  aliases: []
+  midia: "video"
+  duracao: 27.6276
+  resumo: "Movimento de câmera externo pela fachada envidraçada, com pessoas treinando dentro."
+  pessoas: 4
+  exercicio_id: null
+  triagem: "review"
+  revisao: "triagem por quadros; revisão técnica pendente"
+  cortes: []
+  observacoes: "B-roll de encontro/aula. Pessoas pequenas, não serve para explicar técnica; confirmar local e participantes. Revisão por 6 quadros amostrados (foto: 1), não por playback integral; contagem aproximada, cortes ainda não definidos."
+- id: "gabriel-20261117-dji_fly_20261115_121744_0062_1794756454917_video"
+  arquivo: "local/festival/gabriel-2026-11-17/originals/dji_fly_20261115_121744_0062_1794756454917_video.mp4"
+  sha256: "54600a075dc27e0db0dc43f2ffcb7c976c16cde3769a6698bbc6ae882880fa2e"
+  aliases: []
+  midia: "video"
+  duracao: 56.8568
+  resumo: "Câmera entra na sala com grupo treinando inversões, depois mostra sorrisos e conversa."
+  pessoas: 4
+  exercicio_id: null
+  triagem: "review"
+  revisao: "triagem por quadros; revisão técnica pendente"
+  cortes: []
+  observacoes: "Bom clima de comunidade; edição deve separar ação e bastidor. Confirmar participantes/local e áudio. Não confundir esse encontro passado com cobertura do festival futuro. Revisão por 6 quadros amostrados (foto: 1), não por playback integral; contagem aproximada, cortes ainda não definidos."
