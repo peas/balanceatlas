@@ -96,3 +96,6 @@ The three pinned posts use Paulo and Gabriel (stills from the 04/11 Trapézio Vo
 Read it before writing any festival copy. Dany García is no longer a teacher (Paulo, 18/11/2026): the lineup is
 Gabriel Agustin and Louisse Aldrigues. The teacher card on the home is now a 9:16 composition like the other posters
 (the 4:5 one was cropped on phones and cut the first letters of the name).
+
+## Opening review and instructional pointers — 18 November 2026
+Opening Reel defines handstand first; the festival and Gabriel carousels use more concrete headlines. Post 10 is now wall distance (pending capture), distinct from the existing wall-entry post. Post 11 covers scapular movement in plank, not shoulder opening. Its complete source take precedes an explicitly labelled closer replay, a 2-second exact-frame pause with one ochre pointer, and resumed motion. The pointer identifies a visible region; it is not force direction, pose tracking or a measured angle. No generated anatomy for this technical demonstration. Clean masters remain unchanged.

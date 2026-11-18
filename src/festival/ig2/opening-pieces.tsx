@@ -26,8 +26,8 @@ function OpeningCard({card,index,total,...p}:PieceProps&{card:Card;index:number;
 }
 const festival:Card[]=[
  {name:'O encontro',photo:duo,lines:['O QUE É O','HANDSTANDFEST?'],body:`${QUANDO}\nSÃO PAULO`,position:'42% 52%',zoom:1.3},
- {name:'O propósito',photo:training,position:'46% 58%',zoom:1.45,lines:['PRATICAR.','APRENDER.','TROCAR.'],body:'Aulas, treinos e convivência em torno da parada de mão.',label:'A IDEIA DO ENCONTRO'},
- {name:'Diferentes momentos',photo:beach,lines:['CADA PESSOA,','UM MOMENTO','DA JORNADA.'],body:'Turmas de básico e de intermediário / avançado.',position:'50% 45%'},
+ {name:'O propósito',photo:training,position:'46% 62%',zoom:1.5,lines:['PRATICAR.','APRENDER.','TROCAR.'],body:'Aulas, treinos e convivência em torno da parada de mão.',label:'A IDEIA DO ENCONTRO'},
+ {name:'Diferentes momentos',photo:beach,lines:['TEM TURMA PARA','QUEM COMEÇA E','QUEM JÁ PRATICA.'],body:'Turmas de básico e de intermediário / avançado.',position:'50% 45%'},
  {name:'Data e lugar',photo:'/festival/venue-1.webp',lines:['ONDE','VAI SER?'],body:`${QUANDO}\nTrapézio Voador · São Paulo`},
  {name:'Vamos juntos',photo:both,position:'56% 52%',zoom:1.45,lines:['VAMOS','TREINAR JUNTOS?'],body:'Informações e inscrições\nhandstandfest.com.br',close:true},
 ];
@@ -38,8 +38,8 @@ const participate:Card[]=[
  {name:'Escolha sua turma',photo:'/festival/venue-2.webp',lines:['NA DÚVIDA,','FALE COM','A GENTE.'],body:'Veja as turmas e orientações:\nhandstandfest.com.br',close:true},
 ];
 const scenes=[
- {src:base+'gabriel/img-3372.mp4',from:1,seconds:4,lines:['CALISTENIA, YOGA,','CIRCO, GINÁSTICA...'],label:'UMA PRÁTICA DE DIVERSOS ESPORTES'},
- {src:base+'gabriel-training-v1/chute-parede.mp4',from:0,seconds:5,lines:['COM APOIO,','TAMBÉM É PRÁTICA.'],label:'CADA PESSOA NO SEU MOMENTO'},
+ {src:base+'gabriel/img-3372.mp4',from:1,seconds:4,lines:['HANDSTAND É','PARADA DE MÃO.'],label:'UMA PRÁTICA, MUITAS POSSIBILIDADES'},
+ {src:base+'gabriel-training-v1/chute-parede.mp4',from:0,seconds:5,lines:['COM APOIO,','TAMBÉM É PRÁTICA.'],label:'NO CIRCO, NA YOGA, NA CALISTENIA…'},
  {src:base+'abertura-v1/press.mp4',from:0,seconds:18,lines:['ENTRAR TAMBÉM','FAZ PARTE.'],label:'PRESS · UMA DAS POSSIBILIDADES'},
  {src:base+'dupla-a.mp4',from:4,seconds:6,lines:['RETAS, ABERTURAS,','OUTRAS FORMAS.'],label:'O MOVIMENTO ENTRE AS POSIÇÕES'},
 ];

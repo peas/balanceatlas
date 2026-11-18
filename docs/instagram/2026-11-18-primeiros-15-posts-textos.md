@@ -26,7 +26,7 @@ Prévia de cada post: `handstandfest.com.br/instagram/inicio/`. Edite à vontade
 
 **Lâmina 3**
 - Etiqueta: HANDSTANDFEST · UM ENCONTRO
-- Título: CADA PESSOA, / UM MOMENTO / DA JORNADA.
+- Título: TEM TURMA PARA / QUEM COMEÇA E / QUEM JÁ PRATICA.
 - Texto: Turmas de básico e de intermediário / avançado.
 
 **Lâmina 4**
@@ -60,11 +60,11 @@ Compartilhar a capa nativamente + link do evento. Pergunta: você viria sozinho 
 ### Na imagem
 
 **Cena 1** (4 s, parada reta)
-- Etiqueta: UMA PRÁTICA DE DIVERSOS ESPORTES
-- Título: CALISTENIA, YOGA, / CIRCO, GINÁSTICA...
+- Etiqueta: UMA PRÁTICA, MUITAS POSSIBILIDADES
+- Título: HANDSTAND É / PARADA DE MÃO.
 
 **Cena 2** (5 s, entrada na parede)
-- Etiqueta: CADA PESSOA NO SEU MOMENTO
+- Etiqueta: NO CIRCO, NA YOGA, NA CALISTENIA…
 - Título: COM APOIO, / TAMBÉM É PRÁTICA.
 
 **Cena 3** (18 s, press)
@@ -212,13 +212,13 @@ Compartilhar a demonstração + uma dúvida específica. Gabriel e Paulo gravam 
 
 **Lâmina 2** (gravura de perfil)
 - Etiqueta: MAIS DE 10 ANOS DE TRAJETÓRIA
-- Título: MOVIMENTO / COMO PESQUISA.
+- Título: HÁ MAIS DE 10 ANOS, / GABRIEL ENSINA / E PRATICA MOVIMENTO.
 - Texto: Acrobacia, parada de mãos e práticas corporais. Um caminho de investigação, expressão e transformação.
 
 **Lâmina 3** (com o selo HF)
 - Etiqueta: A IDEIA DO FESTIVAL
-- Título: DE UMA VIVÊNCIA / A UM ENCONTRO.
-- Texto: Uma experiência na Argentina inspirou Gabriel a criar este encontro de prática e troca.
+- Título: UMA EXPERIÊNCIA / NA ARGENTINA / INSPIROU / ESTE ENCONTRO.
+- Texto: Gabriel quis reunir pessoas para praticar, aprender e trocar.
 
 ### Gancho
 
@@ -280,7 +280,7 @@ Compartilhar o post + caixa de histórias e lugares da comunidade.
 
 ---
 
-## 10 · Parede: entrar, apoiar e sair (Reel)
+## 10 · Parede: a distância do apoio (Reel)
 
 ### Na imagem
 
@@ -288,11 +288,11 @@ Ainda não há arte: falta filmar.
 
 ### Gancho
 
-Como você entra e sai da parede?
+Como a distância da parede muda o apoio?
 
 ### Legenda
 
-A parede acompanha a gente por muito tempo, e isso é bom. Neste vídeo o Gabriel e o Paulo mostram a entrada na parede para o handstand, o apoio e a saída, cada um no seu nível. Como você entra e sai da parede? #HandstandLife Guia de Sobrevivência
+Como a distância da parede muda o apoio? Vamos observar duas posições, de perfil, e conversar sobre o que muda em cada uma. A demonstração e a orientação ainda serão gravadas e revisadas com Gabriel. #HandstandLife Guia de Sobrevivência
 
 ### Story de apoio
 
@@ -300,21 +300,21 @@ Compartilhar a demonstração + uma dúvida específica. Gabriel e Paulo gravam 
 
 ---
 
-## 11 · Ombros: abertura e empurrar o chão (Reel)
+## 11 · Escápulas em prancha: empurrar o chão (Reel)
 
 ### Na imagem
 
 - Etiqueta: HANDSTAND LIFE
 - Título: EMPURRE / O CHÃO.
-- Observação no quadro congelado do fim: Observe o movimento das escápulas.
+- Observação no quadro congelado do fim: Observe esta região.
 
 ### Gancho
 
-O que muda nos seus ombros?
+O que muda quando você empurra o chão?
 
 ### Legenda
 
-Abrir os ombros e empurrar o chão são duas coisas que a gente repete a vida inteira na parada de mão. Veja a diferença no vídeo e tente sentir no seu treino. O que muda nos seus ombros quando você empurra o chão? #HandstandLife Guia de Sobrevivência
+O que muda quando você empurra o chão? Aqui o Gabriel faz um movimento de escápulas em prancha. Veja primeiro a passagem inteira; depois, a seta indica a região para observar na repetição. #HandstandLife Guia de Sobrevivência
 
 ### Story de apoio
 
@@ -404,3 +404,6 @@ Chega uma hora em que a gente quer se soltar da parede. Um caminho é tirar um p
 ### Story de apoio
 
 Compartilhar a demonstração + uma dúvida específica. Gabriel e Paulo gravam sem falar; narração entra depois.
+
+
+Revisão visual de 18/11: post 11 mantém a tomada completa, repete 2 a 6 s com crop fixo de 22%, congela o quadro 6 s por 2 s com seta ocre e retoma 6 a 8 s. A seta indica a região das escápulas, não força nem ângulo medido.

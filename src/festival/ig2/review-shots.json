@@ -690,17 +690,17 @@
     "count": 5,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/abertura-festival-1-0-ebe27322e3.webp",
+        "url": "/festival/ig/review-v1/abertura-festival-1-0-bf2bc2fc8b.webp",
         "label": "Lâmina 1 · O encontro",
         "frame": 90
       },
       {
-        "url": "/festival/ig/review-v1/abertura-festival-3-0-7131df9f00.webp",
+        "url": "/festival/ig/review-v1/abertura-festival-3-0-3b00b9e114.webp",
         "label": "Lâmina 3 · Diferentes momentos",
         "frame": 90
       },
       {
-        "url": "/festival/ig/review-v1/abertura-festival-5-0-7d80218ebe.webp",
+        "url": "/festival/ig/review-v1/abertura-festival-5-0-739ba39c5d.webp",
         "label": "Lâmina 5 · Vamos juntos",
         "frame": 90
       }
@@ -740,17 +740,17 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/abertura-handstand-0-96f24fc084.webp",
+        "url": "/festival/ig/review-v1/abertura-handstand-0-1d0de238f6.webp",
         "label": "3.0 s",
         "frame": 90
       },
       {
-        "url": "/festival/ig/review-v1/abertura-handstand-1-73563e61e4.webp",
+        "url": "/festival/ig/review-v1/abertura-handstand-1-ece862db32.webp",
         "label": "5.0 s",
         "frame": 150
       },
       {
-        "url": "/festival/ig/review-v1/abertura-handstand-2-43f70cba93.webp",
+        "url": "/festival/ig/review-v1/abertura-handstand-2-8767afdb23.webp",
         "label": "34.3 s",
         "frame": 1030
       }
@@ -774,12 +774,12 @@
         "frame": 90
       },
       {
-        "url": "/festival/ig/review-v1/abertura-participar-3-0-5bf3a3920e.webp",
+        "url": "/festival/ig/review-v1/abertura-participar-3-0-33196c95f0.webp",
         "label": "Lâmina 3 · Para continuar",
         "frame": 90
       },
       {
-        "url": "/festival/ig/review-v1/abertura-participar-4-0-015746b418.webp",
+        "url": "/festival/ig/review-v1/abertura-participar-4-0-c774427d33.webp",
         "label": "Lâmina 4 · Escolha sua turma",
         "frame": 90
       }
@@ -1371,17 +1371,17 @@
     "count": 3,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/agustin-apresentacao-1-0-9edf508818.webp",
+        "url": "/festival/ig/review-v1/agustin-apresentacao-1-0-68a75dd62a.webp",
         "label": "Lâmina 1 · Gabriel Agustin",
         "frame": 29
       },
       {
-        "url": "/festival/ig/review-v1/agustin-apresentacao-2-0-a78a84ebde.webp",
+        "url": "/festival/ig/review-v1/agustin-apresentacao-2-0-2ab089d4a3.webp",
         "label": "Lâmina 2 · A trajetória",
         "frame": 29
       },
       {
-        "url": "/festival/ig/review-v1/agustin-apresentacao-3-0-4fb4ed43ed.webp",
+        "url": "/festival/ig/review-v1/agustin-apresentacao-3-0-5154f376f9.webp",
         "label": "Lâmina 3 · A origem do festival",
         "frame": 29
       }
@@ -1735,7 +1735,7 @@
     "title": "Escápulas em prancha · Gabriel",
     "format": "Reel",
     "description": "Demonstração de Gabriel, vinculada à pauta escapulas. Corte em velocidade real; falta revisão técnica da orientação e narração. O fecho usa fotografia, alternando cor natural e preto e branco; não é gravura anatômica.",
-    "movement": "Corte completo de 11.3 s, seguido de 3 s do quadro da fonte em 11.32 s. Pintura independente e sem deslocar o corpo. Áudio original não incluído. A prancha já ocupa boa parte da largura; ampliar cortaria cabeça ou pés.",
+    "movement": "Demonstração completa, repetição dos segundos 2 a 6 com aproximação fixa de 22%, pausa de 2 s no quadro 6 com uma seta ocre, retomada dos segundos 6 a 8. Seta indica região, não direção de força nem medição. Sem aceleração.",
     "name": "Escápulas em prancha",
     "cues": [
       {
@@ -1748,7 +1748,7 @@
       },
       {
         "label": "Congela e observa",
-        "frame": 371
+        "frame": 491
       }
     ],
     "cover": 120,
@@ -1756,19 +1756,19 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/gabriel-drill-escapulas-0-3060cfb93f.webp",
+        "url": "/festival/ig/review-v1/gabriel-drill-escapulas-0-b1d62581c4.webp",
         "label": "4.0 s",
         "frame": 120
       },
       {
-        "url": "/festival/ig/review-v1/gabriel-drill-escapulas-1-d910aabfe1.webp",
+        "url": "/festival/ig/review-v1/gabriel-drill-escapulas-1-3f2ed4a451.webp",
         "label": "5.7 s",
         "frame": 170
       },
       {
-        "url": "/festival/ig/review-v1/gabriel-drill-escapulas-2-a168dfa04d.webp",
-        "label": "12.4 s",
-        "frame": 371
+        "url": "/festival/ig/review-v1/gabriel-drill-escapulas-2-46c3e5c46e.webp",
+        "label": "16.4 s",
+        "frame": 491
       }
     ]
   },

@@ -5,14 +5,14 @@ import type { Piece } from './pieces';
 const url=(path:string)=>getRemotionEnvironment().isPlayer?'/festival/ig/'+path:staticFile('festival/ig/'+path);
 const cards=[
  {title:['GABRIEL','AGUSTIN'],label:'QUEM FAZ O HANDSTANDFEST?',body:'Artista circense, acrobata e professor de movimento. Argentino radicado no Brasil.',image:'gabriel/img-3372-freeze.webp'},
- {title:['MOVIMENTO','COMO PESQUISA.'],label:'MAIS DE 10 ANOS DE TRAJETÓRIA',body:'Acrobacia, parada de mãos e práticas corporais. Um caminho de investigação, expressão e transformação.',image:'arte/engraving-v1/gabriel-reta-profile.webp'},
- {title:['DE UMA VIVÊNCIA','A UM ENCONTRO.'],label:'A IDEIA DO FESTIVAL',body:'Uma experiência na Argentina inspirou Gabriel a criar este encontro de prática e troca.',image:'gabriel/img-3377-freeze.webp'},
+ {title:['HÁ MAIS DE 10 ANOS,','GABRIEL ENSINA','E PRATICA MOVIMENTO.'],label:'MAIS DE 10 ANOS DE TRAJETÓRIA',body:'Acrobacia, parada de mãos e práticas corporais. Um caminho de investigação, expressão e transformação.',image:'arte/engraving-v1/gabriel-reta-profile.webp'},
+ {title:['UMA EXPERIÊNCIA','NA ARGENTINA','INSPIROU','ESTE ENCONTRO.'],label:'A IDEIA DO FESTIVAL',body:'Gabriel quis reunir pessoas para praticar, aprender e trocar.',image:'gabriel/img-3377-freeze.webp'},
 ];
 function BioCard({index,...p}:PieceProps & {index:number}){const item=cards[index];return <Freeze frame={90}><Canvas {...p} format="card" dark signature={false}>
  <Img src={url(item.image)} style={{position:'absolute',inset:0,width:1080,height:1440,objectFit:index===1?'contain':'cover',padding:index===1?'120px 0 100px':0,boxSizing:'border-box'}}/>
  <div style={{position:'absolute',inset:0,background:'linear-gradient(180deg,rgba(10,35,28,.85),transparent 32%,transparent 65%,rgba(10,35,28,.94))'}}/>
  <Label y={65} size={28} color={CHALK}>{item.label}</Label>
- <Headline lines={item.title} y={140} size={index===2?65:88} dark/>
+ <Headline lines={item.title} y={140} size={index===0?88:60} dark/>
  <Label y={1020} size={48} color={CHALK} style={{width:index===2?670:920}}>{item.body}</Label>
  {index===2&&<BrandSeal x={790} y={1130} size={220} still/>}
  </Canvas></Freeze>}
