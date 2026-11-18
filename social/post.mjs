@@ -49,15 +49,19 @@ if (has('--login')) {
   const page = ctx.pages()[0] ?? (await ctx.newPage());
   await page.goto('https://www.instagram.com/accounts/login/');
   console.log(`Log in as @${ACCOUNT} in the window, then close it.`);
+  // On macOS closing the last window leaves Chromium running (and the profile locked): quit it ourselves.
+  ctx.on('page', (p) => p.on('close', () => ctx.pages().length === 0 && ctx.close().catch(() => {})));
+  page.on('close', () => ctx.pages().length === 0 && ctx.close().catch(() => {}));
   await ctx.waitForEvent('close', { timeout: 0 }).catch(() => {});
   process.exit(0);
 }
 
 if (has('--whoami')) {
-  const ctx = await chromium.launchPersistentContext(PROFILE, { ...BROWSER, headless: true });
+  // Visible on purpose: the headless shell did not read this profile's session (18/11/2026).
+  const ctx = await chromium.launchPersistentContext(PROFILE, BROWSER);
   const page = ctx.pages()[0] ?? (await ctx.newPage());
   await page.goto('https://www.instagram.com/', { waitUntil: 'domcontentloaded' });
-  await page.waitForTimeout(6000);
+  await page.waitForTimeout(8000);
   const ok = await loggedAs(page);
   console.log(ok ? `Logged in as @${ACCOUNT}.` : `NOT logged in as @${ACCOUNT} (current URL: ${page.url()}).`);
   await ctx.close();
