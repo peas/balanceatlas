@@ -174,3 +174,11 @@ por Paulo como André, seu antigo professor, e excluído do uso em 14/11/2026; c
 ## Biblioteca de exercícios e futuro app (16/11/2026)
 
 Ao produzir drills, guardar demonstração limpa e completa, pessoa, variação, ângulo, take, tempos da fonte e revisão técnica. Vincular os IDs dos exercícios ao catálogo de mídia existente; Reel, gravura e aula são derivados separados. O detector do `paulo.com.br-render` já é chamado pelo HF; os overlays de esqueleto/ângulos ainda não foram portados. Mapa de código, limitações e plano: [TRAINING-APP.md](../docs/handstand-life/TRAINING-APP.md).
+
+## Página numerada para citar fotos e vídeos (18/11/2026)
+
+`python3 scripts/festival_catalog_page.py --out ~/paulo-lab/public/rascunhos/acervo-handstandfest` gera
+lab.paulo.com.br/rascunhos/acervo-handstandfest/: fotos dos três retiros (T-NN, G-NN, SP-NNN, o número é o do arquivo
+no R2), outras fotos locais (O-NN, em ordem do catálogo: só acrescentar no fim para os números não mudarem) e os
+vídeos de retiro usados no site (V-T10 etc.). Marca o que o bento e a página /handstand já usam. `numeros.json` na
+pasta traduz número em URL ou id do catálogo. Depois de rodar: commit só dessa pasta no `~/paulo-lab` e push.
