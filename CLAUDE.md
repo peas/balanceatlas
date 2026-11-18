@@ -428,3 +428,11 @@ See `acervo/lotes/gabriel-training-2026-11-17.md`: 40 unique assets, eight clean
 
 ## Review and pinned opening — 17 November 2026
 `/instagram/recebidos/` now separates branded Remotion previews from source curation: three large frames, reversible crop simulation, explicit use/keep recommendations and exported local comments/zoom choices. Source masters stay untouched. `training-art-direction.ts` controls fixed per-cut framing and varied ochre/P&B/natural holds; chair exit has no added freeze. Calendar now starts with three proposed pinned briefs (18–20 November), then the interleaved agenda. See `docs/instagram/2026-11-17-pinned-opening.md`; briefs are pending production, not published or finished assets.
+
+## Assisted Instagram posting — 18 November 2026
+`social/post.mjs` (adapted from `~/nordestenerd/social/postar.mjs`) publishes the due entry of `social/queue.yaml` on
+@handstandfest through a separate Playwright Chromium whose logged-in profile lives in `social/.ig-profile/` (gitignored;
+the repo is public, never commit it). Paulo logs in himself (`node post.mjs --login`); `--whoami` checks the session,
+`--test-only` goes through upload/crop/cover/caption and stops before Share. One post per run, feed and Reels only;
+Stories go from the phone or Meta Business Suite. The queue starts empty: add an entry only when its files are exported
+and Paulo approved that specific post; publishing always needs his go-ahead. `npm install` inside `social/`.

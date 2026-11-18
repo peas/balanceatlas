@@ -32,3 +32,7 @@ public/videos/
 
 # raw festival footage, proxies, pose, contact sheets (see scripts/festival_acervo.py)
 local/
+
+# Instagram posting tool: logged-in browser profile and step screenshots (never commit; the repo is public)
+social/.ig-profile/
+social/node_modules/

@@ -1,0 +1,20 @@
+# Instagram queue for @handstandfest, consumed by social/post.mjs.
+#
+# No scheduling inside Instagram. Running `node post.mjs` checks whether a post is due
+# (when <= now) and not posted yet, asks, and publishes it. `posted_at` is the receipt.
+# The editorial plan lives in src/festival/ig2/editorial.ts; an entry is added here only
+# when its files are exported and Paulo has approved that post.
+#
+# Fields (paths relative to the repository root):
+#   id:        short identifier
+#   image:     one picture   | images: list = carousel | video: Reel .mp4 (1080x1920)
+#   cover:     optional cover picture for a Reel (public/festival/ig/covers-v1/...)
+#   when:      "YYYY-MM-DD HH:mm", the moment from which the post may go out
+#   caption:   post text (pt-BR)
+#   posted_at: written by the script after it SEES Instagram's confirmation. Do not edit,
+#              except to fill it by hand (ISO date) when the post went out from a phone.
+#
+# Stories are not supported by Instagram on desktop web: post them from the phone or
+# from Meta Business Suite.
+
+posts: []

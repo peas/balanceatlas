@@ -1,0 +1,10 @@
+{
+  "name": "handstandfest-social",
+  "private": true,
+  "description": "Assisted Instagram posting for @handstandfest (Playwright). Independent from the site: run npm install HERE, inside social/.",
+  "type": "module",
+  "dependencies": {
+    "playwright": "1.63.0",
+    "yaml": "^2.6.0"
+  }
+}
