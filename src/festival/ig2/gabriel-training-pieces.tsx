@@ -59,7 +59,7 @@ function GabrielTraining({cut, ...props}: PieceProps & {cut: TrainingCut}) {
     <div style={{position: 'absolute', inset: 0, pointerEvents: 'none', background: 'linear-gradient(180deg,rgba(10,35,28,.78),rgba(10,35,28,.36) 27%,transparent 40%,transparent 79%,rgba(10,35,28,.7))'}}/>
     <div style={{opacity:frame<playFrames?1-move(frame,150,15):1}}>
     <Label y={225} color={CHALK} size={34}>HANDSTAND LIFE</Label>
-    <Headline lines={cut.id==='chute-parede'?['COMO CHEGA','O PRIMEIRO','PÉ?']:cut.hook} x={cut.id==='chute-parede'?500:65} y={285} size={cut.id==='chute-parede'?56:76} width={cut.id==='chute-parede'?500:885} dark accentLine={direction.paint==='highlight'?0:-1}/>
+    <Headline lines={cut.id==='chute-parede'?['A ENTRADA','NA PAREDE!']:cut.hook} x={cut.id==='chute-parede'?500:65} y={285} size={cut.id==='chute-parede'?56:76} width={cut.id==='chute-parede'?500:885} dark accentLine={direction.paint==='highlight'?0:-1}/>
     {direction.paint==='underline'&&<BrushStroke color={ACCENT} style={{position:'absolute',left:65,top:470,width:640,height:20,clipPath:`inset(0 ${(1-move(frame,0,16)) * 100}% 0 0)`}}/>}
     </div>
     <BrandSeal x={cut.id==='chute-parede'&&frame>=playFrames?65:740} y={535} size={230}/>

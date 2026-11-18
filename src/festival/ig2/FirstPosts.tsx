@@ -8,7 +8,7 @@ import { OCHRE_TOKENS, type PieceProps } from './kit';
 import './editorial.css';
 
 const START = '2026-11-18';
-const COUNT = 7;
+const COUNT = 15;
 const dateAt = (i: number) => { const d = new Date(`${START}T12:00:00`); d.setDate(d.getDate() + i); return d.toLocaleDateString('pt-BR', { weekday: 'long', day: '2-digit', month: '2-digit' }); };
 
 function Caption({ text }: { text: string }) {
@@ -29,7 +29,7 @@ export default function FirstPosts() {
   return <div className="editorial first-posts" style={OCHRE_TOKENS}>
     <section className="ed-strategy">
       <p className="ed-kicker">INÍCIO DO PERFIL · {COUNT} PRIMEIROS POSTS</p>
-      <h2>Os sete primeiros posts, como vão sair.</h2>
+      <h2>Os primeiros posts, como vão sair.</h2>
       <p>Cada post com todas as lâminas ou o Reel, a capa quando o formato pede, a legenda para colar e a ideia de Story. Nada aqui está publicado no Instagram.</p>
       <nav className="ed-jumps" aria-label="Posts">{posts.map((day, i) => <a key={i} href={`#post-${i + 1}`}>{i + 1} · {day.title}</a>)}</nav>
       <label className="ed-all-weeks"><input type="checkbox" checked={guides} onChange={e => setGuides(e.target.checked)} /> Mostrar guias da interface do Instagram (aproximadas)</label>

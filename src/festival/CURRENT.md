@@ -84,7 +84,7 @@ Hyphenated words and the middle dot in labels stay. Still open: the schedule gri
 
 `/instagram/inicio/` (`ig2/FirstPosts.tsx`) shows the first seven calendar posts as they would go out: all slides or the
 Reel, the Reel cover frame, the caption with a copy button and the Story idea. Paulo edited the texts in
-`docs/instagram/2026-11-18-primeiros-7-posts-textos.md`; the code is the source of truth after that pass.
+the first review file (replaced by `docs/instagram/2026-11-18-primeiros-15-posts-textos.md`, now 15 posts); final captions live in `ig2/voice-copy.json`.
 The three pinned posts use Paulo and Gabriel (stills from the 04/11 Trapézio Voador footage in
 `public/festival/ig/abertura-v1/`), not retreat group photos from Thailand or Greece.
 

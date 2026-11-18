@@ -436,3 +436,15 @@ the repo is public, never commit it). Paulo logs in himself (`node post.mjs --lo
 `--test-only` goes through upload/crop/cover/caption and stops before Share. One post per run, feed and Reels only;
 Stories go from the phone or Meta Business Suite. The queue starts empty: add an entry only when its files are exported
 and Paulo approved that specific post; publishing always needs his go-ahead. `npm install` inside `social/`.
+
+## Voice pass, review of the first 15 and narration queue — 18 November 2026
+Read `src/festival/VOZ.md` (pt-BR) before writing any festival copy: tone from Paulo's draft post, writing rules (full
+sentences with a verb, no dashes) and Gabriel's vocabulary. Final hooks and captions of the 37 planned posts live in
+`src/festival/ig2/voice-copy.json`, keyed by post title and merged in `editorial.ts`; exercise captions carry simple
+technical statements still pending Gabriel's review. Paulo reviews the first 15 himself:
+`docs/instagram/2026-11-18-primeiros-15-posts-textos.md` (generated from the code; after his edits the code is the source
+again) and `/instagram/inicio/` shows those 15 with covers and captions. Post 4 is "Entrada na parede para o handstand":
+art "A ENTRADA NA PAREDE!", freeze note and caption use Paulo's cue about hips over shoulders and hands.
+Paulo will narrate the exercise Reels: queue, his script for post 4 and recording convention in
+`docs/instagram/2026-11-18-narracao.md` (audio in `local/festival/narracao/<piece>.m4a`, never in git). The compositions
+do not play narration yet. Dany García is no longer a teacher; lineup is Gabriel Agustin and Louisse Aldrigues.

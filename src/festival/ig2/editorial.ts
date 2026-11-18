@@ -1,4 +1,6 @@
 import { PINNED_POSTS } from './pinned-plan';
+// Final hooks and captions after the voice pass (src/festival/VOZ.md), keyed by post title. Edit copy there.
+import VOICE from './voice-copy.json';
 export { PINNED_POSTS } from './pinned-plan';
 // Proposed sequence, not a publishing queue. Assets/technical copy still need human review.
 export type EditorialDay = { title:string; pillar:string; piece?:string; hook:string; story:string; missing:string; caption:string; format:string; asset?:string; referenceDay?:number; pinned?:number; briefId?:string };
@@ -81,4 +83,4 @@ old(14,{title:'O que vamos observar no próximo treino?',hook:'Qual detalhe voc�
 // Editorial identity, not a promise of hashtag reach.
 const gabrielSamples:Record<string,string>={'Ombros: abertura e empurrar o chão':'escapulas','Saída em estrela':'saida-parede','Entrada na parede para o handstand':'chute-parede'};
 const samples:Record<string,string>={'Canoinha: pernas e pelve':'canoinha','Ombros: abertura e empurrar o chão':'escapulas','Saída em estrela':'saida-estrela','Costelas, peito e canoinha':'costelas','Sapinho: primeiro contato com o equilíbrio':'sapinho','Entrada na parede para o handstand':'chute-parede','Urso até a prancha estendida':'urso-prancha'};
-export const EDITORIAL: EditorialDay[] = PLAN.map(day => ({...day, ...(gabrielSamples[day.title]?{piece:'gabriel-drill-'+gabrielSamples[day.title],missing:'Material do Gabriel recebido em 17/11; corte e prévia disponíveis. Revisar explicação, saída e narração antes de publicar. '+day.missing}:samples[day.title]?{piece:'exercicio-'+samples[day.title],missing:'Prévia com Paulo para revisar; nova captação prevista com Paulo e Gabriel. '+day.missing}:{}), caption: day.caption.includes('#') ? day.caption : `${day.caption}\n\n${day.pillar === 'Evento' ? '#handstandfest' : '#handstandlife'}`}));
+export const EDITORIAL: EditorialDay[] = PLAN.map(day => ({...day, ...((VOICE as Record<string,Partial<EditorialDay>>)[day.title]??{})})).map(day => ({...day, ...(gabrielSamples[day.title]?{piece:'gabriel-drill-'+gabrielSamples[day.title],missing:'Material do Gabriel recebido em 17/11; corte e prévia disponíveis. Revisar explicação, saída e narração antes de publicar. '+day.missing}:samples[day.title]?{piece:'exercicio-'+samples[day.title],missing:'Prévia com Paulo para revisar; nova captação prevista com Paulo e Gabriel. '+day.missing}:{}), caption: day.caption.includes('#') ? day.caption : `${day.caption}\n\n${day.pillar === 'Evento' ? '#handstandfest' : '#handstandlife'}`}));
