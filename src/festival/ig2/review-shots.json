@@ -678,6 +678,114 @@
     ]
   },
   {
+    "id": "abertura-festival",
+    "title": "O que é o HandstandFest?",
+    "format": "Carrossel",
+    "description": "Fotos do acervo autorizado ilustram a prática; não são cobertura do festival futuro. Revisar legenda antes de publicar.",
+    "movement": "Lâminas estáticas; destaque ocre e composição independentes da fotografia.",
+    "name": "O encontro",
+    "cues": [],
+    "cover": 60,
+    "index": 0,
+    "count": 5,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/abertura-festival-1-0-ebe27322e3.webp",
+        "label": "Lâmina 1 · O encontro",
+        "frame": 90
+      },
+      {
+        "url": "/festival/ig/review-v1/abertura-festival-3-0-7131df9f00.webp",
+        "label": "Lâmina 3 · Diferentes momentos",
+        "frame": 90
+      },
+      {
+        "url": "/festival/ig/review-v1/abertura-festival-5-0-7d80218ebe.webp",
+        "label": "Lâmina 5 · Vamos juntos",
+        "frame": 90
+      }
+    ]
+  },
+  {
+    "id": "abertura-handstand",
+    "title": "O que é handstand?",
+    "format": "Reel",
+    "description": "Apresentação visual da prática: reta, parede, entrada em press e mudanças de forma. Sem narração ou música; não é tutorial.",
+    "movement": "36 s em velocidade real, com cortes entre tomadas diferentes. Press com 18 s para não apressar a entrada; pausa final de 3 s.",
+    "name": "Muitos caminhos",
+    "cues": [
+      {
+        "label": "Parada de mão",
+        "frame": 60
+      },
+      {
+        "label": "Apoio",
+        "frame": 150
+      },
+      {
+        "label": "Press",
+        "frame": 390
+      },
+      {
+        "label": "Formas",
+        "frame": 870
+      },
+      {
+        "label": "Pausa ocre",
+        "frame": 1030
+      }
+    ],
+    "cover": 90,
+    "index": 0,
+    "count": 1,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/abertura-handstand-0-96f24fc084.webp",
+        "label": "3.0 s",
+        "frame": 90
+      },
+      {
+        "url": "/festival/ig/review-v1/abertura-handstand-1-73563e61e4.webp",
+        "label": "5.0 s",
+        "frame": 150
+      },
+      {
+        "url": "/festival/ig/review-v1/abertura-handstand-2-43f70cba93.webp",
+        "label": "34.3 s",
+        "frame": 1030
+      }
+    ]
+  },
+  {
+    "id": "abertura-participar",
+    "title": "Ainda estou na parede. Posso participar?",
+    "format": "Carrossel",
+    "description": "Fotos do acervo autorizado ilustram a prática; não são cobertura do festival futuro. Revisar legenda antes de publicar.",
+    "movement": "Lâminas estáticas; destaque ocre e composição independentes da fotografia.",
+    "name": "A pergunta",
+    "cues": [],
+    "cover": 60,
+    "index": 0,
+    "count": 4,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/abertura-participar-1-0-428caf06e7.webp",
+        "label": "Lâmina 1 · A pergunta",
+        "frame": 90
+      },
+      {
+        "url": "/festival/ig/review-v1/abertura-participar-3-0-5bf3a3920e.webp",
+        "label": "Lâmina 3 · Para continuar",
+        "frame": 90
+      },
+      {
+        "url": "/festival/ig/review-v1/abertura-participar-4-0-015746b418.webp",
+        "label": "Lâmina 4 · Escolha sua turma",
+        "frame": 90
+      }
+    ]
+  },
+  {
     "id": "exercicio-gato-vaca",
     "title": "Gato-vaca · prévia com Paulo",
     "format": "Reel",

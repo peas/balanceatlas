@@ -34,9 +34,9 @@ const exercise=(title:string,hook:string,missing:string):EditorialDay=>({title,h
 const nature=(piece:string,title:string,hook:string,caption:string):EditorialDay=>({piece,title,hook,caption,pillar:'Prática',format:'Reel',story:'Compartilhar o Reel e destacar o detalhe observado, sem acrescentar uma segunda aula.',missing:'Conferir nomes das formas e texto com Gabriel; manter a ação completa antes do congelamento.'});
 const PLAN: EditorialDay[]=[
 // Open on 18–20 November with the three profile-entry posts; then resume practice.
-...PINNED_POSTS.map(post=>({title:post.title,pillar:post.pillar,format:post.format,hook:post.hook,caption:post.caption,story:post.story,missing:post.missing,pinned:post.order,briefId:post.id,asset:'/festival/instagram/#fixados'})),
+...PINNED_POSTS.map(post=>({title:post.title,pillar:post.pillar,format:post.format,hook:post.hook,caption:post.caption,story:post.story,missing:post.missing,pinned:post.order,piece:post.id,briefId:post.id,asset:'/festival/instagram/#fixados'})),
 // Accessible supports, people and exit before free practice; no duplicate opening invitation.
-exercise('Punhos: preparar os apoios','Como você prepara os punhos?','Filmar preparação dos punhos e distribuição do apoio escolhidas por Gabriel. Corpo e mãos visíveis; voz depois.'),
+exercise('Chute controlado para a parede','Como chega o primeiro pé?', 'Filmar a primeira perna chegando com controle e a segunda acompanhando. Mostrar posição inicial, contato e saída; não cortar a descida.'),
 old(1,{title:'Treinar sozinho ou junto?',hook:'Treinar junto pode levar você mais longe.',caption:'Estamos fortalecendo a comunidade de handstand do Brasil. Treinar junto é observar, conversar e trocar experiências. Que grupo ou lugar da sua cidade devemos conhecer?'}),
 exercise('Sapinho: primeiro contato com o equilíbrio','Como está o seu sapinho?','Filmar a progressão que Gabriel usa com iniciantes, apoio das mãos, transferência de peso e saída. Corpo inteiro + close; narração posterior.'),
 old(10,{piece:'agustin-apresentacao',format:'Carrossel',title:'Conheça Gabriel Agustin',hook:'Gabriel Agustin · movimento e encontro.',caption:'Artista circense, acrobata e professor de movimento, argentino radicado no Brasil. Da prática e das trocas nasceu a vontade de criar o HandstandFest.',missing:'Revisar a montagem e a bio fornecida pelo Gabriel. Ele integra a lista de professores, sem categoria de convidado.'}),
@@ -59,7 +59,7 @@ old(2,{title:'Transições: do pike ao tuck',hook:'Do pike ao tuck.',caption:'Mu
 exercise('Mãos: distância e apoio','Onde você coloca suas mãos?','Plano frontal e detalhe dos dedos. Comparar distâncias de apoio escolhidas por Gabriel e explicar o contexto; evitar uma largura universal.'),
 old(11,{hook:'Aqui mão não é falta!'}),
 // Week 4: Entry, observation and two complementary perspectives.
-exercise('Chute controlado para a parede','Como chega o primeiro pé?', 'Filmar a primeira perna chegando com controle e a segunda acompanhando. Mostrar posição inicial, contato e saída; não cortar a descida.'),
+exercise('Punhos: preparar os apoios','Como você prepara os punhos?','Filmar preparação dos punhos e distribuição do apoio escolhidas por Gabriel. Corpo e mãos visíveis; voz depois.'),
 old(16,{title:'Filme e reveja seu treino',hook:'Filme. Reveja. Troque.',caption:'O handstand pede atenção aos detalhes. Filme, reveja e converse sobre o que percebeu. Estamos preparando Handstand Life: Guia de Sobrevivência, para reunir demonstrações e aprendizados.'}),
 old(19,{title:'O que você leva do festival?',hook:'Prática, ferramentas e continuidade.'}),
 exercise('Urso até a prancha estendida','Como o apoio muda na transição?', 'Filmar de perfil a transição do urso para a posição estendida escolhida por Gabriel, preservando mãos, ombros e tronco no enquadramento.'),

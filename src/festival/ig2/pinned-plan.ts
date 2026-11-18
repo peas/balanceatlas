@@ -1,6 +1,6 @@
 import { QUANDO } from '../data';
 
-// Editorial proposals, not published posts or finished compositions.
+// Dedicated compositions exist for review; Instagram publication and pinning remain manual.
 // Dedicated artwork must be created and reviewed before these receive a catalogue piece ID.
 export type PinnedPost = {
   id:string; order:number; title:string; format:'Carrossel'|'Reel'; pillar:string;
@@ -25,14 +25,14 @@ export const PINNED_POSTS:PinnedPost[] = [
     sources:['Acervo próprio/autorizado de prática e grupo: escolher foto de capa diferente da dos outros dois fixados.','Fotos do Trapézio Voador já cadastradas; fonte de datas e informações: data.ts.'],
     caption:`O 1º HandstandFest é um encontro para praticar, aprender e trocar em torno da parada de mão. De ${QUANDO}, no Trapézio Voador, em São Paulo. Turmas para diferentes momentos da prática. Informações, critérios das turmas e inscrições em handstandfest.com.br.`,
     story:'Compartilhar a capa nativamente + link do evento. Pergunta: você viria sozinho ou com seu grupo de treino?',
-    missing:'Montar as cinco lâminas, escolher e conferir as fotos, revisar informações e legenda. Confirmar o estado da venda antes de anunciar inscrições abertas. O estudo estático antigo não substitui este carrossel.',
+    missing:'Composição montada com acervo existente. Revisar texto, enquadramento e informações antes de publicar; acrescentar música no Instagram se desejado.',
   },
   {
     id:'abertura-handstand', order:2, title:'O que é handstand?', format:'Reel', pillar:'Aprender',
     hook:'Parada de mão. Muitas possibilidades.',
     objective:'Mostrar a prática em movimento para quem não conhece: equilíbrio sobre as mãos, entradas e mudanças de forma. Uma apresentação, não uma aula de progressão.',
     cover:'Quadro real de parada reta com corpo inteiro + “O que é handstand?”; palavra “handstand” pincelada. Capa diferente do carrossel do evento.',
-    visual:'Reel de aproximadamente 20–25s: vídeo quase inteiro, cortes entre tentativas assumidamente diferentes, selo HF discreto e legível. Uma única pausa curta com ocre para o termo-chave; restante em movimento e cor natural. Não fazer carrossel de vídeos nesta abertura.',
+    visual:'Reel de 36s: vídeo quase inteiro, cortes entre tentativas assumidamente diferentes, selo HF discreto e legível. Uma única pausa curta com ocre para o termo-chave; restante em movimento e cor natural. Não fazer carrossel de vídeos nesta abertura.',
     beats:[
       '0–4s · Parada reta completa: “Handstand = parada de mão”.',
       '4–10s · Uma entrada em press, desde antes da subida: “Entrar também faz parte”. Se o movimento precisar, dar mais tempo em vez de acelerá-lo.',
@@ -43,7 +43,7 @@ export const PINNED_POSTS:PinnedPost[] = [
     sources:['IMG_3574: candidato ao press em canes; escolher sequência inteira e verificar se um recorte preserva mãos, pés e suporte.','IMG_3587: candidato às mudanças de forma no deck; confirmar nomenclatura e enquadramento.','Gabriel em reta já aprovado no acervo, em plano diferente dos outros fixados.'],
     caption:'Handstand é parada de mão: equilibrar o corpo sobre as mãos. A prática pode explorar entradas, permanências e mudanças de forma. Aqui vamos observar movimentos, compartilhar exercícios e conversar sobre o processo — cada pessoa no seu momento. Qual parte você gostaria de entender melhor?',
     story:'Compartilhar o Reel + enquete simples: já pratica / quero começar. Depois recolher uma dúvida concreta.',
-    missing:'Selecionar takes completos, conferir formas com Gabriel, montar o Reel e sua capa. Revisar legibilidade do corpo em celular; gravar voz se fizer sentido. Não tratar as amostras por quadros como análise técnica concluída.',
+    missing:'Composição montada com acervo existente. Revisar texto, enquadramento e informações antes de publicar; acrescentar música no Instagram se desejado.',
   },
   {
     id:'abertura-participar', order:3, title:'Ainda estou na parede. Posso participar?', format:'Carrossel', pillar:'Evento',
@@ -60,6 +60,6 @@ export const PINNED_POSTS:PinnedPost[] = [
     sources:['Novo lote Gabriel: entrada/apoio na parede como foto real de capa; escolher quadro com corpo inteiro.','Carrossel existente “turma” como referência de conteúdo, não como render pronto deste novo roteiro.','Critérios e orientação de envio de vídeo: FAQ em data.ts.'],
     caption:'Você não precisa chegar ao festival dominando a parada de mão livre. Há turma de básico para quem ainda usa a parede, e turma de intermediário e avançado para quem já sustenta o livre com consistência. Confira os critérios e as orientações no site; na dúvida, mande um vídeo curto ao se inscrever para ajudarmos na escolha.',
     story:'Compartilhar a capa + caixa: qual é sua dúvida sobre participar? Respostas reais podem alimentar o FAQ, sem inventar perguntas recebidas.',
-    missing:'Montar as quatro lâminas e conferir os critérios atuais no FAQ. Validar o fluxo de envio de vídeo na inscrição antes de publicar. O carrossel “turma” é base a adaptar, não peça nova já pronta.',
+    missing:'Composição montada com acervo existente. Revisar texto, enquadramento e informações antes de publicar; acrescentar música no Instagram se desejado.',
   },
 ];

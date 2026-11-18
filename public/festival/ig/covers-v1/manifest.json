@@ -708,5 +708,35 @@
     "url": "/festival/ig/covers-v1/gabriel-drill-chute-parede-c08585a292.webp",
     "status": "review",
     "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "abertura-festival",
+    "composition": "abertura-festival-1",
+    "frame": 60,
+    "width": 1080,
+    "height": 1440,
+    "url": "/festival/ig/covers-v1/abertura-festival-a6f8016c60.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "abertura-handstand",
+    "composition": "abertura-handstand",
+    "frame": 90,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/abertura-handstand-27a7e616b7.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "abertura-participar",
+    "composition": "abertura-participar-1",
+    "frame": 60,
+    "width": 1080,
+    "height": 1440,
+    "url": "/festival/ig/covers-v1/abertura-participar-a7dd41996b.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
   }
 ]
