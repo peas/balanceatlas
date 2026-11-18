@@ -87,3 +87,12 @@ Reel, the Reel cover frame, the caption with a copy button and the Story idea. P
 `docs/instagram/2026-11-18-primeiros-7-posts-textos.md`; the code is the source of truth after that pass.
 The three pinned posts use Paulo and Gabriel (stills from the 04/11 Trapézio Voador footage in
 `public/festival/ig/abertura-v1/`), not retreat group photos from Thailand or Greece.
+
+## Voice and vocabulary (18 November 2026)
+
+`src/festival/VOZ.md` (pt-BR) is the copy guide: tone taken from Paulo's draft post "Handstand, jornadas e presença"
+(his reference for how the event thinks and writes), writing rules, and Gabriel's vocabulary for entries
+("entrada na parede para o handstand", "subida", "chute" for the L entry, "entrada afastada/straddle", "grupada/tuck").
+Read it before writing any festival copy. Dany García is no longer a teacher (Paulo, 18/11/2026): the lineup is
+Gabriel Agustin and Louisse Aldrigues. The teacher card on the home is now a 9:16 composition like the other posters
+(the 4:5 one was cropped on phones and cut the first letters of the name).

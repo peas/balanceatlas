@@ -51,7 +51,8 @@ export const tracks = ['Básico', 'Intermediário e avançado'];
 
 
 
-// Confirmed teachers share one list. Louisse/Dany quotations come from their Instagram profiles (checked 28/10/2026).
+// Confirmed teachers share one list. Louisse's quotation comes from her Instagram profile (checked 28/10/2026).
+// Dany García was removed on Paulo's call (18/11/2026).
 // Supplied by Paulo/Gabriel on 13 November 2026, edited for length.
 export const AGUSTIN_BIO = 'Artista circense, acrobata e professor de movimento, argentino radicado no Brasil. Com mais de 10 anos nas artes do movimento, encontrou na parada de mãos um caminho de investigação, expressão e transformação.';
 export const AGUSTIN_ORIGIN = 'A ideia do festival veio de Gabriel, após uma experiência marcante na Argentina: reunir pessoas, professores e diferentes perspectivas em torno da parada de mãos.';
@@ -70,13 +71,6 @@ export const lineup: { poster: PosterProps; teacher?: boolean; bio?: string; url
     quote: 'Estudos do equilíbrio · Parada de mão · Treinamento consciente · Aulas online · Artista circense',
     source: 'https://www.instagram.com/lou.handstand/',
     where: 'Aulas presenciais e online',
-  },
-  {
-    poster: { img: '/festival/teacher-dany.webp', first: 'Dany', last: 'García', handle: '@dany_slackwire', shape: 'block', focus: '50% 40%' },
-    url: 'https://www.instagram.com/dany_slackwire/',
-    quote: 'Artista Circense! · Alumno de la ENCLO 2025-2026 · Colombiano viviendo en Brasil',
-    source: 'https://www.instagram.com/dany_slackwire/',
-    where: 'Arame, parada de cabeça, malabares e acrobacia de solo',
   },
 ];
 

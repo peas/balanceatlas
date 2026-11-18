@@ -51,7 +51,7 @@ export const faqFest: { q: string; a: string }[] = [
   { q: 'Quanto custa?', a: `Passe completo para os 3 dias em três lotes: as primeiras 10 vagas a R$ ${VENDA.preco}, as 35 seguintes a R$ ${LOTES[1].price} e as últimas 15 a R$ ${LOTES[2].price}. São 60 vagas no total. Por enquanto só vendemos o passe completo. A venda é pelo Sympla, com taxa de serviço de 10% à parte (R$ ${LOTES[0].fee}, R$ ${LOTES[1].fee} e R$ ${LOTES[2].fee}, respectivamente) e parcela em até 12 vezes.` },
   { q: 'Como compro?', a: 'Pelo botão "Garanta sua vaga". Quando um lote esgota, o próximo abre sozinho.' },
   { q: 'Venho do yoga, do acroyoga ou da calistenia. É para mim?', a: 'Sim. O festival é para quem quer ampliar o repertório a partir da parada de mão, de qualquer prática: yoga, acroyoga, calistenia, circo, dança ou movimento.' },
-  { q: 'Quem dá aula?', a: 'Gabriel Agustin, Louisse Aldrigues e Dany García. Cada turma tem também professores assistentes. Mais nomes em breve.' },
+  { q: 'Quem dá aula?', a: 'Gabriel Agustin e Louisse Aldrigues. Cada turma tem também professores assistentes. Mais nomes em breve.' },
 ];
 export const faqHandstand: { q: string; a: string }[] = [
   { q: 'Handstand ou parada de mão?', a: 'A mesma coisa. Usamos as duas palavras de propósito: quem pesquisa na internet procura mais por "handstand", e quem treina no Brasil fala "parada de mão".' },

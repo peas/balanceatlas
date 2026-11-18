@@ -199,9 +199,9 @@ export const Teacher = () => {
     <AbsoluteFill style={{ background: INK, overflow: 'hidden' }}>
       <Html5Video src="/festival/teacher.mp4" poster="/festival/teacher.webp" playsInline muted style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
       <AbsoluteFill style={{ background: ACCENT, transform: `translateX(${wipe}%)` }} />
-      <div style={{ position: 'absolute', left: 32, bottom: 40, opacity: fadeOut }}>
-        <Letters text="Gabriel" delay={18} size={78} />
-        <Letters text="Agustin" delay={24} size={78} />
+      <div style={{ position: 'absolute', left: 30, bottom: 44, opacity: fadeOut }}>
+        <Letters text="Gabriel" delay={18} size={72} />
+        <Letters text="Agustin" delay={24} size={72} />
       </div>
     </AbsoluteFill>
   );

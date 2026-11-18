@@ -18,7 +18,7 @@ import { LUGAR_SITE_FRAMES, LugarSite } from './ig/p03-lugar';
 
 const COMPS = {
   hero: { component: Hero, frames: HERO_FRAMES, w: W, h: H },
-  teacher: { component: Teacher, frames: TEACHER_FRAMES, w: W, h: H },
+  teacher: { component: Teacher, frames: TEACHER_FRAMES, w: POSTER_W, h: POSTER_H }, // same 9:16 as the story frame, or the sides (and the name) get cropped
   poster: { component: Poster, frames: POSTER_FRAMES, w: POSTER_W, h: POSTER_H },
   lugar: { component: LugarSite, frames: LUGAR_SITE_FRAMES, w: 1080, h: 1920 }, // venue tour (Instagram piece 03)
 };
