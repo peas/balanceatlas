@@ -72,3 +72,18 @@ See `acervo/lotes/gabriel-training-2026-11-17.md`: 40 unique assets, eight clean
 
 ## Review and pinned opening — 17 November 2026
 `/instagram/recebidos/` now separates branded Remotion previews from source curation: three large frames, reversible crop simulation, explicit use/keep recommendations and exported local comments/zoom choices. Source masters stay untouched. `training-art-direction.ts` controls fixed per-cut framing and varied ochre/P&B/natural holds; chair exit has no added freeze. Calendar now starts with three proposed pinned briefs (18–20 November), then the interleaved agenda. See `docs/instagram/2026-11-17-pinned-opening.md`; three dedicated compositions are now available for review (5-slide event carousel, 36-second practice Reel, 4-slide participation carousel), not published on Instagram. Controlled wall entry follows the trio; wrists is deferred beyond week one.
+
+## Copy rule: no dashes (Paulo, 18 November 2026)
+
+Festival copy (site, Instagram art, captions, Stories) uses **no em dash, en dash or hyphen as a separator**: Paulo finds
+it reads as AI. Write full sentences with a verb, plain and concrete; he also rejected "mysterious" or over-condensed
+verbless lines. Use "a" for ranges in running text (`QUANDO` is now "16 a 18 abr 2027"), commas, colons or parentheses.
+Hyphenated words and the middle dot in labels stay. Still open: the schedule grid on Sobre keeps "9h — 9h45" time ranges.
+
+## First seven posts (18 November 2026)
+
+`/instagram/inicio/` (`ig2/FirstPosts.tsx`) shows the first seven calendar posts as they would go out: all slides or the
+Reel, the Reel cover frame, the caption with a copy button and the Story idea. Paulo edited the texts in
+`docs/instagram/2026-11-18-primeiros-7-posts-textos.md`; the code is the source of truth after that pass.
+The three pinned posts use Paulo and Gabriel (stills from the 04/11 Trapézio Voador footage in
+`public/festival/ig/abertura-v1/`), not retreat group photos from Thailand or Greece.

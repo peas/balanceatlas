@@ -3,7 +3,7 @@ import { Canvas, Headline, Label, BrandSeal, CHALK, type PieceProps } from './ki
 import { MEDIA } from '../ig/kit';
 import briefs from './gabriel-filming.json';
 import type { Piece } from './pieces';
-const titles:Record<string,string[]>={'gato-vaca':['GATO-VACA.','PERCEBA A COLUNA.'],escapulas:['OMBROS:','EMPURRE O CHÃO.'],punhos:['MÃOS E PUNHOS.','PERCEBA O APOIO.'],'urso-prancha':['DO URSO','À PRANCHA.'],canoinha:['COMO ESTÁ','SUA CANOINHA?'],sapinho:['SAPINHO:','UM PÉ DE CADA VEZ.'],'ombros-cadeira':['ABERTURA','DE OMBROS.'],parede:['BARRIGA','PARA A PAREDE.'],'saida-estrela':['SAIR TAMBÉM','É PRATICAR.'],'chute-parede':['COMO CHEGA','O PRIMEIRO PÉ?'],costelas:['COSTELAS,','PEITO E PELVE.'],'ombros-box':['OMBROS','COM APOIO.'],'pike-box':['PIKE COM','PÉS APOIADOS.'],'abertura-chao':['BRAÇOS À FRENTE.','OBSERVE O TRONCO.']};
+const titles:Record<string,string[]>={'gato-vaca':['GATO-VACA.','PERCEBA A COLUNA.'],escapulas:['OMBROS:','EMPURRE O CHÃO.'],punhos:['MÃOS E PUNHOS.','PERCEBA O APOIO.'],'urso-prancha':['DO URSO','À PRANCHA.'],canoinha:['COMO ESTÁ','SUA CANOINHA?'],sapinho:['SAPINHO:','UM PÉ DE','CADA VEZ.'],'ombros-cadeira':['ABERTURA','DE OMBROS.'],parede:['BARRIGA','PARA A PAREDE.'],'saida-estrela':['SAIR TAMBÉM','É PRATICAR.'],'chute-parede':['COMO CHEGA','O PRIMEIRO PÉ?'],costelas:['COSTELAS,','PEITO E PELVE.'],'ombros-box':['OMBROS','COM APOIO.'],'pike-box':['PIKE COM','PÉS APOIADOS.'],'abertura-chao':['BRAÇOS À FRENTE.','OBSERVE O TRONCO.']};
 const available=briefs.filter(b=>b.sample);
 function ExercisePreview({id,seconds,...props}:PieceProps&{id:string;seconds:number}){
  const frame=useCurrentFrame(),freezeAt=Math.round(seconds*30)-2;

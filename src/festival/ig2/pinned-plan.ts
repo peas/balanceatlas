@@ -1,4 +1,4 @@
-import { QUANDO } from '../data';
+import { FEST, QUANDO } from '../data';
 
 // Dedicated compositions exist for review; Instagram publication and pinning remain manual.
 // Dedicated artwork must be created and reviewed before these receive a catalogue piece ID.
@@ -23,7 +23,7 @@ export const PINNED_POSTS:PinnedPost[] = [
       '5 · Vamos treinar juntos? Data, local, handstandfest.com.br e selo HF. Consultar informações e inscrições no site.',
     ],
     sources:['Acervo próprio/autorizado de prática e grupo: escolher foto de capa diferente da dos outros dois fixados.','Fotos do Trapézio Voador já cadastradas; fonte de datas e informações: data.ts.'],
-    caption:`O 1º HandstandFest é um encontro para praticar, aprender e trocar em torno da parada de mão. De ${QUANDO}, no Trapézio Voador, em São Paulo. Turmas para diferentes momentos da prática. Informações, critérios das turmas e inscrições em handstandfest.com.br.`,
+    caption:`O 1º HandstandFest é um encontro para praticar, aprender e trocar em torno da parada de mão. De ${FEST.dias[0]} a ${FEST.dias[2]} de ${FEST.mes} de ${FEST.ano}, no Trapézio Voador, em São Paulo. Turmas para diferentes momentos da prática. Informações, critérios das turmas e inscrições em handstandfest.com.br.`,
     story:'Compartilhar a capa nativamente + link do evento. Pergunta: você viria sozinho ou com seu grupo de treino?',
     missing:'Composição montada com acervo existente. Revisar texto, enquadramento e informações antes de publicar; acrescentar música no Instagram se desejado.',
   },
@@ -41,7 +41,7 @@ export const PINNED_POSTS:PinnedPost[] = [
       'Fecho · “Por aqui: prática, exercícios e encontros.” Handstand Life + assinatura HF. Não sugerir que o press é requisito para começar.',
     ],
     sources:['IMG_3574: candidato ao press em canes; escolher sequência inteira e verificar se um recorte preserva mãos, pés e suporte.','IMG_3587: candidato às mudanças de forma no deck; confirmar nomenclatura e enquadramento.','Gabriel em reta já aprovado no acervo, em plano diferente dos outros fixados.'],
-    caption:'Handstand é parada de mão: equilibrar o corpo sobre as mãos. A prática pode explorar entradas, permanências e mudanças de forma. Aqui vamos observar movimentos, compartilhar exercícios e conversar sobre o processo — cada pessoa no seu momento. Qual parte você gostaria de entender melhor?',
+    caption:'Handstand é parada de mão: equilibrar o corpo sobre as mãos. Essa nossa prática explora entradas, permanências e mudanças de forma. Mais: essa prática aparece em diversos outros esportes, não é à toa que agora merece seu próprio espaço!',
     story:'Compartilhar o Reel + enquete simples: já pratica / quero começar. Depois recolher uma dúvida concreta.',
     missing:'Composição montada com acervo existente. Revisar texto, enquadramento e informações antes de publicar; acrescentar música no Instagram se desejado.',
   },
