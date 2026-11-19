@@ -6,7 +6,7 @@ const grupos = [
   { id: 'mundo', titulo: 'Pelo mundo', texto: 'Outras trajetórias para conhecer o equilíbrio, o movimento e as possibilidades do corpo.' },
 ];
 ---
-<FestLayout title="Paradistas para conhecer · HandstandFest" description="Conheça professores e artistas de parada de mãos do Brasil e do mundo, com links para acompanhar seus trabalhos no Instagram.">
+<FestLayout indexable={false} title="Paradistas para conhecer · HandstandFest" description="Conheça professores e artistas de parada de mãos do Brasil e do mundo, com links para acompanhar seus trabalhos no Instagram.">
   <main>
     <header class="intro wrap">
       <p class="kicker"><a href="/festival/handstand/">Sobre handstand</a> · referências</p>
@@ -20,6 +20,7 @@ const grupos = [
         <div class="cabecalho"><h2 id={`titulo-${grupo.id}`}>{grupo.titulo}</h2><p>{grupo.texto}</p></div>
         <div class="pessoas">
           {paradistas.filter(p => p.grupo === grupo.id).map(p => <article class="pessoa">
+            <img class="retrato" src={`/festival/paradistas/${p.instagram}.webp`} alt={`Foto de perfil de ${p.nome}`} width="150" height="150" loading="lazy" />
             <p class="foco">{p.foco}</p>
             <h3>{p.nome}</h3>
             <p class="descricao">{p.descricao}</p>
@@ -53,6 +54,7 @@ const grupos = [
   .cabecalho p { font-size: 1.125rem; }
   .pessoas { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 20px; }
   .pessoa { border: 1px solid #123d3340; border-radius: 16px; padding: clamp(22px,3vw,30px); display: flex; flex-direction: column; align-items: flex-start; }
+  .retrato { width: 128px; aspect-ratio: 1; height: 128px; object-fit: cover; border-radius: 50%; margin-bottom: 24px; }
   #brasil .pessoa { border-color: #f3eddf45; }
   .foco { font: 700 .875rem/1.5 var(--mono); margin-bottom: 18px; }
   #brasil .foco { color: var(--accent-light); }
