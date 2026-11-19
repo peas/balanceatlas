@@ -83,4 +83,10 @@ old(14,{title:'O que vamos observar no próximo treino?',hook:'Qual detalhe voc�
 // Editorial identity, not a promise of hashtag reach.
 const gabrielSamples:Record<string,string>={'Escápulas em prancha: empurrar o chão':'escapulas','Saída em estrela':'saida-parede','Entrada na parede para o handstand':'chute-parede'};
 const samples:Record<string,string>={'Canoinha: pernas e pelve':'canoinha','Escápulas em prancha: empurrar o chão':'escapulas','Saída em estrela':'saida-estrela','Costelas, peito e canoinha':'costelas','Sapinho: primeiro contato com o equilíbrio':'sapinho','Entrada na parede para o handstand':'chute-parede','Urso até a prancha estendida':'urso-prancha'};
-export const EDITORIAL: EditorialDay[] = PLAN.map(day => ({...day, ...((VOICE as Record<string,Partial<EditorialDay>>)[day.title]??{})})).map(day => ({...day, ...(gabrielSamples[day.title]?{piece:'gabriel-drill-'+gabrielSamples[day.title],missing:'Material do Gabriel recebido em 17/11; corte e prévia disponíveis. Revisar explicação, saída e narração antes de publicar. '+day.missing}:samples[day.title]?{piece:'exercicio-'+samples[day.title],missing:'Prévia com Paulo para revisar; nova captação prevista com Paulo e Gabriel. '+day.missing}:{}), caption: day.caption.includes('#') ? day.caption : `${day.caption}\n\n${day.pillar === 'Evento' ? '#handstandfest' : '#handstandlife'}`}));
+// Always include topic + event tags; retain existing tags without duplicates.
+function withHashtags(caption:string, practice:boolean) {
+ const tags=['handstand','handstandfest',...(practice?['handstandlife']:[])];
+ const missing=tags.filter(tag=>!new RegExp('#'+tag+'(?![\\w])','i').test(caption));
+ return caption+(missing.length?'\n\n'+missing.map(tag=>'#'+tag).join(' '):'');
+}
+export const EDITORIAL: EditorialDay[] = PLAN.map(day => ({...day, ...((VOICE as Record<string,Partial<EditorialDay>>)[day.title]??{})})).map(day => ({...day, ...(gabrielSamples[day.title]?{piece:'gabriel-drill-'+gabrielSamples[day.title],missing:'Material do Gabriel recebido em 17/11; corte e prévia disponíveis. Revisar explicação, saída e narração antes de publicar. '+day.missing}:samples[day.title]?{piece:'exercicio-'+samples[day.title],missing:'Prévia com Paulo para revisar; nova captação prevista com Paulo e Gabriel. '+day.missing}:{}), caption: withHashtags(day.caption, day.pillar !== 'Evento')}));

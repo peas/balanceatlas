@@ -56,7 +56,7 @@ Formas já usadas nas peças: **reta** ou **palito** (pernas juntas, corpo esten
 (pernas abertas), **pike** ou **sete** (dobra no quadril), **tuck** ou **grupado**.
 
 Nome público do professor: **Gabriel Agustin**. Arquivo educativo: **Handstand Life: Guia de Sobrevivência**.
-Hashtags: `#handstandlife` para prática e comunidade, `#handstandfest` para o encontro.
+Hashtags (19/11/2026): sempre `#handstand` e `#handstandfest`. Somar `#handstandlife` nos conteúdos de prática e comunidade. Evitar duplicatas.
 
 ## Em aberto
 
