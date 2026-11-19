@@ -4,7 +4,7 @@ photo: "/images/coaches/yuri-marmerstein.webp"
 location:
   city: "Las Vegas"
   country: "USA"
-instagram: "yurimarmerstein"
+instagram: "yuri_marmerstein"
 website: "https://www.yuri-mar.com"
 featured: true
 ---

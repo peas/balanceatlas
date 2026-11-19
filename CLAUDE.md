@@ -448,3 +448,9 @@ art "A ENTRADA NA PAREDE!", freeze note and caption use Paulo's cue about hips o
 Paulo will narrate the exercise Reels: queue, his script for post 4 and recording convention in
 `docs/instagram/2026-11-18-narracao.md` (audio in `local/festival/narracao/<piece>.m4a`, never in git). The compositions
 do not play narration yet. Dany García is no longer a teacher; lineup is Gabriel Agustin and Louisse Aldrigues.
+
+## Community profiles and paradistas — 19 November 2026
+
+`docs/instagram/2026-11-19-comunidade-divulgacao.md` records 30 Brazilian/community profiles followed by @handstandfest at Paulo's request, and his future idea of about seven personalized outreach messages per day. No DMs sent or scheduled; future sending remains a separate task. Keep contact history and do not imply partnerships.
+
+`/paradistas/` (local `/festival/paradistas/`) is an editorial directory of 12 handstand artists/teachers and complementary references, split Brazil/world, linked from Sobre handstand. Data: `src/festival/paradistas.ts`; profile bios/handles verified in logged-in Instagram 19 November. No ranking or festival guest claim. This authorizes this linked directory, not the previously deferred Instagram spotlight series or reuse of their footage/portraits. Yuri's correct Instagram handle is `yuri_marmerstein`, corrected in the coach catalogue too.

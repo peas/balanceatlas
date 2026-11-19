@@ -6,7 +6,7 @@ const path = Astro.url.pathname.replace(/\/$/, '');
 const links = [
   { href: '/festival/', label: 'Início', active: path === '/festival' },
   { href: '/festival/sobre/', label: 'O evento', active: path === '/festival/sobre' },
-  { href: '/festival/handstand/', label: 'Handstand', active: path === '/festival/handstand' || path === '/festival/mundo' },
+  { href: '/festival/handstand/', label: 'Handstand', active: ['/festival/handstand', '/festival/mundo', '/festival/paradistas'].includes(path) },
 ];
 ---
 <nav class="fest-nav" aria-label="Principal">
