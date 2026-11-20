@@ -454,3 +454,11 @@ do not play narration yet. Dany García is no longer a teacher; lineup is Gabrie
 `docs/instagram/2026-11-19-comunidade-divulgacao.md` records 30 Brazilian/community profiles followed by @handstandfest at Paulo's request, and his future idea of about seven personalized outreach messages per day. No DMs sent or scheduled; future sending remains a separate task. Keep contact history and do not imply partnerships.
 
 `/paradistas/` (local `/festival/paradistas/`) is an editorial directory of 12 handstand artists/teachers and complementary references, split Brazil/world. Paulo requested it unlisted: no inbound navigation or editorial link, noindex and excluded from sitemap. Profile portraits requested by Paulo are stored in `public/festival/paradistas/`, with source links in `sources.json`; do not repurpose them for promotional pieces or endorsements. Data: `src/festival/paradistas.ts`; profile bios/handles verified in logged-in Instagram 19 November. No ranking or festival guest claim. This authorizes this linked directory, not the previously deferred Instagram spotlight series or reuse of their footage/portraits. Yuri's correct Instagram handle is `yuri_marmerstein`, corrected in the coach catalogue too.
+
+## Louisse Aldrigues material — 20 November 2026
+Gabriel forwarded her biography, four studio photos and four training videos (WhatsApp copies). Batch note:
+`acervo/lotes/louisse-2026-11-20.md`; originals in `local/festival/louisse-2026-11-20/` (never in git), records
+`louisse-20261120-*` in `acervo/catalogo.yaml`. The home card now uses her ochre studio photo, her biography edited for
+length (`LOUISSE_BIO`, full text in `LOUISSE_BIO_FULL` in `home-content.ts`) and a three-photo strip
+(`public/festival/professores/`). Before any Reel about her: ask for original video files (the copies are 478x850) and
+the photographer's credit. No Instagram piece about her exists yet.

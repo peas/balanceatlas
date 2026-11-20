@@ -73,6 +73,7 @@ import { LOTES, MAPS_Q, MAPS_PLACE, lineup, facts } from '../../festival/home-co
             </div>
             {t.url ? <a class="chip" href={t.url} target="_blank" rel="noopener">{t.poster.handle}</a> : <span class="chip">{t.poster.first} {t.poster.last}</span>}
             {t.bio && <p class="teacher-bio">{t.bio}</p>}
+            {t.photos && <div class="teacher-photos">{t.photos.map((ph) => <a href={ph.src} target="_blank" rel="noopener"><img src={ph.src} alt={ph.alt} loading="lazy" /></a>)}</div>}
             {t.quote && <blockquote>“{t.quote}”</blockquote>}
             <p class="source">{t.where}{t.quote && <> · <a href={t.source} target="_blank" rel="noopener">fonte</a></>}</p>
           </article>

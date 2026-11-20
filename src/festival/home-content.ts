@@ -51,13 +51,17 @@ export const tracks = ['Básico', 'Intermediário e avançado'];
 
 
 
-// Confirmed teachers share one list. Louisse's quotation comes from her Instagram profile (checked 28/10/2026).
+// Confirmed teachers share one list.
 // Dany García was removed on Paulo's call (18/11/2026).
 // Supplied by Paulo/Gabriel on 13 November 2026, edited for length.
 export const AGUSTIN_BIO = 'Artista circense, acrobata e professor de movimento, argentino radicado no Brasil. Com mais de 10 anos nas artes do movimento, encontrou na parada de mãos um caminho de investigação, expressão e transformação.';
 export const AGUSTIN_ORIGIN = 'A ideia do festival veio de Gabriel, após uma experiência marcante na Argentina: reunir pessoas, professores e diferentes perspectivas em torno da parada de mãos.';
 
-export const lineup: { poster: PosterProps; teacher?: boolean; bio?: string; url?: string; quote?: string; source?: string; where: string }[] = [
+// Supplied by Louisse through Gabriel on 20 November 2026. FULL is her text as sent; the short one is edited for length.
+export const LOUISSE_BIO = 'Nascida em Brasília, Louisse começou no circo em 2011 e trabalhou com arte de rua até 2017. Em 2012 entrou na Escola Nacional de Circo, no Rio, onde se especializou em parada de mão. É professora de parada de mão desde 2015 e apresenta o número solo “Sensitiva”.';
+export const LOUISSE_BIO_FULL = 'Louisse Aldrigues, nascida em Brasília, iniciou sua carreira circense em 2011. Trabalhou com arte de rua de 2011 até 2017 em semáforos, praças e metrôs. Em 2012 ingressou na Escola Nacional de Circo, RJ, onde iniciou sua especialização em parada de mão. Desde então até hoje, fez diversos workshops e aulas de parada de mão com mestres do Brasil, França, Itália, Inglaterra, México, Equador, Argentina, Japão, Canadá e outros. Professora de parada de mão desde 2015, ministra aulas regulares e workshops tendo passado por diversas escolas e festivais de circo e dança. Como artista atua com seu número solo “Sensitiva” com o qual trabalhou com diversas companhias e se apresentou em diversos festivais de circo, dança e teatro.';
+
+export const lineup: { poster: PosterProps; teacher?: boolean; bio?: string; url?: string; quote?: string; source?: string; where: string; photos?: { src: string; alt: string }[] }[] = [
   {
     poster: { img: '/festival/teacher.webp', first: 'Gabriel', last: 'Agustin', handle: '@agustin_melesi', shape: 'bar', focus: '50% 40%' },
     teacher: true,
@@ -66,11 +70,15 @@ export const lineup: { poster: PosterProps; teacher?: boolean; bio?: string; url
     where: 'Parada de mãos, acrobacia e movimento',
   },
   {
-    poster: { img: '/festival/teacher-lou.webp', first: 'Louisse', last: 'Aldrigues', handle: '@lou.handstand', shape: 'tee', focus: '50% 40%' },
+    poster: { img: '/festival/professores/louisse-02.webp', first: 'Louisse', last: 'Aldrigues', handle: '@lou.handstand', shape: 'tee', focus: '56% 50%' },
     url: 'https://www.instagram.com/lou.handstand/',
-    quote: 'Estudos do equilíbrio · Parada de mão · Treinamento consciente · Aulas online · Artista circense',
-    source: 'https://www.instagram.com/lou.handstand/',
-    where: 'Aulas presenciais e online',
+    bio: LOUISSE_BIO,
+    where: 'Parada de mão e circo, aulas presenciais e online',
+    photos: [
+      { src: '/festival/professores/louisse-04.webp', alt: 'Louisse em um braço sobre canes, com as pernas afastadas' },
+      { src: '/festival/professores/louisse-03.webp', alt: 'Louisse de perfil em parada de mão sobre um bloco' },
+      { src: '/festival/professores/louisse-01.webp', alt: 'Louisse em parada de mão sobre um bloco, de frente para a câmera' },
+    ],
   },
 ];
 

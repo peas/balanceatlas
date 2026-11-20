@@ -109,6 +109,8 @@ a { color: inherit; }
 .story-card .chip { margin-top: 14px; font-size: 1.05rem; }
 .story-card { min-width: 0; }
 .story-card .teacher-bio { margin-top: 12px; font-size: 1rem; line-height: 1.45; }
+.teacher-photos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin-top: 14px; }
+.teacher-photos img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 8px; display: block; }
 .story-card blockquote { margin-top: 12px; font-size: 1rem; line-height: 1.45; }
 .story-card .source { margin-top: 6px; }
 .lineup-more { margin-top: 28px; font-family: var(--mono); text-transform: uppercase; font-size: 1rem; }

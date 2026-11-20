@@ -1,0 +1,82 @@
+[
+ {
+  "id": "louisse-20261120-foto-01",
+  "file": "local/festival/louisse-2026-11-20/originals/louisse-foto-01.jpeg",
+  "sha256": "14fcf1f3140057781d7cf2de1af03e469f5d8303ae217ddd3d1288f12710f273",
+  "alias": "WhatsApp Image 2026-11-20 at 10.13.23.jpeg",
+  "media": "image",
+  "width": 887,
+  "height": 1109,
+  "duration": null
+ },
+ {
+  "id": "louisse-20261120-foto-02",
+  "file": "local/festival/louisse-2026-11-20/originals/louisse-foto-02.jpeg",
+  "sha256": "df610e7e9e76cc9f741cb995ba654f5e28da882d2273ac4ceb6d0926235e5a7a",
+  "alias": "WhatsApp Image 2026-11-20 at 10.13.24.jpeg",
+  "media": "image",
+  "width": 840,
+  "height": 1050,
+  "duration": null
+ },
+ {
+  "id": "louisse-20261120-foto-03",
+  "file": "local/festival/louisse-2026-11-20/originals/louisse-foto-03.jpeg",
+  "sha256": "702117dae7f29da68736912696ca9422fa4fe9ea279103da37eb4e796891fd15",
+  "alias": "WhatsApp Image 2026-11-20 at 10.13.24 (1).jpeg",
+  "media": "image",
+  "width": 837,
+  "height": 1025,
+  "duration": null
+ },
+ {
+  "id": "louisse-20261120-foto-04",
+  "file": "local/festival/louisse-2026-11-20/originals/louisse-foto-04.jpeg",
+  "sha256": "fb30feb4a35fbb12a4d3cf9a2e7d0e1532a61efb65a25c43e8e367ca419057e4",
+  "alias": "WhatsApp Image 2026-11-20 at 10.13.25.jpeg",
+  "media": "image",
+  "width": 840,
+  "height": 1050,
+  "duration": null
+ },
+ {
+  "id": "louisse-20261120-video-01",
+  "file": "local/festival/louisse-2026-11-20/originals/louisse-video-01.mp4",
+  "sha256": "d387fb257d892c383a031d4288fddacc0535825a8054c6322511135774b02f41",
+  "alias": "WhatsApp Video 2026-11-20 at 10.13.21.mp4",
+  "media": "video",
+  "width": 720,
+  "height": 1280,
+  "duration": 24.8
+ },
+ {
+  "id": "louisse-20261120-video-02",
+  "file": "local/festival/louisse-2026-11-20/originals/louisse-video-02.mp4",
+  "sha256": "5751311f7bf887adeb42ec78ab5efec08904e83a8649f8703fd7997922ddeb6b",
+  "alias": "WhatsApp Video 2026-11-20 at 10.13.21 (1).mp4",
+  "media": "video",
+  "width": 478,
+  "height": 850,
+  "duration": 43.26
+ },
+ {
+  "id": "louisse-20261120-video-03",
+  "file": "local/festival/louisse-2026-11-20/originals/louisse-video-03.mp4",
+  "sha256": "98b398c38e946ae9d89ec123386e5d1db641d7e997dbbac54fb46469c4cc393c",
+  "alias": "WhatsApp Video 2026-11-20 at 10.13.22.mp4",
+  "media": "video",
+  "width": 478,
+  "height": 850,
+  "duration": 34.42
+ },
+ {
+  "id": "louisse-20261120-video-04",
+  "file": "local/festival/louisse-2026-11-20/originals/louisse-video-04.mp4",
+  "sha256": "e2ffec5a0b264cc9f855edd58590f7e3c874658f19cb05c567ede9192d2fde70",
+  "alias": "WhatsApp Video 2026-11-20 at 10.13.23.mp4",
+  "media": "video",
+  "width": 478,
+  "height": 850,
+  "duration": 19.07
+ }
+]

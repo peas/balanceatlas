@@ -1,0 +1,78 @@
+# Vocabulário de handstand do Paulo: os nomes que ele usa para posições e movimentos.
+# Escrito pela página local (scripts/festival_vocabulario.py); editar à mão também vale, a página relê ao abrir.
+# `marcacoes[].t` está em segundos do clipe do acervo (acervo/catalogo.yaml); sem `t` vale para o trecho inteiro.
+termos:
+- nome: falha na subida, nao deu certo
+- nome: subida em grupo
+- nome: subida e parada em grupo estrela esfinge
+- nome: subida em grupo para L
+- nome: descida do press
+- nome: nada
+- nome: descida sem significado
+- nome: movimetnos em grupo
+- nome: descendo do tuck
+- nome: des
+- nome: descendo
+- nome: descidas e palmas
+- nome: descidas
+- nome: figuras em grupo
+marcacoes:
+- item: pxl-20261104_183544033@21.5
+  clip: pxl-20261104_183544033
+  nome: falha na subida, nao deu certo
+- item: img-0974@0.0
+  clip: img-0974
+  nome: subida em grupo para L
+- item: img-0974@15.0
+  clip: img-0974
+  nome: subida e parada em grupo estrela esfinge
+- item: img-3149@22.0
+  clip: img-3149
+  nome: descida do press
+  quem: os dois
+  nota: nao tao interessante, mais elgal com movimento desde a subida
+- item: img-3148@22.5
+  clip: img-3148
+  nome: nada
+  nota: nao serve pra mta coisa, so estamos elvantando os corpos
+- item: img-3144@29.5
+  clip: img-3144
+  nome: descida sem significado
+- item: img-0967@26.0
+  clip: img-0967
+  nome: movimetnos em grupo
+- item: img-3145@4.4
+  clip: img-3145
+  nome: descendo do tuck
+  nota: mas a descida nao eh itenressante, a sbuida e o estatico sao mais
+- item: img-3177@13.2
+  clip: img-3177
+  nome: descendo do tuck
+  nota: nao eh interessante
+- item: img-3173@53.0
+  clip: img-3173
+  nome: des
+- item: img-3151@17.5
+  clip: img-3151
+  nome: descendo
+- item: img-2384@32.0
+  clip: img-2384
+  nome: descidas e palmas
+- item: img-3146@23.3
+  clip: img-3146
+  nome: descidas
+- item: img-3147@27.5
+  clip: img-3147
+  nome: descidas
+- item: img-3152@15.1
+  clip: img-3152
+  nome: descidas
+- item: img-3144@26.3
+  clip: img-3144
+  nome: descidas
+- item: img-3148@17.0
+  clip: img-3148
+  nome: descidas
+- item: img-0980@22.0
+  clip: img-0980
+  nome: figuras em grupo

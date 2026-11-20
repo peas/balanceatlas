@@ -8017,3 +8017,161 @@
   revisao: "triagem por quadros; revisão técnica pendente"
   cortes: []
   observacoes: "Bom clima de comunidade; edição deve separar ação e bastidor. Confirmar participantes/local e áudio. Não confundir esse encontro passado com cobertura do festival futuro. Revisão por 6 quadros amostrados (foto: 1), não por playback integral; contagem aproximada, cortes ainda não definidos."
+
+# Louisse Aldrigues: material enviado pelo Gabriel em 20/11/2026 (acervo/lotes/louisse-2026-11-20.md)
+- id: "louisse-20261120-foto-01"
+  arquivo: "local/festival/louisse-2026-11-20/originals/louisse-foto-01.jpeg"
+  sha256: "14fcf1f3140057781d7cf2de1af03e469f5d8303ae217ddd3d1288f12710f273"
+  aliases: ["WhatsApp Image 2026-11-20 at 10.13.23.jpeg"]
+  origem: "Enviado pelo Paulo: material da Louisse repassado pelo Gabriel no WhatsApp"
+  recebido_em: "2026-11-20"
+  midia: "imagem"
+  quem: ["Louisse Aldrigues"]
+  local: "não confirmado"
+  resumo: "Estúdio, fundo vermelho: Louisse de frente para a câmera sobre um bloco, pernas afastadas e dobradas."
+  handstand: true
+  pessoas: 1
+  pessoas_em_handstand: 1
+  forma: ["afastado"]
+  corpo: "inteiro"
+  resolucao: "887x1109"
+  triagem: "use"
+  revisao: "triagem por quadros (6 por vídeo); nomes das formas a confirmar com a Louisse"
+  observacoes: "Foto de estúdio, cópia comprimida do WhatsApp. Crédito do fotógrafo não informado: confirmar antes de usar em peça de divulgação."
+- id: "louisse-20261120-foto-02"
+  arquivo: "local/festival/louisse-2026-11-20/originals/louisse-foto-02.jpeg"
+  sha256: "df610e7e9e76cc9f741cb995ba654f5e28da882d2273ac4ceb6d0926235e5a7a"
+  aliases: ["WhatsApp Image 2026-11-20 at 10.13.24.jpeg"]
+  origem: "Enviado pelo Paulo: material da Louisse repassado pelo Gabriel no WhatsApp"
+  recebido_em: "2026-11-20"
+  midia: "imagem"
+  quem: ["Louisse Aldrigues"]
+  local: "não confirmado"
+  resumo: "Estúdio, fundo ocre: Louisse de costas sobre um bloco, pernas cruzadas e dobradas."
+  handstand: true
+  pessoas: 1
+  pessoas_em_handstand: 1
+  forma: ["grupado"]
+  corpo: "inteiro"
+  resolucao: "840x1050"
+  triagem: "use"
+  revisao: "triagem por quadros (6 por vídeo); nomes das formas a confirmar com a Louisse"
+  observacoes: "Foto de estúdio, cópia comprimida do WhatsApp. Crédito do fotógrafo não informado: confirmar antes de usar em peça de divulgação."
+- id: "louisse-20261120-foto-03"
+  arquivo: "local/festival/louisse-2026-11-20/originals/louisse-foto-03.jpeg"
+  sha256: "702117dae7f29da68736912696ca9422fa4fe9ea279103da37eb4e796891fd15"
+  aliases: ["WhatsApp Image 2026-11-20 at 10.13.24 (1).jpeg"]
+  origem: "Enviado pelo Paulo: material da Louisse repassado pelo Gabriel no WhatsApp"
+  recebido_em: "2026-11-20"
+  midia: "imagem"
+  quem: ["Louisse Aldrigues"]
+  local: "não confirmado"
+  resumo: "Estúdio, fundo vermelho: Louisse de perfil sobre um bloco, pernas em tesoura dobrada."
+  handstand: true
+  pessoas: 1
+  pessoas_em_handstand: 1
+  forma: ["stag"]
+  corpo: "inteiro"
+  resolucao: "837x1025"
+  triagem: "use"
+  revisao: "triagem por quadros (6 por vídeo); nomes das formas a confirmar com a Louisse"
+  observacoes: "Foto de estúdio, cópia comprimida do WhatsApp. Crédito do fotógrafo não informado: confirmar antes de usar em peça de divulgação."
+- id: "louisse-20261120-foto-04"
+  arquivo: "local/festival/louisse-2026-11-20/originals/louisse-foto-04.jpeg"
+  sha256: "fb30feb4a35fbb12a4d3cf9a2e7d0e1532a61efb65a25c43e8e367ca419057e4"
+  aliases: ["WhatsApp Image 2026-11-20 at 10.13.25.jpeg"]
+  origem: "Enviado pelo Paulo: material da Louisse repassado pelo Gabriel no WhatsApp"
+  recebido_em: "2026-11-20"
+  midia: "imagem"
+  quem: ["Louisse Aldrigues"]
+  local: "não confirmado"
+  resumo: "Estúdio, fundo ocre: Louisse em um braço sobre canes, pernas afastadas e botas de salto."
+  handstand: true
+  pessoas: 1
+  pessoas_em_handstand: 1
+  forma: ["um braço","afastado"]
+  corpo: "inteiro"
+  resolucao: "840x1050"
+  triagem: "use"
+  revisao: "triagem por quadros (6 por vídeo); nomes das formas a confirmar com a Louisse"
+  observacoes: "Foto de estúdio, cópia comprimida do WhatsApp. Crédito do fotógrafo não informado: confirmar antes de usar em peça de divulgação."
+- id: "louisse-20261120-video-01"
+  arquivo: "local/festival/louisse-2026-11-20/originals/louisse-video-01.mp4"
+  sha256: "d387fb257d892c383a031d4288fddacc0535825a8054c6322511135774b02f41"
+  aliases: ["WhatsApp Video 2026-11-20 at 10.13.21.mp4"]
+  origem: "Enviado pelo Paulo: material da Louisse repassado pelo Gabriel no WhatsApp"
+  recebido_em: "2026-11-20"
+  midia: "video"
+  duracao: 24.8
+  quem: ["Louisse Aldrigues"]
+  local: "não confirmado"
+  resumo: "Sala de piso de madeira e teto azul: Louisse entra em um braço sobre blocos, com as pernas afastadas, e sustenta."
+  handstand: true
+  pessoas: 1
+  pessoas_em_handstand: 1
+  forma: ["um braço","afastado"]
+  corpo: "inteiro"
+  resolucao: "720x1280"
+  triagem: "use"
+  revisao: "triagem por quadros (6 por vídeo); nomes das formas a confirmar com a Louisse"
+  observacoes: "Cópia comprimida do WhatsApp, com áudio não revisado. Pedir o original antes de um Reel em tela cheia."
+- id: "louisse-20261120-video-02"
+  arquivo: "local/festival/louisse-2026-11-20/originals/louisse-video-02.mp4"
+  sha256: "5751311f7bf887adeb42ec78ab5efec08904e83a8649f8703fd7997922ddeb6b"
+  aliases: ["WhatsApp Video 2026-11-20 at 10.13.21 (1).mp4"]
+  origem: "Enviado pelo Paulo: material da Louisse repassado pelo Gabriel no WhatsApp"
+  recebido_em: "2026-11-20"
+  midia: "video"
+  duracao: 43.26
+  quem: ["Louisse Aldrigues"]
+  local: "não confirmado"
+  resumo: "Sala com plantas: Louisse em um braço sobre blocos, pernas afastadas em diagonal, sustentando por bastante tempo."
+  handstand: true
+  pessoas: 1
+  pessoas_em_handstand: 1
+  forma: ["um braço","afastado"]
+  corpo: "inteiro"
+  resolucao: "478x850"
+  triagem: "use"
+  revisao: "triagem por quadros (6 por vídeo); nomes das formas a confirmar com a Louisse"
+  observacoes: "Cópia comprimida do WhatsApp, com áudio não revisado. Pedir o original antes de um Reel em tela cheia."
+- id: "louisse-20261120-video-03"
+  arquivo: "local/festival/louisse-2026-11-20/originals/louisse-video-03.mp4"
+  sha256: "98b398c38e946ae9d89ec123386e5d1db641d7e997dbbac54fb46469c4cc393c"
+  aliases: ["WhatsApp Video 2026-11-20 at 10.13.22.mp4"]
+  origem: "Enviado pelo Paulo: material da Louisse repassado pelo Gabriel no WhatsApp"
+  recebido_em: "2026-11-20"
+  midia: "video"
+  duracao: 34.42
+  quem: ["Louisse Aldrigues"]
+  local: "não confirmado"
+  resumo: "De costas para a câmera, no chão: sequência de formas em duas mãos, com passagens por afastado, reta e pernas cruzadas."
+  handstand: true
+  pessoas: 1
+  pessoas_em_handstand: 1
+  forma: ["afastado","reta"]
+  corpo: "inteiro"
+  resolucao: "478x850"
+  triagem: "use"
+  revisao: "triagem por quadros (6 por vídeo); nomes das formas a confirmar com a Louisse"
+  observacoes: "Cópia comprimida do WhatsApp, com áudio não revisado. Pedir o original antes de um Reel em tela cheia."
+- id: "louisse-20261120-video-04"
+  arquivo: "local/festival/louisse-2026-11-20/originals/louisse-video-04.mp4"
+  sha256: "e2ffec5a0b264cc9f855edd58590f7e3c874658f19cb05c567ede9192d2fde70"
+  aliases: ["WhatsApp Video 2026-11-20 at 10.13.23.mp4"]
+  origem: "Enviado pelo Paulo: material da Louisse repassado pelo Gabriel no WhatsApp"
+  recebido_em: "2026-11-20"
+  midia: "video"
+  duracao: 19.07
+  quem: ["Louisse Aldrigues"]
+  local: "não confirmado"
+  resumo: "Sala com plantas e tapete: um braço sobre bloco com pernas em diagonal e saída por afastado em duas mãos."
+  handstand: true
+  pessoas: 1
+  pessoas_em_handstand: 1
+  forma: ["um braço","afastado"]
+  corpo: "inteiro"
+  resolucao: "478x850"
+  triagem: "use"
+  revisao: "triagem por quadros (6 por vídeo); nomes das formas a confirmar com a Louisse"
+  observacoes: "Cópia comprimida do WhatsApp, com áudio não revisado. Pedir o original antes de um Reel em tela cheia."
