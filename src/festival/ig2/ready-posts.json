@@ -1,0 +1,89 @@
+{
+  "batch": "2026-11-20",
+  "note": "Calendar posts ready to download and upload from the Instagram app. Post 10 has no footage yet, so post 11 takes its place.",
+  "posts": [
+    {
+      "n": 1,
+      "slug": "o-que-e-o-handstandfest",
+      "title": "O que é o HandstandFest?",
+      "piece": "abertura-festival",
+      "slides": 5,
+      "frame": 60
+    },
+    {
+      "n": 2,
+      "slug": "o-que-e-handstand",
+      "title": "O que é handstand?",
+      "piece": "abertura-handstand",
+      "video": true,
+      "cover": 90
+    },
+    {
+      "n": 3,
+      "slug": "ainda-estou-na-parede",
+      "title": "Ainda estou na parede. Posso participar?",
+      "piece": "abertura-participar",
+      "slides": 4,
+      "frame": 60
+    },
+    {
+      "n": 4,
+      "slug": "entrada-na-parede",
+      "title": "Entrada na parede para o handstand",
+      "piece": "gabriel-drill-chute-parede",
+      "video": true,
+      "cover": 120
+    },
+    {
+      "n": 5,
+      "slug": "treinar-junto",
+      "title": "Treinar sozinho ou junto?",
+      "piece": "ed-comunidade",
+      "slides": 1,
+      "frame": 0
+    },
+    {
+      "n": 6,
+      "slug": "sapinho",
+      "title": "Sapinho: primeiro contato com o equilíbrio",
+      "piece": "exercicio-sapinho",
+      "video": true,
+      "cover": 120
+    },
+    {
+      "n": 7,
+      "slug": "gabriel-agustin",
+      "title": "Conheça Gabriel Agustin",
+      "piece": "agustin-apresentacao",
+      "slides": 3,
+      "frame": 0
+    },
+    {
+      "n": 8,
+      "slug": "saida-em-estrela",
+      "title": "Saída em estrela",
+      "piece": "gabriel-drill-saida-parede",
+      "video": true,
+      "cover": 120
+    },
+    {
+      "n": 9,
+      "slug": "handstand-em-outro-chao",
+      "title": "Handstand em outro chão",
+      "piece": "gabriel-paisagem",
+      "slides": 1,
+      "frame": 0
+    },
+    {
+      "n": 11,
+      "slug": "ombros",
+      "title": "Ombros: abertura e empurrar o chão",
+      "piece": "gabriel-drill-escapulas",
+      "video": true,
+      "cover": 120
+    }
+  ],
+  "release": "instagram-prontos-2026-11-20",
+  "base": "https://github.com/peas/balanceatlas/releases/download/instagram-prontos-2026-11-20/",
+  "thumbs": "/festival/ig/prontos/2026-11-20/"
+}

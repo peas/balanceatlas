@@ -4,6 +4,10 @@ import { PIECES } from './pieces';
 import { GABRIEL_PIECES } from './gabriel-pieces';
 import { NATURE_PIECES } from './natureza-pieces';
 import { EDITORIAL_PIECES } from './editorial-pieces';
+import { OPENING_PIECES } from './opening-pieces';
+import { AGUSTIN_PIECES } from './agustin-pieces';
+import { GABRIEL_TRAINING_PIECES } from './gabriel-training-pieces';
+import { EXERCISE_PREVIEW_PIECES } from './exercise-preview-pieces';
 import '../../../local/festival/render.css';
 
 const fontsReady = delayRender('Load local festival fonts');
@@ -14,7 +18,7 @@ Promise.all([
   .then(() => continueRender(fontsReady)).catch(cancelRender);
 
 function RenderRoot() {
-  return <>{[...PIECES, ...EDITORIAL_PIECES, ...GABRIEL_PIECES, ...NATURE_PIECES].flatMap(piece => piece.slides.map((slide, i) => ({piece,slide,i}))).map(({piece,slide,i}) => {
+  return <>{[...PIECES, ...EDITORIAL_PIECES, ...GABRIEL_PIECES, ...NATURE_PIECES, ...OPENING_PIECES, ...AGUSTIN_PIECES, ...GABRIEL_TRAINING_PIECES, ...EXERCISE_PREVIEW_PIECES].flatMap(piece => piece.slides.map((slide, i) => ({piece,slide,i}))).map(({piece,slide,i}) => {
     return <Composition key={`${piece.id}-${i}`} id={piece.slides.length === 1 ? piece.id : `${piece.id}-${i+1}`}  component={slide.component} durationInFrames={Math.round(slide.seconds * 30)} fps={30} width={1080} height={slide.height} defaultProps={{ guides: false, treatment: 'direction' as const }} />;
   })}</>;
 }

@@ -1,0 +1,95 @@
+---
+// Ready-to-post files for the next Instagram posts: rendered JPEG/MP4 downloads (GitHub release assets, exported by
+// scripts/festival_ready_posts.py), with the caption and Story idea next to each. Nothing is published from here.
+import FestLayout from '../../../layouts/FestLayout.astro';
+import ready from '../../../festival/ig2/ready-posts.json';
+import { EDITORIAL } from '../../../festival/ig2/editorial';
+
+const posts = ready.posts.map((post) => {
+  const day = EDITORIAL.find((d) => d.title === post.title);
+  const name = `${String(post.n).padStart(2, '0')}-${post.slug}`;
+  const files = post.video
+    ? [{ file: `${name}.mp4`, label: 'Baixar o vídeo (MP4)', thumb: `${name}-capa.webp` }, { file: `${name}-capa.jpg`, label: 'Baixar a capa (JPG)', thumb: null }]
+    : Array.from({ length: post.slides ?? 1 }, (_, k) => {
+        const f = post.slides === 1 ? name : `${name}-${k + 1}`;
+        return { file: `${f}.jpg`, label: post.slides === 1 ? 'Baixar a imagem (JPG)' : `Baixar a lâmina ${k + 1}`, thumb: `${f}.webp` };
+      });
+  return { ...post, day, name, files };
+});
+---
+<FestLayout stickyNav={false} title="Posts prontos para publicar | HandstandFest" description="Arquivos finais dos próximos posts do Instagram do HandstandFest, com legendas para copiar.">
+  <main class="prontos">
+    <p><a href="/festival/instagram/">← Calendário Instagram</a></p>
+    <p class="kicker">@HANDSTANDFEST · LOTE DE {ready.batch.split('-').reverse().join('/')}</p>
+    <h1>Posts prontos para publicar</h1>
+    <p class="lead">Os próximos {posts.length} posts, já renderizados no tamanho do Instagram. Baixe os arquivos no celular, suba pelo aplicativo e escolha a música por lá. Os vídeos não têm som.</p>
+    <ol class="como">
+      <li>Baixe os arquivos do post. No carrossel, baixe todas as lâminas e selecione na ordem dos números.</li>
+      <li>No Reel, suba o vídeo e troque a capa pela imagem de capa.</li>
+      <li>Toque em “Copiar legenda” e cole no Instagram.</li>
+    </ol>
+    <p><a class="baixar tudo" href={ready.base + `handstandfest-posts-${ready.batch}.zip`} download>Baixar tudo de uma vez (ZIP, 97 MB)</a></p>
+    {posts.map((post) => (
+      <article class="pronto" id={`post-${post.n}`}>
+        <header>
+          <p class="kicker">POST {post.n} · {post.video ? 'REEL' : post.slides === 1 ? 'IMAGEM ÚNICA' : `CARROSSEL DE ${post.slides} LÂMINAS`}</p>
+          <h2>{post.title}</h2>
+        </header>
+        <div class="pronto-grid">
+          <div class="pronto-files">
+            {post.files.filter((f) => f.thumb).map((f) => (
+              <figure>
+                <img src={ready.thumbs + f.thumb} alt={`${post.title}: ${f.label}`} loading="lazy" />
+              </figure>
+            ))}
+          </div>
+          <div class="pronto-side">
+            <div class="pronto-buttons">
+              {post.files.map((f) => <a class="baixar" href={ready.base + f.file} download>{f.label}</a>)}
+            </div>
+            <h3>Legenda</h3>
+            <p class="legenda" data-caption>{post.day?.caption}</p>
+            <button class="copiar" type="button" data-copy>Copiar legenda</button>
+            <h3>Story de apoio</h3>
+            <p>{post.day?.story}</p>
+            <h3>Conferir antes de publicar</h3>
+            <p>{post.day?.missing}</p>
+          </div>
+        </div>
+      </article>
+    ))}
+    <p class="rodape">Arquivos para revisão e publicação manual. Nada aqui foi publicado no Instagram.</p>
+  </main>
+  <script>
+    document.querySelectorAll<HTMLButtonElement>('[data-copy]').forEach((button) =>
+      button.addEventListener('click', async () => {
+        const text = button.parentElement!.querySelector<HTMLElement>('[data-caption]')!.innerText;
+        await navigator.clipboard.writeText(text);
+        button.textContent = 'Legenda copiada';
+        setTimeout(() => (button.textContent = 'Copiar legenda'), 1800);
+      }),
+    );
+  </script>
+  <style>
+    .prontos { max-width: 1120px; margin: 24px auto 80px; padding: 0 clamp(16px, 4vw, 40px); }
+    .kicker { font: 700 12px/1.5 var(--mono); letter-spacing: .06em; text-transform: uppercase; margin-top: 18px; }
+    h1 { font: 900 clamp(30px, 5vw, 54px)/1.05 var(--display); font-stretch: 125%; margin: 8px 0 14px; }
+    .lead { max-width: 62ch; font-size: 18px; line-height: 1.5; }
+    .como { margin: 18px 0 8px 20px; max-width: 62ch; line-height: 1.6; }
+    .pronto { border-top: 3px solid var(--ink); margin-top: 44px; padding-top: 8px; scroll-margin-top: 16px; }
+    .pronto h2 { font: 900 clamp(22px, 3.4vw, 34px)/1.1 var(--display); font-stretch: 125%; margin: 4px 0 18px; }
+    .pronto-grid { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(260px, 1fr); gap: 28px; align-items: start; }
+    .pronto-files { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
+    .pronto-files img { width: 100%; display: block; border-radius: 10px; border: 2px solid var(--ink); }
+    .pronto-buttons { display: grid; gap: 8px; }
+    .baixar { display: block; padding: 13px 16px; background: var(--accent); color: var(--accent-ink); border: 3px solid var(--ink); border-radius: 10px; font: 700 14px var(--mono); text-transform: uppercase; text-decoration: none; text-align: center; }
+    .tudo { display: inline-block; margin-top: 10px; }
+    .baixar:hover { background: var(--accent-light); }
+    .pronto-side h3 { font: 700 12px/1.5 var(--mono); letter-spacing: .06em; text-transform: uppercase; margin: 22px 0 6px; }
+    .pronto-side p { line-height: 1.55; }
+    .legenda { white-space: pre-wrap; background: #e8e2d4; border-radius: 10px; padding: 14px 16px; font-size: 16px; }
+    .copiar { margin-top: 10px; width: 100%; padding: 12px 16px; background: var(--ink); color: var(--paper); border: 0; border-radius: 10px; font: 700 14px var(--mono); text-transform: uppercase; cursor: pointer; }
+    .rodape { margin-top: 48px; font: 700 12px var(--mono); text-transform: uppercase; }
+    @media (max-width: 760px) { .pronto-grid { grid-template-columns: 1fr; } }
+  </style>
+</FestLayout>

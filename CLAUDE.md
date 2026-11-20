@@ -462,3 +462,13 @@ Gabriel forwarded her biography, four studio photos and four training videos (Wh
 length (`LOUISSE_BIO`, full text in `LOUISSE_BIO_FULL` in `home-content.ts`) and a three-photo strip
 (`public/festival/professores/`). Before any Reel about her: ask for original video files (the copies are 478x850) and
 the photographer's credit. No Instagram piece about her exists yet.
+
+## Ready-to-post Instagram files — 20 November 2026
+`/instagram/prontos/` lists the next calendar posts as final files for the Instagram app: 1080x1440 JPEG per carousel
+slide, 1080x1920 silent H.264 MP4 per Reel plus a separate cover JPEG, each with its caption (copy button), Story idea
+and pending checks. Batch definition: `src/festival/ig2/ready-posts.json`; export: `python scripts/festival_ready_posts.py`
+(`--only N`, `--list`; output in `local/festival/prontos/<batch>/`). The files are hosted as assets of the GitHub release
+`instagram-prontos-2026-11-20` (not in git history; `gh release upload <tag> <files> --clobber` to replace), and small
+WebP thumbnails are committed in `public/festival/ig/prontos/<batch>/`. Rendered files are snapshots: after a text or art
+change, re-export and re-upload that post. Post 10 has no footage, so the batch holds posts 1–9 and 11. Source clips are
+720p or 540p upscaled to 1080; sapinho is Paulo's provisional recording. Nothing is published to Instagram by this.
