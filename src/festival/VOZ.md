@@ -77,3 +77,7 @@ papel e a assinatura HF. Exemplo: “Interessou? Envie este post para quem tamb�
 mão com a gente!”. Adaptar o motivo ao tema (exercício, encontro, professora); não repetir mecanicamente
 uma chamada de venda em conteúdo educativo. O ícone é ilustrativo, não um botão clicável dentro da imagem.
 Componente inicial reutilizável: `ig2/kit.tsx` → `ShareClose`. A assinatura fica no último slide.
+
+## Reutilização do acervo (25/11/2026)
+
+Fotos e vídeos podem voltar depois de cerca de um mês da publicação anterior, especialmente nas lâminas internas de um carrossel, com capa diferente. Evitar repetição muito próxima; não aposentar uma boa imagem só porque já apareceu. Conferir a data do último uso da fonte, inclusive recortes e gravuras derivados, e variar o contexto editorial. Um mês é referência de espaçamento, não agendamento automático.

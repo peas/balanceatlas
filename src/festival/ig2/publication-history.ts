@@ -16,7 +16,7 @@ export const PUBLICATION_DATES:Record<string,string>={
 // Same source in different compositions still counts as reused photography.
 export const PUBLISHED_MEDIA=[{sourceId:'natureza-img-6271',piece:'ed-comunidade',date:'2026-11-24',alsoUsedBy:['natureza-comunidade','ed-consistencia']}];
 export const REVIEW_HOLD:Record<string,string>={
- 'natureza-comunidade':'A foto do retiro na Tailândia (natureza-img-6271) e a chamada sobre mapear encontros já foram usadas em 24/11. Aguardar um encontro ou uma foto nova.',
- 'ed-consistencia':'A segunda lâmina repete a foto do retiro publicada em 24/11. Trocar por uma cena real de conversa/revisão do treino antes de recolocar na fila.',
+ 'natureza-comunidade':'A foto do retiro na Tailândia (natureza-img-6271) e a chamada sobre mapear encontros já foram usadas em 24/11. Pode voltar por volta de 24/12, com capa diferente e contexto renovado, ou antes com outra foto.',
+ 'ed-consistencia':'A segunda lâmina repete a foto do retiro publicada em 24/11. Pode ser reutilizada na lâmina interna por volta de 24/12, com capa diferente; antes disso, trocar a imagem.',
  'turma':'Repete a apresentação das turmas já publicada no carrossel de 21/11. Retomar apenas com uma dúvida nova da comunidade.',
 };
