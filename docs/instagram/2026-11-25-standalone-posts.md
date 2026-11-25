@@ -56,3 +56,9 @@ Shared the published carousel https://www.instagram.com/p/DgKjzW-JR4U/ through I
 
 ## Validation
 Production build and sample rendered covers/closings checked. Review thumbnails are generated from the same compositions used by the page and export entry. Exercise drafts still need Gabriel's technical review and voiceover decisions; do not mark them publication-ready merely because a preview exists.
+
+## Correção após conferência com Paulo (25/11)
+
+O filtro anterior removia apenas IDs publicados, não a repetição de uma mesma fonte. `natureza-comunidade` repetia `natureza-img-6271`, publicada em `ed-comunidade` em 24/11; `ed-consistencia` também a reutiliza na segunda lâmina. Ambas saíram das datas propostas até haver material novo. `turma` saiu por repetir o assunto do carrossel de 21/11. Os estudos continuam preservados.
+
+O perfil foi conferido ao vivo: seis publicações, não sete. A antiga expressão “Semana 1” reiniciava a contagem após a estreia e confundia histórico com futuro. Agora a página mostra primeiro as seis publicações e usa “Próximos posts · bloco” para as propostas. Fonte compartilhada: `src/festival/ig2/publication-history.ts`. Antes de sugerir datas, conferir permalink, mídia de origem (inclusive lâminas internas e derivados), assunto e recência, não apenas ID/título. Nunca marcar como publicado só porque estava planejado para uma data passada.
