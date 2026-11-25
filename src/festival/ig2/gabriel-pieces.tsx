@@ -18,7 +18,7 @@ function GabrielReel({beach=false,...p}:PieceProps & {beach?:boolean}) {
    <div style={{position:'absolute',inset:0,background:'linear-gradient(180deg,rgba(8,29,24,.92),rgba(8,29,24,.82) 18%,transparent 29%,transparent 77%,rgba(8,29,24,.8) 100%)'}}/>
   </div>
   <Label y={205} size={36} color={CHALK}>GABRIEL AGUSTIN · #HANDSTANDLIFE</Label>
-  <Headline lines={beach?(frozen?['CRIE A SUA','SEQUÊNCIA.']:['HANDSTAND','EM MOVIMENTO.']):(frozen?['PRATIQUE ATÉ','FICAR SUAVE.']:['TRANSIÇÕES:','PIKE E TUCK.'])} y={275} size={74} accentLine={-1} dark/>
+  <Headline lines={beach?(frozen?['CRIE A SUA','SEQUÊNCIA.']:['HANDSTAND','EM MOVIMENTO.']):(frozen?['DO AGRUPADO','À RETA.']:['HANDSTAND:','TUCK E RETA.'])} y={275} size={74} accentLine={-1} dark/>
   {(!frozen||beach)&&<BrushStroke color="#dfab5b" style={{position:'absolute',left:65,top:455,width:780,height:19,clipPath:`inset(0 ${(1-(frozen?paint:move(frame,5,24)))*100}% 0 0)`}}/>}
   <BrandSeal x={65} y={1390} size={230}/>
  </Canvas>;
@@ -27,7 +27,7 @@ const FullFrameTransitions=(p:PieceProps)=><GabrielReel {...p}/>;
 function EngravingStory(p:PieceProps) {
  return <Freeze frame={90}><Canvas {...p} format="story" dark signature={false}>
   <Label y={235} size={36} color={CHALK}>GABRIEL AGUSTIN · #HANDSTANDLIFE</Label>
-  <Headline lines={['A PRÁTICA','GANHA FORMA.']} y={285} size={76} accentLine={-1} dark/>
+  <Headline lines={['PARADA DE MÃO','EM GRAVURA.']} y={285} size={76} accentLine={-1} dark/>
   <div style={{position:'absolute',left:70,top:640,width:940,height:910,transform:'rotate(17deg)'}}><InkDisc color="#dfab5b"/></div>
   <Img src={(getRemotionEnvironment().isPlayer?'/festival/ig/arte/engraving-v1/gabriel-reta-profile.webp':staticFile('festival/ig/arte/engraving-v1/gabriel-reta-profile.webp'))} style={{position:'absolute',left:60,top:440,width:960,height:1130,objectFit:'contain'}}/>
   <BrandSeal x={800} y={1440} size={220} still/>
@@ -41,14 +41,14 @@ function Landscape(p:PieceProps) {
   <Img src={source('praia-reta.webp')} style={{position:'absolute',inset:0,width:1080,height:1440,objectFit:'cover'}}/>
   <div style={{position:'absolute',inset:0,background:'linear-gradient(180deg,rgba(10,35,28,.8),transparent 30%,transparent 70%,rgba(10,35,28,.9))'}}/>
   <Label y={65} size={28} color={CHALK}>GABRIEL AGUSTIN · #HANDSTANDLIFE</Label>
-  <Headline lines={['OUTRO CHÃO.','OUTRO EQUILÍBRIO.']} y={145} size={78} dark/>
-  <Label y={1200} size={48} color={CHALK} style={{width:680}}>O apoio muda. A atenção também.</Label>
+  <Headline lines={['HANDSTAND','EM OUTRO CHÃO.']} y={145} size={78} dark/>
+  <Label y={1200} size={48} color={CHALK} style={{width:680}}>Um registro pessoal do Gabriel à beira-mar.</Label>
  </Canvas></Freeze>;
 }
 function Engraving(p:PieceProps) {
  return <Freeze frame={90}><Canvas {...p} format="card" dark signature>
   <Label y={65} size={32} color={CHALK}>GABRIEL AGUSTIN · CORPO & EXPRESSÃO</Label>
-  <Headline lines={['A PRÁTICA','GANHA FORMA.']} y={145} size={77} accentLine={-1} dark/>
+  <Headline lines={['PARADA DE MÃO','EM GRAVURA.']} y={145} size={77} accentLine={-1} dark/>
   <div style={{position:'absolute',left:160,top:455,width:730,height:730,transform:'rotate(17deg)'}}><InkDisc color="#dfab5b"/></div>
   <Img src={(getRemotionEnvironment().isPlayer?'/festival/ig/arte/engraving-v1/gabriel-reta-profile.webp':staticFile('festival/ig/arte/engraving-v1/gabriel-reta-profile.webp'))} style={{position:'absolute',left:150,top:355,width:780,height:850,objectFit:'contain'}}/>
   <Label y={1200} size={48} color={CHALK} style={{width:680}}>Praticar. Perceber. Repetir.</Label>

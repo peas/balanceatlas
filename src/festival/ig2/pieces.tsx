@@ -5,10 +5,10 @@ import type { ComponentType } from 'react';
 import { Freeze, Sequence, useCurrentFrame } from 'remotion';
 import { ART_PIECES } from './art-pieces';
 import { MORE_PIECES } from './more-pieces';
-import { Canvas, BrandSeal, VideoScene, EndCard, Facts, Headline, Label, Media, ACCENT, CHALK, STAGE, f, type PieceProps } from './kit';
+import { Canvas, ShareClose, BrandSeal, VideoScene, EndCard, Facts, Headline, Label, Media, ACCENT, CHALK, STAGE, f, type PieceProps } from './kit';
 import { QUANDO } from '../data';
 
-export type Slide = { name: string; component: ComponentType<PieceProps>; seconds: number; height: number; cover: number; cues: { label: string; frame: number }[] };
+export type Slide = { media?: 'image' | 'video'; name: string; component: ComponentType<PieceProps>; seconds: number; height: number; cover: number; cues: { label: string; frame: number }[] };
 export type Piece = { id: string; title: string; format: string; description: string; look: string; movement: string; slides: Slide[] };
 
 function Together(p:PieceProps) {
@@ -20,15 +20,15 @@ function Together(p:PieceProps) {
  </>;
 }
 const rooms=[
- {src:'tour-fachada',title:['ONDE VAI','ACONTECER?'],note:'TRAPÉZIO VOADOR · BUTANTÃ',start:0,duration:3.8,look:'cor'},
+ {src:'tour-fachada',title:['ONDE SERÁ O','HANDSTANDFEST?'],note:'FESTIVAL DE PARADA DE MÃO · SÃO PAULO',start:0,duration:3.8,look:'cor'},
  {src:'tour-vidro',title:['SALA DE VIDRO'],note:'PISO DE MADEIRA, LUZ NATURAL',start:3.8,duration:3.6,look:'cor'},
  {src:'tour-palco',title:['PALCO'],note:'PÉ-DIREITO DE 10 M',start:7.4,duration:3.6,look:'pb'},
 ] as const;
-function Venue(p:PieceProps){return <>{rooms.map(room=><Sequence key={room.src} from={f(room.start)} durationInFrames={f(room.duration)}><VideoScene {...p} src={room.src} lines={[...room.title]} note={room.note} look={room.look}/></Sequence>)}<Sequence from={f(11)} durationInFrames={f(3.5)}><EndCard {...p} cta="3 dias no Trapézio Voador."/></Sequence></>;}
+function Venue(p:PieceProps){return <>{rooms.map(room=><Sequence key={room.src} from={f(room.start)} durationInFrames={f(room.duration)}><VideoScene {...p} src={room.src} lines={[...room.title]} note={room.note} look={room.look}/></Sequence>)}<Sequence from={f(11)} durationInFrames={f(3.5)}><EndCard {...p} cta="3 dias de aulas e encontros de parada de mão."/></Sequence></>;}
 function Line(p:PieceProps){const frame=useCurrentFrame();return <><Sequence durationInFrames={f(11)}><VideoScene {...p} src="mural-reta" side look="pb" lines={frame<f(5)?['PARECE','DIFÍCIL?']:['É MUITO MAIS','DO QUE','PARECE.']}/></Sequence><Sequence from={f(11)} durationInFrames={f(3.5)}><EndCard {...p} cta="Básico · intermediário · avançado"/></Sequence></>;}
 function Football(p:PieceProps){const frame=useCurrentFrame();return <><Sequence durationInFrames={f(10)}><VideoScene {...p} src="mural-reta" from={3.4} side lines={frame<f(5.5)?['GOSTA DE','FUTEBOL?']:['AQUI A MÃO','NÃO É FALTA.']}/></Sequence><Sequence from={f(10)} durationInFrames={f(3.5)}><EndCard {...p} cta="Vem fazer handstand!"/></Sequence></>;}
 function ClassCover(p: PieceProps) {
-  return <Canvas {...p} format="card"><Headline lines={['Ainda está', 'na parede?']} y={105} size={88} accentLine={1} />
+  return <Canvas {...p} format="card"><Headline lines={['HANDSTAND:', 'AINDA NA', 'PAREDE?']} y={95} size={70} accentLine={1} />
     <Label y={340} size={40}>{QUANDO.toUpperCase()} · SÃO PAULO</Label>
     <Media src="still-dupla.webp" photo x={60} y={430} w={960} h={870} {...p} />
     <Label x={60} y={1330} size={36}>01 / 05 <span style={{ marginLeft: 560 }}>ARRASTA →</span></Label>
@@ -62,7 +62,7 @@ function Advanced(p: PieceProps) {
     <Label x={60} y={1330} size={36}>04 / 05</Label>
   </Canvas>;
 }
-const ClassEnd = (p: PieceProps) => <EndCard {...p} format="card" cta="Na dúvida, manda um vídeo na inscrição." />;
+const ClassEnd = (p: PieceProps) => <ShareClose {...p} body="Envie para quem quer praticar parada de mão e tem dúvidas sobre as turmas!" context="HandstandFest: festival de parada de mão, 16–18 abr 2027, São Paulo. Critérios e inscrições em handstandfest.com.br." />;
 function StoryDate(p:PieceProps) {
  return <Freeze frame={90}><Canvas {...p} format="story" dark signature={false}>
   <Media photo src="still-dupla.webp" x={24} y={24} w={1032} h={1872} contain {...p}/>

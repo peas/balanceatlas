@@ -95,3 +95,15 @@ export function PracticeClose({title=['O QUE VOCÊ','QUER EXPLORAR?'],body='Form
   <Label x={365} y={1100} size={38} color={CHALK}>HANDSTANDFEST<br/>handstandfest.com.br</Label>
  </Canvas></Freeze>;
 }
+
+/** Default closing slide for new HF carousels. Adapt the invitation to the topic. */
+export function ShareClose({body='Envie este post para quem também quer praticar parada de mão com a gente!',context='HandstandFest é um festival de parada de mão, com aulas e encontros para trocar experiências.',...p}:PieceProps & {body?:string;context?:string}) {
+ return <Canvas {...p} format="card" dark signature={false}>
+  <svg aria-label="Símbolo de enviar" viewBox="0 0 100 100" style={{position:'absolute',left:70,top:95,width:150,height:150}} fill="none" stroke="#dfab5b" strokeWidth="5" strokeLinejoin="round"><path d="M8 12 L94 8 L61 94 L43 55 Z M43 55 L94 8"/></svg>
+  <Headline lines={['INTERESSOU?']} y={310} size={92} dark/>
+  <Label y={490} size={56} color={CHALK} style={{width:900,lineHeight:1.25}}>{body}</Label>
+  <Label y={790} size={42} color={CHALK} style={{width:900,lineHeight:1.35}}>{context}</Label>
+  <BrandSeal x={65} y={1110} size={235} still/>
+  <Label x={340} y={1160} size={36} color={CHALK}>HANDSTANDFEST<br/>handstandfest.com.br</Label>
+ </Canvas>;
+}

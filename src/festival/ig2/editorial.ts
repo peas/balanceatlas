@@ -89,4 +89,29 @@ function withHashtags(caption:string, practice:boolean) {
  const missing=tags.filter(tag=>!new RegExp('#'+tag+'(?![\\w])','i').test(caption));
  return caption+(missing.length?'\n\n'+missing.map(tag=>'#'+tag).join(' '):'');
 }
-export const EDITORIAL: EditorialDay[] = PLAN.map(day => ({...day, ...((VOICE as Record<string,Partial<EditorialDay>>)[day.title]??{})})).map(day => ({...day, ...(gabrielSamples[day.title]?{piece:'gabriel-drill-'+gabrielSamples[day.title],missing:'Material do Gabriel recebido em 17/11; corte e prévia disponíveis. Revisar explicação, saída e narração antes de publicar. '+day.missing}:samples[day.title]?{piece:'exercicio-'+samples[day.title],missing:'Prévia com Paulo para revisar; nova captação prevista com Paulo e Gabriel. '+day.missing}:{}), caption: withHashtags(day.caption, day.pillar !== 'Evento')}));
+const resolvedPlan: EditorialDay[] = PLAN.map(day => ({...day, ...((VOICE as Record<string,Partial<EditorialDay>>)[day.title]??{})})).map(day => ({...day, ...(gabrielSamples[day.title]?{piece:'gabriel-drill-'+gabrielSamples[day.title],missing:'Material do Gabriel recebido em 17/11; corte e prévia disponíveis. Revisar explicação, saída e narração antes de publicar. '+day.missing}:samples[day.title]?{piece:'exercicio-'+samples[day.title],missing:'Prévia com Paulo para revisar; nova captação prevista com Paulo e Gabriel. '+day.missing}:{}), caption: withHashtags(day.caption, day.pillar !== 'Evento')}));
+
+
+// 24 November: the first five posts are already published. Prioritize Louisse next;
+// defer Paulo-led demos without deleting their assets or changing publication receipts.
+const louisseAnnouncement: EditorialDay = {
+ title: 'Louisse Aldrigues: professora confirmada', piece: 'louisse-confirmada', pillar: 'Evento', format: 'Carrossel misto',
+ hook: 'Olha o que a professora Louisse faz na parada de mão!',
+ caption: 'Conheça a prática da professora Louisse Aldrigues! Ela está confirmada no 1º HandstandFest, um festival de parada de mão com aulas e encontros para trocar experiências. Nascida em Brasília, começou no circo em 2011 e se especializou em parada de mão na Escola Nacional de Circo. É professora de parada de mão desde 2015. Vamos praticar com ela de 16 a 18 de abril de 2027, no Trapézio Voador, em São Paulo. Envie este post para quem também quer praticar handstand! Informações e inscrições no link da bio.\n\n#handstand #handstandfest',
+ story: 'Compartilhar a capa, marcar @lou.handstand e colocar o link do evento.',
+ missing: 'Prioridade para 25/11/2026. Roteiro definido; Montagem e arquivos locais prontos; revisão final antes de publicar. Fotos da própria Louisse, autoria confirmada pelo Paulo em 24/11. Usar os vídeos de 24/11, versões melhores de duas tomadas anteriores. Música permitida pelo Paulo; selecionar trilha licenciada ou pelo app.',
+ asset: 'docs/instagram/2026-11-25-louisse-confirmada.md',
+};
+const pauloLed = (day:EditorialDay) => Boolean(day.piece?.startsWith('exercicio-') || [
+ 'natureza-piscina-press-solo', 'natureza-deck-tuck-reta', 'natureza-deck-pike-reta',
+ 'natureza-piscina-press-dupla', 'futebol',
+].includes(day.piece??'') || day.title === 'Um exercício, dois pontos de vista');
+const upcoming = resolvedPlan.slice(5).map(day => ({...day,
+ title: day.title==='Reta, straddle e pike' ? 'Parada de mão: reta e straddle' : day.title==='Transições: do pike ao tuck' ? 'Transições: do tuck à reta' : day.title,
+ missing: day.missing + (day.format.includes('Carrossel') ? ' Fecho obrigatório: convite contextual para enviar a alguém, símbolo de enviar e assinatura HF. Cada lâmina deve fazer sentido fora da sequência.' : ''),
+}));
+export const EDITORIAL: EditorialDay[] = [
+ ...resolvedPlan.slice(0,5), louisseAnnouncement,
+ ...upcoming.filter(day=>!pauloLed(day)),
+ ...upcoming.filter(pauloLed).map(day=>({...day,missing:'Adiado em 24/11: Paulo como protagonista fica para uma etapa posterior. '+day.missing})),
+];

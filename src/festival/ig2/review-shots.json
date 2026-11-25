@@ -365,17 +365,17 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/lugar-0.webp",
+        "url": "/festival/ig/review-v1/lugar-0-69a6675271.webp",
         "label": "0.8 s",
         "frame": 24
       },
       {
-        "url": "/festival/ig/review-v1/lugar-1.webp",
+        "url": "/festival/ig/review-v1/lugar-1-08021fd321.webp",
         "label": "5.0 s",
         "frame": 150
       },
       {
-        "url": "/festival/ig/review-v1/lugar-2.webp",
+        "url": "/festival/ig/review-v1/lugar-2-1d979beb04.webp",
         "label": "12.5 s",
         "frame": 375
       }
@@ -529,17 +529,17 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/ritmo-0.webp",
+        "url": "/festival/ig/review-v1/ritmo-0-497118f63d.webp",
         "label": "0.8 s",
         "frame": 24
       },
       {
-        "url": "/festival/ig/review-v1/ritmo-1.webp",
+        "url": "/festival/ig/review-v1/ritmo-1-57db69da1a.webp",
         "label": "7.0 s",
         "frame": 210
       },
       {
-        "url": "/festival/ig/review-v1/ritmo-2.webp",
+        "url": "/festival/ig/review-v1/ritmo-2-e1a8ed2ab9.webp",
         "label": "14.0 s",
         "frame": 420
       }
@@ -609,12 +609,12 @@
     "count": 2,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/porta-1-0.webp",
+        "url": "/festival/ig/review-v1/porta-1-0-1bf4611c22.webp",
         "label": "Lâmina 1 · A porta",
         "frame": 90
       },
       {
-        "url": "/festival/ig/review-v1/porta-2-0.webp",
+        "url": "/festival/ig/review-v1/porta-2-0-89f33067fa.webp",
         "label": "Lâmina 2 · Lá dentro",
         "frame": 90
       }
@@ -633,7 +633,7 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/natureza-cachoeira-0.webp",
+        "url": "/festival/ig/review-v1/natureza-cachoeira-0-343f40e760.webp",
         "label": "Imagem completa",
         "frame": 29
       }
@@ -652,7 +652,7 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/natureza-comunidade-0.webp",
+        "url": "/festival/ig/review-v1/natureza-comunidade-0-0b284a0379.webp",
         "label": "Imagem completa",
         "frame": 29
       }
@@ -671,9 +671,38 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/natureza-pike-0.webp",
+        "url": "/festival/ig/review-v1/natureza-pike-0-4e5125c8f4.webp",
         "label": "Imagem completa",
         "frame": 29
+      }
+    ]
+  },
+  {
+    "id": "louisse-confirmada",
+    "title": "Olha o que a Louisse faz na parada de mão!",
+    "format": "Carrossel misto",
+    "description": "Seis lâminas: quatro fotos/artes e dois vídeos. Fotos da própria Louisse. Prévia muda; exports com trilha nos vídeos.",
+    "movement": "Uma pausa de 1,4 s, sem zoom ou deslocamento da câmera.",
+    "name": "01 · Conheça a prática da Louisse",
+    "cues": [],
+    "cover": 60,
+    "index": 0,
+    "count": 6,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/louisse-confirmada-1-0-67d6c05160.webp",
+        "label": "Lâmina 1 · 01 · Conheça a prática da Louisse",
+        "frame": 90
+      },
+      {
+        "url": "/festival/ig/review-v1/louisse-confirmada-4-0-9b1baf2b63.webp",
+        "label": "Lâmina 4 · 04 · Um braço, pausa e retomada",
+        "frame": 90
+      },
+      {
+        "url": "/festival/ig/review-v1/louisse-confirmada-6-0-b4bf22c3c4.webp",
+        "label": "Lâmina 6 · 06 · Envie para quem vem praticar",
+        "frame": 90
       }
     ]
   },
@@ -811,17 +840,17 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/exercicio-gato-vaca-0.webp",
+        "url": "/festival/ig/review-v1/exercicio-gato-vaca-0-19abd3357f.webp",
         "label": "6.0 s",
         "frame": 180
       },
       {
-        "url": "/festival/ig/review-v1/exercicio-gato-vaca-1.webp",
+        "url": "/festival/ig/review-v1/exercicio-gato-vaca-1-4126368af1.webp",
         "label": "6.5 s",
         "frame": 195
       },
       {
-        "url": "/festival/ig/review-v1/exercicio-gato-vaca-2.webp",
+        "url": "/festival/ig/review-v1/exercicio-gato-vaca-2-554b35a7f5.webp",
         "label": "14.0 s",
         "frame": 420
       }
@@ -853,17 +882,17 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/exercicio-escapulas-0.webp",
+        "url": "/festival/ig/review-v1/exercicio-escapulas-0-5bed12d730.webp",
         "label": "7.0 s",
         "frame": 210
       },
       {
-        "url": "/festival/ig/review-v1/exercicio-escapulas-1.webp",
+        "url": "/festival/ig/review-v1/exercicio-escapulas-1-65fb5d59e0.webp",
         "label": "7.5 s",
         "frame": 225
       },
       {
-        "url": "/festival/ig/review-v1/exercicio-escapulas-2.webp",
+        "url": "/festival/ig/review-v1/exercicio-escapulas-2-2232741b0f.webp",
         "label": "16.0 s",
         "frame": 480
       }
@@ -895,17 +924,17 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/exercicio-punhos-0.webp",
+        "url": "/festival/ig/review-v1/exercicio-punhos-0-e0174c6d73.webp",
         "label": "5.0 s",
         "frame": 150
       },
       {
-        "url": "/festival/ig/review-v1/exercicio-punhos-1.webp",
+        "url": "/festival/ig/review-v1/exercicio-punhos-1-692ab27cb4.webp",
         "label": "5.5 s",
         "frame": 165
       },
       {
-        "url": "/festival/ig/review-v1/exercicio-punhos-2.webp",
+        "url": "/festival/ig/review-v1/exercicio-punhos-2-11fb3f2529.webp",
         "label": "12.0 s",
         "frame": 360
       }
@@ -937,17 +966,17 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/exercicio-urso-prancha-0.webp",
+        "url": "/festival/ig/review-v1/exercicio-urso-prancha-0-44439b249c.webp",
         "label": "12.0 s",
         "frame": 360
       },
       {
-        "url": "/festival/ig/review-v1/exercicio-urso-prancha-1.webp",
+        "url": "/festival/ig/review-v1/exercicio-urso-prancha-1-7bd2ada1f6.webp",
         "label": "9.5 s",
         "frame": 285
       },
       {
-        "url": "/festival/ig/review-v1/exercicio-urso-prancha-2.webp",
+        "url": "/festival/ig/review-v1/exercicio-urso-prancha-2-fbb1d880de.webp",
         "label": "20.0 s",
         "frame": 600
       }
@@ -979,17 +1008,17 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/exercicio-canoinha-0.webp",
+        "url": "/festival/ig/review-v1/exercicio-canoinha-0-aabf41548e.webp",
         "label": "11.0 s",
         "frame": 330
       },
       {
-        "url": "/festival/ig/review-v1/exercicio-canoinha-1.webp",
+        "url": "/festival/ig/review-v1/exercicio-canoinha-1-e4d6781bfa.webp",
         "label": "8.5 s",
         "frame": 255
       },
       {
-        "url": "/festival/ig/review-v1/exercicio-canoinha-2.webp",
+        "url": "/festival/ig/review-v1/exercicio-canoinha-2-b14b06d54c.webp",
         "label": "18.0 s",
         "frame": 540
       }
@@ -1021,12 +1050,12 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/exercicio-sapinho-0.webp",
+        "url": "/festival/ig/review-v1/exercicio-sapinho-0-0f966795b2.webp",
         "label": "12.0 s",
         "frame": 360
       },
       {
-        "url": "/festival/ig/review-v1/exercicio-sapinho-1.webp",
+        "url": "/festival/ig/review-v1/exercicio-sapinho-1-9e5de3bae0.webp",
         "label": "25.0 s",
         "frame": 750
       }
@@ -1058,12 +1087,12 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/exercicio-ombros-cadeira-0.webp",
+        "url": "/festival/ig/review-v1/exercicio-ombros-cadeira-0-3aa8b85800.webp",
         "label": "10.0 s",
         "frame": 300
       },
       {
-        "url": "/festival/ig/review-v1/exercicio-ombros-cadeira-1.webp",
+        "url": "/festival/ig/review-v1/exercicio-ombros-cadeira-1-d8822c9fac.webp",
         "label": "21.0 s",
         "frame": 630
       }
@@ -1095,17 +1124,17 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/exercicio-parede-0.webp",
+        "url": "/festival/ig/review-v1/exercicio-parede-0-007ed54a8d.webp",
         "label": "18.0 s",
         "frame": 540
       },
       {
-        "url": "/festival/ig/review-v1/exercicio-parede-1.webp",
+        "url": "/festival/ig/review-v1/exercicio-parede-1-dd44590151.webp",
         "label": "16.5 s",
         "frame": 495
       },
       {
-        "url": "/festival/ig/review-v1/exercicio-parede-2.webp",
+        "url": "/festival/ig/review-v1/exercicio-parede-2-0cdd4b0142.webp",
         "label": "34.0 s",
         "frame": 1020
       }
@@ -1137,17 +1166,17 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/exercicio-saida-estrela-0.webp",
+        "url": "/festival/ig/review-v1/exercicio-saida-estrela-0-9ef47d773d.webp",
         "label": "3.0 s",
         "frame": 90
       },
       {
-        "url": "/festival/ig/review-v1/exercicio-saida-estrela-1.webp",
+        "url": "/festival/ig/review-v1/exercicio-saida-estrela-1-ce2669bed8.webp",
         "label": "7.0 s",
         "frame": 210
       },
       {
-        "url": "/festival/ig/review-v1/exercicio-saida-estrela-2.webp",
+        "url": "/festival/ig/review-v1/exercicio-saida-estrela-2-57294fe56e.webp",
         "label": "15.0 s",
         "frame": 450
       }
@@ -1179,17 +1208,17 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/exercicio-chute-parede-0.webp",
+        "url": "/festival/ig/review-v1/exercicio-chute-parede-0-331b2b0201.webp",
         "label": "11.0 s",
         "frame": 330
       },
       {
-        "url": "/festival/ig/review-v1/exercicio-chute-parede-1.webp",
+        "url": "/festival/ig/review-v1/exercicio-chute-parede-1-4511d23b45.webp",
         "label": "14.5 s",
         "frame": 435
       },
       {
-        "url": "/festival/ig/review-v1/exercicio-chute-parede-2.webp",
+        "url": "/festival/ig/review-v1/exercicio-chute-parede-2-f421fc1b8e.webp",
         "label": "30.0 s",
         "frame": 900
       }
@@ -1221,17 +1250,17 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/exercicio-costelas-0.webp",
+        "url": "/festival/ig/review-v1/exercicio-costelas-0-68060a689a.webp",
         "label": "7.0 s",
         "frame": 210
       },
       {
-        "url": "/festival/ig/review-v1/exercicio-costelas-1.webp",
+        "url": "/festival/ig/review-v1/exercicio-costelas-1-e6e5b47c9e.webp",
         "label": "6.5 s",
         "frame": 195
       },
       {
-        "url": "/festival/ig/review-v1/exercicio-costelas-2.webp",
+        "url": "/festival/ig/review-v1/exercicio-costelas-2-ed7bb9248e.webp",
         "label": "14.0 s",
         "frame": 420
       }
@@ -1263,17 +1292,17 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/exercicio-ombros-box-0.webp",
+        "url": "/festival/ig/review-v1/exercicio-ombros-box-0-30064ee1a1.webp",
         "label": "15.0 s",
         "frame": 450
       },
       {
-        "url": "/festival/ig/review-v1/exercicio-ombros-box-1.webp",
+        "url": "/festival/ig/review-v1/exercicio-ombros-box-1-b2a53eab7f.webp",
         "label": "13.5 s",
         "frame": 405
       },
       {
-        "url": "/festival/ig/review-v1/exercicio-ombros-box-2.webp",
+        "url": "/festival/ig/review-v1/exercicio-ombros-box-2-ce6018636f.webp",
         "label": "28.0 s",
         "frame": 840
       }
@@ -1305,17 +1334,17 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/exercicio-pike-box-0.webp",
+        "url": "/festival/ig/review-v1/exercicio-pike-box-0-c3d5cd56bd.webp",
         "label": "10.0 s",
         "frame": 300
       },
       {
-        "url": "/festival/ig/review-v1/exercicio-pike-box-1.webp",
+        "url": "/festival/ig/review-v1/exercicio-pike-box-1-cbd9de4602.webp",
         "label": "11.5 s",
         "frame": 345
       },
       {
-        "url": "/festival/ig/review-v1/exercicio-pike-box-2.webp",
+        "url": "/festival/ig/review-v1/exercicio-pike-box-2-bfd3252645.webp",
         "label": "24.0 s",
         "frame": 720
       }
@@ -1347,12 +1376,12 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/exercicio-abertura-chao-0.webp",
+        "url": "/festival/ig/review-v1/exercicio-abertura-chao-0-1b9d0c7e98.webp",
         "label": "9.0 s",
         "frame": 270
       },
       {
-        "url": "/festival/ig/review-v1/exercicio-abertura-chao-1.webp",
+        "url": "/festival/ig/review-v1/exercicio-abertura-chao-1-b8d1b59901.webp",
         "label": "19.0 s",
         "frame": 570
       }
@@ -1363,26 +1392,26 @@
     "title": "Conheça Gabriel Agustin",
     "format": "Carrossel",
     "description": "Artista circense, acrobata e professor de movimento, argentino radicado no Brasil. Com mais de 10 anos nas artes do movimento, encontrou na parada de mãos um caminho de investigação, expressão e transformação. A ideia do festival veio de Gabriel, após uma experiência marcante na Argentina: reunir pessoas, professores e diferentes perspectivas em torno da parada de mãos.",
-    "movement": "Três lâminas estáticas; assinatura apenas na última. Bio fornecida por Paulo.",
+    "movement": "Quatro lâminas estáticas; contexto do festival e convite para compartilhar na última. Bio fornecida por Paulo.",
     "name": "Gabriel Agustin",
     "cues": [],
     "cover": 0,
     "index": 0,
-    "count": 3,
+    "count": 4,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/agustin-apresentacao-1-0-68a75dd62a.webp",
+        "url": "/festival/ig/review-v1/agustin-apresentacao-1-0-489afb4b39.webp",
         "label": "Lâmina 1 · Gabriel Agustin",
         "frame": 29
       },
       {
-        "url": "/festival/ig/review-v1/agustin-apresentacao-2-0-2ab089d4a3.webp",
-        "label": "Lâmina 2 · A trajetória",
+        "url": "/festival/ig/review-v1/agustin-apresentacao-3-0-6600610fca.webp",
+        "label": "Lâmina 3 · A origem do festival",
         "frame": 29
       },
       {
-        "url": "/festival/ig/review-v1/agustin-apresentacao-3-0-5154f376f9.webp",
-        "label": "Lâmina 3 · A origem do festival",
+        "url": "/festival/ig/review-v1/agustin-apresentacao-4-0-ee6f760f03.webp",
+        "label": "Lâmina 4 · Envie para quem quer praticar",
         "frame": 29
       }
     ]
@@ -1413,17 +1442,17 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/agustin-movimento-0.webp",
+        "url": "/festival/ig/review-v1/agustin-movimento-0-c138cbf904.webp",
         "label": "1.0 s",
         "frame": 30
       },
       {
-        "url": "/festival/ig/review-v1/agustin-movimento-1.webp",
+        "url": "/festival/ig/review-v1/agustin-movimento-1-1f4f2596d5.webp",
         "label": "7.0 s",
         "frame": 210
       },
       {
-        "url": "/festival/ig/review-v1/agustin-movimento-2.webp",
+        "url": "/festival/ig/review-v1/agustin-movimento-2-c4236f73c5.webp",
         "label": "13.3 s",
         "frame": 400
       }
@@ -1442,17 +1471,17 @@
     "count": 5,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/turma-1-0.webp",
+        "url": "/festival/ig/review-v1/turma-1-0-bcdc0f4b28.webp",
         "label": "Lâmina 1 · Capa",
         "frame": 90
       },
       {
-        "url": "/festival/ig/review-v1/turma-3-0.webp",
+        "url": "/festival/ig/review-v1/turma-3-0-2c5846723c.webp",
         "label": "Lâmina 3 · Básico",
         "frame": 90
       },
       {
-        "url": "/festival/ig/review-v1/turma-5-0.webp",
+        "url": "/festival/ig/review-v1/turma-5-0-f6c194bf86.webp",
         "label": "Lâmina 5 · Encontro",
         "frame": 90
       }
@@ -1471,7 +1500,7 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/gabriel-paisagem-0.webp",
+        "url": "/festival/ig/review-v1/gabriel-paisagem-0-8b45cd1204.webp",
         "label": "Imagem completa",
         "frame": 29
       }
@@ -1548,17 +1577,17 @@
     "count": 5,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/ed-consistencia-1-0.webp",
+        "url": "/festival/ig/review-v1/ed-consistencia-1-0-345fcbfac1.webp",
         "label": "Lâmina 1 · Filme e reveja seu treino · 1",
         "frame": 29
       },
       {
-        "url": "/festival/ig/review-v1/ed-consistencia-3-0.webp",
+        "url": "/festival/ig/review-v1/ed-consistencia-3-0-cbaaee24d3.webp",
         "label": "Lâmina 3 · Filme e reveja seu treino · 3",
         "frame": 29
       },
       {
-        "url": "/festival/ig/review-v1/ed-consistencia-5-0.webp",
+        "url": "/festival/ig/review-v1/ed-consistencia-5-0-a50595c2c8.webp",
         "label": "Lâmina 5 · A conversa continua",
         "frame": 29
       }
@@ -1596,17 +1625,17 @@
     "count": 4,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/ed-formas-1-0.webp",
+        "url": "/festival/ig/review-v1/ed-formas-1-0-e2d43d1477.webp",
         "label": "Lâmina 1 · Palito e afastado · 1",
         "frame": 29
       },
       {
-        "url": "/festival/ig/review-v1/ed-formas-3-0.webp",
+        "url": "/festival/ig/review-v1/ed-formas-3-0-7b8734e5d7.webp",
         "label": "Lâmina 3 · Palito e afastado · 3",
         "frame": 29
       },
       {
-        "url": "/festival/ig/review-v1/ed-formas-4-0.webp",
+        "url": "/festival/ig/review-v1/ed-formas-4-0-e18a378244.webp",
         "label": "Lâmina 4 · A conversa continua",
         "frame": 29
       }
@@ -1625,7 +1654,7 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/ed-festival-0-4ae53d8c1c.webp",
+        "url": "/festival/ig/review-v1/ed-festival-0-885dacc182.webp",
         "label": "Imagem completa",
         "frame": 29
       }
@@ -1644,7 +1673,7 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/ed-mundo-0.webp",
+        "url": "/festival/ig/review-v1/ed-mundo-0-1f92e37b96.webp",
         "label": "Imagem completa",
         "frame": 29
       }
@@ -1663,7 +1692,7 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/gabriel-gravura-story-0.webp",
+        "url": "/festival/ig/review-v1/gabriel-gravura-story-0-6ec432a086.webp",
         "label": "Imagem completa",
         "frame": 29
       }
@@ -1682,7 +1711,7 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/gabriel-gravura-0.webp",
+        "url": "/festival/ig/review-v1/gabriel-gravura-0-4317256fa7.webp",
         "label": "Imagem completa",
         "frame": 29
       }
@@ -1756,17 +1785,17 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/gabriel-drill-escapulas-0-b1d62581c4.webp",
+        "url": "/festival/ig/review-v1/gabriel-drill-escapulas-0-5078139013.webp",
         "label": "4.0 s",
         "frame": 120
       },
       {
-        "url": "/festival/ig/review-v1/gabriel-drill-escapulas-1-3f2ed4a451.webp",
+        "url": "/festival/ig/review-v1/gabriel-drill-escapulas-1-2eec629db8.webp",
         "label": "5.7 s",
         "frame": 170
       },
       {
-        "url": "/festival/ig/review-v1/gabriel-drill-escapulas-2-46c3e5c46e.webp",
+        "url": "/festival/ig/review-v1/gabriel-drill-escapulas-2-864651469f.webp",
         "label": "16.4 s",
         "frame": 491
       }
@@ -1882,7 +1911,7 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/gabriel-drill-saida-parede-0-0e136eb135.webp",
+        "url": "/festival/ig/review-v1/gabriel-drill-saida-parede-0-34a47beee4.webp",
         "label": "4.0 s",
         "frame": 120
       },
@@ -1892,7 +1921,7 @@
         "frame": 335
       },
       {
-        "url": "/festival/ig/review-v1/gabriel-drill-saida-parede-2-181878cf59.webp",
+        "url": "/festival/ig/review-v1/gabriel-drill-saida-parede-2-570d543cb4.webp",
         "label": "23.3 s",
         "frame": 699
       }
@@ -1966,17 +1995,17 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/gabriel-drill-escapulas-perfil-0-179abfc51f.webp",
+        "url": "/festival/ig/review-v1/gabriel-drill-escapulas-perfil-0-0906475962.webp",
         "label": "4.0 s",
         "frame": 120
       },
       {
-        "url": "/festival/ig/review-v1/gabriel-drill-escapulas-perfil-1-30661a0b7a.webp",
+        "url": "/festival/ig/review-v1/gabriel-drill-escapulas-perfil-1-f90af7d6d2.webp",
         "label": "4.1 s",
         "frame": 124
       },
       {
-        "url": "/festival/ig/review-v1/gabriel-drill-escapulas-perfil-2-eb1d43094c.webp",
+        "url": "/festival/ig/review-v1/gabriel-drill-escapulas-perfil-2-d81751cb1d.webp",
         "label": "9.3 s",
         "frame": 279
       }
@@ -1987,7 +2016,7 @@
     "title": "Saída lateral com apoio · Gabriel",
     "format": "Reel",
     "description": "Demonstração de Gabriel, vinculada à pauta saida-estrela. Corte em velocidade real; falta revisão técnica da orientação e narração. O fecho usa fotografia, alternando cor natural e preto e branco; não é gravura anatômica.",
-    "movement": "Corte completo de 22.6 s, seguido de 3 s do quadro da fonte em 22.58 s. Pintura independente e sem deslocar o corpo. Áudio original não incluído. Preservar mãos, perna e cadeira. Usar como preparação, sem zoom que elimine o apoio.",
+    "movement": "Corte completo de 22.6 s, sem congelamento adicional. Pintura independente e sem deslocar o corpo. Áudio original não incluído. Preservar mãos, perna e cadeira. Usar como preparação, sem zoom que elimine o apoio.",
     "name": "Saída lateral com apoio",
     "cues": [
       {
@@ -2008,7 +2037,7 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/gabriel-drill-saida-cadeira-0-95059bc4d7.webp",
+        "url": "/festival/ig/review-v1/gabriel-drill-saida-cadeira-0-bf1f4617d6.webp",
         "label": "4.0 s",
         "frame": 120
       },
@@ -2096,17 +2125,17 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/gabriel-transicoes-tela-0.webp",
+        "url": "/festival/ig/review-v1/gabriel-transicoes-tela-0-e85a9340a6.webp",
         "label": "0.0 s",
         "frame": 0
       },
       {
-        "url": "/festival/ig/review-v1/gabriel-transicoes-tela-1.webp",
+        "url": "/festival/ig/review-v1/gabriel-transicoes-tela-1-7444f8591c.webp",
         "label": "6.0 s",
         "frame": 180
       },
       {
-        "url": "/festival/ig/review-v1/gabriel-transicoes-tela-2.webp",
+        "url": "/festival/ig/review-v1/gabriel-transicoes-tela-2-359b30e703.webp",
         "label": "7.3 s",
         "frame": 220
       }
@@ -2180,17 +2209,17 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/natureza-piscina-press-dupla-0.webp",
+        "url": "/festival/ig/review-v1/natureza-piscina-press-dupla-0-3b30cccbba.webp",
         "label": "13.2 s",
         "frame": 395
       },
       {
-        "url": "/festival/ig/review-v1/natureza-piscina-press-dupla-1.webp",
+        "url": "/festival/ig/review-v1/natureza-piscina-press-dupla-1-7aba506adf.webp",
         "label": "13.2 s",
         "frame": 396
       },
       {
-        "url": "/festival/ig/review-v1/natureza-piscina-press-dupla-2.webp",
+        "url": "/festival/ig/review-v1/natureza-piscina-press-dupla-2-43b480ef69.webp",
         "label": "14.7 s",
         "frame": 441
       }
@@ -2222,17 +2251,17 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/natureza-piscina-press-solo-0.webp",
+        "url": "/festival/ig/review-v1/natureza-piscina-press-solo-0-956b80e07e.webp",
         "label": "12.6 s",
         "frame": 377
       },
       {
-        "url": "/festival/ig/review-v1/natureza-piscina-press-solo-1.webp",
+        "url": "/festival/ig/review-v1/natureza-piscina-press-solo-1-e37a9423fc.webp",
         "label": "12.6 s",
         "frame": 378
       },
       {
-        "url": "/festival/ig/review-v1/natureza-piscina-press-solo-2.webp",
+        "url": "/festival/ig/review-v1/natureza-piscina-press-solo-2-9398cc8538.webp",
         "label": "14.1 s",
         "frame": 423
       }
@@ -2264,17 +2293,17 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/natureza-deck-pike-reta-0.webp",
+        "url": "/festival/ig/review-v1/natureza-deck-pike-reta-0-fcd377d9ff.webp",
         "label": "16.0 s",
         "frame": 479
       },
       {
-        "url": "/festival/ig/review-v1/natureza-deck-pike-reta-1.webp",
+        "url": "/festival/ig/review-v1/natureza-deck-pike-reta-1-5f75cafd44.webp",
         "label": "16.0 s",
         "frame": 480
       },
       {
-        "url": "/festival/ig/review-v1/natureza-deck-pike-reta-2.webp",
+        "url": "/festival/ig/review-v1/natureza-deck-pike-reta-2-865c2449d9.webp",
         "label": "17.5 s",
         "frame": 525
       }
@@ -2306,17 +2335,17 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/natureza-deck-tuck-reta-0.webp",
+        "url": "/festival/ig/review-v1/natureza-deck-tuck-reta-0-9e379c69e9.webp",
         "label": "17.3 s",
         "frame": 518
       },
       {
-        "url": "/festival/ig/review-v1/natureza-deck-tuck-reta-1.webp",
+        "url": "/festival/ig/review-v1/natureza-deck-tuck-reta-1-60282872de.webp",
         "label": "17.3 s",
         "frame": 519
       },
       {
-        "url": "/festival/ig/review-v1/natureza-deck-tuck-reta-2.webp",
+        "url": "/festival/ig/review-v1/natureza-deck-tuck-reta-2-940dea5cd0.webp",
         "label": "18.8 s",
         "frame": 564
       }
@@ -2348,17 +2377,17 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/natureza-deck-entrada-agrupada-0.webp",
+        "url": "/festival/ig/review-v1/natureza-deck-entrada-agrupada-0-3f7113e42d.webp",
         "label": "10.5 s",
         "frame": 314
       },
       {
-        "url": "/festival/ig/review-v1/natureza-deck-entrada-agrupada-1.webp",
+        "url": "/festival/ig/review-v1/natureza-deck-entrada-agrupada-1-d5bc0b8320.webp",
         "label": "10.5 s",
         "frame": 315
       },
       {
-        "url": "/festival/ig/review-v1/natureza-deck-entrada-agrupada-2.webp",
+        "url": "/festival/ig/review-v1/natureza-deck-entrada-agrupada-2-3e372c1a16.webp",
         "label": "12.0 s",
         "frame": 360
       }
@@ -2390,17 +2419,17 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/natureza-deck-straddle-frente-0.webp",
+        "url": "/festival/ig/review-v1/natureza-deck-straddle-frente-0-dec4c56840.webp",
         "label": "32.0 s",
         "frame": 959
       },
       {
-        "url": "/festival/ig/review-v1/natureza-deck-straddle-frente-1.webp",
+        "url": "/festival/ig/review-v1/natureza-deck-straddle-frente-1-5b59f8c525.webp",
         "label": "32.0 s",
         "frame": 960
       },
       {
-        "url": "/festival/ig/review-v1/natureza-deck-straddle-frente-2.webp",
+        "url": "/festival/ig/review-v1/natureza-deck-straddle-frente-2-26fe238c1f.webp",
         "label": "33.5 s",
         "frame": 1005
       }
@@ -2432,17 +2461,17 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/natureza-deck-straddle-baixo-0.webp",
+        "url": "/festival/ig/review-v1/natureza-deck-straddle-baixo-0-ebbb5778cf.webp",
         "label": "21.0 s",
         "frame": 629
       },
       {
-        "url": "/festival/ig/review-v1/natureza-deck-straddle-baixo-1.webp",
+        "url": "/festival/ig/review-v1/natureza-deck-straddle-baixo-1-9e7ad79ad3.webp",
         "label": "21.0 s",
         "frame": 630
       },
       {
-        "url": "/festival/ig/review-v1/natureza-deck-straddle-baixo-2.webp",
+        "url": "/festival/ig/review-v1/natureza-deck-straddle-baixo-2-2e813f1a04.webp",
         "label": "22.5 s",
         "frame": 675
       }
@@ -2474,17 +2503,17 @@
     "count": 1,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/natureza-pavilhao-press-sequencia-0.webp",
+        "url": "/festival/ig/review-v1/natureza-pavilhao-press-sequencia-0-f68fe18d55.webp",
         "label": "11.3 s",
         "frame": 338
       },
       {
-        "url": "/festival/ig/review-v1/natureza-pavilhao-press-sequencia-1.webp",
+        "url": "/festival/ig/review-v1/natureza-pavilhao-press-sequencia-1-6256b8a0d9.webp",
         "label": "11.3 s",
         "frame": 339
       },
       {
-        "url": "/festival/ig/review-v1/natureza-pavilhao-press-sequencia-2.webp",
+        "url": "/festival/ig/review-v1/natureza-pavilhao-press-sequencia-2-0f7c11628e.webp",
         "label": "12.8 s",
         "frame": 384
       }

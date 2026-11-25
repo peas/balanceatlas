@@ -62,3 +62,18 @@ Hashtags (19/11/2026): sempre `#handstand` e `#handstandfest`. Somar `#handstand
 
 - Conferir com o Gabriel se "chute" vale só para a entrada em L ou também para qualquer subida com impulso.
 - Vocabulário de saídas (estrela, lateral) e de apoios ainda não foi revisado por ele.
+
+## Cada post se sustenta sozinho (24/11/2026)
+
+O perfil ainda é pequeno: escrever para quem encontra uma peça pela primeira vez, sem conhecer a pessoa,
+o festival ou o histórico do feed. A capa mostra uma prática concreta e diz o que estamos vendo. Evitar
+“Louisse está confirmada” isolado. Preferir apresentar a prática da professora, mostrar seu trabalho e só
+então explicar que está confirmada no HandstandFest, um festival de parada de mão. Quando a confirmação
+for o próprio gancho, escrever “Professora confirmada no HandstandFest”, com nome completo e contexto.
+Não transformar toda capa em anúncio: prática primeiro, contexto do evento no desenvolvimento.
+
+Todo novo carrossel fecha com um convite claro para enviar o post a alguém, um ícone simples de avião de
+papel e a assinatura HF. Exemplo: “Interessou? Envie este post para quem também quer praticar parada de
+mão com a gente!”. Adaptar o motivo ao tema (exercício, encontro, professora); não repetir mecanicamente
+uma chamada de venda em conteúdo educativo. O ícone é ilustrativo, não um botão clicável dentro da imagem.
+Componente inicial reutilizável: `ig2/kit.tsx` → `ShareClose`. A assinatura fica no último slide.

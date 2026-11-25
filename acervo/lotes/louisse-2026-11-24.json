@@ -1,0 +1,14 @@
+[
+  {
+    "id": "louisse-20261124-video-01",
+    "source": "/Users/peas/Downloads/WhatsApp Video 2026-11-24 at 13.15.13.mp4",
+    "local": "local/festival/louisse-2026-11-24/originals/video-01.mp4",
+    "sha256": "3182edbf90124337c860ed2387c5de61e8addfafeef5fdfe9c490ced4652cd97"
+  },
+  {
+    "id": "louisse-20261124-video-02",
+    "source": "/Users/peas/Downloads/WhatsApp Video 2026-11-24 at 13.15.13 (1).mp4",
+    "local": "local/festival/louisse-2026-11-24/originals/video-02.mp4",
+    "sha256": "490890d710682cdc246c52ca1b5cf92edaed1056e75ece7530c4030dbcbf687b"
+  }
+]

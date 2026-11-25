@@ -110,16 +110,6 @@
     "note": "Confirm crop in uploader; cover does not imply publication approval."
   },
   {
-    "id": "lugar",
-    "composition": "lugar",
-    "frame": 24,
-    "width": 1080,
-    "height": 1920,
-    "url": "/festival/ig/covers-v1/lugar.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
     "id": "futebol",
     "composition": "futebol",
     "frame": 24,
@@ -150,202 +140,12 @@
     "note": "Confirm crop in uploader; cover does not imply publication approval."
   },
   {
-    "id": "ritmo",
-    "composition": "ritmo",
-    "frame": 24,
-    "width": 1080,
-    "height": 1920,
-    "url": "/festival/ig/covers-v1/ritmo.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
     "id": "subida",
     "composition": "subida",
     "frame": 24,
     "width": 1080,
     "height": 1920,
     "url": "/festival/ig/covers-v1/subida.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
-    "id": "porta",
-    "composition": "porta-1",
-    "frame": 24,
-    "width": 1080,
-    "height": 1920,
-    "url": "/festival/ig/covers-v1/porta.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
-    "id": "natureza-cachoeira",
-    "composition": "natureza-cachoeira",
-    "frame": 0,
-    "width": 1080,
-    "height": 1920,
-    "url": "/festival/ig/covers-v1/natureza-cachoeira.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
-    "id": "natureza-comunidade",
-    "composition": "natureza-comunidade",
-    "frame": 0,
-    "width": 1080,
-    "height": 1920,
-    "url": "/festival/ig/covers-v1/natureza-comunidade.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
-    "id": "natureza-pike",
-    "composition": "natureza-pike",
-    "frame": 0,
-    "width": 1080,
-    "height": 1920,
-    "url": "/festival/ig/covers-v1/natureza-pike.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
-    "id": "exercicio-gato-vaca",
-    "composition": "exercicio-gato-vaca",
-    "frame": 180,
-    "width": 1080,
-    "height": 1920,
-    "url": "/festival/ig/covers-v1/exercicio-gato-vaca.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
-    "id": "exercicio-escapulas",
-    "composition": "exercicio-escapulas",
-    "frame": 210,
-    "width": 1080,
-    "height": 1920,
-    "url": "/festival/ig/covers-v1/exercicio-escapulas.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
-    "id": "exercicio-punhos",
-    "composition": "exercicio-punhos",
-    "frame": 150,
-    "width": 1080,
-    "height": 1920,
-    "url": "/festival/ig/covers-v1/exercicio-punhos.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
-    "id": "exercicio-urso-prancha",
-    "composition": "exercicio-urso-prancha",
-    "frame": 360,
-    "width": 1080,
-    "height": 1920,
-    "url": "/festival/ig/covers-v1/exercicio-urso-prancha.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
-    "id": "exercicio-canoinha",
-    "composition": "exercicio-canoinha",
-    "frame": 330,
-    "width": 1080,
-    "height": 1920,
-    "url": "/festival/ig/covers-v1/exercicio-canoinha.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
-    "id": "exercicio-sapinho",
-    "composition": "exercicio-sapinho",
-    "frame": 360,
-    "width": 1080,
-    "height": 1920,
-    "url": "/festival/ig/covers-v1/exercicio-sapinho.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
-    "id": "exercicio-ombros-cadeira",
-    "composition": "exercicio-ombros-cadeira",
-    "frame": 300,
-    "width": 1080,
-    "height": 1920,
-    "url": "/festival/ig/covers-v1/exercicio-ombros-cadeira.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
-    "id": "exercicio-parede",
-    "composition": "exercicio-parede",
-    "frame": 540,
-    "width": 1080,
-    "height": 1920,
-    "url": "/festival/ig/covers-v1/exercicio-parede.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
-    "id": "exercicio-saida-estrela",
-    "composition": "exercicio-saida-estrela",
-    "frame": 90,
-    "width": 1080,
-    "height": 1920,
-    "url": "/festival/ig/covers-v1/exercicio-saida-estrela.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
-    "id": "exercicio-chute-parede",
-    "composition": "exercicio-chute-parede",
-    "frame": 330,
-    "width": 1080,
-    "height": 1920,
-    "url": "/festival/ig/covers-v1/exercicio-chute-parede.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
-    "id": "exercicio-costelas",
-    "composition": "exercicio-costelas",
-    "frame": 210,
-    "width": 1080,
-    "height": 1920,
-    "url": "/festival/ig/covers-v1/exercicio-costelas.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
-    "id": "exercicio-ombros-box",
-    "composition": "exercicio-ombros-box",
-    "frame": 450,
-    "width": 1080,
-    "height": 1920,
-    "url": "/festival/ig/covers-v1/exercicio-ombros-box.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
-    "id": "exercicio-pike-box",
-    "composition": "exercicio-pike-box",
-    "frame": 300,
-    "width": 1080,
-    "height": 1920,
-    "url": "/festival/ig/covers-v1/exercicio-pike-box.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
-    "id": "exercicio-abertura-chao",
-    "composition": "exercicio-abertura-chao",
-    "frame": 270,
-    "width": 1080,
-    "height": 1920,
-    "url": "/festival/ig/covers-v1/exercicio-abertura-chao.webp",
     "status": "review",
     "note": "Confirm crop in uploader; cover does not imply publication approval."
   },
@@ -390,26 +190,6 @@
     "note": "Confirm crop in uploader; cover does not imply publication approval."
   },
   {
-    "id": "agustin-movimento",
-    "composition": "agustin-movimento",
-    "frame": 30,
-    "width": 1080,
-    "height": 1920,
-    "url": "/festival/ig/covers-v1/agustin-movimento.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
-    "id": "gabriel-paisagem",
-    "composition": "gabriel-paisagem",
-    "frame": 0,
-    "width": 1080,
-    "height": 1440,
-    "url": "/festival/ig/covers-v1/gabriel-paisagem.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
     "id": "gravuras-aprovadas",
     "composition": "gravuras-aprovadas-1",
     "frame": 0,
@@ -430,52 +210,12 @@
     "note": "Confirm crop in uploader; cover does not imply publication approval."
   },
   {
-    "id": "ed-consistencia",
-    "composition": "ed-consistencia-1",
-    "frame": 0,
-    "width": 1080,
-    "height": 1440,
-    "url": "/festival/ig/covers-v1/ed-consistencia.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
     "id": "ed-comunidade",
     "composition": "ed-comunidade",
     "frame": 0,
     "width": 1080,
     "height": 1440,
     "url": "/festival/ig/covers-v1/ed-comunidade.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
-    "id": "ed-mundo",
-    "composition": "ed-mundo",
-    "frame": 0,
-    "width": 1080,
-    "height": 1440,
-    "url": "/festival/ig/covers-v1/ed-mundo.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
-    "id": "gabriel-gravura-story",
-    "composition": "gabriel-gravura-story",
-    "frame": 0,
-    "width": 1080,
-    "height": 1920,
-    "url": "/festival/ig/covers-v1/gabriel-gravura-story.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
-    "id": "gabriel-gravura",
-    "composition": "gabriel-gravura",
-    "frame": 0,
-    "width": 1080,
-    "height": 1440,
-    "url": "/festival/ig/covers-v1/gabriel-gravura.webp",
     "status": "review",
     "note": "Confirm crop in uploader; cover does not imply publication approval."
   },
@@ -490,132 +230,12 @@
     "note": "Confirm crop in uploader; cover does not imply publication approval."
   },
   {
-    "id": "gabriel-transicoes-tela",
-    "composition": "gabriel-transicoes-tela",
-    "frame": 0,
-    "width": 1080,
-    "height": 1920,
-    "url": "/festival/ig/covers-v1/gabriel-transicoes-tela.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
     "id": "gabriel-praia",
     "composition": "gabriel-praia",
     "frame": 0,
     "width": 1080,
     "height": 1920,
     "url": "/festival/ig/covers-v1/gabriel-praia.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
-    "id": "natureza-piscina-press-dupla",
-    "composition": "natureza-piscina-press-dupla",
-    "frame": 395,
-    "width": 1080,
-    "height": 1920,
-    "url": "/festival/ig/covers-v1/natureza-piscina-press-dupla.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
-    "id": "natureza-piscina-press-solo",
-    "composition": "natureza-piscina-press-solo",
-    "frame": 377,
-    "width": 1080,
-    "height": 1920,
-    "url": "/festival/ig/covers-v1/natureza-piscina-press-solo.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
-    "id": "natureza-deck-pike-reta",
-    "composition": "natureza-deck-pike-reta",
-    "frame": 479,
-    "width": 1080,
-    "height": 1920,
-    "url": "/festival/ig/covers-v1/natureza-deck-pike-reta.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
-    "id": "natureza-deck-tuck-reta",
-    "composition": "natureza-deck-tuck-reta",
-    "frame": 518,
-    "width": 1080,
-    "height": 1920,
-    "url": "/festival/ig/covers-v1/natureza-deck-tuck-reta.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
-    "id": "natureza-deck-entrada-agrupada",
-    "composition": "natureza-deck-entrada-agrupada",
-    "frame": 314,
-    "width": 1080,
-    "height": 1920,
-    "url": "/festival/ig/covers-v1/natureza-deck-entrada-agrupada.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
-    "id": "natureza-deck-straddle-frente",
-    "composition": "natureza-deck-straddle-frente",
-    "frame": 959,
-    "width": 1080,
-    "height": 1920,
-    "url": "/festival/ig/covers-v1/natureza-deck-straddle-frente.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
-    "id": "natureza-deck-straddle-baixo",
-    "composition": "natureza-deck-straddle-baixo",
-    "frame": 629,
-    "width": 1080,
-    "height": 1920,
-    "url": "/festival/ig/covers-v1/natureza-deck-straddle-baixo.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
-    "id": "natureza-pavilhao-press-sequencia",
-    "composition": "natureza-pavilhao-press-sequencia",
-    "frame": 338,
-    "width": 1080,
-    "height": 1920,
-    "url": "/festival/ig/covers-v1/natureza-pavilhao-press-sequencia.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
-    "id": "ed-formas",
-    "composition": "ed-formas-1",
-    "frame": 0,
-    "width": 1080,
-    "height": 1440,
-    "url": "/festival/ig/covers-v1/ed-formas.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
-    "id": "turma",
-    "composition": "turma-1",
-    "frame": 24,
-    "width": 1080,
-    "height": 1440,
-    "url": "/festival/ig/covers-v1/turma.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
-    "id": "ed-festival",
-    "composition": "ed-festival",
-    "frame": 0,
-    "width": 1080,
-    "height": 1440,
-    "url": "/festival/ig/covers-v1/ed-festival-e8d7dc30ff.webp",
     "status": "review",
     "note": "Confirm crop in uploader; cover does not imply publication approval."
   },
@@ -640,16 +260,6 @@
     "note": "Confirm crop in uploader; cover does not imply publication approval."
   },
   {
-    "id": "gabriel-drill-saida-parede",
-    "composition": "gabriel-drill-saida-parede",
-    "frame": 120,
-    "width": 1080,
-    "height": 1920,
-    "url": "/festival/ig/covers-v1/gabriel-drill-saida-parede-c14b099458.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
     "id": "gabriel-drill-gato-vaca-perfil",
     "composition": "gabriel-drill-gato-vaca-perfil",
     "frame": 120,
@@ -660,42 +270,12 @@
     "note": "Confirm crop in uploader; cover does not imply publication approval."
   },
   {
-    "id": "gabriel-drill-saida-cadeira",
-    "composition": "gabriel-drill-saida-cadeira",
-    "frame": 120,
-    "width": 1080,
-    "height": 1920,
-    "url": "/festival/ig/covers-v1/gabriel-drill-saida-cadeira-401870545d.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
     "id": "gabriel-drill-chute-parede",
     "composition": "gabriel-drill-chute-parede",
     "frame": 120,
     "width": 1080,
     "height": 1920,
     "url": "/festival/ig/covers-v1/gabriel-drill-chute-parede-c08585a292.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
-    "id": "gabriel-drill-escapulas",
-    "composition": "gabriel-drill-escapulas",
-    "frame": 120,
-    "width": 1080,
-    "height": 1920,
-    "url": "/festival/ig/covers-v1/gabriel-drill-escapulas-fca26f3405.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
-    "id": "gabriel-drill-escapulas-perfil",
-    "composition": "gabriel-drill-escapulas-perfil",
-    "frame": 120,
-    "width": 1080,
-    "height": 1920,
-    "url": "/festival/ig/covers-v1/gabriel-drill-escapulas-perfil-34ece2b7b7.webp",
     "status": "review",
     "note": "Confirm crop in uploader; cover does not imply publication approval."
   },
@@ -730,12 +310,442 @@
     "note": "Confirm crop in uploader; cover does not imply publication approval."
   },
   {
+    "id": "lugar",
+    "composition": "lugar",
+    "frame": 24,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/lugar-13b2eb85e5.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "ritmo",
+    "composition": "ritmo",
+    "frame": 24,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/ritmo-3a7007b4c6.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "porta",
+    "composition": "porta-1",
+    "frame": 24,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/porta-67128edce8.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "natureza-cachoeira",
+    "composition": "natureza-cachoeira",
+    "frame": 0,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/natureza-cachoeira-00c9a71a73.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "natureza-comunidade",
+    "composition": "natureza-comunidade",
+    "frame": 0,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/natureza-comunidade-ce6091d02f.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "natureza-pike",
+    "composition": "natureza-pike",
+    "frame": 0,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/natureza-pike-dfcf8e4d93.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "exercicio-gato-vaca",
+    "composition": "exercicio-gato-vaca",
+    "frame": 180,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/exercicio-gato-vaca-c3fb0b9920.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "exercicio-escapulas",
+    "composition": "exercicio-escapulas",
+    "frame": 210,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/exercicio-escapulas-175117bb10.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "exercicio-punhos",
+    "composition": "exercicio-punhos",
+    "frame": 150,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/exercicio-punhos-0d49c3b283.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "exercicio-urso-prancha",
+    "composition": "exercicio-urso-prancha",
+    "frame": 360,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/exercicio-urso-prancha-2d2a53b73f.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "exercicio-canoinha",
+    "composition": "exercicio-canoinha",
+    "frame": 330,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/exercicio-canoinha-3ca009c28a.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "exercicio-sapinho",
+    "composition": "exercicio-sapinho",
+    "frame": 360,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/exercicio-sapinho-b9fc2d7b6a.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "exercicio-ombros-cadeira",
+    "composition": "exercicio-ombros-cadeira",
+    "frame": 300,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/exercicio-ombros-cadeira-053d607839.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "exercicio-parede",
+    "composition": "exercicio-parede",
+    "frame": 540,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/exercicio-parede-082f9aef91.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "exercicio-saida-estrela",
+    "composition": "exercicio-saida-estrela",
+    "frame": 90,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/exercicio-saida-estrela-582714606e.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "exercicio-chute-parede",
+    "composition": "exercicio-chute-parede",
+    "frame": 330,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/exercicio-chute-parede-39aac668a6.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "exercicio-costelas",
+    "composition": "exercicio-costelas",
+    "frame": 210,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/exercicio-costelas-7b82ee9a1d.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "exercicio-ombros-box",
+    "composition": "exercicio-ombros-box",
+    "frame": 450,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/exercicio-ombros-box-954afa2e19.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "exercicio-pike-box",
+    "composition": "exercicio-pike-box",
+    "frame": 300,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/exercicio-pike-box-a7cfbbf11e.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "exercicio-abertura-chao",
+    "composition": "exercicio-abertura-chao",
+    "frame": 270,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/exercicio-abertura-chao-fef3de0473.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
     "id": "agustin-apresentacao",
     "composition": "agustin-apresentacao-1",
     "frame": 0,
     "width": 1080,
     "height": 1440,
-    "url": "/festival/ig/covers-v1/agustin-apresentacao-8342f0daeb.webp",
+    "url": "/festival/ig/covers-v1/agustin-apresentacao-d0f18954ef.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "agustin-movimento",
+    "composition": "agustin-movimento",
+    "frame": 30,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/agustin-movimento-b07cd4914e.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "turma",
+    "composition": "turma-1",
+    "frame": 24,
+    "width": 1080,
+    "height": 1440,
+    "url": "/festival/ig/covers-v1/turma-02424915c1.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "gabriel-paisagem",
+    "composition": "gabriel-paisagem",
+    "frame": 0,
+    "width": 1080,
+    "height": 1440,
+    "url": "/festival/ig/covers-v1/gabriel-paisagem-ca7a4aa5f7.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "ed-consistencia",
+    "composition": "ed-consistencia-1",
+    "frame": 0,
+    "width": 1080,
+    "height": 1440,
+    "url": "/festival/ig/covers-v1/ed-consistencia-4f9730afac.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "ed-formas",
+    "composition": "ed-formas-1",
+    "frame": 0,
+    "width": 1080,
+    "height": 1440,
+    "url": "/festival/ig/covers-v1/ed-formas-5c5b0e0d2a.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "ed-festival",
+    "composition": "ed-festival",
+    "frame": 0,
+    "width": 1080,
+    "height": 1440,
+    "url": "/festival/ig/covers-v1/ed-festival-a41724bc9d.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "ed-mundo",
+    "composition": "ed-mundo",
+    "frame": 0,
+    "width": 1080,
+    "height": 1440,
+    "url": "/festival/ig/covers-v1/ed-mundo-d38c93991d.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "gabriel-gravura-story",
+    "composition": "gabriel-gravura-story",
+    "frame": 0,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/gabriel-gravura-story-fbd0b824ec.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "gabriel-gravura",
+    "composition": "gabriel-gravura",
+    "frame": 0,
+    "width": 1080,
+    "height": 1440,
+    "url": "/festival/ig/covers-v1/gabriel-gravura-f8b3880524.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "gabriel-drill-escapulas",
+    "composition": "gabriel-drill-escapulas",
+    "frame": 120,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/gabriel-drill-escapulas-725c5ce952.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "gabriel-drill-saida-parede",
+    "composition": "gabriel-drill-saida-parede",
+    "frame": 120,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/gabriel-drill-saida-parede-0d78937299.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "gabriel-drill-escapulas-perfil",
+    "composition": "gabriel-drill-escapulas-perfil",
+    "frame": 120,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/gabriel-drill-escapulas-perfil-57bcfcffb5.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "gabriel-drill-saida-cadeira",
+    "composition": "gabriel-drill-saida-cadeira",
+    "frame": 120,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/gabriel-drill-saida-cadeira-558b3d33d2.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "gabriel-transicoes-tela",
+    "composition": "gabriel-transicoes-tela",
+    "frame": 0,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/gabriel-transicoes-tela-b450f22139.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "natureza-piscina-press-dupla",
+    "composition": "natureza-piscina-press-dupla",
+    "frame": 395,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/natureza-piscina-press-dupla-990a80adf3.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "natureza-piscina-press-solo",
+    "composition": "natureza-piscina-press-solo",
+    "frame": 377,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/natureza-piscina-press-solo-1dd52e0532.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "natureza-deck-pike-reta",
+    "composition": "natureza-deck-pike-reta",
+    "frame": 479,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/natureza-deck-pike-reta-b9d6ae640f.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "natureza-deck-tuck-reta",
+    "composition": "natureza-deck-tuck-reta",
+    "frame": 518,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/natureza-deck-tuck-reta-d54fa9ace6.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "natureza-deck-entrada-agrupada",
+    "composition": "natureza-deck-entrada-agrupada",
+    "frame": 314,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/natureza-deck-entrada-agrupada-52b4116b70.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "natureza-deck-straddle-frente",
+    "composition": "natureza-deck-straddle-frente",
+    "frame": 959,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/natureza-deck-straddle-frente-1d99671483.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "natureza-deck-straddle-baixo",
+    "composition": "natureza-deck-straddle-baixo",
+    "frame": 629,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/natureza-deck-straddle-baixo-fb627d1029.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "natureza-pavilhao-press-sequencia",
+    "composition": "natureza-pavilhao-press-sequencia",
+    "frame": 338,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/natureza-pavilhao-press-sequencia-64efc71816.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "louisse-confirmada",
+    "composition": "louisse-confirmada-1",
+    "frame": 60,
+    "width": 1080,
+    "height": 1440,
+    "url": "/festival/ig/covers-v1/louisse-confirmada-246049e313.webp",
     "status": "review",
     "note": "Confirm crop in uploader; cover does not imply publication approval."
   }

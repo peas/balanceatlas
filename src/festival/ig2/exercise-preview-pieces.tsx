@@ -11,7 +11,7 @@ function ExercisePreview({id,seconds,...props}:PieceProps&{id:string;seconds:num
  return <Canvas {...props} dark signature={false}>
   <Freeze active={frame>=freezeAt} frame={freezeAt}><Video src={`${MEDIA}/gabriel-filming-v1/${id}.mp4`} muted style={{position:'absolute',inset:0,width:'100%',height:'100%',objectFit:'cover',filter:'saturate(.65) contrast(1.08) brightness(1.08)'}}/></Freeze>
   <div style={{position:'absolute',inset:0,background:'linear-gradient(180deg,rgba(10,35,28,.8),transparent 28%,transparent 70%,rgba(10,35,28,.75))'}}/>
-  <Label y={275} color={CHALK} size={34}>HANDSTAND LIFE</Label>
+  <Label y={275} color={CHALK} size={34}>PREPARAÇÃO PARA A PARADA DE MÃO</Label>
   <Headline lines={titles[id]} y={340} size={72} dark/>
   <BrandSeal x={700} y={580} size={230}/>
  </Canvas>;

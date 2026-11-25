@@ -14,7 +14,137 @@
 #   posted_at: written by the script after it SEES Instagram's confirmation. Do not edit,
 #              except to fill it by hand (ISO date) when the post went out from a phone.
 #
-# Stories are not supported by Instagram on desktop web: post them from the phone or
-# from Meta Business Suite.
+# This script handles feed/Reels only. Story UI varies; InstaDesk share-to-story was
+# tested separately on 2026-11-24 in a mobile-size Chrome viewport.
 
-posts: []
+posts:
+  [
+    {
+        id: abertura-participar,
+        images:
+          [
+            local/festival/prontos/2026-11-20/03-ainda-estou-na-parede-1.jpg,
+            local/festival/prontos/2026-11-20/03-ainda-estou-na-parede-2.jpg,
+            local/festival/prontos/2026-11-20/03-ainda-estou-na-parede-3.jpg,
+            local/festival/prontos/2026-11-20/03-ainda-estou-na-parede-4.jpg
+          ],
+        when: 2026-11-21 00:00,
+        caption: "Você não precisa chegar ao festival dominando a parada de mão livre.
+          Há turma de básico para quem ainda usa a parede, e turma de
+          intermediário e avançado para quem já sustenta o livre com
+          consistência.
+
+
+          Confira os critérios e as orientações no site. Na dúvida, mande um
+          vídeo curto ao se inscrever para ajudarmos na escolha.
+
+
+          O 1º HandstandFest acontece de 16 a 18 de abril de 2027, no Trapézio
+          Voador, em São Paulo. Informações e inscrições em
+          handstandfest.com.br, no link da bio.
+
+
+          #handstand #handstandfest",
+        posted_at: 2026-11-22T02:45:26.491Z,
+        url: https://www.instagram.com/handstandfest/p/DgBw1TWpWUS/
+      },
+    {
+        id: gabriel-drill-chute-parede,
+        video: local/festival/publicacao/2026-11-23-entrada-parede/entrada-parede-musica.mp4,
+        cover: local/festival/prontos/2026-11-20/04-entrada-na-parede-capa.jpg,
+        when: 2026-11-23 00:00,
+        caption: "A entrada na parede para o handstand dá trabalho e dá medo! Aqui o
+          Gabriel mostra algumas formas de entrar, usando a parede como apoio.
+
+
+          Repare nos apoios e no caminho do quadril. Não precisa chegar de uma
+          vez à posição final. Cada praticante vai construindo esse caminho.
+
+
+          Como está a sua entrada na parede?
+
+
+          Handstand Life: Guia de Sobrevivência.
+
+          Música: Hip Latin Jazz Groove, de Alejandro Magaña (A. M.), via
+          Mixkit.
+
+
+          #handstand #handstandfest #handstandlife",
+        posted_at: 2026-11-23T19:47:47.425Z,
+        receipt_note: Timestamp is confirmation observation time; Instagram showed Reel
+          compartilhado and live permalink verified.,
+        url: https://www.instagram.com/handstandfest/reel/DgGD5VIq551/,
+        music: "Hip Latin Jazz Groove — Alejandro Magaña (A. M.), Mixkit 112; embedded
+          audio"
+      },
+    {
+        id: ed-comunidade,
+        image: local/festival/prontos/2026-11-20/05-treinar-junto.jpg,
+        when: 2026-11-24 00:00,
+        caption: "Treinar junto é observar, conversar e trocar experiências. Queremos
+          fortalecer a comunidade de handstand do Brasil!
+
+
+          Estamos mapeando encontros, grupos e lugares para treinar. Em que
+          cidade você está? Que espaço ou grupo indica?
+
+
+          Foto do acervo do Paulo, de um retiro de handstand com Yuval na
+          Tailândia, em 2026.
+
+
+          #handstand #handstandfest #handstandlife",
+        posted_at: 2026-11-25T00:34:50.273Z,
+        receipt_note: "Confirmation observation time. Instagram showed Post
+          compartilhado; live permalink verified. Static photo, no music.",
+        url: https://www.instagram.com/handstandfest/p/DgJP7InqkV7/
+      },
+    {
+        id: louisse-confirmada,
+        images:
+          [
+            local/festival/publicacao/2026-11-25-louisse/01-louisse.jpg,
+            local/festival/publicacao/2026-11-25-louisse/02-louisse.mp4,
+            local/festival/publicacao/2026-11-25-louisse/03-louisse.jpg,
+            local/festival/publicacao/2026-11-25-louisse/04-louisse.mp4,
+            local/festival/publicacao/2026-11-25-louisse/05-louisse.jpg,
+            local/festival/publicacao/2026-11-25-louisse/06-louisse.jpg
+          ],
+        when: 2026-11-25 00:00,
+        caption: "Olha o que a professora Louisse Aldrigues faz na parada de mão!
+
+
+          Ela está confirmada no 1º HandstandFest, um festival de parada de mão
+          com aulas e encontros para praticar e trocar experiências.
+
+
+          Nascida em Brasília, começou no circo em 2011 e se especializou em
+          parada de mão na Escola Nacional de Circo. É professora de parada de
+          mão desde 2015.
+
+
+          Vamos praticar com ela de 16 a 18 de abril de 2027, no Trapézio
+          Voador, em São Paulo.
+
+
+          Interessou? Envie este post para quem também quer praticar handstand!
+          Informações e inscrições no link da bio.
+
+
+          Fotos: Louisse Aldrigues.
+
+          Música nos vídeos: Coffee or Tea, de Michael Ramir C., via Mixkit.
+
+
+          #handstand #handstandfest",
+        posted_at: 2026-11-25T12:45:21.787Z,
+        url: https://www.instagram.com/handstandfest/p/DgKjzW-JR4U/,
+        collaborator: lou.handstand,
+        story_shared_on: 2026-11-25,
+        story_proof: local/festival/publicacao/2026-11-25-louisse/story-publicado.png,
+        collaboration_status: invited-awaiting-acceptance,
+        receipt_note: Live carousel verified; Instagram explicitly showed lou.handstand
+          was invited but has not accepted. Observation timestamp.
+      }
+  ]

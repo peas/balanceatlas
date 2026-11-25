@@ -29,7 +29,7 @@ function NatureReel({item,...p}:PieceProps & {item:Item}) {
    {art&&<EngravedFreeze src={mediaUrl(item.file+'-freeze.webp')} art={art} at={at}/>}
    <div style={{position:'absolute',inset:0,background:item.lowerTitle?'linear-gradient(180deg,transparent 52%,rgba(8,29,24,.86) 59%,rgba(8,29,24,.86) 72%,rgba(8,29,24,.45))':'linear-gradient(180deg,rgba(8,29,24,.94),rgba(8,29,24,.80) 18%,transparent 28%,transparent 75%,rgba(8,29,24,.6))'}}/>
   </div>
-  <Label y={titleY-70} size={34} color={CHALK}>#HANDSTANDLIFE</Label>
+  <Label y={titleY-70} size={34} color={CHALK}>PARADA DE MÃO · #HANDSTANDLIFE</Label>
   {frozen?<Sequence from={at}><Headline lines={item.close!} y={titleY} size={72} accentLine={art?-1:0} dark/></Sequence>:<>
    <Headline lines={item.hook} y={titleY} size={72} accentLine={-1} dark/>
    <BrushStroke color="#dfab5b" style={{position:'absolute',left:65,top:titleY+175,width:780,height:14,clipPath:`inset(0 ${(1-move(frame,5,24))*100}% 0 0)`}}/>
@@ -44,7 +44,7 @@ function NaturePhoto({item,...p}:PieceProps & {item:Item}) {
    <Img src={mediaUrl(item.file+'.webp')} style={full}/>
    <div style={{position:'absolute',inset:0,background:'linear-gradient(180deg,rgba(8,29,24,.94),rgba(8,29,24,.8) 18%,transparent 28%,transparent 75%,rgba(8,29,24,.6))'}}/>
   </div>
-  <Label y={205} size={34} color={CHALK}>#HANDSTANDLIFE</Label>
+  <Label y={205} size={34} color={CHALK}>PARADA DE MÃO · #HANDSTANDLIFE</Label>
   <Headline lines={item.hook} y={275} size={72} accentLine={-1} dark/>
   <BrushStroke color="#dfab5b" style={{position:'absolute',left:65,top:450,width:780,height:24}}/>
   <BrandSeal x={item.sealX} y={item.sealY} size={230} still/>

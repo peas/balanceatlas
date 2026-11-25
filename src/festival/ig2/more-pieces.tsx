@@ -14,10 +14,10 @@ function Signoff({ guides, palette, title, question }: PieceProps & { title: str
 }
 
 function Shapes(p:PieceProps){const frame=useCurrentFrame();return <><Sequence durationInFrames={f(18)}><VideoScene {...p} src="ig2-formas" wide lines={frame<f(6.5)?['PARADA?','SÓ NO NOME.']:['BALANCING:','AJUSTES CONTÍNUOS.']}/></Sequence><Sequence from={f(18)} durationInFrames={f(3.5)}><Signoff {...p} title={['Um apoio.','Muitas formas.']} question="As figuras mudam. Os ajustes continuam, mesmo quando a forma parece parada."/></Sequence></>;}
-function Legs(p:PieceProps){const frame=useCurrentFrame();return <><Sequence durationInFrames={f(12)}><VideoScene {...p} src="ig2-pernas-l" wide look="pb" lines={frame<f(6)?['VAMOS TREINAR','JUNTOS?']:['3 DIAS.','UMA COMUNIDADE.']}/></Sequence><Sequence from={f(12)} durationInFrames={f(3.5)}><EndCard {...p} cta="Todos os níveis. Vem junto."/></Sequence></>;}
+function Legs(p:PieceProps){const frame=useCurrentFrame();return <><Sequence durationInFrames={f(12)}><VideoScene {...p} src="ig2-pernas-l" wide look="pb" lines={frame<f(6)?['PARADA DE MÃO:','VAMOS JUNTOS?']:['TREINAR,','OBSERVAR, TROCAR.']}/></Sequence><Sequence from={f(12)} durationInFrames={f(3.5)}><EndCard {...p} cta="Festival de parada de mão: aulas e encontros para praticar juntos."/></Sequence></>;}
 function Press(p:PieceProps){const frame=useCurrentFrame();return <><Sequence durationInFrames={f(12)}><VideoScene {...p} src="ig2-press-parque" wide lines={frame<f(6)?['DA PAREDE','ÀS NOVAS FORMAS.']:['TEM ESPAÇO','PARA VOCÊ.']}/></Sequence><Sequence from={f(12)} durationInFrames={f(3.5)}><EndCard {...p} cta="Treinar, trocar e aprender juntos."/></Sequence></>;}
-function Door(p:PieceProps){return <VideoScene {...p} src="ig2-porta" lines={['CONHEÇA O','HANDSTANDFEST.']} note="TRAPÉZIO VOADOR · BUTANTÃ"/>;}
-function Inside(p:PieceProps){return <VideoScene {...p} src="ig2-porta" from={5.5} lines={['GABRIEL ABRE','A PORTA.']} note="UM DOS ESPAÇOS DO FESTIVAL"/>;}
+function Door(p:PieceProps){return <VideoScene {...p} src="ig2-porta" lines={['ONDE SERÁ O','HANDSTANDFEST?']} note="FESTIVAL DE PARADA DE MÃO · SÃO PAULO"/>;}
+function Inside(p:PieceProps){return <VideoScene {...p} src="ig2-porta" from={5.5} lines={['GABRIEL ABRE','A PORTA.']} note="TRAPÉZIO VOADOR · 16–18 ABR 2027"/>;}
 
 const photos = [
   { name: 'A pergunta', title: ['Uma parada.', 'Quantas', 'formas?'], src: 'ig2-estrela-aberta.webp', size: 82, note: 'UM TREINO, VÁRIOS INSTANTES', caption: 'O que muda quando as pernas se afastam?', look: 'cor' },

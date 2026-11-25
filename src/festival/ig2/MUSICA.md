@@ -1,5 +1,7 @@
 # Música para o HandstandFest
 
+**Atualização de 23/11/2026:** para eletrônica/instrumental com licença para incorporar ao MP4, consultar [a seleção e o registro de direitos](../../../docs/instagram/music/2026-11-23-trilhas-licenciadas.md). Primeiro teste: Hip Latin Jazz Groove (Mixkit). As faixas brasileiras abaixo são referências estéticas; não são um acervo liberado para publicidade.
+
 Pesquisa e proposta editorial: 11/11/2026. Direção do Paulo: batida, cultura e ritmo brasileiros; a energia de Karol G é uma referência de impacto, sem pedir uma cópia de reggaeton. Evitar transformar handstand em trilha ambiente de yoga.
 
 ## Primeiros testes

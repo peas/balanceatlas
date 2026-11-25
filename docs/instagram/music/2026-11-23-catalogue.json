@@ -1,0 +1,116 @@
+{
+  "checked": "2026-11-23",
+  "source": "https://mixkit.co/free-stock-music/electronic/",
+  "license": "https://mixkit.co/license/modal/musicFree/",
+  "tracks": [
+    {
+      "@id": "Digital Clouds",
+      "@type": "MusicRecording",
+      "name": "Digital Clouds",
+      "genre": "Chillout",
+      "byArtist": "Alejandro Magaña (A. M.)",
+      "duration": "PT1M41S",
+      "url": "https://assets.mixkit.co/music/175/175.mp3",
+      "waveformUrl": "https://assets.mixkit.co/music/175/175-waveform.json",
+      "copyrightNotice": "Mixkit Stock Music Free License",
+      "encodingFormat": "audio/mpeg",
+      "isAccessibleForFree": true,
+      "license": "https://mixkit.co/license/#musicFree",
+      "publisher": {
+        "@id": "https://mixkit.co/#organization"
+      },
+      "datePublished": "2020-01-28"
+    },
+    {
+      "@id": "Trap Electro Vibes",
+      "@type": "MusicRecording",
+      "name": "Trap Electro Vibes",
+      "genre": "Electronic",
+      "byArtist": "Alejandro Magaña (A. M.)",
+      "duration": "PT1M56S",
+      "url": "https://assets.mixkit.co/music/126/126.mp3",
+      "waveformUrl": "https://assets.mixkit.co/music/126/126-waveform.json",
+      "copyrightNotice": "Mixkit Stock Music Free License",
+      "encodingFormat": "audio/mpeg",
+      "isAccessibleForFree": true,
+      "license": "https://mixkit.co/license/#musicFree",
+      "publisher": {
+        "@id": "https://mixkit.co/#organization"
+      },
+      "datePublished": "2020-01-28"
+    },
+    {
+      "@id": "Coffee or Tea",
+      "@type": "MusicRecording",
+      "name": "Coffee or Tea",
+      "genre": "Electronica",
+      "byArtist": "Michael Ramir C.",
+      "duration": "PT2M5S",
+      "url": "https://assets.mixkit.co/music/1168/1168.mp3",
+      "waveformUrl": "https://assets.mixkit.co/music/1168/1168-waveform.json",
+      "copyrightNotice": "Mixkit Stock Music Free License",
+      "encodingFormat": "audio/mpeg",
+      "isAccessibleForFree": true,
+      "license": "https://mixkit.co/license/#musicFree",
+      "publisher": {
+        "@id": "https://mixkit.co/#organization"
+      },
+      "datePublished": "2020-01-28"
+    },
+    {
+      "@id": "Kraft Twerk",
+      "@type": "MusicRecording",
+      "name": "Kraft Twerk",
+      "genre": "Electronica",
+      "byArtist": "Alejandro Magaña (A. M.)",
+      "duration": "PT2M10S",
+      "url": "https://assets.mixkit.co/music/115/115.mp3",
+      "waveformUrl": "https://assets.mixkit.co/music/115/115-waveform.json",
+      "copyrightNotice": "Mixkit Stock Music Free License",
+      "encodingFormat": "audio/mpeg",
+      "isAccessibleForFree": true,
+      "license": "https://mixkit.co/license/#musicFree",
+      "publisher": {
+        "@id": "https://mixkit.co/#organization"
+      },
+      "datePublished": "2020-01-28"
+    },
+    {
+      "@id": "Hip Latin Jazz Groove",
+      "@type": "MusicRecording",
+      "name": "Hip Latin Jazz Groove",
+      "genre": "Electronica",
+      "byArtist": "Alejandro Magaña (A. M.)",
+      "duration": "PT1M49S",
+      "url": "https://assets.mixkit.co/music/112/112.mp3",
+      "waveformUrl": "https://assets.mixkit.co/music/112/112-waveform.json",
+      "copyrightNotice": "Mixkit Stock Music Free License",
+      "encodingFormat": "audio/mpeg",
+      "isAccessibleForFree": true,
+      "license": "https://mixkit.co/license/#musicFree",
+      "publisher": {
+        "@id": "https://mixkit.co/#organization"
+      },
+      "datePublished": "2020-01-28"
+    },
+    {
+      "@id": "Silk",
+      "@type": "MusicRecording",
+      "name": "Silk",
+      "genre": "Chillout",
+      "byArtist": "Alejandro Magaña (A. M.)",
+      "duration": "PT1M38S",
+      "url": "https://assets.mixkit.co/music/143/143.mp3",
+      "waveformUrl": "https://assets.mixkit.co/music/143/143-waveform.json",
+      "copyrightNotice": "Mixkit Stock Music Free License",
+      "encodingFormat": "audio/mpeg",
+      "isAccessibleForFree": true,
+      "license": "https://mixkit.co/license/#musicFree",
+      "publisher": {
+        "@id": "https://mixkit.co/#organization"
+      },
+      "datePublished": "2020-01-28"
+    }
+  ],
+  "notes": "Candidates selected from provider metadata, not a claim of native Instagram library availability. Actual listening preference remains to be reviewed by Paulo."
+}

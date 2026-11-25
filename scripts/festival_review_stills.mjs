@@ -5,18 +5,19 @@ import sharp from 'sharp';
 import path from 'node:path';
 import {createHash} from 'node:crypto';
 import fs from 'node:fs/promises';
-if(process.argv.includes('--help')){console.log('Usage: node scripts/festival_review_stills.mjs [--only id-prefix]\nBuilds a fresh local/festival/review-bundle. Renders review thumbnails for every active piece and full-resolution covers (local PNG + public WebP) with a provenance manifest. No MP4 export or Instagram posting.');process.exit(0);}
+if(process.argv.includes('--help')){console.log('Usage: node scripts/festival_review_stills.mjs [--only id-prefix[,id-prefix…]]\nBuilds a fresh local/festival/review-bundle. Renders review thumbnails for every active piece and full-resolution covers (local PNG + public WebP) with a provenance manifest. No MP4 export or Instagram posting.');process.exit(0);}
 await fs.mkdir('public/festival/ig/covers-v1',{recursive:true});
 await fs.mkdir('local/festival/covers',{recursive:true});
 const prefix=process.argv.includes('--only')?process.argv[process.argv.indexOf('--only')+1]:null;
 if(process.argv.includes('--only')&&!prefix)throw Error('--only requires an ID prefix');
-const covers=prefix?JSON.parse(await fs.readFile('public/festival/ig/covers-v1/manifest.json','utf8')).filter(p=>!p.id.startsWith(prefix)):[];
+const matches=id=>!prefix||prefix.split(',').some(p=>id.startsWith(p));
+const covers=prefix?JSON.parse(await fs.readFile('public/festival/ig/covers-v1/manifest.json','utf8')).filter(p=>p&&!matches(p.id)):[];
 const serveUrl=await bundle({entryPoint:'src/festival/ig2/review-render.tsx',outDir:path.resolve('local/festival/review-bundle'),publicDir:path.resolve('local/festival/render-public')});
 const browser=await openBrowser('chrome');
 try {
  const comps=await getCompositions(serveUrl,{puppeteerInstance:browser});
- const pieces=new Map(prefix?JSON.parse(await fs.readFile('src/festival/ig2/review-shots.json','utf8')).filter(p=>!p.id.startsWith(prefix)).map(p=>[p.id,p]):[]);
- for(const c of comps){const r=c.props.review;if(prefix&&!r.id.startsWith(prefix))continue; if(!pieces.has(r.id))pieces.set(r.id,{...r,shots:[]});
+ const pieces=new Map(prefix?JSON.parse(await fs.readFile('src/festival/ig2/review-shots.json','utf8')).filter(p=>p&&!matches(p.id)).map(p=>[p.id,p]):[]);
+ for(const c of comps){const r=c.props.review;if(!matches(r.id))continue; if(!pieces.has(r.id))pieces.set(r.id,{...r,shots:[]});
  if(r.index===0){
  const frame=Math.max(0,Math.min(r.cover??90,c.durationInFrames-1));
  const output=`local/festival/covers/${r.id}.png`;
@@ -43,7 +44,7 @@ try {
  }
  console.log(c.id);
  }
- await fs.writeFile('src/festival/ig2/review-shots.json',JSON.stringify([...new Set(comps.map(c=>c.props.review.id))].map(id=>pieces.get(id)),null,2));
+ await fs.writeFile('src/festival/ig2/review-shots.json',JSON.stringify([...new Set(comps.map(c=>c.props.review.id))].map(id=>pieces.get(id)).filter(Boolean),null,2));
  await fs.writeFile('public/festival/ig/covers-v1/manifest.json',JSON.stringify(covers,null,2));
  console.log('DONE',pieces.size,'covers',covers.length);
 }finally{await browser.close({silent:true});}

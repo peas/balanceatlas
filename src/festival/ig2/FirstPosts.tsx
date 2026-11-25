@@ -55,7 +55,7 @@ export default function FirstPosts() {
           <div>
             {piece ? <div className="ed-slides">
               {reel && <Preview slide={{ ...piece.slides[0], name: 'Capa', cues: [] }} still ready={ready} inputProps={input} label={`${day.title}, capa`} />}
-              {piece.slides.map((slide, n) => <Preview key={n} slide={slide} still={!reel} ready={ready} inputProps={input} label={`${day.title}, ${slide.name}`} />)}
+              {piece.slides.map((slide, n) => <Preview key={n} slide={slide} still={slide.media ? slide.media === 'image' : !reel} ready={ready} inputProps={input} label={`${day.title}, ${slide.name}`} />)}
             </div> : <div className="ed-placeholder"><span>A PRODUZIR</span><h3>{day.hook}</h3><p>{day.missing}</p></div>}
           </div>
           <aside>

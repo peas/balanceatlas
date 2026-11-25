@@ -1,3 +1,4 @@
+import { LOUISSE_PIECES } from './louisse-pieces';
 // CLI-only entry: shared compositions, local fonts and the same CSS tokens as the website.
 import { Composition, continueRender, delayRender, registerRoot, staticFile, cancelRender } from 'remotion';
 import { PIECES } from './pieces';
@@ -18,7 +19,7 @@ Promise.all([
   .then(() => continueRender(fontsReady)).catch(cancelRender);
 
 function RenderRoot() {
-  return <>{[...PIECES, ...EDITORIAL_PIECES, ...GABRIEL_PIECES, ...NATURE_PIECES, ...OPENING_PIECES, ...AGUSTIN_PIECES, ...GABRIEL_TRAINING_PIECES, ...EXERCISE_PREVIEW_PIECES].flatMap(piece => piece.slides.map((slide, i) => ({piece,slide,i}))).map(({piece,slide,i}) => {
+  return <>{[...LOUISSE_PIECES, ...PIECES, ...EDITORIAL_PIECES, ...GABRIEL_PIECES, ...NATURE_PIECES, ...OPENING_PIECES, ...AGUSTIN_PIECES, ...GABRIEL_TRAINING_PIECES, ...EXERCISE_PREVIEW_PIECES].flatMap(piece => piece.slides.map((slide, i) => ({piece,slide,i}))).map(({piece,slide,i}) => {
     return <Composition key={`${piece.id}-${i}`} id={piece.slides.length === 1 ? piece.id : `${piece.id}-${i+1}`}  component={slide.component} durationInFrames={Math.round(slide.seconds * 30)} fps={30} width={1080} height={slide.height} defaultProps={{ guides: false, treatment: 'direction' as const }} />;
   })}</>;
 }

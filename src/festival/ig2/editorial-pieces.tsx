@@ -1,6 +1,6 @@
 import { Freeze, Img, getRemotionEnvironment, staticFile } from 'remotion';
 import EngravingArtwork, { type EngravingFigure, type PaintShape } from '../EngravingArtwork';
-import { Canvas, PracticeClose, Headline, Label, type PieceProps, CHALK, STAGE } from './kit';
+import { Canvas, ShareClose, Headline, Label, type PieceProps, CHALK, STAGE } from './kit';
 import type { Piece } from './pieces';
 import { EDITORIAL_IMAGES, type EditorialImageKey } from './editorial-images';
 import { QUANDO } from '../data';
@@ -17,17 +17,17 @@ export function EditorialArt({title,sub,dark=false,straight=false,story=false,im
  </Canvas></Freeze>;
 }
 function piece(id:string,title:string,variants:{title:string[];sub:string;dark?:boolean;straight?:boolean;image?:EditorialImageKey;engraving?:EngravingFigure;paint?:PaintShape}[]):Piece {
- return {id,title,format:variants.length>1?'Carrossel':'Estático',description:'Fotos selecionadas do catálogo alternadas com gravura pontual, ocre e texto grande.',look:'Acervo fotográfico / gravura pontual / ocre',movement:'Imagem estática; sem vídeo nas lâminas.',slides:variants.map((v,i)=>({name:`${title} · ${i+1}`,component:(p:PieceProps)=><EditorialArt {...p} {...v} signed={variants.length===1}/>,height:1440,seconds:1,cover:0,cues:[]})).concat(variants.length>1?[{name:'A conversa continua',component:(p:PieceProps)=><PracticeClose {...p} title={id==='ed-consistencia'?['UM GUIA PARA','SEGUIR PRATICANDO.']:['QUAL FORMA','VOCÊ QUER VER?']} body={id==='ed-consistencia'?'Estamos preparando Handstand Life: Guia de Sobrevivência. Exercícios, detalhes e conversas para acompanhar a prática.':'Reta, straddle e as passagens entre elas: vamos explorar cada forma com demonstrações reais. Qual você gostaria de ver explicada?'}/>,height:1440,seconds:1,cover:0,cues:[]}]:[])};
+ return {id,title,format:variants.length>1?'Carrossel':'Estático',description:'Fotos selecionadas do catálogo alternadas com gravura pontual, ocre e texto grande.',look:'Acervo fotográfico / gravura pontual / ocre',movement:'Imagem estática; sem vídeo nas lâminas.',slides:variants.map((v,i)=>({name:`${title} · ${i+1}`,component:(p:PieceProps)=><EditorialArt {...p} {...v} signed={variants.length===1}/>,height:1440,seconds:1,cover:0,cues:[]})).concat(variants.length>1?[{name:'A conversa continua',component:(p:PieceProps)=><ShareClose {...p} body={id==='ed-consistencia'?'Envie para alguém com quem você quer trocar vídeos e conversar sobre o treino de parada de mão.':'Envie para quem está aprendendo os nomes das formas na parada de mão!'} context="Handstand Life: Guia de Sobrevivência. Demonstrações e conversas sobre a prática de parada de mão."/>,height:1440,seconds:1,cover:0,cues:[]}]:[])};
 }
 export const EDITORIAL_PIECES = [
  piece('ed-consistencia','Filme e reveja seu treino',[
- {title:['FILME E REVEJA','SEU TREINO.'],sub:'A parada de mãos pede atenção aos detalhes. #handstandlife',image:'profile'},
+ {title:['VOCÊ FILMA','SEU HANDSTAND?'],sub:'A parada de mãos pede atenção aos detalhes. #handstandlife',image:'profile'},
  {title:['CONVERSE.','TROQUE.'],sub:'Outro olhar pode ajudar a perceber um detalhe.',dark:true,image:'group'},
  {title:['REVEJA UM','DETALHE POR VEZ.'],sub:'Rever um vídeo, conversar e perceber o apoio também fazem parte.',image:'class'},
  {title:['PRATIQUE.','FILME DE NOVO.'],sub:'Compare tentativas. Observe mudanças sem cobrar um recorde a cada treino.',dark:true,image:'tuck'},
  ]),
  piece('ed-comunidade','Gente para treinar junto',[{title:['TREINAR JUNTO','LEVA MAIS LONGE.'],sub:'Vamos fortalecer a comunidade de handstand do Brasil!',dark:true,image:'group'}]),
- piece('ed-formas','Palito e afastado',[{title:['PALITO E','AFASTADO.'],sub:'Reta e straddle: dois nomes para reconhecer na prática.',image:'diagonal',engraving:'diagonal',paint:'arc'},{title:['RETA.'],sub:'Pernas juntas.',image:'profile',engraving:'profile',paint:'oval'},{title:['STRADDLE.'],sub:'Pernas abertas.',dark:true,image:'overhead',engraving:'overhead',paint:'sweep'}]),
- piece('ed-festival','Três dias. Um encontro.',[{title:['3 DIAS COM QUEM','GOSTA DE HANDSTAND.'],sub:`${QUANDO} · São Paulo`,dark:true,image:'gabrielBeach'}]),
- piece('ed-mundo','Ninguém treina só',[{title:['ONDE A GENTE','TREINA JUNTO?'],sub:'Que grupo ou encontro você indicaria?',image:'tuck'}]),
+ piece('ed-formas','Palito e afastado',[{title:['PARADA DE MÃO:','RETA OU','AFASTADO?'],sub:'Reta e straddle: dois nomes para reconhecer na prática.',image:'diagonal',engraving:'diagonal',paint:'arc'},{title:['RETA.'],sub:'Pernas juntas.',image:'profile',engraving:'profile',paint:'oval'},{title:['STRADDLE.'],sub:'Pernas abertas.',dark:true,image:'overhead',engraving:'overhead',paint:'sweep'}]),
+ piece('ed-festival','Três dias. Um encontro.',[{title:['3 DIAS COM QUEM','GOSTA DE HANDSTAND.'],sub:`Festival de parada de mão · ${QUANDO} · São Paulo`,dark:true,image:'gabrielBeach'}]),
+ piece('ed-mundo','Ninguém treina só',[{title:['ONDE TREINAR','PARADA DE MÃO?'],sub:'Que grupo ou encontro você indicaria?',image:'tuck'}]),
 ];

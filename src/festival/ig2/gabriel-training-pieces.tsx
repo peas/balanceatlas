@@ -58,8 +58,8 @@ function ScapulaLesson({cut,...props}:PieceProps & {cut:TrainingCut}) {
     <Sequence from={hold} durationInFrames={2*fps} layout="none"><Img src={resolveMedia('/festival/ig/gabriel-training-v1/escapulas-observacao.webp')} style={{...style,filter:'grayscale(1) contrast(1.06)'}}/></Sequence>
     <Sequence from={resume} durationInFrames={2*fps} layout="none"><Video src={resolveMedia(cut.src)} trimBefore={6*fps} muted style={style}/></Sequence>
     <div style={{position:'absolute',inset:0,background:'linear-gradient(rgba(10,35,28,.8),transparent 44%)'}}/>
-    <Label y={225} size={32} color={CHALK}>HANDSTAND LIFE</Label>
-    <Headline lines={['EMPURRE','O CHÃO.']} y={285} size={76} dark/>
+    <Label y={225} size={32} color={CHALK}>{cut.id==='chute-parede'?'HANDSTAND LIFE':'PREPARAÇÃO PARA A PARADA DE MÃO'}</Label>
+    <Headline lines={['ESCÁPULAS','EM PRANCHA.']} y={285} size={76} dark/>
     <BrandSeal x={740} y={535} size={230}/>
     {detail&&<Label y={690} size={44} color={CHALK} style={{background:'rgba(18,61,51,.9)',padding:16,borderRadius:12,width:620}}>{frame<hold?'Veja de novo, mais perto.':frame<resume?'Observe esta região.':'Agora observe o movimento.'}</Label>}
     {frame>=hold&&frame<resume&&<svg viewBox="0 0 1080 1920" style={{position:'absolute',inset:0,width:'100%',height:'100%',pointerEvents:'none'}} aria-label="Seta aponta para a região das escápulas">
@@ -87,7 +87,7 @@ function GabrielTraining({cut, ...props}: PieceProps & {cut: TrainingCut}) {
     </Sequence>}
     <div style={{position: 'absolute', inset: 0, pointerEvents: 'none', background: 'linear-gradient(180deg,rgba(10,35,28,.78),rgba(10,35,28,.36) 27%,transparent 40%,transparent 79%,rgba(10,35,28,.7))'}}/>
     <div style={{opacity:frame<playFrames?1-move(frame,150,15):1}}>
-    <Label y={225} color={CHALK} size={34}>HANDSTAND LIFE</Label>
+    <Label y={225} color={CHALK} size={34}>{cut.id==='chute-parede'?'HANDSTAND LIFE':'PREPARAÇÃO PARA A PARADA DE MÃO'}</Label>
     <Headline lines={cut.id==='chute-parede'?['A ENTRADA','NA PAREDE!']:cut.hook} x={cut.id==='chute-parede'?500:65} y={285} size={cut.id==='chute-parede'?56:76} width={cut.id==='chute-parede'?500:885} dark accentLine={direction.paint==='highlight'?0:-1}/>
     {direction.paint==='underline'&&<BrushStroke color={ACCENT} style={{position:'absolute',left:65,top:470,width:640,height:20,clipPath:`inset(0 ${(1-move(frame,0,16)) * 100}% 0 0)`}}/>}
     </div>

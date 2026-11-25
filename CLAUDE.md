@@ -472,3 +472,13 @@ and pending checks. Batch definition: `src/festival/ig2/ready-posts.json`; expor
 WebP thumbnails are committed in `public/festival/ig/prontos/<batch>/`. Rendered files are snapshots: after a text or art
 change, re-export and re-upload that post. Post 10 has no footage, so the batch holds posts 1–9 and 11. Source clips are
 720p or 540p upscaled to 1080; sapinho is Paulo's provisional recording. Nothing is published to Instagram by this.
+
+## Standalone Instagram context and sharing close — 24 November 2026
+Read the new section in `src/festival/VOZ.md`: write each post for first-time viewers, lead with concrete
+practice before event confirmation when useful, explain what HandstandFest is. New carousels end with a
+topic-specific sharing invitation, paper-plane illustration and HF signature (`ig2/kit.tsx: ShareClose`).
+Louisse revision 2 uses six slides; see `docs/instagram/2026-11-25-louisse-confirmada.md`. This is editorial
+direction, not an algorithm guarantee. Preparing renders does not authorize publishing to Instagram.
+
+### Instagram future agenda (25 November 2026)
+See `docs/instagram/2026-11-25-standalone-posts.md` for the applied newcomer-first copy review and Story receipt. `/instagram/` is the future-only working agenda; six verified publications are in its separate history. Update composition text, captions and generated review/cover thumbnails together. Rendered previews are not technical/publication approval.
