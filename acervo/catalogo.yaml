@@ -8220,3 +8220,27 @@
   preferir_esta_versao: true
   revisao: "Comparação visual de folhas de contato; mesma tomada e duração aproximada da versão de 20/11. Não é equivalência quadro a quadro."
   observacoes: "Ainda comprimido pelo WhatsApp. Áudio não revisado; prévias mudas. Evitar zoom forte. Nomes das formas a confirmar com Louisse."
+
+- id: paulo-20261125-parada-um-minuto
+  arquivo: local/festival/analysis/paulo-20261125/original.mp4
+  nome_original: PXL_20261125_132351472~2.mp4
+  sha256: 7dfe454727690c7e1b8ff54663031566d746fbb9b959061e48ddb5ca72cdbf41
+  camera: pixel
+  data: 2026-11-25
+  duracao: 59.63
+  quem: [Paulo]
+  tipo: treino
+  som: nao-revisado
+  pessoas: 1
+  handstand: true
+  posicao: [reta, pike]
+  resumo: Paulo em permanência de perfil, aproximadamente um minuto de parada reta/palito com pequenas variações; pike é também a descrição fornecida pelo Paulo.
+  destaque: 4
+  quadro: perfil, corpo inteiro, câmera fixa; corpo pequeno no quadro original, recorte fixo disponível
+  uso_editorial: Mostrar que pequenas variações sempre acontecem; parada não é imobilidade. Não classificar toda oscilação como erro nem toda flexão como pike.
+  derivado_sdr: local/festival/analysis/paulo-20261125/video.mp4
+  pose: local/festival/analysis/paulo-20261125/paulo-20261125.json
+  render: local/festival/analysis/paulo-20261125/paulo-alinhamento.mp4
+  analise: MediaPipe heavy, 15 amostras/s, sem suavização; esqueleto e ângulos 2D no Remotion, lado esquerdo fixo por maior visibilidade.
+  revisao: Estudo de análise; interpretação técnica pendente do Gabriel, não publicado no Instagram.
+  nota: 59,63 s é duração do arquivo, não certificação de hold. Original HDR privado; derivado SDR sem áudio e sem metadados de localização.

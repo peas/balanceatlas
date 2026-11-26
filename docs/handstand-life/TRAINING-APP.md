@@ -51,3 +51,6 @@ The adapter uses `~/ciencia/tamanhodouniverso/.venv-rosto/bin/python` and the so
 6. Build the searchable, reviewed exercise library before training plans, user tracking or automatic feedback. Name/platform and app scope remain open.
 
 Related: `src/festival/CURRENT.md`, `src/festival/ig2/ESTRATEGIA.md`, `src/festival/IMAGERY.md`, `acervo/README.md`. Engraved imagery is an editorial derivative: run pose analysis on real source footage, never on generated anatomy.
+
+## Update 25 November: HF-owned analysis layer
+The selected pose extractor, gap-aware interpolation, aspect-corrected geometry and Remotion skeleton/angle overlay are now ported to HF. See [ANALISADOR.md](ANALISADOR.md). This supersedes the earlier “reuse candidate/not ported” status for those modules only; specialized one-arm metrics and client-side detection remain unported.

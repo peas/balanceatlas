@@ -3,7 +3,7 @@
 
 Works on the proxies and wavs made by festival_derivados.py. Everything it writes stays in local/festival/.
 
-  pose   MediaPipe pose for every proxy -> pose/<id>.json. Reuses ~/paulo.com.br-render/scripts/pose.py (same JSON:
+  pose   MediaPipe pose for every proxy -> pose/<id>.json. Uses scripts/handstand/pose.py (ported from paulo.com.br-render) (same JSON:
          {"fps","w","h","quadros":[{"t","pose":[[x,y,z,vis] x 33]}]}, x/y 0..1 of the upright frame, source seconds).
   holds  from the pose: when the body is upside down (ankles above hips above shoulders, hands on the floor)
          -> analise.json {"<id>": {"invertido": [[de, ate], ...], "pose_pct": n}}
@@ -22,7 +22,7 @@ from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 LOCAL = Path(__file__).resolve().parent.parent / 'local' / 'festival'
-RENDER = Path.home() / 'paulo.com.br-render'
+POSE_SCRIPT = Path(__file__).resolve().parent / 'handstand' / 'pose.py'
 PY = Path.home() / 'ciencia' / 'tamanhodouniverso' / '.venv-rosto' / 'bin' / 'python'
 NOMES = 'HandstandFest, handstand, parada de mão, Trapézio Voador, Gabriel, Agustin, Paulo, acroyoga, São Paulo.'
 
@@ -40,7 +40,7 @@ def pose(args):
     todo = [e for e in files if not (LOCAL / 'pose' / f"{e['id']}.json").exists()]
 
     def one(e):
-        r = subprocess.run([PY, '-I', RENDER / 'scripts' / 'pose.py', e['id'], '--passo', '2', '--suave', '--fontes', inv,
+        r = subprocess.run([PY, '-I', POSE_SCRIPT, e['id'], '--passo', '2', '--suave', '--fontes', inv,
                             '--raiz', LOCAL / 'proxies', '--saida', LOCAL / 'pose'], capture_output=True, text=True)
         return e['id'], r.returncode, (r.stdout.strip().splitlines() or [r.stderr[-300:]])[0]
 
