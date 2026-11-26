@@ -44,3 +44,7 @@ Trechos educativos, freeze com uma medida relevante, comparações do mesmo take
 
 ## Validação desta entrega
 895/895 amostras com detecção (15 Hz); isso mede cobertura, não acurácia anatômica. Cadeia esquerda escolhida por visibilidade maior, sem alternância automática. MP4 H.264 1080×1920, 30 fps, 59,6 s, ~20 MB; frames revisados em 7, 12, 21, 35 e 49 s. Corpo inteiro preservado no recorte fixo. Testes de geometria/ausência de pose, parsing do catálogo e build do projeto passaram. Render local, sem publicação no Instagram.
+
+## External reference pilot (25 November 2026)
+
+See [Instagram angle study](2026-11-25-instagram-angle-study.md) for two profile-view references (Yuval and Daryna), selected straight/tuck/pike windows, confidence coverage and comparison with Paulo. This is a short-sample internal study, not habitual angles or a standard to copy. Downloaded reference clips and local review remain gitignored; no third-party promotional reuse is authorized by this study.
