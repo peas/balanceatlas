@@ -20,9 +20,10 @@ parser.add_argument('--only', nargs='*', type=int, help='Post numbers to export 
 parser.add_argument('--concurrency', type=int, default=3, help='Concurrent frames for video (default 3)')
 parser.add_argument('--list', action='store_true', help='List bundle compositions and exit')
 parser.add_argument('--skip-bundle', action='store_true', help='Reuse the existing bundle')
+parser.add_argument('--manifest', type=Path, default=MANIFEST, help='Batch manifest')
 args = parser.parse_args()
 
-data = json.loads(MANIFEST.read_text())
+data = json.loads(args.manifest.read_text())
 out = ROOT/'local/festival/prontos'/data['batch']
 public = ROOT/'local/festival/render-public'
 bundle = ROOT/'local/festival/render-bundle'

@@ -2,11 +2,11 @@
 // Ready-to-post files for the next Instagram posts: rendered JPEG/MP4 downloads (GitHub release assets, exported by
 // scripts/festival_ready_posts.py), with the caption and Story idea next to each. Nothing is published from here.
 import FestLayout from '../../../layouts/FestLayout.astro';
-import ready from '../../../festival/ig2/ready-posts.json';
+import ready from '../../../festival/ig2/production-2026-11-26.json';
 import { EDITORIAL } from '../../../festival/ig2/editorial';
 
 const posts = ready.posts.map((post) => {
-  const day = EDITORIAL.find((d) => d.title === post.title);
+  const day = EDITORIAL.find((d) => d.piece === post.piece);
   const name = `${String(post.n).padStart(2, '0')}-${post.slug}`;
   const files = post.video
     ? [{ file: `${name}.mp4`, label: 'Baixar o vídeo (MP4)', thumb: `${name}-capa.webp` }, { file: `${name}-capa.jpg`, label: 'Baixar a capa (JPG)', thumb: null }]
@@ -22,13 +22,13 @@ const posts = ready.posts.map((post) => {
     <p><a href="/festival/instagram/">← Calendário Instagram</a></p>
     <p class="kicker">@HANDSTANDFEST · LOTE DE {ready.batch.split('-').reverse().join('/')}</p>
     <h1>Posts prontos para publicar</h1>
-    <p class="lead">Os próximos {posts.length} posts, já renderizados no tamanho do Instagram. Baixe os arquivos no celular, suba pelo aplicativo e escolha a música por lá. Os vídeos não têm som.</p>
+    <p class="lead">{posts.length} peças dos próximos sete posts da agenda, renderizadas para revisão. O quarto post, sobre distâncias da parede, aguarda gravação. Baixe os arquivos no celular, suba pelo aplicativo e escolha a música por lá. Os vídeos não têm som.</p>
     <ol class="como">
       <li>Baixe os arquivos do post. No carrossel, baixe todas as lâminas e selecione na ordem dos números.</li>
       <li>No Reel, suba o vídeo e troque a capa pela imagem de capa.</li>
       <li>Toque em “Copiar legenda” e cole no Instagram.</li>
     </ol>
-    <p><a class="baixar tudo" href={ready.base + `handstandfest-posts-${ready.batch}.zip`} download>Baixar tudo de uma vez (ZIP, 97 MB)</a></p>
+    <p><a class="baixar tudo" href={ready.base + `handstandfest-posts-${ready.batch}.zip`} download>Baixar todos os arquivos (ZIP)</a></p>
     {posts.map((post) => (
       <article class="pronto" id={`post-${post.n}`}>
         <header>

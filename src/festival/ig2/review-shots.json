@@ -1400,17 +1400,17 @@
     "count": 4,
     "shots": [
       {
-        "url": "/festival/ig/review-v1/agustin-apresentacao-1-0-489afb4b39.webp",
+        "url": "/festival/ig/review-v1/agustin-apresentacao-1-0-409f345937.webp",
         "label": "Lâmina 1 · Gabriel Agustin",
         "frame": 29
       },
       {
-        "url": "/festival/ig/review-v1/agustin-apresentacao-3-0-6600610fca.webp",
+        "url": "/festival/ig/review-v1/agustin-apresentacao-3-0-1dd2eddf58.webp",
         "label": "Lâmina 3 · A origem do festival",
         "frame": 29
       },
       {
-        "url": "/festival/ig/review-v1/agustin-apresentacao-4-0-ee6f760f03.webp",
+        "url": "/festival/ig/review-v1/agustin-apresentacao-4-0-40d314983a.webp",
         "label": "Lâmina 4 · Envie para quem quer praticar",
         "frame": 29
       }
@@ -1502,6 +1502,35 @@
       {
         "url": "/festival/ig/review-v1/gabriel-paisagem-0-8b45cd1204.webp",
         "label": "Imagem completa",
+        "frame": 29
+      }
+    ]
+  },
+  {
+    "id": "ed-tentativas",
+    "title": "Uma tentativa não conta o treino inteiro",
+    "format": "Carrossel",
+    "description": "Três fotografias extraídas da mesma sequência real do Gabriel na varanda: posição, entrada e retorno. Sem antes/depois ou promessa de evolução.",
+    "movement": "Fotos estáticas com recorte fixo. A ordem editorial não é cronológica; os momentos vêm dos segundos 8, 4 e 12 do mesmo vídeo.",
+    "name": "A tentativa",
+    "cues": [],
+    "cover": 0,
+    "index": 0,
+    "count": 4,
+    "shots": [
+      {
+        "url": "/festival/ig/review-v1/ed-tentativas-1-0-f1c44a44ae.webp",
+        "label": "Lâmina 1 · A tentativa",
+        "frame": 29
+      },
+      {
+        "url": "/festival/ig/review-v1/ed-tentativas-3-0-ec9d9445b3.webp",
+        "label": "Lâmina 3 · O retorno",
+        "frame": 29
+      },
+      {
+        "url": "/festival/ig/review-v1/ed-tentativas-4-0-c896dee8bc.webp",
+        "label": "Lâmina 4 · Envie para quem treina com você",
         "frame": 29
       }
     ]

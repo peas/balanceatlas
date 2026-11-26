@@ -1,0 +1,56 @@
+{
+  "batch": "2026-11-26",
+  "note": "Six compositions exported. Slot 4 remains pending filming by user choice. Exercise technical review remains pending. No Instagram publication.",
+  "posts": [
+    {
+      "n": 1,
+      "slug": "gabriel-agustin",
+      "title": "Conheça Gabriel Agustin",
+      "piece": "agustin-apresentacao",
+      "slides": 4,
+      "frame": 0
+    },
+    {
+      "n": 2,
+      "slug": "saida-em-estrela",
+      "title": "Saída em estrela",
+      "piece": "gabriel-drill-saida-parede",
+      "video": true,
+      "cover": 120
+    },
+    {
+      "n": 3,
+      "slug": "outro-chao",
+      "title": "Handstand em outro chão",
+      "piece": "gabriel-paisagem",
+      "slides": 1,
+      "frame": 0
+    },
+    {
+      "n": 5,
+      "slug": "escapulas",
+      "title": "Escápulas em prancha",
+      "piece": "gabriel-drill-escapulas",
+      "video": true,
+      "cover": 120
+    },
+    {
+      "n": 6,
+      "slug": "trapezio-voador",
+      "title": "Nosso encontro no Trapézio Voador",
+      "piece": "lugar",
+      "video": true,
+      "cover": 120
+    },
+    {
+      "n": 7,
+      "slug": "tentativas",
+      "title": "Uma tentativa não conta o treino inteiro",
+      "piece": "ed-tentativas",
+      "slides": 4,
+      "frame": 0
+    }
+  ],
+  "base": "https://github.com/peas/balanceatlas/releases/download/instagram-producao-2026-11-26/",
+  "thumbs": "/festival/ig/prontos/2026-11-26/"
+}

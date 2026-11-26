@@ -49,7 +49,7 @@ exercise('Parede: a distância do apoio','Como a distância da parede muda o apo
 exercise('Escápulas em prancha: empurrar o chão','O que muda quando você empurra o chão?','Usar a prancha do Gabriel para observar a região das escápulas, com repetição aproximada e uma seta na pausa. Abertura de ombros é outra pauta; revisar narração com Gabriel.'),
 old(13,{title:'Nosso encontro no Trapézio Voador',hook:'Onde vai acontecer o HandstandFest?'}),
 exercise('Canoinha: pernas e pelve','Como está sua canoinha?','Filmar de perfil as pernas e a posição da pelve, com variação acessível. Entrada, sustentação e saída; voz depois.'),
-{...old(16),title:'Uma tentativa não conta o treino inteiro',hook:'O que aconteceu antes desse acerto?',piece:undefined,missing:'Filmar tentativas, pausa e repetição do mesmo exercício. Selecionar fotos reais para um carrossel; não fabricar evolução.'},
+{...old(16),title:'Uma tentativa não conta o treino inteiro',hook:'O que aconteceu antes desse acerto?',piece:'ed-tentativas',missing:'Fotos reais selecionadas da sequência IMG_3483 do Gabriel. Revisar texto e montagem; não precisa de nova captação para esta peça.'},
 exercise('Parede: tirar um pé, depois o outro','Como sair do apoio da parede?','Filmar barriga para a parede, retirando um pé e depois o outro sem impulso. Mostrar entrada e saída escolhidas por Gabriel; câmera lateral, apoios visíveis.'),
 old(6,{title:'Ainda está na parede? Tem turma para você.',hook:'HandstandFest é para todos os níveis.',caption:'Ainda está treinando na parede? Tem turma para você. O festival reúne quem está começando e quem já pratica. Confira os critérios das turmas e as condições de inscrição no site.'}),
 // Week 3: Vocabulary, compression, community and transitions.
@@ -89,7 +89,7 @@ function withHashtags(caption:string, practice:boolean) {
  const missing=tags.filter(tag=>!new RegExp('#'+tag+'(?![\\w])','i').test(caption));
  return caption+(missing.length?'\n\n'+missing.map(tag=>'#'+tag).join(' '):'');
 }
-const resolvedPlan: EditorialDay[] = PLAN.map(day => ({...day, ...((VOICE as Record<string,Partial<EditorialDay>>)[day.title]??{})})).map(day => ({...day, ...(gabrielSamples[day.title]?{piece:'gabriel-drill-'+gabrielSamples[day.title],missing:'Material do Gabriel recebido em 17/11; corte e prévia disponíveis. Revisar explicação, saída e narração antes de publicar. '+day.missing}:samples[day.title]?{piece:'exercicio-'+samples[day.title],missing:'Prévia com Paulo para revisar; nova captação prevista com Paulo e Gabriel. '+day.missing}:{}), caption: withHashtags(day.caption, day.pillar !== 'Evento')}));
+const resolvedPlan: EditorialDay[] = PLAN.map(day => ({...day, ...((VOICE as Record<string,Partial<EditorialDay>>)[day.title]??{})})).map(day => ({...day, ...(gabrielSamples[day.title]?{piece:'gabriel-drill-'+gabrielSamples[day.title],missing:'Material do Gabriel recebido em 17/11, já montado. Não precisa de nova captação para esta peça. Gabriel revisa a explicação e a variação demonstrada. Definir narração ou manter a versão sem voz.'}:samples[day.title]?{piece:'exercicio-'+samples[day.title],missing:'Prévia com Paulo para revisar; nova captação prevista com Paulo e Gabriel. '+day.missing}:{}), caption: withHashtags(day.caption, day.pillar !== 'Evento')}));
 
 
 // 24 November: the first five posts are already published. Prioritize Louisse next;

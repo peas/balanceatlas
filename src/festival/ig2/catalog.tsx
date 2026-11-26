@@ -1,3 +1,4 @@
+import { PRODUCTION_PIECES } from './production-pieces';
 import { LOUISSE_PIECES } from './louisse-pieces';
 import { OPENING_PIECES } from './opening-pieces';
 import { GABRIEL_TRAINING_PIECES } from './gabriel-training-pieces';
@@ -42,7 +43,7 @@ const first: CatalogPiece[] = PECAS.map((p) => ({
   slides: (REGISTRO[p.id] ?? []).map((s, i) => ({ name: s.nome ?? (i ? `Quadro ${i + 1}` : p.titulo), component: s.comp, seconds: s.frames / FPS, height: s.h, cover: s.capa ?? 0, cues: [] })),
 })).filter((p) => p.slides.length);
 
-const second: CatalogPiece[] = [...LOUISSE_PIECES, ...OPENING_PIECES, ...GABRIEL_TRAINING_PIECES, ...EXERCISE_PREVIEW_PIECES, ...SPOTLIGHT_PIECES, ...AGUSTIN_PIECES, ...PIECES, ...EDITORIAL_PIECES, ...GABRIEL_PIECES.filter(p=>p.id!=='gabriel-transicoes')].map((p) => ({ ...p, style: p.id.startsWith('gabriel-drill-') ? 'congela' : p.id.startsWith('ed-') ? 'gravura' : STYLE_OF[p.id] ?? 'janela' }));
+const second: CatalogPiece[] = [...PRODUCTION_PIECES, ...LOUISSE_PIECES, ...OPENING_PIECES, ...GABRIEL_TRAINING_PIECES, ...EXERCISE_PREVIEW_PIECES, ...SPOTLIGHT_PIECES, ...AGUSTIN_PIECES, ...PIECES, ...EDITORIAL_PIECES, ...GABRIEL_PIECES.filter(p=>p.id!=='gabriel-transicoes')].map((p) => ({ ...p, style: p.id.startsWith('gabriel-drill-') ? 'congela' : p.id.startsWith('ed-') ? 'gravura' : STYLE_OF[p.id] ?? 'janela' }));
 
 const nature:CatalogPiece[]=NATURE_PIECES.map(p=>({...p,style:p.format==='Reel'?'congela':'tela-cheia'}));
 // Superseded visual experiments stay in source/history, not in the active publishing queue.

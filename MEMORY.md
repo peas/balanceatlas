@@ -31,3 +31,5 @@ Public previews updated in 11ae0c0: support text increased, copy shortened, clea
 
 ## 2026-11-25 — Standalone Instagram copy and future agenda
 Reviewed the 32 future briefs; four existing future carousels now use contextual send-to-a-friend closing slides with paper-plane/HF. Future-only agenda at `/instagram/` separates six published posts, shows 2–3 stills, copy, objective and missing work. Louisse carousel shared to Story and verified live. See `docs/instagram/2026-11-25-standalone-posts.md`; old exported packages must be regenerated.
+
+- 2026-11-26: next-seven Instagram production completed as six exports plus wall-distance slot explicitly pending capture. See docs/instagram/2026-11-26-production.md; current download manifest production-2026-11-26.json. Capture needs distinguish missing footage, complementary takes, editing and copy. No Instagram posting.

@@ -310,16 +310,6 @@
     "note": "Confirm crop in uploader; cover does not imply publication approval."
   },
   {
-    "id": "lugar",
-    "composition": "lugar",
-    "frame": 24,
-    "width": 1080,
-    "height": 1920,
-    "url": "/festival/ig/covers-v1/lugar-13b2eb85e5.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
     "id": "ritmo",
     "composition": "ritmo",
     "frame": 24,
@@ -510,16 +500,6 @@
     "note": "Confirm crop in uploader; cover does not imply publication approval."
   },
   {
-    "id": "agustin-apresentacao",
-    "composition": "agustin-apresentacao-1",
-    "frame": 0,
-    "width": 1080,
-    "height": 1440,
-    "url": "/festival/ig/covers-v1/agustin-apresentacao-d0f18954ef.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
     "id": "agustin-movimento",
     "composition": "agustin-movimento",
     "frame": 30,
@@ -536,16 +516,6 @@
     "width": 1080,
     "height": 1440,
     "url": "/festival/ig/covers-v1/turma-02424915c1.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
-    "id": "gabriel-paisagem",
-    "composition": "gabriel-paisagem",
-    "frame": 0,
-    "width": 1080,
-    "height": 1440,
-    "url": "/festival/ig/covers-v1/gabriel-paisagem-ca7a4aa5f7.webp",
     "status": "review",
     "note": "Confirm crop in uploader; cover does not imply publication approval."
   },
@@ -606,36 +576,6 @@
     "width": 1080,
     "height": 1440,
     "url": "/festival/ig/covers-v1/gabriel-gravura-f8b3880524.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
-    "id": "gabriel-drill-escapulas",
-    "composition": "gabriel-drill-escapulas",
-    "frame": 120,
-    "width": 1080,
-    "height": 1920,
-    "url": "/festival/ig/covers-v1/gabriel-drill-escapulas-725c5ce952.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
-    "id": "gabriel-drill-saida-parede",
-    "composition": "gabriel-drill-saida-parede",
-    "frame": 120,
-    "width": 1080,
-    "height": 1920,
-    "url": "/festival/ig/covers-v1/gabriel-drill-saida-parede-0d78937299.webp",
-    "status": "review",
-    "note": "Confirm crop in uploader; cover does not imply publication approval."
-  },
-  {
-    "id": "gabriel-drill-escapulas-perfil",
-    "composition": "gabriel-drill-escapulas-perfil",
-    "frame": 120,
-    "width": 1080,
-    "height": 1920,
-    "url": "/festival/ig/covers-v1/gabriel-drill-escapulas-perfil-57bcfcffb5.webp",
     "status": "review",
     "note": "Confirm crop in uploader; cover does not imply publication approval."
   },
@@ -746,6 +686,76 @@
     "width": 1080,
     "height": 1440,
     "url": "/festival/ig/covers-v1/louisse-confirmada-246049e313.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "lugar",
+    "composition": "lugar",
+    "frame": 24,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/lugar-13b2eb85e5.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "gabriel-paisagem",
+    "composition": "gabriel-paisagem",
+    "frame": 0,
+    "width": 1080,
+    "height": 1440,
+    "url": "/festival/ig/covers-v1/gabriel-paisagem-ca7a4aa5f7.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "gabriel-drill-escapulas",
+    "composition": "gabriel-drill-escapulas",
+    "frame": 120,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/gabriel-drill-escapulas-725c5ce952.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "gabriel-drill-saida-parede",
+    "composition": "gabriel-drill-saida-parede",
+    "frame": 120,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/gabriel-drill-saida-parede-0d78937299.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "gabriel-drill-escapulas-perfil",
+    "composition": "gabriel-drill-escapulas-perfil",
+    "frame": 120,
+    "width": 1080,
+    "height": 1920,
+    "url": "/festival/ig/covers-v1/gabriel-drill-escapulas-perfil-57bcfcffb5.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "agustin-apresentacao",
+    "composition": "agustin-apresentacao-1",
+    "frame": 0,
+    "width": 1080,
+    "height": 1440,
+    "url": "/festival/ig/covers-v1/agustin-apresentacao-662f3fcd65.webp",
+    "status": "review",
+    "note": "Confirm crop in uploader; cover does not imply publication approval."
+  },
+  {
+    "id": "ed-tentativas",
+    "composition": "ed-tentativas-1",
+    "frame": 0,
+    "width": 1080,
+    "height": 1440,
+    "url": "/festival/ig/covers-v1/ed-tentativas-a9642b10bb.webp",
     "status": "review",
     "note": "Confirm crop in uploader; cover does not imply publication approval."
   }
