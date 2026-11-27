@@ -490,3 +490,6 @@ Reusable MediaPipe extractor and Remotion skeleton/angle layer now live in HF: `
 
 ### Next seven Instagram slots (26 November 2026)
 Six compositions exported and linked from `/instagram/` and `/instagram/prontos/`; slot 4, two wall distances, explicitly remains pending filming by Paulo's choice. See `docs/instagram/2026-11-26-production.md`. Current batch: `ig2/production-2026-11-26.json`; exporter supports `--manifest`. `capture-needs.json` separates new capture from complementary footage, editing and copy dependencies; dates derive from the calendar start. Exercises retain Gabriel technical review and silent exports. New `ed-tentativas` uses actual IMG_3483 frames, no fabricated progression. Nothing posted to Instagram by this production task.
+
+### Gabriel introduction published (27 November 2026)
+Paulo authorized the next post. Published the four-image `agustin-apresentacao` carousel, original portrait crop, no music: https://www.instagram.com/p/DgP6taYJbhN/. Receipt in `social/queue.yaml`; publication history excludes it from future slots. Next proposed day is 28 November; wall-distance comparison remains pending filming.

@@ -146,5 +146,20 @@ posts:
         collaboration_status: invited-awaiting-acceptance,
         receipt_note: Live carousel verified; Instagram explicitly showed lou.handstand
           was invited but has not accepted. Observation timestamp.
-      }
+      },
+{
+    "id": "agustin-apresentacao",
+    "images": [
+        "local/festival/prontos/2026-11-26/01-gabriel-agustin-1.jpg",
+        "local/festival/prontos/2026-11-26/01-gabriel-agustin-2.jpg",
+        "local/festival/prontos/2026-11-26/01-gabriel-agustin-3.jpg",
+        "local/festival/prontos/2026-11-26/01-gabriel-agustin-4.jpg"
+    ],
+    "when": "2026-11-27 00:00",
+    "caption": "Gabriel Agustin é artista circense, acrobata e professor de movimento, argentino radicado no Brasil. Há mais de 10 anos se dedica às artes do movimento, à acrobacia e à parada de mão.\n\nDepois de uma experiência na Argentina, veio dele a ideia do HandstandFest: um festival para reunir pessoas, professores e perspectivas sobre a parada de mão. A primeira edição acontece de 16 a 18 de abril de 2027, no Trapézio Voador, em São Paulo.\n\nQuer praticar com ele? Envie para quem também quer aprender parada de mão.\n\n#handstand #handstandfest",
+    "posted_at": "2026-11-27T14:42:06.369307+00:00",
+    "url": "https://www.instagram.com/p/DgP6taYJbhN/",
+    "receipt_note": "Observation timestamp. Instagram confirmed Your post has been shared; live permalink and caption verified. Four JPEGs, Original crop, no music.",
+    "proof": "local/festival/publicacao/2026-11-27-gabriel/publicado.jpg"
+}
   ]
